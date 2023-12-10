@@ -26,7 +26,10 @@ class MyAppDrawer extends StatelessWidget {
             children: <Widget>[
               ListTile(
                 title: Text('1.1. Konjugation', style: secondLevelTitleStyle),
-                onTap: () => {},
+                selected: _selectedDrawerItemIndex ==
+                    ScreenSelected.konjugation_1_1.value,
+                onTap: () =>
+                    _onDrawerItemTapped(ScreenSelected.konjugation_1_1.value),
               ),
               ListTile(
                 title: Row(
@@ -37,7 +40,10 @@ class MyAppDrawer extends StatelessWidget {
                             secondLevelTitleStyle.copyWith(color: Colors.red)),
                   ],
                 ),
-                onTap: () => {},
+                selected: _selectedDrawerItemIndex ==
+                    ScreenSelected.verbSein_1_2.value,
+                onTap: () =>
+                    _onDrawerItemTapped(ScreenSelected.verbSein_1_2.value),
               ),
               ListTile(
                 title: Row(
@@ -48,12 +54,18 @@ class MyAppDrawer extends StatelessWidget {
                             secondLevelTitleStyle.copyWith(color: Colors.red)),
                   ],
                 ),
-                onTap: () => {},
+                selected: _selectedDrawerItemIndex ==
+                    ScreenSelected.verbHaben_1_3.value,
+                onTap: () =>
+                    _onDrawerItemTapped(ScreenSelected.verbHaben_1_3.value),
               ),
               ListTile(
                 title: Text('1.4. Regelmäßige Verben',
                     style: secondLevelTitleStyle),
-                onTap: () => {},
+                selected: _selectedDrawerItemIndex ==
+                    ScreenSelected.regelmaessigeVerben_1_4.value,
+                onTap: () =>
+                    _onDrawerItemTapped(ScreenSelected.regelmaessigeVerben_1_4.value),
               ),
               ListTile(
                 title: Text('1.5. Unregelmäßige Verben',
@@ -722,7 +734,9 @@ class MyAppDrawer extends StatelessWidget {
           //   selected:
           //       _selectedDrawerItemIndex == ScreenSelected.demoScreen2.value,
           // ),
-          Divider(height: 4,),
+          Divider(
+            height: 4,
+          ),
           ListTile(
             leading: const Icon(Icons.settings_outlined),
             title: Text(localizations!.settings),
@@ -765,8 +779,3 @@ TextStyle fourthLevelTitleStyle = const TextStyle(
   fontSize: 14.0,
   fontStyle: FontStyle.italic,
 );
-
-// TextStyle fourthLevelTitleStyle = Theme.of(context).textTheme.bodyText2!.copyWith(
-//   fontSize: 12.0,
-//   fontWeight: FontWeight.w100,
-// );

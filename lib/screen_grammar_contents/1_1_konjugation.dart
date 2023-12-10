@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_widget_from_html/flutter_widget_from_html.dart';
 
-class Konjugation extends StatelessWidget {
-  const Konjugation({super.key});
+class Konjugation_1_1 extends StatelessWidget {
+  const Konjugation_1_1({super.key});
 
   @override
   Widget build(BuildContext context) {
     return const Expanded(
-        child: Center(
-      child: HtmlWidget(
-        '''
+      child: Center(
+        child: HtmlWidget(
+          '''
 <li>
 <div>
 <p>W-Fragen, die nach <strong><a title="Kasus" href="lernen.php?menu_id=16">Kasus</a></strong> und <strong><a title="Verbergänzungen" href="lernen.php?menu_id=7">Verbergänzungen</a></strong> fragen.</p>
@@ -137,12 +137,10 @@ table, th, td {
 </li>
 
 ''',
-  renderMode: RenderMode.column,
-  textStyle: TextStyle(fontSize: 10),
+          renderMode: RenderMode.column,
+          textStyle: TextStyle(fontSize: 10),
         ),
-        
-
-    ),
+      ),
     );
   }
 }

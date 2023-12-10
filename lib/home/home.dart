@@ -15,6 +15,8 @@ import '../screen_material_design/page_component.dart';
 import '../screen_settings/page_settings_user_interface.dart';
 import '../screen_material_design/page_elevation.dart';
 import '../screen_material_design/page_typography.dart';
+import 'get_title.dart';
+import 'list_page.dart';
 
 class Home extends StatefulWidget {
   const Home({
@@ -79,7 +81,7 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
   bool showMediumSizeLayout = false;
   bool showLargeSizeLayout = false;
 
-  int _selectedDrawerItemIndex = ScreenSelected.demoScreen1.value;
+  int _selectedDrawerItemIndex = ScreenSelected.konjugation_1_1.value;
   int _selectedNavBarItemIndex = 0;
 
   static final List<Widget> _demoScreen1 = <Widget>[
@@ -188,6 +190,10 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
     }
   }
 
+  Widget createPage() {
+    return pages.elementAt(_selectedDrawerItemIndex);
+  }
+
   Widget createPageForTasksScreen() {
     return _demoScreen1.elementAt(_selectedNavBarItemIndex);
   }
@@ -282,96 +288,63 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
             scaffoldKey: scaffoldKey,
             animationController: controller,
             railAnimation: railAnimation,
-            appBar: createAppBar((_selectedDrawerItemIndex ==
-                        ScreenSelected.demoScreen1.value &&
-                    _selectedNavBarItemIndex ==
-                        PageOfDemoScreen1.page_1_1.value)
-                ? 'Screen 1 Page 1'
-                : (_selectedDrawerItemIndex == ScreenSelected.demoScreen1.value &&
-                        _selectedNavBarItemIndex ==
-                            PageOfDemoScreen1.page_1_2.value)
-                    ? 'Screen 1 Page 2'
-                    : (_selectedDrawerItemIndex == ScreenSelected.demoScreen1.value &&
-                            _selectedNavBarItemIndex ==
-                                PageOfDemoScreen1.page_1_3.value)
-                        ? 'Screen 1 Page 3'
-                        : (_selectedDrawerItemIndex ==
-                                ScreenSelected.settingsScreen.value)
-                            ? localizations!.settings
-                            : (_selectedDrawerItemIndex ==
-                                    ScreenSelected.aboutUsScreen.value)
-                                ? localizations!.aboutUs
-                                : (_selectedDrawerItemIndex == ScreenSelected.materialDesignScreen.value &&
-                                        _selectedNavBarItemIndex ==
-                                            PageOfMaterialDesignScreenSelected
-                                                .component.value)
-                                    ? 'Components'
-                                    : (_selectedDrawerItemIndex ==
-                                                ScreenSelected
-                                                    .materialDesignScreen
-                                                    .value &&
-                                            _selectedNavBarItemIndex ==
-                                                PageOfMaterialDesignScreenSelected
-                                                    .color.value)
-                                        ? 'Colors'
-                                        : (_selectedDrawerItemIndex ==
-                                                    ScreenSelected
-                                                        .materialDesignScreen
-                                                        .value &&
-                                                _selectedNavBarItemIndex ==
-                                                    PageOfMaterialDesignScreenSelected
-                                                        .typography.value)
-                                            ? 'Typography'
-                                            : ''),
-
-            drawer: MyAppDrawer(_selectedDrawerItemIndex, _onDrawerItemTapped, localizations),
-            body: _selectedDrawerItemIndex == ScreenSelected.demoScreen1.value
-                ? createPageForTasksScreen()
-                : _selectedDrawerItemIndex == ScreenSelected.settingsScreen.value
-                    ? SettingsPage(
-                        colorSelected: widget.colorSelected,
-                        colorSelectionMethod: widget.colorSelectionMethod,
-                        handleBrightnessChange: widget.handleBrightnessChange,
-                        handleColorSelect: widget.handleColorSelect,
-                        handleDisplayBrightnessButtonInAppBarChange:
-                            widget.handleDisplayBrightnessButtonInAppBarChange,
-                        handleDisplayColorImageButtonInAppBarChange:
-                            widget.handleDisplayColorImageButtonInAppBarChange,
-                        handleDisplayColorSeedButtonInAppBarChange:
-                            widget.handleDisplayColorSeedButtonInAppBarChange,
-                        handleDisplayLanguagesButtonInAppBarChange:
-                            widget.handleDisplayLanguagesButtonInAppBarChange,
-                        handleDisplayMaterialDesignButtonInAppBarChange: widget
-                            .handleDisplayMaterialDesignButtonInAppBarChange,
-                        handleImageSelect: widget.handleImageSelect,
-                        handleLanguageSelect: widget.handleLanguageSelect,
-                        handleMaterialVersionChange:
-                            widget.handleMaterialVersionChange,
-                        imageSelected: widget.imageSelected,
-                        languageSelected: widget.languageSelected,
-                        launchCount: widget.launchCount,
-                        showBrightnessButtonInAppBar:
-                            widget.showBrightnessButtonInAppBar,
-                        showColorImageButtonInAppBar:
-                            widget.showColorImageButtonInAppBar,
-                        showColorSeedButtonInAppBar:
-                            widget.showColorSeedButtonInAppBar,
-                        showLanguagesButtonInAppBar:
-                            widget.showLanguagesButtonInAppBar,
-                        showMaterialDesignButtonInAppBar:
-                            widget.showMaterialDesignButtonInAppBar,
-                        useLightMode: widget.useLightMode,
-                        useMaterial3: widget.useMaterial3,
-                      )
-                    : _selectedDrawerItemIndex == ScreenSelected.aboutUsScreen.value
-                        ? AboutUsPage()
-                        : _selectedDrawerItemIndex == ScreenSelected.demoScreen2.value
-                            ? createPageForCalendarScreen()
-                            : createPageForMaterialDesignScreen(PageOfMaterialDesignScreenSelected.values[_selectedNavBarItemIndex], controller.value == 1),
+            appBar: createAppBar(getTitle(_selectedDrawerItemIndex)),
+            drawer: MyAppDrawer(
+                _selectedDrawerItemIndex, _onDrawerItemTapped, localizations),
+            body: createPage(),
+            // _selectedDrawerItemIndex == ScreenSelected.demoScreen1.value
+            //     ? createPageForTasksScreen()
+            //     : _selectedDrawerItemIndex ==
+            //             ScreenSelected.settingsScreen.value
+            //         ? SettingsPage(
+            //             colorSelected: widget.colorSelected,
+            //             colorSelectionMethod: widget.colorSelectionMethod,
+            //             handleBrightnessChange: widget.handleBrightnessChange,
+            //             handleColorSelect: widget.handleColorSelect,
+            //             handleDisplayBrightnessButtonInAppBarChange:
+            //                 widget.handleDisplayBrightnessButtonInAppBarChange,
+            //             handleDisplayColorImageButtonInAppBarChange:
+            //                 widget.handleDisplayColorImageButtonInAppBarChange,
+            //             handleDisplayColorSeedButtonInAppBarChange:
+            //                 widget.handleDisplayColorSeedButtonInAppBarChange,
+            //             handleDisplayLanguagesButtonInAppBarChange:
+            //                 widget.handleDisplayLanguagesButtonInAppBarChange,
+            //             handleDisplayMaterialDesignButtonInAppBarChange: widget
+            //                 .handleDisplayMaterialDesignButtonInAppBarChange,
+            //             handleImageSelect: widget.handleImageSelect,
+            //             handleLanguageSelect: widget.handleLanguageSelect,
+            //             handleMaterialVersionChange:
+            //                 widget.handleMaterialVersionChange,
+            //             imageSelected: widget.imageSelected,
+            //             languageSelected: widget.languageSelected,
+            //             launchCount: widget.launchCount,
+            //             showBrightnessButtonInAppBar:
+            //                 widget.showBrightnessButtonInAppBar,
+            //             showColorImageButtonInAppBar:
+            //                 widget.showColorImageButtonInAppBar,
+            //             showColorSeedButtonInAppBar:
+            //                 widget.showColorSeedButtonInAppBar,
+            //             showLanguagesButtonInAppBar:
+            //                 widget.showLanguagesButtonInAppBar,
+            //             showMaterialDesignButtonInAppBar:
+            //                 widget.showMaterialDesignButtonInAppBar,
+            //             useLightMode: widget.useLightMode,
+            //             useMaterial3: widget.useMaterial3,
+            //           )
+            //         : _selectedDrawerItemIndex ==
+            //                 ScreenSelected.aboutUsScreen.value
+            //             ? AboutUsPage()
+            //             : _selectedDrawerItemIndex ==
+            //                     ScreenSelected.demoScreen2.value
+            //                 ? createPageForCalendarScreen()
+            //                 : createPageForMaterialDesignScreen(
+            //                     PageOfMaterialDesignScreenSelected
+            //                         .values[_selectedNavBarItemIndex],
+            //                     controller.value == 1),
             navigationRail: NavigationRail(
               extended: showLargeSizeLayout,
               destinations:
-                  _selectedDrawerItemIndex == ScreenSelected.demoScreen1.value
+                  _selectedDrawerItemIndex == ScreenSelected.verben_1.value
                       ? navRailDemoScreen1Destinations
                       : _selectedDrawerItemIndex ==
                               ScreenSelected.settingsScreen.value
@@ -380,7 +353,7 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
                                   ScreenSelected.aboutUsScreen.value
                               ? navRailAboutUsScreenDestinations
                               : _selectedDrawerItemIndex ==
-                                      ScreenSelected.demoScreen2.value
+                                      ScreenSelected.konjugation_1_1.value
                                   ? navRailDemoScreen2Destinations
                                   : navRailMaterialDesignScreenDestinations,
               selectedIndex: _selectedNavBarItemIndex,
@@ -414,10 +387,12 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
             ),
             navigationBar: Visibility(
               //bottom navigation bar sẽ không hiện ở các màn hình settings và about us
-              visible: _selectedDrawerItemIndex !=
-                      ScreenSelected.settingsScreen.value &&
-                  _selectedDrawerItemIndex !=
-                      ScreenSelected.aboutUsScreen.value,
+              // visible: _selectedDrawerItemIndex !=
+              //         ScreenSelected.settingsScreen.value &&
+              //     _selectedDrawerItemIndex !=
+              //         ScreenSelected.aboutUsScreen.value,
+
+              visible: false,
               child: AppNavigationBars(
                 onSelectItem: (index) {
                   setState(() {
