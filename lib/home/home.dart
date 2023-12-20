@@ -7,6 +7,7 @@ import 'package:german_grammar/screen_demo_1/page_1_3.dart';
 import 'package:german_grammar/screen_demo_2/page_2_1.dart';
 import 'package:german_grammar/screen_demo_2/page_2_2.dart';
 import 'package:german_grammar/screen_demo_2/page_2_4.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 import '../app/app_localizations.dart';
 import '../screen_about_us/page_about_us.dart';
 import '../screen_demo_2/page_2_3.dart';
@@ -81,7 +82,7 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
   bool showMediumSizeLayout = false;
   bool showLargeSizeLayout = false;
 
-  int _selectedDrawerItemIndex = ScreenSelected.konjugation_1_1.value;
+  int _selectedDrawerItemIndex = ScreenSelected.adjektive_deklination_1.value;
   int _selectedNavBarItemIndex = 0;
 
   static final List<Widget> _demoScreen1 = <Widget>[
@@ -111,6 +112,13 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
     });
   }
 
+  _loadSelectedIndex() async {
+    SharedPreferences prefs = await SharedPreferences.getInstance();
+    setState(() {
+      _selectedDrawerItemIndex = (prefs.getInt('selectedIndex') ?? 0);
+    });
+  }
+
   @override
   initState() {
     super.initState();
@@ -123,6 +131,7 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
       parent: controller,
       curve: const Interval(0.5, 1.0),
     );
+    _loadSelectedIndex();
   }
 
   @override
@@ -190,8 +199,50 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
     }
   }
 
+  // Widget createPage() {
+  //   return pages.elementAt(_selectedDrawerItemIndex);
+  // }
+
   Widget createPage() {
-    return pages.elementAt(_selectedDrawerItemIndex);
+    if (_selectedDrawerItemIndex <= 114) {
+      return pages.elementAt(_selectedDrawerItemIndex);
+    } else if (_selectedDrawerItemIndex ==
+        ScreenSelected.settingsScreen.value) {
+      return SettingsPage(
+        colorSelected: widget.colorSelected,
+        colorSelectionMethod: widget.colorSelectionMethod,
+        handleBrightnessChange: widget.handleBrightnessChange,
+        handleColorSelect: widget.handleColorSelect,
+        handleDisplayBrightnessButtonInAppBarChange:
+            widget.handleDisplayBrightnessButtonInAppBarChange,
+        handleDisplayColorImageButtonInAppBarChange:
+            widget.handleDisplayColorImageButtonInAppBarChange,
+        handleDisplayColorSeedButtonInAppBarChange:
+            widget.handleDisplayColorSeedButtonInAppBarChange,
+        handleDisplayLanguagesButtonInAppBarChange:
+            widget.handleDisplayLanguagesButtonInAppBarChange,
+        handleDisplayMaterialDesignButtonInAppBarChange:
+            widget.handleDisplayMaterialDesignButtonInAppBarChange,
+        handleImageSelect: widget.handleImageSelect,
+        handleLanguageSelect: widget.handleLanguageSelect,
+        handleMaterialVersionChange: widget.handleMaterialVersionChange,
+        imageSelected: widget.imageSelected,
+        languageSelected: widget.languageSelected,
+        launchCount: widget.launchCount,
+        showBrightnessButtonInAppBar: widget.showBrightnessButtonInAppBar,
+        showColorImageButtonInAppBar: widget.showColorImageButtonInAppBar,
+        showColorSeedButtonInAppBar: widget.showColorSeedButtonInAppBar,
+        showLanguagesButtonInAppBar: widget.showLanguagesButtonInAppBar,
+        showMaterialDesignButtonInAppBar:
+            widget.showMaterialDesignButtonInAppBar,
+        useLightMode: widget.useLightMode,
+        useMaterial3: widget.useMaterial3,
+      );
+    } else if (_selectedDrawerItemIndex == ScreenSelected.aboutUsScreen.value) {
+      return AboutUsPage();
+    } else {
+      return Container(); // Trả về một widget mặc định nếu không có trang nào khớp
+    }
   }
 
   Widget createPageForTasksScreen() {
@@ -343,19 +394,20 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
             //                     controller.value == 1),
             navigationRail: NavigationRail(
               extended: showLargeSizeLayout,
-              destinations:
-                  _selectedDrawerItemIndex == ScreenSelected.verben_1.value
-                      ? navRailDemoScreen1Destinations
+              destinations: _selectedDrawerItemIndex ==
+                      ScreenSelected.adjektive_deklination_1.value
+                  ? navRailDemoScreen1Destinations
+                  : _selectedDrawerItemIndex ==
+                          ScreenSelected.settingsScreen.value
+                      ? navRailSettingsScreenDestinations
                       : _selectedDrawerItemIndex ==
-                              ScreenSelected.settingsScreen.value
-                          ? navRailSettingsScreenDestinations
+                              ScreenSelected.aboutUsScreen.value
+                          ? navRailAboutUsScreenDestinations
                           : _selectedDrawerItemIndex ==
-                                  ScreenSelected.aboutUsScreen.value
-                              ? navRailAboutUsScreenDestinations
-                              : _selectedDrawerItemIndex ==
-                                      ScreenSelected.konjugation_1_1.value
-                                  ? navRailDemoScreen2Destinations
-                                  : navRailMaterialDesignScreenDestinations,
+                                  ScreenSelected
+                                      .adjektivdeklination_typ1_1_1.value
+                              ? navRailDemoScreen2Destinations
+                              : navRailMaterialDesignScreenDestinations,
               selectedIndex: _selectedNavBarItemIndex,
               onDestinationSelected: (index) {
                 setState(() {
