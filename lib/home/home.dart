@@ -255,7 +255,7 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
 
   PreferredSizeWidget createAppBar(String title) {
     return AppBar(
-      title: Text(title),
+      title: Text(title, style: Theme.of(context).textTheme.titleMedium),
       actions: !showMediumSizeLayout && !showLargeSizeLayout
           ? [
               if (widget.showBrightnessButtonInAppBar)

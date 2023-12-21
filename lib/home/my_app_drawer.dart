@@ -125,7 +125,7 @@ class _MyAppDrawerState extends State<MyAppDrawer> {
           ),
           ListTile(
             title:
-                Text('1. Adjektive- Deklination', style: firstLevelTitleStyle),
+                Text('1. Adjektive', style: firstLevelTitleStyle),
             trailing: IconButton(
               icon: Icon(_isExpanded1 ? Icons.expand_less : Icons.expand_more),
               onPressed: () {
@@ -246,7 +246,7 @@ class _MyAppDrawerState extends State<MyAppDrawer> {
           ),
           ],
           ListTile(
-            title: Text('3. Artikel - Nomenbegleiter',
+            title: Text('3. Artikel',
                 style: firstLevelTitleStyle),
             trailing: IconButton(
               icon: Icon(_isExpanded3 ? Icons.expand_less : Icons.expand_more),
@@ -428,7 +428,7 @@ class _MyAppDrawerState extends State<MyAppDrawer> {
                 _onDrawerItemTapped(ScreenSelected.fragewoerter_6.value),
           ),
           ListTile(
-            title: Text('7. Kasus- 4 Fälle', style: firstLevelTitleStyle),
+            title: Text('7. Kasus', style: firstLevelTitleStyle),
             selected: widget._selectedDrawerItemIndex ==
                 ScreenSelected.kasus_4_faelle_7.value,
             onTap: () =>
@@ -436,14 +436,14 @@ class _MyAppDrawerState extends State<MyAppDrawer> {
           ),
           ListTile(
             title:
-                Text('8. Negation - Verneinung', style: firstLevelTitleStyle),
+                Text('8. Negation', style: firstLevelTitleStyle),
             selected: widget._selectedDrawerItemIndex ==
                 ScreenSelected.negation_verneinung_8.value,
             onTap: () =>
                 _onDrawerItemTapped(ScreenSelected.negation_verneinung_8.value),
           ),
           ListTile(
-            title: Text('9. Nomen - Substantive', style: firstLevelTitleStyle),
+            title: Text('9. Nomen', style: firstLevelTitleStyle),
             trailing: IconButton(
               icon: Icon(_isExpanded9 ? Icons.expand_less : Icons.expand_more),
               onPressed: () {
@@ -580,7 +580,7 @@ class _MyAppDrawerState extends State<MyAppDrawer> {
           ],
           ListTile(
             title:
-                Text('11. Pronomen - Fürwörter', style: firstLevelTitleStyle),
+                Text('11. Pronomen', style: firstLevelTitleStyle),
             trailing: IconButton(
               icon: Icon(_isExpanded11 ? Icons.expand_less : Icons.expand_more),
               onPressed: () {

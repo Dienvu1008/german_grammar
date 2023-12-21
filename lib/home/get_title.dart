@@ -2,7 +2,7 @@ import '../constants.dart';
 
 String getTitle(int _selectedDrawerItemIndex) {
   if (_selectedDrawerItemIndex == ScreenSelected.adjektive_deklination_1.value) {
-    return 'Adjektive - Deklination';
+    return 'Adjektive';
   } else if (_selectedDrawerItemIndex == ScreenSelected.adjektivdeklination_typ1_1_1.value) {
     return 'Adjektivdeklination Typ1';
   } else if (_selectedDrawerItemIndex == ScreenSelected.adjektivdeklination_typ2_1_2.value) {
@@ -28,7 +28,7 @@ String getTitle(int _selectedDrawerItemIndex) {
   } else if (_selectedDrawerItemIndex == ScreenSelected.partikeln_2_4.value) {
     return 'Partikeln';
   } else if (_selectedDrawerItemIndex == ScreenSelected.artikel_nomenbegleiter_3.value) {
-    return 'Artikel / Nomenbegleiter';
+    return 'Artikel';
   } else if (_selectedDrawerItemIndex == ScreenSelected.nullartikel_3_1.value) {
     return 'Nullartikel';
   } else if (_selectedDrawerItemIndex == ScreenSelected.bestimmter_artikel_3_2.value) {
@@ -62,11 +62,11 @@ String getTitle(int _selectedDrawerItemIndex) {
   } else if (_selectedDrawerItemIndex == ScreenSelected.fragewoerter_6.value) {
     return 'Fragewörter';
   } else if (_selectedDrawerItemIndex == ScreenSelected.kasus_4_faelle_7.value) {
-    return 'Kasus / 4 Fälle';
+    return 'Kasus';
   } else if (_selectedDrawerItemIndex == ScreenSelected.negation_verneinung_8.value) {
-    return 'Negation / Verneinung';
+    return 'Negation';
   } else if (_selectedDrawerItemIndex == ScreenSelected.nomen_substantive_9.value) {
-    return 'Nomen / Substantive';
+    return 'Nomen';
   } else if (_selectedDrawerItemIndex == ScreenSelected.genusbestimmung_9_1.value) {
     return 'Genusbestimmung';
   } else if (_selectedDrawerItemIndex == ScreenSelected.pluralbildung_9_2.value) {
@@ -96,7 +96,7 @@ String getTitle(int _selectedDrawerItemIndex) {
   } else if (_selectedDrawerItemIndex == ScreenSelected.temporale_praepositionen_10_6.value) {
     return 'Temporale Präpositionen';
   } else if (_selectedDrawerItemIndex == ScreenSelected.pronomen_fuerwoerter_11.value) {
-    return 'Pronomen / Fürwörter';
+    return 'Pronomen';
   } else if (_selectedDrawerItemIndex == ScreenSelected.personalpronomen_11_1.value) {
     return 'Personalpronomen';
   } else if (_selectedDrawerItemIndex == ScreenSelected.demonstrativpronomen_11_2.value) {
