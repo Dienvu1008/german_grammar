@@ -294,16 +294,25 @@ class Adjektive_Und_Partizipien_Als_Nomen_9_6 extends StatelessWidget {
                                       text: 'alt',
                                       style: textTheme.bodyMedium!.copyWith(
                                           color: Colors.red,
-                                          fontWeight: FontWeight.bold),
+                                          ),
                                     ),
                                   ),
                                   RichText(
                                     text: TextSpan(
-                                      text:
-                                          'Der Alte hinter dem Steuer sollte wirklich seinen Führerschein abgeben.',
-                                      style: textTheme.bodyMedium,
+                                      children: <TextSpan>[
+                                        TextSpan(
+                                          text: 'Der Alte',
+                                          style: textTheme.bodyMedium!
+                                              .copyWith(color: Colors.red),
+                                        ),
+                                        TextSpan(
+                                          text:
+                                              ' hinter dem Steuer sollte wirklich seinen Führerschein abgeben.',
+                                          style: textTheme.bodyMedium,
+                                        ),
+                                      ],
                                     ),
-                                  ),
+                                  )
                                 ]),
                                 TableRow(children: [
                                   RichText(
@@ -311,16 +320,25 @@ class Adjektive_Und_Partizipien_Als_Nomen_9_6 extends StatelessWidget {
                                       text: 'arbeitslos',
                                       style: textTheme.bodyMedium!.copyWith(
                                           color: Colors.red,
-                                          fontWeight: FontWeight.bold),
+                                          ),
                                     ),
                                   ),
                                   RichText(
                                     text: TextSpan(
-                                      text:
-                                          'Arbeitslose erhalten vom Arbeitsamt eine finanzielle Unterstützung.',
-                                      style: textTheme.bodyMedium,
+                                      children: <TextSpan>[
+                                        TextSpan(
+                                          text: 'Arbeitslose',
+                                          style: textTheme.bodyMedium!
+                                              .copyWith(color: Colors.red),
+                                        ),
+                                        TextSpan(
+                                          text:
+                                              ' erhalten vom Arbeitsamt eine finanzielle Unterstützung.',
+                                          style: textTheme.bodyMedium,
+                                        ),
+                                      ],
                                     ),
-                                  ),
+                                  )
                                 ]),
                                 TableRow(children: [
                                   RichText(
@@ -328,16 +346,25 @@ class Adjektive_Und_Partizipien_Als_Nomen_9_6 extends StatelessWidget {
                                       text: 'arm',
                                       style: textTheme.bodyMedium!.copyWith(
                                           color: Colors.red,
-                                          fontWeight: FontWeight.bold),
+                                          ),
                                     ),
                                   ),
                                   RichText(
                                     text: TextSpan(
-                                      text:
-                                          'Viele Arme in der Region wissen nicht, wie sie überleben sollen.',
-                                      style: textTheme.bodyMedium,
+                                      children: <TextSpan>[
+                                        TextSpan(
+                                          text: 'Viele Arme',
+                                          style: textTheme.bodyMedium!
+                                              .copyWith(color: Colors.red),
+                                        ),
+                                        TextSpan(
+                                          text:
+                                              ' in der Region wissen nicht, wie sie überleben sollen.',
+                                          style: textTheme.bodyMedium,
+                                        ),
+                                      ],
                                     ),
-                                  ),
+                                  )
                                 ]),
                                 TableRow(children: [
                                   RichText(
@@ -345,16 +372,25 @@ class Adjektive_Und_Partizipien_Als_Nomen_9_6 extends StatelessWidget {
                                       text: 'bekannt',
                                       style: textTheme.bodyMedium!.copyWith(
                                           color: Colors.red,
-                                          fontWeight: FontWeight.bold),
+                                          ),
                                     ),
                                   ),
                                   RichText(
                                     text: TextSpan(
-                                      text:
-                                          'Ein Bekannter von mir hat vor kurzem im Lotto 1 Million Euro gewonnen.',
-                                      style: textTheme.bodyMedium,
+                                      children: <TextSpan>[
+                                        TextSpan(
+                                          text: 'Ein Bekannter',
+                                          style: textTheme.bodyMedium!
+                                              .copyWith(color: Colors.red),
+                                        ),
+                                        TextSpan(
+                                          text:
+                                              ' von mir hat vor kurzem im Lotto 1 Million Euro gewonnen.',
+                                          style: textTheme.bodyMedium,
+                                        ),
+                                      ],
                                     ),
-                                  ),
+                                  )
                                 ]),
                                 TableRow(children: [
                                   RichText(
@@ -362,16 +398,25 @@ class Adjektive_Und_Partizipien_Als_Nomen_9_6 extends StatelessWidget {
                                       text: 'blind',
                                       style: textTheme.bodyMedium!.copyWith(
                                           color: Colors.red,
-                                          fontWeight: FontWeight.bold),
+                                          ),
                                     ),
                                   ),
                                   RichText(
                                     text: TextSpan(
-                                      text:
-                                          'Der Blinde hinter dem Steuer sieht nicht, dass die Ampel rot zeigt.',
-                                      style: textTheme.bodyMedium,
+                                      children: <TextSpan>[
+                                        TextSpan(
+                                          text: 'Der Blinde',
+                                          style: textTheme.bodyMedium!
+                                              .copyWith(color: Colors.red),
+                                        ),
+                                        TextSpan(
+                                          text:
+                                              ' hinter dem Steuer sieht nicht, dass die Ampel rot zeigt.',
+                                          style: textTheme.bodyMedium,
+                                        ),
+                                      ],
                                     ),
-                                  ),
+                                  )
                                 ]),
                                 TableRow(children: [
                                   RichText(
@@ -379,16 +424,29 @@ class Adjektive_Und_Partizipien_Als_Nomen_9_6 extends StatelessWidget {
                                       text: 'blond',
                                       style: textTheme.bodyMedium!.copyWith(
                                           color: Colors.red,
-                                          fontWeight: FontWeight.bold),
+                                          ),
                                     ),
                                   ),
                                   RichText(
                                     text: TextSpan(
-                                      text:
-                                          'Schau mal! Sieht die Blonde hinter der Theke nicht klasse aus?',
-                                      style: textTheme.bodyMedium,
+                                      children: <TextSpan>[
+                                        TextSpan(
+                                          text: 'Schau mal! Sieht ',
+                                          style: textTheme.bodyMedium,
+                                        ),
+                                        TextSpan(
+                                          text: 'die Blonde',
+                                          style: textTheme.bodyMedium!
+                                              .copyWith(color: Colors.red),
+                                        ),
+                                        TextSpan(
+                                          text:
+                                              ' hinter der Theke nicht klasse aus?',
+                                          style: textTheme.bodyMedium,
+                                        ),
+                                      ],
                                     ),
-                                  ),
+                                  )
                                 ]),
                                 TableRow(children: [
                                   RichText(
@@ -396,16 +454,28 @@ class Adjektive_Und_Partizipien_Als_Nomen_9_6 extends StatelessWidget {
                                       text: 'böse',
                                       style: textTheme.bodyMedium!.copyWith(
                                           color: Colors.red,
-                                          fontWeight: FontWeight.bold),
+                                          ),
                                     ),
                                   ),
                                   RichText(
                                     text: TextSpan(
-                                      text:
-                                          'Nimm dich in Acht! Das Böse ist überall.',
-                                      style: textTheme.bodyMedium,
+                                      children: <TextSpan>[
+                                        TextSpan(
+                                          text: 'Nimm dich in Acht! ',
+                                          style: textTheme.bodyMedium,
+                                        ),
+                                        TextSpan(
+                                          text: 'Das Böse',
+                                          style: textTheme.bodyMedium!
+                                              .copyWith(color: Colors.red),
+                                        ),
+                                        TextSpan(
+                                          text: ' ist überall.',
+                                          style: textTheme.bodyMedium,
+                                        ),
+                                      ],
                                     ),
-                                  ),
+                                  )
                                 ]),
                                 TableRow(children: [
                                   RichText(
@@ -413,16 +483,25 @@ class Adjektive_Und_Partizipien_Als_Nomen_9_6 extends StatelessWidget {
                                       text: 'deutsch',
                                       style: textTheme.bodyMedium!.copyWith(
                                           color: Colors.red,
-                                          fontWeight: FontWeight.bold),
+                                          ),
                                     ),
                                   ),
                                   RichText(
                                     text: TextSpan(
-                                      text:
-                                          'Die meisten Deutschen verbringen ihren Urlaub an der See.',
-                                      style: textTheme.bodyMedium,
+                                      children: <TextSpan>[
+                                        TextSpan(
+                                          text: 'Die meisten Deutschen',
+                                          style: textTheme.bodyMedium!
+                                              .copyWith(color: Colors.red),
+                                        ),
+                                        TextSpan(
+                                          text:
+                                              ' verbringen ihren Urlaub an der See.',
+                                          style: textTheme.bodyMedium,
+                                        ),
+                                      ],
                                     ),
-                                  ),
+                                  )
                                 ]),
                                 TableRow(children: [
                                   RichText(
@@ -430,16 +509,33 @@ class Adjektive_Und_Partizipien_Als_Nomen_9_6 extends StatelessWidget {
                                       text: 'dumm',
                                       style: textTheme.bodyMedium!.copyWith(
                                           color: Colors.red,
-                                          fontWeight: FontWeight.bold),
+                                          ),
                                     ),
                                   ),
                                   RichText(
                                     text: TextSpan(
-                                      text:
-                                          'Der Dumme verurteilt, der Kluge beurteilt.',
-                                      style: textTheme.bodyMedium,
+                                      children: <TextSpan>[
+                                        TextSpan(
+                                          text: 'Der Dumme',
+                                          style: textTheme.bodyMedium!
+                                              .copyWith(color: Colors.red),
+                                        ),
+                                        TextSpan(
+                                          text: ' verurteilt, ',
+                                          style: textTheme.bodyMedium,
+                                        ),
+                                        TextSpan(
+                                          text: 'der Kluge',
+                                          style: textTheme.bodyMedium!
+                                              .copyWith(color: Colors.red),
+                                        ),
+                                        TextSpan(
+                                          text: ' beurteilt.',
+                                          style: textTheme.bodyMedium,
+                                        ),
+                                      ],
                                     ),
-                                  ),
+                                  )
                                 ]),
                                 TableRow(children: [
                                   RichText(
@@ -447,16 +543,29 @@ class Adjektive_Und_Partizipien_Als_Nomen_9_6 extends StatelessWidget {
                                       text: 'einheimisch',
                                       style: textTheme.bodyMedium!.copyWith(
                                           color: Colors.red,
-                                          fontWeight: FontWeight.bold),
+                                          ),
                                     ),
                                   ),
                                   RichText(
                                     text: TextSpan(
-                                      text:
-                                          'Sie suchen die Landgasse? Fragen Sie am besten einen Einheimischen.',
-                                      style: textTheme.bodyMedium,
+                                      children: <TextSpan>[
+                                        TextSpan(
+                                          text:
+                                              'Sie suchen die Landgasse? Fragen Sie am besten ',
+                                          style: textTheme.bodyMedium,
+                                        ),
+                                        TextSpan(
+                                          text: 'einen Einheimischen',
+                                          style: textTheme.bodyMedium!
+                                              .copyWith(color: Colors.red),
+                                        ),
+                                        TextSpan(
+                                          text: '.',
+                                          style: textTheme.bodyMedium,
+                                        ),
+                                      ],
                                     ),
-                                  ),
+                                  )
                                 ]),
                                 TableRow(children: [
                                   RichText(
@@ -464,16 +573,25 @@ class Adjektive_Und_Partizipien_Als_Nomen_9_6 extends StatelessWidget {
                                       text: 'freiwillig',
                                       style: textTheme.bodyMedium!.copyWith(
                                           color: Colors.red,
-                                          fontWeight: FontWeight.bold),
+                                          ),
                                     ),
                                   ),
                                   RichText(
                                     text: TextSpan(
-                                      text:
-                                          'Viele Freiwillige halfen dabei, die Sturmschäden zu beseitigen.',
-                                      style: textTheme.bodyMedium,
+                                      children: <TextSpan>[
+                                        TextSpan(
+                                          text: 'Viele Freiwillige',
+                                          style: textTheme.bodyMedium!
+                                              .copyWith(color: Colors.red),
+                                        ),
+                                        TextSpan(
+                                          text:
+                                              ' halfen dabei, die Sturmschäden zu beseitigen.',
+                                          style: textTheme.bodyMedium,
+                                        ),
+                                      ],
                                     ),
-                                  ),
+                                  )
                                 ]),
                                 TableRow(children: [
                                   RichText(
@@ -481,16 +599,29 @@ class Adjektive_Und_Partizipien_Als_Nomen_9_6 extends StatelessWidget {
                                       text: 'fremd',
                                       style: textTheme.bodyMedium!.copyWith(
                                           color: Colors.red,
-                                          fontWeight: FontWeight.bold),
+                                          ),
                                     ),
                                   ),
                                   RichText(
                                     text: TextSpan(
-                                      text:
-                                          'Das hübsche Mädchen wird oft von Fremden angesprochen.',
-                                      style: textTheme.bodyMedium,
+                                      children: <TextSpan>[
+                                        TextSpan(
+                                          text:
+                                              'Das hübsche Mädchen wird oft von ',
+                                          style: textTheme.bodyMedium,
+                                        ),
+                                        TextSpan(
+                                          text: 'Fremden',
+                                          style: textTheme.bodyMedium!
+                                              .copyWith(color: Colors.red),
+                                        ),
+                                        TextSpan(
+                                          text: ' angesprochen.',
+                                          style: textTheme.bodyMedium,
+                                        ),
+                                      ],
                                     ),
-                                  ),
+                                  )
                                 ]),
                                 TableRow(children: [
                                   RichText(
@@ -498,16 +629,25 @@ class Adjektive_Und_Partizipien_Als_Nomen_9_6 extends StatelessWidget {
                                       text: 'gut',
                                       style: textTheme.bodyMedium!.copyWith(
                                           color: Colors.red,
-                                          fontWeight: FontWeight.bold),
+                                          ),
                                     ),
                                   ),
                                   RichText(
                                     text: TextSpan(
-                                      text:
-                                          'Das Gute daran ist, dass ihm bei seinem Unfall nichts passiert ist.',
-                                      style: textTheme.bodyMedium,
+                                      children: <TextSpan>[
+                                        TextSpan(
+                                          text: 'Das Gute',
+                                          style: textTheme.bodyMedium!
+                                              .copyWith(color: Colors.red),
+                                        ),
+                                        TextSpan(
+                                          text:
+                                              ' daran ist, dass ihm bei seinem Unfall nichts passiert ist.',
+                                          style: textTheme.bodyMedium,
+                                        ),
+                                      ],
                                     ),
-                                  ),
+                                  )
                                 ]),
                                 TableRow(children: [
                                   RichText(
@@ -515,16 +655,28 @@ class Adjektive_Und_Partizipien_Als_Nomen_9_6 extends StatelessWidget {
                                       text: 'spannend',
                                       style: textTheme.bodyMedium!.copyWith(
                                           color: Colors.red,
-                                          fontWeight: FontWeight.bold),
+                                          ),
                                     ),
                                   ),
                                   RichText(
                                     text: TextSpan(
-                                      text:
-                                          'Im Museum gab es viel Spannendes zu sehen.',
-                                      style: textTheme.bodyMedium,
+                                      children: <TextSpan>[
+                                        TextSpan(
+                                          text: 'Im Museum gab es viel ',
+                                          style: textTheme.bodyMedium,
+                                        ),
+                                        TextSpan(
+                                          text: 'Spannendes',
+                                          style: textTheme.bodyMedium!
+                                              .copyWith(color: Colors.red),
+                                        ),
+                                        TextSpan(
+                                          text: ' zu sehen.',
+                                          style: textTheme.bodyMedium,
+                                        ),
+                                      ],
                                     ),
-                                  ),
+                                  )
                                 ]),
                                 TableRow(children: [
                                   RichText(
@@ -532,16 +684,25 @@ class Adjektive_Und_Partizipien_Als_Nomen_9_6 extends StatelessWidget {
                                       text: 'klein',
                                       style: textTheme.bodyMedium!.copyWith(
                                           color: Colors.red,
-                                          fontWeight: FontWeight.bold),
+                                          ),
                                     ),
                                   ),
                                   RichText(
                                     text: TextSpan(
-                                      text:
-                                          'Die Kleine, die neben Petra steht, sieht wirklich klasse aus.',
-                                      style: textTheme.bodyMedium,
+                                      children: <TextSpan>[
+                                        TextSpan(
+                                          text: 'Die Kleine',
+                                          style: textTheme.bodyMedium!
+                                              .copyWith(color: Colors.red),
+                                        ),
+                                        TextSpan(
+                                          text:
+                                              ', die neben Petra steht, sieht wirklich klasse aus.',
+                                          style: textTheme.bodyMedium,
+                                        ),
+                                      ],
                                     ),
-                                  ),
+                                  )
                                 ]),
                                 TableRow(children: [
                                   RichText(
@@ -549,16 +710,28 @@ class Adjektive_Und_Partizipien_Als_Nomen_9_6 extends StatelessWidget {
                                       text: 'krank',
                                       style: textTheme.bodyMedium!.copyWith(
                                           color: Colors.red,
-                                          fontWeight: FontWeight.bold),
+                                          ),
                                     ),
                                   ),
                                   RichText(
                                     text: TextSpan(
-                                      text:
-                                          'Diese Klinik hat schon vielen Kranken helfen können.',
-                                      style: textTheme.bodyMedium,
+                                      children: <TextSpan>[
+                                        TextSpan(
+                                          text: 'Diese Klinik hat schon ',
+                                          style: textTheme.bodyMedium,
+                                        ),
+                                        TextSpan(
+                                          text: 'vielen Kranken',
+                                          style: textTheme.bodyMedium!
+                                              .copyWith(color: Colors.red),
+                                        ),
+                                        TextSpan(
+                                          text: ' helfen können.',
+                                          style: textTheme.bodyMedium,
+                                        ),
+                                      ],
                                     ),
-                                  ),
+                                  )
                                 ]),
                                 TableRow(children: [
                                   RichText(
@@ -566,16 +739,29 @@ class Adjektive_Und_Partizipien_Als_Nomen_9_6 extends StatelessWidget {
                                       text: 'kriminell',
                                       style: textTheme.bodyMedium!.copyWith(
                                           color: Colors.red,
-                                          fontWeight: FontWeight.bold),
+                                          ),
                                     ),
                                   ),
                                   RichText(
                                     text: TextSpan(
-                                      text:
-                                          'In dieser Stadt gibt es leider viel zu viele Kriminelle.',
-                                      style: textTheme.bodyMedium,
+                                      children: <TextSpan>[
+                                        TextSpan(
+                                          text:
+                                              'In dieser Stadt gibt es leider viel zu viele ',
+                                          style: textTheme.bodyMedium,
+                                        ),
+                                        TextSpan(
+                                          text: 'Kriminelle',
+                                          style: textTheme.bodyMedium!
+                                              .copyWith(color: Colors.red),
+                                        ),
+                                        TextSpan(
+                                          text: '.',
+                                          style: textTheme.bodyMedium,
+                                        ),
+                                      ],
                                     ),
-                                  ),
+                                  )
                                 ]),
                                 TableRow(children: [
                                   RichText(
@@ -583,16 +769,33 @@ class Adjektive_Und_Partizipien_Als_Nomen_9_6 extends StatelessWidget {
                                       text: 'ledig',
                                       style: textTheme.bodyMedium!.copyWith(
                                           color: Colors.red,
-                                          fontWeight: FontWeight.bold),
+                                          ),
                                     ),
                                   ),
                                   RichText(
                                     text: TextSpan(
-                                      text:
-                                          'Ein Lediger hat andere Probleme als ein Verheirateter.',
-                                      style: textTheme.bodyMedium,
+                                      children: <TextSpan>[
+                                        TextSpan(
+                                          text: 'Ein Lediger',
+                                          style: textTheme.bodyMedium!
+                                              .copyWith(color: Colors.red),
+                                        ),
+                                        TextSpan(
+                                          text: ' hat andere Probleme als ',
+                                          style: textTheme.bodyMedium,
+                                        ),
+                                        TextSpan(
+                                          text: 'ein Verheirateter',
+                                          style: textTheme.bodyMedium!
+                                              .copyWith(color: Colors.red),
+                                        ),
+                                        TextSpan(
+                                          text: '.',
+                                          style: textTheme.bodyMedium,
+                                        ),
+                                      ],
                                     ),
-                                  ),
+                                  )
                                 ]),
                                 TableRow(children: [
                                   RichText(
@@ -600,16 +803,29 @@ class Adjektive_Und_Partizipien_Als_Nomen_9_6 extends StatelessWidget {
                                       text: 'nächste',
                                       style: textTheme.bodyMedium!.copyWith(
                                           color: Colors.red,
-                                          fontWeight: FontWeight.bold),
+                                          ),
                                     ),
                                   ),
                                   RichText(
                                     text: TextSpan(
-                                      text:
-                                          'Eine freundliche Arzthelferin ruft den Nächsten auf.',
-                                      style: textTheme.bodyMedium,
+                                      children: <TextSpan>[
+                                        TextSpan(
+                                          text:
+                                              'Eine freundliche Arzthelferin ruft ',
+                                          style: textTheme.bodyMedium,
+                                        ),
+                                        TextSpan(
+                                          text: 'den Nächsten',
+                                          style: textTheme.bodyMedium!
+                                              .copyWith(color: Colors.red),
+                                        ),
+                                        TextSpan(
+                                          text: ' auf.',
+                                          style: textTheme.bodyMedium,
+                                        ),
+                                      ],
                                     ),
-                                  ),
+                                  )
                                 ]),
                                 TableRow(children: [
                                   RichText(
@@ -617,16 +833,29 @@ class Adjektive_Und_Partizipien_Als_Nomen_9_6 extends StatelessWidget {
                                       text: 'obdachlos',
                                       style: textTheme.bodyMedium!.copyWith(
                                           color: Colors.red,
-                                          fontWeight: FontWeight.bold),
+                                          ),
                                     ),
                                   ),
                                   RichText(
                                     text: TextSpan(
-                                      text:
-                                          'Gibt es in eurer Stadt auch so viele Obdachlose?',
-                                      style: textTheme.bodyMedium,
+                                      children: <TextSpan>[
+                                        TextSpan(
+                                          text:
+                                              'Gibt es in eurer Stadt auch so ',
+                                          style: textTheme.bodyMedium,
+                                        ),
+                                        TextSpan(
+                                          text: 'viele Obdachlose',
+                                          style: textTheme.bodyMedium!
+                                              .copyWith(color: Colors.red),
+                                        ),
+                                        TextSpan(
+                                          text: '?',
+                                          style: textTheme.bodyMedium,
+                                        ),
+                                      ],
                                     ),
-                                  ),
+                                  )
                                 ]),
                                 TableRow(children: [
                                   RichText(
@@ -634,16 +863,28 @@ class Adjektive_Und_Partizipien_Als_Nomen_9_6 extends StatelessWidget {
                                       text: 'schön',
                                       style: textTheme.bodyMedium!.copyWith(
                                           color: Colors.red,
-                                          fontWeight: FontWeight.bold),
+                                          ),
                                     ),
                                   ),
                                   RichText(
                                     text: TextSpan(
-                                      text:
-                                          'Es gibt viele Frauen. Aber die Schönen sind unerreichbar.',
-                                      style: textTheme.bodyMedium,
+                                      children: <TextSpan>[
+                                        TextSpan(
+                                          text: 'Es gibt viele Frauen. Aber ',
+                                          style: textTheme.bodyMedium,
+                                        ),
+                                        TextSpan(
+                                          text: 'die Schönen',
+                                          style: textTheme.bodyMedium!
+                                              .copyWith(color: Colors.red),
+                                        ),
+                                        TextSpan(
+                                          text: ' sind unerreichbar.',
+                                          style: textTheme.bodyMedium,
+                                        ),
+                                      ],
                                     ),
-                                  ),
+                                  )
                                 ]),
                                 TableRow(children: [
                                   RichText(
@@ -651,16 +892,29 @@ class Adjektive_Und_Partizipien_Als_Nomen_9_6 extends StatelessWidget {
                                       text: 'schwarzhaarig',
                                       style: textTheme.bodyMedium!.copyWith(
                                           color: Colors.red,
-                                          fontWeight: FontWeight.bold),
+                                          ),
                                     ),
                                   ),
                                   RichText(
                                     text: TextSpan(
-                                      text:
-                                          'Hannelore verliebt sich immer nur in Schwarzhaarige.',
-                                      style: textTheme.bodyMedium,
+                                      children: <TextSpan>[
+                                        TextSpan(
+                                          text:
+                                              'Hannelore verliebt sich immer nur in ',
+                                          style: textTheme.bodyMedium,
+                                        ),
+                                        TextSpan(
+                                          text: 'Schwarzhaarige',
+                                          style: textTheme.bodyMedium!
+                                              .copyWith(color: Colors.red),
+                                        ),
+                                        TextSpan(
+                                          text: '.',
+                                          style: textTheme.bodyMedium,
+                                        ),
+                                      ],
                                     ),
-                                  ),
+                                  )
                                 ]),
                                 TableRow(children: [
                                   RichText(
@@ -668,16 +922,34 @@ class Adjektive_Und_Partizipien_Als_Nomen_9_6 extends StatelessWidget {
                                       text: 'selbständig',
                                       style: textTheme.bodyMedium!.copyWith(
                                           color: Colors.red,
-                                          fontWeight: FontWeight.bold),
+                                          ),
                                     ),
                                   ),
                                   RichText(
                                     text: TextSpan(
-                                      text:
-                                          'Selbständige arbeiten in der Regel mehr als Angestellte.',
-                                      style: textTheme.bodyMedium,
+                                      children: <TextSpan>[
+                                        TextSpan(
+                                          text: 'Selbständige',
+                                          style: textTheme.bodyMedium!
+                                              .copyWith(color: Colors.red),
+                                        ),
+                                        TextSpan(
+                                          text:
+                                              ' arbeiten in der Regel mehr als ',
+                                          style: textTheme.bodyMedium,
+                                        ),
+                                        TextSpan(
+                                          text: 'Angestellte',
+                                          style: textTheme.bodyMedium!
+                                              .copyWith(color: Colors.red),
+                                        ),
+                                        TextSpan(
+                                          text: '.',
+                                          style: textTheme.bodyMedium,
+                                        ),
+                                      ],
                                     ),
-                                  ),
+                                  )
                                 ]),
                                 TableRow(children: [
                                   RichText(
@@ -685,16 +957,29 @@ class Adjektive_Und_Partizipien_Als_Nomen_9_6 extends StatelessWidget {
                                       text: 'tot',
                                       style: textTheme.bodyMedium!.copyWith(
                                           color: Colors.red,
-                                          fontWeight: FontWeight.bold),
+                                          ),
                                     ),
                                   ),
                                   RichText(
                                     text: TextSpan(
-                                      text:
-                                          'Am Donnerstag wurde am Steuer eines Kleinwagens ein Toter entdeckt.',
-                                      style: textTheme.bodyMedium,
+                                      children: <TextSpan>[
+                                        TextSpan(
+                                          text:
+                                              'Am Donnerstag wurde am Steuer eines Kleinwagens ',
+                                          style: textTheme.bodyMedium,
+                                        ),
+                                        TextSpan(
+                                          text: 'ein Toter',
+                                          style: textTheme.bodyMedium!
+                                              .copyWith(color: Colors.red),
+                                        ),
+                                        TextSpan(
+                                          text: ' entdeckt.',
+                                          style: textTheme.bodyMedium,
+                                        ),
+                                      ],
                                     ),
-                                  ),
+                                  )
                                 ]),
                               ],
                             ),
@@ -754,7 +1039,7 @@ class Adjektive_Und_Partizipien_Als_Nomen_9_6 extends StatelessWidget {
                                       text: 'abwesend',
                                       style: textTheme.bodyMedium!.copyWith(
                                           color: Colors.red,
-                                          fontWeight: FontWeight.bold),
+                                          ),
                                     ),
                                   ),
                                   RichText(
@@ -767,8 +1052,7 @@ class Adjektive_Und_Partizipien_Als_Nomen_9_6 extends StatelessWidget {
                                             style: textTheme.bodyMedium!
                                                 .copyWith(
                                                     color: Colors.red,
-                                                    fontWeight:
-                                                        FontWeight.bold)),
+                                                    )),
                                         TextSpan(
                                             text:
                                                 ' haben diese wichtige Information nicht erhalten.',
@@ -783,7 +1067,7 @@ class Adjektive_Und_Partizipien_Als_Nomen_9_6 extends StatelessWidget {
                                       text: 'anwesend',
                                       style: textTheme.bodyMedium!.copyWith(
                                           color: Colors.red,
-                                          fontWeight: FontWeight.bold),
+                                          ),
                                     ),
                                   ),
                                   RichText(
@@ -796,8 +1080,7 @@ class Adjektive_Und_Partizipien_Als_Nomen_9_6 extends StatelessWidget {
                                             style: textTheme.bodyMedium!
                                                 .copyWith(
                                                     color: Colors.red,
-                                                    fontWeight:
-                                                        FontWeight.bold)),
+                                                    )),
                                         TextSpan(
                                             text:
                                                 ' haben die Prüfung bestanden.',
@@ -812,7 +1095,7 @@ class Adjektive_Und_Partizipien_Als_Nomen_9_6 extends StatelessWidget {
                                       text: 'ausbildend',
                                       style: textTheme.bodyMedium!.copyWith(
                                           color: Colors.red,
-                                          fontWeight: FontWeight.bold),
+                                          ),
                                     ),
                                   ),
                                   RichText(
@@ -825,8 +1108,7 @@ class Adjektive_Und_Partizipien_Als_Nomen_9_6 extends StatelessWidget {
                                             style: textTheme.bodyMedium!
                                                 .copyWith(
                                                     color: Colors.red,
-                                                    fontWeight:
-                                                        FontWeight.bold)),
+                                                    )),
                                         TextSpan(
                                             text:
                                                 ' müssen einen Nachweis über die Ausbildung führen.',
@@ -841,7 +1123,7 @@ class Adjektive_Und_Partizipien_Als_Nomen_9_6 extends StatelessWidget {
                                       text: 'heranwachsend',
                                       style: textTheme.bodyMedium!.copyWith(
                                           color: Colors.red,
-                                          fontWeight: FontWeight.bold),
+                                          ),
                                     ),
                                   ),
                                   RichText(
@@ -854,8 +1136,7 @@ class Adjektive_Und_Partizipien_Als_Nomen_9_6 extends StatelessWidget {
                                             style: textTheme.bodyMedium!
                                                 .copyWith(
                                                     color: Colors.red,
-                                                    fontWeight:
-                                                        FontWeight.bold)),
+                                                    )),
                                         TextSpan(
                                             text:
                                                 ' sind Personen, die ein Alter von 18 - 20 Jahren haben.',
@@ -870,7 +1151,7 @@ class Adjektive_Und_Partizipien_Als_Nomen_9_6 extends StatelessWidget {
                                       text: 'leidtragend',
                                       style: textTheme.bodyMedium!.copyWith(
                                           color: Colors.red,
-                                          fontWeight: FontWeight.bold),
+                                          ),
                                     ),
                                   ),
                                   RichText(
@@ -884,8 +1165,7 @@ class Adjektive_Und_Partizipien_Als_Nomen_9_6 extends StatelessWidget {
                                             style: textTheme.bodyMedium!
                                                 .copyWith(
                                                     color: Colors.red,
-                                                    fontWeight:
-                                                        FontWeight.bold)),
+                                                    )),
                                         TextSpan(
                                             text: '.',
                                             style: textTheme.bodyMedium),
@@ -899,7 +1179,7 @@ class Adjektive_Und_Partizipien_Als_Nomen_9_6 extends StatelessWidget {
                                       text: 'mitwirkend',
                                       style: textTheme.bodyMedium!.copyWith(
                                           color: Colors.red,
-                                          fontWeight: FontWeight.bold),
+                                          ),
                                     ),
                                   ),
                                   RichText(
@@ -912,8 +1192,7 @@ class Adjektive_Und_Partizipien_Als_Nomen_9_6 extends StatelessWidget {
                                             style: textTheme.bodyMedium!
                                                 .copyWith(
                                                     color: Colors.red,
-                                                    fontWeight:
-                                                        FontWeight.bold)),
+                                                    )),
                                         TextSpan(
                                             text:
                                                 ' an dieser Sendung gilt ein besonderer Dank.',
@@ -928,7 +1207,7 @@ class Adjektive_Und_Partizipien_Als_Nomen_9_6 extends StatelessWidget {
                                       text: 'reisend',
                                       style: textTheme.bodyMedium!.copyWith(
                                           color: Colors.red,
-                                          fontWeight: FontWeight.bold),
+                                          ),
                                     ),
                                   ),
                                   RichText(
@@ -941,8 +1220,7 @@ class Adjektive_Und_Partizipien_Als_Nomen_9_6 extends StatelessWidget {
                                             style: textTheme.bodyMedium!
                                                 .copyWith(
                                                     color: Colors.red,
-                                                    fontWeight:
-                                                        FontWeight.bold)),
+                                                    )),
                                         TextSpan(
                                             text: ' soll man nicht aufhalten.',
                                             style: textTheme.bodyMedium),
@@ -956,7 +1234,7 @@ class Adjektive_Und_Partizipien_Als_Nomen_9_6 extends StatelessWidget {
                                       text: 'überlebend',
                                       style: textTheme.bodyMedium!.copyWith(
                                           color: Colors.red,
-                                          fontWeight: FontWeight.bold),
+                                          ),
                                     ),
                                   ),
                                   RichText(
@@ -970,8 +1248,7 @@ class Adjektive_Und_Partizipien_Als_Nomen_9_6 extends StatelessWidget {
                                             style: textTheme.bodyMedium!
                                                 .copyWith(
                                                     color: Colors.red,
-                                                    fontWeight:
-                                                        FontWeight.bold)),
+                                                   )),
                                         TextSpan(
                                             text: '.',
                                             style: textTheme.bodyMedium),
@@ -985,7 +1262,7 @@ class Adjektive_Und_Partizipien_Als_Nomen_9_6 extends StatelessWidget {
                                       text: 'vorsitzend',
                                       style: textTheme.bodyMedium!.copyWith(
                                           color: Colors.red,
-                                          fontWeight: FontWeight.bold),
+                                          ),
                                     ),
                                   ),
                                   RichText(
@@ -998,8 +1275,7 @@ class Adjektive_Und_Partizipien_Als_Nomen_9_6 extends StatelessWidget {
                                             style: textTheme.bodyMedium!
                                                 .copyWith(
                                                     color: Colors.red,
-                                                    fontWeight:
-                                                        FontWeight.bold)),
+                                                   )),
                                         TextSpan(
                                             text:
                                                 ' des Vereins stellt sein Amt zur Verfügung.',
@@ -1069,7 +1345,7 @@ class Adjektive_Und_Partizipien_Als_Nomen_9_6 extends StatelessWidget {
                                       text: 'abgeordnet',
                                       style: textTheme.bodyMedium!.copyWith(
                                           color: Colors.red,
-                                          fontWeight: FontWeight.bold),
+                                          ),
                                     ),
                                   ),
                                   RichText(
@@ -1088,8 +1364,7 @@ class Adjektive_Und_Partizipien_Als_Nomen_9_6 extends StatelessWidget {
                                             style: textTheme.bodyMedium!
                                                 .copyWith(
                                                     color: Colors.red,
-                                                    fontWeight:
-                                                        FontWeight.bold)),
+                                                    )),
                                         TextSpan(
                                             text: ' sitzen z.B. im Bundestag.',
                                             style: textTheme.bodyMedium),
@@ -1103,7 +1378,7 @@ class Adjektive_Und_Partizipien_Als_Nomen_9_6 extends StatelessWidget {
                                       text: 'angehörig',
                                       style: textTheme.bodyMedium!.copyWith(
                                           color: Colors.red,
-                                          fontWeight: FontWeight.bold),
+                                          ),
                                     ),
                                   ),
                                   RichText(
@@ -1123,8 +1398,7 @@ class Adjektive_Und_Partizipien_Als_Nomen_9_6 extends StatelessWidget {
                                             style: textTheme.bodyMedium!
                                                 .copyWith(
                                                     color: Colors.red,
-                                                    fontWeight:
-                                                        FontWeight.bold)),
+                                                    )),
                                         TextSpan(
                                             text: '?',
                                             style: textTheme.bodyMedium),
@@ -1138,7 +1412,7 @@ class Adjektive_Und_Partizipien_Als_Nomen_9_6 extends StatelessWidget {
                                       text: 'angeklagt',
                                       style: textTheme.bodyMedium!.copyWith(
                                           color: Colors.red,
-                                          fontWeight: FontWeight.bold),
+                                          ),
                                     ),
                                   ),
                                   RichText(
@@ -1157,8 +1431,7 @@ class Adjektive_Und_Partizipien_Als_Nomen_9_6 extends StatelessWidget {
                                             style: textTheme.bodyMedium!
                                                 .copyWith(
                                                     color: Colors.red,
-                                                    fontWeight:
-                                                        FontWeight.bold)),
+                                                    )),
                                         TextSpan(
                                             text: ' verweigerte seine Aussage.',
                                             style: textTheme.bodyMedium),
@@ -1172,7 +1445,7 @@ class Adjektive_Und_Partizipien_Als_Nomen_9_6 extends StatelessWidget {
                                       text: 'angestellt',
                                       style: textTheme.bodyMedium!.copyWith(
                                           color: Colors.red,
-                                          fontWeight: FontWeight.bold),
+                                          ),
                                     ),
                                   ),
                                   RichText(
@@ -1191,8 +1464,7 @@ class Adjektive_Und_Partizipien_Als_Nomen_9_6 extends StatelessWidget {
                                             style: textTheme.bodyMedium!
                                                 .copyWith(
                                                     color: Colors.red,
-                                                    fontWeight:
-                                                        FontWeight.bold)),
+                                                    )),
                                         TextSpan(
                                             text:
                                                 ' haben bessere Tarifverträge als Arbeiter.',
@@ -1207,7 +1479,7 @@ class Adjektive_Und_Partizipien_Als_Nomen_9_6 extends StatelessWidget {
                                       text: 'beamtet',
                                       style: textTheme.bodyMedium!.copyWith(
                                           color: Colors.red,
-                                          fontWeight: FontWeight.bold),
+                                          ),
                                     ),
                                   ),
                                   RichText(
@@ -1226,8 +1498,7 @@ class Adjektive_Und_Partizipien_Als_Nomen_9_6 extends StatelessWidget {
                                             style: textTheme.bodyMedium!
                                                 .copyWith(
                                                     color: Colors.red,
-                                                    fontWeight:
-                                                        FontWeight.bold)),
+                                                    )),
                                         TextSpan(
                                             text: ' ist der Staat.',
                                             style: textTheme.bodyMedium),
@@ -1241,7 +1512,7 @@ class Adjektive_Und_Partizipien_Als_Nomen_9_6 extends StatelessWidget {
                                       text: 'betrogen',
                                       style: textTheme.bodyMedium!.copyWith(
                                           color: Colors.red,
-                                          fontWeight: FontWeight.bold),
+                                      ),
                                     ),
                                   ),
                                   RichText(
@@ -1260,8 +1531,7 @@ class Adjektive_Und_Partizipien_Als_Nomen_9_6 extends StatelessWidget {
                                             style: textTheme.bodyMedium!
                                                 .copyWith(
                                                     color: Colors.red,
-                                                    fontWeight:
-                                                        FontWeight.bold)),
+                                                    )),
                                         TextSpan(
                                             text:
                                                 ' verschwieg zuerst seinen Schaden.',
@@ -1276,7 +1546,7 @@ class Adjektive_Und_Partizipien_Als_Nomen_9_6 extends StatelessWidget {
                                       text: 'betrunken',
                                       style: textTheme.bodyMedium!.copyWith(
                                           color: Colors.red,
-                                          fontWeight: FontWeight.bold),
+                                          ),
                                     ),
                                   ),
                                   RichText(
@@ -1295,8 +1565,7 @@ class Adjektive_Und_Partizipien_Als_Nomen_9_6 extends StatelessWidget {
                                             style: textTheme.bodyMedium!
                                                 .copyWith(
                                                     color: Colors.red,
-                                                    fontWeight:
-                                                        FontWeight.bold)),
+                                                    )),
                                         TextSpan(
                                             text: '.',
                                             style: textTheme.bodyMedium),
@@ -1310,7 +1579,7 @@ class Adjektive_Und_Partizipien_Als_Nomen_9_6 extends StatelessWidget {
                                       text: 'gefangen',
                                       style: textTheme.bodyMedium!.copyWith(
                                           color: Colors.red,
-                                          fontWeight: FontWeight.bold),
+                                          ),
                                     ),
                                   ),
                                   RichText(
@@ -1329,8 +1598,7 @@ class Adjektive_Und_Partizipien_Als_Nomen_9_6 extends StatelessWidget {
                                             style: textTheme.bodyMedium!
                                                 .copyWith(
                                                     color: Colors.red,
-                                                    fontWeight:
-                                                        FontWeight.bold)),
+                                                    )),
                                         TextSpan(
                                             text:
                                                 ' sitzen lebenslang hinter Gitter.',
@@ -1345,7 +1613,7 @@ class Adjektive_Und_Partizipien_Als_Nomen_9_6 extends StatelessWidget {
                                       text: 'geliebt',
                                       style: textTheme.bodyMedium!.copyWith(
                                           color: Colors.red,
-                                          fontWeight: FontWeight.bold),
+                                          ),
                                     ),
                                   ),
                                   RichText(
@@ -1364,8 +1632,7 @@ class Adjektive_Und_Partizipien_Als_Nomen_9_6 extends StatelessWidget {
                                             style: textTheme.bodyMedium!
                                                 .copyWith(
                                                     color: Colors.red,
-                                                    fontWeight:
-                                                        FontWeight.bold)),
+                                                   )),
                                         TextSpan(
                                             text:
                                                 ' und seine Frau weiß von nichts.',
@@ -1380,7 +1647,7 @@ class Adjektive_Und_Partizipien_Als_Nomen_9_6 extends StatelessWidget {
                                       text: 'prostituiert',
                                       style: textTheme.bodyMedium!.copyWith(
                                           color: Colors.red,
-                                          fontWeight: FontWeight.bold),
+                                          ),
                                     ),
                                   ),
                                   RichText(
@@ -1399,8 +1666,7 @@ class Adjektive_Und_Partizipien_Als_Nomen_9_6 extends StatelessWidget {
                                             style: textTheme.bodyMedium!
                                                 .copyWith(
                                                     color: Colors.red,
-                                                    fontWeight:
-                                                        FontWeight.bold)),
+                                                    )),
                                         TextSpan(
                                             text:
                                                 ' kämpft immer mit Vorurteilen.',
@@ -1415,7 +1681,7 @@ class Adjektive_Und_Partizipien_Als_Nomen_9_6 extends StatelessWidget {
                                       text: 'verdächtigt',
                                       style: textTheme.bodyMedium!.copyWith(
                                           color: Colors.red,
-                                          fontWeight: FontWeight.bold),
+                                          ),
                                     ),
                                   ),
                                   RichText(
@@ -1434,8 +1700,7 @@ class Adjektive_Und_Partizipien_Als_Nomen_9_6 extends StatelessWidget {
                                             style: textTheme.bodyMedium!
                                                 .copyWith(
                                                     color: Colors.red,
-                                                    fontWeight:
-                                                        FontWeight.bold)),
+                                                    )),
                                         TextSpan(
                                             text:
                                                 ' werden von der Polizei vernommen.',
@@ -1450,7 +1715,7 @@ class Adjektive_Und_Partizipien_Als_Nomen_9_6 extends StatelessWidget {
                                       text: 'verheiratet',
                                       style: textTheme.bodyMedium!.copyWith(
                                           color: Colors.red,
-                                          fontWeight: FontWeight.bold),
+                                          ),
                                     ),
                                   ),
                                   RichText(
@@ -1469,8 +1734,7 @@ class Adjektive_Und_Partizipien_Als_Nomen_9_6 extends StatelessWidget {
                                             style: textTheme.bodyMedium!
                                                 .copyWith(
                                                     color: Colors.red,
-                                                    fontWeight:
-                                                        FontWeight.bold)),
+                                                    )),
                                         TextSpan(
                                             text: ' wirklich glücklicher als ',
                                             style: textTheme.bodyMedium),
@@ -1479,8 +1743,7 @@ class Adjektive_Und_Partizipien_Als_Nomen_9_6 extends StatelessWidget {
                                             style: textTheme.bodyMedium!
                                                 .copyWith(
                                                     color: Colors.red,
-                                                    fontWeight:
-                                                        FontWeight.bold)),
+                                                    )),
                                         TextSpan(
                                             text: '?',
                                             style: textTheme.bodyMedium),
@@ -1494,7 +1757,7 @@ class Adjektive_Und_Partizipien_Als_Nomen_9_6 extends StatelessWidget {
                                       text: 'verletzt',
                                       style: textTheme.bodyMedium!.copyWith(
                                           color: Colors.red,
-                                          fontWeight: FontWeight.bold),
+                                          ),
                                     ),
                                   ),
                                   RichText(
@@ -1514,8 +1777,7 @@ class Adjektive_Und_Partizipien_Als_Nomen_9_6 extends StatelessWidget {
                                             style: textTheme.bodyMedium!
                                                 .copyWith(
                                                     color: Colors.red,
-                                                    fontWeight:
-                                                        FontWeight.bold)),
+                                                    )),
                                         TextSpan(
                                             text: ' stoppen.',
                                             style: textTheme.bodyMedium),
@@ -1529,7 +1791,7 @@ class Adjektive_Und_Partizipien_Als_Nomen_9_6 extends StatelessWidget {
                                       text: 'verliebt',
                                       style: textTheme.bodyMedium!.copyWith(
                                           color: Colors.red,
-                                          fontWeight: FontWeight.bold),
+                                          ),
                                     ),
                                   ),
                                   RichText(
@@ -1549,8 +1811,7 @@ class Adjektive_Und_Partizipien_Als_Nomen_9_6 extends StatelessWidget {
                                             style: textTheme.bodyMedium!
                                                 .copyWith(
                                                     color: Colors.red,
-                                                    fontWeight:
-                                                        FontWeight.bold)),
+                                                    )),
                                         TextSpan(
                                             text: '.',
                                             style: textTheme.bodyMedium),
@@ -1564,7 +1825,7 @@ class Adjektive_Und_Partizipien_Als_Nomen_9_6 extends StatelessWidget {
                                       text: 'vermisst',
                                       style: textTheme.bodyMedium!.copyWith(
                                           color: Colors.red,
-                                          fontWeight: FontWeight.bold),
+                                          ),
                                     ),
                                   ),
                                   RichText(
@@ -1583,8 +1844,7 @@ class Adjektive_Und_Partizipien_Als_Nomen_9_6 extends StatelessWidget {
                                             style: textTheme.bodyMedium!
                                                 .copyWith(
                                                     color: Colors.red,
-                                                    fontWeight:
-                                                        FontWeight.bold)),
+                                                    )),
                                         TextSpan(
                                             text: ' wieder auf.',
                                             style: textTheme.bodyMedium),
@@ -1598,7 +1858,7 @@ class Adjektive_Und_Partizipien_Als_Nomen_9_6 extends StatelessWidget {
                                       text: 'verstorben',
                                       style: textTheme.bodyMedium!.copyWith(
                                           color: Colors.red,
-                                          fontWeight: FontWeight.bold),
+                                          ),
                                     ),
                                   ),
                                   RichText(
@@ -1617,8 +1877,7 @@ class Adjektive_Und_Partizipien_Als_Nomen_9_6 extends StatelessWidget {
                                             style: textTheme.bodyMedium!
                                                 .copyWith(
                                                     color: Colors.red,
-                                                    fontWeight:
-                                                        FontWeight.bold)),
+                                                    )),
                                         TextSpan(
                                             text:
                                                 ' hinterließ dem Zoo ein großes Vermögen.',
@@ -1633,7 +1892,7 @@ class Adjektive_Und_Partizipien_Als_Nomen_9_6 extends StatelessWidget {
                                       text: 'vorgesetzt',
                                       style: textTheme.bodyMedium!.copyWith(
                                           color: Colors.red,
-                                          fontWeight: FontWeight.bold),
+                                          ),
                                     ),
                                   ),
                                   RichText(
@@ -1653,8 +1912,7 @@ class Adjektive_Und_Partizipien_Als_Nomen_9_6 extends StatelessWidget {
                                             style: textTheme.bodyMedium!
                                                 .copyWith(
                                                     color: Colors.red,
-                                                    fontWeight:
-                                                        FontWeight.bold)),
+                                                    )),
                                         TextSpan(
                                             text: '.',
                                             style: textTheme.bodyMedium),
