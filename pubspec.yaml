@@ -21,6 +21,7 @@ dependencies:
   flutter_html: ^3.0.0-alpha.6
   flutter_widget_from_html: ^0.14.8
   #flutter_tts: ^3.5.1
+  html: ^0.15.0
 
 dev_dependencies:
   flutter_test:
