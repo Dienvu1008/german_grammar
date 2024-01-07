@@ -929,6 +929,7 @@ class _MyAppDrawerState extends State<MyAppDrawer> {
               onPressed: () {
                 setState(() {
                   _isExpanded13 = !_isExpanded13;
+                  _saveExpansionState();
                 });
               },
             ),
@@ -960,7 +961,7 @@ class _MyAppDrawerState extends State<MyAppDrawer> {
               //title: Text('13.3. Verb \'haben\'', style: secondLevelTitleStyle),
               title: Row(
                 children: <Widget>[
-                  Text('13.2. Verb ', style: secondLevelTitleStyle),
+                  Text('13.3. Verb ', style: secondLevelTitleStyle),
                   Text('haben',
                       style: secondLevelTitleStyle.copyWith(color: Colors.red)),
                 ],
