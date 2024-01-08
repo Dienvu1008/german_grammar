@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-import '../app/app_localizations.dart';
 import '../page_content.dart';
 
 class Nicht_Passivfaehige_Verben_13_11_2 extends StatelessWidget {

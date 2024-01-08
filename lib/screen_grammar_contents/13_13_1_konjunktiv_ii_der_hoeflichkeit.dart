@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-import '../app/app_localizations.dart';
 import '../page_content.dart';
 
 class Konjunktiv_II_Der_Hoeflichkeit_13_13_1 extends StatelessWidget {

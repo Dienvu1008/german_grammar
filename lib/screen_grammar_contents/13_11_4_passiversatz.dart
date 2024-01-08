@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-import '../app/app_localizations.dart';
 import '../page_content.dart';
 
 class Passiversatz_13_11_4 extends StatelessWidget {
@@ -8,25 +7,13 @@ class Passiversatz_13_11_4 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final localizations = AppLocalizations.of(context);
-    return const Expanded(
-        child: Center(
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: <Widget>[
-          Text(
-            'Coming Soon',
-            style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
-          ),
-          SizedBox(height: 20),
-          Text(
-            'availble soon',
-            style: TextStyle(fontSize: 20),
-            textAlign: TextAlign.center,
-          ),
-        ],
+    return Expanded(
+      child: Scaffold(
+        body: Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: MyPageContentView(contents: contents)),
       ),
-    ));
+    );
   }
 }
 List<CardContent> contents = [
@@ -78,7 +65,12 @@ String htmlContent2_1 = '''
 <p>&nbsp;</p>
 ''';
 String htmlTable2_2 = '''
-<table><colgroup> <col style="width: 15%;"> <col style="width: 20%;"> <col style="width: 15%;"> <col style="width: 35%;"> <col style="width: 15%;"> </colgroup>
+<table><colgroup> 
+<col style="width: 15%;"> 
+<col style="width: 20%;"> 
+<col style="width: 15%;"> 
+<col style="width: 35%;"> 
+<col style="width: 15%;"> </colgroup>
 <thead>
 <tr>
 <th>&nbsp;</th>
@@ -90,39 +82,42 @@ String htmlTable2_2 = '''
 </thead>
 <tbody>
 <tr>
-<th rowspan="2" align="center">Aktivsatz</th>
+<th align="center">Aktivsatz</th>
 <td style="text-align: center;">Hermann</td>
 <td style="text-align: center;"><strong><span class="red">putzt</span></strong></td>
 <td style="text-align: center;">gerade die Schuhe.</td>
 <td style="text-align: center;">&nbsp;</td>
 </tr>
 <tr>
+<th align="center">Aktivsatz</th>
 <td style="text-align: center;">Maria</td>
 <td style="text-align: center;"><strong><span class="red">kocht</span></strong></td>
 <td style="text-align: center;">die Suppe.</td>
 <td style="text-align: center;">&nbsp;</td>
 </tr>
 <tr>
-<th rowspan="2" align="center">Passiv</th>
+<th align="center">Passiv</th>
 <td style="text-align: center;">Die Schuhe</td>
 <td style="text-align: center;"><strong><span class="red">werden</span></strong></td>
 <td style="text-align: center;">gerade</td>
 <td style="text-align: center;"><strong><span class="red">geputzt</span></strong>.</td>
 </tr>
 <tr>
+<th align="center">Passiv</th>
 <td style="text-align: center;">Die Suppe</td>
 <td style="text-align: center;"><strong><span class="red">wird</span></strong></td>
 <td style="text-align: center;">&nbsp;</td>
 <td style="text-align: center;"><strong><span class="red">gekocht</span></strong>.</td>
 </tr>
 <tr>
-<th rowspan="2" align="center">man</th>
+<th align="center">man</th>
 <td style="text-align: center;">Man</td>
 <td style="text-align: center;"><strong><span class="red">putzt</span></strong></td>
 <td style="text-align: center;">gerade die Schuhe.</td>
 <td style="text-align: center;">&nbsp;</td>
 </tr>
 <tr>
+<th align="center">man</th>
 <td style="text-align: center;">Jemand</td>
 <td style="text-align: center;"><strong><span class="red">kocht</span></strong></td>
 <td style="text-align: center;">die Suppe.</td>
@@ -152,7 +147,7 @@ String htmlTable2_4 = '''
 </thead>
 <tbody>
 <tr>
-<th rowspan="2">Aktivsatz</th>
+<th >Aktivsatz</th>
 <td style="text-align: center;">Hercules</td>
 <td style="text-align: center;"><strong><span class="red">kann</span></strong></td>
 <td style="text-align: center;">das Tor nicht</td>
@@ -160,6 +155,7 @@ String htmlTable2_4 = '''
 <td style="text-align: center;">&nbsp;</td>
 </tr>
 <tr>
+<th >Aktivsatz</th>
 <td style="text-align: center;">Die Männer</td>
 <td style="text-align: center;"><strong><span class="red">können</span></strong></td>
 <td style="text-align: center;">den Tisch nicht</td>
@@ -167,7 +163,7 @@ String htmlTable2_4 = '''
 <td style="text-align: center;">&nbsp;</td>
 </tr>
 <tr>
-<th rowspan="2">Passiv</th>
+<th >Passiv</th>
 <td style="text-align: center;">Das Tor</td>
 <td style="text-align: center;"><strong><span class="red">kann</span></strong></td>
 <td style="text-align: center;">nicht</td>
@@ -175,6 +171,7 @@ String htmlTable2_4 = '''
 <td style="text-align: center;"><strong><span class="red">werden</span></strong>.</td>
 </tr>
 <tr>
+<th >Passiv</th>
 <td style="text-align: center;">Der Tisch</td>
 <td style="text-align: center;"><strong><span class="red">kann</span></strong></td>
 <td style="text-align: center;">nicht</td>
@@ -182,7 +179,7 @@ String htmlTable2_4 = '''
 <td style="text-align: center;"><strong><span class="red">werden</span></strong>.</td>
 </tr>
 <tr>
-<th rowspan="2">s. lassen + Inf.</th>
+<th >s. lassen + Inf.</th>
 <td style="text-align: center;">Das Tor</td>
 <td style="text-align: center;"><strong><span class="red">lässt</span></strong></td>
 <td style="text-align: center;">sich nicht</td>
@@ -190,6 +187,7 @@ String htmlTable2_4 = '''
 <td style="text-align: center;">&nbsp;</td>
 </tr>
 <tr>
+<th >s. lassen + Inf.</th>
 <td style="text-align: center;">Der Tisch</td>
 <td style="text-align: center;"><strong><span class="red">lässt</span></strong></td>
 <td style="text-align: center;">sich nicht</td>
@@ -220,7 +218,7 @@ String htmlTable2_6 = '''
 </thead>
 <tbody align="center">
 <tr>
-<th rowspan="2">Aktivsatz</th>
+<th >Aktivsatz</th>
 <td style="text-align: center;">Die Arbeiter</td>
 <td style="text-align: center;"><strong><span class="red">können</span></strong></td>
 <td style="text-align: center;">die Aufgabe nicht</td>
@@ -228,6 +226,7 @@ String htmlTable2_6 = '''
 <td style="text-align: center;">&nbsp;</td>
 </tr>
 <tr>
+<th >Aktivsatz</th>
 <td style="text-align: center;">Der Schüler</td>
 <td style="text-align: center;"><strong><span class="red">kann</span></strong></td>
 <td style="text-align: center;">sehr schön</td>
@@ -235,7 +234,7 @@ String htmlTable2_6 = '''
 <td style="text-align: center;">&nbsp;</td>
 </tr>
 <tr>
-<th rowspan="2">Passiv</th>
+<th >Passiv</th>
 <td style="text-align: center;">Die Aufgabe</td>
 <td style="text-align: center;"><strong><span class="red">kann</span></strong></td>
 <td style="text-align: center;">nicht</td>
@@ -243,6 +242,7 @@ String htmlTable2_6 = '''
 <td style="text-align: center;"><strong><span class="red">werden</span></strong>.</td>
 </tr>
 <tr>
+<th >Passiv</th>
 <td style="text-align: center;">Die Schrift</td>
 <td style="text-align: center;"><strong><span class="red">kann</span></strong></td>
 <td style="text-align: center;">sehr gut</td>
@@ -250,7 +250,7 @@ String htmlTable2_6 = '''
 <td style="text-align: center;"><strong><span class="red">werden</span></strong>.</td>
 </tr>
 <tr>
-<th rowspan="2">s. lassen + Inf.</th>
+<th >s. lassen + Inf.</th>
 <td style="text-align: center;">Die Aufgabe</td>
 <td style="text-align: center;"><strong><span class="red">lässt</span></strong></td>
 <td style="text-align: center;">sich nicht</td>
@@ -258,6 +258,7 @@ String htmlTable2_6 = '''
 <td style="text-align: center;">&nbsp;</td>
 </tr>
 <tr>
+<th >s. lassen + Inf.</th>
 <td style="text-align: center;">Die Schrift</td>
 <td style="text-align: center;"><strong><span class="red">lässt</span></strong></td>
 <td style="text-align: center;">sich sehr gut</td>
@@ -265,7 +266,7 @@ String htmlTable2_6 = '''
 <td style="text-align: center;">&nbsp;</td>
 </tr>
 <tr>
-<th rowspan="2">sein + Adj.</th>
+<th >sein + Adj.</th>
 <td style="text-align: center;">Die Aufgabe</td>
 <td style="text-align: center;"><strong><span class="red">ist</span></strong></td>
 <td style="text-align: center;">nicht <strong><span class="red">lösbar</span></strong>.</td>
@@ -273,6 +274,7 @@ String htmlTable2_6 = '''
 <td style="text-align: center;">&nbsp;</td>
 </tr>
 <tr>
+<th >sein + Adj.</th>
 <td style="text-align: center;">Die Schrift</td>
 <td style="text-align: center;"><strong><span class="red">ist</span></strong></td>
 <td style="text-align: center;">gut <strong><span class="red">leserlich</span></strong>.</td>
@@ -303,26 +305,28 @@ String htmlTable2_8 = '''
 </thead>
 <tbody>
 <tr>
-<th rowspan="2">Aktivsatz</th>
+<th >Aktivsatz</th>
 <td style="text-align: center;">Gustav</td>
 <td style="text-align: center;"><strong><span class="red">will</span></strong></td>
 <td style="text-align: center;">das Auto nicht</td>
 <td style="text-align: center;"><strong><span class="red">verkaufen</span></strong>.</td>
 </tr>
 <tr>
+<th >Aktivsatz</th>
 <td style="text-align: center;">Sie</td>
 <td style="text-align: center;"><strong><span class="red">müssen</span></strong></td>
 <td style="text-align: center;">die Rechnung sofort</td>
 <td style="text-align: center;"><strong><span class="red">bezahlen</span></strong>.</td>
 </tr>
 <tr>
-<th rowspan="2">sein + zu + Infinitiv</th>
+<th >sein + zu + Infinitiv</th>
 <td style="text-align: center;">Das Auto</td>
 <td style="text-align: center;"><strong><span class="red">ist</span></strong></td>
 <td style="text-align: center;">nicht</td>
 <td style="text-align: center;"><strong><span class="red">zu verkaufen</span></strong>.</td>
 </tr>
 <tr>
+<th >sein + zu + Infinitiv</th>
 <td style="text-align: center;">Die Rechnung</td>
 <td style="text-align: center;"><strong><span class="red">ist</span></strong></td>
 <td style="text-align: center;">sofort</td>
@@ -352,39 +356,42 @@ String htmlTable2_10 = '''
 </thead>
 <tbody align="center">
 <tr>
-<th rowspan="2" align="center">Aktivsatz</th>
+<th align="center">Aktivsatz</th>
 <td style="text-align: center;">Die Tante</td>
 <td style="text-align: center;"><strong><span class="red">schenkt</span></strong></td>
 <td style="text-align: center;">dem Kind 100 Euro.</td>
 <td style="text-align: center;">&nbsp;</td>
 </tr>
 <tr>
+<th align="center">Aktivsatz</th>
 <td style="text-align: center;">Der Lehrer</td>
 <td style="text-align: center;"><strong><span class="red">erklärt</span></strong></td>
 <td style="text-align: center;">den Schülern die Grammatik.</td>
 <td style="text-align: center;">&nbsp;</td>
 </tr>
 <tr>
-<th rowspan="2" align="center">Passiv</th>
+<th align="center">Passiv</th>
 <td style="text-align: center;">Dem Kind</td>
 <td style="text-align: center;"><strong><span class="red">werden</span></strong></td>
 <td style="text-align: center;">100 Euro</td>
 <td style="text-align: center;"><strong><span class="red">geschenkt</span></strong>.</td>
 </tr>
 <tr>
+<th align="center">Passiv</th>
 <td style="text-align: center;">Den Schülern</td>
 <td style="text-align: center;"><strong><span class="red">wird</span></strong></td>
 <td style="text-align: center;">das Passiv</td>
 <td style="text-align: center;"><strong><span class="red">erklärt</span></strong>.</td>
 </tr>
 <tr>
-<th rowspan="2" align="center">bekommen + Infinitiv</th>
+<th align="center">bekommen + Infinitiv</th>
 <td style="text-align: center;">Das Kind</td>
 <td style="text-align: center;"><strong><span class="red">kriegt</span></strong></td>
 <td style="text-align: center;">100 Euro</td>
 <td style="text-align: center;"><strong><span class="red">geschenkt</span></strong>.</td>
 </tr>
 <tr>
+<th align="center">bekommen + Infinitiv</th>
 <td style="text-align: center;">Die Schüler</td>
 <td style="text-align: center;"><strong><span class="red">bekommen</span></strong></td>
 <td style="text-align: center;">das Passiv</td>

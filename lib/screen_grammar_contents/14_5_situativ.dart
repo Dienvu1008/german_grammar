@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-import '../app/app_localizations.dart';
 import '../page_content.dart';
 
 class Situativ_14_5 extends StatelessWidget {

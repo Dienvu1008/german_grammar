@@ -83,6 +83,7 @@ class HtmlToRichText extends StatelessWidget {
 
     return RichText(
       text: TextSpan(
+        locale: const Locale('de_DE'),
         children: spans,
       ),
     );

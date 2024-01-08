@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-import '../app/app_localizations.dart';
 import '../page_content.dart';
 
 class Irreale_Bedingungssaetze_13_13_4 extends StatelessWidget {

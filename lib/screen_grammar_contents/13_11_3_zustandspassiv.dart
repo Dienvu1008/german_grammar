@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-import '../app/app_localizations.dart';
 import '../page_content.dart';
 
 class Zustandspassiv_13_11_3 extends StatelessWidget {
@@ -8,25 +7,13 @@ class Zustandspassiv_13_11_3 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final localizations = AppLocalizations.of(context);
-    return const Expanded(
-        child: Center(
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: <Widget>[
-          Text(
-            'Coming Soon',
-            style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
-          ),
-          SizedBox(height: 20),
-          Text(
-            'availble soon',
-            style: TextStyle(fontSize: 20),
-            textAlign: TextAlign.center,
-          ),
-        ],
+    return Expanded(
+      child: Scaffold(
+        body: Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: MyPageContentView(contents: contents)),
       ),
-    ));
+    );
   }
 }
 List<CardContent> contents = [
@@ -68,16 +55,16 @@ String htmlContent1_1 = '''
 </div>
 ''';
 String htmlTable1_2 = '''
-<table>
+<table><colgroup> <col style="width: 25%;"> 
+<col style="width: 25%;"> 
+<col style="width: 25%;"> 
+<col style="width: 25%;"> </colgroup>
 <thead>
-<tr>
-<th rowspan="2">Aktivsatz</th>
-<th rowspan="2">Vorgangspassiv<br>Präsens</th>
-<th colspan="2">abgeschlossene Handlung</th>
-</tr>
-<tr>
-<th>Passiv Perfekt</th>
-<th><strong><span class="red">Zustandspassiv</span></strong></th>
+<tr align="center">
+<th >Aktivsatz</th>
+<th >Vorgangspassiv<br>Präsens</th>
+<th>abgeschlossene Handlung\nPassiv Perfekt</th>
+<th>abgeschlossene Handlung\n<strong><span class="red">Zustandspassiv</span></strong></th>
 </tr>
 </thead>
 <tbody>
@@ -117,9 +104,9 @@ String htmlContent2_1 = '''
 <p>&nbsp;</p>
 ''';
 String htmlTable2_2 = '''
-<table class="eins">
+<table class="eins"><colgroup> <col style="width: 100%;"> </colgroup>
 <tbody>
-<tr>
+<tr align="center">
 <td align="center">
 <h3 style="text-align: center;">&nbsp;&nbsp;&nbsp;&nbsp;<strong><span class="red">sein</span></strong> &nbsp;&nbsp;&nbsp;&nbsp;+ &nbsp;&nbsp;&nbsp;&nbsp; <strong><span class="blue">Partizip II</span></strong>&nbsp;&nbsp;&nbsp;&nbsp;</h3>
 </td>
@@ -142,9 +129,14 @@ String htmlContent3_1 = '''
 <p>&nbsp;</p>
 ''';
 String htmlTable3_2 = '''
-<table>
+<table><colgroup> <col style="width: 20%;"> 
+<col style="width: 20%;"> 
+<col style="width: 15%;"> 
+<col style="width: 15%;"> 
+<col style="width: 15%;"> 
+<col style="width: 15%;"> </colgroup>
 <thead>
-<tr>
+<tr align="center">
 <th>&nbsp;</th>
 <th>Position 1</th>
 <th>Hilfsverb</th>
@@ -155,7 +147,7 @@ String htmlTable3_2 = '''
 </thead>
 <tbody align="center">
 <tr>
-<th style="text-align: center;" rowspan="2" align="center">Präsens</th>
+<th style="text-align: center;" align="center">Präsens</th>
 <td style="text-align: center;">Das Auto</td>
 <td style="text-align: center;"><strong><span class="red">ist</span></strong></td>
 <td style="text-align: center;">bereits</td>
@@ -163,6 +155,7 @@ String htmlTable3_2 = '''
 <td style="text-align: center;">&nbsp;</td>
 </tr>
 <tr>
+<th style="text-align: center;" align="center">Präsens</th>
 <td style="text-align: center;">Die Betten</td>
 <td style="text-align: center;"><strong><span class="red">sind</span></strong></td>
 <td style="text-align: center;">bereits</td>
@@ -170,7 +163,7 @@ String htmlTable3_2 = '''
 <td style="text-align: center;">&nbsp;</td>
 </tr>
 <tr>
-<th style="text-align: center;" rowspan="2" align="center">Präteritum</th>
+<th style="text-align: center;" align="center">Präteritum</th>
 <td style="text-align: center;">Das Auto</td>
 <td style="text-align: center;"><strong><span class="red">war</span></strong></td>
 <td style="text-align: center;">schon</td>
@@ -178,6 +171,7 @@ String htmlTable3_2 = '''
 <td style="text-align: center;">&nbsp;</td>
 </tr>
 <tr>
+<th style="text-align: center;" align="center">Präteritum</th>
 <td style="text-align: center;">Die Betten</td>
 <td style="text-align: center;"><strong><span class="red">waren</span></strong></td>
 <td style="text-align: center;">schon</td>
@@ -185,7 +179,7 @@ String htmlTable3_2 = '''
 <td style="text-align: center;">&nbsp;</td>
 </tr>
 <tr>
-<th style="text-align: center;" rowspan="2" align="center">Futur I</th>
+<th style="text-align: center;" align="center">Futur I</th>
 <td style="text-align: center;">Das Auto</td>
 <td style="text-align: center;"><strong><span class="red">wird</span></strong></td>
 <td style="text-align: center;">morgen</td>
@@ -193,6 +187,7 @@ String htmlTable3_2 = '''
 <td style="text-align: center;"><strong><span class="red">sein</span></strong>.</td>
 </tr>
 <tr>
+<th style="text-align: center;" align="center">Futur I</th>
 <td style="text-align: center;">Die Betten</td>
 <td style="text-align: center;"><strong><span class="red">werden</span></strong></td>
 <td style="text-align: center;">auch morgen</td>

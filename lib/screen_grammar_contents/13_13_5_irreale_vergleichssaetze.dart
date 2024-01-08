@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-import '../app/app_localizations.dart';
 import '../page_content.dart';
 
 class Irreale_Vergleichssaetze_13_13_5 extends StatelessWidget {
@@ -8,25 +7,13 @@ class Irreale_Vergleichssaetze_13_13_5 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final localizations = AppLocalizations.of(context);
-    return const Expanded(
-        child: Center(
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: <Widget>[
-          Text(
-            'Coming Soon',
-            style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
-          ),
-          SizedBox(height: 20),
-          Text(
-            'availble soon',
-            style: TextStyle(fontSize: 20),
-            textAlign: TextAlign.center,
-          ),
-        ],
+    return Expanded(
+      child: Scaffold(
+        body: Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: MyPageContentView(contents: contents)),
       ),
-    ));
+    );
   }
 }
 
@@ -62,16 +49,17 @@ String htmlContent1_1 = '''
 <p>&nbsp;</p>
 ''';
 String htmlTable1_2 = '''
-<table><colgroup> <col style="width: 30%;"> <col style="width: 15%;"> <col style="width: 32%;"> <col style="width: 24%;"> </colgroup>
+<table><colgroup> 
+<col style="width: 30%;"> 
+<col style="width: 15%;"> 
+<col style="width: 31%;"> 
+<col style="width: 24%;"> </colgroup>
 <thead>
-<tr>
-<th rowspan="2">Hauptsatz</th>
-<th colspan="3">Nebensatz</th>
-</tr>
-<tr>
-<th><strong><span class="blue">Konjunktion</span></strong></th>
-<th>Mittelfeld</th>
-<th><strong><span class="red">Verben</span></strong></th>
+<tr align="center">
+<th>Hauptsatz</th>
+<th>Nebensatz\n<strong><span class="blue">Konjunktion</span></strong></th>
+<th>Nebensatz\nMittelfeld</th>
+<th>Nebensatz\n<strong><span class="red">Verben</span></strong></th>
 </tr>
 </thead>
 <tbody>
@@ -102,17 +90,19 @@ String htmlContent1_3 = '''
 <p>&nbsp;</p>
 ''';
 String htmlTable1_4 = '''
-<table><colgroup> <col style="width: 30%;"> <col style="width: 15%;"> <col style="width: 11%;"> <col style="width: 29%;"> <col style="width: 15%;"> </colgroup>
+<table><colgroup> 
+<col style="width: 30%;"> 
+<col style="width: 15%;"> 
+<col style="width: 11%;"> 
+<col style="width: 29%;"> 
+<col style="width: 15%;"> </colgroup>
 <thead>
-<tr>
-<th rowspan="2">Hauptsatz 1</th>
-<th colspan="4">Hauptsatz 2</th>
-</tr>
-<tr>
-<th><strong><span class="blue">Konjunktion</span></strong></th>
-<th><strong><span class="red">Verb 1</span></strong></th>
-<th>Mittelfeld</th>
-<th><strong><span class="red">Verb 2</span></strong></th>
+<tr align="center">
+<th>Hauptsatz 1</th>
+<th>Hauptsatz 2\n<strong><span class="blue">Konjunktion</span></strong></th>
+<th>Hauptsatz 2\n<strong><span class="red">Verb 1</span></strong></th>
+<th>Hauptsatz 2\nMittelfeld</th>
+<th>Hauptsatz 2\n<strong><span class="red">Verb 2</span></strong></th>
 </tr>
 </thead>
 <tbody>
@@ -146,16 +136,17 @@ String htmlContent1_5 = '''
 <p>&nbsp;</p>
 ''';
 String htmlTable1_6 = '''
-<table><colgroup> <col style="width: 30%;"> <col style="width: 15%;"> <col style="width: 30%;"> <col style="width: 24%;"> </colgroup>
+<table>
+<colgroup> <col style="width: 30%;"> 
+<col style="width: 15%;"> 
+<col style="width: 30%;"> 
+<col style="width: 24%;"> </colgroup>
 <thead>
-<tr>
-<th rowspan="2">Hauptsatz</th>
-<th colspan="3">Nebensatz</th>
-</tr>
-<tr>
-<th><strong><span class="blue">Konjunktion</span></strong></th>
-<th>Mittelfeld</th>
-<th><strong><span class="red">Verben</span></strong></th>
+<tr align="center">
+<th>Hauptsatz</th>
+<th>Nebensatz\n<strong><span class="blue">Konjunktion</span></strong></th>
+<th>Nebensatz\nMittelfeld</th>
+<th>Nebensatz\n<strong><span class="red">Verben</span></strong></th>
 </tr>
 </thead>
 <tbody>

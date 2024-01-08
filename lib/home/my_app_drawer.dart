@@ -124,8 +124,7 @@ class _MyAppDrawerState extends State<MyAppDrawer> {
             child: Text('German Grammar'),
           ),
           ListTile(
-            title:
-                Text('1. Adjektive', style: firstLevelTitleStyle),
+            title: Text('1. Adjektive', style: firstLevelTitleStyle),
             trailing: IconButton(
               icon: Icon(_isExpanded1 ? Icons.expand_less : Icons.expand_more),
               onPressed: () {
@@ -194,9 +193,9 @@ class _MyAppDrawerState extends State<MyAppDrawer> {
               onTap: () =>
                   _onDrawerItemTapped(ScreenSelected.adjektivgruppen_1_7.value),
             ),
-                      const Divider(
-            height: 4,
-          ),
+            const Divider(
+              height: 4,
+            ),
           ],
           ListTile(
             title: Text('2. Adverbien', style: firstLevelTitleStyle),
@@ -241,13 +240,12 @@ class _MyAppDrawerState extends State<MyAppDrawer> {
               onTap: () =>
                   _onDrawerItemTapped(ScreenSelected.partikeln_2_4.value),
             ),
-                      const Divider(
-            height: 4,
-          ),
+            const Divider(
+              height: 4,
+            ),
           ],
           ListTile(
-            title: Text('3. Artikel',
-                style: firstLevelTitleStyle),
+            title: Text('3. Artikel', style: firstLevelTitleStyle),
             trailing: IconButton(
               icon: Icon(_isExpanded3 ? Icons.expand_less : Icons.expand_more),
               onPressed: () {
@@ -316,9 +314,9 @@ class _MyAppDrawerState extends State<MyAppDrawer> {
               onTap: () => _onDrawerItemTapped(
                   ScreenSelected.interrogativartikel_3_7.value),
             ),
-                      const Divider(
-            height: 4,
-          ),
+            const Divider(
+              height: 4,
+            ),
           ],
           ListTile(
             title: Text('4. Attribute', style: firstLevelTitleStyle),
@@ -416,9 +414,9 @@ class _MyAppDrawerState extends State<MyAppDrawer> {
               onTap: () => _onDrawerItemTapped(
                   ScreenSelected.infinitivkonstruktionen_5_6.value),
             ),
-                      const Divider(
-            height: 4,
-          ),
+            const Divider(
+              height: 4,
+            ),
           ],
           ListTile(
             title: Text('6. Fragewörter', style: firstLevelTitleStyle),
@@ -435,8 +433,7 @@ class _MyAppDrawerState extends State<MyAppDrawer> {
                 _onDrawerItemTapped(ScreenSelected.kasus_4_faelle_7.value),
           ),
           ListTile(
-            title:
-                Text('8. Negation', style: firstLevelTitleStyle),
+            title: Text('8. Negation', style: firstLevelTitleStyle),
             selected: widget._selectedDrawerItemIndex ==
                 ScreenSelected.negation_verneinung_8.value,
             onTap: () =>
@@ -507,9 +504,9 @@ class _MyAppDrawerState extends State<MyAppDrawer> {
               onTap: () =>
                   _onDrawerItemTapped(ScreenSelected.nominalisierung_9_7.value),
             ),
-                      const Divider(
-            height: 4,
-          ),
+            const Divider(
+              height: 4,
+            ),
           ],
           ListTile(
             title: Text('10. Präpositionen', style: firstLevelTitleStyle),
@@ -574,13 +571,12 @@ class _MyAppDrawerState extends State<MyAppDrawer> {
               onTap: () => _onDrawerItemTapped(
                   ScreenSelected.temporale_praepositionen_10_6.value),
             ),
-                      const Divider(
-            height: 4,
-          ),
+            const Divider(
+              height: 4,
+            ),
           ],
           ListTile(
-            title:
-                Text('11. Pronomen', style: firstLevelTitleStyle),
+            title: Text('11. Pronomen', style: firstLevelTitleStyle),
             trailing: IconButton(
               icon: Icon(_isExpanded11 ? Icons.expand_less : Icons.expand_more),
               onPressed: () {
@@ -657,9 +653,9 @@ class _MyAppDrawerState extends State<MyAppDrawer> {
               onTap: () =>
                   _onDrawerItemTapped(ScreenSelected.pronomen_es_11_7.value),
             ),
-                      const Divider(
-            height: 4,
-          ),
+            const Divider(
+              height: 4,
+            ),
           ],
           ListTile(
             title: Text('12. Satzlehre', style: firstLevelTitleStyle),
@@ -918,9 +914,9 @@ class _MyAppDrawerState extends State<MyAppDrawer> {
                 ),
               ],
             ],
-                      const Divider(
-            height: 4,
-          ),
+            const Divider(
+              height: 4,
+            ),
           ],
           ListTile(
             title: Text('13. Verben', style: firstLevelTitleStyle),
@@ -1191,9 +1187,9 @@ class _MyAppDrawerState extends State<MyAppDrawer> {
                     ScreenSelected.irreale_vergleichssaetze_13_13_5.value),
               ),
             ],
-                      const Divider(
-            height: 4,
-          ),
+            const Divider(
+              height: 4,
+            ),
           ],
           ListTile(
             title: Text('14. Verbergänzungen', style: firstLevelTitleStyle),

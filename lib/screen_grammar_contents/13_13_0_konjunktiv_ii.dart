@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-import '../app/app_localizations.dart';
 import '../page_content.dart';
 
 class Konjunktiv_II_13_13 extends StatelessWidget {
@@ -8,25 +7,13 @@ class Konjunktiv_II_13_13 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final localizations = AppLocalizations.of(context);
-    return const Expanded(
-        child: Center(
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: <Widget>[
-          Text(
-            'Coming Soon',
-            style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
-          ),
-          SizedBox(height: 20),
-          Text(
-            'availble soon',
-            style: TextStyle(fontSize: 20),
-            textAlign: TextAlign.center,
-          ),
-        ],
+    return Expanded(
+      child: Scaffold(
+        body: Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: MyPageContentView(contents: contents)),
       ),
-    ));
+    );
   }
 }
 
@@ -42,6 +29,7 @@ List<CardContent> contents = [
       CardElement(type: ElementType.htmlContent, value: htmlContent1_1),
       CardElement(type: ElementType.htmlTable, value: htmlTable1_2),
       CardElement(type: ElementType.htmlContent, value: htmlContent1_3),
+      CardElement(type: ElementType.htmlTable, value: htmlTable1_4_1),
       CardElement(type: ElementType.htmlTable, value: htmlTable1_4),
       CardElement(type: ElementType.htmlContent, value: htmlContent1_5),
     ],
@@ -57,7 +45,7 @@ List<CardContent> contents = [
       CardElement(type: ElementType.cardTitle, value: title3),
       CardElement(type: ElementType.htmlContent, value: htmlContent3_1),
       CardElement(type: ElementType.htmlTable, value: htmlTable3_2),
-      CardElement(type: ElementType.htmlTable, value: htmlTable3_3),
+      CardElement(type: ElementType.htmlTable, value: htmlTable3_3_1),
       CardElement(type: ElementType.htmlTable, value: htmlTable3_4),
       CardElement(type: ElementType.htmlContent, value: htmlContent3_5),
     ],
@@ -115,7 +103,12 @@ String htmlContent1_1 = '''
 <p>&nbsp;</p>
 ''';
 String htmlTable1_2 = '''
-<table><colgroup> <col style="width: 24%;"> <col style="width: 16%;"> <col style="width: 11%;"> <col style="width: 37%;"> <col style="width: 12%;"> </colgroup>
+<table>
+<colgroup> <col style="width: 24%;"> 
+<col style="width: 16%;"> 
+<col style="width: 11%;"> 
+<col style="width: 37%;"> 
+<col style="width: 12%;"> </colgroup>
 <thead>
 <tr>
 <th>Indikativ</th>
@@ -163,18 +156,27 @@ String htmlContent1_3 = '''
 </div>
 <p>&nbsp;</p>
 ''';
+String htmlTable1_4_1 = '''
+<table><colgroup>
+<col style="width: 38%;"> 
+<col style="width: 62%;"> </colgroup>
+<thead>
+<tr align="center">
+<th>reale Welt</th>
+<th><strong><span class="red">Traumwelt, nicht real</span></strong></th>
+</tr>
+</thead>
+</table>
+''';
 String htmlTable1_4 = '''
 <table><colgroup> <col style="width: 38%;"> <col style="width: 10%;"> <col style="width: 8%;"> <col style="width: 31%;"> <col style="width: 13%;"> </colgroup>
 <thead>
-<tr>
-<th rowspan="2">Indikativ = reale Welt</th>
-<th colspan="4"><strong><span class="red">Konjunktiv II = Traumwelt, nicht real</span></strong></th>
-</tr>
-<tr>
-<th><strong><span class="red">Verb 1</span></strong></th>
-<th>Subj.</th>
-<th>Mittelfeld</th>
-<th><strong><span class="red">Verb 2</span></strong></th>
+<tr align="center">
+<th>Indikativ</th>
+<th><strong><span class="red">Konjunktiv II</span></strong>\n<strong><span class="red">Verb 1</span></strong></th>
+<th><strong><span class="red">Konjunktiv II</span></strong>\nSubj.</th>
+<th><strong><span class="red">Konjunktiv II</span></strong>\nMittelfeld</th>
+<th><strong><span class="red">Konjunktiv II</span></strong>\n<strong><span class="red">Verb 2</span></strong></th>
 </tr>
 </thead>
 <tbody>
@@ -291,6 +293,58 @@ String htmlTable3_3 = '''
 <td style="text-align: center;">würd <em>en</em></td>
 <th style="text-align: center;">3.Person</th>
 </tr>
+</tbody>
+</table>
+''';
+String htmlTable3_3_1 = '''
+<table><colgroup> 
+<col style="width: 25%;"> 
+<col style="width: 25%;"> 
+<col style="width: 25%;"> 
+<col style="width: 25%;"> </colgroup>
+<thead>
+</thead>
+<tbody align="center">
+<tr>
+<th>Singular</th>
+<th style="text-align: center;">1. Person</th>
+<td style="text-align: center;">ich</td>
+<td style="text-align: center;">würd <em>e</em></td>
+</tr>
+<tr>
+<th>Singular</th>
+<th style="text-align: center;">2. Person</th>
+<td style="text-align: center;">du</td>
+<td style="text-align: center;">würd <em>est</em></td>
+</tr>
+<tr>
+<th>Singular</th>
+<th style="text-align: center;">3. Person</th>
+<td style="text-align: center;">er / sie / es</td>
+<td style="text-align: center;">würd <em>e</em></td>
+
+</tr>
+<tr>
+<th>Plural</th>
+<th style="text-align: center;">1. Person</th>
+<td style="text-align: center;">wir</td>
+<td style="text-align: center;">würd <em>en</em></td>
+</tr>
+
+<tr>
+<th>Plural</th>
+<th style="text-align: center;">2. Person</th>
+<td style="text-align: center;">ihr</td>
+<td style="text-align: center;">würd <em>et</em></td>
+</tr>
+
+<tr>
+<th>Plural</th>
+<th style="text-align: center;">3. Person</th>
+<td style="text-align: center;">sie / Sie</td>
+<td style="text-align: center;">würd <em>en</em></td>
+</tr>
+
 </tbody>
 </table>
 ''';

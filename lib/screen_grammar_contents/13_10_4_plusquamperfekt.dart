@@ -1,32 +1,19 @@
 import 'package:flutter/material.dart';
 
-import '../app/app_localizations.dart';
 import '../page_content.dart';
 
 class Plusquamperfekt_13_10_4 extends StatelessWidget {
   const Plusquamperfekt_13_10_4({super.key});
 
-  @override
+   @override
   Widget build(BuildContext context) {
-    final localizations = AppLocalizations.of(context);
-    return const Expanded(
-        child: Center(
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: <Widget>[
-          Text(
-            'Coming Soon',
-            style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
-          ),
-          SizedBox(height: 20),
-          Text(
-            'availble soon',
-            style: TextStyle(fontSize: 20),
-            textAlign: TextAlign.center,
-          ),
-        ],
+    return Expanded(
+      child: Scaffold(
+        body: Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: MyPageContentView(contents: contents)),
       ),
-    ));
+    );
   }
 }
 
@@ -56,12 +43,15 @@ List<CardContent> contents = [
     elements: [
       CardElement(type: ElementType.cardTitle, value: title3),
       CardElement(type: ElementType.htmlContent, value: htmlContent3_1),
+      CardElement(type: ElementType.htmlTable, value: htmlTable3_2_1),
       CardElement(type: ElementType.htmlTable, value: htmlTable3_2),
       CardElement(type: ElementType.htmlContent, value: htmlContent3_3),
-      CardElement(type: ElementType.htmlTable, value: htmlTable3_4),
+      CardElement(type: ElementType.htmlTable, value: htmlTable3_4_1),
+        CardElement(type: ElementType.htmlTable, value: htmlTable3_4),
       CardElement(type: ElementType.htmlContent, value: htmlContent3_5),
       CardElement(type: ElementType.htmlTable, value: htmlTable3_6),
       CardElement(type: ElementType.htmlContent, value: htmlContent3_7),
+      CardElement(type: ElementType.htmlTable, value: htmlTable3_8_1),
       CardElement(type: ElementType.htmlTable, value: htmlTable3_8),
     ],
   ),
@@ -85,7 +75,7 @@ String htmlContent2_1 = '''
 <p>&nbsp;</p>
 ''';
 String htmlTable2_2 = '''
-<table class="eins">
+<table class="eins"><colgroup> <col style="width: 100%;"> </colgroup>
 <tbody>
 <tr align="center">
 <td>
@@ -104,7 +94,7 @@ String htmlContent2_3 = '''
 String htmlTable2_4 = '''
 <table><colgroup> <col style="width: 20%;"> <col style="width: 20%;"> <col style="width: 60%;"> </colgroup>
 <thead>
-<tr>
+<tr align="center">
 <th>Perfekt</th>
 <th>Plusquamperfekt</th>
 <th>Beispiele</th>
@@ -150,14 +140,26 @@ String htmlContent3_1 = '''
 <h3>- Plusquamperfekt im Hauptsatz</h3>
 <p>&nbsp;</p>
 ''';
-String htmlTable3_2 = '''
-<table><colgroup> <col style="width: 34%;"> <col style="width: 10%;"> <col style="width: 10%;"> <col style="width: 31%;"> <col style="width: 15%;"> </colgroup>
+String htmlTable3_2_1 = '''
+<table><colgroup> 
+<col style="width: 34%;"> 
+<col style="width: 66%;"> </colgroup>
 <thead>
-<tr>
-<th rowspan="2">Hauptsatz in der Vergangenheit</th>
-<th colspan="4">Hauptsatz mit Plusquamperfekt</th>
+<tr align="center">
+<th >Hauptsatz in der Vergangenheit</th>
+<th >Hauptsatz mit Plusquamperfekt</th>
 </tr>
-<tr>
+''';
+String htmlTable3_2 = '''
+<table><colgroup> 
+<col style="width: 34%;"> 
+<col style="width: 10%;"> 
+<col style="width: 10%;"> 
+<col style="width: 31%;"> 
+<col style="width: 15%;"> </colgroup>
+<thead>
+<tr align="center">
+<th>&nbsp;</th>
 <th>Pos. 1</th>
 <th><strong><span class="red">Verb 1</span></strong></th>
 <th>Mittelfeld</th>
@@ -194,18 +196,26 @@ String htmlContent3_3 = '''
 <h3>- Plusquamperfekt im Nebensatz</h3>
 <p>&nbsp;</p>
 ''';
+String htmlTable3_4_1 = '''
+<table><colgroup> 
+<col style="width: 67%;"> 
+<col style="width: 33%;"> </colgroup>
+<thead>
+<tr align="center">
+<th >Nebensatz mit Plusquamperfekt</th>
+<th >Hauptsatz</th>
+</tr>
+''';
 String htmlTable3_4 = '''
 <table><colgroup> <col style="width: 12%;"> <col style="width: 19%;"> <col style="width: 16%;"> <col style="width: 20%;"> <col style="width: 33%;"> </colgroup>
 <thead>
-<tr>
-<th colspan="4">Nebensatz mit Plusquamperfekt</th>
-<th rowspan="2">Hauptsatz</th>
-</tr>
-<tr>
+
+<tr align="center">
 <th><strong><span class="red">Konj.</span></strong></th>
 <th><strong><span class="blue">Subjekt</span></strong></th>
 <th>Mittelfeld</th>
 <th><strong><span class="red">Verben</span></strong></th>
+<th>&nbsp;</th>
 </tr>
 </thead>
 <tbody>
@@ -241,7 +251,7 @@ String htmlContent3_5 = '''
 String htmlTable3_6 = '''
 <table><colgroup> <col style="width: 19%;"> <col style="width: 15%;"> <col style="width: 38;"> <col style="width: 28%;"> </colgroup>
 <thead>
-<tr>
+<tr align="center">
 <th>Position 1</th>
 <th><strong><span class="red">Verb 1</span></strong></th>
 <th>Mittelfeld</th>
@@ -275,18 +285,25 @@ String htmlContent3_7 = '''
 <h3>- Plusquamperfekt mit Modalverb im Nebensatz</h3>
 <p>&nbsp;</p>
 ''';
+String htmlTable3_8_1 = '''
+<table><colgroup> 
+<col style="width: 82%;"> 
+<col style="width: 18%;"> </colgroup>
+<thead>
+<tr align="center">
+<th >Nebensatz mit Plusquamperfekt</th>
+<th >Hauptsatz</th>
+</tr>
+''';
 String htmlTable3_8 = '''
 <table><colgroup> <col style="width: 13%;"> <col style="width: 9%;"> <col style="width: 29%;"> <col style="width: 31%;"> <col style="width: 18%;"> </colgroup>
 <thead>
-<tr>
-<th colspan="4">Nebensatz mit Plusquamperfekt</th>
-<th rowspan="2">Hauptsatz</th>
-</tr>
-<tr>
+<tr align="center">
 <th><strong><span class="red">Konj.</span></strong></th>
 <th><strong><span class="blue">Subj.</span></strong></th>
 <th>Mittelfeld</th>
 <th><strong><span class="red">Verben</span></strong></th>
+<th>&nbsp;</th>
 </tr>
 </thead>
 <tbody>

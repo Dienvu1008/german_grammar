@@ -1,32 +1,19 @@
 import 'package:flutter/material.dart';
 
-import '../app/app_localizations.dart';
 import '../page_content.dart';
 
 class Futur_I_13_10_5 extends StatelessWidget {
   const Futur_I_13_10_5({super.key});
 
-  @override
+   @override
   Widget build(BuildContext context) {
-    final localizations = AppLocalizations.of(context);
-    return const Expanded(
-        child: Center(
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: <Widget>[
-          Text(
-            'Coming Soon',
-            style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
-          ),
-          SizedBox(height: 20),
-          Text(
-            'availble soon',
-            style: TextStyle(fontSize: 20),
-            textAlign: TextAlign.center,
-          ),
-        ],
+    return Expanded(
+      child: Scaffold(
+        body: Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: MyPageContentView(contents: contents)),
       ),
-    ));
+    );
   }
 }
 
@@ -47,7 +34,7 @@ List<CardContent> contents = [
       CardElement(type: ElementType.cardTitle, value: title2),
       CardElement(type: ElementType.htmlContent, value: htmlContent2_1),
       CardElement(type: ElementType.htmlTable, value: htmlTable2_2),
-      CardElement(type: ElementType.htmlTable, value: htmlTable2_3),
+      CardElement(type: ElementType.htmlTable, value: htmlTable2_3_1),
     ],
   ),
   CardContent(
@@ -103,9 +90,9 @@ String htmlContent2_1 = '''
 <p>&nbsp;</p>
 ''';
 String htmlTable2_2 = '''
-<table class="eins">
+<table class="eins"><colgroup> <col style="width: 100%;"> </colgroup>
 <tbody>
-<tr>
+<tr align="center">
 <td align="center">
 <h3 style="text-align: center;"><strong><span class="red">werden</span></strong>&nbsp;&nbsp; + &nbsp;&nbsp; <strong><span class="blue">Infinitiv</span></strong></h3>
 </td>
@@ -116,7 +103,7 @@ String htmlTable2_2 = '''
 String htmlTable2_3 = '''
 <table class="zwei"><colgroup> <col style="width: 20%;"> <col style="width: 30%;"> <col style="width: 30%;"> <col style="width: 20%;"> </colgroup>
 <thead>
-<tr>
+<tr align="center">
 <th>Singular</th>
 <th colspan="2">w e r d e n</th>
 <th>Plural</th>
@@ -144,6 +131,58 @@ String htmlTable2_3 = '''
 </tbody>
 </table>
 ''';
+String htmlTable2_3_1 = '''
+<table><colgroup> 
+<col style="width: 25%;"> 
+<col style="width: 25%;"> 
+<col style="width: 25%;"> 
+<col style="width: 25%;"> </colgroup>
+<thead>
+</thead>
+<tbody align="center">
+<tr>
+<th>Singular</th>
+<th style="text-align: center;">1. Person</th>
+<td style="text-align: center;">ich</td>
+<td style="text-align: center;">werd<strong><span class="red">e</span></strong></td>
+</tr>
+<tr>
+<th>Singular</th>
+<th style="text-align: center;">2. Person</th>
+<td style="text-align: center;">du</td>
+<td style="text-align: center;">w<strong><span class="red">i</span></strong>r<strong><span class="red">st</span></strong></td>
+</tr>
+<tr>
+<th>Singular</th>
+<th style="text-align: center;">3. Person</th>
+<td style="text-align: center;">er / sie / es</td>
+<td style="text-align: center;">w<strong><span class="red">i</span></strong>r<strong><span class="red">d</span></strong></td>
+
+</tr>
+<tr>
+<th>Plural</th>
+<th style="text-align: center;">1. Person</th>
+<td style="text-align: center;">wir</td>
+<td style="text-align: center;">werd<strong><span class="red">en</span></strong></td>
+</tr>
+
+<tr>
+<th>Plural</th>
+<th style="text-align: center;">2. Person</th>
+<td style="text-align: center;">ihr</td>
+<td style="text-align: center;">werd<strong><span class="red">et</span></strong></td>
+</tr>
+
+<tr>
+<th>Plural</th>
+<th style="text-align: center;">3. Person</th>
+<td style="text-align: center;">sie / Sie</td>
+<td style="text-align: center;">werd<strong><span class="red">en</span></strong></td>
+</tr>
+
+</tbody>
+</table>
+''';
 
 
 
@@ -160,9 +199,9 @@ String htmlContent3_1 = '''
 <p>&nbsp;</p>
 ''';
 String htmlTable3_2 = '''
-<table class="eins">
+<table class="eins"><colgroup> <col style="width: 100%;"> </colgroup>
 <tbody>
-<tr>
+<tr align="center">
 <td align="center">
 <h3 style="text-align: center;"><strong><span class="red">werden</span></strong>&nbsp;&nbsp; + &nbsp;&nbsp; <strong><span class="blue">2 X Infinitiv</span></strong></h3>
 </td>

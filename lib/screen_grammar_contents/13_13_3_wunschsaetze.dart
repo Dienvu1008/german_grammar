@@ -1,32 +1,19 @@
 import 'package:flutter/material.dart';
 
-import '../app/app_localizations.dart';
 import '../page_content.dart';
 
 class Wunschsaetze_13_13_3 extends StatelessWidget {
   const Wunschsaetze_13_13_3({super.key});
 
-  @override
+   @override
   Widget build(BuildContext context) {
-    final localizations = AppLocalizations.of(context);
-    return const Expanded(
-        child: Center(
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: <Widget>[
-          Text(
-            'Coming Soon',
-            style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
-          ),
-          SizedBox(height: 20),
-          Text(
-            'availble soon',
-            style: TextStyle(fontSize: 20),
-            textAlign: TextAlign.center,
-          ),
-        ],
+    return Expanded(
+      child: Scaffold(
+        body: Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: MyPageContentView(contents: contents)),
       ),
-    ));
+    );
   }
 }
 List<CardContent> contents = [
@@ -63,14 +50,11 @@ String htmlTable1_2 = '''
 <table><colgroup> <col style="width: 40%;"> <col style="width: 10%;"> <col style="width: 10%;"> <col style="width: 28%;"> <col style="width: 12%;"> </colgroup>
 <thead>
 <tr>
-<th rowspan="2">Indikativ</th>
-<th colspan="4">Wunschsatz // Verb = Position 1</th>
-</tr>
-<tr>
-<th>Verb 1</th>
-<th>Subjekt</th>
-<th>Mittelfeld</th>
-<th>Verb 2</th>
+<th>Indikativ</th>
+<th>Wunschsatz\nVerb 1</th>
+<th>Wunschsatz\nSubjekt</th>
+<th>Wunschsatz\nMittelfeld</th>
+<th>Wunschsatz\nVerb 2</th>
 </tr>
 </thead>
 <tbody>
@@ -137,17 +121,19 @@ String htmlContent1_3 = '''
 <h3>Nebensatz mit "wenn":</h3>
 ''';
 String htmlTable1_4 = '''
-<table><colgroup> <col style="width: 37%;"> <col style="width: 9%;"> <col style="width: 7%;"> <col style="width: 26%;"> <col style="width: 21%;"> </colgroup>
+<table><colgroup> 
+<col style="width: 37%;"> 
+<col style="width: 9%;"> 
+<col style="width: 7%;"> 
+<col style="width: 26%;"> 
+<col style="width: 21%;"> </colgroup>
 <thead>
 <tr>
-<th rowspan="2">Indikativ</th>
-<th colspan="4">Wunschsatz = Nebensatz</th>
-</tr>
-<tr>
-<th>Konj.</th>
-<th>Subj.</th>
-<th>Mittelfeld</th>
-<th>Verben</th>
+<th>Indikativ</th>
+<th>Wunschsatz\nKonj.</th>
+<th>Wunschsatz\nSubj.</th>
+<th>Wunschsatz\nMittelfeld</th>
+<th>Wunschsatz\nVerben</th>
 </tr>
 </thead>
 <tbody>

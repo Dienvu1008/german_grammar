@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-import '../app/app_localizations.dart';
 import '../page_content.dart';
 
 class Akkusativ_Und_Direktiv_14_6 extends StatelessWidget {
