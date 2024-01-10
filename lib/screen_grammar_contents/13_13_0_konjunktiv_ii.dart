@@ -93,14 +93,10 @@ List<CardContent> contents = [
   ),
 ];
 
-
 String title = '13.13. Konjunktiv II';
 String title1 = 'Was man über den Konjunktiv II wissen sollte.';
 String htmlContent1_1 = '''
- <div>
 <p>Der <strong><span class="red">Indikativ</span></strong> bezeichnet eine wirkliche, eine <strong><span class="red">reale Welt</span></strong>, die man sehen, tasten, riechen, schmecken oder hören kann. Diese Welt kann stattfinden:</p>
-</div>
-<p>&nbsp;</p>
 ''';
 String htmlTable1_2 = '''
 <table>
@@ -151,10 +147,7 @@ String htmlTable1_2 = '''
 </table>
 ''';
 String htmlContent1_3 = '''
-<div>
 <p>Mit dem <strong><span class="red">Konjunktiv II</span></strong> <span style="text-decoration:underline">verlassen</span> wir die reale Welt und widmen uns der <strong><span class="red">irrealen Welt</span></strong>. Die irreale Welt ist das Reich der Phantasien, der Vorstellungen, der Wünsche, der Träume, der irrealen Bedingungen und Vergleiche, aber auch der <strong><span class="red">Höflichkeit</span></strong>. Diese gedachten, angenommenen oder möglichen Sachverhalte, die <span style="text-decoration:underline">nicht real</span> sind und <span style="text-decoration:underline">nicht existieren</span>, werden mit dem Konjunktiv II gebildet.</p>
-</div>
-<p>&nbsp;</p>
 ''';
 String htmlTable1_4_1 = '''
 <table><colgroup>
@@ -219,34 +212,24 @@ String htmlTable1_4 = '''
 </table>
 ''';
 String htmlContent1_5 = '''
-<div>
 <p>In den Beispielen sieht die reale Welt wirklich sehr trist aus. Die Wunschwelt im Konjunktiv II dagegen ist rosig. Die Wunschwelt zeigt <strong><span class="red">das Gegenteil</span></strong> der tristesten realen Welt, <span class="red">bleibt aber wahrscheinlich <span style="text-decoration:underline">ein Traum</span> und somit <span style="text-decoration:underline">irreal</span></span>.</p>
-</div> 
 ''';
-
 
 String title2 = 'Die Bildung in der Gegenwart';
 String htmlContent2_1 = '''
-<div>
 <p>Man hat 2 Möglichkeiten, den Konjunktiv II zu bilden:</p>
-<p>&nbsp;</p>
-</div>
+
 <h3 style="padding-left: 60px;"><strong>- <span class="red">würde + Infinitiv</span></strong></h3>
 <p style="padding-left: 60px;"><strong>&nbsp;</strong></p>
 <h3 style="padding-left: 60px;"><strong>- <span class="red">Verbformen des Konjunktiv II</span></strong></h3>  
-  
 ''';
 
 String title3 = 'Die Bildung des Konjunktivs II mit würde + Infinitiv';
 String htmlContent3_1 = '''
-<div>
 <p>In den meisten Fällen wird das Hilfsverb " <strong><span class="red">werden</span></strong> " benutzt, um den Konjunktiv II zu bilden.</p>
 <p>" <strong><span class="red">Werden</span></strong> " muss aber verändert werden, damit es den <strong><span class="red">Konjunktiv II</span></strong> anzeigt.</p>
 <p>Die Form des Konjunktiv II wird vom Präteritum abgeleitet: werden = " <strong><span class="blue">wurden</span></strong> ".</p>
 <p>Die Präteritumsform "wurden" erhält einen Umlaut " <strong><span class="red">würden</span></strong> ".</p>
-</div>
-<p>&nbsp;</p>
-<div>
 ''';
 String htmlTable3_2 = '''
 <table class="eins">
@@ -259,43 +242,7 @@ String htmlTable3_2 = '''
 </tbody>
 </table>
 ''';
-String htmlTable3_3 = '''
-<table>
-<thead>
-<tr>
-<th>Singular</th>
-<th colspan="4">w ü r d e n</th>
-<th>Plural</th>
-</tr>
-</thead>
-<tbody align="center">
-<tr>
-<th style="text-align: center;">1. Person</th>
-<td style="text-align: center;">ich</td>
-<td style="text-align: center;">würd <em>e</em></td>
-<td style="text-align: center;">wir</td>
-<td style="text-align: center;">würd <em>en</em></td>
-<th style="text-align: center;">1.Person</th>
-</tr>
-<tr>
-<th style="text-align: center;">2. Person</th>
-<td style="text-align: center;">du</td>
-<td style="text-align: center;">würd <em>est</em></td>
-<td style="text-align: center;">ihr</td>
-<td style="text-align: center;">würd <em>et</em></td>
-<th style="text-align: center;">2.Person</th>
-</tr>
-<tr>
-<th style="text-align: center;">3. Person</th>
-<td style="text-align: center;">er / sie / es</td>
-<td style="text-align: center;">würd <em>e</em></td>
-<td style="text-align: center;">Sie / sie</td>
-<td style="text-align: center;">würd <em>en</em></td>
-<th style="text-align: center;">3.Person</th>
-</tr>
-</tbody>
-</table>
-''';
+
 String htmlTable3_3_1 = '''
 <table><colgroup> 
 <col style="width: 25%;"> 
@@ -406,18 +353,12 @@ String htmlTable3_4 = '''
 </table>
 ''';
 String htmlContent3_5 = '''
-<div>
 <p>Der Konjunktiv II bildet eine <strong><span class="red">gegenteilige Meinung</span></strong> <span style="text-decoration:underline">zum Indikativ</span>. Daher muss einer der beiden Sätze <strong><span class="red">verneint</span></strong> werden.</p>
-</div> 
 ''';
 
 String title4 = 'Die Bildung des Konjunktivs II mit den Verbformen';
 String htmlContent4_1 = '''
- <div>
 <p>Alle Verben bilden auch eine eigene Konjunktiv II-Form, die <span style="text-decoration:underline">ohne</span> das Hilfsverb " würden " gebildet wird. Bei den regelmäßigen Verben ist allerdings der Konjunktiv II mit dem Indikativ <strong><a title="Präteritum" href="praeteritum.html#schwache_verben" target="_blank">Präteritum</a></strong> identisch, da diese Verben keinen Umlaut bilden können. Aus diesem Grund wird bei den meisten Verben der Konjunktiv II mit dem Hilfsverb 'werden' gebildet. Nur bei <span style="text-decoration:underline">wenigen Verben</span> benutzt man die eigene Konjunktiv II-Form. Die Bildung bleibt wie beim Verb "werden" gleich:</p>
-</div>
-<p>&nbsp;</p>
-<div>
 ''';
 String htmlTable4_2 = '''
 <table class="eins">
@@ -432,10 +373,8 @@ String htmlTable4_2 = '''
 ''';
 String htmlContent4_3 = '''
 <p>Zu den wenigen Verben, die immer den Konjunktiv II in der Originalform verwenden, gehören:</p>
-</div>
-<p>&nbsp;</p>
+
 <h3>- alle Hilfsverben, Modalverben sowie einige unregelmäßige Verben, die häufig benutzt werden.</h3>
-<p>&nbsp;</p>
 ''';
 String htmlTable4_4 = '''
 <table>
@@ -536,9 +475,7 @@ String htmlTable4_4 = '''
 </table>
 ''';
 String htmlContent4_5 = '''
-<p>&nbsp;</p>
 <h3>- die Modalverben</h3>
-<p>&nbsp;</p
 ''';
 String htmlTable4_6 = '''
 <table>
@@ -613,18 +550,11 @@ String htmlTable4_6 = '''
 ''';
 String htmlContent4_7 = '''
 <p style="padding-left: 30px;"><br> * " <span style="text-decoration:underline">Wollen</span> " und " <span style="text-decoration:underline">sollen</span> " bilden im Konjunktiv II <strong><span class="red">keinen Umlaut</span></strong>!!!</p>  
-
 ''';
-
 
 String title5 = 'Konjunktiv II der Vergangenheit';
 String htmlContent5_1 = '''
- <div>
 <p>Es gibt nur <strong><span class="red">eine Vergangenheit im Konjunktiv II</span></strong> gegenüber den drei Vergangenheitsformen im Indikativ. Als Basis dient die Perfektform: "haben / sein + Partizip II", wobei die Hilfsverben die Konjunktiv II-Formen " hätten " bzw. " wären " erhalten.</p>
-</div>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<div>
 ''';
 String htmlTable5_2 = '''
 <table class="eins">
@@ -711,11 +641,7 @@ String htmlTable5_3 = '''
 
 String title6 = 'Konjunktiv II der Vergangenheit mit Modalverben';
 String htmlContent6_1 = '''
- <div>
 <p>Die Modalverben bilden den Konjunktiv II der Vergangenheit mit dem Hilfsverb haben im Konjunktiv II sowie einem "<strong><span class="blue">doppelten Infinitiv</span></strong>". Das Modalverb wird an das Satzende gestellt.</p>
-</div>
-<p>&nbsp;</p>
-<div>
 ''';
 String htmlTable6_2 = '''
 <table>
@@ -794,21 +720,15 @@ String htmlTable6_3 = '''
 ''';
 String htmlContent6_4 = '''
 <div align="center"><strong>!!! Vorsicht !!!</strong></div>
-<div>
-<p>Der Konjunktiv II zeigt <strong><span class="red">das Gegenteil vom Indikativ</span></strong> an !!! Im Perfekt und Präteritum (Indikativ) hat Oscar gearbeitet und Lena ist nach Köln gefahren. Im Konjunktiv II der Vergangenheit hat Oscar <strong><span class="red">nicht</span></strong> gearbeitet, hätte es aber tun sollen und Lena war <strong><span class="red">nicht</span></strong> in Köln, hätte aber fahren dürfen !!!</p>
-</div>  
-''';
 
+<p>Der Konjunktiv II zeigt <strong><span class="red">das Gegenteil vom Indikativ</span></strong> an !!! Im Perfekt und Präteritum (Indikativ) hat Oscar gearbeitet und Lena ist nach Köln gefahren. Im Konjunktiv II der Vergangenheit hat Oscar <strong><span class="red">nicht</span></strong> gearbeitet, hätte es aber tun sollen und Lena war <strong><span class="red">nicht</span></strong> in Köln, hätte aber fahren dürfen !!!</p> 
+''';
 
 String title7 = 'Konjunktiv II und Passiv';
 String htmlContent7_1 = '''
+<h3>Konjunktiv II der Gegenwart plus Passiv</h3>
 
-      <h3>Konjunktiv II der Gegenwart plus Passiv</h3>
-<div>
 <p style="padding-left: 30px;">Diese Konstruktion wird wie folgt gebildet:</p>
-</div>
-<p>&nbsp;</p>
-<div>
 ''';
 String htmlTable7_2 = '''
 <table class="eins">
@@ -887,10 +807,8 @@ String htmlTable7_3 = '''
 ''';
 String htmlContent7_4 = '''
 <h3>Konjunktiv II der Vergangenheit plus Passiv</h3>
-<div>
+
 <p style="padding-left: 30px;">Diese Konstruktion wird wie folgt gebildet:</p>
-</div>
-<p>&nbsp;</p>
 ''';
 String htmlTable7_5 = '''
 <table class="eins">
@@ -968,10 +886,5 @@ String htmlTable7_6 = '''
 </table>
 ''';
 String htmlContent7_7 = '''
-<div>
 <p>In diesen Beispielen ist im Konjunktiv II weder das Auto repariert, noch der Schlüssel gefunden !!!</p>
-</div>  
-  
 ''';
-
-

@@ -1,1539 +1,346 @@
 import 'package:flutter/material.dart';
 
 import '../app/app_localizations.dart';
+import '../page_content.dart';
 
 class Temporale_Praepositionen_10_6 extends StatelessWidget {
   const Temporale_Praepositionen_10_6({super.key});
 
   @override
   Widget build(BuildContext context) {
-    final localizations = AppLocalizations.of(context);
-    final textTheme = Theme.of(context).textTheme;
     return Expanded(
       child: Scaffold(
         body: Padding(
-          padding: const EdgeInsets.all(8.0),
-          child: ListView(
-            children: <Widget>[
-              Card(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: <Widget>[
-                    Padding(
-                      padding: const EdgeInsets.only(top: 16.0, left: 16.0),
-                      child: Text('10.6. Temporale Präpositionen',
-                          style: textTheme.titleMedium),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.only(top: 10.0, left: 16.0),
-                      child: Text(
-                          'Was man über temporale Präpositionen wissen sollte.',
-                          style: textTheme.titleSmall),
-                    ),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                            top: 10.0, left: 16.0, bottom: 10),
-                        child: RichText(
-                          text: TextSpan(
-                            style: textTheme.bodyMedium,
-                            children: <TextSpan>[
-                              TextSpan(
-                                  text:
-                                      'Temporale Präpositionen können eine Antwort auf die Fragewörter '),
-                              TextSpan(
-                                  text: 'wann',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(text: ', '),
-                              TextSpan(
-                                  text: 'bis wann',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(text: ', '),
-                              TextSpan(
-                                  text: 'seit wann',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(text: ', '),
-                              TextSpan(
-                                  text: 'von wann bis wann',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(text: ', '),
-                              TextSpan(
-                                  text: 'um wie viel Uhr',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(text: ' und '),
-                              TextSpan(
-                                  text: 'wie lange',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(text: ' geben. Man unterscheidet:\n'),
-                              TextSpan(text: 'Zeitdauer\n'),
-                              TextSpan(
-                                  text:
-                                      'Eine Zeitdauer gibt einen Zeitraum an, der einen Anfang und ein Ende hat. Die W-Fragen dazu lauten "'),
-                              TextSpan(
-                                  text: 'bis wann',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(text: '", "'),
-                              TextSpan(
-                                  text: 'seit wann',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(text: '", "'),
-                              TextSpan(
-                                  text: 'von wann bis wann',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(text: '" oder "'),
-                              TextSpan(
-                                  text: 'wie lange',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(text: '".\n'),
-                              TextSpan(text: 'Zeitpunkt\n'),
-                              TextSpan(
-                                  text:
-                                      'Ein Zeitpunkt gibt eine genaue Zeit an. Die W-Fragen dazu lauten "'),
-                              TextSpan(
-                                  text: 'wann',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(text: '" oder "'),
-                              TextSpan(
-                                  text: 'um wie viel Uhr',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(text: '".\n'),
-                            ],
-                          ),
-                        )),
-                    SingleChildScrollView(
-                      child: ConstrainedBox(
-                        constraints: const BoxConstraints(
-                            //minHeight: MediaQuery.of(context).size.height
-                            ),
-                        child: IntrinsicHeight(
-                          child: Column(children: [
-                            Table(
-                              border: TableBorder.all(
-                                  color: Colors.purple, width: 1),
-                              columnWidths: {
-                                0: FractionColumnWidth(.10),
-                                1: FractionColumnWidth(.22),
-                                2: FractionColumnWidth(.14),
-                                3: FractionColumnWidth(.26),
-                                4: FractionColumnWidth(.28),
-                              },
-                              children: [
-                                TableRow(children: [
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'Kasus',
-                                      style: textTheme.bodyMedium,
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'W-Frage',
-                                      style: textTheme.bodyMedium,
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'Präposition',
-                                      style: textTheme.bodyMedium,
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'Zeitdauer',
-                                      style: textTheme.bodyMedium,
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'Zeitpunkt',
-                                      style: textTheme.bodyMedium,
-                                    ),
-                                  ),
-                                ]),
-                                TableRow(children: [
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'Akk',
-                                      style: textTheme.bodyMedium,
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'für wie lange',
-                                      style: textTheme.bodyMedium,
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      text: '',
-                                      style: textTheme.bodyMedium,
-                                      children: <TextSpan>[
-                                        TextSpan(
-                                            text: 'für',
-                                            style: textTheme.bodyMedium!
-                                                .copyWith(color: Colors.red)),
-                                      ],
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'zukünftiger Zeitraum',
-                                      style: textTheme.bodyMedium,
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      text: '',
-                                      style: textTheme.bodyMedium,
-                                    ),
-                                  ),
-                                ]),
-                                TableRow(children: [
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'Akk',
-                                      style: textTheme.bodyMedium,
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'wann \num wie viel Uhr',
-                                      style: textTheme.bodyMedium,
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      text: '',
-                                      style: textTheme.bodyMedium,
-                                      children: <TextSpan>[
-                                        TextSpan(
-                                            text: 'gegen',
-                                            style: textTheme.bodyMedium!
-                                                .copyWith(color: Colors.red)),
-                                      ],
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      text: '',
-                                      style: textTheme.bodyMedium,
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      text:
-                                          'ungenaue Tageszeit\n ungenaue Uhrzeit',
-                                      style: textTheme.bodyMedium,
-                                    ),
-                                  ),
-                                ]),
-                                TableRow(children: [
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'Akk',
-                                      style: textTheme.bodyMedium,
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'um wie viel Uhr\n wann',
-                                      style: textTheme.bodyMedium,
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      text: '',
-                                      style: textTheme.bodyMedium,
-                                      children: <TextSpan>[
-                                        TextSpan(
-                                            text: 'um',
-                                            style: textTheme.bodyMedium!
-                                                .copyWith(color: Colors.red)),
-                                      ],
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      text: '',
-                                      style: textTheme.bodyMedium,
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      text:
-                                          'genaue Uhrzeit\n ungenaue Zeitangabe',
-                                      style: textTheme.bodyMedium,
-                                    ),
-                                  ),
-                                ]),
-                                TableRow(children: [
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'Akk',
-                                      style: textTheme.bodyMedium,
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'wie lange',
-                                      style: textTheme.bodyMedium,
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      text: '',
-                                      style: textTheme.bodyMedium,
-                                      children: <TextSpan>[
-                                        TextSpan(
-                                            text: 'über',
-                                            style: textTheme.bodyMedium!
-                                                .copyWith(color: Colors.red)),
-                                      ],
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'Zeitraum',
-                                      style: textTheme.bodyMedium,
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      text: '',
-                                      style: textTheme.bodyMedium,
-                                    ),
-                                  ),
-                                ]),
-                                TableRow(children: [
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'Dativ',
-                                      style: textTheme.bodyMedium,
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'wann \nab wann',
-                                      style: textTheme.bodyMedium,
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      text: '',
-                                      style: textTheme.bodyMedium,
-                                      children: <TextSpan>[
-                                        TextSpan(
-                                            text: 'ab',
-                                            style: textTheme.bodyMedium!
-                                                .copyWith(color: Colors.red)),
-                                        TextSpan(
-                                            text: ', \n',
-                                            style: textTheme.bodyMedium),
-                                        TextSpan(
-                                            text: 'von ... an',
-                                            style: textTheme.bodyMedium!
-                                                .copyWith(color: Colors.red)),
-                                      ],
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      text:
-                                          'Beginn in der Gegenwart\n Beginn in der Zukunft',
-                                      style: textTheme.bodyMedium,
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      text: '',
-                                      style: textTheme.bodyMedium,
-                                    ),
-                                  ),
-                                ]),
-                                TableRow(children: [
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'Dativ',
-                                      style: textTheme.bodyMedium,
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'wann',
-                                      style: textTheme.bodyMedium,
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      text: '',
-                                      style: textTheme.bodyMedium,
-                                      children: <TextSpan>[
-                                        TextSpan(
-                                            text: 'an',
-                                            style: textTheme.bodyMedium!
-                                                .copyWith(color: Colors.red)),
-                                      ],
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      text: '',
-                                      style: textTheme.bodyMedium,
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      text:
-                                          'Datum\n Tag\n Tageszeit\n Feiertag',
-                                      style: textTheme.bodyMedium,
-                                    ),
-                                  ),
-                                ]),
-                                TableRow(children: [
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'Dativ',
-                                      style: textTheme.bodyMedium,
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'wann',
-                                      style: textTheme.bodyMedium,
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      text: '',
-                                      style: textTheme.bodyMedium,
-                                      children: <TextSpan>[
-                                        TextSpan(
-                                            text: 'aus',
-                                            style: textTheme.bodyMedium!
-                                                .copyWith(color: Colors.red)),
-                                      ],
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      text: '',
-                                      style: textTheme.bodyMedium,
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'zeitliche Herkunft',
-                                      style: textTheme.bodyMedium,
-                                    ),
-                                  ),
-                                ]),
-                                TableRow(children: [
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'Dativ',
-                                      style: textTheme.bodyMedium,
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'wann \nwobei',
-                                      style: textTheme.bodyMedium,
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      text: '',
-                                      style: textTheme.bodyMedium,
-                                      children: <TextSpan>[
-                                        TextSpan(
-                                            text: 'bei',
-                                            style: textTheme.bodyMedium!
-                                                .copyWith(color: Colors.red)),
-                                      ],
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'Gleichzeitigkeit',
-                                      style: textTheme.bodyMedium,
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'Gleichzeitigkeit',
-                                      style: textTheme.bodyMedium,
-                                    ),
-                                  ),
-                                ]),
-                                TableRow(children: [
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'Dativ',
-                                      style: textTheme.bodyMedium,
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'bis wann',
-                                      style: textTheme.bodyMedium,
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      text: '',
-                                      style: textTheme.bodyMedium,
-                                      children: <TextSpan>[
-                                        TextSpan(
-                                            text: 'bis (zu)',
-                                            style: textTheme.bodyMedium!
-                                                .copyWith(color: Colors.red)),
-                                      ],
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'Endpunkt',
-                                      style: textTheme.bodyMedium,
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      text: '',
-                                      style: textTheme.bodyMedium,
-                                    ),
-                                  ),
-                                ]),
-                                TableRow(children: [
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'Dativ',
-                                      style: textTheme.bodyMedium,
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'wann',
-                                      style: textTheme.bodyMedium,
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      text: '',
-                                      style: textTheme.bodyMedium,
-                                      children: <TextSpan>[
-                                        TextSpan(
-                                            text: 'in',
-                                            style: textTheme.bodyMedium!
-                                                .copyWith(color: Colors.red)),
-                                      ],
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      text: '',
-                                      style: textTheme.bodyMedium,
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      text:
-                                          'Tage\nWoche\nMonat\n Jahreszeiten\nJahrhundert\n zukünftiges\nZeiträume',
-                                      style: textTheme.bodyMedium,
-                                    ),
-                                  ),
-                                ]),
-                                TableRow(children: [
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'Dativ',
-                                      style: textTheme.bodyMedium,
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'wann',
-                                      style: textTheme.bodyMedium,
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      text: '',
-                                      style: textTheme.bodyMedium,
-                                      children: <TextSpan>[
-                                        TextSpan(
-                                            text: 'nach',
-                                            style: textTheme.bodyMedium!
-                                                .copyWith(color: Colors.red)),
-                                      ],
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      text: '',
-                                      style: textTheme.bodyMedium,
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'etwas nach etwas anderem tun',
-                                      style: textTheme.bodyMedium,
-                                    ),
-                                  ),
-                                ]),
-                                TableRow(children: [
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'Dativ',
-                                      style: textTheme.bodyMedium,
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'seit wann',
-                                      style: textTheme.bodyMedium,
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      text: '',
-                                      style: textTheme.bodyMedium,
-                                      children: <TextSpan>[
-                                        TextSpan(
-                                            text: 'seit',
-                                            style: textTheme.bodyMedium!
-                                                .copyWith(color: Colors.red)),
-                                      ],
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      text:
-                                          'Beginn in der Vergangenheit und Dauer bis zur Gegenwart',
-                                      style: textTheme.bodyMedium,
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      text: '',
-                                      style: textTheme.bodyMedium,
-                                    ),
-                                  ),
-                                ]),
-                                TableRow(children: [
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'Dativ',
-                                      style: textTheme.bodyMedium,
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'von wann bis wann',
-                                      style: textTheme.bodyMedium,
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      text: '',
-                                      style: textTheme.bodyMedium,
-                                      children: <TextSpan>[
-                                        TextSpan(
-                                            text: 'von ... bis',
-                                            style: textTheme.bodyMedium!
-                                                .copyWith(color: Colors.red)),
-                                      ],
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'Beginn und Ende',
-                                      style: textTheme.bodyMedium,
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      text: '',
-                                      style: textTheme.bodyMedium,
-                                    ),
-                                  ),
-                                ]),
-                                TableRow(children: [
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'Dativ',
-                                      style: textTheme.bodyMedium,
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'wann',
-                                      style: textTheme.bodyMedium,
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      text: '',
-                                      style: textTheme.bodyMedium,
-                                      children: <TextSpan>[
-                                        TextSpan(
-                                            text: 'vor',
-                                            style: textTheme.bodyMedium!
-                                                .copyWith(color: Colors.red)),
-                                      ],
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      text: '',
-                                      style: textTheme.bodyMedium,
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'etwas vor etwas anderem tun',
-                                      style: textTheme.bodyMedium,
-                                    ),
-                                  ),
-                                ]),
-                                TableRow(children: [
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'Dativ',
-                                      style: textTheme.bodyMedium,
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'wann',
-                                      style: textTheme.bodyMedium,
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      text: '',
-                                      style: textTheme.bodyMedium,
-                                      children: <TextSpan>[
-                                        TextSpan(
-                                            text: 'zwischen',
-                                            style: textTheme.bodyMedium!
-                                                .copyWith(color: Colors.red)),
-                                      ],
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'Beginn und Ende',
-                                      style: textTheme.bodyMedium,
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      text: '',
-                                      style: textTheme.bodyMedium,
-                                    ),
-                                  ),
-                                ]),
-                                TableRow(children: [
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'Genitiv',
-                                      style: textTheme.bodyMedium,
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'wann',
-                                      style: textTheme.bodyMedium,
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      text: '',
-                                      style: textTheme.bodyMedium,
-                                      children: <TextSpan>[
-                                        TextSpan(
-                                            text: 'außerhalb',
-                                            style: textTheme.bodyMedium!
-                                                .copyWith(color: Colors.red)),
-                                      ],
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'Zeitraum',
-                                      style: textTheme.bodyMedium,
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      text: '',
-                                      style: textTheme.bodyMedium,
-                                    ),
-                                  ),
-                                ]),
-                                TableRow(children: [
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'Genitiv',
-                                      style: textTheme.bodyMedium,
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'wann',
-                                      style: textTheme.bodyMedium,
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      text: '',
-                                      style: textTheme.bodyMedium,
-                                      children: <TextSpan>[
-                                        TextSpan(
-                                            text: 'innerhalb',
-                                            style: textTheme.bodyMedium!
-                                                .copyWith(color: Colors.red)),
-                                      ],
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'Zeitraum',
-                                      style: textTheme.bodyMedium,
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      text: '',
-                                      style: textTheme.bodyMedium,
-                                    ),
-                                  ),
-                                ]),
-                                TableRow(children: [
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'Genitiv',
-                                      style: textTheme.bodyMedium,
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'wann',
-                                      style: textTheme.bodyMedium,
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      text: '',
-                                      style: textTheme.bodyMedium,
-                                      children: <TextSpan>[
-                                        TextSpan(
-                                            text: 'während',
-                                            style: textTheme.bodyMedium!
-                                                .copyWith(color: Colors.red)),
-                                      ],
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'Zeitraum',
-                                      style: textTheme.bodyMedium,
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      text: '',
-                                      style: textTheme.bodyMedium,
-                                    ),
-                                  ),
-                                ]),
-                              ],
-                            )
-                          ]),
-                        ),
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-              Card(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: <Widget>[
-                    Padding(
-                      padding: const EdgeInsets.only(
-                          top: 10.0, left: 16.0, bottom: 10),
-                      child: Text(
-                          'Temporale Präpositionen, die eine Zeitdauer anzeigen.',
-                          style: textTheme.titleSmall),
-                    ),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                            top: 10.0, left: 16.0, bottom: 10),
-                        child: RichText(
-                          text: TextSpan(
-                            style: textTheme.bodyMedium,
-                            children: <TextSpan>[
-                              TextSpan(
-                                  text:
-                                      'für (+ Akkusativ) gibt einen zukünftigen Zeitraum an. W-Frage = (für) wie lange?\n'),
-                              TextSpan(
-                                  text:
-                                      'Wie lange bleiben Sie in Kiel? - Ich bleibe nur '),
-                              TextSpan(
-                                  text: 'für drei Tage',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(text: ' in Kiel.\n'),
-                              TextSpan(
-                                  text: 'Herr Knuttermäulchen ist gestern '),
-                              TextSpan(
-                                  text: 'für zwei Wochen',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(text: ' nach Japan geflogen.\n'),
-                              TextSpan(
-                                  text:
-                                      'über (+ Akkusativ) gibt einen Zeitraum an. W-Frage = wann?\n'),
-                              TextSpan(text: 'Wir wollen '),
-                              TextSpan(
-                                  text: 'übers Wochenende',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(
-                                  text:
-                                      ' zu unseren Freunden nach Klagenfurt fahren.\n'),
-                              TextSpan(
-                                  text: 'Über die Karnevalstage',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(
-                                  text:
-                                      ' soll es laut Wetterbericht stürmisch werden.\n'),
-                              TextSpan(
-                                  text:
-                                      'ab und von ... an (+ Dativ) gibt einen gegenwärtigen oder zukünftigen Zeitraum mit einem festgelegten Beginn an. Das Ende bleibt dabei offen. W-Frage = ab wann\n'),
-                              TextSpan(
-                                  text: 'Ab kommender Woche',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(
-                                  text:
-                                      ' ist Herr Hansel für drei Wochen nicht mehr zu erreichen.\n'),
-                              TextSpan(
-                                  text: 'Von kommendem Montag an',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(
-                                  text:
-                                      ' gelten neue gesetzliche Regelungen im Erbschaftsrecht.\n'),
-                              TextSpan(
-                                  text: 'Ab wann',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(
-                                  text: ' ist Frau Junkelwitsch in Urlaub? - '),
-                              TextSpan(
-                                  text: 'Ab dem 14.08.',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(text: '\n'),
-                              TextSpan(
-                                  text:
-                                      'bei (+ Dativ) gibt eine Gleichzeitigkeit an. W-Frage = wann?\n'),
-                              TextSpan(
-                                  text: 'Beim Essen',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(
-                                  text:
-                                      ' sollen die Kinder nicht schmatzen.\n'),
-                              TextSpan(text: 'Die Kinder müssen lernen, '),
-                              TextSpan(
-                                  text: 'beim Tauchen',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(text: ' die Luft anzuhalten.\n'),
-                              TextSpan(text: 'Erich hat seine Frau '),
-                              TextSpan(
-                                  text: 'beim Wandern',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(text: ' kennen gelernt.\n'),
-                              TextSpan(
-                                  text:
-                                      'bis (zu) gibt einen Endpunkt eines Zeitraums an. (bis + Akkusativ, wenn Nomen ohne Artikel, bis zu + Dativ, wenn Nomen mit Artikel) W-Frage = bis wann?\n'),
-                              TextSpan(text: 'Die Abschlussfeier dauerte '),
-                              TextSpan(
-                                  text: 'bis zum Morgengrauen',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(text: '.\n'),
-                              TextSpan(text: 'Unsere Gäste wollen nur noch '),
-                              TextSpan(
-                                  text: 'bis Freitag',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(text: ' bleiben.\n'),
-                              TextSpan(
-                                  text: 'Bis wann',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(
-                                  text:
-                                      ' brauchst du den Wagen? - Ich brauche ihn '),
-                              TextSpan(
-                                  text: 'bis einschließlich Freitag',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(text: '.\n'),
-                              TextSpan(
-                                  text:
-                                      'seit (+ Dativ) gibt einen Zeitraum an, der in der Vergangenheit begonnen hat und bis zur Gegenwart andauert und wahrscheinlich noch länger andauern wird. Das Verb wird stets im Präsens gebraucht! W-Frage = seit wann? / wie lange\n'),
-                              TextSpan(
-                                  text: 'Seit wann',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(text: ' sind Sie in Deutschland? - '),
-                              TextSpan(
-                                  text: 'Seit September 2006',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(text: '.\n'),
-                              TextSpan(
-                                  text: 'Wie lange',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(text: ' wartest du schon hier? - '),
-                              TextSpan(
-                                  text: 'Seit mindestens einer halben Stunde',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(text: '.\n'),
-                              TextSpan(text: 'Alfons hat '),
-                              TextSpan(
-                                  text: 'seit dem Tod seiner Frau',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(text: ' große Alkoholprobleme.\n'),
-                              TextSpan(
-                                  text:
-                                      'von ... bis (zu) (+ Dativ) gibt einen Zeitraum mit genauem Beginn und Ende an. W-Frage = von wann bis wann?\n'),
-                              TextSpan(
-                                  text:
-                                      'Unsere Praxis bleibt in den Sommerferien '),
-                              TextSpan(
-                                  text: 'vom 12.08. bis zum 05.09.',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(text: ' geschlossen.\n'),
-                              TextSpan(
-                                  text:
-                                      'Unsere Sprechstunden sind donnerstags nur '),
-                              TextSpan(
-                                  text: 'von 9:00 Uhr bis 12:30 Uhr',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(text: '.\n'),
-                              TextSpan(text: 'Gestern hat es '),
-                              TextSpan(
-                                  text: 'von morgens bis abends',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(text: ' geregnet.\n'),
-                              TextSpan(
-                                  text:
-                                      'zwischen (+ Dativ) gibt einen Zeitraum mit Beginn und Ende an. W-Frage = wann?\n'),
-                              TextSpan(
-                                  text: 'Zwischen den Monaten Mai und August',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(
-                                  text:
-                                      ' hat es in diesem Jahr kaum geregnet.\n'),
-                              TextSpan(
-                                  text:
-                                      'Wann kommt Ihr Mann nach Hause? - Er kommt gewöhnlich '),
-                              TextSpan(
-                                  text: 'zwischen 6:00 Uhr und 7:00 Uhr',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(text: ' nach Hause.\n'),
-                              TextSpan(
-                                  text: 'Zwischen dem 05.08. und dem 08.08.',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(
-                                  text:
-                                      ' bleibt die Zahnarztpraxis geschlossen.\n'),
-                              TextSpan(
-                                  text:
-                                      'außerhalb (+ Genitiv) W-Frage = wann\n'),
-                              TextSpan(
-                                  text: 'Außerhalb der Sprechzeiten',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(
-                                  text:
-                                      ' wenden Sie sich bitte an den Notdienst.\n'),
-                              TextSpan(
-                                  text: 'Außerhalb der Saison',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(
-                                  text:
-                                      ' trifft man hier nur wenige Touristen an.\n'),
-                              TextSpan(
-                                  text:
-                                      'innerhalb (+ Genitiv) W-Frage = wann\n'),
-                              TextSpan(text: 'Zahlen Sie bitte die Rechnung '),
-                              TextSpan(
-                                  text: 'innerhalb eines Monats',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(text: '.\n'),
-                              TextSpan(
-                                  text: 'Innerhalb von nur einer Woche',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(
-                                  text:
-                                      ' verursachte der Kraftfahrer vier Unfälle.\n'),
-                              TextSpan(
-                                  text: 'während (+ Genitiv) w-Frage = wann\n'),
-                              TextSpan(text: 'Das Kind sitzt '),
-                              TextSpan(
-                                  text: 'während des ganzen Tages',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(text: ' zu Hause vor dem Fernseher.\n'),
-                              TextSpan(
-                                  text: 'Während des ganzen Sommers',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(
-                                  text: ' gab es hier keine Niederschläge.\n'),
-                            ],
-                          ),
-                        )),
-                  ],
-                ),
-              ),
-              Card(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: <Widget>[
-                    Padding(
-                      padding: const EdgeInsets.only(
-                          top: 10.0, left: 16.0, bottom: 10),
-                      child: Text(
-                          'Temporale Präpositionen, die einen Zeitpunkt anzeigen.',
-                          style: textTheme.titleSmall),
-                    ),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                            top: 10.0, left: 16.0, bottom: 10),
-                        child: RichText(
-                          text: TextSpan(
-                            style: textTheme.bodyMedium,
-                            children: <TextSpan>[
-                              TextSpan(
-                                  text:
-                                      'gegen (+ Akkusativ) gibt einen ungenauen oder ungefähren Zeitpunkt an, oft ist es eine ungefähre Uhrzeit.\n'),
-                              TextSpan(
-                                  text: 'Wann kommst du etwa wieder? - So '),
-                              TextSpan(
-                                  text: 'gegen 20:00 Uhr',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(text: '.\n'),
-                              TextSpan(
-                                  text:
-                                      'Wie viel Uhr ist es? - Ich weiß es nicht genau. Es müsste so '),
-                              TextSpan(
-                                  text: 'gegen 16:00 Uhr',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(text: ' sein.\n'),
-                              TextSpan(
-                                  text:
-                                      'um (+ Akkusativ) gibt eine genaue Uhrzeit an und eine ungefähre Zeitangabe mit Jahreszahl.\n'),
-                              TextSpan(text: 'Der Zug fährt '),
-                              TextSpan(
-                                  text: 'um 17:34 Uhr',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(
-                                  text: ' vom Frankfurter Hauptbahnhof ab.\n'),
-                              TextSpan(
-                                  text: 'Um wie viel Uhr',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(text: ' beginnt der Film? - '),
-                              TextSpan(
-                                  text: 'Um 22:20 Uhr',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(text: '.\n'),
-                              TextSpan(
-                                  text:
-                                      'Laut einiger Aufzeichnungen wurde die Stadtmauer nur zum Teil '),
-                              TextSpan(
-                                  text: 'um 1400',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(text: ' gebaut.\n'),
-                              TextSpan(
-                                  text:
-                                      'an (+ Dativ) gebraucht man für Tage, Datum, Tageszeiten und Feiertage\n'),
-                              TextSpan(
-                                  text:
-                                      'Wann kommt Vater endlich von der Reise zurück? - '),
-                              TextSpan(
-                                  text: 'Am kommenden Freitag',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(text: '.\n'),
-                              TextSpan(
-                                  text: 'Am wievielten',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(
-                                  text: ' ist Muttertag? - Muttertag ist '),
-                              TextSpan(
-                                  text: 'am13.05.',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(text: '.\n'),
-                              TextSpan(
-                                  text:
-                                      'Wann ist dein Vater geboren? - Er ist '),
-                              TextSpan(
-                                  text: 'am 16.11.1955',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(text: ' geboren.\n'),
-                              TextSpan(text: 'Fliegt ihr '),
-                              TextSpan(
-                                  text: 'am Vormittag',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(text: '? - Nein, erst '),
-                              TextSpan(
-                                  text: 'am Nachmittag',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(text: ' gegen 16 Uhr.\n'),
-                              TextSpan(
-                                  text: 'Am Abend',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(
-                                  text:
-                                      ' soll es laut Wettervorhersage schon wieder Dauerregen geben.\n'),
-                              TextSpan(
-                                  text: 'An Pfingsten',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(
-                                  text:
-                                      ' nimmt unser Sohn an ein internationales Schwimmturnier teil.\n'),
-                              TextSpan(
-                                  text:
-                                      'aus gibt eine zeitliche Herkunft an.\n'),
-                              TextSpan(text: 'Das Schwert stammt '),
-                              TextSpan(
-                                  text: 'aus dem 12. Jahrhundert',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(text: '.\n'),
-                              TextSpan(text: 'Diese Knochen dürften '),
-                              TextSpan(
-                                  text: 'aus dem Altpaläolitikum',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(text: ' stammen.\n'),
-                              TextSpan(
-                                  text:
-                                      'bei (+ Dativ) gibt eine Gleichzeitigkeit an\n'),
-                              TextSpan(
-                                  text: 'Bei Tagesanbruch',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(
-                                  text:
-                                      ' kann man viele Vögel zwitschern hören.\n'),
-                              TextSpan(text: 'Am liebsten gehe ich '),
-                              TextSpan(
-                                  text: 'bei Sonnenuntergang',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(text: ' spazieren.\n'),
-                              TextSpan(
-                                  text:
-                                      'in (+ Dativ) gibt einen unbestimmten Zeitpunkt in einem definierten Zeitraum an. Dazu gehören Wochen, Monate, Jahreszeiten, Jahrzehnte, Zeiträume und zukünftiges.\n'),
-                              TextSpan(
-                                  text:
-                                      'in (+ Dativ) gibt einen unbestimmten Zeitpunkt in einem definierten Zeitraum an. Dazu gehören Wochen, Monate, Jahreszeiten, Jahrzehnte, Zeiträume und zukünftiges.\n'),
-                              TextSpan(text: 'Wir schreiben heute '),
-                              TextSpan(
-                                  text: 'in einer Woche',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(text: ' einen Grammatiktest.\n'),
-                              TextSpan(
-                                  text: 'Im September',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(
-                                  text:
-                                      ' fliegen wir für vier Wochen nach Venezuela.\n'),
-                              TextSpan(
-                                  text: 'Im Sommer',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(
-                                  text:
-                                      ' möchten unsere Kinder nach Spanien fahren.\n'),
-                              TextSpan(
-                                  text: 'In den 70er Jahren',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(
-                                  text:
-                                      ' wurden viele Rockbands weltberühmt.\n'),
-                              TextSpan(
-                                  text: 'In den kommenden Wochen',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(
-                                  text: ' gibt es noch sehr viel zu tun.\n'),
-                              TextSpan(
-                                  text: 'In der letzten Zeit',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(
-                                  text:
-                                      ' benimmt sich Benjamin sehr seltsam.\n'),
-                              TextSpan(
-                                  text:
-                                      'nach (+ Dativ) gibt an, was nach einem Ereignis passiert.\n'),
-                              TextSpan(text: 'Was machst du '),
-                              TextSpan(
-                                  text: 'nach dem Unterricht',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(text: '? - Ich gehe in die Mensa.\n'),
-                              TextSpan(
-                                  text: 'Nach dem 2. Weltkrieg',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(
-                                  text:
-                                      ' galt es, die politische Ordnung wieder herzustellen.\n'),
-                              TextSpan(
-                                  text:
-                                      'vor (+ Dativ) gibt einen Zeitpunkt oder einen Beginn an, dessen Geschehen vor einem Ereignis passiert.\n'),
-                              TextSpan(
-                                  text: 'Vor dem Essen',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(
-                                  text:
-                                      ' waschen sich alle Kinder die Hände.\n'),
-                              TextSpan(
-                                  text: 'Vor den Bundestagswahlen',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(
-                                  text:
-                                      ' erhalten alle Wahlberichtigten einen Wahlschein.\n'),
-                            ],
-                          ),
-                        )),
-                  ],
-                ),
-              ),
-              Card(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: <Widget>[
-                    Padding(
-                      padding: const EdgeInsets.only(
-                          top: 10.0, left: 16.0, bottom: 10),
-                      child: Text('Zeitausdrücke als Angabe mit Akkusativ',
-                          style: textTheme.titleSmall),
-                    ),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                            top: 10.0, left: 16.0, bottom: 10),
-                        child: RichText(
-                          text: TextSpan(
-                            style: textTheme.bodyMedium,
-                            children: <TextSpan>[
-                              TextSpan(
-                                  text:
-                                      'Einige Zeitausdrücke können auch ohne Präposition gebraucht werden. Dabei handelt es sich um Angaben der Zeit, die im Akkusativ stehen.\n'),
-                              TextSpan(text: 'Jahreszahlen\n'),
-                              TextSpan(
-                                  text: '1988',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(
-                                  text: ' hat meine Tochter geheiratet.\n'),
-                              TextSpan(
-                                  text: '2002',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(
-                                  text:
-                                      ' wurde erstmals der Euro als Bargeld im Umlauf gebracht.\n'),
-                              TextSpan(
-                                  text: 'Ausdrücke mit Anfang, Mitte, Ende\n'),
-                              TextSpan(
-                                  text:
-                                      'Die Schwimmbäder in der Region werden '),
-                              TextSpan(
-                                  text: 'Anfang Mai',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(text: ' geöffnet.\n'),
-                              TextSpan(text: 'Elke und Fabio wollen '),
-                              TextSpan(
-                                  text: 'Mitte des Jahres',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(text: ' heiraten.\n'),
-                              TextSpan(
-                                  text: 'Ende der Woche',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(
-                                  text:
-                                      ' wollen wir übers Wochenende nach Stuttgart fahren.\n'),
-                              TextSpan(
-                                  text:
-                                      'Ausdrücke mit vorige, diese und nächste\n'),
-                              TextSpan(
-                                  text: 'Voriges Jahr',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(
-                                  text:
-                                      ' hatte Herr Tiefenschnabel wegen Trunkenheit am Steuer einen schweren Verkehrsunfall verursacht.\n'),
-                              TextSpan(text: 'Meine Tochter will noch '),
-                              TextSpan(
-                                  text: 'diesen Monat',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(text: ' ihren Führerschein machen.\n'),
-                              TextSpan(text: 'Hoffentlich läuft es bei Ihnen '),
-                              TextSpan(
-                                  text: 'nächstes Jahr',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(text: ' finanziell besser.\n'),
-                            ],
-                          ),
-                        )),
-                  ],
-                ),
-              ),
-            ],
-          ),
-        ),
+            padding: const EdgeInsets.all(8.0),
+            child: MyPageContentView(contents: contents)),
       ),
     );
   }
 }
+
+List<CardContent> contents = [
+  CardContent(
+    elements: [
+      CardElement(type: ElementType.pageTitle, value: title),
+    ],
+  ),
+  CardContent(
+    elements: [
+      CardElement(type: ElementType.cardTitle, value: title1),
+      CardElement(type: ElementType.htmlContent, value: htmlContent1_1),
+      CardElement(type: ElementType.htmlTable, value: htmlTable1_2),
+    ],
+  ),
+  CardContent(
+    elements: [
+      CardElement(type: ElementType.cardTitle, value: title2),
+      CardElement(type: ElementType.htmlContent, value: htmlContent2_1),
+    ],
+  ),
+  CardContent(
+    elements: [
+      CardElement(type: ElementType.cardTitle, value: title3),
+      CardElement(type: ElementType.htmlContent, value: htmlContent3_1),
+    ],
+  ),
+  CardContent(
+    elements: [
+      CardElement(type: ElementType.cardTitle, value: title4),
+      CardElement(type: ElementType.htmlContent, value: htmlContent4_1),
+    ],
+  ),
+];
+
+String title = '10.6. Temporale Präpositionen';
+
+String title1 = 'Was man über temporale Präpositionen wissen sollte.';
+String htmlContent1_1 = '''
+<p><strong>Temporale Präpositionen</strong> können eine Antwort auf die <strong><a title="Fragewörter" href="lernen.php?menu_id=15#tempus">Fragewörter</a></strong> <strong><span class="red">wann</span></strong>, <strong><span class="red">bis wann</span></strong>, <strong><span class="red">seit wann</span></strong>, <strong><span class="red">von wann bis wann</span></strong>, <strong><span class="red">um wie viel Uhr</span></strong> und <strong><span class="red">wie lange</span></strong> geben. Man unterscheidet:</p>
+
+<li><strong><a title="Zeitdauer" href="#zeitdauer">Zeitdauer</a></strong>
+
+<p>Eine Zeitdauer gibt einen Zeitraum an, der einen Anfang und ein Ende hat. Die W-Fragen dazu lauten "<strong><span class="red">bis wann</span></strong>", "<strong><span class="red">seit wann</span></strong>", "<strong><span class="red">von wann bis wann</span></strong>" oder "<strong><span class="red">wie lange</span></strong>".</p>
+
+<li><strong><a title="Zeitpunkt" href="#zeitpunkt">Zeitpunkt</a></strong>
+
+<p>Ein Zeitpunkt gibt eine genaue Zeit an. Die W-Fragen dazu lauten "<strong><span class="red">wann</span></strong>" oder "<strong><span class="red">um wie viel Uhr</span></strong>".</p>
+''';
+String htmlTable1_2 = '''
+<table><colgroup> <col style="width: 10%;"> <col style="width: 22%;"> <col style="width: 14%;"> <col style="width: 26%;"> <col style="width: 28%;"> </colgroup>
+<thead>
+<tr>
+<th>Kasus</th>
+<th>W-Frage</th>
+<th>Präposition</th>
+<th>Zeitdauer</th>
+<th>Zeitpunkt</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Akk</td>
+<td>für wie lange</td>
+<td><strong><span class="red">für</span></strong></td>
+<td>zukünftiger Zeitraum</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>Akk</td>
+<td>wann <br>um wie viel Uhr</td>
+<td><strong><span class="red">gegen</span></strong></td>
+<td>&nbsp;</td>
+<td>ungenaue Tageszeit<br> ungenaue Uhrzeit</td>
+</tr>
+<tr>
+<td>Akk</td>
+<td>um wie viel Uhr<br> wann</td>
+<td><strong><span class="red">um</span></strong></td>
+<td>&nbsp;</td>
+<td>genaue Uhrzeit<br> ungenaue Zeitangabe</td>
+</tr>
+<tr>
+<td>Akk</td>
+<td>wie lange</td>
+<td><strong><span class="red">über</span></strong></td>
+<td>Zeitraum</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>Dativ</td>
+<td>wann <br>ab wann</td>
+<td><strong><span class="red">ab</span></strong>, <br> <strong><span class="red">von ... an</span></strong></td>
+<td>Beginn in der Gegenwart<br> Beginn in der Zukunft</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>Dativ</td>
+<td>wann</td>
+<td><strong><span class="red">an</span></strong></td>
+<td>&nbsp;</td>
+<td>Datum<br> Tag<br> Tageszeit<br> Feiertag</td>
+</tr>
+<tr>
+<td>Dativ</td>
+<td>wann</td>
+<td><strong><span class="red">aus</span></strong></td>
+<td>&nbsp;</td>
+<td>zeitliche Herkunft</td>
+</tr>
+<tr>
+<td>Dativ</td>
+<td>wann <br>wobei</td>
+<td><strong><span class="red">bei</span></strong></td>
+<td>Gleichzeitigkeit</td>
+<td>Gleichzeitigkeit</td>
+</tr>
+<tr>
+<td>Dativ</td>
+<td>bis wann</td>
+<td><strong><span class="red">bis (zu)</span></strong></td>
+<td>Endpunkt</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>Dativ</td>
+<td>wann</td>
+<td><strong><span class="red">in</span></strong></td>
+<td>&nbsp;</td>
+<td>Tage<br>Woche<br>Monat<br> Jahreszeiten<br>Jahrhundert<br> zukünftiges<br>Zeiträume</td>
+</tr>
+<tr>
+<td>Dativ</td>
+<td>wann</td>
+<td><strong><span class="red">nach</span></strong></td>
+<td>&nbsp;</td>
+<td>etwas nach etwas anderem tun</td>
+</tr>
+<tr>
+<td>Dativ</td>
+<td>seit wann</td>
+<td><strong><span class="red">seit</span></strong></td>
+<td>Beginn in der Vergangenheit <span style="text-decoration:underline">und</span> Dauer bis zur Gegenwart</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>Dativ</td>
+<td>von wann bis wann</td>
+<td><strong><span class="red">von ... bis</span></strong></td>
+<td>Beginn <span style="text-decoration:underline">und</span> Ende</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>Dativ</td>
+<td>wann</td>
+<td><strong><span class="red">vor</span></strong></td>
+<td>&nbsp;</td>
+<td>etwas vor etwas anderem tun</td>
+</tr>
+<tr>
+<td>Dativ</td>
+<td>wann</td>
+<td><strong><span class="red">zwischen</span></strong></td>
+<td>Beginn und Ende</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>Genitiv</td>
+<td>wann</td>
+<td><strong><span class="red">außerhalb</span></strong></td>
+<td>Zeitraum</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>Genitiv</td>
+<td>wann</td>
+<td><strong><span class="red">innerhalb</span></strong></td>
+<td>Zeitraum</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>Genitiv</td>
+<td>wann</td>
+<td><strong><span class="red">während</span></strong></td>
+<td>Zeitraum</td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>  
+''';
+
+String title2 = 'Temporale Präpositionen, die eine Zeitdauer anzeigen.';
+String htmlContent2_1 = '''
+<p><strong><span class="red">für</span></strong> (+ Akkusativ) gibt einen zukünftigen Zeitraum an. W-Frage = (für) wie lange?</p>
+
+<li>Wie lange bleiben Sie in Kiel? - Ich bleibe nur <strong><span class="red">für drei Tage</span></strong> in Kiel.</li>
+<li>Herr Knuttermäulchen ist gestern <strong><span class="red">für zwei Wochen</span></strong> nach Japan geflogen.</li>
+
+<p><strong><span class="red">über</span></strong> (+ Akkusativ) gibt einen Zeitraum an. W-Frage = wann?</p>
+
+<li>Wir wollen <strong><span class="red">übers Wochenende</span></strong> zu unseren Freunden nach Klagenfurt fahren.</li>
+<li><strong><span class="red">Über die Karnevalstage</span></strong> soll es laut Wetterbericht stürmisch werden.</li>
+
+<p><strong><span class="red">ab</span></strong> und <strong><span class="red">von ... an</span></strong> <br>(+ Dativ) gibt einen gegenwärtigen oder zukünftigen Zeitraum mit einem festgelegten Beginn an. Das Ende bleibt dabei offen. W-Frage = ab wann</p>
+
+<li><strong><span class="red">Ab kommender Woche</span></strong> ist Herr Hansel für drei Wochen nicht mehr zu erreichen.</li>
+<li><strong><span class="red">Von kommendem Montag an</span></strong> gelten neue gesetzliche Regelungen im Erbschaftsrecht.</li>
+<li><strong><span class="red">Ab wann</span></strong> ist Frau Junkelwitsch in Urlaub? - <strong><span class="red">Ab dem 14.08.</span></strong></li>
+
+<p><strong><span class="red">bei</span></strong> (+ Dativ) gibt eine Gleichzeitigkeit an. W-Frage = wann?</p>
+
+<li><strong><span class="red">Beim Essen</span></strong> sollen die Kinder nicht schmatzen.</li>
+<li>Die Kinder müssen lernen, <strong><span class="red">beim Tauchen</span></strong> die Luft anzuhalten.</li>
+<li>Erich hat seine Frau <strong><span class="red">beim Wandern</span></strong> kennen gelernt.</li>
+
+<p><strong><span class="red">bis (zu)</span></strong><br>gibt einen Endpunkt eines Zeitraums an. (bis + Akkusativ, wenn Nomen ohne Artikel, bis zu + Dativ, wenn Nomen mit Artikel) W-Frage = bis wann?</p>
+
+<li>Die Abschlussfeier dauerte <strong><span class="red">bis zum Morgengrauen</span></strong>.</li>
+<li>Unsere Gäste wollen nur noch <strong><span class="red">bis Freitag</span></strong> bleiben.</li>
+<li><strong><span class="red">Bis wann</span></strong> brauchst du den Wagen? - Ich brauche ihn <strong><span class="red">bis einschließlich Freitag</span></strong>.</li>
+
+<p><strong><span class="red">seit</span></strong> (+ Dativ) gibt einen Zeitraum an, der in der Vergangenheit begonnen hat und bis zur Gegenwart andauert und wahrscheinlich noch länger andauern wird. Das Verb wird stets im Präsens gebraucht! W-Frage = seit wann? / wie lange</p>
+
+<li><strong><span class="red">Seit wann</span></strong> sind Sie in Deutschland? - <strong><span class="red">Seit September 2006</span></strong>.</li>
+<li><strong><span class="red">Wie lange</span></strong> wartest du schon hier? - <strong><span class="red">Seit mindestens einer halben Stunde</span></strong>.</li>
+<li>Alfons hat <strong><span class="red">seit dem Tod seiner Frau</span></strong> große Alkoholprobleme.</li>
+
+<p><strong><span class="red">von ... bis (zu)</span></strong> (+ Dativ) gibt einen Zeitraum mit genauem Beginn und Ende an. W-Frage = von wann bis wann?</p>
+
+<li>Unsere Praxis bleibt in den Sommerferien <strong><span class="red">vom 12.08. bis zum 05.09.</span></strong> geschlossen.</li>
+<li>Unsere Sprechstunden sind donnerstags nur <strong><span class="red">von 9:00 Uhr bis 12:30 Uhr</span></strong>.</li>
+<li>Gestern hat es <strong><span class="red">von morgens bis abends</span></strong> geregnet.</li>
+
+<p><strong><span class="red">zwischen</span></strong> (+ Dativ) gibt einen Zeitraum mit Beginn und Ende an. W-Frage = wann?</p>
+
+<li><strong><span class="red">Zwischen den Monaten Mai und August</span></strong> hat es in diesem Jahr kaum geregnet.</li>
+<li>Wann kommt Ihr Mann nach Hause? - Er kommt gewöhnlich <strong><span class="red">zwischen 6:00 Uhr und 7:00 Uhr</span></strong> nach Hause.</li>
+<li><strong><span class="red">Zwischen dem 05.08. und dem 08.08.</span></strong> bleibt die Zahnarztpraxis geschlossen.</li>
+
+<p><strong><span class="red">außerhalb</span></strong> (+ Genitiv) W-Frage = wann</p>
+
+<li><strong><span class="red">Außerhalb der Sprechzeiten</span></strong> wenden Sie sich bitte an den Notdienst.</li>
+<li><strong><span class="red">Außerhalb der Saison</span></strong> trifft man hier nur wenige Touristen an.</li>
+
+<p><strong><span class="red">innerhalb</span></strong> (+ Genitiv) W-Frage = wann</p>
+
+<li>Zahlen Sie bitte die Rechnung <strong><span class="red">innerhalb eines Monats</span></strong>.</li>
+<li><strong><span class="red">Innerhalb von nur einer Woche</span></strong> verursachte der Kraftfahrer vier Unfälle.</li>
+
+<p><strong><span class="red">während</span></strong> (+ Genitiv) w-Frage = wann</p>
+
+<li>Das Kind sitzt <strong><span class="red">während des ganzen Tages</span></strong> zu Hause vor dem Fernseher.</li>
+<li><strong><span class="red">Während des ganzen Sommers</span></strong> gab es hier keine Niederschläge.</li>
+''';
+
+String title3 = 'Temporale Präpositionen, die einen Zeitpunkt anzeigen.';
+String htmlContent3_1 = '''
+<p><strong><span class="red">gegen</span></strong> (+ Akkusativ) gibt einen ungenauen oder ungefähren Zeitpunkt an, oft ist es eine ungefähre Uhrzeit.</p>
+
+<li>Wann kommst du etwa wieder? - So <strong><span class="red">gegen 20:00 Uhr</span></strong>.</li>
+<li>Wie viel Uhr ist es? - Ich weiß es nicht genau. Es müsste so <strong><span class="red">gegen 16:00 Uhr</span></strong> sein.</li>
+
+<p><strong><span class="red">um</span></strong> (+ Akkusativ) gibt eine genaue Uhrzeit an und eine ungefähre Zeitangabe mit Jahreszahl.</p>
+
+<li>Der Zug fährt <strong><span class="red">um 17:34 Uhr</span></strong> vom Frankfurter Hauptbahnhof ab.</li>
+<li><strong><span class="red">Um wie viel Uhr</span></strong> beginnt der Film? - <strong><span class="red">Um 22:20 Uhr</span></strong>.</li>
+<li>Laut einiger Aufzeichnungen wurde die Stadtmauer nur zum Teil <strong><span class="red">um 1400</span></strong> gebaut.</li>
+
+<p><strong><span class="red">an</span></strong> (+ Dativ) gebraucht man für Tage, Datum, Tageszeiten und Feiertage</p>
+
+<li>Wann kommt Vater endlich von der Reise zurück? - <strong><span class="red">Am kommenden Freitag</span></strong>.</li>
+<li><strong><span class="red">Am wievielten</span></strong> ist Muttertag? - Muttertag ist <strong><span class="red"> am13.05.</span></strong></li>
+<li>Wann ist dein Vater geboren? - Er ist <strong><span class="red"> am 16.11.1955</span></strong> geboren.</li>
+<li>Fliegt ihr <strong><span class="red">am Vormittag</span></strong>? - Nein, erst <strong><span class="red">am Nachmittag</span></strong> gegen 16 Uhr.</li>
+<li><strong><span class="red">Am Abend</span></strong> soll es laut Wettervorhersage schon wieder Dauerregen geben.</li>
+<li><strong><span class="red">An Pfingsten</span></strong> nimmt unser Sohn an ein internationales Schwimmturnier teil.</li>
+
+<p><strong><span class="red">aus</span></strong> gibt eine zeitliche Herkunft an.</p>
+
+<li>Das Schwert stammt <strong><span class="red">aus dem 12. Jahrhundert</span></strong>.</li>
+<li>Diese Knochen dürften <strong><span class="red">aus dem Altpaläolitikum</span></strong> stammen.</li>
+
+<p><strong><span class="red">bei</span></strong> (+ Dativ) gibt eine Gleichzeitigkeit an</p>
+
+<li><strong><span class="red">Bei Tagesanbruch</span></strong> kann man viele Vögel zwitschern hören.</li>
+<li>Am liebsten gehe ich <strong><span class="red">bei Sonnenuntergang</span></strong> spazieren.</li>
+
+<p><strong><span class="red">in</span></strong> (+ Dativ) gibt einen unbestimmten Zeitpunkt in einem definierten Zeitraum an. Dazu gehören Wochen, Monate, Jahreszeiten, Jahrzehnte, Zeiträume und zukünftiges.</p>
+
+<li>Wir schreiben heute <strong><span class="red">in einer Woche</span></strong> einen Grammatiktest.</li>
+<li><strong><span class="red">Im September</span></strong> fliegen wir für vier Wochen nach Venezuela.</li>
+<li><strong><span class="red">Im Sommer</span></strong> möchten unsere Kinder nach Spanien fahren.</li>
+<li><strong><span class="red">In den 70er Jahren</span></strong> wurden viele Rockbands weltberühmt.</li>
+<li><strong><span class="red">In den kommenden Wochen</span></strong> gibt es noch sehr viel zu tun.</li>
+<li><strong><span class="red">In der letzten Zeit</span></strong> benimmt sich Benjamin sehr seltsam.</li>
+
+<p><strong><span class="red">nach</span></strong> (+ Dativ) gibt an, was nach einem Ereignis passiert.</p>
+
+<li>Was machst du <strong><span class="red">nach dem Unterricht</span></strong>? - Ich gehe in die Mensa.</li>
+<li><strong><span class="red">Nach dem 2. Weltkrieg</span></strong> galt es, die politische Ordnung wieder herzustellen.</li>
+
+<p><strong><span class="red">vor</span></strong> (+ Dativ) gibt einen Zeitpunkt oder einen Beginn an, dessen Geschehen vor einem Ereignis passiert.</p>
+
+<li><strong><span class="red">Vor dem Essen</span></strong> waschen sich alle Kinder die Hände.</li>
+<li><strong><span class="red">Vor den Bundestagswahlen</span></strong> erhalten alle Wahlberichtigten einen Wahlschein.</li> 
+''';
+
+String title4 = 'Zeitausdrücke als Angabe mit Akkusativ';
+String htmlContent4_1 = '''
+<p>Einige Zeitausdrücke können auch ohne Präposition gebraucht werden. Dabei handelt es sich um Angaben der Zeit, die im Akkusativ stehen.</p>
+
+<li>Jahreszahlen
+
+<li><strong><span class="red">1988</span></strong> hat meine Tochter geheiratet.</li>
+<li><strong><span class="red">2002</span></strong> wurde erstmals der Euro als Bargeld im Umlauf gebracht.</li>
+
+<li>Ausdrücke mit Anfang, Mitte, Ende
+
+<li>Die Schwimmbäder in der Region werden <strong><span class="red">Anfang Mai</span></strong> geöffnet.</li>
+<li>Elke und Fabio wollen <strong><span class="red">Mitte des Jahres</span></strong> heiraten.</li>
+<li><strong><span class="red">Ende der Woche</span></strong> wollen wir übers Wochenende nach Stuttgart fahren.</li>
+
+<li>Ausdrücke mit vorige, diese und nächste
+
+<li><strong><span class="red">Voriges Jahr</span></strong> hatte Herr Tiefenschnabel wegen Trunkenheit am Steuer einen schweren Verkehrsunfall verursacht.</li>
+<li>Meine Tochter will noch <strong><span class="red">diesen Monat</span></strong> ihren Führerschein machen.</li>
+<li>Hoffentlich läuft es bei Ihnen <strong><span class="red">nächstes Jahr</span></strong> finanziell besser.</li>
+''';

@@ -1,356 +1,97 @@
 import 'package:flutter/material.dart';
 
 import '../app/app_localizations.dart';
+import '../page_content.dart';
 
 class Pronomen_Fuerwoerter_11 extends StatelessWidget {
   const Pronomen_Fuerwoerter_11({super.key});
 
   @override
   Widget build(BuildContext context) {
-    final localizations = AppLocalizations.of(context);
-    final textTheme = Theme.of(context).textTheme;
     return Expanded(
       child: Scaffold(
         body: Padding(
-          padding: const EdgeInsets.all(8.0),
-          child: ListView(
-            children: <Widget>[
-              Card(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: <Widget>[
-                    Padding(
-                      padding: const EdgeInsets.only(top: 16.0, left: 16.0),
-                      child: Text('11. Pronomen / Fürwörter',
-                          style: textTheme.titleMedium),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.only(top: 10.0, left: 16.0),
-                      child: Text('Was man über Pronomen wissen sollte.',
-                          style: textTheme.titleSmall),
-                    ),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                            top: 10.0, left: 16.0, bottom: 10),
-                        child: RichText(
-                          text: TextSpan(
-                            style: textTheme.bodyMedium,
-                            children: <TextSpan>[
-                              TextSpan(
-                                  text:
-                                      'Pronomen (Plural die Pronomen / die Pronomina, deutsch Fürwort, Plural Fürwörter) sind selbständige Satzglieder, die '),
-                              TextSpan(
-                                  text: 'stellvertretend',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(
-                                  text:
-                                      ' für ein Nomen oder eine Nomengruppe eingesetzt werden. In einer Aussage muss '),
-                              TextSpan(
-                                  text: 'zuerst das Nomen',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(
-                                  text:
-                                      ' (Bezugswort) genannt oder bestimmt werden, bevor im zweiten Schritt '),
-                              TextSpan(
-                                  text: 'das Pronomen als Stellvertreter',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.blue,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(
-                                  text: ' im Satz Verwendung finden kann.\n'),
-                              TextSpan(text: 'Hast du '),
-                              TextSpan(
-                                  text: 'meinen Schlüssel',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(text: ' gesehen? - Ich glaube, '),
-                              TextSpan(
-                                  text: 'der',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.blue,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(text: ' liegt auf dem Küchentisch.\n'),
-                              TextSpan(text: 'Erich hat sich '),
-                              TextSpan(
-                                  text: 'ein neues Motorrad',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(text: ' gekauft. '),
-                              TextSpan(
-                                  text: 'Es',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.blue,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(
-                                  text:
-                                      ' soll mehr als 250 km/h fahren können.\n'),
-                              TextSpan(
-                                  text:
-                                      'Martina hat heute Geburtstag. Endlich ist '),
-                              TextSpan(
-                                  text: 'sie',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.blue,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(text: ' volljährig.\n'),
-                              TextSpan(
-                                  text:
-                                      'Pronomen haben die Aufgabe, den jeweiligen Kasus anzuzeigen und müssen daher dekliniert werden.\n'),
-                              TextSpan(text: 'Joseph liebt Annemarie. '),
-                              TextSpan(
-                                  text: 'Er',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(text: ' schenkt '),
-                              TextSpan(
-                                  text: 'ihr',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(text: ' täglich Blumen.\n'),
-                              TextSpan(text: 'Aber '),
-                              TextSpan(
-                                  text: 'sie',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(text: ' liebt '),
-                              TextSpan(
-                                  text: 'ihn',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(text: ' nicht. '),
-                              TextSpan(
-                                  text: 'Sie',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(text: ' liebt '),
-                              TextSpan(
-                                  text: 'einen anderen',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(text: '.\n'),
-                              TextSpan(
-                                  text: 'Der Lehrer fragt den Schüler. Aber '),
-                              TextSpan(
-                                  text: 'dieser',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(text: ' antwortet '),
-                              TextSpan(
-                                  text: 'ihm',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(text: ' nicht.\n'),
-                              TextSpan(
-                                  text:
-                                      'Pronomen, insbesondere die Possessiv-, Demonstrativ- und Indefinitpronomen, können auch als Artikelwörter eingesetzt werden. In diesen Fällen sind sie Nomenbegleiter und werden teilweise anders dekliniert.\n'),
-                              TextSpan(
-                                  text: 'Artikelwörter sind Nomenbegleiter\n'),
-                              TextSpan(
-                                  text:
-                                      'Pronomen sind Stellvertreter eines Nomens!',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(text: '\n'),
-                            ],
-                          ),
-                        )),
-                    SingleChildScrollView(
-                      child: ConstrainedBox(
-                        constraints: const BoxConstraints(
-                            //minHeight: MediaQuery.of(context).size.height
-                            ),
-                        child: IntrinsicHeight(
-                          child: Column(children: [
-                            Table(
-                              border: TableBorder.all(
-                                  color: Colors.purple, width: 1),
-                              children: [
-                                TableRow(children: [
-                                  Center(
-                                    child: RichText(
-                                      textAlign: TextAlign.center,
-                                      text: TextSpan(
-                                        style:
-                                            DefaultTextStyle.of(context).style,
-                                        children: <TextSpan>[
-                                          TextSpan(
-                                              text: 'Artikelwort + Nomen\n',
-                                              style:
-                                                  TextStyle(color: Colors.red)),
-                                          TextSpan(
-                                              text: 'Pronomen (',
-                                              style: TextStyle(
-                                                  color: Colors.blue)),
-                                          TextSpan(
-                                              text: 'Nomen',
-                                              style: TextStyle(
-                                                  decoration: TextDecoration
-                                                      .lineThrough,
-                                                  color: Colors.blue)),
-                                          TextSpan(
-                                              text: ')',
-                                              style: TextStyle(
-                                                  color: Colors.blue)),
-                                        ],
-                                      ),
-                                    ),
-                                  ),
-                                ]),
-                              ],
-                            )
-                          ]),
-                        ),
-                      ),
-                    ),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                            top: 10.0, left: 16.0, bottom: 10),
-                        child: RichText(
-                          text: TextSpan(
-                            style: textTheme.bodyMedium,
-                            children: <TextSpan>[
-                              TextSpan(text: 'Herbert hat '),
-                              TextSpan(
-                                  text: 'keine Freundin',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(text: '. Sein Freund Knut sucht auch '),
-                              TextSpan(
-                                  text: 'eine',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.blue,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(text: '.\n'),
-                              TextSpan(text: 'Gustav hat '),
-                              TextSpan(
-                                  text: 'kein Auto',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(
-                                  text: '. Sein Freund Simon hat leider auch '),
-                              TextSpan(
-                                  text: 'keins',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.blue,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(text: '.\n'),
-                              TextSpan(text: 'Das Mädchen isst '),
-                              TextSpan(
-                                  text: 'einen Apfel',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(
-                                  text:
-                                      '. Der Junge ist auch hungrig. Er möchte auch '),
-                              TextSpan(
-                                  text: 'einen',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.blue,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(text: '.\n'),
-                              TextSpan(text: 'Pronomen können sich '),
-                              TextSpan(
-                                  text: 'auf einen ganzen Satz',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(
-                                  text:
-                                      ' beziehen. Dies ist insbesondere bei den Relativpronomen sowie bei den beiden Pronomen "'),
-                              TextSpan(
-                                  text: 'es',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(text: '" und "'),
-                              TextSpan(
-                                  text: 'das',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(text: '" der Fall.\n'),
-                              TextSpan(
-                                  text:
-                                      'Gestern sind wir aus der Dominikanischen Republik zurückgekommen.\n'),
-                              TextSpan(
-                                  text: 'Es',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(
-                                  text: ' hat uns dort sehr gut gefallen.\n'),
-                              TextSpan(
-                                  text: 'Das',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(text: ' war der schönste Urlaub, '),
-                              TextSpan(
-                                  text: 'den',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(text: ' ich jemals hatte.\n'),
-                            ],
-                          ),
-                        )),
-                  ],
-                ),
-              ),
-              Card(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: <Widget>[
-                    Padding(
-                      padding: const EdgeInsets.only(
-                          top: 10.0, left: 16.0, bottom: 10),
-                      child: Text('Übersicht Pronomen',
-                          style: textTheme.titleSmall),
-                    ),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                            top: 10.0, left: 16.0, bottom: 10),
-                        child: RichText(
-                          text: TextSpan(
-                            style: textTheme.bodyMedium,
-                            children: <TextSpan>[
-                              TextSpan(text: 'Personalpronomen\n'),
-                              TextSpan(text: 'Pronomen "es"\n'),
-                              TextSpan(text: 'Possessivpronomen\n'),
-                              TextSpan(text: 'Demonstrativpronomen\n'),
-                              TextSpan(text: 'Indefinitpronomen\n'),
-                              TextSpan(text: 'Relativpronomen\n'),
-                              TextSpan(
-                                  text:
-                                      'Reflexivpronomen (siehe reflexive Verben)\n'),
-                            ],
-                          ),
-                        )),
-                  ],
-                ),
-              ),
-            ],
-          ),
-        ),
+            padding: const EdgeInsets.all(8.0),
+            child: MyPageContentView(contents: contents)),
       ),
     );
   }
 }
+
+List<CardContent> contents = [
+  CardContent(
+    elements: [
+      CardElement(type: ElementType.pageTitle, value: title),
+    ],
+  ),
+  CardContent(
+    elements: [
+      CardElement(type: ElementType.cardTitle, value: title1),
+      CardElement(type: ElementType.htmlContent, value: htmlContent1_1),
+      CardElement(type: ElementType.htmlTable, value: htmlTable1_2),
+      CardElement(type: ElementType.htmlContent, value: htmlContent1_3),
+    ],
+  ),
+  CardContent(
+    elements: [
+      CardElement(type: ElementType.cardTitle, value: title2),
+      CardElement(type: ElementType.htmlContent, value: htmlContent2_1),
+    ],
+  ),
+];
+
+String title = '11. Pronomen / Fürwörter';
+
+String title1 = 'Was man über Pronomen wissen sollte.';
+String htmlContent1_1 = '''
+<p><strong>Pronomen</strong> (Plural die Pronomen / die Pronomina, deutsch Fürwort, Plural Fürwörter) sind <strong><a title="Satzglieder" href="lernen.php?menu_id=19#satzglieder">selbständige Satzglieder</a></strong>, die <strong><span class="red">stellvertretend</span></strong> <span style="text-decoration:underline">für ein <strong><a title="Nomen" href="lernen.php?menu_id=9">Nomen</a></strong></span> oder eine Nomengruppe eingesetzt werden. In einer Aussage muss <strong><span class="red">zuerst das Nomen</span></strong> (Bezugswort) genannt oder bestimmt werden, bevor im zweiten Schritt <strong><span class="blue">das Pronomen als Stellvertreter</span></strong> im Satz Verwendung finden kann.</p>
+
+<li>Hast du <strong><span class="red">meinen Schlüssel</span></strong> gesehen? - Ich glaube, <strong><span class="blue">der</span></strong> liegt auf dem Küchentisch.</li>
+<li>Erich hat sich <strong><span class="red">ein neues Motorrad</span></strong> gekauft. <strong><span class="blue">Es</span></strong> soll mehr als 250 km/h fahren können.</li>
+<li><strong><span class="red">Martina</span></strong> hat heute Geburtstag. Endlich ist <strong><span class="blue">sie</span></strong> volljährig.</li>
+
+<p>Pronomen haben die Aufgabe, den jeweiligen <strong><a title="Kasus" href="lernen.php?menu_id=16">Kasus</a></strong> anzuzeigen und müssen daher <strong><a title="Deklination Personalpronomen" href="lernen.php?menu_id=76#deklination">dekliniert</a></strong> werden.</p>
+
+<li>Joseph liebt Annemarie. <strong><span class="red">Er</span></strong> schenkt <strong><span class="red">ihr</span></strong> täglich Blumen.</li>
+<li>Aber <strong><span class="red">sie</span></strong> liebt <strong><span class="red">ihn</span></strong> nicht. <strong><span class="red">Sie</span></strong> liebt <strong><span class="red">einen anderen</span></strong>.</li>
+<li>Der Lehrer fragt den Schüler. Aber <strong><span class="red">dieser</span></strong> antwortet <strong><span class="red">ihm</span></strong> nicht.</li>
+
+<p>Pronomen, insbesondere die Possessiv-, Demonstrativ- und Indefinitpronomen, können auch als Artikelwörter eingesetzt werden. In diesen Fällen sind sie <strong><a title="Übersicht Nomenbegleiter" href="lernen.php?menu_id=10#nomenbegleiter">Nomenbegleiter</a></strong> und werden teilweise <span style="text-decoration:underline">anders dekliniert</span>.</p>
+
+<div align="center"><strong><span class="blue">Artikelwörter sind Nomenbegleiter</span></strong> <br> <br> <strong><span class="red">Pronomen sind Stellvertreter eines Nomens</span></strong>!</div>
+''';
+String htmlTable1_2 = '''
+<table class="eins">
+<tbody>
+<tr>
+<td>
+<div align="center">
+<h3><span class="red">Artikelwort + Nomen</span> <br> <span class="blue">Pronomen (<s> Nomen</s>)</span></h3>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+''';
+String htmlContent1_3 = '''
+<li>Herbert hat <strong><span class="red">keine Freundin</span></strong>. Sein Freund Knut sucht auch <strong><span class="blue">eine</span></strong></li>
+<li>Gustav hat <strong><span class="red">kein Auto</span></strong>. Sein Freund Simon hat leider auch <strong><span class="blue">keins</span></strong>.</li>
+<li>Das Mädchen isst <strong><span class="red">einen Apfel</span></strong>. Der Junge ist auch hungrig. Er möchte auch <strong><span class="blue">einen</span></strong>.</li>
+
+<p>Pronomen können sich <strong><span class="red">auf einen ganzen Satz</span></strong> beziehen. Dies ist insbesondere bei den <strong><a title="Relativpronomen" href="lernen.php?menu_id=81">Relativpronomen</a></strong> sowie bei den beiden Pronomen "<strong><a title="Es als Korrelat für einen Nebensatz" href="lernen.php?menu_id=77">es</a></strong>" und "<strong><a title="Das als Demonstrativpronomen" href="lernen.php?menu_id=79#der_die_das">das</a></strong>" der Fall.</p>
+
+<li>Gestern sind wir aus der Dominikanischen Republik zurückgekommen.</li>
+<li><strong><span class="red">Es</span></strong> hat uns dort sehr gut gefallen.</li>
+<li><strong><span class="red">Das</span></strong> war der schönste Urlaub, <strong><span class="red">den</span></strong> ich jemals hatte.</li>
+''';
+
+String title2 = 'Übersicht Pronomen';
+String htmlContent2_1 = '''
+<li><strong><a title="Personalpronomen" href="personalpronomen.html">Personalpronomen</a></strong></li>
+<li><strong><a title=" 'es' als Pronomen" href="pronomen-es.html">Pronomen "es"</a></strong></li>
+<li><strong><a title="Possessivpronomen" href="possessivpronomen.html">Possessivpronomen</a></strong></li>
+<li><strong><a title="Demonstrativpronomen" href="lernen.php?menu_id=79">Demonstrativpronomen</a></strong></li>
+<li><strong><a title="Indefinitpronomen" href="lernen.php?menu_id=80">Indefinitpronomen</a></strong></li>
+<li><strong><a title="Relativpronomen" href="lernen.php?menu_id=81">Relativpronomen</a></strong></li>
+<li><strong><a title="Reflexivpronomen" href="lernen.php?menu_id=33#reflexivpronomen">Reflexivpronomen</a></strong> (siehe reflexive Verben)</li>
+''';

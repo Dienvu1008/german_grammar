@@ -100,24 +100,14 @@ List<CardContent> contents = [
   ),
 ];
 
-
-String title = '''
-13.10.2. Perfekt
-''';
-String title1 = '''
-Einführung / Was man über das Perfekt wissen sollte.
-''';
+String title = '13.10.2. Perfekt';
+String title1 = 'Einführung / Was man über das Perfekt wissen sollte.';
 String htmlContent1_1 = '''
-<div>
 <p>Das Perfekt, auch <strong><span class="red">vollendete Gegenwart</span></strong> genannt, wird in der <strong><span class="red">gesprochenen Sprache</span></strong> benutzt, und beschreibt eine <span style="text-decoration:underline">abgeschlossene Handlung in der Vergangenheit mit Gegenwartsbezug</span> oder <span style="text-decoration:underline">einen erreichten Zustand</span>. Man benutzt das Perfekt ausschließlich im privaten Bereich, wenn man mit <strong><span class="blue">Freunden</span></strong> oder mit <strong><span class="blue">Familienmitgliedern</span></strong> über etwas spricht, was vergangen ist. So wird das Perfekt auch in privaten Briefen benutzt, um Familienmitgliedern oder Freunden schriftlich mitzuteilen, was man beispielsweise im Urlaub erlebt hat.</p>
-</div>
-<p>&nbsp;</p>
-<div>
+
 <p>Das Perfekt besteht aus zwei Teilen, dem <span style="text-decoration:underline">Hilfsverb</span> "<strong><span class="blue">haben</span></strong>" oder "<strong><span class="blue">sein</span></strong>" und dem "<strong><span class="red">Partizip II</span></strong>":</p>
-</div>
-<p>&nbsp;</p>
 ''';
-String htmlTable1_1 ='''
+String htmlTable1_1 = '''
 <table class="eins">
 <tbody>
 <tr align="center">
@@ -128,7 +118,7 @@ String htmlTable1_1 ='''
 </tbody>
 </table>
 ''';
-String htmlTable1_2 ='''
+String htmlTable1_2 = '''
 <table><colgroup> <col style="width: 20%;"> <col style="width: 12%;"> <col style="width: 48%;"> <col style="width: 20%;"> </colgroup>
 <thead>
 <tr>
@@ -169,18 +159,12 @@ String htmlTable1_2 ='''
 String htmlContent1_2 = '''
 <h3 style="text-align: center;">&nbsp;&nbsp;&nbsp;&nbsp;!!!&nbsp;&nbsp;&nbsp;&nbsp;Das <strong><span class="red">Hilfsverb</span></strong> wird konjugiert und zeigt die <strong><a title="Konjugation der Verben im Singular und Plural" href="konjugation-der-verben.html#verbkonjugation" target="_blank">Person</a></strong> an !!!</h3>
 <h3 style="text-align: center;">&nbsp;&nbsp;&nbsp;&nbsp;!!!&nbsp;&nbsp;&nbsp;&nbsp;Das <strong><span class="blue"><a title="Bildung des Partizips II der regelmäßigen Verben" href="perfekt.html#regelm_verben" target="_blank">Partizip II</a></span></strong> ist unveränderlich und schließt den Satz ab !!!</h3>  
-  
-  
 ''';
 
-
-String title2 = '''
-Die Hilfsverben "haben" und "sein"
-''';
+String title2 = 'Die Hilfsverben "haben" und "sein"';
 String htmlContent2_1 = '''
-<div>
 <p>Die Hilfsverben "<strong><span class="red">haben</span></strong>" und "<strong><span class="blue">sein</span></strong>" werden wie die Vollverben <strong><a title="Einführung, Konjugation und Gebrauch des Vollverbs haben" href="das-verb-haben.html" target="_blank"> haben </a></strong> und <strong><a title="Einführung, Konjugation und Gebrauch des Vollverbs sein" href="sein.html" target="_blank"> sein </a></strong> konjugiert.</p>
-</div>
+
 <h3>Das <strong><span class="red">Perfekt</span></strong> mit dem Hilfsverb "<strong><span class="red">haben</span></strong>" bilden:</h3>
 <h4 style="padding-left: 30px;">- alle Verben mit <strong><a title="Einführung transitive Verben" href="akkusativ-ergaenzung.html" target="_blank">Akkusativ-Ergänzung</a></strong>:</h4>
 <p style="padding-left: 60px;">Er liebt mich noch heute. - Damals <strong><span class="red">habe</span></strong> ich ihn auch <strong><span class="blue">geliebt</span></strong>.</p>
@@ -198,12 +182,11 @@ String htmlContent2_1 = '''
 <p style="padding-left: 60px;">Mein Nachbar hilft mir nicht. - Aber ich <strong><span class="red">habe</span></strong> ihm immer <strong><span class="blue">geholfen</span></strong>.</p>
 <p style="padding-left: 60px;">Gibst du mir ein Bonbon ab? - Ich <strong><span class="red">habe</span></strong> dir gestern auch eins <strong><span class="blue">abgegeben</span></strong>.</p>
 <p style="padding-left: 60px;">Heute regnet es zum Glück nicht. - Gestern <strong><span class="red">hat</span></strong> es den ganzen Tag <strong><span class="blue">geregnet</span></strong>.</p>
-<p>&nbsp;</p>
+
 <h3>Das <strong><span class="red">Perfekt</span></strong> mit dem Hilfsverb "<strong><span class="red">sein</span></strong>" bilden:</h3>
 <h4 style="padding-left: 30px;">- alle Verben der <strong><a title="Verben mit einer Direktiv-Ergänzung" href="direktiv-ergaenzung.html" target="_blank">Ortsveränderung</a></strong>:</h4>
-
 ''';
-String htmlTable2_1 ='''
+String htmlTable2_1 = '''
 <table><colgroup> <col style="width: 16%;"> <col style="width: 19%;"> <col style="width: 10%;"> <col style="width: 36%;"> <col style="width: 19%;"> </colgroup>
 <thead>
 <tr>
@@ -240,11 +223,9 @@ String htmlTable2_1 ='''
 </table>
 ''';
 String htmlContent2_2 = '''
-<p>&nbsp;</p>
 <h4 style="padding-left: 30px;">- alle Verben der <strong><span class="red">Zustandsänderung</span></strong>:</h4>
-
 ''';
-String htmlTable2_2 ='''
+String htmlTable2_2 = '''
 <table><colgroup> <col style="width: 17%;"> <col style="width: 18%;"> <col style="width: 10%;"> <col style="width: 36%;"> <col style="width: 19%;"> </colgroup>
 <thead>
 <tr>
@@ -295,10 +276,9 @@ String htmlTable2_2 ='''
 </table>
 ''';
 String htmlContent2_3 = '''
-<p>&nbsp;</p>
 <h4 style="padding-left: 30px;">- folgende Verben:</h4>
 ''';
-String htmlTable2_3 ='''
+String htmlTable2_3 = '''
 <table><colgroup> <col style="width: 15%;"> <col style="width: 17%;"> <col style="width: 10%;"> <col style="width: 42%;"> <col style="width: 16%;"> </colgroup>
 <thead>
 <tr>
@@ -356,16 +336,13 @@ String htmlTable2_3 ='''
 </table>
 ''';
 
-String title3 = '''
-Verwendung des Partizips II
-''';
+String title3 = 'Verwendung des Partizips II';
 String htmlContent3_1 = '''
- <div>
 <p>Das <strong><span class="red">Partizip II</span></strong>, auch " <span style="text-decoration:underline">Mittelwort</span> " genannt, benutzt man für die Bildung folgender <strong><span class="red">Zeitformen</span></strong>:</p>
-</div>
+
 <h3 style="padding-left: 30px;"><strong><a title="Einführung Perfekt" href="perfekt.html" target="blank">Perfekt</a></strong>:</h3>
 ''';
-String htmlTable3_1 ='''
+String htmlTable3_1 = '''
 <table><colgroup> <col style="width: 15%;"> <col style="width: 15%;"> <col style="width: 52%;"> <col style="width: 18%;"> </colgroup>
 <thead>
 <tr>
@@ -400,7 +377,7 @@ String htmlTable3_1 ='''
 String htmlContent3_2 = '''
 <h3 style="padding-left: 30px;"><strong><a title="Einführung Passiv" href="passiv-formen.html" target="blank">Passiv</a></strong>:</h3>
 ''';
-String htmlTable3_2 ='''
+String htmlTable3_2 = '''
 <table><colgroup> <col style="width: 15%;"> <col style="width: 15%;"> <col style="width: 52%;"> <col style="width: 18%;"> </colgroup>
 <thead>
 <tr>
@@ -434,9 +411,8 @@ String htmlTable3_2 ='''
 ''';
 String htmlContent3_3 = '''
 <h3 style="padding-left: 30px;"><strong><a title="Einführung Plusquamperfekt" href="plusquamperfekt.html" target="blank">Plusquamperfekt</a></strong>:</h3>
-
 ''';
-String htmlTable3_3 ='''
+String htmlTable3_3 = '''
 <table><colgroup> <col style="width: 15%;"> <col style="width: 15%;"> <col style="width: 52%;"> <col style="width: 18%;"> </colgroup>
 <thead>
 <tr>
@@ -469,13 +445,11 @@ String htmlTable3_3 ='''
 </table>
 ''';
 String htmlContent3_4 = '''
-<div>
 <p>Das <strong><span class="red">Partizip II</span></strong> kann aber auch als <strong><span class="red">Adjektiv</span></strong> benutzt werden:</p>
-</div>
-<h3 style="padding-left: 30px;"><strong><span class="red">Verb</span></strong> + <strong><a title="Die Verwendung des Partizips II als Adjektiv" href="adjektive.html#adjektive_hinter_nomen" target="blank">Partizip II als Adjektiv</a></strong>:</h3>
 
+<h3 style="padding-left: 30px;"><strong><span class="red">Verb</span></strong> + <strong><a title="Die Verwendung des Partizips II als Adjektiv" href="adjektive.html#adjektive_hinter_nomen" target="blank">Partizip II als Adjektiv</a></strong>:</h3>
 ''';
-String htmlTable3_4 ='''
+String htmlTable3_4 = '''
 <table><colgroup> <col style="width: 20%;"> <col style="width: 15%;"> <col style="width: 47%;"> <col style="width: 18%;"> </colgroup>
 <thead>
 <tr>
@@ -509,9 +483,8 @@ String htmlTable3_4 ='''
 ''';
 String htmlContent3_5 = '''
 <h3 style="padding-left: 30px;"><strong><a title="Partizipien als Adjektive" href="partizipien-als-adjektive.html#einfuehrung" target="blank"> Partizip II als Adjektiv</a></strong> + <strong><span class="red">Nomen</span></strong>:</h3>
-
 ''';
-String htmlTable3_5 ='''
+String htmlTable3_5 = '''
 <table><colgroup> <col style="width: 32%;"> <col style="width: 12%;"> <col style="width: 30;"> <col style="width: 23%;"> </colgroup>
 <thead>
 <tr>
@@ -544,20 +517,14 @@ String htmlTable3_5 ='''
 </table>
 ''';
 String htmlContent3_6 = '''
-<div>
 <p>Aus diesen vielseitigen Gründen nimmt das Partizip II eine sehr wichtige Stellung in der deutschen Grammatik ein. Man sollte das Partizip II gezielt lernen und in der Bildung des Partizips II keine größeren Schwierigkeiten haben.</p>
-</div> 
 ''';
 
-
-String title4 = '''
-Bildung des Partizips II der regelmäßigen Verben
-''';
+String title4 = 'Bildung des Partizips II der regelmäßigen Verben';
 String htmlContent4_1 = '''
 <p style="padding-left: 30px;">- Das Partizip II der <strong><a title="Konjugation der regelmäßigen Verben und lautliche Besonderheiten" href="verben-mit-regelmaessigen-stammformen.html#einfuehrung" target="_blank">regelmäßigen Verben</a></strong> wird wie folgt gebildet:</p>
-<p>&nbsp;</p>
 ''';
-String htmlTable4_1 ='''
+String htmlTable4_1 = '''
 <table class="eins">
 <tbody>
 <tr align="center">
@@ -568,7 +535,7 @@ String htmlTable4_1 ='''
 </tbody>
 </table>
 ''';
-String htmlTable4_2 ='''
+String htmlTable4_2 = '''
 <table><colgroup> <col style="width: 12%;"> <col style="width: 15%;"> <col style="width: 15%;"> <col style="width: 14%;"> <col style="width: 29%;"> <col style="width: 15%;"> </colgroup>
 <thead>
 <tr>
@@ -625,14 +592,11 @@ String htmlTable4_2 ='''
 </table>
 ''';
 String htmlContent4_2 = '''
-<p>&nbsp;</p>
 <p style="padding-left: 30px;"><strong><a title="Lautliche Besonderheiten bei der Konjugation der regelmäßigen Verben" href="verben-mit-regelmaessigen-stammformen.html#lautlichebesonderheiten" target="_blank">- Lautliche Besonderheiten</a></strong>:</p>
-<p>&nbsp;</p>
-<div>
+
 <p>Gelegentlich kommt es vor, dass der Verbstamm mit <strong><span class="red">t</span></strong>; <strong><span class="red">d</span></strong>; <strong><span class="red">m</span></strong> oder <strong><span class="red">n</span></strong> endet. Beispiele sind die Verben: arbei<strong><span class="red">t</span></strong>en, at<strong><span class="red">m</span></strong>en, rech<strong><span class="red">n</span></strong>en usw. Die Folge sind Ausspracheprobleme beim Bilden des Partizip II. Deshalb wird beim Partizip II. ein "<strong><span class="red">e</span></strong>" zwischen Verbstamm und der Partizipendung "<strong><span class="red">t</span></strong>" eingeschoben.</p>
-</div>
 ''';
-String htmlTable4_3 ='''
+String htmlTable4_3 = '''
 <table class="eins">
 <tbody>
 <tr align="center">
@@ -643,7 +607,7 @@ String htmlTable4_3 ='''
 </tbody>
 </table>
 ''';
-String htmlTable4_4 ='''
+String htmlTable4_4 = '''
 <table><colgroup> <col style="width: 14%;"> <col style="width: 19%;"> <col style="width: 15%;"> <col style="width: 13%;"> <col style="width: 22%;"> <col style="width: 17%;"> </colgroup>
 <thead>
 <tr>
@@ -701,9 +665,8 @@ String htmlTable4_4 ='''
 ''';
 String htmlContent4_3 = '''
 <p style="padding-left: 30px;">- Das Partizip II der <strong><a title="Einführung trennbare Verben" href="trennbare-verben.html#einfuehrung" target="_blank">trennbaren Verben</a></strong>, sofern sie nicht zu den <strong><a title="Liste der unregelmäßigen Verben" href="verbliste-starker-verben.html" target="_blank">unregelmäßigen Verben</a></strong> gehören, wird wie folgt gebildet:</p>
-
 ''';
-String htmlTable4_5 ='''
+String htmlTable4_5 = '''
 <table class="eins">
 <tbody>
 <tr align="center">
@@ -714,7 +677,7 @@ String htmlTable4_5 ='''
 </tbody>
 </table>
 ''';
-String htmlTable4_6 ='''
+String htmlTable4_6 = '''
 <table><colgroup> <col style="width: 17%;"> <col style="width: 19%;"> <col style="width: 13%;"> <col style="width: 13%;"> <col style="width: 20%;"> <col style="width: 18%;"> </colgroup>
 <thead>
 <tr>
@@ -772,9 +735,8 @@ String htmlTable4_6 ='''
 ''';
 String htmlContent4_4 = '''
 <p style="padding-left: 30px;">- Das Partizip II der <strong><a title="Unbetonte Präfixe bei Verben" href="trennbare-verben.html#untrennbare Präfixe" target="_blank">Verben mit festen Präfixen</a></strong>, sofern sie nicht zu den <strong><a title="Liste der unregelmäßigen und starken Verben" href="verbliste-starker-verben.html" target="_blank">unregelmäßigen Verben</a></strong> gehören, wird stets <span style="text-decoration:underline">ohne</span> "<strong><span class="red">ge</span></strong>" gebildet:</p>
-
 ''';
-String htmlTable4_7 ='''
+String htmlTable4_7 = '''
 <table class="eins">
 <tbody>
 <tr align="center">
@@ -785,7 +747,7 @@ String htmlTable4_7 ='''
 </tbody>
 </table>
 ''';
-String htmlTable4_8 ='''
+String htmlTable4_8 = '''
 <table><colgroup> <col style="width: 13%;"> <col style="width: 13%;"> <col style="width: 17%;"> <col style="width: 12%;"> <col style="width: 31%;"> <col style="width: 14%;"> </colgroup>
 <thead>
 <tr>
@@ -843,9 +805,8 @@ String htmlTable4_8 ='''
 ''';
 String htmlContent4_5 = '''
 <p style="padding-left: 30px;">- Das Partizip II der Verben, die mit "<strong><span class="red">-ieren</span></strong> " enden, wird ebenfalls <span style="text-decoration:underline">ohne</span> "<strong><span class="red">ge</span></strong>" gebildet:</p>
-
 ''';
-String htmlTable4_9 ='''
+String htmlTable4_9 = '''
 <table class="eins">
 <tbody>
 <tr align="center">
@@ -856,7 +817,7 @@ String htmlTable4_9 ='''
 </tbody>
 </table>
 ''';
-String htmlTable4_10 ='''
+String htmlTable4_10 = '''
 <table><colgroup> <col style="width: 17%;"> <col style="width: 17%;"> <col style="width: 14%;"> <col style="width: 12%;"> <col style="width: 24%;"> <col style="width: 16%;"> </colgroup>
 <thead>
 <tr>
@@ -913,16 +874,11 @@ String htmlTable4_10 ='''
 </table>  
 ''';
 
-String title5 = '''
-Bildung des Partizips II der unregelmäßigen Verben
-''';
+String title5 = 'Bildung des Partizips II der unregelmäßigen Verben';
 String htmlContent5_1 = '''
-<div>
 <p><strong><span class="red">Die Endung des Partizips II</span></strong> ist bei den <strong><a title="Einführung unregelmäßige Verben" href="starke-und-unregelmaessige-verben.html" target="_blank">unregelmäßigen Verben</a></strong> " <strong><span class="red">-en</span></strong> ". Zusätzlich findet häufig ein <strong><span class="red">Vokalwechsel im Wortstamm</span></strong> statt. Daher sollte man die unregelmäßigen Verben mit dem dazugehörigen Partizip II besonders gut lernen. Beispiele:</p>
-</div>
-<p>&nbsp;</p>
 ''';
-String htmlTable5 ='''
+String htmlTable5 = '''
 <table><colgroup> <col style="width: 15%;"> <col style="width: 16%;"> <col style="width: 17%;"> <col style="width: 14%;"> <col style="width: 21%;"> <col style="width: 17%;"> </colgroup>
 <thead>
 <tr>
@@ -962,24 +918,16 @@ String htmlTable5 ='''
 </tbody>
 ''';
 String htmlContent5_2 = '''
-<div align="center">
 <h3>Liste der <strong><a title="Tabelle der unregelmäßigen Verben" href="verbliste-starker-verben.html" target="_blank">unregelmäßigen Verben</a></strong> !</h3>
-</div> 
 ''';
 
-String title6 = '''
-Das Perfekt mit Modalverben
-''';
+String title6 = 'Das Perfekt mit Modalverben';
 String htmlContent6_1 = '''
-<div>
 <p>Das Perfekt der Modalverben wird in der Praxis nur selten benutzt. In der Regel wird das <strong><a title="Vergangenheit der Modalverben" href="praeteritum.html#imperfektmodal" target="_blank">Präteritum</a></strong> benutzt.</p>
-</div>
-<div>
+
 <p>Die Modalverben als <strong><a title="Modalverben als Vollverb" href="modalverben.html#vollverben" target="_blank">Vollverb</a></strong> bilden das Perfekt wie folgt:</p>
-</div>
-<p>&nbsp;</p>
 ''';
-String htmlTable6_1 ='''
+String htmlTable6_1 = '''
 <table class="eins">
 <tbody>
 <tr align="center">
@@ -990,7 +938,7 @@ String htmlTable6_1 ='''
 </tbody>
 </table>
 ''';
-String htmlTable6_2 ='''
+String htmlTable6_2 = '''
 <table><colgroup> <col style="width: 12%;"> <col style="width: 13%;"> <col style="width: 14%;"> <col style="width: 12%;"> <col style="width: 35%;"> <col style="width: 14%;"> </colgroup>
 <thead>
 <tr>
@@ -1055,12 +1003,9 @@ String htmlTable6_2 ='''
 </table>
 ''';
 String htmlContent6_2 = '''
-<div>
 <p>Das Perfekt der Modalverben mit einem zusätzlichen <strong><span class="red">Vollverb</span></strong> wird wie folgt gebildet:</p>
-</div>
-<p>&nbsp;</p>
 ''';
-String htmlTable6_3 ='''
+String htmlTable6_3 = '''
 <table>
 <tbody>
 <tr align="center">
@@ -1071,7 +1016,7 @@ String htmlTable6_3 ='''
 </tbody>
 </table>
 ''';
-String htmlTable6_4 ='''
+String htmlTable6_4 = '''
 <table><colgroup> <col style="width: 15%;"> <col style="width: 17%;"> <col style="width: 14%;"> <col style="width: 31%;"> <col style="width: 23%;"> </colgroup>
 <thead>
 <tr>

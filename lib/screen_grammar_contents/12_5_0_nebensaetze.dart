@@ -3,165 +3,62 @@ import 'package:flutter/material.dart';
 import '../app/app_localizations.dart';
 import '../html_table_to_dart_table.dart';
 import '../html_to_richtext.dart';
+import '../page_content.dart';
 
 class Nebensaetze_12_5 extends StatelessWidget {
   const Nebensaetze_12_5({super.key});
 
   @override
   Widget build(BuildContext context) {
-    final localizations = AppLocalizations.of(context);
-    final textTheme = Theme.of(context).textTheme;
     return Expanded(
       child: Scaffold(
         body: Padding(
-          padding: const EdgeInsets.all(8.0),
-          child: ListView(
-            children: <Widget>[
-              Card(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: <Widget>[
-                    Padding(
-                      padding: const EdgeInsets.only(top: 16.0, left: 16.0),
-                      child: Text('12.5. Nebensätze',
-                          style: textTheme.titleMedium),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.only(top: 10.0, left: 16.0),
-                      child: Text('Was man über Nebensätze wissen sollte.',
-                          style: textTheme.titleSmall),
-                    ),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                            top: 10.0, left: 16.0, bottom: 10),
-                        child: HtmlToRichText(
-                          htmlString: htmlContent1_1,
-                          textTheme: textTheme,
-                        )),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                            top: 10.0, left: 16.0, bottom: 10),
-                        child: HtmlTableToDartTable(
-                          htmlTable: htmlTable1_1,
-                          textTheme: textTheme,
-                          columnWidths: const {
-                            0: FractionColumnWidth(.34),
-                            1: FractionColumnWidth(.16),
-                            2: FractionColumnWidth(.15),
-                            3: FractionColumnWidth(.20),
-                            4: FractionColumnWidth(.15),
-                          },
-                        )),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                            top: 10.0, left: 16.0, bottom: 10),
-                        child: HtmlToRichText(
-                          htmlString: htmlContent1_2,
-                          textTheme: textTheme,
-                        )),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                            top: 10.0, left: 16.0, bottom: 10),
-                        child: HtmlTableToDartTable(
-                          htmlTable: htmlTable1_2,
-                          textTheme: textTheme,
-                          columnWidths: const {
-                            0: FractionColumnWidth(.16),
-                            1: FractionColumnWidth(.14),
-                            2: FractionColumnWidth(.18),
-                            3: FractionColumnWidth(.13),
-                            4: FractionColumnWidth(.14),
-                            5: FractionColumnWidth(.11),
-                            6: FractionColumnWidth(.14),
-                          },
-                        )),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                            top: 10.0, left: 16.0, bottom: 10),
-                        child: HtmlToRichText(
-                          htmlString: htmlContent1_3,
-                          textTheme: textTheme,
-                        )),
-                  ],
-                ),
-              ),
-              Card(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: <Widget>[
-                    Padding(
-                      padding: const EdgeInsets.only(
-                          top: 10.0, left: 16.0, bottom: 10),
-                      child: Text('Mehrere Prädikatsteile im Nebensatz',
-                          style: textTheme.titleSmall),
-                    ),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                            top: 10.0, left: 16.0, bottom: 10),
-                        child: HtmlToRichText(
-                          htmlString: htmlContent2,
-                          textTheme: textTheme,
-                        )),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                            top: 10.0, left: 16.0, bottom: 10),
-                        child: HtmlTableToDartTable(
-                          htmlTable: htmlTable2,
-                          textTheme: textTheme,
-                          columnWidths: const {
-                            0: FractionColumnWidth(.08),
-                            1: FractionColumnWidth(.11),
-                            2: FractionColumnWidth(.18),
-                            3: FractionColumnWidth(.14),
-                            4: FractionColumnWidth(.16),
-                            5: FractionColumnWidth(.33),
-                          },
-                        )),
-                  ],
-                ),
-              ),
-              Card(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: <Widget>[
-                    Padding(
-                      padding: const EdgeInsets.only(
-                          top: 10.0, left: 16.0, bottom: 10),
-                      child: Text('Fragesätze', style: textTheme.titleSmall),
-                    ),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                            top: 10.0, left: 16.0, bottom: 10),
-                        child: HtmlToRichText(
-                          htmlString: htmlContent3,
-                          textTheme: textTheme,
-                        )),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                            top: 10.0, left: 16.0, bottom: 10),
-                        child: HtmlTableToDartTable(
-                          htmlTable: htmlTable3,
-                          textTheme: textTheme,
-                          columnWidths: const {
-                            0: FractionColumnWidth(.07),
-                            1: FractionColumnWidth(.09),
-                            2: FractionColumnWidth(.13),
-                            3: FractionColumnWidth(.11),
-                            4: FractionColumnWidth(.18),
-                            5: FractionColumnWidth(.42),
-                          },
-                        )),
-                  ],
-                ),
-              ),
-            ],
-          ),
-        ),
+            padding: const EdgeInsets.all(8.0),
+            child: MyPageContentView(contents: contents)),
       ),
     );
   }
 }
 
+List<CardContent> contents = [
+  CardContent(
+    elements: [
+      CardElement(type: ElementType.pageTitle, value: title),
+    ],
+  ),
+  CardContent(
+    elements: [
+      CardElement(type: ElementType.cardTitle, value: title1),
+      CardElement(type: ElementType.htmlContent, value: htmlContent1_1),
+      CardElement(type: ElementType.htmlTable, value: htmlTable1_1),
+      CardElement(type: ElementType.htmlContent, value: htmlContent1_2),
+      CardElement(type: ElementType.htmlTable, value: htmlTable1_2),
+      CardElement(type: ElementType.htmlContent, value: htmlContent1_3),
+    ],
+  ),
+  CardContent(
+    elements: [
+      CardElement(type: ElementType.cardTitle, value: title2),
+      CardElement(type: ElementType.htmlContent, value: htmlContent2),
+      CardElement(type: ElementType.htmlTable, value: htmlTable2),
+    ],
+  ),
+  CardContent(
+    elements: [
+      CardElement(type: ElementType.cardTitle, value: title3),
+      CardElement(type: ElementType.htmlContent, value: htmlContent3),
+      CardElement(type: ElementType.htmlTable, value: htmlTable3),
+    ],
+  ),
+  CardContent(
+    elements: [
+      CardElement(type: ElementType.cardTitle, value: title4),
+      CardElement(type: ElementType.htmlContent, value: htmlContent4),
+    ],
+  ),
+];
+String title = '12.5. Nebensätze';
+String title1 = 'Was man über Nebensätze wissen sollte.';
 String htmlContent1_1 = '''
 <p>Hauptsätze ( <strong><span class="red">HS</span></strong> ) und Nebensätze ( <strong><span class="red">NS</span></strong> ) unterscheiden sich in erster Linie durch die <strong><a title="Verbkonjugation" href="lernen.php?menu_id=6#konjugation">Satzstellung des konjugierten Verbs</a></strong>. <br> In einem <strong><span class="red">Hauptsatz</span></strong> steht das <strong><span class="red">konjugierte Verb</span></strong> entweder auf Position 1 (<strong><a title="Entscheidungsfragen" href="lernen.php?menu_id=15#einfuehrung">Ja-/Nein-Fragen</a></strong> und <strong><a title="Aufforderungssätze" href="lernen.php?menu_id=32">Imperativ</a></strong>) oder auf Position 2 (<strong><a title="Aussagesätze" href="lernen.php?menu_id=88#aussagesaetze">Aussagesätze</a></strong> und <strong><a title="Ergänzungsfragen" href="lernen.php?menu_id=15#einfuehrung">W-Fragen</a></strong>. Anderweitige <strong><a title="Verbgruppe" href="lernen.php?menu_id=19#verbgruppe">Prädikatsteile</a></strong> werden im <strong><a title="Infinitiv" href="lernen.php?menu_id=6">Infinitiv</a></strong> oder im <strong><a title="Partizip II" href="lernen.php?menu_id=107#regelm_verben">Partizip II</a></strong> ans Satzende gestellt. <br> In einem <strong><span class="red">Nebensatz</span></strong> wird das <strong><span class="red">konjugierte Verb</span></strong> (im Hauptsatz = Position 2) ans <strong><span class="red">Satzende</span></strong> gestellt, also auch <span style="text-decoration:underline">hinter anderweitigen <strong><a title="Verbgruppe" href="lernen.php?menu_id=19#verbgruppe">Prädikatsteilen</a></strong></span>. Alle anderen <strong><a title="Satzglieder" href="lernen.php?menu_id=19#satzglieder">Satzglieder</a></strong> bleiben unverändert und entsprechen den Satzgliedern eines Hauptsatzes. Nebensätze können nicht für sich allein stehen, sondern sind einem Hauptsatz untergeordnet. Sie sind von ihm in gewisser Weise abhängig. Nebensätze werden durch <strong><span class="red">bestimmte einleitende Wörter</span></strong> ( = <strong><a title="Unterordnende Konjunktionen" href="lernen.php?menu_id=89#unterordnende_konj">Konjunktionen</a></strong>: dass, nachdem, ob, weil, ...) mit dem Hauptsatz verknüpft. Die beiden Sätze werden mit einem "<strong><span class="red">Komma</span></strong>" voneinander getrennt.</p>
 <li>Ein Nebensatz kann <strong><span class="red">nach</span></strong> dem Hauptsatz stehen: &nbsp;&nbsp;&nbsp;&nbsp; <strong><span class="red">HS + NS</span></strong></li>
@@ -256,6 +153,7 @@ String htmlContent1_3 = '''
 <p><br> Siehe auch: <strong><a title="Satzarten" href="lernen.php?menu_id=88#nebensaetze">Satzarten: Nebensätze</a></strong></p>  
 ''';
 
+String title2 = 'Mehrere Prädikatsteile im Nebensatz';
 String htmlContent2 = '''
 <p>Im Nebensatz gilt: &nbsp;&nbsp;&nbsp;&nbsp; <strong><span class="red">Das konjugierte Verb steht am Ende des Nebensatzes</span></strong></p>
 <p>Dieser Grundsatz bleibt auch dann bestehen, wenn das Verb aus <strong><a title="Verbgruppe" href="lernen.php?menu_id=19#verbgruppe">mehreren Prädikatsteilen</a></strong> besteht, beispielsweise in Sätzen mit Modalverben, Perfekt, trennbare Verben etc.</p>
@@ -373,6 +271,7 @@ String htmlTable2 = '''
 </table>  
 ''';
 
+String title3 = 'Ausnahmen bestimmter Verbgruppen im Nebensatz';
 String htmlContent3 = '''
 <p>Bestimmte Konstruktionen verlangen im <strong><a title="Perfekt" href="lernen.php?menu_id=107">Perfekt</a></strong> das Hilfsverb <strong><span class="red">"haben" + 2 Infinitive</span></strong>. Dies ist der Fall bei:</p>
 <li><strong><a title="Perfekt + Modalverben" href="lernen.php?menu_id=107#perfektmodal_infinitiv">Perfekt + Modalverb</a></strong></li>
@@ -527,6 +426,7 @@ String htmlTable3 = '''
 </table>  
 ''';
 
+String title4 = 'Übersicht Nebensätze';
 String htmlContent4 = '''
 <p><a title="Nebensätze" href="#anfang">Nebensätze</a></p>
 <li><a title="Kausalsätze" href="lernen.php?menu_id=92">Kausalsätze</a></li>

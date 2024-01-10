@@ -65,10 +65,8 @@ List<CardContent> contents = [
 String title = '14.7. Direktiv';
 String title1 = 'Was man über Verben mit einer Direktiv-Ergänzung wissen sollte.';
 String htmlContent1_1 = '''
-<div>
 <p>Verben mit einer <strong><span class="red">Direktiv-Ergänzung</span></strong> geben eine <span style="text-decoration:underline">Ortsveränderung von Ort A nach Ort B an</span>. Diese Verben haben <strong><span class="red">kein Akkusativ-Objekt</span></strong>! Das Fragewort zu diesen Verben lautet "<strong><span class="red">Wohin</span></strong>". In der Antwort können sowohl</p>
-<p>&nbsp;</p>
-</div>
+
 <h4 style="padding-left: 30px;"><strong><strong><a title="Übersicht der Präpositionen mit Dativ" href="praepositionen-mit-dativ.html#einfuehrung" target="_blank">Präpositionen mit Dativ</a></strong></strong></h4>
 <p style="padding-left: 60px;">Wohin gehst du? - <strong><span class="red">Zu</span></strong> Martina.</p>
 <p style="padding-left: 60px;">Wohin fährt Gerd? - <strong><span class="red">Nach</span></strong> Hamburg.</p>
@@ -76,12 +74,8 @@ String htmlContent1_1 = '''
 <h4 style="padding-left: 30px;"><strong>als auch <strong><a title="Übersicht der Wechselpräpositionen" href="wechselpraepositionen.html#einfuehrung" target="_blank">Wechselpräpositionen</a></strong> + Akkusativ stehen!</strong></h4>
 <p style="padding-left: 60px;">Wohin gehst du? - <strong><span class="red">In</span></strong> den Keller.</p>
 <p style="padding-left: 60px;">Wohin fährt Gerd? - <strong><span class="red">An</span></strong> den See.</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<div>
+
 <p><strong><span class="red">Auf eine Wechselpräposition</span></strong> folgt der <strong><span class="red">Akkusativ</span></strong>!</p>
-</div>
-<p>&nbsp;</p>
 ''';
 String htmlTable1_2 = '''
 <table><colgroup> <col style="width: 23%;"> <col style="width: 23%;"> <col style="width: 23%;"> <col style="width: 31%;"> </colgroup>
@@ -110,7 +104,6 @@ String htmlTable1_2 = '''
 </table>
 ''';
 String htmlContent1_3 = '''
-<p>&nbsp;</p>
 <p style="padding-left: 30px;">- Die <strong><a title="Übersicht möglicher Fragewörter" href="fragewoerter.html#w-fragen" target="_blank">W-Frage</a></strong> der Direktiv-Ergänzung lautet <strong><span class="red">wohin</span></strong>.</p>
 <p style="padding-left: 30px;">&nbsp;</p>
 <p style="padding-left: 30px;">- Die Verben haben zwei Ergänzungen: <span style="text-decoration:underline">Nominativ</span> + <strong><span class="red">Direktiv-Ergänzung</span></strong>!!!</p>
@@ -124,8 +117,6 @@ String htmlContent1_3 = '''
 <p style="padding-left: 30px;">- Eine Wechselpräposition verlangt in einer Direktiv-Ergänzung den <strong><span class="blue">Akkusativ</span></strong>.</p>
 <p style="padding-left: 30px;">&nbsp;</p>
 <p style="padding-left: 30px;">- Nur <span style="text-decoration:underline">wenige</span> Verben haben eine Direktiv-Ergänzung.</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
 ''';
 String htmlTable1_4 = '''
 <table>
@@ -141,19 +132,14 @@ String htmlTable1_4 = '''
 </table>
 ''';
 String htmlContent1_5 = '''
-<p>&nbsp;</p>
 <p>Alternativ zu einer lokalen Präposition können ebenso <strong><a title="Häufig benutzte lokale Adverbien im Überblick" href="lokaladverbien.html#vergleich" target="_blank">lokale Adverbien</a></strong> als Direktiv-Ergänzung eingesetzt werden.</p>
-<p>&nbsp;</p> 
 ''';
 
 
 
 String title2 = 'Verben mit einer Direktiv-Ergänzung';
 String htmlContent2_1 = '''
-<div>
 <p>Es gibt folgende Verben mit einer <strong><span class="blue">Direktiv-Ergänzung</span></strong>:</p>
-</div>
-<p>&nbsp;</p>
 ''';
 String htmlTable2_2 = '''
 <table><colgroup> <col style="width: 17%;"> <col style="width: 20%;"> <col style="width: 15%;"> <col style="width: 48%;"> </colgroup>
@@ -236,11 +222,9 @@ String htmlTable2_2 = '''
 </table>
 ''';
 String htmlContent2_3 = '''
-<div>
 <p style="padding-left: 30px;">- Zum Vergleich die Verben mit einer <strong><a title="Überblick der Verben mit Akkusativ- und Direktiv-Ergänzung" href="akkusativ-und-direktiv-ergaenzung.html#verben_direktiv" target="_blank">Akkusativ- und Direktiv-Ergänzung</a></strong></p>
 <p style="padding-left: 30px;">&nbsp;</p>
-<p style="padding-left: 30px;">- Zum Vergleich die Verben mit einer <strong><a title="Überblick der Verben mit Situativ-Ergänzung" href="situativ-ergaenzung.html#verben_situativ" target="_blank">Situativ-Ergänzung</a></strong></p>
-</div>  
+<p style="padding-left: 30px;">- Zum Vergleich die Verben mit einer <strong><a title="Überblick der Verben mit Situativ-Ergänzung" href="situativ-ergaenzung.html#verben_situativ" target="_blank">Situativ-Ergänzung</a></strong></p 
 ''';
 
 
@@ -249,30 +233,19 @@ String htmlContent2_3 = '''
 String title3 = 'Die W-Frage "woher"';
 
 String htmlContent3_1 = '''
- <div>
 <p>Die W-Frage "<strong><span class="red"> Wohin </span></strong>" fragt nach einer Ortsveränderung von Ort <strong><span class="red">A</span></strong> nach Ort <strong><span class="red">B</span></strong>.</p>
-<p>&nbsp;</p>
-</div>
-<div>
+
 <p>Die W-Frage " <strong><span class="blue">Woher</span></strong> " fragt nach der umgekehrten Ortsveränderung von Ort <strong><span class="blue">B</span></strong> nach Ort <strong><span class="blue">A</span></strong>. (Die sprechende Person ist immer in Ort A.) Das dazugehörige Verb heißt "<strong><span class="red">kommen</span></strong>".</p>
-</div>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
+
 <p style="padding-left: 30px;"><strong><span class="red">Woher</span></strong> kommst du? - Ich komme <strong><span class="red">aus den USA</span></strong>.</p>
 <p style="padding-left: 30px;">&nbsp;</p>
 <p style="padding-left: 30px;"><strong><span class="red">Woher</span></strong> kommst du gerade? - Ich komme gerade <strong><span class="red">vom Arzt</span></strong>.</p>  
-  
-  
 ''';
 
 
 String title4 = 'Die W-Fragen wohin, wo und woher im Vergleich';
 String htmlContent4_1 = '''
-<div>
-<p>&nbsp;</p>
 <p>Jedes Verb hat <strong><span class="red">eine bestimmte W-Frage</span></strong>:</p>
-</div>
-<p>&nbsp;</p>
 ''';
 String htmlTable4_2 = '''
 <table class="eins">
@@ -293,7 +266,6 @@ String htmlTable4_2 = '''
 </table>
 ''';
 String htmlContent4_3 = '''
-<div>
 <p style="padding-left: 30px;">Die W- Frage "<strong><span class="red">Wohin</span></strong>" fragt nach der <strong><span class="red">Richtung</span></strong>.</p>
 <p style="padding-left: 30px;">&nbsp;</p>
 <p style="padding-left: 30px;">Die W- Frage "<strong><span class="red">Wo</span></strong>" fragt nach dem <strong><span class="red">Ort</span></strong>.</p>
@@ -302,17 +274,13 @@ String htmlContent4_3 = '''
 <p style="padding-left: 30px;">&nbsp;</p>
 <p style="padding-left: 30px;">&nbsp;</p>
 <p>Ändert sich die W-Frage, so ändert sich auch die dazugehörende Präposition. Im Einzelnen gibt es viele Möglichkeiten. Die Wichtigsten zeigt folgende Tabelle auf:</p>
-</div>
+
 <p style="padding-left: 60px;">&nbsp;</p>
 <p style="padding-left: 60px;">- Wohin gehst du? - Ich gehe zu Peter / zum Arzt.</p>
 <p style="padding-left: 60px;">&nbsp;</p>
 <p style="padding-left: 60px;">- Wo bist du? - Ich bin bei Peter / beim Arzt.</p>
 <p style="padding-left: 60px;">&nbsp;</p>
 <p style="padding-left: 60px;">- Woher kommst du gerade? - Ich komme gerade von Peter / vom Arzt.</p>  
-  
-  
-
-</div>
 ''';
 
 String title5 = 'Anwendungsbeispiele';

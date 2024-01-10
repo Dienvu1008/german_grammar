@@ -16,6 +16,7 @@ class Konjunktiv_II_Der_Hoeflichkeit_13_13_1 extends StatelessWidget {
     );
   }
 }
+
 List<CardContent> contents = [
   CardContent(
     elements: [
@@ -47,10 +48,8 @@ List<CardContent> contents = [
 String title = '13.13.1. Konjunktiv II der Höflichkeit';
 String title1 = 'Was man über den Konjunktiv der Höflichkeit wissen sollte.';
 String htmlContent1_1 = '''
- <div>
 <p>Überall dort, wo Fremde auf Fremde treffen, wie zum Beispiel:</p>
-<p>&nbsp;</p>
-</div>
+
 <p style="padding-left: 60px;">- im Restaurant,</p>
 <p style="padding-left: 60px;">- in der Kneipe,</p>
 <p style="padding-left: 60px;">- beim Einkaufen,</p>
@@ -61,30 +60,22 @@ String htmlContent1_1 = '''
 <p style="padding-left: 60px;">- am Bahnhof,</p>
 <p style="padding-left: 60px;">- unter Arbeitskollegen ...</p>
 <p style="padding-left: 60px;">&nbsp;</p>
-<div>
+
 <p>gibt es bestimmte Höflichkeitsregeln, die man beachten sollte,</p>
-<p>&nbsp;</p>
-</div>
+
 <p style="padding-left: 60px;">- um höflich mit anderen in Kontakt zu treten,</p>
 <p style="padding-left: 60px;">- um höflich etwas zu fragen,</p>
 <p style="padding-left: 60px;">- um höflich eine Bitte zu formulieren,</p>
 <p style="padding-left: 60px;">- um höflich um einen Gefallen zu bitten oder</p>
 <p style="padding-left: 60px;">- um höflich eine Auskunft zu erfragen.</p>
 <p style="padding-left: 60px;">&nbsp;</p>
-<div>
-<p>In all den genannten Situationen findet der Konjunktiv II der Höflichkeit seine Anwendung. Dies sind also Orte oder Situationen, wo man sich formell gegenübertritt und sich "<strong><span class="red">siezt</span></strong>". Allerdings hindert Sie niemand daran, auch mit Freunden oder Familienmitgliedern besonders höflich umzugehen. Selbstverständlich gilt es auch, die Höflichkeit durch Intonation, Gestik und Mimik abzurunden. Es ist einfach eine Frage der persönlichen Etikette, wie man sich selbst verkaufen möchte.</p>
-</div>  
+
+<p>In all den genannten Situationen findet der Konjunktiv II der Höflichkeit seine Anwendung. Dies sind also Orte oder Situationen, wo man sich formell gegenübertritt und sich "<strong><span class="red">siezt</span></strong>". Allerdings hindert Sie niemand daran, auch mit Freunden oder Familienmitgliedern besonders höflich umzugehen. Selbstverständlich gilt es auch, die Höflichkeit durch Intonation, Gestik und Mimik abzurunden. Es ist einfach eine Frage der persönlichen Etikette, wie man sich selbst verkaufen möchte.</p> 
 ''';
-
-
 
 String title2 = 'Höfliche Fragen';
 String htmlContent2_1 = '''
- <div>
-<p>&nbsp;</p>
 <p>Der " <strong><span class="red">Konjunktiv II</span></strong> ", die " <strong><span class="red">Modalverben</span></strong> " sowie das Wort "<strong><span class="red">bitte</span></strong>" machen jede Frage / Bitte höflicher.</p>
-</div>
-<p>&nbsp;</p>
 ''';
 String htmlTable2_2 = '''
 <table><colgroup> <col style="width: 32%;"> <col style="width: 68%;"> </colgroup>
@@ -153,11 +144,8 @@ String htmlTable2_3 = '''
 
 String title3 = 'Höfliche Bitte';
 String htmlContent3_1 = '''
-
-      <div>
 <p>Die Partikel " <strong><span class="red">vielleicht</span></strong> ", " <strong><span class="red">(ein)mal</span></strong> " und " <strong><span class="red">gern</span></strong> " macht eine Bitte noch höflicher. Beispiele:</p>
-</div>
-<p>&nbsp;</p>
+
 <p style="padding-left: 60px;">- Ich hätte <strong><span class="red">gern</span></strong> noch zwei Bier.</p>
 <p style="padding-left: 60px;">- Könntest du mir <strong><span class="red">vielleicht mal</span></strong> helfen?</p>
 <p style="padding-left: 60px;">- Könntest du mir <strong><span class="red">bitte mal</span></strong> den Salzstreuer reichen?</p>
@@ -166,7 +154,4 @@ String htmlContent3_1 = '''
 <p style="padding-left: 60px;">- Entschuldigung. Hätten Sie <strong><span class="red">vielleicht mal</span></strong> die genaue Uhrzeit?</p>
 <p style="padding-left: 60px;">- Entschuldigen Sie bitte. Könnten Sie mir <strong><span class="red">vielleicht</span></strong> die Uhrzeit sagen?</p>
 <p style="padding-left: 60px;">- Entschuldigen Sie bitte. Könnten Sie mir <strong><span class="red">vielleicht</span></strong> den Weg zum Bahnhof erklären?</p>  
-  
-  
-
 ''';

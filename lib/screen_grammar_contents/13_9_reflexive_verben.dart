@@ -80,16 +80,11 @@ List<CardContent> contents = [
 String title = 'Reflexive Verben';
 String title1 = 'Was man über reflexive Verben wissen sollte.';
 String htmlContent1 = '''
-<div>
 <p><strong><span class="blue">Reflexive Verben</span></strong> verlangen ein zusätzliches <strong><span class="red">Reflexivpronomen</span></strong>, das im Akkusativ oder im Dativ stehen kann. Reflexiv bedeutet <span style="text-decoration:underline">rückbezüglich</span>. Das <strong>Reflexivpronomen</strong> bezieht sich auf das <span style="text-decoration:underline">Subjekt im Satz</span> zurück.</p>
-</div>
-<p>&nbsp;</p>
-<div>
+
 <p>Das reflexive Verb "sich freuen" hat eine <strong><span class="blue">Nominativ-</span></strong> und eine <strong><span class="red">reflexive Ergänzung im Akkusativ</span></strong>. Die <strong><span class="red">reflexive Ergänzung</span></strong> wird mit einem <strong><span class="red">Reflexivpronomen</span></strong> ausgedrückt.</p>
-</div>
-<p>&nbsp;</p>
 ''';
-String htmlTable1 ='''
+String htmlTable1 = '''
 <table class="zwei"><colgroup> 
 <col style="width: 34%;"> 
 <col style="width: 33%;"> 
@@ -128,12 +123,9 @@ String htmlTable1 ='''
 
 String title2 = 'Die Reflexivpronomen';
 String htmlContent2 = '''
-<div>
 <p>Das Reflexivpronomen ist abhängig vom Subjekt. Es muss immer die gleiche Person angeben, die das Subjekt vorgibt. Für die 1. und 2. Person Singular und Plural werden die entsprechenden Formen des Personalpronomens im Akkusativ bzw. im Dativ übernommen. Nur die 3. Person bildet eine eigene Form: "<strong><span class="red">sich</span></strong>". Diese Form bleibt sowohl im Dativ und Akkusativ als auch im Singular und Plural bestehen.</p>
-</div>
-<p>&nbsp;</p>
 ''';
-String htmlTable2 ='''
+String htmlTable2 = '''
 <table class="zwei"><colgroup> 
 <col style="width: 34%;"> 
 <col style="width: 33%;"> 
@@ -182,11 +174,9 @@ String htmlTable2 ='''
 
 String title3 = 'Reflexivpronomen mit Dativ oder mit Akkusativ?';
 String htmlContent3_1 = '''
-  <div>
 <p>Der Gebrauch der reflexiven Verben ist nicht immer einfach. Man muss zwischen <strong><span class="blue">echten -</span></strong> und <strong><span class="red">unechten reflexiven Verben</span></strong> unterscheiden. Das Verb "<strong><span class="red">waschen</span></strong>" hilft uns bei der Erklärung. Das Verb "<strong><span class="red">waschen</span></strong>" verlangt eine <strong><span class="blue">Nominativ-</span></strong> und eine <strong><span class="red">Akkusativ-Ergänzung</span></strong>.</p>
-</div>
 ''';
-String htmlTable3_1 ='''
+String htmlTable3_1 = '''
 <table><colgroup> 
 <col style="width: 30%;"> 
 <col style="width: 35%;"> 
@@ -213,16 +203,11 @@ String htmlTable3_1 ='''
 </table>
 ''';
 String htmlContent3_2 = '''
-<div>
 <p>Im genannten Beispiel wäscht eine Person (Subjekt = die Mutter / der Vater) eine Person oder Sache (Akkusativ = Sohn / Auto).</p>
-</div>
-<p>&nbsp;</p>
-<div>
+
 <p>Das Verb <strong><span class="red">waschen</span></strong> kann aber auch reflexiv benutzt werden. Das geschieht, wenn sich das Reflexivpronomen auf das Subjekt bezieht. Das Subjekt (Mutter / Vater) wäscht dann keine andere Person oder Sache, sondern <strong><span class="red">sich selbst</span></strong>. Das Reflexivpronomen nimmt nun <span style="text-decoration:underline">die Stellung der Akkusativergänzung</span> ein.</p>
-</div>
-<p>&nbsp;</p>
 ''';
-String htmlTable3_2 ='''
+String htmlTable3_2 = '''
 <table><colgroup> 
 <col style="width: 20%;"> 
 <col style="width: 30%;"> 
@@ -253,12 +238,9 @@ String htmlTable3_2 ='''
 </table>
 ''';
 String htmlContent3_3 = '''
-<div>
 <p>Wenn das Verb jedoch eine weitere <strong><span class="blue">Akkusativ-Ergänzung</span></strong> erhält, muss das <strong><span class="red">Reflexivpronomen im Dativ</span></strong> stehen.</p>
-</div>
-<p>&nbsp;</p>
 ''';
-String htmlTable3_3 ='''
+String htmlTable3_3 = '''
 <table><colgroup> <col style="width: 24%;"> <col style="width: 24%;"> <col style="width: 24%;"> <col style="width: 28%;"> </colgroup>
 <thead>
 <tr>
@@ -285,12 +267,9 @@ String htmlTable3_3 ='''
 </table>
 ''';
 String htmlContent3_4 = '''
-<div>
 <p>Reflexive Verben, in denen das Reflexivpronomen im Akkusativ steht, haben oft zusätzlich noch eine <strong><a title="Einführung Verben mit Präpositionen" href="praepositionalergaenzung.html" target="_blank">Präpositional-Ergänzung</a></strong>. Der Infinitiv lautet dann z.B. "<strong><span class="blue"> s. freuen</span></strong> <strong><span class="red">auf</span></strong> ". Diese <strong><a title="Liste der Verben mit festen Präpositionen zum kostenlosen Downloaden" href="verben-mit-praepositionalergaenzungen.html" target="_blank">Verbgruppe</a></strong> sollte man <span style="text-decoration:underline">mit der entsprechenden Präposition auswendig lernen</span>.</p>
-</div>
-<p>&nbsp;</p>
 ''';
-String htmlTable3_4 ='''
+String htmlTable3_4 = '''
 <table><colgroup> <col style="width: 15%;"> <col style="width: 25%;"> <col style="width: 25%;"> <col style="width: 35%;"> </colgroup>
 <thead>
 <tr>
@@ -325,11 +304,9 @@ String htmlTable3_4 ='''
 
 String title4 = 'Liste der echten reflexiven Verben';
 String htmlContent4_1 = '''
-<div>
 <p>"<strong><span class="red">Echte reflexive Verben</span></strong>" können nur reflexiv gebraucht werden. Die Akkusativ-Ergänzung kann also <span style="text-decoration:underline">nicht mit einer anderen Person oder Sache</span> (Ich wasche <span style="text-decoration:underline">das Kind / das Auto</span>) getauscht werden. Die wichtigsten echten reflexiven Verben - einige davon nur im Akkusativ, andere nur im Dativ - werden in folgender Tabelle aufgeführt:</p>
-</div>
 ''';
-String htmlTable4_1 ='''
+String htmlTable4_1 = '''
 <table>
 <thead>
 <tr>
@@ -345,7 +322,7 @@ String htmlTable4_1 ='''
 </tbody>
 </table>
 ''';
-String htmlTable4_2 ='''
+String htmlTable4_2 = '''
 <table><colgroup> <col style="width: 12%;"> <col style="width: 10%;"> <col style="width: 15%;"> <col style="width: 18%;"> <col style="width: 33%;"> <col style="width: 12%;"> </colgroup>
 <thead>
 <tr>
@@ -387,8 +364,7 @@ String htmlTable4_2 ='''
 ''';
 String htmlContent4_2 = '''
 <p><strong><span class="red">Echte reflexive Verben</span></strong> haben immer ein Reflexivpronomen. Man erkennt sie daran,</p>
-</div>
-<p>&nbsp;</p>
+
 <p style="padding-left: 30px;">dass man das Reflexivpronomen nicht weglassen kann:</p>
 <p style="padding-left: 60px;">Ich freue mich. (<strong><span class="red">Falsch:</span></strong> Ich freue.)</p>
 <p>&nbsp;</p>
@@ -397,17 +373,15 @@ String htmlContent4_2 = '''
 <p>&nbsp;</p>
 <p style="padding-left: 30px;">dass ein Reflexivpronomen nicht durch eine andere Person ersetzt werden kann:</p>
 <p style="padding-left: 60px;">Er freut sich. (<strong><span class="red">Falsch:</span></strong> Ich freue dich.)</p>  
-
 ''';
 
 String title5 = 'Liste der unechten reflexiven Verben';
 String htmlContent5_1 = '''
-<div>
 <p>Die andere Gruppe der reflexiven Verben nennt man <strong><span class="red">unechte reflexive Verben</span></strong>. Das bedeutet, dass man sie sowohl reflexiv als auch mit einer Akkusativ-Ergänzung benutzen kann. Einige unechte reflexive Verben werden nur im Dativ verwendet.</p>
-</div>
+
 <p><br> Folgende Tabelle zeigt einige Anwendungsbeispiele auf:</p>
 ''';
-String htmlTable5_1 ='''
+String htmlTable5_1 = '''
 <table><colgroup> <col style="width: 33%;"> <col style="width: 33%;"> <col style="width: 33%;"> </colgroup>
 <thead>
 <tr>
@@ -451,17 +425,13 @@ String htmlTable5_1 ='''
 </table>
 ''';
 String htmlContent5_2 = '''
-<div>
 <p>Folgende Liste enthält einige unechte reflexive Verben. Sie können sowohl reflexiv als auch mit Akkusativ-Ergänzung benutzt werden, wie es in den zuvor gezeigten Beispielen nachzulesen ist.</p>
-</div>
+
 <p><br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- sich ab|trocknen<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- sich an|strengen<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- sich an|ziehen <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- sich ändern<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- sich ärgern über + Akk<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- sich auf|regen<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- sich bewegen<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- sich duschen<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- sich entschuldigen<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- sich erinnern an + Akk<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- sich fragen; ob...<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- sich fürchten<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- sich gewöhnen an + AKK<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- sich kämmen<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- sich nennen<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- sich rasieren<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- sich schminken<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- sich setzen<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- sich treffen<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- sich um|drehen<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- sich um|ziehen<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- sich verletzen<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- sich verteidigen<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- sich vor|bereiten<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- sich waschen<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- sich wiegen</p>
-<p>&nbsp;</p>
-<div>
+
 <p>Bei den folgenden echten und unechten reflexiven Verben kann das Reflexivpronomen bzw. die andere Person nur im <strong><span class="red">Dativ</span></strong> stehen: "<strong><span class="blue">Etwas</span></strong>" steht hier stellvertretend für eine <strong><span class="blue">Akkusativ-Ergänzung</span></strong>.</p>
-</div>
-<p>&nbsp;</p>
 ''';
-String htmlTable5_2 ='''
+String htmlTable5_2 = '''
 <table><colgroup> <col style="width: 34%;"> <col style="width: 9%;"> <col style="width: 11%;"> <col style="width: 32%;"> <col style="width: 14%;"> </colgroup>
 <thead>
 <tr>
@@ -571,18 +541,15 @@ String htmlContent5_3 = '''
 <p><br> * echtes reflexives Verb</p>  
 ''';
 
-
 String title6 = 'Reziproke Verben';
 String htmlContent6 = '''
- <div>
 <p>Reziproke Verben haben die Besonderheit, dass sie nur im Plural Verwendung finden. Das Reziprokpronomen "<strong><span class="red">sich</span></strong>" lässt sich mit "<strong><span class="blue">einander</span></strong>" ersetzen.</p>
-</div>
-<p>&nbsp;</p>
+
 <p style="padding-left: 30px;">Peter liebt Petra und Petra liebt Peter.</p>
 <p style="padding-left: 30px;">Peter und Petra lieben <strong><span class="blue">sich</span></strong>.</p>
 <p style="padding-left: 30px;">Sie lieben <strong><span class="blue">einander</span></strong>.</p>
-<p>&nbsp;</p>
+
 <p><br> Weitere reziproke Verben sind:</p>
-<p>&nbsp;</p>
+
 <p style="padding-left: 30px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- sich gegenseitig ärgern<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- sich miteinander an|freunden <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- sich einander begrüßen<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- sich einigen<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- sich kennen<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- sich lieben<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- sich sehen<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- sich streiten<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- sich miteinander verbrüdern<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- sich verfeinden<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- sich verkrachen<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- sich miteinander vertragen</p>  
 ''';

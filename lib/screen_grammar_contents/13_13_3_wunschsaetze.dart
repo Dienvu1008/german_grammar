@@ -5,7 +5,7 @@ import '../page_content.dart';
 class Wunschsaetze_13_13_3 extends StatelessWidget {
   const Wunschsaetze_13_13_3({super.key});
 
-   @override
+  @override
   Widget build(BuildContext context) {
     return Expanded(
       child: Scaffold(
@@ -16,6 +16,7 @@ class Wunschsaetze_13_13_3 extends StatelessWidget {
     );
   }
 }
+
 List<CardContent> contents = [
   CardContent(
     elements: [
@@ -33,18 +34,16 @@ List<CardContent> contents = [
   ),
 ];
 String title = '13.13.3. Wunschsätze';
-String title1 = 'Was man wissen sollte, wenn man irreale Wünsche (Wunschsätze) äußern möchte.';
+String title1 =
+    'Was man wissen sollte, wenn man irreale Wünsche (Wunschsätze) äußern möchte.';
 String htmlContent1_1 = '''
-<div>
 <p>Irreale Wünsche (<strong>irreale Wunschsätze</strong>) zeigen immer das <strong><span class="red">Gegenteil des Indikativs</span></strong> an. Eine negative Realität in einem Indikativsatz (Er hat kein Geld.) wird im Wunschsatz positiv dargestellt (Er hat Geld.) und umgekehrt. Oft wird das gegenteilige Adjektiv + Komparativ benutzt ( kalt = wärmer / faul = fleißiger).</p>
-<p>&nbsp;</p>
+
 <p>Um einen Wunschsatz anzuzeigen, muss das Verb im Konjunktiv II stehen.</p>
-<p>&nbsp;</p>
+
 <p>In irrealen Wunschsätzen <strong><span class="red">müssen</span></strong> die Modal-Partikeln " <strong><span class="red">bloß</span></strong> ", " <strong><span class="red">doch</span></strong> ", " <strong><span class="red">nur</span></strong> ", oder eine Kombination dieser Partikel benutzt werden. Wunschsätze enden mit einem Ausrufezeichen ( <strong><span class="red"> ! </span></strong> ). Es gibt 2 Möglichkeiten, Wunschsätze zu bilden:</p>
-<p>&nbsp;</p>
-</div>
+
 <h3>Verb auf Position 1:</h3>
-<p>&nbsp;</p>
 ''';
 String htmlTable1_2 = '''
 <table><colgroup> <col style="width: 40%;"> <col style="width: 10%;"> <col style="width: 10%;"> <col style="width: 28%;"> <col style="width: 12%;"> </colgroup>

@@ -1,380 +1,102 @@
 import 'package:flutter/material.dart';
 
 import '../app/app_localizations.dart';
+import '../page_content.dart';
 
 class Praepositionen_Mit_Dativ_10_2 extends StatelessWidget {
   const Praepositionen_Mit_Dativ_10_2({super.key});
 
   @override
   Widget build(BuildContext context) {
-    final localizations = AppLocalizations.of(context);
-    final textTheme = Theme.of(context).textTheme;
     return Expanded(
       child: Scaffold(
         body: Padding(
-          padding: const EdgeInsets.all(8.0),
-          child: ListView(
-            children: <Widget>[
-              Card(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: <Widget>[
-                    Padding(
-                      padding: const EdgeInsets.only(top: 16.0, left: 16.0),
-                      child: Text('10.2. Präpositionen mit Dativ',
-                          style: textTheme.titleMedium),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.only(top: 10.0, left: 16.0),
-                      child: Text(
-                          'Was man über Präpositionen mit Dativ wissen sollte.',
-                          style: textTheme.titleSmall),
-                    ),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                            top: 10.0, left: 16.0, bottom: 10),
-                        child: RichText(
-                          text: TextSpan(
-                            style: textTheme.bodyMedium,
-                            children: <TextSpan>[
-                              TextSpan(text: 'Folgende '),
-                              TextSpan(
-                                  text: 'Präpositionen',
-                                  style: textTheme.bodyMedium!
-                                      .copyWith(fontWeight: FontWeight.bold)),
-                              TextSpan(text: ' fordern den '),
-                              TextSpan(
-                                  text: 'Dativ',
-                                  style: textTheme.bodyMedium!
-                                      .copyWith(fontWeight: FontWeight.bold)),
-                              TextSpan(text: ':'),
-                            ],
-                          ),
-                        )),
-                    SingleChildScrollView(
-                      child: ConstrainedBox(
-                        constraints: const BoxConstraints(
-                            //minHeight: MediaQuery.of(context).size.height
-                            ),
-                        child: IntrinsicHeight(
-                          child: Column(children: [
-                            Table(
-                              border: TableBorder.all(
-                                  color: Colors.purple, width: 1),
-                              children: [
-                                TableRow(children: [
-                                  Center(
-                                    child: RichText(
-                                      text: TextSpan(
-                                        text:
-                                            'ab    aus    bei    mit    nach    seit    von    zu',
-                                        style: textTheme.bodyMedium!
-                                            .copyWith(color: Colors.red),
-                                      ),
-                                    ),
-                                  ),
-                                ]),
-                              ],
-                            ),
-                          ]),
-                        ),
-                      ),
-                    ),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                            top: 10.0, left: 16.0, bottom: 10),
-                        child: RichText(
-                          text: TextSpan(
-                            style: textTheme.bodyMedium,
-                            children: <TextSpan>[
-                              TextSpan(text: 'Folgende '),
-                              TextSpan(
-                                  text: 'Präpositionen',
-                                  style: textTheme.bodyMedium!
-                                      .copyWith(fontWeight: FontWeight.bold)),
-                              TextSpan(text: ' fordern den Dativ:\n\n'),
-                              TextSpan(
-                                  text: 'ab\n',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(
-                                  text:
-                                      'Einsatz: lokale und temporale Angaben\n'),
-                              TextSpan(
-                                  text: 'Ab dem 01. September',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(text: ' ändern sich unsere Preise.\n'),
-                              TextSpan(
-                                  text: 'Die günstigen Sommerfahrkarten sind '),
-                              TextSpan(
-                                  text: 'ab Montag',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(text: ' bundesweit gültig.\n'),
-                              TextSpan(
-                                  text: 'Die Reise ist inklusive Zugfahrt '),
-                              TextSpan(
-                                  text: 'ab Aachen',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(text: ' gebucht worden.\n\n'),
-                              TextSpan(
-                                  text: 'aus\n',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(
-                                  text:
-                                      'Einsatz: lokale und temporale Angaben, Materialangaben, Verhaltensweisen\n'),
-                              TextSpan(text: 'Um wie viel Uhr kommt Martina '),
-                              TextSpan(
-                                  text: 'aus der Schule',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(text: '?\n'),
-                              TextSpan(text: 'Der Ring ist '),
-                              TextSpan(
-                                  text: 'aus reinem Gold',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(text: '. Er stammt '),
-                              TextSpan(
-                                  text: 'aus dem 12. Jahrhundert',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(text: '.\n'),
-                              TextSpan(text: 'Er hat sie '),
-                              TextSpan(
-                                  text: 'aus Liebe',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(text: ' geheiratet, sie ihn '),
-                              TextSpan(
-                                  text: 'aus einer Laune heraus',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(text: '.\n\n'),
-                              TextSpan(
-                                  text: 'bei\n',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(
-                                  text:
-                                      'Einsatz: lokale Angaben, Gleichzeitigkeit, Redewendungen\n'),
-                              TextSpan(text: 'Ihr Mann verschwand '),
-                              TextSpan(
-                                  text: 'bei Nacht und Nebel',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(text: '.\n'),
-                              TextSpan(text: 'Gestern war ich '),
-                              TextSpan(
-                                  text: 'bei Herrn Mauser',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(
-                                  text:
-                                      '. Unsere Mitarbeiterin Frau Saum war auch '),
-                              TextSpan(
-                                  text: 'bei ihm',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(text: '.\n'),
-                              TextSpan(text: 'Es sind '),
-                              TextSpan(
-                                  text: 'beim Spülen',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(
-                                  text:
-                                      ' zwei teure Sektgläser kaputt gegangen.\n\n'),
-                              TextSpan(
-                                  text: 'mit\n',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(
-                                  text:
-                                      'Einsatz: Gegenteil von "ohne", Angabe eines Zusammenhangs, - einer Art und Weise, - eines Mittels\n'),
-                              TextSpan(text: 'Diese Arbeit kann man nur '),
-                              TextSpan(
-                                  text: 'mit viel Geduld und Spucke',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(text: ' schaffen.\n'),
-                              TextSpan(text: 'Diese Häuser werden '),
-                              TextSpan(
-                                  text: 'mit Gas',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(text: ' beheizt.\n'),
-                              TextSpan(text: 'Er fährt immer '),
-                              TextSpan(
-                                  text: 'mit dem Auto',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(
-                                  text: ' zur Arbeit, seine Frau dagegen '),
-                              TextSpan(
-                                  text: 'mit dem Bus',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(text: '.\n\n'),
-                              TextSpan(
-                                  text: 'nach\n',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(
-                                  text:
-                                      'Einsatz: lokale und temporale Angaben, auch nach Adverbien\n'),
-                              TextSpan(
-                                  text: 'Nach dem Unterricht',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(
-                                  text:
-                                      ' gehen alle gemeinsam in die Mensa.\n'),
-                              TextSpan(
-                                  text:
-                                      'Die Möllers fahren im Urlaub mal wieder '),
-                              TextSpan(
-                                  text: 'nach Spanien',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(text: '.\n'),
-                              TextSpan(
-                                  text:
-                                      'Zum Bahnhof müssen sie die nächste Straße '),
-                              TextSpan(
-                                  text: 'nach links',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(text: ' abbiegen.\n\n'),
-                              TextSpan(
-                                  text: 'seit\n',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(text: 'Einsatz: temporale Angaben\n'),
-                              TextSpan(
-                                  text: 'Seit seiner Hochzeit mit Ludwina',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(
-                                  text:
-                                      ' ist Georg nicht wieder zu erkennen.\n'),
-                              TextSpan(
-                                  text: 'Seit seiner Ankunft in Deutschland',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(
-                                  text:
-                                      ' ist der Student auf Wohnungssuche.\n'),
-                              TextSpan(text: 'Ich habe Jochen '),
-                              TextSpan(
-                                  text: 'seit Monaten',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(text: ' nicht mehr gesehen.\n\n'),
-                              TextSpan(
-                                  text: 'von\n',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(
-                                  text:
-                                      'Einsatz: lokale und temporale Angaben, anstelle eines Genitivattributs\n'),
-                              TextSpan(text: 'Sylvia kommt soeben '),
-                              TextSpan(
-                                  text: 'vom Zahnarzt',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(text: '.\n'),
-                              TextSpan(
-                                  text: 'Ist das Michaels Auto oder ist es '),
-                              TextSpan(
-                                  text: 'von Peter',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(text: '?\n'),
-                              TextSpan(
-                                  text: 'Von Montag bis Mittwoch',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(
-                                  text:
-                                      ' muss ich beruflich nach Stuttgart fahren.\n\n'),
-                              TextSpan(
-                                  text: 'zu\n',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(
-                                  text:
-                                      'Einsatz: lokale und temporale Angaben, Zahlenangaben, feste Wendungen, Finalsätze\n'),
-                              TextSpan(text: 'Schalke hat gegen Köln '),
-                              TextSpan(
-                                  text: '0:2',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(text: ' verloren. (null zu zwei). \n'),
-                              TextSpan(
-                                  text:
-                                      'Du siehst sehr krank aus. Geh lieber schnell '),
-                              TextSpan(
-                                  text: 'zum Arzt',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(text: '.\n'),
-                              TextSpan(
-                                  text: 'Zu Weihnachten',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(
-                                  text:
-                                      ' schenken wir unseren Kindern je ein neues Fahrrad.'),
-                            ],
-                          ),
-                        )),
-                  ],
-                ),
-              ),
-            ],
-          ),
-        ),
+            padding: const EdgeInsets.all(8.0),
+            child: MyPageContentView(contents: contents)),
       ),
     );
   }
 }
+
+List<CardContent> contents = [
+  CardContent(
+    elements: [
+      CardElement(type: ElementType.pageTitle, value: title),
+    ],
+  ),
+  CardContent(
+    elements: [
+      CardElement(type: ElementType.cardTitle, value: title1),
+      CardElement(type: ElementType.htmlContent, value: htmlContent1_1),
+      CardElement(type: ElementType.htmlTable, value: htmlTable1_2),
+      CardElement(type: ElementType.htmlContent, value: htmlContent1_3),
+    ],
+  ),
+];
+
+String title = '10.2. Präpositionen mit Dativ';
+
+String title1 = 'Was man über Präpositionen mit Dativ wissen sollte.';
+String htmlContent1_1 = '''
+<p>Folgende <strong>Präpositionen</strong> fordern den <strong>Dativ</strong>:</p>
+''';
+String htmlTable1_2 = '''
+<table class="eins">
+<tbody>
+<tr>
+<td align="center">
+<h3><strong><span class="red">&nbsp;ab&nbsp;&nbsp;&nbsp;&nbsp; aus&nbsp;&nbsp;&nbsp;&nbsp;bei&nbsp;&nbsp;&nbsp;&nbsp; mit&nbsp;&nbsp;&nbsp;&nbsp; nach&nbsp;&nbsp;&nbsp; seit&nbsp;&nbsp;&nbsp;&nbsp; von&nbsp;&nbsp;&nbsp;&nbsp;zu&nbsp;</span></strong></h3>
+</td>
+</tr>
+</tbody>
+</table>
+''';
+String htmlContent1_3 = '''
+<li><strong><span class="red">ab</span></strong> Einsatz: <strong><a title="Lokale Angaben" href="lernen.php?menu_id=15#lokal">lokale</a></strong> und <strong><a title="Temporale Angaben" href="lernen.php?menu_id=15#tempus">temporale Angaben</a></strong>
+
+<li><strong><span class="red">Ab dem 01. September</span></strong> ändern sich unsere Preise.</li>
+<li>Die günstigen Sommerfahrkarten sind <strong><span class="red">ab Montag</span></strong> bundesweit gültig.</li>
+<li>Die Reise ist inklusive Zugfahrt <strong><span class="red">ab Aachen</span></strong> gebucht worden.</li>
+
+<li><strong><span class="red">aus</span></strong> Einsatz: lokale und temporale Angaben, Materialangaben, Verhaltensweisen
+
+<li>Um wie viel Uhr kommt Martina <strong><span class="red">aus der Schule</span></strong>?</li>
+<li>Der Ring ist <strong><span class="red">aus reinem Gold</span></strong>. Er stammt <strong><span class="red">aus dem 12. Jahrhundert</span></strong>.</li>
+<li>Er hat sie <strong><span class="red">aus Liebe</span></strong> geheiratet, sie ihn <strong><span class="red">aus einer Laune heraus</span></strong>.</li>
+
+<li><strong><span class="red">bei</span></strong> Einsatz: lokale Angaben, Gleichzeitigkeit, Redewendungen
+
+<li>Ihr Mann verschwand <strong><span class="red">bei Nacht und Nebel</span></strong>.</li>
+<li>Gestern war ich <strong><span class="red">bei Herrn Mauser</span></strong>. Unsere Mitarbeiterin Frau Saum war auch <strong><span class="red">bei ihm</span></strong>.</li>
+<li>Es sind <strong><span class="red">beim Spülen</span></strong> zwei teure Sektgläser kaputt gegangen.</li>
+
+<li><strong><span class="red">mit</span></strong> Einsatz: Gegenteil von "ohne", Angabe eines Zusammenhangs, - einer Art und Weise, - eines Mittels
+
+<li>Diese Arbeit kann man nur <strong><span class="red">mit viel Geduld und Spucke</span></strong> schaffen.</li>
+<li>Diese Häuser werden <strong><span class="red">mit Gas</span></strong> beheizt.</li>
+<li>Er fährt immer <strong><span class="red">mit dem Auto</span></strong> zur Arbeit, seine Frau dagegen <strong><span class="red">mit dem Bus</span></strong>.</li>
+
+<li><strong><span class="red">nach</span></strong> Einsatz: lokale und temporale Angaben, auch nach Adverbien
+
+<li><strong><span class="red">Nach dem Unterricht</span></strong> gehen alle gemeinsam in die Mensa.</li>
+<li>Die Möllers fahren im Urlaub mal wieder <strong><span class="red">nach Spanien</span></strong>.</li>
+<li>Zum Bahnhof müssen sie die nächste Straße <strong><span class="red">nach links</span></strong> abbiegen.</li>
+
+<li><strong><span class="red">seit</span></strong> Einsatz: temporale Angaben
+
+<li><strong><span class="red">Seit seiner Hochzeit mit Ludwina</span></strong> ist Georg nicht wieder zu erkennen.</li>
+<li><strong><span class="red">Seit seiner Ankunft in Deutschland</span></strong> ist der Student auf Wohnungssuche.</li>
+<li>Ich habe Jochen <strong><span class="red">seit Monaten</span></strong> nicht mehr gesehen.</li>
+
+<li><strong><span class="red">von</span></strong> Einsatz: lokale und temporale Angaben, anstelle eines <strong><a title="Alternativen zum Genitiv" href="lernen.php?menu_id=61">Genitivattributs</a></strong>
+
+<li>Sylvia kommt soeben <strong><span class="red">vom Zahnarzt</span></strong>.</li>
+<li>Ist das Michaels Auto oder ist es <strong><span class="red">von Peter</span></strong>?</li>
+<li><strong><span class="red">Von Montag bis Mittwoch</span></strong> muss ich beruflich nach Stuttgart fahren.</li>
+
+<li><strong><span class="red">zu</span></strong> Einsatz: lokale und temporale Angaben, Zahlenangaben, feste Wendungen, <strong><a title="Finalsätze" href="lernen.php?menu_id=94">Finalsätze</a></strong>
+
+<li>Schalke hat gegen Köln <strong><span class="red">0:2</span></strong> verloren. (null zu zwei).</li>
+<li>Du siehst sehr krank aus. Geh lieber schnell <strong><span class="red">zum Arzt</span></strong>.</li>
+<li><strong><span class="red">Zu Weihnachten</span></strong> schenken wir unseren Kindern je ein neues Fahrrad.</li> 
+''';

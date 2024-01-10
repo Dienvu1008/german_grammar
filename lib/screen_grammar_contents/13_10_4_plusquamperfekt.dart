@@ -5,7 +5,7 @@ import '../page_content.dart';
 class Plusquamperfekt_13_10_4 extends StatelessWidget {
   const Plusquamperfekt_13_10_4({super.key});
 
-   @override
+  @override
   Widget build(BuildContext context) {
     return Expanded(
       child: Scaffold(
@@ -36,7 +36,6 @@ List<CardContent> contents = [
       CardElement(type: ElementType.htmlTable, value: htmlTable2_2),
       CardElement(type: ElementType.htmlContent, value: htmlContent2_3),
       CardElement(type: ElementType.htmlTable, value: htmlTable2_4),
-      
     ],
   ),
   CardContent(
@@ -47,7 +46,7 @@ List<CardContent> contents = [
       CardElement(type: ElementType.htmlTable, value: htmlTable3_2),
       CardElement(type: ElementType.htmlContent, value: htmlContent3_3),
       CardElement(type: ElementType.htmlTable, value: htmlTable3_4_1),
-        CardElement(type: ElementType.htmlTable, value: htmlTable3_4),
+      CardElement(type: ElementType.htmlTable, value: htmlTable3_4),
       CardElement(type: ElementType.htmlContent, value: htmlContent3_5),
       CardElement(type: ElementType.htmlTable, value: htmlTable3_6),
       CardElement(type: ElementType.htmlContent, value: htmlContent3_7),
@@ -57,22 +56,15 @@ List<CardContent> contents = [
   ),
 ];
 
-
 String title = '13.10.4. Plusquamperfekt';
 String title1 = 'Was man über das Plusquamperfekt wissen sollte.';
 String htmlContent1 = '''
- <div>
-<p>Das Plusquamperfekt, auch die <strong><span class="red">Vorvergangenheit</span></strong> genannt, ist das Tempus der <strong><span class="red">Vorzeitigkeit</span></strong> gegenüber dem Präteritum und dem Perfekt. Es gibt die Vergangenheit wieder, die <strong><span class="red">vor</span></strong> <span style="text-decoration:underline">dem Präteritum / Perfekt geschehen war</span> und die für die Handlung im Präteritum / Perfekt wichtig ist. Deshalb heißt sie auch Vorvergangenheit.</p>
-</div>
-<p>&nbsp;</p>  
+<p>Das Plusquamperfekt, auch die <strong><span class="red">Vorvergangenheit</span></strong> genannt, ist das Tempus der <strong><span class="red">Vorzeitigkeit</span></strong> gegenüber dem Präteritum und dem Perfekt. Es gibt die Vergangenheit wieder, die <strong><span class="red">vor</span></strong> <span style="text-decoration:underline">dem Präteritum / Perfekt geschehen war</span> und die für die Handlung im Präteritum / Perfekt wichtig ist. Deshalb heißt sie auch Vorvergangenheit.</p>  
 ''';
 
 String title2 = 'Die Bildung des Plusquamperfekts';
 String htmlContent2_1 = '''
-<div>
 <p>Das Plusquamperfekt wird wie folgt gebildet:</p>
-</div>
-<p>&nbsp;</p>
 ''';
 String htmlTable2_2 = '''
 <table class="eins"><colgroup> <col style="width: 100%;"> </colgroup>
@@ -86,10 +78,7 @@ String htmlTable2_2 = '''
 </table>
 ''';
 String htmlContent2_3 = '''
-<p>&nbsp;</p>
-<div>
 <p>Bei der Frage, ob das Hilfsverb mit " <strong><span class="red">haben</span></strong> " oder " <strong><span class="blue">sein</span></strong> " gebildet wird, gelten dieselben Regeln wie beim <strong><a title="Der Gebrauch der Hilfsverben haben und sein im Perfekt" href="perfekt.html#hilfsverben" target="_blank">Perfekt</a></strong>.</p>
-</div>
 ''';
 String htmlTable2_4 = '''
 <table><colgroup> <col style="width: 20%;"> <col style="width: 20%;"> <col style="width: 60%;"> </colgroup>
@@ -130,15 +119,11 @@ String htmlTable2_4 = '''
 </table>  
 ''';
 
-
-
 String title3 = 'Anwendungsbeispiele';
 String htmlContent3_1 = '''
-<div>
 <p>Das Plusquamperfekt wird generell nicht als eine einzelne Aussage verwendet. Die Vorzeitigkeit, die das Plusquamperfekt ausdrückt, wird immer im Bezug zu einer Aussage im Präteritum bzw. dem Perfekt gestellt. Es kann zu folgenden Kombinationen kommen:</p>
-</div>
+
 <h3>- Plusquamperfekt im Hauptsatz</h3>
-<p>&nbsp;</p>
 ''';
 String htmlTable3_2_1 = '''
 <table><colgroup> 
@@ -192,9 +177,7 @@ String htmlTable3_2 = '''
 </table>
 ''';
 String htmlContent3_3 = '''
-<p>&nbsp;</p>
 <h3>- Plusquamperfekt im Nebensatz</h3>
-<p>&nbsp;</p>
 ''';
 String htmlTable3_4_1 = '''
 <table><colgroup> 
@@ -246,7 +229,6 @@ String htmlTable3_4 = '''
 String htmlContent3_5 = '''
 <p><br> Vergleiche auch <strong><a title="Verbstellung in Nebensätzen" href="nebensaetze.html#einfuehrung" target="_blank">Nebensätze</a></strong></p>
 <h3>- Plusquamperfekt mit Modalverb</h3>
-<p>&nbsp;</p>
 ''';
 String htmlTable3_6 = '''
 <table><colgroup> <col style="width: 19%;"> <col style="width: 15%;"> <col style="width: 38;"> <col style="width: 28%;"> </colgroup>
@@ -281,9 +263,7 @@ String htmlTable3_6 = '''
 </table>
 ''';
 String htmlContent3_7 = '''
-<p>&nbsp;</p>
 <h3>- Plusquamperfekt mit Modalverb im Nebensatz</h3>
-<p>&nbsp;</p>
 ''';
 String htmlTable3_8_1 = '''
 <table><colgroup> 
@@ -331,4 +311,3 @@ String htmlTable3_8 = '''
 </tbody>
 </table>
 ''';
-

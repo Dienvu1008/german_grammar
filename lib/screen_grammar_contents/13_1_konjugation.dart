@@ -3,183 +3,70 @@ import 'package:flutter/material.dart';
 import '../app/app_localizations.dart';
 import '../html_table_to_dart_table.dart';
 import '../html_to_richtext.dart';
+import '../page_content.dart';
 
 class Konjugation_13_1 extends StatelessWidget {
   const Konjugation_13_1({super.key});
 
   @override
   Widget build(BuildContext context) {
-    final localizations = AppLocalizations.of(context);
-    final textTheme = Theme.of(context).textTheme;
     return Expanded(
       child: Scaffold(
         body: Padding(
-          padding: const EdgeInsets.all(8.0),
-          child: ListView(
-            children: <Widget>[
-              Card(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: <Widget>[
-                    Padding(
-                      padding: const EdgeInsets.only(top: 16.0, left: 16.0),
-                      child: Text('13.1. Konjugation',
-                          style: textTheme.titleMedium),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.only(top: 10.0, left: 16.0),
-                      child: Text(
-                          'Was man über die Verbkonjugation wissen sollte.',
-                          style: textTheme.titleSmall),
-                    ),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                            top: 10.0, left: 16.0, bottom: 10),
-                        child: HtmlToRichText(
-                          htmlString: htmlContent1,
-                          textTheme: textTheme,
-                        )),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                            top: 10.0, left: 16.0, bottom: 10),
-                        child: HtmlTableToDartTable(
-                          htmlTable: htmlTable1,
-                          textTheme: textTheme,
-                          columnWidths: const {
-                            0: FractionColumnWidth(.25),
-                            1: FractionColumnWidth(.25),
-                            2: FractionColumnWidth(.25),
-                            3: FractionColumnWidth(.25),
-                          },
-                        )),
-                  ],
-                ),
-              ),
-              Card(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: <Widget>[
-                    Padding(
-                      padding: const EdgeInsets.only(
-                          top: 10.0, left: 16.0, bottom: 10),
-                      child: Text('Die Verbbegleiter',
-                          style: textTheme.titleSmall),
-                    ),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                            top: 10.0, left: 16.0, bottom: 10),
-                        child: HtmlToRichText(
-                          htmlString: htmlContent2,
-                          textTheme: textTheme,
-                        )),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                            top: 10.0, left: 16.0, bottom: 10),
-                        child: HtmlTableToDartTable(
-                          htmlTable: htmlTable2,
-                          textTheme: textTheme,
-                          columnWidths: const {
-                            0: FractionColumnWidth(.5),
-                            1: FractionColumnWidth(.25),
-                            2: FractionColumnWidth(.25),
-                          },
-                        )),
-                  ],
-                ),
-              ),
-              Card(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: <Widget>[
-                    Padding(
-                      padding: const EdgeInsets.only(
-                          top: 10.0, left: 16.0, bottom: 10),
-                      child: Text('Konjugation der 1. Person',
-                          style: textTheme.titleSmall),
-                    ),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                            top: 10.0, left: 16.0, bottom: 10),
-                        child: HtmlToRichText(
-                          htmlString: htmlContent3,
-                          textTheme: textTheme,
-                        )),
-                  ],
-                ),
-              ),
-              Card(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: <Widget>[
-                    Padding(
-                      padding: const EdgeInsets.only(
-                        top: 10.0,
-                        left: 16.0,
-                      ),
-                      child: Text('Konjugation der 2. Person',
-                          style: textTheme.titleSmall),
-                    ),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                            top: 10.0, left: 16.0, bottom: 10),
-                        child: HtmlToRichText(
-                          htmlString: htmlContent4,
-                          textTheme: textTheme,
-                        )),
-                  ],
-                ),
-              ),
-              Card(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: <Widget>[
-                    Padding(
-                      padding: const EdgeInsets.only(
-                        top: 10.0,
-                        left: 16.0,
-                      ),
-                      child: Text('Konjugation der 3. Person',
-                          style: textTheme.titleSmall),
-                    ),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                            top: 10.0, left: 16.0, bottom: 10),
-                        child: HtmlToRichText(
-                          htmlString: htmlContent5,
-                          textTheme: textTheme,
-                        )),
-                  ],
-                ),
-              ),
-              Card(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: <Widget>[
-                    Padding(
-                      padding: const EdgeInsets.only(
-                        top: 10.0,
-                        left: 16.0,
-                      ),
-                      child: Text('Die Höflichkeitsform',
-                          style: textTheme.titleSmall),
-                    ),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                            top: 10.0, left: 16.0, bottom: 10),
-                        child: HtmlToRichText(
-                          htmlString: htmlContent6,
-                          textTheme: textTheme,
-                        )),
-                  ],
-                ),
-              ),
-            ],
-          ),
-        ),
+            padding: const EdgeInsets.all(8.0),
+            child: MyPageContentView(contents: contents)),
       ),
     );
   }
 }
+
+List<CardContent> contents = [
+  CardContent(
+    elements: [
+      CardElement(type: ElementType.pageTitle, value: title),
+    ],
+  ),
+  CardContent(
+    elements: [
+      CardElement(type: ElementType.cardTitle, value: title1),
+      CardElement(type: ElementType.htmlContent, value: htmlContent1),
+      CardElement(type: ElementType.htmlTable, value: htmlTable1),
+    ],
+  ),
+  CardContent(
+    elements: [
+      CardElement(type: ElementType.cardTitle, value: title2),
+      CardElement(type: ElementType.htmlContent, value: htmlContent2),
+      CardElement(type: ElementType.htmlTable, value: htmlTable2),
+    ],
+  ),
+  CardContent(
+    elements: [
+      CardElement(type: ElementType.cardTitle, value: title3),
+      CardElement(type: ElementType.htmlContent, value: htmlContent3),
+    ],
+  ),
+  CardContent(
+    elements: [
+      CardElement(type: ElementType.cardTitle, value: title4),
+      CardElement(type: ElementType.htmlContent, value: htmlContent4),
+    ],
+  ),
+  CardContent(
+    elements: [
+      CardElement(type: ElementType.cardTitle, value: title5),
+      CardElement(type: ElementType.htmlContent, value: htmlContent5),
+    ],
+  ),
+  CardContent(
+    elements: [
+      CardElement(type: ElementType.cardTitle, value: title6),
+      CardElement(type: ElementType.htmlContent, value: htmlContent6),
+    ],
+  ),
+];
+String title = '13.1. Konjugation';
+String title1 = 'Was man über die Verbkonjugation wissen sollte.';
 
 String htmlContent1 = '''
 <p>Die <strong>Konjugation</strong> der deutschen Verben ist relativ einfach. Fast alle <strong><span class="red">Verben</span></strong> haben die Endung <strong><span class="red">-en</span></strong> (kauf<strong><span class="red">en</span></strong>, lieb<strong><span class="red">en</span></strong>, mal<strong><span class="red">en</span></strong>, ...). Steht das Verb in seiner Grundform (Endung = -en), spricht man vom <strong><span class="red">Infinitiv</span></strong>. Wörterbücher geben Verben immer mit dem Infinitiv an. Wird das Verb in einem Satz verwendet, muss es <strong><a title="Einführung Konjugation: Erklärungen zu Infinitiv, Verbstamm und Verbendung" href="verben.html#konjugation" target="_blank">konjugiert</a></strong> werden. Die <strong><span class="red">Konjugation</span></strong> der Verben ist im <strong><a title="Wie man Verben im Präsens konjugiert." href="gegenwart.html" target="_blank">Präsens</a></strong> nicht so schwierig. Fast alle Verben enden mit der gleichen konjugierten Endung. <strong><span class="red">Ausnahmen</span></strong> bilden nur die <strong><a title="Die Konjugation der Modalverben im Überblick" href="modalverben.html#Konjugation" target="_blank">Modalverben</a></strong> (1. + 3. Person Singular) und die <strong><a title="Die Konjugation der unregelmäßigen und starken Verben" href="starke-und-unregelmaessige-verben.html#unregelm-konjugation" target="_blank">unregelmäßigen Verben</a></strong> (sein, werden und wissen) sowie diejenigen Verben, deren <strong><a title="Lautliche Besonderheiten bei der Konjugation betreffen die Stammlautendungen einiger Verben." href="verben-mit-regelmaessigen-stammformen.html#lautlichebesonderheiten" target="_blank">Stammlaut mit s, ß; x oder z </a></strong> enden (hei<strong><span class="red">ß</span></strong>en, hei<strong><span class="red">z</span></strong>en, ...). In der folgenden Konjugationstabelle steht stellvertretend für alle regelmäßigen Verben der <strong><span class="red">Infinitiv</span></strong> "lernen".</p>
@@ -234,6 +121,7 @@ String htmlTable1 = '''
 </table>
 ''';
 
+String title2 = 'Die Verbbegleiter';
 String htmlContent2 = '''
 <p>In der gezeigten Tabelle erkennt man, dass einige <strong><span class="red">Verbendungen</span></strong> die <span style="text-decoration:underline">gleichen Endungen</span> haben:</p>
 <p style="padding-left: 30px;">- Endung für: <strong><span class="red">er / sie / es</span></strong> und <strong><span class="red">ihr</span></strong>&nbsp; &nbsp;= &nbsp; <strong><span class="red"> - t </span></strong><br> 
@@ -280,6 +168,7 @@ String htmlTable2 = '''
 </table>
 ''';
 
+String title3 = 'Konjugation der 1. Person';
 String htmlContent3 = '''
 <p>Zunächst unterscheiden wir zwischen <strong><span class="red">Singular</span></strong> und <strong><span class="blue">Plural</span></strong>. Der "<strong><span class="red">Singular</span></strong>" spricht <span style="text-decoration:underline">nur eine einzige Person</span> an, der " <strong><span class="blue">Plural</span></strong>" mindestens <span style="text-decoration:underline">zwei oder mehr Personen</span>.</p>
 <h4>Singular</h4>
@@ -298,6 +187,7 @@ String htmlContent3 = '''
 - <strong><span class="red">Wir haben</span></strong> drei Kinder.</p>  
 ''';
 
+String title4 = 'Konjugation der 2. Person';
 String htmlContent4 = '''
 <p>Die 2. Person ist die angesprochene Person. Oft sind es entweder <strong><span class="red">Familienmitglieder</span></strong> oder <strong><span class="red">Freunde</span></strong>. Die 2. Person spricht somit Familienmitglieder oder Freunde an, zu denen man ein <span style="text-decoration:underline">familiäres</span> oder <span style="text-decoration:underline">freundschaftliches Verhältnis</span> hat. Sie werden " <strong><span class="red">geduzt</span></strong> ". Das entsprechende Verb heißt "<strong><span class="red">duzen</span></strong>". In der Praxis werden auch immer häufiger Arbeitskollegen geduzt, da man mit ihnen oft ein freundschaftliches Verhältnis pflegt.</p>
 <h4>Singular</h4>
@@ -342,6 +232,7 @@ Auf eine Frage mit " <strong><span class="red">ihr</span></strong> ", wird mit "
 - Wir sagen doch "du"? O.K.?</p>  
 ''';
 
+String title5 = 'Konjugation der 3. Person';
 String htmlContent5 = '''
 <p>Die 3. Person wird für <span style="text-decoration:underline">Personen</span>, <span style="text-decoration:underline">Sachen</span> oder <span style="text-decoration:underline">Dinge</span> verwendet, <strong><span class="red">über die man spricht</span></strong>. Man unterscheidet sie nach dem Genus: <strong><span class="red">maskulin</span></strong>, <strong><span class="red">feminin</span></strong>, <strong><span class="red">neutral</span></strong> und nach Numerus (Singular / Plural). Daher gibt es vier verschiedene Möglichkeiten, <strong><a title="Einführung Personalpronomen" href="personalpronomen.html" target="_blank">Personalpronomen</a></strong> einzusetzen:</p>
 <h3>Singular</h3>
@@ -391,6 +282,8 @@ String htmlContent5 = '''
 - Er hat <strong><span class="red">sie</span></strong> in einem Kaufhaus in der Fußgängerzone gekauft.</p>  
   
 ''';
+
+String title6 = 'Die Höflichkeitsform';
 String htmlContent6 = '''
 <p>Die <strong><span class="red">Höflichkeitsform</span></strong>, oder auch <strong><span class="red">formelle Anrede</span></strong> genannt, wird ebenfalls mit dem Personalpronomen " <strong><span class="red">Sie</span></strong> " gebildet, wird aber mit einem großen "<strong><span class="red">S</span></strong>" ("<strong><span class="red">Sie</span></strong>") geschrieben. Man benutzt die formelle Anrede für <span style="text-decoration:underline">fremde Personen</span>, in der Geschäftswelt, beim Einkaufen und vor allem, wenn eine jüngere Person mit einer fremden älteren Person spricht. Man "<strong><span class="red">siezt</span></strong>" sich, wenn <span style="text-decoration:underline">man höflich sein will</span>. Das entsprechende Verb heißt "<strong><span class="red">siezen</span></strong>" (Gegenteil "duzen"). <br> " <strong><span class="red">Sie</span></strong> " wird immer in der <strong><span class="red">3. Person Plural</span></strong> konjugiert und gilt sowohl für eine <strong><span class="red">einzelne Person</span></strong> als auch für <strong><span class="red">mehrere Personen</span></strong>:</p>
 <p><br> Die Höflichkeit wird im <strong><span class="red">Singular</span></strong> (eine Person) und im <strong><span class="red">Plural</span></strong> (mehrere Personen) gleich konjugiert:</p>

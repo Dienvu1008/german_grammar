@@ -1,415 +1,78 @@
 import 'package:flutter/material.dart';
 
 import '../app/app_localizations.dart';
+import '../page_content.dart';
 
 class Adverbien_2 extends StatelessWidget {
   const Adverbien_2({super.key});
 
   @override
   Widget build(BuildContext context) {
-    final localizations = AppLocalizations.of(context);
-    final textTheme = Theme.of(context).textTheme;
     return Expanded(
       child: Scaffold(
         body: Padding(
-          padding: const EdgeInsets.all(8.0),
-          child: ListView(
-            children: <Widget>[
-              Card(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: <Widget>[
-                    Padding(
-                      padding: const EdgeInsets.only(top: 16.0, left: 16.0),
-                      child: Text('2. Adverbien', style: textTheme.titleMedium),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.only(top: 10.0, left: 16.0),
-                      child: Text('Was man über Adverbien wissen sollte.',
-                          style: textTheme.titleSmall),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.only(top: 10.0, left: 16.0),
-                      child: RichText(
-                        text: TextSpan(
-                          style: textTheme.bodyMedium,
-                          children: const <TextSpan>[
-                            TextSpan(text: 'Adverbien, auch '),
-                            TextSpan(
-                              text: 'Umstandswörter',
-                              style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.red),
-                            ),
-                            TextSpan(text: ', sind '),
-                            TextSpan(
-                              text: 'unveränderlich',
-                              style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.red),
-                            ),
-                            TextSpan(
-                                text:
-                                    ', das heißt, dass man sie nicht deklinieren kann. Adverbien bezeichnen die '),
-                            TextSpan(
-                              text: 'Umstände',
-                              style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.red),
-                            ),
-                            TextSpan(
-                                text:
-                                    ' eines einzelnen Wortes oder eines ganzen Satzes näher. Ein Umstand kann sich beziehen auf:\n\n- '),
-                            TextSpan(
-                              text: 'Örtliche Umstände',
-                              style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.red),
-                            ),
-                            TextSpan(
-                                text:
-                                    '. Sie geben Auskunft über einen Ort.\n  - Auf dem Hügel '),
-                            TextSpan(
-                              text: 'dort hinten',
-                              style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.red),
-                            ),
-                            TextSpan(
-                                text:
-                                    ' steht ein großes Holzkreuz.\n  - Der Mann '),
-                            TextSpan(
-                              text: 'dort',
-                              style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.red),
-                            ),
-                            TextSpan(
-                                text:
-                                    ' hat keine Schuhe an.\n  - Auf dem Dach '),
-                            TextSpan(
-                              text: 'da oben',
-                              style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.red),
-                            ),
-                            TextSpan(text: ' sitzen zwei Tauben.\n- '),
-                            TextSpan(
-                              text: 'Zeitliche Umstände',
-                              style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.red),
-                            ),
-                            TextSpan(
-                                text:
-                                    '. Sie geben Auskunft über ein zeitliches Geschehen.\n  - Man sollte sich '),
-                            TextSpan(
-                              text: 'morgens',
-                              style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.red),
-                            ),
-                            TextSpan(text: ' und '),
-                            TextSpan(
-                              text: 'abends',
-                              style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.red),
-                            ),
-                            TextSpan(text: ' die Zähne putzen.\n  - Komm '),
-                            TextSpan(
-                              text: 'sofort',
-                              style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.red),
-                            ),
-                            TextSpan(
-                                text:
-                                    ' zu mir!\n  - Hast du den Blitz gesehen? '),
-                            TextSpan(
-                              text: 'Gleich',
-                              style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.red),
-                            ),
-                            TextSpan(text: ' wird es donnern.\n- '),
-                            TextSpan(
-                              text: 'Modale Umstände',
-                              style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.red),
-                            ),
-                            TextSpan(
-                                text:
-                                    '. Sie geben Auskunft über die Art und Weise.\n  - Abends trinkt mein Mann '),
-                            TextSpan(
-                              text: 'gern',
-                              style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.red),
-                            ),
-                            TextSpan(
-                                text:
-                                    ' eine Flasche Bier.\n  - Das haben Sie '),
-                            TextSpan(
-                              text: 'sehr gut',
-                              style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.red),
-                            ),
-                            TextSpan(
-                                text:
-                                    ' gemacht.\n  - Auf Herbert wartest du heute '),
-                            TextSpan(
-                              text: 'vergebens',
-                              style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.red),
-                            ),
-                            TextSpan(
-                                text:
-                                    '. Er liegt im Bett und hat eine starke Grippe.\n\n '),
-                            TextSpan(
-                              text: 'Ein Adverb kann auch ',
-                              style: TextStyle(),
-                            ),
-                            TextSpan(
-                              text: 'als Attribut',
-                              style: TextStyle(fontWeight: FontWeight.bold),
-                            ),
-                            TextSpan(
-                              text: ' verwendet werden:\n',
-                              style: TextStyle(),
-                            ),
-                            TextSpan(
-                              text: 'Als Attribut kann es ',
-                              style: TextStyle(),
-                            ),
-                            TextSpan(
-                              text: 'vor',
-                              style: TextStyle(color: Colors.blue),
-                            ),
-                            TextSpan(
-                              text:
-                                  ' einem Adjektiv oder einem anderen Adverb stehen.\n',
-                              style: TextStyle(),
-                            ),
-                            TextSpan(
-                              text: 'Das Neugeborene hat ',
-                              style: TextStyle(),
-                            ),
-                            TextSpan(
-                              text: 'so',
-                              style: TextStyle(color: Colors.blue),
-                            ),
-                            TextSpan(
-                              text: ' kleine Fingerchen.\n',
-                              style: TextStyle(color: Colors.red),
-                            ),
-                            TextSpan(
-                              text: 'Die Vorlesung war heute ',
-                              style: TextStyle(),
-                            ),
-                            TextSpan(
-                              text: 'sehr',
-                              style: TextStyle(color: Colors.blue),
-                            ),
-                            TextSpan(
-                              text: ' interessant.\n',
-                              style: TextStyle(color: Colors.red),
-                            ),
-                            TextSpan(
-                              text:
-                                  'Der Unterricht bei Frau Wunderlich ist immer ',
-                              style: TextStyle(),
-                            ),
-                            TextSpan(
-                              text: 'ziemlich',
-                              style: TextStyle(color: Colors.blue),
-                            ),
-                            TextSpan(
-                              text: ' langweilig.\n\n',
-                              style: TextStyle(color: Colors.red),
-                            ),
-                            TextSpan(
-                              text: 'Als Nomenattribut steht es ',
-                              style: TextStyle(),
-                            ),
-                            TextSpan(
-                              text: 'hinter',
-                              style: TextStyle(color: Colors.blue),
-                            ),
-                            TextSpan(
-                              text: ' dem Nomen\n',
-                              style: TextStyle(),
-                            ),
-                            TextSpan(
-                              text: 'Der Mann',
-                              style: TextStyle(color: Colors.red),
-                            ),
-                            TextSpan(
-                              text: ' da hinten',
-                              style: TextStyle(color: Colors.blue),
-                            ),
-                            TextSpan(
-                              text: ' schaut immer zu uns herüber.\n',
-                              style: TextStyle(),
-                            ),
-                            TextSpan(
-                              text:
-                                  'Sie suchen den Bahnhof? Dann nehmen sie gleich hier ',
-                              style: TextStyle(),
-                            ),
-                            TextSpan(
-                              text: 'die nächste Straße',
-                              style: TextStyle(color: Colors.red),
-                            ),
-                            TextSpan(
-                              text: ' links.\n',
-                              style: TextStyle(color: Colors.blue),
-                            ),
-                            TextSpan(
-                              text: 'Das Auto',
-                              style: TextStyle(color: Colors.red),
-                            ),
-                            TextSpan(
-                              text: ' hier vorn',
-                              style: TextStyle(color: Colors.blue),
-                            ),
-                            TextSpan(
-                              text: ' gehört unserem Direktor.\n\n',
-                              style: TextStyle(),
-                            ),
-                            TextSpan(
-                              text:
-                                  'Adverbien treten sehr häufig stellvertretend für eine ',
-                              style: TextStyle(),
-                            ),
-                            TextSpan(
-                              text: 'Substantivgruppe',
-                              style: TextStyle(fontWeight: FontWeight.bold),
-                            ),
-                            TextSpan(
-                              text:
-                                  ' auf. Dabei verschmelzen sie mit einer Präposition ',
-                              style: TextStyle(),
-                            ),
-                            TextSpan(
-                              text: 'wo',
-                              style: TextStyle(color: Colors.blue),
-                            ),
-                            TextSpan(
-                              text: 'mit / ',
-                              style: TextStyle(),
-                            ),
-                            TextSpan(
-                              text: 'da',
-                              style: TextStyle(color: Colors.blue),
-                            ),
-                            TextSpan(
-                              text: 'mit, ',
-                              style: TextStyle(),
-                            ),
-                            TextSpan(
-                              text: 'wo',
-                              style: TextStyle(color: Colors.blue),
-                            ),
-                            TextSpan(
-                              text: 'für / ',
-                              style: TextStyle(),
-                            ),
-                            TextSpan(
-                              text: 'da',
-                              style: TextStyle(color: Colors.blue),
-                            ),
-                            TextSpan(
-                              text:
-                                  'für, ... In diesen Fällen spricht man von ',
-                              style: TextStyle(),
-                            ),
-                            TextSpan(
-                              text: 'Präpositionaladverbien',
-                              style: TextStyle(fontWeight: FontWeight.bold),
-                            ),
-                            TextSpan(
-                              text: ':\n',
-                              style: TextStyle(),
-                            ),
-                            TextSpan(
-                              text: 'sich ärgern ',
-                              style: TextStyle(),
-                            ),
-                            TextSpan(
-                              text: 'über',
-                              style: TextStyle(color: Colors.red),
-                            ),
-                            TextSpan(
-                              text: ' + Akk\n',
-                              style: TextStyle(color: Colors.blue),
-                            ),
-                            TextSpan(
-                              text: 'Wor',
-                              style: TextStyle(color: Colors.blue),
-                            ),
-                            TextSpan(
-                              text: 'über',
-                              style: TextStyle(color: Colors.red),
-                            ),
-                            TextSpan(
-                              text: ' ärgerst du dich manchmal?\n',
-                              style: TextStyle(),
-                            ),
-                            TextSpan(
-                              text: 'Ich ärgere mich täglich ',
-                              style: TextStyle(),
-                            ),
-                            TextSpan(
-                              text: 'dar',
-                              style: TextStyle(color: Colors.blue),
-                            ),
-                            TextSpan(
-                              text: 'über',
-                              style: TextStyle(color: Colors.red),
-                            ),
-                            TextSpan(
-                              text: ', dass mein Kollege so faul ist.\n',
-                              style: TextStyle(color: Colors.blue),
-                            ),
-                            TextSpan(
-                              text: 'Dar',
-                              style: TextStyle(color: Colors.blue),
-                            ),
-                            TextSpan(
-                              text: 'über',
-                              style: TextStyle(color: Colors.red),
-                            ),
-                            TextSpan(
-                              text: ' ärgerst du dich?\n',
-                              style: TextStyle(),
-                            ),
-                            TextSpan(
-                              text: 'Über',
-                              style: TextStyle(color: Colors.red),
-                            ),
-                            TextSpan(
-                              text: ' seine Faulheit',
-                              style: TextStyle(color: Colors.blue),
-                            ),
-                            TextSpan(
-                              text: ' ärgerst du dich?',
-                              style: TextStyle(),
-                            ),
-                          ],
-                        ),
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-            ],
-          ),
-        ),
+            padding: const EdgeInsets.all(8.0),
+            child: MyPageContentView(contents: contents)),
       ),
     );
   }
 }
+
+List<CardContent> contents = [
+  CardContent(
+    elements: [
+      CardElement(type: ElementType.pageTitle, value: title),
+    ],
+  ),
+  CardContent(
+    elements: [
+      CardElement(type: ElementType.cardTitle, value: title1),
+      CardElement(type: ElementType.htmlContent, value: htmlContent1_1),
+    ],
+  ),
+];
+String title = '2. Adverbien';
+String title1 = 'Was man über Adverbien wissen sollte.';
+String htmlContent1_1 = '''
+<p>Adverbien, auch <strong><span class="red">Umstandswörter</span></strong> genannt, sind <strong><span class="red">unveränderlich</span></strong>, das heißt, dass man sie nicht deklinieren kann. Adverbien bezeichnen die <strong><span class="red">Umstände</span></strong> eines <span style="text-decoration:underline">einzelnen Wortes</span> oder eines <span style="text-decoration:underline">ganzen Satzes</span> näher. Ein Umstand kann sich beziehen auf:</p>
+
+<li><strong><span class="red">Örtliche Umstände</span></strong>. Sie geben Auskunft über einen Ort.
+
+<li>Auf dem Hügel <strong><span class="red">dort hinten</span></strong> steht ein großes Holzkreuz.</li>
+<li>Der Mann <strong><span class="red">dort</span></strong> hat keine Schuhe an.</li>
+<li>Auf dem Dach <strong><span class="red">da oben</span></strong> sitzen zwei Tauben.</li>
+
+<li><strong><span class="red">Zeitliche Umstände</span></strong>. Sie geben Auskunft über ein zeitliches Geschehen.
+
+<li>Man sollte sich <strong><span class="red">morgens</span></strong> und <strong><span class="red">abends</span></strong> die Zähne putzen.</li>
+<li>Komm <strong><span class="red">sofort</span></strong> zu mir!</li>
+<li>Hast du den Blitz gesehen? <strong><span class="red">Gleich</span></strong> wird es donnern.</li>
+
+<li><strong><span class="red">Modale Umstände</span></strong>. Sie geben Auskunft über die Art und Weise.
+
+<li>Abends trinkt mein Mann <strong><span class="red">gern</span></strong> eine Flasche Bier.</li>
+<li>Das haben Sie <strong><span class="red">sehr gut</span></strong> gemacht.</li>
+<li>Auf Herbert wartest du heute <strong><span class="red">vergebens</span></strong>. Er liegt im Bett und hat eine starke Grippe.</li>
+
+<p>Ein Adverb kann auch <strong><a title="Attribute" href="lernen.php?menu_id=18">als Attribut</a></strong> verwendet werden:</p>
+
+<li>Als Attribut kann es <strong><span class="blue">vor</span></strong> <strong><a title="Attribute" href="lernen.php?menu_id=18#adjektive">einem Adjektiv</a></strong> oder <strong><a title="Attribute" href="lernen.php?menu_id=18#adverbien">einem anderen Adverb</a></strong> stehen.
+
+<li>Das Neugeborene hat <strong><span class="blue">so</span></strong> <strong><span class="red">kleine</span></strong> Fingerchen.</li>
+<li>Die Vorlesung war heute <strong><span class="blue">sehr</span></strong> <strong><span class="red">interessant</span></strong>.</li>
+<li>Der Unterricht bei Frau Wunderlich ist immer <strong><span class="blue">ziemlich</span></strong> <strong><span class="red">langweilig</span></strong>.</li>
+
+<li>Als Nomenattribut steht es <strong><span class="blue">hinter</span></strong> <strong><a title="Attribute" href="lernen.php?menu_id=18#nomen">dem Nomen</a></strong>
+
+<li><strong><span class="red">Der Mann</span></strong> <strong><span class="blue">da hinten</span></strong> schaut immer zu uns herüber.</li>
+<li>Sie suchen den Bahnhof? Dann nehmen sie gleich hier <strong><span class="red">die nächste Straße</span></strong> <strong><span class="blue">links</span></strong>.</li>
+<li><strong><span class="red">Das Auto</span></strong> <strong><span class="blue">hier vorn</span></strong> gehört unserem Direktor.</li>
+
+<p>Adverbien treten sehr häufig stellvertretend für eine <strong><a title="Wortgruppen" href="lernen.php?menu_id=19#wortgruppen">Substantivgruppe</a></strong> auf. Dabei verschmelzen sie mit einer Präposition (<strong><span class="blue">wo</span></strong>mit / <strong><span class="blue">da</span></strong>mit, <strong><span class="blue">wo</span></strong>für / <strong><span class="blue">da</span></strong>für, ...) In diesen Fällen spricht man von <strong><a title="Präpositionaladverbien" href="lernen.php?menu_id=48">Präpositionaladverbien</a></strong>:</p>
+
+<li>sich ärgern <strong><span class="red">über</span></strong> <strong><span class="blue"> + Akk</span></strong>
+
+<li><strong><span class="blue">Wor</span></strong><strong><span class="red">über</span></strong> ärgerst du dich manchmal?</li>
+<li>Ich ärgere mich täglich <strong><span class="blue">dar</span></strong><strong><span class="red">über</span></strong>, <strong><span class="blue">dass mein Kollege so faul ist</span></strong>.<br> (Ich ärgere mich täglich <strong><span class="red">über</span></strong> <strong><span class="blue">die Faulheit meines Kollegen</span></strong>.)</li>
+<li><strong><span class="blue">Dar</span></strong><strong><span class="red">über</span></strong> ärgerst du dich?<br> (<strong><span class="red">Über</span></strong> <strong><span class="blue">seine Faulheit</span></strong> ärgerst du dich?)</li>
+''';

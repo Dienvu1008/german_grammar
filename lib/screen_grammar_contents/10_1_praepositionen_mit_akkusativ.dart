@@ -1,355 +1,101 @@
 import 'package:flutter/material.dart';
 
 import '../app/app_localizations.dart';
+import '../page_content.dart';
 
 class Praepositionen_Mit_Akkusativ_10_1 extends StatelessWidget {
   const Praepositionen_Mit_Akkusativ_10_1({super.key});
 
   @override
   Widget build(BuildContext context) {
-    final localizations = AppLocalizations.of(context);
-    final textTheme = Theme.of(context).textTheme;
     return Expanded(
       child: Scaffold(
         body: Padding(
-          padding: const EdgeInsets.all(8.0),
-          child: ListView(
-            children: <Widget>[
-              Card(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: <Widget>[
-                    Padding(
-                      padding: const EdgeInsets.only(top: 16.0, left: 16.0),
-                      child: Text('10.1. Präpositionen mit Akkusativ',
-                          style: textTheme.titleMedium),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.only(top: 10.0, left: 16.0),
-                      child: Text(
-                          'Was man über Präpositionen mit Akkusativ wissen sollte.',
-                          style: textTheme.titleSmall),
-                    ),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                            top: 10.0, left: 16.0, bottom: 10),
-                        child: RichText(
-                          text: TextSpan(
-                            style: textTheme.bodyMedium,
-                            children: <TextSpan>[
-                              TextSpan(text: 'Folgende '),
-                              TextSpan(
-                                  text: 'Präpositionen',
-                                  style: textTheme.bodyMedium!
-                                      .copyWith(fontWeight: FontWeight.bold)),
-                              TextSpan(text: ' fordern den '),
-                              TextSpan(
-                                  text: 'Akkusativ',
-                                  style: textTheme.bodyMedium!
-                                      .copyWith(fontWeight: FontWeight.bold)),
-                              TextSpan(text: ':'),
-                            ],
-                          ),
-                        )),
-                    SingleChildScrollView(
-                      child: ConstrainedBox(
-                        constraints: const BoxConstraints(
-                            //minHeight: MediaQuery.of(context).size.height
-                            ),
-                        child: IntrinsicHeight(
-                          child: Column(children: [
-                            Table(
-                              border: TableBorder.all(
-                                  color: Colors.purple, width: 1),
-                              children: [
-                                TableRow(children: [
-                                  Center(
-                                    child: RichText(
-                                      text: TextSpan(
-                                        text:
-                                            'bis    durch    für    gegen    ohne    um    entlang*',
-                                        style: textTheme.bodyMedium!
-                                            .copyWith(color: Colors.red),
-                                      ),
-                                    ),
-                                  ),
-                                ]),
-                              ],
-                            ),
-                          ]),
-                        ),
-                      ),
-                    ),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                            top: 10.0, left: 16.0, bottom: 10),
-                        child: RichText(
-                          text: TextSpan(
-                            style: textTheme.bodyMedium,
-                            children: <TextSpan>[
-                              TextSpan(text: 'Folgende '),
-                              TextSpan(
-                                  text: 'Präpositionen',
-                                  style: textTheme.bodyMedium!
-                                      .copyWith(fontWeight: FontWeight.bold)),
-                              TextSpan(text: ' fordern den Akkusativ:\n\n'),
-                              TextSpan(
-                                  text: 'bis\n',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(
-                                  text:
-                                      'Einsatz: lokale und temporale Angaben, Zahlenangaben, auch vor Adverbien\n'),
-                              TextSpan(text: 'Der Zug fährt nur '),
-                              TextSpan(
-                                  text: 'bis Aachen',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(text: '.\n'),
-                              TextSpan(text: 'Die Vorlesung dauert '),
-                              TextSpan(
-                                  text: 'bis 17:00 Uhr',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(text: '.\n'),
-                              TextSpan(
-                                  text: 'Der fünfjährige Lukas kann schon '),
-                              TextSpan(
-                                  text: 'bis 100',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(text: ' zählen.\n'),
-                              TextSpan(text: 'Tschüss, '),
-                              TextSpan(
-                                  text: 'bis gleich',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(
-                                  text:
-                                      ' (- bald, - morgen Abend, - nachher, - Samstag, - später, ...)\n\n'),
-                              TextSpan(
-                                  text: 'durch\n',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(
-                                  text:
-                                      'Einsatz: lokale Angaben, und Passivsätze\n'),
-                              TextSpan(
-                                  text:
-                                      'Zur S-Bahnstation gehen Sie am besten '),
-                              TextSpan(
-                                  text: 'durch den Park dort',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(text: '.\n'),
-                              TextSpan(text: 'Unsere Katze kommt nicht '),
-                              TextSpan(
-                                  text: 'durch die Tür',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(text: ', '),
-                              TextSpan(
-                                  text: 'durch das Fenster',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(text: ' ins Haus.\n'),
-                              TextSpan(
-                                  text: 'Durch ständiges Rauchen',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(
-                                  text:
-                                      ' wird das Krebsrisiko stark erhöht.\n'),
-                              TextSpan(
-                                  text: 'Durch Sprechen in Alltagssituationen',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(
-                                  text:
-                                      ' wird der allgemeine Wortschatz gefestigt.\n\n'),
-                              TextSpan(
-                                  text: 'für\n',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(
-                                  text:
-                                      'Einsatz: Zeitraum, Preisangaben, Vergleiche, für wen ist etwas?\n'),
-                              TextSpan(text: 'Herr Pauli ist '),
-                              TextSpan(
-                                  text: 'für drei Tage',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(text: ' in die USA geflogen.\n'),
-                              TextSpan(text: 'Ich habe etwas '),
-                              TextSpan(
-                                  text: 'für dich',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(text: ' mitgebracht.\n'),
-                              TextSpan(text: 'Das Haus wird '),
-                              TextSpan(
-                                  text: 'für 250.000 Euro',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(text: ' zum Kauf angeboten.\n\n'),
-                              TextSpan(
-                                  text: 'gegen\n',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(
-                                  text:
-                                      'Einsatz: Bewegung mit Berührung, ungefähre Zeit- und Zahlenangaben\n'),
-                              TextSpan(
-                                  text: 'Gestern ist meine Frau mit dem Auto '),
-                              TextSpan(
-                                  text: 'gegen einen Baum',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(text: ' gefahren.\n'),
-                              TextSpan(text: 'Frau Klimbim wird '),
-                              TextSpan(
-                                  text: 'gegen 17:00 Uhr',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(text: ' eine Pressekonferenz geben.\n'),
-                              TextSpan(text: 'Das Auto müsste '),
-                              TextSpan(
-                                  text: 'gegen 3.000 Euro',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(text: ' zu verkaufen sein.\n\n'),
-                              TextSpan(
-                                  text: 'ohne\n',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(text: 'Einsatz: Gegenteil von "mit"\n'),
-                              TextSpan(
-                                  text: 'Ohne einen Cent in der Tasche',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(
-                                  text:
-                                      ' fuhr er mit dem Fahrrad nach Italien.\n'),
-                              TextSpan(
-                                  text: 'Herr Lieberknecht kommt heute Abend '),
-                              TextSpan(
-                                  text: 'ohne seine Frau',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(text: ' zum Geschäftsessen.\n'),
-                              TextSpan(
-                                  text: 'Ohne Uhr',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(text: ' fühle ich mich nicht wohl.\n\n'),
-                              TextSpan(
-                                  text: 'um\n',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(
-                                  text:
-                                      'Einsatz: lokale und temporale Angaben, Zahlenangaben\n'),
-                              TextSpan(
-                                  text:
-                                      'Die Kirche sehen Sie bereits, wenn Sie '),
-                              TextSpan(
-                                  text: 'um diese Ecke dort',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(text: ' gehen.\n'),
-                              TextSpan(text: 'Fahren Sie '),
-                              TextSpan(
-                                  text: 'um den Stau herum',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(text: ', dann sparen Sie viel Zeit.\n'),
-                              TextSpan(
-                                  text:
-                                      'Der Unterricht beginnt morgen ausnahmsweise schon '),
-                              TextSpan(
-                                  text: 'um 8:30 Uhr',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(text: '.\n'),
-                              TextSpan(
-                                  text:
-                                      'Die Preise werden in diesem Jahr wahrscheinlich '),
-                              TextSpan(
-                                  text: 'um 1,75 %',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(text: ' steigen.\n\n'),
-                              TextSpan(
-                                  text: 'entlang\n',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(
-                                  text:
-                                      'Parallelität das Nomen steht vor der Präposition (inverse Struktur)\n'),
-                              TextSpan(text: 'Gestern sind wir stundenlang '),
-                              TextSpan(
-                                  text: 'den Rhein entlang',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(text: ' gegangen.\n'),
-                              TextSpan(text: 'Gehen Sie immer '),
-                              TextSpan(
-                                  text: 'diesen Weg entlang',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(
-                                  text:
-                                      '. Nach 5 km erreichen Sie schon das nächste Dorf.\n'),
-                              TextSpan(text: 'Fahren Sie '),
-                              TextSpan(
-                                  text: 'den Königsweg entlang',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(
-                                  text:
-                                      ' bisz zur zweiten Kreuzung, biegen Sie dann rechts ab.'),
-                            ],
-                          ),
-                        )),
-                  ],
-                ),
-              ),
-            ],
-          ),
-        ),
+            padding: const EdgeInsets.all(8.0),
+            child: MyPageContentView(contents: contents)),
       ),
     );
   }
 }
+
+List<CardContent> contents = [
+  CardContent(
+    elements: [
+      CardElement(type: ElementType.pageTitle, value: title),
+    ],
+  ),
+  CardContent(
+    elements: [
+      CardElement(type: ElementType.cardTitle, value: title1),
+      CardElement(type: ElementType.htmlContent, value: htmlContent1_1),
+      CardElement(type: ElementType.htmlTable, value: htmlTable1_2),
+      CardElement(type: ElementType.htmlContent, value: htmlContent1_3),
+    ],
+  ),
+];
+
+String title = '10.1. Präpositionen mit Akkusativ';
+
+String title1 = 'Was man über Präpositionen mit Akkusativ wissen sollte.';
+String htmlContent1_1 = '''
+<p>Folgende <strong>Präpositionen</strong> fordern den <strong>Akkusativ</strong>:</p>
+''';
+String htmlTable1_2 = '''
+<table class="eins">
+<tbody>
+<tr align="center">
+<td>
+<div align="center">
+<h3><strong><span class="red">&nbsp;&nbsp; bis&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; durch&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; für&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; gegen&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;ohne&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; um&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;entlang* &nbsp;&nbsp;</span></strong></h3>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+''';
+String htmlContent1_3 = '''
+<li><strong><span class="red">bis</span></strong> Einsatz: <strong><a title="Lokale Angaben" href="lernen.php?menu_id=15#lokal">lokale</a></strong> und <strong><a title="Temporale Angaben" href="lernen.php?menu_id=15#tempus">temporale Angaben</a></strong>, Zahlenangaben, auch vor Adverbien
+
+<li>Der Zug fährt nur <strong><span class="red">bis Aachen</span></strong>.</li>
+<li>Die Vorlesung dauert <strong><span class="red">bis 17:00 Uhr</span></strong>.</li>
+<li>Der fünfjährige Lukas kann schon <strong><span class="red">bis 100</span></strong> zählen.</li>
+<li>Tschüss, <strong><span class="red">bis gleich</span></strong> (- bald, - morgen Abend, - nachher, - Samstag, - später, ...)</li>
+
+<li><strong><span class="red">durch</span></strong> Einsatz: <strong><a title="Lokale Angaben" href="lernen.php?menu_id=15#lokal">lokale Angaben</a></strong>, und <strong><a title="Passivsätze" href="lernen.php?menu_id=35">Passivsätze</a></strong>
+
+<li>Zur S-Bahnstation gehen Sie am besten <strong><span class="red">durch den Park dort</span></strong>.</li>
+<li>Unsere Katze kommt nicht <strong><span class="red">durch die Tür</span></strong>, <strong><span class="red">durch das Fenster</span></strong> ins Haus.</li>
+<li><strong><span class="red">Durch ständiges Rauchen</span></strong> wird das Krebsrisiko stark erhöht.</li>
+<li><strong><span class="red">Durch Sprechen in Alltagssituationen</span></strong> wird der allgemeine Wortschatz gefestigt.</li>
+
+<li><strong><span class="red">für</span></strong> Einsatz: Zeitraum, Preisangaben, Vergleiche, für wen ist etwas?
+
+<li>Herr Pauli ist <strong><span class="red">für drei Tage</span></strong> in die USA geflogen.</li>
+<li>Ich habe etwas <strong><span class="red">für dich</span></strong> mitgebracht.</li>
+<li>Das Haus wird <strong><span class="red">für 250.000 Euro</span></strong> zum Kauf angeboten.</li>
+
+<li><strong><span class="red">gegen</span></strong> Einsatz: Bewegung mit Berührung, ungefähre Zeit- und Zahlenangaben
+
+<li>Gestern ist meine Frau mit dem Auto <strong><span class="red">gegen einen Baum</span></strong> gefahren.</li>
+<li>Frau Klimbim wird <strong><span class="red">gegen 17:00 Uhr</span></strong> eine Pressekonferenz geben.</li>
+<li>Das Auto müsste <strong><span class="red">gegen 3.000 Euro</span></strong> zu verkaufen sein.</li>
+
+<li><strong><span class="red">ohne</span></strong> Einsatz: Gegenteil von "mit"
+
+<li><strong><span class="red">Ohne einen Cent in der Tasche</span></strong> fuhr er mit dem Fahrrad nach Italien.</li>
+<li>Herr Lieberknecht kommt heute Abend <strong><span class="red">ohne seine Frau</span></strong> zum Geschäftsessen.</li>
+<li><strong><span class="red">Ohne Uhr</span></strong> fühle ich mich nicht wohl.</li>
+
+<li><strong><span class="red">um</span></strong> Einsatz: lokale und temporale Angaben, Zahlenangaben
+
+<li>Die Kirche sehen Sie bereits, wenn Sie <strong><span class="red">um diese Ecke dort</span></strong> gehen.</li>
+<li>Fahren Sie <strong><span class="red">um den Stau herum</span></strong>, dann sparen Sie viel Zeit.</li>
+<li>Der Unterricht beginnt morgen ausnahmsweise schon <strong><span class="red">um 8:30 Uhr</span></strong>.</li>
+<li>Die Preise werden in diesem Jahr wahrscheinlich <strong><span class="red">um 1,75 %</span></strong> steigen.</li>
+
+<li><strong><span class="red">entlang</span></strong>* Parallelität&nbsp;&nbsp;&nbsp; * <span style="text-decoration:underline">das Nomen steht vor der Präposition</span> (inverse Struktur)
+
+<li>Gestern sind wir stundenlang <strong><span class="red">den Rhein entlang</span></strong> gegangen.</li>
+<li>Gehen Sie immer <strong><span class="red">diesen Weg entlang</span></strong>. Nach 5 km erreichen Sie schon das nächste Dorf.</li>
+<li>Fahren Sie <strong><span class="red">den Königsweg entlang</span></strong> bisz zur zweiten Kreuzung, biegen Sie dann rechts ab.</li>
+''';

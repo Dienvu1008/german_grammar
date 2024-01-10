@@ -3,201 +3,64 @@ import 'package:flutter/material.dart';
 import '../app/app_localizations.dart';
 import '../html_table_to_dart_table.dart';
 import '../html_to_richtext.dart';
+import '../page_content.dart';
 
 class Konzessivsaetze_12_5_2 extends StatelessWidget {
   const Konzessivsaetze_12_5_2({super.key});
 
   @override
   Widget build(BuildContext context) {
-    final localizations = AppLocalizations.of(context);
-    final textTheme = Theme.of(context).textTheme;
     return Expanded(
       child: Scaffold(
         body: Padding(
-          padding: const EdgeInsets.all(8.0),
-          child: ListView(
-            children: <Widget>[
-              Card(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: <Widget>[
-                    Padding(
-                      padding: const EdgeInsets.only(top: 16.0, left: 16.0),
-                      child: Text('12.5.2. Kausalsätze',
-                          style: textTheme.titleMedium),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.only(top: 10.0, left: 16.0),
-                      child: Text('Was man über Konzessivsätze wissen sollte.',
-                          style: textTheme.titleSmall),
-                    ),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                            top: 10.0, left: 16.0, bottom: 10),
-                        child: HtmlToRichText(
-                          htmlString: htmlContent1_1,
-                          textTheme: textTheme,
-                        )),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                            top: 10.0, left: 16.0, bottom: 10),
-                        child: HtmlTableToDartTable(
-                          htmlTable: htmlTable1_1,
-                          textTheme: textTheme,
-                          columnWidths: const {
-                            0: FractionColumnWidth(.49),
-                            1: FractionColumnWidth(.51),
-                          },
-                        )),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                            top: 10.0, left: 16.0, bottom: 10),
-                        child: HtmlToRichText(
-                          htmlString: htmlContent1_2,
-                          textTheme: textTheme,
-                        )),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                            top: 10.0, left: 16.0, bottom: 10),
-                        child: HtmlTableToDartTable(
-                          htmlTable: htmlTable1_2,
-                          textTheme: textTheme,
-                          columnWidths: const {
-                            0: FractionColumnWidth(.53),
-                            1: FractionColumnWidth(.47),
-                          },
-                        )),
-                  ],
-                ),
-              ),
-              Card(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: <Widget>[
-                    Padding(
-                      padding: const EdgeInsets.only(
-                          top: 10.0, left: 16.0, bottom: 10),
-                      child: Text('Nominalisierung von Kausalsätzen',
-                          style: textTheme.titleSmall),
-                    ),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                            top: 10.0, left: 16.0, bottom: 10),
-                        child: HtmlToRichText(
-                          htmlString: htmlContent2_1,
-                          textTheme: textTheme,
-                        )),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                            top: 10.0, left: 16.0, bottom: 10),
-                        child: HtmlTableToDartTable(
-                          htmlTable: htmlTable2,
-                          textTheme: textTheme,
-                          columnWidths: const {
-                            0: FractionColumnWidth(1),
-                          },
-                        )),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                            top: 10.0, left: 16.0, bottom: 10),
-                        child: HtmlToRichText(
-                          htmlString: htmlContent2_2,
-                          textTheme: textTheme,
-                        )),
-                  ],
-                ),
-              ),
-              Card(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: <Widget>[
-                    Padding(
-                      padding: const EdgeInsets.only(
-                          top: 10.0, left: 16.0, bottom: 10),
-                      child: Text('Konzessive Adverbien',
-                          style: textTheme.titleSmall),
-                    ),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                            top: 10.0, left: 16.0, bottom: 10),
-                        child: HtmlToRichText(
-                          htmlString: htmlContent3_1,
-                          textTheme: textTheme,
-                        )),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                            top: 10.0, left: 16.0, bottom: 10),
-                        child: HtmlTableToDartTable(
-                          htmlTable: htmlTable3_1,
-                          textTheme: textTheme,
-                          columnWidths: const {
-                            0: FractionColumnWidth(.32),
-                            1: FractionColumnWidth(.11),
-                            2: FractionColumnWidth(.14),
-                            3: FractionColumnWidth(.08),
-                            4: FractionColumnWidth(.12),
-                            5: FractionColumnWidth(.22),
-                          },
-                        )),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                            top: 10.0, left: 16.0, bottom: 10),
-                        child: HtmlToRichText(
-                          htmlString: htmlContent3_2,
-                          textTheme: textTheme,
-                        )),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                            top: 10.0, left: 16.0, bottom: 10),
-                        child: HtmlTableToDartTable(
-                          htmlTable: htmlTable3_2,
-                          textTheme: textTheme,
-                          columnWidths: const {
-                            0: FractionColumnWidth(.12),
-                            1: FractionColumnWidth(.53),
-                            2: FractionColumnWidth(.35),
-                          },
-                        )),
-                  ],
-                ),
-              ),
-              Card(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: <Widget>[
-                    Padding(
-                      padding: const EdgeInsets.only(
-                        top: 10.0,
-                        left: 16.0,
-                      ),
-                      child: Text('Übersicht Konzessivsätze',
-                          style: textTheme.titleSmall),
-                    ),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                          top: 10.0,
-                          left: 16.0,
-                        ),
-                        child: HtmlTableToDartTable(
-                          htmlTable: htmlTable4,
-                          textTheme: textTheme,
-                          columnWidths: const {
-                            0: FractionColumnWidth(.44),
-                            1: FractionColumnWidth(.37),
-                            2: FractionColumnWidth(.19),
-                          },
-                        )),
-                  ],
-                ),
-              ),
-            ],
-          ),
-        ),
+            padding: const EdgeInsets.all(8.0),
+            child: MyPageContentView(contents: contents)),
       ),
     );
   }
 }
 
+List<CardContent> contents = [
+  CardContent(
+    elements: [
+      CardElement(type: ElementType.pageTitle, value: title),
+    ],
+  ),
+  CardContent(
+    elements: [
+      CardElement(type: ElementType.cardTitle, value: title1),
+      CardElement(type: ElementType.htmlContent, value: htmlContent1_1),
+      CardElement(type: ElementType.htmlTable, value: htmlTable1_1),
+      CardElement(type: ElementType.htmlContent, value: htmlContent1_2),
+      CardElement(type: ElementType.htmlTable, value: htmlTable1_2),
+    ],
+  ),
+  CardContent(
+    elements: [
+      CardElement(type: ElementType.cardTitle, value: title2),
+      CardElement(type: ElementType.htmlContent, value: htmlContent2_1),
+      CardElement(type: ElementType.htmlTable, value: htmlTable2),
+      CardElement(type: ElementType.htmlTable, value: htmlContent2_2),
+    ],
+  ),
+  CardContent(
+    elements: [
+      CardElement(type: ElementType.cardTitle, value: title3),
+      CardElement(type: ElementType.htmlContent, value: htmlContent3_1),
+      CardElement(type: ElementType.htmlTable, value: htmlTable3_1),
+      CardElement(type: ElementType.htmlContent, value: htmlContent3_2),
+      CardElement(type: ElementType.htmlTable, value: htmlTable3_2),
+    ],
+  ),
+  CardContent(
+    elements: [
+      CardElement(type: ElementType.cardTitle, value: title4),
+      CardElement(type: ElementType.htmlTable, value: htmlTable4),
+    ],
+  ),
+];
+String title = '12.5.2 Konzessivsätze';
+String title1 = 'Was man über Konzessivsätze wissen sollte.';
 String htmlContent1_1 = '''
 <p><strong><span class="red">Konzessivsätze</span></strong> geben einen <strong><span class="red">Gegengrund</span></strong> (Vergleiche: <strong><a title="Kausalsätze" href="lernen.php?menu_id=92">kausal</a></strong> = Grund), eine <strong><span class="red">Einschränkung</span></strong> oder eine <strong><span class="red">Einräumung</span></strong> an. Der Nebensatz formuliert eine <strong><span class="red">Bedingung</span></strong>, der Hauptsatz eine <strong><span class="red">Folge</span></strong>, die aber nicht oder anders als erwartet eintritt (= nicht logische Folge).</p>
 <li>Weil sie Peter über alles liebt, will sie ihn heiraten. (<strong><a title="Kausalsätze" href="lernen.php?menu_id=92">kausal</a></strong> = Grund = logische Folge)</li>
@@ -273,6 +136,7 @@ String htmlTable1_2 = '''
 </table>
 ''';
 
+String title2 = 'Nominalisierung von Konzessivsätzen';
 String htmlContent2_1 = '''
 <p>Eine <strong><span class="red">konzessive Angabe</span></strong> kann auch mit einer <strong><a title="Nominalisierung" href="lernen.php?menu_id=20">Präposition-Nomen-Konstruktionen</a></strong> formuliert werden. Die passenden Präpositionen lauten: "<strong><span class="red">trotz</span></strong>" und "<strong><span class="red">ungeachtet</span></strong>" (beide + Genitiv):</p>
 ''';
@@ -307,6 +171,7 @@ String htmlContent2_2 = '''
 <li>Die Präpositionen "<strong><span class="red">trotz</span></strong>" und "<strong><span class="red">ungeachtet</span></strong>" verlangen den <strong><a title="Präpositionen mit Genitiv" href="lernen.php?menu_id=85">Genitiv</a></strong>.</li>
 ''';
 
+String title3 = 'Konzessive Adverbien';
 String htmlContent3_1 = '''
 <p>Im Kapitel "<strong><a title="Satzverbindende Adverbien" href="lernen.php?menu_id=90#konzessivadverbien">Satzverbindende Adverbien</a></strong>" haben wir gelernt, dass auch <strong><span class="red">Adverbien</span></strong> Sätze verknüpfen können. Satzverbindende Adverbien verbinden einen Hauptsatz mit einem Hauptsatz:</p>
 <li><strong><span class="red">Verbalstil</span></strong> = Hauptsatz + Nebensatz oder Nebensatz + Hauptsatz</li>
@@ -399,6 +264,7 @@ String htmlTable3_2 = '''
 </table>
 ''';
 
+String title4 = 'Übersicht Konzessivsätze';
 String htmlTable4 = '''
 <table><colgroup> <col style="width: 44%;"> <col style="width: 37%;"> <col style="width: 19%;"> </colgroup>
 <thead>

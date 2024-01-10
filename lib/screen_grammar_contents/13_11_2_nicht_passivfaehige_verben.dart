@@ -16,6 +16,7 @@ class Nicht_Passivfaehige_Verben_13_11_2 extends StatelessWidget {
     );
   }
 }
+
 List<CardContent> contents = [
   CardContent(
     elements: [
@@ -56,15 +57,12 @@ List<CardContent> contents = [
 String title = '13.11.2. Nicht passivfähige Verben';
 String title1 = 'Was man über nicht passivfähige Verben wissen sollte.';
 String htmlContent1 = '''
-<div>
-<p>Das Passiv kann mit fast allen Verben mit <strong><a title="Transitive Verben fordern eine Akkusativ-Ergänzung" href="akkusativ-ergaenzung.html#einfuehrung" target="_blank">Akkusativ-Ergänzung</a></strong> gebildet werden. Mit einigen Verben kann das Passiv jedoch nicht gebildet werden. Dazu gehören <span style="text-decoration:underline">fast</span> alle Verben, die <strong><a title="Verben, die das Perfekt mit sein bilden, sind nicht passivfähig" href="perfekt.html#hilfsverben" target="_blank">im Perfekt mit dem Hilfsverb "sein"</a></strong> gebildet werden. Es gibt noch weitere Ausnahmen.</p>
-</div>  
+<p>Das Passiv kann mit fast allen Verben mit <strong><a title="Transitive Verben fordern eine Akkusativ-Ergänzung" href="akkusativ-ergaenzung.html#einfuehrung" target="_blank">Akkusativ-Ergänzung</a></strong> gebildet werden. Mit einigen Verben kann das Passiv jedoch nicht gebildet werden. Dazu gehören <span style="text-decoration:underline">fast</span> alle Verben, die <strong><a title="Verben, die das Perfekt mit sein bilden, sind nicht passivfähig" href="perfekt.html#hilfsverben" target="_blank">im Perfekt mit dem Hilfsverb "sein"</a></strong> gebildet werden. Es gibt noch weitere Ausnahmen.</p> 
 ''';
 
 String title2 = 'Nicht passivfähige Verben';
 String htmlContent2_1 = '''
-      <h3>- Verben der Fortbewegung</h3>
-<p>&nbsp;</p>
+<h3>- Verben der Fortbewegung</h3>
 ''';
 String htmlTable2_2 = '''
 <table><colgroup> <col style="width: 20%;"> <col style="width: 80%;"> </colgroup>

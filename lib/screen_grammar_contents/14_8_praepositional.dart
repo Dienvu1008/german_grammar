@@ -44,10 +44,9 @@ List<CardContent> contents = [
 String title = '14.8. Präpositional-Ergänzung';
 String title1 = 'Was man über Verben mit Präpositional-Ergänzungen wissen sollte.';
 String htmlContent1_1 = '''
- <div>
+
 <p>Einige Verben bilden ihre <strong><span class="red">Ergänzung beginnend mit einer Präposition</span></strong> (<strong>Verben mit Präpositionen</strong>). In diesen Fällen gibt <strong><span class="red">die Präposition</span></strong> <span style="text-decoration:underline">den Kasus (Akkusativ / Dativ)</span> an. Verben mit Präpositional-Ergänzungen sollte man <span style="text-decoration:underline">mit der entsprechenden Präposition + den verlangten Kasus</span> lernen. Einige ausgewählte Anwendungsbeispiele dazu:</p>
-</div>
-<p>&nbsp;</p>
+
 <h3 style="padding-left: 30px;"><strong>Verben mit Präpositional-Ergänzung + Akk</strong></h3>
 <p style="padding-left: 60px;">achten <strong><span class="blue">auf</span></strong></p>
 <p style="padding-left: 70px;">Die Autofahrer müssen <strong><span class="blue">auf den Verkehr</span></strong> achten.</p>
@@ -108,10 +107,6 @@ String htmlContent1_1 = '''
 <p style="padding-left: 60px;"><strong><span class="blue">jdn.</span></strong> warnen <strong><span class="red">vor + Dat</span></strong></p>
 <p style="padding-left: 70px;">Er hat <strong><span class="blue">mich</span></strong> <strong><span class="red">vor den Waffen einer Frau</span></strong> gewarnt.</p>
 <p style="padding-left: 60px;">&nbsp;</p>  
-  
-  
-
-</div>
 ''';
 
 
@@ -119,20 +114,14 @@ String htmlContent1_1 = '''
 
 String title2 = 'W-Fragen mit Präpositionen';
 String htmlContent2_1 = '''
- <div>
 <p>In einer Präpositional-Ergänzung steht entweder eine <strong><span class="blue">Person</span></strong> oder eine <strong><span class="red">Sache</span></strong>.</p>
-<p>&nbsp;</p>
-</div>
+
 <p>Fragt man nach einer <strong><span style="color: blue;">Person</span></strong>, gilt:</p>
-<p>&nbsp;</p>
-<div>
+
 <p style="padding-left: 30px;"><strong><span class="blue">- Für wen</span></strong> interessiert sich Thomas? - Er interessiert sich <strong><span class="blue">für Heike</span></strong>.</p>
 <p style="padding-left: 30px;"><br> - <strong><span class="blue">An wen</span></strong> denkst du? - Ich denke immer <strong><span class="blue">an meine verstorbene Mutter</span></strong>.</p>
 <p style="padding-left: 30px;"><br> - <strong><span class="blue">Mit wem</span></strong> hast du gestern getanzt? - Ich habe den ganzen Abend <strong><span class="blue">mit Frank</span></strong> getanzt.</p>
 <p style="padding-left: 30px;">&nbsp;</p>
-</div>
-<p>&nbsp;</p>
-<div>
 ''';
 String htmlTable2_2 = '''
 <table class="eins">
@@ -146,15 +135,11 @@ String htmlTable2_2 = '''
 </table>
 ''';
 String htmlContent2_3 = '''
-<p>&nbsp;</p>
 <p>Fragt man nach einer Sache, gilt:</p>
-<p>&nbsp;</p>
-<div>
+
 <p style="padding-left: 30px;"><strong><span class="red">- Wofür</span></strong> interessiert sich Thomas? - Er interessiert sich <strong><span class="red">für schnelle Autos</span></strong>.</p>
 <p style="padding-left: 30px;"><br> - <strong><span class="red">Woran</span></strong> denkst du? - Ich denke immer <strong><span class="red">an unseren Urlaub</span></strong>.</p>
 <p style="padding-left: 30px;"><br> - <strong><span class="red">Womit</span></strong> machst du die Tür auf? - Natürlich <strong><span class="red">mit dem Schlüssel</span></strong>.</p>
-<p>&nbsp;</p>
-</div>
 ''';
 String htmlTable2_4 = '''
 <table class="eins">

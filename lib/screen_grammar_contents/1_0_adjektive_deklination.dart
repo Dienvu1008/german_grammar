@@ -1,475 +1,104 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_html/flutter_html.dart';
-import 'package:flutter_widget_from_html/flutter_widget_from_html.dart';
 
-import '../app/app_localizations.dart';
+import '../page_content.dart';
 
 class Adjektive_Deklination_1 extends StatelessWidget {
   const Adjektive_Deklination_1({super.key});
 
   @override
   Widget build(BuildContext context) {
-    final localizations = AppLocalizations.of(context);
-    final textTheme = Theme.of(context).textTheme;
     return Expanded(
       child: Scaffold(
         body: Padding(
-          padding: const EdgeInsets.all(8.0),
-          child: ListView(
-            children: <Widget>[
-              Card(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: <Widget>[
-                    Padding(
-                      padding: const EdgeInsets.only(top: 16.0, left: 16.0),
-                      child: Text('1. Adjektive', style: textTheme.titleMedium),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.only(top: 10.0, left: 16.0),
-                      child: Text('Was man über Adjektive wissen sollte.',
-                          style: textTheme.titleSmall),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.only(
-                          top: 10.0, left: 16.0, bottom: 10),
-                      child: RichText(
-                        text: TextSpan(
-                          style: textTheme.bodyMedium,
-                          children: const <TextSpan>[
-                            TextSpan(
-                                text:
-                                    'Adjektive, auch Eigenschaftswörter oder Wie-Wörter genannt, '),
-                            TextSpan(
-                                text: 'beschreiben ',
-                                style: TextStyle(
-                                    decoration: TextDecoration.underline)),
-                            TextSpan(
-                                text: 'Eigenschaften',
-                                style: TextStyle(
-                                    fontWeight: FontWeight.bold,
-                                    color: Colors.red)),
-                            TextSpan(
-                                text:
-                                    ' von Nomen. Sie charakterisieren Personen, Lebewesen, Begriffe, Dinge, Vorgänge oder Tätigkeiten. Adjektive geben eine Antwort auf die Frage: "'),
-                            TextSpan(
-                                text: 'Wie',
-                                style: TextStyle(
-                                    fontWeight: FontWeight.bold,
-                                    color: Colors.red)),
-                            TextSpan(text: ' ist eine Person oder Sache."\n'),
-                            TextSpan(text: 'Ute: "Kennst du schon den '),
-                            TextSpan(
-                                text: 'neuen',
-                                style: TextStyle(color: Colors.red)),
-                            TextSpan(text: ' Freund von Martina? '),
-                            TextSpan(
-                                text: 'Wie',
-                                style: TextStyle(color: Colors.red)),
-                            TextSpan(text: ' ist er?"\n'),
-                            TextSpan(text: 'Heike: "Er ist einfach '),
-                            TextSpan(
-                                text: 'spitze',
-                                style: TextStyle(color: Colors.red)),
-                            TextSpan(text: '. Martinas '),
-                            TextSpan(
-                                text: 'neuer',
-                                style: TextStyle(color: Colors.red)),
-                            TextSpan(text: ' Freund ist '),
-                            TextSpan(
-                                text: 'groß',
-                                style: TextStyle(color: Colors.red)),
-                            TextSpan(text: ', hat '),
-                            TextSpan(
-                                text: 'dunkle',
-                                style: TextStyle(color: Colors.red)),
-                            TextSpan(text: ' Haare, '),
-                            TextSpan(
-                                text: 'blaue',
-                                style: TextStyle(color: Colors.red)),
-                            TextSpan(text: ' Augen und fährt einen '),
-                            TextSpan(
-                                text: 'neuen roten',
-                                style: TextStyle(color: Colors.red)),
-                            TextSpan(text: ' Porsche Cabrio. Er ist '),
-                            TextSpan(
-                                text: 'jung',
-                                style: TextStyle(color: Colors.red)),
-                            TextSpan(text: ', '),
-                            TextSpan(
-                                text: 'gut aussehend',
-                                style: TextStyle(color: Colors.red)),
-                            TextSpan(text: ', sehr '),
-                            TextSpan(
-                                text: 'höflich',
-                                style: TextStyle(color: Colors.red)),
-                            TextSpan(text: ', '),
-                            TextSpan(
-                                text: 'nett',
-                                style: TextStyle(color: Colors.red)),
-                            TextSpan(text: ' und nebenbei noch '),
-                            TextSpan(
-                                text: 'stinkreich',
-                                style: TextStyle(color: Colors.red)),
-                            TextSpan(text: '.\n'),
-                            TextSpan(text: 'Ute: "Warum hat die immer so '),
-                            TextSpan(
-                                text: 'viel',
-                                style: TextStyle(color: Colors.red)),
-                            TextSpan(text: ' Glück? Mein Freund ist '),
-                            TextSpan(
-                                text: 'stinknormal',
-                                style: TextStyle(color: Colors.red)),
-                            TextSpan(text: '. Er ist '),
-                            TextSpan(
-                                text: 'faul',
-                                style: TextStyle(color: Colors.red)),
-                            TextSpan(text: ', '),
-                            TextSpan(
-                                text: 'arm',
-                                style: TextStyle(color: Colors.red)),
-                            TextSpan(text: ', '),
-                            TextSpan(
-                                text: 'unhöflich',
-                                style: TextStyle(color: Colors.red)),
-                            TextSpan(text: ', '),
-                            TextSpan(
-                                text: 'geizig',
-                                style: TextStyle(color: Colors.red)),
-                            TextSpan(text: ', '),
-                            TextSpan(
-                                text: 'plump',
-                                style: TextStyle(color: Colors.red)),
-                            TextSpan(text: ', '),
-                            TextSpan(
-                                text: 'stur',
-                                style: TextStyle(color: Colors.red)),
-                            TextSpan(text: ' und fährt einen '),
-                            TextSpan(
-                                text: 'alten rostigen',
-                                style: TextStyle(color: Colors.red)),
-                            TextSpan(text: ' Fiat Uno."\n'),
-                            TextSpan(
-                                text:
-                                    'Alle rot markierten Wörter sind Adjektive. Adjektive können unterschiedlich verwendet werden:\n'),
-                            TextSpan(
-                                text:
-                                    'Adjektive können hinter dem Nomen stehen,\n'),
-                            TextSpan(
-                                text:
-                                    'Adjektive können vor dem Nomen stehen,\n'),
-                            TextSpan(
-                                text:
-                                    'Adjektive können gesteigert werden und\n'),
-                            TextSpan(text: 'Adjektive können vergleichen.\n'),
-                          ],
-                        ),
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-              Card(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: <Widget>[
-                    Padding(
-                      padding: const EdgeInsets.only(
-                          top: 10.0, left: 16.0, bottom: 10),
-                      child: Text('Adjektive hinter dem Nomen',
-                          style: textTheme.titleSmall),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.only(
-                          top: 10.0, left: 16.0, bottom: 10),
-                      child: RichText(
-                        text: TextSpan(
-                          style: textTheme.bodyMedium,
-                          children: const <TextSpan>[
-                            TextSpan(
-                                text:
-                                    'Stehen Adjektive hinter dem Nomen, werden sie '),
-                            TextSpan(
-                                text: 'nicht dekliniert bzw. nicht verändert',
-                                style: TextStyle(
-                                    fontWeight: FontWeight.bold,
-                                    color: Colors.red)),
-                            TextSpan(text: '. Man unterscheidet:\n'),
-                            TextSpan(
-                                text: 'Prädikative Verwendung des Adjektivs\n'),
-                            TextSpan(
-                                text:
-                                    'Bei der prädikativen Verwendung des Adjektivs steht das '),
-                            TextSpan(
-                                text: 'Adjektiv hinter dem Nomen',
-                                style: TextStyle(
-                                    fontWeight: FontWeight.bold,
-                                    color: Colors.red)),
-                            TextSpan(text: '. In diesem Fall wird es '),
-                            TextSpan(
-                                text: 'nicht dekliniert',
-                                style: TextStyle(
-                                    fontWeight: FontWeight.bold,
-                                    color: Colors.red)),
-                            TextSpan(
-                                text:
-                                    '. Es bleibt unverändert, weil das Adjektiv Teil des Prädikats ist. Dies ist immer der Fall, wenn das Adjektiv mit den Verben '),
-                            TextSpan(
-                                text: 'bleiben, sein',
-                                style: TextStyle(
-                                    fontWeight: FontWeight.bold,
-                                    color: Colors.red)),
-                            TextSpan(text: ' oder '),
-                            TextSpan(
-                                text: 'werden',
-                                style: TextStyle(
-                                    fontWeight: FontWeight.bold,
-                                    color: Colors.red)),
-                            TextSpan(text: ' benutzt wird.\n'),
-                            TextSpan(text: 'Er '),
-                            TextSpan(
-                                text: 'ist groß',
-                                style: TextStyle(color: Colors.red)),
-                            TextSpan(text: '. Sie '),
-                            TextSpan(
-                                text: 'ist hübsch',
-                                style: TextStyle(color: Colors.red)),
-                            TextSpan(text: '. Das Haus '),
-                            TextSpan(
-                                text: 'ist alt',
-                                style: TextStyle(color: Colors.red)),
-                            TextSpan(text: '. Der Mann '),
-                            TextSpan(
-                                text: 'ist krank',
-                                style: TextStyle(color: Colors.red)),
-                            TextSpan(text: '. ...\n'),
-                            TextSpan(text: 'Er '),
-                            TextSpan(
-                                text: 'bleibt groß',
-                                style: TextStyle(color: Colors.red)),
-                            TextSpan(text: '. Sie '),
-                            TextSpan(
-                                text: 'bleibt hübsch',
-                                style: TextStyle(color: Colors.red)),
-                            TextSpan(text: '. Das Haus '),
-                            TextSpan(
-                                text: 'bleibt alt',
-                                style: TextStyle(color: Colors.red)),
-                            TextSpan(text: '. Der Mann '),
-                            TextSpan(
-                                text: 'bleibt krank',
-                                style: TextStyle(color: Colors.red)),
-                            TextSpan(text: '. ...\n'),
-                            TextSpan(text: 'Er '),
-                            TextSpan(
-                                text: 'wird groß',
-                                style: TextStyle(color: Colors.red)),
-                            TextSpan(text: '. Sie '),
-                            TextSpan(
-                                text: 'wird hübsch',
-                                style: TextStyle(color: Colors.red)),
-                            TextSpan(text: '. Das Haus '),
-                            TextSpan(
-                                text: 'wird alt',
-                                style: TextStyle(color: Colors.red)),
-                            TextSpan(text: '. Der Mann '),
-                            TextSpan(
-                                text: 'wird krank',
-                                style: TextStyle(color: Colors.red)),
-                            TextSpan(text: '. ...\n'),
-                            TextSpan(
-                                text: 'Adverbiale Verwendung des Adjektivs\n'),
-                            TextSpan(
-                                text:
-                                    'Auch bei der adverbialen Verwendung des Adjektivs steht das '),
-                            TextSpan(
-                                text: 'Adjektiv hinter dem Nomen',
-                                style: TextStyle(
-                                    fontWeight: FontWeight.bold,
-                                    color: Colors.red)),
-                            TextSpan(text: '. Auch in diesem Fall wird es '),
-                            TextSpan(
-                                text: 'nicht dekliniert',
-                                style: TextStyle(
-                                    fontWeight: FontWeight.bold,
-                                    color: Colors.red)),
-                            TextSpan(
-                                text:
-                                    '. Es bleibt unverändert. Die adverbiale Verwendung des Adjektivs bestimmt ein Verb näher.\n'),
-                            TextSpan(text: 'Das Kind singt. '),
-                            TextSpan(
-                                text: 'Wie',
-                                style: TextStyle(color: Colors.red)),
-                            TextSpan(text: ' singt es? Es singt '),
-                            TextSpan(
-                                text: 'schön',
-                                style: TextStyle(color: Colors.red)),
-                            TextSpan(text: '.\n'),
-                            TextSpan(text: 'Der Koch spricht. '),
-                            TextSpan(
-                                text: 'Wie',
-                                style: TextStyle(color: Colors.red)),
-                            TextSpan(text: ' spricht der Koch? Er spricht '),
-                            TextSpan(
-                                text: 'leise',
-                                style: TextStyle(color: Colors.red)),
-                            TextSpan(text: '.\n'),
-                            TextSpan(text: 'Der Junge läuft. '),
-                            TextSpan(
-                                text: 'Wie',
-                                style: TextStyle(color: Colors.red)),
-                            TextSpan(text: ' läuft der Junge? Er läuft '),
-                            TextSpan(
-                                text: 'schnell',
-                                style: TextStyle(color: Colors.red)),
-                            TextSpan(text: '.\n'),
-                          ],
-                        ),
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-              Card(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: <Widget>[
-                    Padding(
-                      padding: const EdgeInsets.only(
-                          top: 10.0, left: 16.0, bottom: 10),
-                      child: Text('Adjektive vor dem Nomen',
-                          style: textTheme.titleSmall),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.only(
-                          top: 10.0, left: 16.0, bottom: 10),
-                      child: RichText(
-                        text: TextSpan(
-                          style: textTheme.bodyMedium,
-                          children: const <TextSpan>[
-                            TextSpan(text: 'Stehen Adjektive '),
-                            TextSpan(
-                                text: 'vor dem Nomen',
-                                style: TextStyle(
-                                    decoration: TextDecoration.underline)),
-                            TextSpan(text: ', spricht man von einer '),
-                            TextSpan(
-                                text: 'attributiven Verwendung des Adjektivs',
-                                style: TextStyle(
-                                    fontWeight: FontWeight.bold,
-                                    color: Colors.red)),
-                            TextSpan(
-                                text: ' In diesem Fall wird das Adjektiv '),
-                            TextSpan(
-                                text: 'dekliniert bzw. verändert',
-                                style: TextStyle(
-                                    fontWeight: FontWeight.bold,
-                                    color: Colors.red)),
-                            TextSpan(text: ':\n'),
-                            TextSpan(
-                                text:
-                                    'Adjektivdeklination mit dem bestimmten Artikel: der '),
-                            TextSpan(
-                                text: 'neue',
-                                style: TextStyle(color: Colors.red)),
-                            TextSpan(text: ' Freund, ...\n'),
-                            TextSpan(
-                                text:
-                                    'Adjektivdeklination mit dem unbestimmten Artikel: ein '),
-                            TextSpan(
-                                text: 'neuer',
-                                style: TextStyle(color: Colors.red)),
-                            TextSpan(text: ' Freund, ...\n'),
-                            TextSpan(
-                                text:
-                                    'Adjektivdeklination mit dem Nullartikel: '),
-                            TextSpan(
-                                text: 'blaue',
-                                style: TextStyle(color: Colors.red)),
-                            TextSpan(text: ' Augen, '),
-                            TextSpan(
-                                text: 'dunkle',
-                                style: TextStyle(color: Colors.red)),
-                            TextSpan(text: ' Haare, ...\n'),
-                          ],
-                        ),
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-              Card(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: <Widget>[
-                    Padding(
-                      padding: const EdgeInsets.only(
-                          top: 10.0, left: 16.0, bottom: 10),
-                      child: Text('Steigerung und Vergleiche',
-                          style: textTheme.titleSmall),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.only(
-                          top: 10.0, left: 16.0, bottom: 10),
-                      child: RichText(
-                        text: TextSpan(
-                          style: textTheme.bodyMedium,
-                          children: const <TextSpan>[
-                            TextSpan(text: 'Adjektive können '),
-                            TextSpan(
-                                text: 'gesteigert',
-                                style: TextStyle(
-                                    fontWeight: FontWeight.bold,
-                                    color: Colors.red)),
-                            TextSpan(text: ' werden.\n'),
-                            TextSpan(text: 'Michael ist '),
-                            TextSpan(
-                                text: 'stark',
-                                style: TextStyle(color: Colors.red)),
-                            TextSpan(text: '.\n'),
-                            TextSpan(text: 'Peter ist '),
-                            TextSpan(
-                                text: 'stärker',
-                                style: TextStyle(color: Colors.red)),
-                            TextSpan(text: '.\n'),
-                            TextSpan(text: 'Guido ist '),
-                            TextSpan(
-                                text: 'am stärksten',
-                                style: TextStyle(color: Colors.red)),
-                            TextSpan(text: '.\n'),
-                            TextSpan(text: 'Adjektive können '),
-                            TextSpan(
-                                text: 'vergleichen',
-                                style: TextStyle(
-                                    fontWeight: FontWeight.bold,
-                                    color: Colors.red)),
-                            TextSpan(text: '.\n'),
-                            TextSpan(text: 'Michael ist '),
-                            TextSpan(
-                                text: 'so stark wie',
-                                style: TextStyle(color: Colors.red)),
-                            TextSpan(text: ' Andreas.\n'),
-                            TextSpan(text: 'Peter ist '),
-                            TextSpan(
-                                text: 'nicht so stark wie',
-                                style: TextStyle(color: Colors.red)),
-                            TextSpan(text: ' Michael.\n'),
-                            TextSpan(text: 'Guido ist '),
-                            TextSpan(
-                                text: 'stärker als',
-                                style: TextStyle(color: Colors.red)),
-                            TextSpan(text: ' Torsten.\n'),
-                          ],
-                        ),
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-            ],
-          ),
-        ),
+            padding: const EdgeInsets.all(8.0),
+            child: MyPageContentView(contents: contents)),
       ),
     );
   }
 }
+
+List<CardContent> contents = [
+  CardContent(
+    elements: [
+      CardElement(type: ElementType.pageTitle, value: title),
+    ],
+  ),
+  CardContent(
+    elements: [
+      CardElement(type: ElementType.cardTitle, value: title1),
+      CardElement(type: ElementType.htmlContent, value: htmlContent1),
+    ],
+  ),
+  CardContent(
+    elements: [
+      CardElement(type: ElementType.cardTitle, value: title2),
+      CardElement(type: ElementType.htmlContent, value: htmlContent2),
+    ],
+  ),
+  CardContent(
+    elements: [
+      CardElement(type: ElementType.cardTitle, value: title3),
+      CardElement(type: ElementType.htmlContent, value: htmlContent3),
+    ],
+  ),
+  CardContent(
+    elements: [
+      CardElement(type: ElementType.cardTitle, value: title4),
+      CardElement(type: ElementType.htmlContent, value: htmlContent4),
+    ],
+  ),
+];
+
+String title = '1. Adjektive';
+String title1 = 'Was man über Adjektive wissen sollte.';
+String htmlContent1 = '''
+<p>Adjektive, auch Eigenschaftswörter oder Wie-Wörter genannt, <span style="text-decoration:underline">beschreiben <strong><span class="red">Eigenschaften</span></strong> von <strong><a title="Nomen" href="lernen.php?menu_id=9">Nomen</a></strong></span>. Sie charakterisieren Personen, Lebewesen, Begriffe, Dinge, Vorgänge oder Tätigkeiten. Adjektive geben eine Antwort auf die Frage: " <strong><span class="red">Wie</span></strong> ist eine Person oder Sache."</p>
+<li><strong><span class="blue">Ute</span></strong>: "Kennst du schon den <strong><span class="red">neuen</span></strong> Freund von Martina? <strong><span class="red">Wie</span></strong> ist er?"</li>
+<li><strong><span class="blue">Heike</span></strong>: "Er ist einfach <strong><span class="red">spitze</span></strong>. Martinas <strong><span class="red">neuer</span></strong> Freund ist <strong><span class="red">groß</span></strong>, hat <strong><span class="red">dunkle</span></strong> Haare, <strong><span class="red">blaue</span></strong> Augen und fährt einen <strong><span class="red">neuen roten</span></strong> Porsche Cabrio. Er ist <strong><span class="red">jung</span></strong>, <strong><span class="red">gut aussehend</span></strong>, sehr <strong><span class="red">höflich</span></strong>, <strong><span class="red">nett</span></strong> und nebenbei noch <strong><span class="red">stinkreich</span></strong>."</li>
+<li><strong><span class="blue">Ute</span></strong>: "Warum hat die immer so <strong><span class="red">viel</span></strong> Glück? Mein Freund ist <strong><span class="red">stinknormal</span></strong>. Er ist <strong><span class="red">faul</span></strong>, <strong><span class="red">arm</span></strong>, <strong><span class="red">unhöflich</span></strong>, <strong><span class="red">geizig</span></strong>, <strong><span class="red">plump</span></strong>, <strong><span class="red">stur</span></strong> und fährt einen <strong><span class="red">alten rostigen</span></strong> Fiat Uno."</li>
+
+<p>Alle rot markierten Wörter sind Adjektive. Adjektive können unterschiedlich verwendet werden:</p>
+<li>Adjektive können <strong><a title="Adjektive hinter Nomen" href="lernen.php?menu_id=11#adjektive_hinter_nomen">hinter dem Nomen</a></strong> stehen,</li>
+<li>Adjektive können <strong><a title="Adjektive vor Nomen" href="lernen.php?menu_id=11#adjektive_vor_nomen">vor dem Nomen</a></strong> stehen,</li>
+<li>Adjektive können <strong><a title="Steigerung der Adjektive" href="lernen.php?menu_id=11#steigerung">gesteigert</a></strong> werden und</li>
+<li>Adjektive können <strong><a title="Vergleich durch Adjektive" href="lernen.php?menu_id=11#steigerung">vergleichen</a></strong>.</li>
+''';
+
+String title2 = 'Adjektive hinter dem Nomen';
+String htmlContent2 = '''
+<p>Stehen Adjektive hinter dem Nomen, werden sie <strong><span class="red">nicht dekliniert bzw. nicht verändert</span></strong>. <br> Man unterscheidet:</p>
+
+<strong><span class="red">- Prädikative Verwendung des Adjektivs</span></strong>
+<p>Bei der prädikativen Verwendung des Adjektivs steht das <strong><span class="red">Adjektiv hinter dem Nomen</span></strong>. In diesem Fall wird es <strong><span class="red">nicht dekliniert</span></strong>. Es bleibt unverändert, weil das Adjektiv <span style="text-decoration:underline"><strong><a title="Prädikat" href="lernen.php?menu_id=19#praedikat">Teil des Prädikats</a></strong></span> ist. Dies ist immer der Fall, wenn das Adjektiv mit den Verben <strong><span class="red">bleiben, sein</span></strong> oder <strong><span class="red">werden</span></strong> benutzt wird.</p>
+<li>Er <strong><span class="red">ist groß</span></strong>. Sie <strong><span class="red">ist hübsch</span></strong>. Das Haus <strong><span class="red">ist alt</span></strong>. Der Mann <strong><span class="red">ist krank</span></strong>. ...</li>
+<li>Er <strong><span class="red">bleibt groß</span></strong>. Sie <strong><span class="red">bleibt hübsch</span></strong>. Das Haus <strong><span class="red">bleibt alt</span></strong>. Der Mann <strong><span class="red">bleibt krank</span></strong>. ...</li>
+<li>Er <strong><span class="red">wird groß</span></strong>. Sie <strong><span class="red">wird hübsch</span></strong>. Das Haus <strong><span class="red">wird alt</span></strong>. Der Mann <strong><span class="red">wird krank</span></strong>. ...</li>
+
+<strong><span class="red">- Adverbiale Verwendung des Adjektivs</span></strong>
+<p>Auch bei der adverbialen Verwendung des Adjektivs steht das <strong><span class="red">Adjektiv hinter dem Nomen</span></strong>. Auch in diesem Fall wird es <strong><span class="red">nicht dekliniert</span></strong>. Es bleibt unverändert. Die adverbiale Verwendung des Adjektivs bestimmt ein <span style="text-decoration:underline">Verb</span> näher.</p>
+<li>Das Kind <span style="text-decoration:underline">singt</span>. /// <strong><span class="red">Wie</span></strong> singt es? /// Es <span style="text-decoration:underline">singt</span> <strong><span class="red">schön</span></strong>.</li>
+<li>Der Koch <span style="text-decoration:underline">spricht</span>. /// <strong><span class="red">Wie</span></strong> spricht der Koch? /// Er <span style="text-decoration:underline">spricht</span> <strong><span class="red">leise</span></strong>.</li>
+<li>Der Junge <span style="text-decoration:underline">läuft</span>. /// <strong><span class="red">Wie</span></strong> läuft der Junge? /// Er <span style="text-decoration:underline">läuft</span> <strong><span class="red">schnell</span></strong>.</li>
+''';
+
+String title3 = 'Adjektive vor dem Nomen';
+String htmlContent3 = '''
+<p>Stehen Adjektive <span style="text-decoration:underline">vor dem Nomen</span>, spricht man von einer <strong><span class="red">attributiven Verwendung des Adjektivs</span></strong> In diesem Fall wird das Adjektiv <strong><span class="red">dekliniert bzw. verändert</span></strong>:</p>
+<li><strong><a title="Adjektivdeklination" href="lernen.php?menu_id=65">Adjektivdeklination mit dem bestimmten Artikel</a></strong>: der <strong><span class="red">neue</span></strong> Freund, ...</li>
+<li><strong><a title="Adjektivdeklination" href="lernen.php?menu_id=66">Adjektivdeklination mit dem unbestimmten Artikel</a></strong>: ein <strong><span class="red">neuer</span></strong> Freund, ...</li>
+<li><strong><a title="Adjektivdeklination" href="lernen.php?menu_id=67">Adjektivdeklination mit dem Nullartikel</a></strong>: <strong><span class="red">blaue</span></strong> Augen, <strong><span class="red">dunkle</span></strong> Haare, ...</li>
+''';
+
+String title4 = 'Steigerung und Vergleiche';
+String htmlContent4 = '''
+<p>Adjektive können <strong><a title="Steigerung der Adjektive" href="lernen.php?menu_id=68">gesteigert</a></strong> werden.</p>
+<li>Michael ist <strong><span class="red">stark</span></strong>.</li>
+<li>Peter ist <strong><span class="red">stärker</span></strong>.</li>
+<li>Guido ist <strong><span class="red">am stärksten</span></strong>.</li>
+
+<p><br> Adjektive können <strong><a title="Vergleiche" href="lernen.php?menu_id=68#vergleich">vergleichen</a></strong>.</p>
+<li>Michael ist <strong><span class="red">so stark wie</span></strong> Andreas.</li>
+<li>Peter ist <strong><span class="red">nicht so stark wie</span></strong> Michael.</li>
+<li>Guido ist <strong><span class="red">stärker als</span></strong> Torsten.</li>
+</ul>  
+''';

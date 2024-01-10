@@ -1,2338 +1,816 @@
 import 'package:flutter/material.dart';
 
 import '../app/app_localizations.dart';
+import '../page_content.dart';
 
 class Fragewoerter_6 extends StatelessWidget {
   const Fragewoerter_6({super.key});
 
   @override
   Widget build(BuildContext context) {
-    final localizations = AppLocalizations.of(context);
-    final textTheme = Theme.of(context).textTheme;
     return Expanded(
       child: Scaffold(
         body: Padding(
-          padding: const EdgeInsets.all(8.0),
-          child: ListView(
-            children: <Widget>[
-              Card(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: <Widget>[
-                    Padding(
-                      padding: const EdgeInsets.only(top: 16.0, left: 16.0),
-                      child:
-                          Text('6. Fragewörter', style: textTheme.titleMedium),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.only(top: 10.0, left: 16.0),
-                      child: Text('Was man über Fragewörter wissen sollte.',
-                          style: textTheme.titleSmall),
-                    ),
-                    Padding(
-                        padding: const EdgeInsets.only(top: 10.0, left: 16.0),
-                        child: RichText(
-                          text: TextSpan(
-                            //style: DefaultTextStyle.of(context).style,
-                            style: textTheme.bodyMedium,
-                            children: const <TextSpan>[
-                              TextSpan(
-                                text:
-                                    'Wenn "etwas" unbekannt ist, so muss man danach fragen. Man kann nach einem ',
-                              ),
-                              TextSpan(
-                                text: 'ganzen Satzinhalt',
-                                style: TextStyle(
-                                    decoration: TextDecoration.underline),
-                              ),
-                              TextSpan(text: ' fragen oder nur nach einem '),
-                              TextSpan(
-                                text: 'bestimmten Satzteil',
-                                style: TextStyle(
-                                    decoration: TextDecoration.underline),
-                              ),
-                              TextSpan(
-                                  text:
-                                      '. Demnach werden zwei Fragesätze unterschieden:'),
-                            ],
-                          ),
-                        )),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                            top: 10.0, left: 16.0, bottom: 10),
-                        child: RichText(
-                          text: TextSpan(
-                            //style: DefaultTextStyle.of(context).style,
-                            style: textTheme.bodyMedium,
-                            children: const <TextSpan>[
-                              TextSpan(text: 'In einer '),
-                              TextSpan(
-                                text: 'Entscheidungsfrage',
-                                style: TextStyle(
-                                    color: Colors.red,
-                                    fontWeight: FontWeight.bold),
-                              ),
-                              TextSpan(text: ', auch '),
-                              TextSpan(
-                                text: 'Ja-/Nein-Frage',
-                                style: TextStyle(
-                                    color: Colors.red,
-                                    fontWeight: FontWeight.bold),
-                              ),
-                              TextSpan(
-                                  text:
-                                      ' genannt, möchte die fragende Person von seinem Gesprächspartner eine '),
-                              TextSpan(
-                                text: 'Zustimmung',
-                                style: TextStyle(
-                                    decoration: TextDecoration.underline),
-                              ),
-                              TextSpan(text: ' oder eine '),
-                              TextSpan(
-                                text: 'Ablehnung',
-                                style: TextStyle(
-                                    decoration: TextDecoration.underline),
-                              ),
-                              TextSpan(
-                                  text:
-                                      ' zu seiner Frage erhalten. Die Antwort lautet entweder '),
-                              TextSpan(
-                                text: 'ja, doch',
-                                style: TextStyle(fontWeight: FontWeight.bold),
-                              ),
-                              TextSpan(text: ' oder '),
-                              TextSpan(
-                                text: 'nein',
-                                style: TextStyle(fontWeight: FontWeight.bold),
-                              ),
-                              TextSpan(text: '. In einer '),
-                              TextSpan(
-                                text: 'Ja-/Nein-Frage',
-                                style: TextStyle(
-                                    color: Colors.red,
-                                    fontWeight: FontWeight.bold),
-                              ),
-                              TextSpan(text: ' steht das Verb immer auf '),
-                              TextSpan(
-                                text: 'Position 1',
-                                style: TextStyle(
-                                    color: Colors.red,
-                                    fontWeight: FontWeight.bold),
-                              ),
-                              TextSpan(text: ', das Subjekt auf Position 2.'),
-                            ],
-                          ),
-                        )),
-                    SingleChildScrollView(
-                      child: ConstrainedBox(
-                        constraints: const BoxConstraints(
-                            //minHeight: MediaQuery.of(context).size.height
-                            ),
-                        child: IntrinsicHeight(
-                          child: Column(children: [
-                            Table(
-                              border: TableBorder.all(
-                                  color: Colors.purple, width: 1),
-                              columnWidths: const {
-                                0: FractionColumnWidth(.60),
-                                1: FractionColumnWidth(.05),
-                                2: FractionColumnWidth(.35),
-                              },
-                              children: [
-                                TableRow(
-                                  children: [
-                                    Text('Ja-/Nein-Frage',
-                                        textAlign: TextAlign.center,
-                                        style: textTheme.bodySmall!.copyWith(
-                                            fontWeight: FontWeight.bold)),
-                                    Text('-'),
-                                    Text('Antwortsatz',
-                                        textAlign: TextAlign.center,
-                                        style: textTheme.bodySmall!.copyWith(
-                                            fontWeight: FontWeight.bold)),
-                                  ],
-                                ),
-                              ],
-                            ),
-                            Table(
-                              border: TableBorder.all(
-                                  color: Colors.purple, width: 1),
-                              columnWidths: const {
-                                0: FractionColumnWidth(.25),
-                                1: FractionColumnWidth(.20),
-                                2: FractionColumnWidth(.15),
-                                3: FractionColumnWidth(.05),
-                                4: FractionColumnWidth(.15),
-                                5: FractionColumnWidth(.20),
-                              },
-                              children: [
-                                TableRow(children: [
-                                  Text('Position 1 \nVerb',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall!.copyWith(
-                                          fontWeight: FontWeight.bold)),
-                                  Text('Pos. 2 \nSubj.',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall!.copyWith(
-                                          fontWeight: FontWeight.bold)),
-                                  Text('Satzende',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall!.copyWith(
-                                          fontWeight: FontWeight.bold)),
-                                  Text('-'),
-                                  Text('Ja / Nein,',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall!.copyWith(
-                                          fontWeight: FontWeight.bold)),
-                                  Text('Aussagesatz',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall!.copyWith(
-                                          fontWeight: FontWeight.bold)),
-                                ]),
-                                TableRow(children: [
-                                  Text('Liebst',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall!.copyWith(
-                                          color: Colors.red,
-                                          fontWeight: FontWeight.bold)),
-                                  Text('du',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text('mich?',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text('-'),
-                                  Text('Ja,',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall!.copyWith(
-                                          color: Colors.red,
-                                          fontWeight: FontWeight.bold)),
-                                  Text('ich liebe dich.',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                ]),
-                                TableRow(children: [
-                                  Text('Liebt',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall!.copyWith(
-                                          color: Colors.red,
-                                          fontWeight: FontWeight.bold)),
-                                  Text('er', textAlign: TextAlign.center),
-                                  Text('dich nicht?',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall!.copyWith(
-                                          decoration:
-                                              TextDecoration.underline)),
-                                  Text('-'),
-                                  Text('Doch,',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall!.copyWith(
-                                          color: Colors.red,
-                                          fontWeight: FontWeight.bold,
-                                          decoration:
-                                              TextDecoration.underline)),
-                                  Text('er liebt mich.',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                ]),
-                                TableRow(children: [
-                                  Text('Kocht',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall!.copyWith(
-                                          color: Colors.red,
-                                          fontWeight: FontWeight.bold)),
-                                  Text('ihr',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text('Suppe?',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text('-'),
-                                  Text('Nein,',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall!.copyWith(
-                                          color: Colors.red,
-                                          fontWeight: FontWeight.bold)),
-                                  Text('wir kochen Eier.',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                ]),
-                              ],
-                            ),
-                          ]),
-                        ),
-                      ),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.only(
-                          top: 10.0, left: 16.0, bottom: 10),
-                      child: RichText(
-                        text: TextSpan(
-                          style: textTheme
-                              .bodyMedium, //DefaultTextStyle.of(context).style,
-                          children: const <TextSpan>[
-                            TextSpan(text: 'Die '),
-                            TextSpan(
-                              text: 'Ergänzungsfrage',
-                              style: TextStyle(
-                                  color: Colors.red,
-                                  fontWeight: FontWeight.bold),
-                            ),
-                            TextSpan(text: ', auch '),
-                            TextSpan(
-                              text: 'W-Frage',
-                              style: TextStyle(
-                                  color: Colors.red,
-                                  fontWeight: FontWeight.bold),
-                            ),
-                            TextSpan(
-                                text:
-                                    ' genannt, ist eine offene Frage, das heißt, dass die fragende Person Informationen zu einem Sachverhalt wünscht. Jede W-Frage fragt nach einem bestimmten Zweck. So können sie nach einer Ergänzung, einem Ort, einem Zeitpunkt, einer Zeitdauer, einem Zweck usw. fragen. In einer '),
-                            TextSpan(
-                              text: 'W-Frage',
-                              style: TextStyle(
-                                  color: Colors.red,
-                                  fontWeight: FontWeight.bold),
-                            ),
-                            TextSpan(text: ' steht das Fragewort immer auf '),
-                            TextSpan(
-                              text: 'Position 1',
-                              style: TextStyle(
-                                  color: Colors.red,
-                                  fontWeight: FontWeight.bold),
-                            ),
-                            TextSpan(
-                                text:
-                                    ', das Verb auf Position 2 und das Subjekt auf Position 3.'),
-                          ],
-                        ),
-                      ),
-                    ),
-                    SingleChildScrollView(
-                      child: ConstrainedBox(
-                        constraints: const BoxConstraints(
-                            //minHeight: MediaQuery.of(context).size.height
-                            ),
-                        child: IntrinsicHeight(
-                          child: Column(children: [
-                            Table(
-                              border: TableBorder.all(
-                                  color: Colors.purple, width: 1),
-                              columnWidths: const {
-                                0: FractionColumnWidth(.60),
-                                1: FractionColumnWidth(.05),
-                                2: FractionColumnWidth(.35),
-                              },
-                              children: [
-                                TableRow(
-                                  children: [
-                                    Text('W-Frage',
-                                        textAlign: TextAlign.center,
-                                        style: textTheme.bodySmall!.copyWith(
-                                            fontWeight: FontWeight.bold)),
-                                    Text('-'),
-                                    Text('Antwortsatz',
-                                        textAlign: TextAlign.center,
-                                        style: textTheme.bodySmall!.copyWith(
-                                            fontWeight: FontWeight.bold)),
-                                  ],
-                                ),
-                              ],
-                            ),
-                            Table(
-                              border: TableBorder.all(
-                                  color: Colors.purple, width: 1),
-                              columnWidths: const {
-                                0: FractionColumnWidth(.25),
-                                1: FractionColumnWidth(.18),
-                                2: FractionColumnWidth(.17),
-                                3: FractionColumnWidth(.05),
-                                4: FractionColumnWidth(.35),
-                              },
-                              children: [
-                                TableRow(children: [
-                                  Text('Position 1 \n W-Frage',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall!.copyWith(
-                                          fontWeight: FontWeight.bold)),
-                                  Text('Pos. 2 \n Verb.',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall!.copyWith(
-                                          fontWeight: FontWeight.bold)),
-                                  Text('Satzende',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall!.copyWith(
-                                          fontWeight: FontWeight.bold)),
-                                  Text('-'),
-                                  Text('Information',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall!.copyWith(
-                                          fontWeight: FontWeight.bold)),
-                                ]),
-                                TableRow(children: [
-                                  Text('Wie',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall!.copyWith(
-                                          color: Colors.red,
-                                          fontWeight: FontWeight.bold)),
-                                  Text('heißen',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text('Sie?',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text('-'),
-                                  Text('Erich Kuckelkorn.',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall!.copyWith(
-                                          color: Colors.red,
-                                          fontWeight: FontWeight.bold)),
-                                ]),
-                                TableRow(children: [
-                                  Text('Wo',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall!.copyWith(
-                                          color: Colors.red,
-                                          fontWeight: FontWeight.bold)),
-                                  Text('wohnen',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text('Sie?',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text('-'),
-                                  Text('In Oberdillingen.',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall!.copyWith(
-                                          color: Colors.red,
-                                          fontWeight: FontWeight.bold)),
-                                ]),
-                                TableRow(children: [
-                                  Text('Was',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall!.copyWith(
-                                          color: Colors.red,
-                                          fontWeight: FontWeight.bold)),
-                                  Text('machen',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text('Sie hier?',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text('-'),
-                                  Text('Ich spioniere.',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall!.copyWith(
-                                          color: Colors.red,
-                                          fontWeight: FontWeight.bold)),
-                                ]),
-                              ],
-                            )
-                          ]),
-                        ),
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-              Card(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: <Widget>[
-                    Padding(
-                      padding: const EdgeInsets.only(top: 16.0, left: 16.0),
-                      child: Text('Übersicht der möglichen W-Fragen',
-                          style: textTheme.titleSmall),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.only(
-                          top: 10.0, left: 16.0, bottom: 10),
-                      child: RichText(
-                        text: TextSpan(
-                          style: textTheme
-                              .bodyMedium, //DefaultTextStyle.of(context).style,
-                          children: const <TextSpan>[
-                            TextSpan(text: 'W-Fragen, die nach '),
-                            TextSpan(
-                              text: 'Kasus',
-                              style: TextStyle(fontWeight: FontWeight.bold),
-                            ),
-                            TextSpan(text: ' und '),
-                            TextSpan(
-                              text: 'Verbergänzungen',
-                              style: TextStyle(fontWeight: FontWeight.bold),
-                            ),
-                            TextSpan(text: ' fragen.'),
-                          ],
-                        ),
-                      ),
-                    ),
-                    SingleChildScrollView(
-                      child: ConstrainedBox(
-                        constraints: const BoxConstraints(
-                            //minHeight: MediaQuery.of(context).size.height
-                            ),
-                        child: IntrinsicHeight(
-                          child: Column(children: [
-                            Table(
-                              border: TableBorder.all(
-                                  color: Colors.purple, width: 1),
-                              columnWidths: const {
-                                0: FractionColumnWidth(.17),
-                                1: FractionColumnWidth(.16),
-                                2: FractionColumnWidth(.12),
-                                3: FractionColumnWidth(.14),
-                                4: FractionColumnWidth(.13),
-                                5: FractionColumnWidth(.03),
-                                6: FractionColumnWidth(.25),
-                              },
-                              children: [
-                                TableRow(children: [
-                                  Text('Ergänzung',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text('W-Frage',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall!.copyWith(
-                                          color: Colors.red,
-                                          fontWeight: FontWeight.bold)),
-                                  Text('Verb',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text('Subjekt',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text('Satzende',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text('-'),
-                                  Text('Aussage',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                ]),
-                                TableRow(children: [
-                                  Text('Nominativ',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall!.copyWith(
-                                          fontWeight: FontWeight.bold)),
-                                  Text('Wer',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall!.copyWith(
-                                          color: Colors.red,
-                                          fontWeight: FontWeight.bold)),
-                                  Text('sind',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text('Sie?',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text(''),
-                                  Text('-'),
-                                  Text('Erich Kuckelkorn.',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall!.copyWith(
-                                          color: Colors.red,
-                                          fontWeight: FontWeight.bold)),
-                                ]),
-                                TableRow(children: [
-                                  Text('Nominativ',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall!.copyWith(
-                                          fontWeight: FontWeight.bold)),
-                                  Text('Was',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall!.copyWith(
-                                          color: Colors.red,
-                                          fontWeight: FontWeight.bold)),
-                                  Text('ist',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text('das?',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text(''),
-                                  Text('-'),
-                                  Text('Ein Tisch.',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall!.copyWith(
-                                          color: Colors.red,
-                                          fontWeight: FontWeight.bold)),
-                                ]),
-                                TableRow(children: [
-                                  Text('Akkusativ',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall!.copyWith(
-                                          fontWeight: FontWeight.bold)),
-                                  Text('Wen',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall!.copyWith(
-                                          color: Colors.red,
-                                          fontWeight: FontWeight.bold)),
-                                  Text('liebst',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text('du?',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text(''),
-                                  Text('-'),
-                                  Text('Nur dich.',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall!.copyWith(
-                                          color: Colors.red,
-                                          fontWeight: FontWeight.bold)),
-                                ]),
-                                TableRow(children: [
-                                  Text('Akkusativ',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall!.copyWith(
-                                          fontWeight: FontWeight.bold)),
-                                  Text('Was',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall!.copyWith(
-                                          color: Colors.red,
-                                          fontWeight: FontWeight.bold)),
-                                  Text('putzt',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text('du',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text('gerade?',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text('-'),
-                                  Text('Meine Schuhe.',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall!.copyWith(
-                                          color: Colors.red,
-                                          fontWeight: FontWeight.bold)),
-                                ]),
-                                TableRow(children: [
-                                  Text('Dativ',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall!.copyWith(
-                                          fontWeight: FontWeight.bold)),
-                                  Text('Wem',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall!.copyWith(
-                                          color: Colors.red,
-                                          fontWeight: FontWeight.bold)),
-                                  Text('gehört',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text('das Geld',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text('hier?',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text('-'),
-                                  Text('Natürlich mir.',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall!.copyWith(
-                                          color: Colors.red,
-                                          fontWeight: FontWeight.bold)),
-                                ]),
-                                TableRow(children: [
-                                  Text('Genitiv',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall!.copyWith(
-                                          fontWeight: FontWeight.bold)),
-                                  Text('Wessen Uhr',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall!.copyWith(
-                                          color: Colors.red,
-                                          fontWeight: FontWeight.bold)),
-                                  Text('ist',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text('das?',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text(''),
-                                  Text('-'),
-                                  Text('Das ist Utes Uhr.',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall!.copyWith(
-                                          color: Colors.red,
-                                          fontWeight: FontWeight.bold)),
-                                ]),
-                                TableRow(children: [
-                                  Text('Situativ',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall!.copyWith(
-                                          fontWeight: FontWeight.bold)),
-                                  Text('Wo',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall!.copyWith(
-                                          color: Colors.red,
-                                          fontWeight: FontWeight.bold)),
-                                  Text('ist',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text('die Uhr?',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text(''),
-                                  Text('-'),
-                                  Text('Auf dem Tisch.',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall!.copyWith(
-                                          color: Colors.red,
-                                          fontWeight: FontWeight.bold)),
-                                ]),
-                                TableRow(children: [
-                                  Text('Direktiv',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall!.copyWith(
-                                          fontWeight: FontWeight.bold)),
-                                  Text('Wohin',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall!.copyWith(
-                                          color: Colors.red,
-                                          fontWeight: FontWeight.bold)),
-                                  Text('fährt',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text('Hilde',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text('jetzt?',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text('-'),
-                                  Text('Zur Uni.',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall!.copyWith(
-                                          color: Colors.red,
-                                          fontWeight: FontWeight.bold)),
-                                ]),
-                                TableRow(children: [
-                                  Text('Direktiv',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall!.copyWith(
-                                          fontWeight: FontWeight.bold)),
-                                  Text('Woher',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall!.copyWith(
-                                          color: Colors.red,
-                                          fontWeight: FontWeight.bold)),
-                                  Text('kommt',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text('Josè?',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text(''),
-                                  Text('-'),
-                                  Text('Aus Mexiko-Stadt.',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall!.copyWith(
-                                          color: Colors.red,
-                                          fontWeight: FontWeight.bold)),
-                                ]),
-                                TableRow(children: [
-                                  Text('Präpositional',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall!.copyWith(
-                                          fontWeight: FontWeight.bold)),
-                                  Text('Mit wem',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall!.copyWith(
-                                          color: Colors.red,
-                                          fontWeight: FontWeight.bold)),
-                                  Text('hat',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text('Erik',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text('getanzt?',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text('-'),
-                                  Text('Mit Rosemarie.',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall!.copyWith(
-                                          color: Colors.red,
-                                          fontWeight: FontWeight.bold)),
-                                ]),
-                                TableRow(children: [
-                                  Text('Präpositional',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall!.copyWith(
-                                          fontWeight: FontWeight.bold)),
-                                  Text('Woran',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall!.copyWith(
-                                          color: Colors.red,
-                                          fontWeight: FontWeight.bold)),
-                                  Text('denkst',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text('du',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text('oft?',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text('-'),
-                                  Text('An die Prüfung.',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall!.copyWith(
-                                          color: Colors.red,
-                                          fontWeight: FontWeight.bold)),
-                                ]),
-                              ],
-                            ),
-                          ]),
-                        ),
-                      ),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.only(
-                          top: 10.0, left: 16.0, bottom: 10),
-                      child: RichText(
-                        text: TextSpan(
-                          style: textTheme
-                              .bodyMedium, //DefaultTextStyle.of(context).style,
-                          children: const <TextSpan>[
-                            TextSpan(text: 'W-Fragen, die nach einer '),
-                            TextSpan(
-                              text: 'Handlung',
-                              style: TextStyle(
-                                  color: Colors.red,
-                                  fontWeight: FontWeight.bold),
-                            ),
-                            TextSpan(text: ', einer '),
-                            TextSpan(
-                              text: 'Tätigkeit',
-                              style: TextStyle(
-                                  color: Colors.red,
-                                  fontWeight: FontWeight.bold),
-                            ),
-                            TextSpan(text: ' oder nach dem '),
-                            TextSpan(
-                              text: 'Verb',
-                              style: TextStyle(
-                                  color: Colors.red,
-                                  fontWeight: FontWeight.bold),
-                            ),
-                            TextSpan(text: ' fragen.'),
-                          ],
-                        ),
-                      ),
-                    ),
-                    SingleChildScrollView(
-                      child: ConstrainedBox(
-                        constraints: const BoxConstraints(
-                            //minHeight: MediaQuery.of(context).size.height
-                            ),
-                        child: IntrinsicHeight(
-                          child: Column(children: [
-                            Table(
-                              border: TableBorder.all(
-                                  color: Colors.purple, width: 1),
-                              columnWidths: const {
-                                0: FractionColumnWidth(.15),
-                                1: FractionColumnWidth(.12),
-                                2: FractionColumnWidth(.15),
-                                3: FractionColumnWidth(.12),
-                                4: FractionColumnWidth(.15),
-                                5: FractionColumnWidth(.02),
-                                6: FractionColumnWidth(.29),
-                              },
-                              children: [
-                                TableRow(children: [
-                                  Text('Ergänzung',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text('W-Frage',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall!.copyWith(
-                                          color: Colors.red,
-                                          fontWeight: FontWeight.bold)),
-                                  Text('Verb',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text('Subjekt',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text('Satzende',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text('-'),
-                                  Text('Aussage',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                ]),
-                                TableRow(children: [
-                                  Text('Tätigkeit',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text('Was',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall!.copyWith(
-                                          color: Colors.red,
-                                          fontWeight: FontWeight.bold)),
-                                  Text('machst',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text('du',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text('gerade?',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text('-'),
-                                  Text('Ich lese.',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall!.copyWith(
-                                          color: Colors.red,
-                                          fontWeight: FontWeight.bold)),
-                                ]),
-                                TableRow(children: [
-                                  Text('Tätigkeit',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text('Was',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall!.copyWith(
-                                          color: Colors.red,
-                                          fontWeight: FontWeight.bold)),
-                                  Text('hat',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text('Paula',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text('gemacht?',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text('-'),
-                                  Text('Sie hat gearbeitet.',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall!.copyWith(
-                                          color: Colors.red,
-                                          fontWeight: FontWeight.bold)),
-                                ]),
-                                TableRow(children: [
-                                  Text('Sachverhalt',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text('Was',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall!.copyWith(
-                                          color: Colors.red,
-                                          fontWeight: FontWeight.bold)),
-                                  Text('ist',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text('mit ihm',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text('los?',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text('-'),
-                                  Text('Er hat Liebeskummer.',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall!.copyWith(
-                                          color: Colors.red,
-                                          fontWeight: FontWeight.bold)),
-                                ]),
-                                TableRow(children: [
-                                  Text('Handlung',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text('Was',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall!.copyWith(
-                                          color: Colors.red,
-                                          fontWeight: FontWeight.bold)),
-                                  Text('ist',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text('gestern',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text('passiert?',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text('-'),
-                                  Text('Kai ist hingefallen.',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall!.copyWith(
-                                          color: Colors.red,
-                                          fontWeight: FontWeight.bold)),
-                                ]),
-                                TableRow(children: [
-                                  Text('Handlung',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text('Was',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall!.copyWith(
-                                          color: Colors.red,
-                                          fontWeight: FontWeight.bold)),
-                                  Text('ist',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text('gestern',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text('geschehen?',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text('-'),
-                                  Text('Alfons ist gestorben.',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall!.copyWith(
-                                          color: Colors.red,
-                                          fontWeight: FontWeight.bold)),
-                                ]),
-                                TableRow(children: [
-                                  Text('Interesse',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text('Was',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall!.copyWith(
-                                          color: Colors.red,
-                                          fontWeight: FontWeight.bold)),
-                                  Text('interessiert',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text('Markus?',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text(''),
-                                  Text('-'),
-                                  Text('Das andere Geschlecht.',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall!.copyWith(
-                                          color: Colors.red,
-                                          fontWeight: FontWeight.bold)),
-                                ]),
-                                TableRow(children: [
-                                  Text('Interesse',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text('Was',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall!.copyWith(
-                                          color: Colors.red,
-                                          fontWeight: FontWeight.bold)),
-                                  Text('wollte',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text('er',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text('wissen?',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text('-'),
-                                  Text('Ob du verheiratet bist.',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall!.copyWith(
-                                          color: Colors.red,
-                                          fontWeight: FontWeight.bold)),
-                                ]),
-                              ],
-                            )
-                          ]),
-                        ),
-                      ),
-                    ),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                            top: 10.0, left: 16.0, bottom: 10),
-                        child: RichText(
-                          text: TextSpan(
-                            style: DefaultTextStyle.of(context).style,
-                            children: const <TextSpan>[
-                              TextSpan(text: 'W-Fragen, die nach dem '),
-                              TextSpan(
-                                text: 'Tempus',
-                                style: TextStyle(
-                                    color: Colors.red,
-                                    fontWeight: FontWeight.bold),
-                              ),
-                              TextSpan(text: ' fragen. \nSiehe auch: '),
-                              TextSpan(
-                                text: 'Adverbien',
-                                style: TextStyle(fontWeight: FontWeight.bold),
-                              ),
-                              TextSpan(text: ' und '),
-                              TextSpan(
-                                text: 'temporale Präpositionen',
-                                style: TextStyle(fontWeight: FontWeight.bold),
-                              ),
-                            ],
-                          ),
-                        )),
-                    SingleChildScrollView(
-                      child: ConstrainedBox(
-                        constraints: const BoxConstraints(
-                            //minHeight: MediaQuery.of(context).size.height
-                            ),
-                        child: IntrinsicHeight(
-                          child: Column(children: [
-                            Table(
-                              border: TableBorder.all(
-                                  color: Colors.purple, width: 1),
-                              columnWidths: const {
-                                0: FractionColumnWidth(.14),
-                                1: FractionColumnWidth(.20),
-                                2: FractionColumnWidth(.13),
-                                3: FractionColumnWidth(.11),
-                                4: FractionColumnWidth(.15),
-                                5: FractionColumnWidth(.02),
-                                6: FractionColumnWidth(.25),
-                              },
-                              children: [
-                                TableRow(children: [
-                                  Text('Adv. / Erg.',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text('W-Frage',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall!.copyWith(
-                                          color: Colors.red,
-                                          fontWeight: FontWeight.bold)),
-                                  Text('Verb',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text('Subjekt',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text('Satzende',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text('-'),
-                                  Text('Aussage',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                ]),
-                                TableRow(children: [
-                                  Text('temporal',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text('Wann',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall!.copyWith(
-                                          color: Colors.red,
-                                          fontWeight: FontWeight.bold)),
-                                  Text('kommt',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text('der Zug?',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text(''),
-                                  Text('-'),
-                                  Text('Gleich.',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall!.copyWith(
-                                          color: Colors.red,
-                                          fontWeight: FontWeight.bold)),
-                                ]),
-                                TableRow(children: [
-                                  Text('temporal',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text('Wie lange',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall!.copyWith(
-                                          color: Colors.red,
-                                          fontWeight: FontWeight.bold)),
-                                  Text('bleibst',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text('du',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text('dort?',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text('-'),
-                                  Text('Fünf Tage.',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall!.copyWith(
-                                          color: Colors.red,
-                                          fontWeight: FontWeight.bold)),
-                                ]),
-                                TableRow(children: [
-                                  Text('temporal',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text('Für wie lange',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall!.copyWith(
-                                          color: Colors.red,
-                                          fontWeight: FontWeight.bold)),
-                                  Text('verreisen',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text('Sie?',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text(''),
-                                  Text('-'),
-                                  Text('Für zwei Wochen.',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall!.copyWith(
-                                          color: Colors.red,
-                                          fontWeight: FontWeight.bold)),
-                                ]),
-                                TableRow(children: [
-                                  Text('temporal',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text('Wie oft',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall!.copyWith(
-                                          color: Colors.red,
-                                          fontWeight: FontWeight.bold)),
-                                  Text('gehst',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text('du',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text('schwimmen?',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text('-'),
-                                  Text('Jeden Tag.',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall!.copyWith(
-                                          color: Colors.red,
-                                          fontWeight: FontWeight.bold)),
-                                ]),
-                                TableRow(children: [
-                                  Text('temporal',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text('Ab wann',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall!.copyWith(
-                                          color: Colors.red,
-                                          fontWeight: FontWeight.bold)),
-                                  Text('sind',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text('Sie',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text('in Urlaub?',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text('-'),
-                                  Text('Ab nächster Woche.',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall!.copyWith(
-                                          color: Colors.red,
-                                          fontWeight: FontWeight.bold)),
-                                ]),
-                                TableRow(children: [
-                                  Text('temporal',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text('Bis wann',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall!.copyWith(
-                                          color: Colors.red,
-                                          fontWeight: FontWeight.bold)),
-                                  Text('habt',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text('ihr',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text('gefeiert?',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text('-'),
-                                  Text('Bis zum Morgen.',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall!.copyWith(
-                                          color: Colors.red,
-                                          fontWeight: FontWeight.bold)),
-                                ]),
-                                TableRow(children: [
-                                  Text('temporal',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text('Seit wann',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall!.copyWith(
-                                          color: Colors.red,
-                                          fontWeight: FontWeight.bold)),
-                                  Text('rauchen',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text('Sie',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text('nicht mehr?',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text('-'),
-                                  Text('Seit sieben Jahren.',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall!.copyWith(
-                                          color: Colors.red,
-                                          fontWeight: FontWeight.bold)),
-                                ]),
-                                TableRow(children: [
-                                  Text('temporal',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text('Von wann bis wann',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall!.copyWith(
-                                          color: Colors.red,
-                                          fontWeight: FontWeight.bold)),
-                                  Text('müssen',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text('Sie',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text('arbeiten?',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text('-'),
-                                  Text('Von 7 - 18 Uhr.',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall!.copyWith(
-                                          color: Colors.red,
-                                          fontWeight: FontWeight.bold)),
-                                ]),
-                                TableRow(children: [
-                                  Text('Uhrzeit',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text('Wie viel Uhr',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall!.copyWith(
-                                          color: Colors.red,
-                                          fontWeight: FontWeight.bold)),
-                                  Text('ist',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text('es',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text('jetzt?',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text('-'),
-                                  Text('Genau 11:53 Uhr.',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall!.copyWith(
-                                          color: Colors.red,
-                                          fontWeight: FontWeight.bold)),
-                                ]),
-                                TableRow(children: [
-                                  Text('Uhrzeit',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text('Wie spät',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall!.copyWith(
-                                          color: Colors.red,
-                                          fontWeight: FontWeight.bold)),
-                                  Text('ist',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text('es?',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text(''),
-                                  Text('-'),
-                                  Text('5 nach 12.',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall!.copyWith(
-                                          color: Colors.red,
-                                          fontWeight: FontWeight.bold)),
-                                ]),
-                                TableRow(children: [
-                                  Text('Uhrzeit',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text('Um wie viel Uhr',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall!.copyWith(
-                                          color: Colors.red,
-                                          fontWeight: FontWeight.bold)),
-                                  Text('fängt',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text('der Film',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text('an?',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text('-'),
-                                  Text('Um 20:15 Uhr.',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall!.copyWith(
-                                          color: Colors.red,
-                                          fontWeight: FontWeight.bold)),
-                                ]),
-                              ],
-                            )
-                          ]),
-                        ),
-                      ),
-                    ),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                            top: 10.0, left: 16.0, bottom: 10),
-                        child: RichText(
-                          text: TextSpan(
-                            style: textTheme
-                                .bodyMedium, //DefaultTextStyle.of(context).style,
-                            children: const <TextSpan>[
-                              TextSpan(text: 'W-Fragen, die nach dem '),
-                              TextSpan(
-                                text: 'Ort',
-                                style: TextStyle(
-                                    color: Colors.red,
-                                    fontWeight: FontWeight.bold),
-                              ),
-                              TextSpan(text: ' oder einer '),
-                              TextSpan(
-                                text: 'Richtung',
-                                style: TextStyle(
-                                    color: Colors.red,
-                                    fontWeight: FontWeight.bold),
-                              ),
-                              TextSpan(text: ' fragen. \nSiehe auch: '),
-                              TextSpan(
-                                text: 'Lokale Adverbien',
-                                style: TextStyle(fontWeight: FontWeight.bold),
-                              ),
-                              TextSpan(text: ' und '),
-                              TextSpan(
-                                text: 'lokale Präpositionen',
-                                style: TextStyle(fontWeight: FontWeight.bold),
-                              ),
-                            ],
-                          ),
-                        )),
-                    SingleChildScrollView(
-                      child: ConstrainedBox(
-                        constraints: const BoxConstraints(
-                            //minHeight: MediaQuery.of(context).size.height
-                            ),
-                        child: IntrinsicHeight(
-                          child: Column(children: [
-                            Table(
-                              border: TableBorder.all(
-                                  color: Colors.purple, width: 1),
-                              columnWidths: const {
-                                0: FractionColumnWidth(.14),
-                                1: FractionColumnWidth(.14),
-                                2: FractionColumnWidth(.13),
-                                3: FractionColumnWidth(.17),
-                                4: FractionColumnWidth(.15),
-                                5: FractionColumnWidth(.02),
-                                6: FractionColumnWidth(.25),
-                              },
-                              children: [
-                                TableRow(children: [
-                                  Text('Adv. / Erg.',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text('W-Frage',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall!.copyWith(
-                                          color: Colors.red,
-                                          fontWeight: FontWeight.bold)),
-                                  Text('Verb',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text('Subjekt',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text('Satzende',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text('-'),
-                                  Text('Aussage',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                ]),
-                                TableRow(children: [
-                                  Text('Ort',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text('Wo',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall!.copyWith(
-                                          color: Colors.red,
-                                          fontWeight: FontWeight.bold)),
-                                  Text('ist',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text('der Käse?',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text(''),
-                                  Text('-'),
-                                  Text('Im Kühlschrank.',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall!.copyWith(
-                                          color: Colors.red,
-                                          fontWeight: FontWeight.bold)),
-                                ]),
-                                TableRow(children: [
-                                  Text('Richtung',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text('Wohin',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall!.copyWith(
-                                          color: Colors.red,
-                                          fontWeight: FontWeight.bold)),
-                                  Text('gehst',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text('du?',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text(''),
-                                  Text('-'),
-                                  Text('Nach oben.',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall!.copyWith(
-                                          color: Colors.red,
-                                          fontWeight: FontWeight.bold)),
-                                ]),
-                                TableRow(children: [
-                                  Text('Herkunft',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text('Woher',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall!.copyWith(
-                                          color: Colors.red,
-                                          fontWeight: FontWeight.bold)),
-                                  Text('hast',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text('du',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text('das Geld?',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text('-'),
-                                  Text('Von Papa.',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall!.copyWith(
-                                          color: Colors.red,
-                                          fontWeight: FontWeight.bold)),
-                                ]),
-                              ],
-                            )
-                          ]),
-                        ),
-                      ),
-                    ),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                            top: 10.0, left: 16.0, bottom: 10),
-                        child: RichText(
-                          text: TextSpan(
-                            style: textTheme.bodyMedium,
-                            children: const <TextSpan>[
-                              TextSpan(text: 'W-Fragen, die nach dem '),
-                              TextSpan(
-                                text: 'Grund',
-                                style: TextStyle(
-                                    color: Colors.red,
-                                    fontWeight: FontWeight.bold),
-                              ),
-                              TextSpan(text: ', der '),
-                              TextSpan(
-                                text: 'Ursache',
-                                style: TextStyle(
-                                    color: Colors.red,
-                                    fontWeight: FontWeight.bold),
-                              ),
-                              TextSpan(text: ' oder dem '),
-                              TextSpan(
-                                text: 'Zweck',
-                                style: TextStyle(
-                                    color: Colors.red,
-                                    fontWeight: FontWeight.bold),
-                              ),
-                              TextSpan(text: ' fragen. \nSiehe auch: '),
-                              TextSpan(
-                                text: 'Kausalsätze',
-                                style: TextStyle(fontWeight: FontWeight.bold),
-                              ),
-                              TextSpan(text: ' sowie '),
-                              TextSpan(
-                                text: 'Finalsätze',
-                                style: TextStyle(fontWeight: FontWeight.bold),
-                              ),
-                            ],
-                          ),
-                        )),
-                    SingleChildScrollView(
-                      child: ConstrainedBox(
-                        constraints: const BoxConstraints(
-                            //minHeight: MediaQuery.of(context).size.height
-                            ),
-                        child: IntrinsicHeight(
-                          child: Column(children: [
-                            Table(
-                              border: TableBorder.all(
-                                  color: Colors.purple, width: 1),
-                              columnWidths: const {
-                                0: FractionColumnWidth(.14),
-                                1: FractionColumnWidth(.18),
-                                2: FractionColumnWidth(.09),
-                                3: FractionColumnWidth(.11),
-                                4: FractionColumnWidth(.17),
-                                5: FractionColumnWidth(.02),
-                                6: FractionColumnWidth(.29),
-                              },
-                              children: [
-                                TableRow(children: [
-                                  Text('Ergänzung',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text('W-Frage',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall!.copyWith(
-                                          color: Colors.red,
-                                          fontWeight: FontWeight.bold)),
-                                  Text('Verb',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text('Subjekt',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text('Satzende',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text('-'),
-                                  Text('Aussage',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                ]),
-                                TableRow(children: [
-                                  Text('kausal',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text('Warum',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall!.copyWith(
-                                          color: Colors.red,
-                                          fontWeight: FontWeight.bold)),
-                                  Text('liebst',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text('du',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text('mich nicht?',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text('-'),
-                                  Text('Weil du kein Geld hast.',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall!.copyWith(
-                                          color: Colors.red,
-                                          fontWeight: FontWeight.bold)),
-                                ]),
-                                TableRow(children: [
-                                  Text('kausal',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text('Weshalb',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall!.copyWith(
-                                          color: Colors.red,
-                                          fontWeight: FontWeight.bold)),
-                                  Text('machst',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text('du',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text('das?',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text('-'),
-                                  Text('Aus Neugier.',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall!.copyWith(
-                                          color: Colors.red,
-                                          fontWeight: FontWeight.bold)),
-                                ]),
-                                TableRow(children: [
-                                  Text('kausal',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text('Weswegen',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall!.copyWith(
-                                          color: Colors.red,
-                                          fontWeight: FontWeight.bold)),
-                                  Text('spielt',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text('Hans',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text('nicht mit?',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text('-'),
-                                  Text('Wegen einer Grippe.',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall!.copyWith(
-                                          color: Colors.red,
-                                          fontWeight: FontWeight.bold)),
-                                ]),
-                                TableRow(children: [
-                                  Text('kausal',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text('Wieso',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall!.copyWith(
-                                          color: Colors.red,
-                                          fontWeight: FontWeight.bold)),
-                                  Text('gehst',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text('du',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text('nach Hause?',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text('-'),
-                                  Text('Weil ich müde bin.',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall!.copyWith(
-                                          color: Colors.red,
-                                          fontWeight: FontWeight.bold)),
-                                ]),
-                                TableRow(children: [
-                                  Text('kausal',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text('Aus welchem Grund',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall!.copyWith(
-                                          color: Colors.red,
-                                          fontWeight: FontWeight.bold)),
-                                  Text('hast',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text('du',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text('ihn gehauen?',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text('-'),
-                                  Text('Aus Rache.',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall!.copyWith(
-                                          color: Colors.red,
-                                          fontWeight: FontWeight.bold)),
-                                ]),
-                                TableRow(children: [
-                                  Text('final',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text('Wozu',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall!.copyWith(
-                                          color: Colors.red,
-                                          fontWeight: FontWeight.bold)),
-                                  Text('macht',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text('Rita',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text('sich hübsch?',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text('-'),
-                                  Text('Um den Männern zu gefallen.',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall!.copyWith(
-                                          color: Colors.red,
-                                          fontWeight: FontWeight.bold)),
-                                ]),
-                              ],
-                            )
-                          ]),
-                        ),
-                      ),
-                    ),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                            top: 10.0, left: 16.0, bottom: 10),
-                        child: RichText(
-                          text: TextSpan(
-                            style: textTheme.bodyMedium,
-                            children: const <TextSpan>[
-                              TextSpan(text: 'Die '),
-                              TextSpan(
-                                text: 'Interrogativartikel',
-                                style: TextStyle(fontWeight: FontWeight.bold),
-                              ),
-                            ],
-                          ),
-                        )),
-                    SingleChildScrollView(
-                      child: ConstrainedBox(
-                        constraints: const BoxConstraints(
-                            //minHeight: MediaQuery.of(context).size.height
-                            ),
-                        child: IntrinsicHeight(
-                          child: Column(children: [
-                            Table(
-                              border: TableBorder.all(
-                                  color: Colors.purple, width: 1),
-                              columnWidths: const {
-                                0: FractionColumnWidth(.14),
-                                1: FractionColumnWidth(.22),
-                                2: FractionColumnWidth(.11),
-                                3: FractionColumnWidth(.11),
-                                4: FractionColumnWidth(.16),
-                                5: FractionColumnWidth(.02),
-                                6: FractionColumnWidth(.24),
-                              },
-                              children: [
-                                TableRow(children: [
-                                  Text('Ergänzung',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text('W-Frage',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall!.copyWith(
-                                          color: Colors.red,
-                                          fontWeight: FontWeight.bold)),
-                                  Text('Verb',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text('Subjekt',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text('Satzende',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text('-'),
-                                  Text('Aussage',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                ]),
-                                TableRow(children: [
-                                  Text('Auswahl',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text('Welche Frau',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall!.copyWith(
-                                          color: Colors.red,
-                                          fontWeight: FontWeight.bold)),
-                                  Text('gefällt',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text('dir?',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text(''),
-                                  Text('-'),
-                                  Text('Die blonde.',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall!.copyWith(
-                                          color: Colors.red,
-                                          fontWeight: FontWeight.bold)),
-                                ]),
-                                TableRow(children: [
-                                  Text('Auswahl',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text('An welchem Kurs',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall!.copyWith(
-                                          color: Colors.red,
-                                          fontWeight: FontWeight.bold)),
-                                  Text('sind',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text('Sie',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text('interessiert?',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text('-'),
-                                  Text('An dem Grundkurs.',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall!.copyWith(
-                                          color: Colors.red,
-                                          fontWeight: FontWeight.bold)),
-                                ]),
-                                TableRow(children: [
-                                  Text('Auswahl',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text('Mit welchem Auto',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall!.copyWith(
-                                          color: Colors.red,
-                                          fontWeight: FontWeight.bold)),
-                                  Text('seid',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text('ihr',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text('gefahren?',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text('-'),
-                                  Text('Mit meinem.',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall!.copyWith(
-                                          color: Colors.red,
-                                          fontWeight: FontWeight.bold)),
-                                ]),
-                                TableRow(children: [
-                                  Text('Qualität',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text('Was für Autos',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall!.copyWith(
-                                          color: Colors.red,
-                                          fontWeight: FontWeight.bold)),
-                                  Text('gefallen',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text('dir',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text('eigentlich?',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text('-'),
-                                  Text('Schnelle.',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall!.copyWith(
-                                          color: Colors.red,
-                                          fontWeight: FontWeight.bold)),
-                                ]),
-                                TableRow(children: [
-                                  Text('Qualität',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text('Mit was für einem Auto',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall!.copyWith(
-                                          color: Colors.red,
-                                          fontWeight: FontWeight.bold)),
-                                  Text('seid',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text('ihr',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text('gefahren?',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text('-'),
-                                  Text('Mit einem Audi.',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall!.copyWith(
-                                          color: Colors.red,
-                                          fontWeight: FontWeight.bold)),
-                                ]),
-                                TableRow(children: [
-                                  Text('Qualität',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text('An was für ein Geschenk',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall!.copyWith(
-                                          color: Colors.red,
-                                          fontWeight: FontWeight.bold)),
-                                  Text('haben',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text('Sie',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text('gedacht?',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text('-'),
-                                  Text('An ein teures.',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall!.copyWith(
-                                          color: Colors.red,
-                                          fontWeight: FontWeight.bold)),
-                                ]),
-                              ],
-                            )
-                          ]),
-                        ),
-                      ),
-                    ),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                            top: 10.0, left: 16.0, bottom: 10),
-                        child: RichText(
-                          text: TextSpan(
-                            style: textTheme.bodyMedium,
-                            children: <TextSpan>[
-                              TextSpan(text: 'Die '),
-                              TextSpan(
-                                text: 'Wie',
-                                style: TextStyle(
-                                    color: Colors.red,
-                                    fontWeight: FontWeight.bold),
-                              ),
-                              TextSpan(text: '-Fragen. \nSiehe auch: '),
-                              TextSpan(
-                                text: 'Modalsätze',
-                                style: TextStyle(fontWeight: FontWeight.bold),
-                              ),
-                            ],
-                          ),
-                        )),
-                    SingleChildScrollView(
-                      child: ConstrainedBox(
-                        constraints: const BoxConstraints(
-                            //minHeight: MediaQuery.of(context).size.height
-                            ),
-                        child: IntrinsicHeight(
-                          child: Column(children: [
-                            Table(
-                              border: TableBorder.all(
-                                  color: Colors.purple, width: 1),
-                              columnWidths: const {
-                                0: FractionColumnWidth(.14),
-                                1: FractionColumnWidth(.17),
-                                2: FractionColumnWidth(.13),
-                                3: FractionColumnWidth(.14),
-                                4: FractionColumnWidth(.14),
-                                5: FractionColumnWidth(.02),
-                                6: FractionColumnWidth(.26),
-                              },
-                              children: [
-                                TableRow(children: [
-                                  Text('Ergänzung',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text('W-Frage',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall!.copyWith(
-                                          color: Colors.red,
-                                          fontWeight: FontWeight.bold)),
-                                  Text('Verb',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text('Subjekt',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text('Satzende',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text('-'),
-                                  Text('Aussage',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                ]),
-                                TableRow(children: [
-                                  Text('modal',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text('Wie',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall!.copyWith(
-                                          color: Colors.red,
-                                          fontWeight: FontWeight.bold)),
-                                  Text('geht',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text('es',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text('Ihrer Frau?',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text('-'),
-                                  Text('Danke, gut.',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall!.copyWith(
-                                          color: Colors.red,
-                                          fontWeight: FontWeight.bold)),
-                                ]),
-                                TableRow(children: [
-                                  Text('modal',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text('Wie',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall!.copyWith(
-                                          color: Colors.red,
-                                          fontWeight: FontWeight.bold)),
-                                  Text('geht',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text('es',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text('Ihrer Frau?',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text('-'),
-                                  Text('Ihr geht es besser.',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall!.copyWith(
-                                          color: Colors.red,
-                                          fontWeight: FontWeight.bold)),
-                                ]),
-                                TableRow(children: [
-                                  Text('Menge',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text('Wie viel',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall!.copyWith(
-                                          color: Colors.red,
-                                          fontWeight: FontWeight.bold)),
-                                  Text('verdienen',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text('Sie',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text('dabei?',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text('-'),
-                                  Text('Leider viel zu wenig.',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall!.copyWith(
-                                          color: Colors.red,
-                                          fontWeight: FontWeight.bold)),
-                                ]),
-                                TableRow(children: [
-                                  Text('Menge',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text('Wie viele Geschwister',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall!.copyWith(
-                                          color: Colors.red,
-                                          fontWeight: FontWeight.bold)),
-                                  Text('hat',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text('Ruth?',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text(''),
-                                  Text('-'),
-                                  Text('Ich glaube sieben.',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall!.copyWith(
-                                          color: Colors.red,
-                                          fontWeight: FontWeight.bold)),
-                                ]),
-                                TableRow(children: [
-                                  Text('Maße',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text('Wie weit',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall!.copyWith(
-                                          color: Colors.red,
-                                          fontWeight: FontWeight.bold)),
-                                  Text('ist',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text('es',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text('bis Ulm?',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text('-'),
-                                  Text('Ungefähr 25 km.',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall!.copyWith(
-                                          color: Colors.red,
-                                          fontWeight: FontWeight.bold)),
-                                ]),
-                                TableRow(children: [
-                                  Text('Maße',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text('Wie tief',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall!.copyWith(
-                                          color: Colors.red,
-                                          fontWeight: FontWeight.bold)),
-                                  Text('mag',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text('das Loch',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text('sein?',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text('-'),
-                                  Text('Vielleicht 50 m.',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall!.copyWith(
-                                          color: Colors.red,
-                                          fontWeight: FontWeight.bold)),
-                                ]),
-                                TableRow(children: [
-                                  Text('Maße',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text('Wie alt',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall!.copyWith(
-                                          color: Colors.red,
-                                          fontWeight: FontWeight.bold)),
-                                  Text('ist',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text('das Baby',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text('jetzt?',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text('-'),
-                                  Text('6 Wochen.',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall!.copyWith(
-                                          color: Colors.red,
-                                          fontWeight: FontWeight.bold)),
-                                ]),
-                                TableRow(children: [
-                                  Text('Gewichte',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text('Wie schwer',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall!.copyWith(
-                                          color: Colors.red,
-                                          fontWeight: FontWeight.bold)),
-                                  Text('ist',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text('der Koffer?',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text(''),
-                                  Text('-'),
-                                  Text('18 kg.',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall!.copyWith(
-                                          color: Colors.red,
-                                          fontWeight: FontWeight.bold)),
-                                ]),
-                                TableRow(children: [
-                                  Text('Prädikativ',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text('Wie',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall!.copyWith(
-                                          color: Colors.red,
-                                          fontWeight: FontWeight.bold)),
-                                  Text('ist',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text('das Bett?',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text(''),
-                                  Text('-'),
-                                  Text('Es ist bequem.',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall!.copyWith(
-                                          color: Colors.red,
-                                          fontWeight: FontWeight.bold)),
-                                ]),
-                                TableRow(children: [
-                                  Text('Adverbial',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text('Wie',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall!.copyWith(
-                                          color: Colors.red,
-                                          fontWeight: FontWeight.bold)),
-                                  Text('singt',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text('er?',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall),
-                                  Text(''),
-                                  Text('-'),
-                                  Text('Er singt schlecht.',
-                                      textAlign: TextAlign.center,
-                                      style: textTheme.bodySmall!.copyWith(
-                                          color: Colors.red,
-                                          fontWeight: FontWeight.bold)),
-                                ]),
-                              ],
-                            )
-                          ]),
-                        ),
-                      ),
-                    ),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                            top: 10.0, left: 16.0, bottom: 10),
-                        child: RichText(
-                          text: TextSpan(
-                            style: textTheme.bodyMedium,
-                            children: const <TextSpan>[
-                              TextSpan(text: 'Siehe auch: '),
-                              TextSpan(
-                                text: 'Indirekte Fragesätze',
-                                style: TextStyle(fontWeight: FontWeight.bold),
-                              ),
-                            ],
-                          ),
-                        )),
-                  ],
-                ),
-              ),
-            ],
-          ),
-        ),
+            padding: const EdgeInsets.all(8.0),
+            child: MyPageContentView(contents: contents)),
       ),
     );
   }
 }
+
+List<CardContent> contents = [
+  CardContent(
+    elements: [
+      CardElement(type: ElementType.pageTitle, value: title),
+    ],
+  ),
+  CardContent(
+    elements: [
+      CardElement(type: ElementType.cardTitle, value: title1),
+      CardElement(type: ElementType.htmlContent, value: htmlContent1_1),
+      CardElement(type: ElementType.htmlTable, value: htmlTable1_2_1),
+      CardElement(type: ElementType.htmlTable, value: htmlTable1_2),
+      CardElement(type: ElementType.htmlContent, value: htmlContent1_3),
+      CardElement(type: ElementType.htmlTable, value: htmlTable1_4_1),
+      CardElement(type: ElementType.htmlTable, value: htmlTable1_4),
+    ],
+  ),
+  CardContent(
+    elements: [
+      CardElement(type: ElementType.cardTitle, value: title2),
+      CardElement(type: ElementType.htmlContent, value: htmlContent2_1),
+      CardElement(type: ElementType.htmlTable, value: htmlTable2_2),
+      CardElement(type: ElementType.htmlContent, value: htmlContent2_3),
+      CardElement(type: ElementType.htmlTable, value: htmlTable2_4),
+      CardElement(type: ElementType.htmlContent, value: htmlContent2_5),
+      CardElement(type: ElementType.htmlTable, value: htmlTable2_6),
+      CardElement(type: ElementType.htmlContent, value: htmlContent2_7),
+      CardElement(type: ElementType.htmlTable, value: htmlTable2_8),
+      CardElement(type: ElementType.htmlContent, value: htmlContent2_9),
+      CardElement(type: ElementType.htmlTable, value: htmlTable2_10),
+      CardElement(type: ElementType.htmlContent, value: htmlContent2_11),
+      CardElement(type: ElementType.htmlTable, value: htmlTable2_12),
+      CardElement(type: ElementType.htmlContent, value: htmlContent2_13),
+      CardElement(type: ElementType.htmlTable, value: htmlTable2_14),
+      CardElement(type: ElementType.htmlContent, value: htmlContent2_15),
+    ],
+  ),
+];
+
+String title = '6. Fragewörter / W-Fragen';
+
+String title1 = 'Was man über Fragewörter wissen sollte.';
+String htmlContent1_1 = '''
+<p>Wenn "etwas" unbekannt ist, so muss man danach fragen. Man kann nach einem <span style="text-decoration:underline">ganzen Satzinhalt</span> fragen oder nur nach einem <span style="text-decoration:underline">bestimmten Satzteil</span>. Demnach werden zwei Fragesätze unterschieden:</p>
+
+<p>In einer <strong><span class="red">Entscheidungsfrage</span></strong>, auch <strong><span class="red">Ja-/Nein-Frage</span></strong> genannt, möchte die fragende Person von seinem Gesprächspartner eine <span style="text-decoration:underline">Zustimmung</span> oder eine <span style="text-decoration:underline">Ablehnung</span> zu seiner Frage erhalten. Die Antwort lautet entweder <strong><a title="bejahen" href="lernen.php?menu_id=17">ja, doch</a></strong> oder <strong><a title="verneinen" href="lernen.php?menu_id=17">nein</a></strong>. In einer <strong><span class="red">Ja-/Nein-Frage</span></strong> steht das Verb immer auf <strong><span class="red">Position 1</span></strong>, das Subjekt auf Position 2.</p>
+''';
+String htmlTable1_2_1 = '''
+<table><colgroup> 
+<col style="width: 60%;"> 
+<col style="width: 5%;">  
+<col style="width: 35%;"> </colgroup>
+<thead>
+<tr>
+<th >Ja-/Nein-Frage</th>
+<th>-</th>
+<th >Antwortsatz</th>
+</tr>
+</thead>
+</table>
+''';
+String htmlTable1_2 = '''
+<table><colgroup> 
+<col style="width: 25%;"> 
+<col style="width: 20%;"> 
+<col style="width: 15%;"> 
+<col style="width: 5%;"> 
+<col style="width: 15%;"> 
+<col style="width: 20%;"> </colgroup>
+<thead>
+<tr>
+<th>Position 1 / <strong><span class="red">Verb</span></strong></th>
+<th>Pos. 2 / Subj.</th>
+<th>Satzende</th>
+<th>-</th>
+<th>Ja / Nein,</th>
+<th>Aussagesatz</th>
+</tr>
+</thead>
+<tbody align="center">
+<tr>
+<td><strong><span class="red">Liebst</span></strong></td>
+<td>du</td>
+<td>mich?</td>
+<td><strong>-</strong></td>
+<td><strong><span class="red">Ja</span></strong>,</td>
+<td>ich liebe dich.</td>
+</tr>
+<tr>
+<td><strong><span class="red">Liebt</span></strong></td>
+<td>er</td>
+<td>dich <span style="text-decoration:underline">nicht</span>?</td>
+<td><strong>-</strong></td>
+<td><strong><span class="red"><span style="text-decoration:underline">Doch</span></span></strong>,</td>
+<td>er liebt mich.</td>
+</tr>
+<tr>
+<td><strong><span class="red">Kocht</span></strong></td>
+<td>ihr</td>
+<td>Suppe?</td>
+<td><strong>-</strong></td>
+<td><strong><span class="red">Nein</span></strong>,</td>
+<td>wir kochen Eier.</td>
+</tr>
+</tbody>
+</table>
+''';
+String htmlContent1_3 = '''
+<p>Die <strong><span class="red">Ergänzungsfrage</span></strong>, auch <strong><span class="red">W-Frage</span></strong> genannt, ist eine offene Frage, das heißt, dass die fragende Person Informationen zu einem Sachverhalt wünscht. Jede W-Frage fragt nach einem bestimmten Zweck. So können sie nach einer Ergänzung, einem Ort, einem Zeitpunkt, einer Zeitdauer, einem Zweck usw. fragen. In einer <strong><span class="red">W-Frage</span></strong> steht das Fragewort immer auf <strong><span class="red">Position 1</span></strong>, das Verb auf Position 2 und das Subjekt auf Position 3.</p>
+''';
+String htmlTable1_4_1 = '''
+<table><colgroup> 
+<col style="width: 60%;"> 
+<col style="width: 5%;"> 
+<col style="width: 35%;"> </colgroup>
+<thead>
+<tr>
+<th >W-Frage</th>
+<th>-</th>
+<th>Antwortsatz</th>
+</tr>
+<thead>
+</table> 
+''';
+String htmlTable1_4 = '''
+<table><colgroup> 
+<col style="width: 25%;"> 
+<col style="width: 18%;"> 
+<col style="width: 17%;"> 
+<col style="width: 5%;"> 
+<col style="width: 35%;"> </colgroup>
+<thead>
+<tr>
+<th>Position 1 / <strong><span class="red">W-Frage</span></strong></th>
+<th>Pos. 2 / Verb.</th>
+<th>Satzende</th>
+<th>-</th>
+<th>Information</th>
+</tr>
+</thead>
+<tbody align="center">
+<tr>
+<td><strong><span class="red">Wie</span></strong></td>
+<td>heißen</td>
+<td>Sie?</td>
+<td><strong>-</strong></td>
+<td><strong><span class="red">Erich Kuckelkorn</span></strong>.</td>
+</tr>
+<tr>
+<td><strong><span class="red">Wo</span></strong></td>
+<td>wohnen</td>
+<td>Sie?</td>
+<td><strong>-</strong></td>
+<td><strong><span class="red">In Oberdillingen</span></strong>.</td>
+</tr>
+<tr>
+<td><strong><span class="red">Was</span></strong></td>
+<td>machen</td>
+<td>Sie hier?</td>
+<td><strong>-</strong></td>
+<td><strong><span class="red">Ich spioniere</span></strong>.</td>
+</tr>
+</tbody>
+</table> 
+''';
+
+String title2 = 'Übersicht der möglichen W-Fragen';
+String htmlContent2_1 = '''
+<p>W-Fragen, die nach <strong><a title="Kasus" href="lernen.php?menu_id=16">Kasus</a></strong> und <strong><a title="Verbergänzungen" href="lernen.php?menu_id=7">Verbergänzungen</a></strong> fragen.</p>
+''';
+String htmlTable2_2 = '''
+<table><colgroup> <col style="width: 17%;"> <col style="width: 16%;"> <col style="width: 12%;"> <col style="width: 14%;"> <col style="width: 13%;"> <col style="width: 3%;"> <col style="width: 25%;"> </colgroup>
+<thead>
+<tr>
+<th>Ergänzung</th>
+<th><strong><span class="red">W-Frage</span></strong></th>
+<th>Verb</th>
+<th>Subjekt</th>
+<th>Satzende</th>
+<th>-</th>
+<th>Aussage</th>
+</tr>
+</thead>
+<tbody align="center">
+<tr>
+<th><strong><a title="Nominativ" href="lernen.php?menu_id=38">Nominativ</a></strong></th>
+<td><strong><span class="red">Wer</span></strong></td>
+<td>sind</td>
+<td>Sie?</td>
+<td>&nbsp;</td>
+<td><strong>-</strong></td>
+<td><strong><span class="red">Herman Lapdak</span></strong>.</td>
+</tr>
+<tr>
+<th><strong><a title="Nominativ" href="lernen.php?menu_id=38">Nominativ</a></strong></th>
+<td><strong><span class="red">Was</span></strong></td>
+<td>ist</td>
+<td>das?</td>
+<td>&nbsp;</td>
+<td><strong>-</strong></td>
+<td><strong><span class="red">Ein Tisch</span></strong>.</td>
+</tr>
+<tr>
+<th><strong><a title="Akkusativ" href="lernen.php?menu_id=39">Akkusativ</a></strong></th>
+<td><strong><span class="red">Wen</span></strong></td>
+<td>liebst</td>
+<td>du?</td>
+<td>&nbsp;</td>
+<td><strong>-</strong></td>
+<td><strong><span class="red">Nur dich</span></strong>.</td>
+</tr>
+<tr>
+<th><strong><a title="Akkusativ" href="lernen.php?menu_id=39">Akkusativ</a></strong></th>
+<td><strong><span class="red">Was</span></strong></td>
+<td>putzt</td>
+<td>du</td>
+<td>gerade?</td>
+<td><strong>-</strong></td>
+<td><strong><span class="red">Meine Schuhe</span></strong>.</td>
+</tr>
+<tr>
+<th><strong><a title="Dativ" href="lernen.php?menu_id=40">Dativ</a></strong></th>
+<td><strong><span class="red">Wem</span></strong></td>
+<td>gehört</td>
+<td>das Geld</td>
+<td>hier?</td>
+<td><strong>-</strong></td>
+<td>Natürlich <strong><span class="red">mir</span></strong>.</td>
+</tr>
+<tr>
+<th><strong><a title="Genitiv" href="lernen.php?menu_id=56">Genitiv</a></strong></th>
+<td><strong><span class="red">Wessen</span></strong> Uhr</td>
+<td>ist</td>
+<td>das?</td>
+<td>&nbsp;</td>
+<td><strong>-</strong></td>
+<td>Das ist <strong><span class="red">Utes Uhr</span></strong>.</td>
+</tr>
+<tr>
+<th><strong><a title="Situativ" href="lernen.php?menu_id=42">Situativ</a></strong></th>
+<td><strong><span class="red">Wo</span></strong></td>
+<td>ist</td>
+<td>die Uhr?</td>
+<td>&nbsp;</td>
+<td><strong>-</strong></td>
+<td><strong><span class="red">Auf dem Tisch</span></strong>.</td>
+</tr>
+<tr>
+<th><strong><a title="Direktiv" href="lernen.php?menu_id=44">Direktiv</a></strong></th>
+<td><strong><span class="red">Wohin</span></strong></td>
+<td>fährt</td>
+<td>Hilde</td>
+<td>jetzt?</td>
+<td><strong>-</strong></td>
+<td><strong><span class="red">Zur Uni</span></strong>.</td>
+</tr>
+<tr>
+<th><strong><a title="Direktiv" href="lernen.php?menu_id=44#woher">Direktiv</a></strong></th>
+<td><strong><span class="red">Woher</span></strong></td>
+<td>kommt</td>
+<td>Josè?</td>
+<td>&nbsp;</td>
+<td><strong>-</strong></td>
+<td><strong><span class="red">Aus Mexiko-Stadt</span></strong>.</td>
+</tr>
+<tr>
+<th><strong><a title="Präpositional-Ergänzung" href="lernen.php?menu_id=45#fragen_mit_praepositionen">Präpositional</a></strong></th>
+<td><strong><span class="red">Mit wem</span></strong></td>
+<td>hat</td>
+<td>Erik</td>
+<td>getanzt?</td>
+<td><strong>-</strong></td>
+<td><strong><span class="red">Mit Rosemarie</span></strong>.</td>
+</tr>
+<tr>
+<th><strong><a title="Präpositional-Ergänzung" href="lernen.php?menu_id=45#fragen_mit_praepositionen">Präpositional</a></strong></th>
+<td><strong><span class="red">Woran</span></strong></td>
+<td>denkst</td>
+<td>du</td>
+<td>oft?</td>
+<td><strong>-</strong></td>
+<td><strong><span class="red">An die Prüfung</span></strong>.</td>
+</tr>
+</tbody>
+</table>
+''';
+String htmlContent2_3 = '''
+<p>W-Fragen, die nach einer <strong><span class="red">Handlung</span></strong>, einer <strong><span class="red">Tätigkeit</span></strong> oder nach dem <strong><span class="red">Verb</span></strong> fragen.</p>
+''';
+String htmlTable2_4 = '''
+<table><colgroup> <col style="width: 15%;"> <col style="width: 12%;"> <col style="width: 15%;"> <col style="width: 12%;"> <col style="width: 15%;"> <col style="width: 2%;"> <col style="width: 29%;"> </colgroup>
+<thead>
+<tr>
+<th>Ergänzung</th>
+<th><strong><span class="red">W-Frage</span></strong></th>
+<th>Verb</th>
+<th>Subjekt</th>
+<th>Satzende</th>
+<th>-</th>
+<th>Aussage</th>
+</tr>
+</thead>
+<tbody align="center">
+<tr>
+<th>Tätigkeit</th>
+<td><strong><span class="red">Was</span></strong></td>
+<td>machst</td>
+<td>du</td>
+<td>gerade?</td>
+<td><strong>-</strong></td>
+<td><strong><span class="red">Ich lese</span></strong>.</td>
+</tr>
+<tr>
+<th>Tätigkeit</th>
+<td><strong><span class="red">Was</span></strong></td>
+<td>hat</td>
+<td>Paula</td>
+<td>gemacht?</td>
+<td><strong>-</strong></td>
+<td><strong><span class="red">Sie hat gearbeitet</span></strong>.</td>
+</tr>
+<tr>
+<th>Sachverhalt</th>
+<td><strong><span class="red">Was</span></strong></td>
+<td>ist</td>
+<td>mit ihm</td>
+<td>los?</td>
+<td><strong>-</strong></td>
+<td><strong><span class="red">Er hat Liebeskummer</span></strong>.</td>
+</tr>
+<tr>
+<th>Handlung</th>
+<td><strong><span class="red">Was</span></strong></td>
+<td>ist</td>
+<td>gestern</td>
+<td>passiert?</td>
+<td><strong>-</strong></td>
+<td><strong><span class="red">Kai ist hingefallen</span></strong>.</td>
+</tr>
+<tr>
+<th>Handlung</th>
+<td><strong><span class="red">Was</span></strong></td>
+<td>ist</td>
+<td>gestern</td>
+<td>geschehen?</td>
+<td><strong>-</strong></td>
+<td><strong><span class="red">Alfons ist gestorben</span></strong>.</td>
+</tr>
+<tr>
+<th>Interesse</th>
+<td><strong><span class="red">Was</span></strong></td>
+<td>interessiert</td>
+<td>Markus?</td>
+<td>&nbsp;</td>
+<td><strong>-</strong></td>
+<td><strong><span class="red">Das andere Geschlecht</span></strong>.</td>
+</tr>
+<tr>
+<th>Interesse</th>
+<td><strong><span class="red">Was</span></strong></td>
+<td>wollte</td>
+<td>er</td>
+<td>wissen?</td>
+<td><strong>-</strong></td>
+<td><strong><span class="red">Ob du verheiratet bist</span></strong>.</td>
+</tr>
+</tbody>
+</table>
+''';
+String htmlContent2_5 = '''
+<p>W-Fragen, die nach dem <strong><span class="red">Tempus</span></strong> fragen. <br> Siehe auch: <strong><a title="Adverbien" href="lernen.php?menu_id=73">Adverbien</a></strong> und <strong><a title="Temporale Präpositionen" href="lernen.php?menu_id=87">temporale Präpositionen</a></strong></p>
+''';
+String htmlTable2_6 = '''
+<table><colgroup> <col style="width: 14%;"> <col style="width: 20%;"> <col style="width: 13%;"> <col style="width: 11%;"> <col style="width: 15%;"> <col style="width: 2%;"> <col style="width: 25%;"> </colgroup>
+<thead>
+<tr>
+<th>Adv. / Erg.</th>
+<th><strong><span class="red">W-Frage</span></strong></th>
+<th>Verb</th>
+<th>Subjekt</th>
+<th>Satzende</th>
+<th>-</th>
+<th>Aussage</th>
+</tr>
+</thead>
+<tbody align="center">
+<tr>
+<th>temporal</th>
+<td><strong><span class="red">Wann</span></strong></td>
+<td>kommt</td>
+<td>der Zug?</td>
+<td>&nbsp;</td>
+<td><strong>-</strong></td>
+<td><strong><span class="red">Gleich</span></strong>.</td>
+</tr>
+<tr>
+<th>temporal</th>
+<td><strong><span class="red">Wie lange</span></strong></td>
+<td>bleibst</td>
+<td>du</td>
+<td>dort?</td>
+<td><strong>-</strong></td>
+<td><strong><span class="red">Fünf Tage</span></strong>.</td>
+</tr>
+<tr>
+<th>temporal</th>
+<td><strong><span class="red">Für wie lange</span></strong></td>
+<td>verreisen</td>
+<td>Sie?</td>
+<td>&nbsp;</td>
+<td><strong>-</strong></td>
+<td><strong><span class="red">Für zwei Wochen</span></strong>.</td>
+</tr>
+<tr>
+<th>temporal</th>
+<td><strong><span class="red">Wie oft</span></strong></td>
+<td>gehst</td>
+<td>du</td>
+<td>schwimmen?</td>
+<td><strong>-</strong></td>
+<td><strong><span class="red">Jeden Tag</span></strong>.</td>
+</tr>
+<tr>
+<th>temporal</th>
+<td><strong><span class="red">Ab wann</span></strong></td>
+<td>sind</td>
+<td>Sie</td>
+<td>in Urlaub?</td>
+<td><strong>-</strong></td>
+<td><strong><span class="red">Ab nächster Woche</span></strong>.</td>
+</tr>
+<tr>
+<th>temporal</th>
+<td><strong><span class="red">Bis wann</span></strong></td>
+<td>habt</td>
+<td>ihr</td>
+<td>gefeiert?</td>
+<td><strong>-</strong></td>
+<td><strong><span class="red">Bis zum Morgen</span></strong>.</td>
+</tr>
+<tr>
+<th>temporal</th>
+<td><strong><span class="red">Seit wann</span></strong></td>
+<td>rauchen</td>
+<td>Sie</td>
+<td>nicht mehr?</td>
+<td><strong>-</strong></td>
+<td><strong><span class="red">Seit sieben Jahren</span></strong>.</td>
+</tr>
+<tr>
+<th>temporal</th>
+<td><strong><span class="red">Von wann bis wann</span></strong></td>
+<td>müssen</td>
+<td>Sie</td>
+<td>arbeiten?</td>
+<td><strong>-</strong></td>
+<td><strong><span class="red">Von 7 - 18 Uhr</span></strong>.</td>
+</tr>
+<tr>
+<th>Uhrzeit</th>
+<td><strong><span class="red">Wie viel Uhr</span></strong></td>
+<td>ist</td>
+<td>es</td>
+<td>jetzt?</td>
+<td><strong>-</strong></td>
+<td><strong><span class="red">Genau 11:53 Uhr</span></strong>.</td>
+</tr>
+<tr>
+<th>Uhrzeit</th>
+<td><strong><span class="red">Wie spät</span></strong></td>
+<td>ist</td>
+<td>es?</td>
+<td>&nbsp;</td>
+<td><strong>-</strong></td>
+<td><strong><span class="red">5 nach 12</span></strong>.</td>
+</tr>
+<tr>
+<th>Uhrzeit</th>
+<td><strong><span class="red">Um wie viel Uhr</span></strong></td>
+<td>fängt</td>
+<td>der Film</td>
+<td>an?</td>
+<td><strong>-</strong></td>
+<td><strong><span class="red">Um 20:15 Uhr</span></strong>.</td>
+</tr>
+</tbody>
+</table>
+''';
+String htmlContent2_7 = '''
+<p>W-Fragen, die nach dem <strong><span class="red">Ort</span></strong> oder einer <strong><span class="red">Richtung</span></strong> fragen. <br> Siehe auch: <strong><a title="Lokale Adverbien" href="lernen.php?menu_id=72">Lokale Adverbien</a></strong> und <strong><a title="Lokale Präpositionen" href="lernen.php?menu_id=86">lokale Präpositionen</a></strong></p>
+''';
+String htmlTable2_8 = '''
+<table><colgroup> <col style="width: 14%;"> <col style="width: 14%;"> <col style="width: 13%;"> <col style="width: 17%;"> <col style="width: 15%;"> <col style="width: 2%;"> <col style="width: 25%;"> </colgroup>
+<thead>
+<tr>
+<th>Adv. / Erg.</th>
+<th><strong><span class="red">W-Frage</span></strong></th>
+<th>Verb</th>
+<th>Subjekt</th>
+<th>Satzende</th>
+<th>-</th>
+<th>Aussage</th>
+</tr>
+</thead>
+<tbody align="center">
+<tr>
+<th>Ort</th>
+<td><strong><span class="red">Wo</span></strong></td>
+<td>ist</td>
+<td>der Käse?</td>
+<td>&nbsp;</td>
+<td><strong>-</strong></td>
+<td><strong><span class="red">Im Kühlschrank</span></strong>.</td>
+</tr>
+<tr>
+<th>Richtung</th>
+<td><strong><span class="red">Wohin</span></strong></td>
+<td>gehst</td>
+<td>du?</td>
+<td>&nbsp;</td>
+<td><strong>-</strong></td>
+<td><strong><span class="red">Nach oben</span></strong>.</td>
+</tr>
+<tr>
+<th>Herkunft</th>
+<td><strong><span class="red">Woher</span></strong></td>
+<td>hast</td>
+<td>du</td>
+<td>das Geld?</td>
+<td><strong>-</strong></td>
+<td><strong><span class="red">Von Papa</span></strong>.</td>
+</tr>
+</tbody>
+</table>
+''';
+String htmlContent2_9 = '''
+<p>W-Fragen, die nach dem <strong><span class="red">Grund</span></strong>, der <strong><span class="red">Ursache</span></strong> oder dem <strong><span class="red">Zweck</span></strong> fragen. <br> Siehe auch: <strong><a title="Kausalsätze" href="lernen.php?menu_id=92">Kausalsätze</a></strong> sowie <strong><a title="Finalsätze" href="lernen.php?menu_id=94">Finalsätze</a></strong></p>
+''';
+String htmlTable2_10 = '''
+<table><colgroup> <col style="width: 14%;"> <col style="width: 18%;"> <col style="width: 9%;"> <col style="width: 11%;"> <col style="width: 17%;"> <col style="width: 2%;"> <col style="width: 29%;"> </colgroup>
+<thead>
+<tr>
+<th>Ergänzung</th>
+<th><strong><span class="red">W-Frage</span></strong></th>
+<th>Verb</th>
+<th>Subjekt</th>
+<th>Satzende</th>
+<th>-</th>
+<th>Aussage</th>
+</tr>
+</thead>
+<tbody align="center">
+<tr>
+<th>kausal</th>
+<td><strong><span class="red">Warum</span></strong></td>
+<td>liebst</td>
+<td>du</td>
+<td>mich nicht?</td>
+<td><strong>-</strong></td>
+<td><strong><span class="red">Weil du kein Geld hast</span></strong>.</td>
+</tr>
+<tr>
+<th>kausal</th>
+<td><strong><span class="red">Weshalb</span></strong></td>
+<td>machst</td>
+<td>du</td>
+<td>das?</td>
+<td><strong>-</strong></td>
+<td><strong><span class="red">Aus Neugier</span></strong>.</td>
+</tr>
+<tr>
+<th>kausal</th>
+<td><strong><span class="red">Weswegen</span></strong></td>
+<td>spielt</td>
+<td>Hans</td>
+<td>nicht mit?</td>
+<td><strong>-</strong></td>
+<td><strong><span class="red">Wegen einer Grippe</span></strong>.</td>
+</tr>
+<tr>
+<th>kausal</th>
+<td><strong><span class="red">Wieso</span></strong></td>
+<td>gehst</td>
+<td>du</td>
+<td>nach Hause?</td>
+<td><strong>-</strong></td>
+<td><strong><span class="red">Weil ich müde bin</span></strong>.</td>
+</tr>
+<tr>
+<th>kausal</th>
+<td><strong><span class="red">Aus welchem Grund</span></strong></td>
+<td>hast</td>
+<td>du</td>
+<td>ihn gehauen?</td>
+<td><strong>-</strong></td>
+<td><strong><span class="red">Aus Rache</span></strong>.</td>
+</tr>
+<tr>
+<th>final</th>
+<td><strong><span class="red">Wozu</span></strong></td>
+<td>macht</td>
+<td>Rita</td>
+<td>sich hübsch?</td>
+<td><strong>-</strong></td>
+<td><strong><span class="red">Um den Männern zu gefallen</span></strong>.</td>
+</tr>
+</tbody>
+</table>
+''';
+String htmlContent2_11 = '''
+<p>Die <strong><a title="Interrogativartikel" href="lernen.php?menu_id=64">Interrogativartikel</a></strong></p>
+''';
+String htmlTable2_12 = '''
+<table><colgroup> <col style="width: 14%;"> <col style="width: 22%;"> <col style="width: 11%;"> <col style="width: 11%;"> <col style="width: 16%;"> <col style="width: 2%;"> <col style="width: 24%;"> </colgroup>
+<thead>
+<tr>
+<th>Ergänzung</th>
+<th><strong><span class="red">W-Frage</span></strong></th>
+<th>Verb</th>
+<th>Subjekt</th>
+<th>Satzende</th>
+<th>-</th>
+<th>Aussage</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th>Auswahl</th>
+<td><strong><span class="red">Welche Frau</span></strong></td>
+<td>gefällt</td>
+<td>dir?</td>
+<td>&nbsp;</td>
+<td><strong>-</strong></td>
+<td><strong><span class="red">Die blonde</span></strong>.</td>
+</tr>
+<tr>
+<th>Auswahl</th>
+<td><strong><span class="red">An welchem Kurs</span></strong></td>
+<td>sind</td>
+<td>Sie</td>
+<td>interessiert?</td>
+<td><strong>-</strong></td>
+<td><strong><span class="red">An dem Grundkurs</span></strong>.</td>
+</tr>
+<tr>
+<th>Auswahl</th>
+<td><strong><span class="red">Mit welchem Auto</span></strong></td>
+<td>seid</td>
+<td>ihr</td>
+<td>gefahren?</td>
+<td><strong>-</strong></td>
+<td><strong><span class="red">Mit meinem</span></strong>.</td>
+</tr>
+<tr>
+<th>Qualität</th>
+<td><strong><span class="red">Was für Autos</span></strong></td>
+<td>gefallen</td>
+<td>dir</td>
+<td>eigentlich?</td>
+<td><strong>-</strong></td>
+<td><strong><span class="red">Schnelle</span></strong>.</td>
+</tr>
+<tr>
+<th>Qualität</th>
+<td><strong><span class="red">Mit was für einem Auto</span></strong></td>
+<td>seid</td>
+<td>ihr</td>
+<td>gefahren?</td>
+<td><strong>-</strong></td>
+<td><strong><span class="red">Mit einem Audi</span></strong>.</td>
+</tr>
+<tr>
+<th>Qualität</th>
+<td><strong><span class="red">An was für ein Geschenk</span></strong></td>
+<td>haben</td>
+<td>Sie</td>
+<td>gedacht?</td>
+<td><strong>-</strong></td>
+<td><strong><span class="red">An ein teures</span></strong>.</td>
+</tr>
+</tbody>
+</table>
+''';
+String htmlContent2_13 = '''
+<p>Die <strong><span class="red">Wie</span></strong>-Fragen. <br> Siehe auch: <strong><a title="Modalsätze" href="lernen.php?menu_id=96">Modalsätze</a></strong></p>
+''';
+String htmlTable2_14 = '''
+<table><colgroup> <col style="width: 14%;"> <col style="width: 17%;"> <col style="width: 13%;"> <col style="width: 14%;"> <col style="width: 14%;"> <col style="width: 2%;"> <col style="width: 26%;"> </colgroup>
+<thead>
+<tr>
+<th>Ergänzung</th>
+<th><strong><span class="red">W-Frage</span></strong></th>
+<th>Verb</th>
+<th>Subjekt</th>
+<th>Satzende</th>
+<th>-</th>
+<th>Aussage</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th>modal</th>
+<td><strong><span class="red">Wie</span></strong></td>
+<td>geht</td>
+<td>es</td>
+<td>Ihrer Frau?</td>
+<td><strong>-</strong></td>
+<td><strong><span class="red">Danke, gut</span></strong>.</td>
+</tr>
+<tr>
+<th>modal</th>
+<td><strong><span class="red">Wie</span></strong></td>
+<td>geht</td>
+<td>es</td>
+<td>Ihrer Frau?</td>
+<td><strong>-</strong></td>
+<td><strong><span class="red">Ihr geht es besser</span></strong>.</td>
+</tr>
+<tr>
+<th>Menge</th>
+<td><strong><span class="red">Wie viel</span></strong></td>
+<td>verdienen</td>
+<td>Sie</td>
+<td>dabei?</td>
+<td><strong>-</strong></td>
+<td><strong><span class="red">Leider viel zu wenig</span></strong>.</td>
+</tr>
+<tr>
+<th>Menge</th>
+<td><strong><span class="red">Wie viele Geschwister</span></strong></td>
+<td>hat</td>
+<td>Ruth?</td>
+<td>&nbsp;</td>
+<td><strong>-</strong></td>
+<td><strong><span class="red">Ich glaube sieben</span></strong>.</td>
+</tr>
+<tr>
+<th>Maße</th>
+<td><strong><span class="red">Wie weit</span></strong></td>
+<td>ist</td>
+<td>es</td>
+<td>bis Ulm?</td>
+<td><strong>-</strong></td>
+<td><strong><span class="red">Ungefähr 25 km</span></strong>.</td>
+</tr>
+<tr>
+<th>Maße</th>
+<td><strong><span class="red">Wie tief</span></strong></td>
+<td>mag</td>
+<td>das Loch</td>
+<td>sein?</td>
+<td><strong>-</strong></td>
+<td><strong><span class="red">Vielleicht 50 m</span></strong>.</td>
+</tr>
+<tr>
+<th>Maße</th>
+<td><strong><span class="red">Wie alt</span></strong></td>
+<td>ist</td>
+<td>das Baby</td>
+<td>jetzt?</td>
+<td><strong>-</strong></td>
+<td><strong><span class="red">6 Wochen</span></strong>.</td>
+</tr>
+<tr>
+<th>Gewichte</th>
+<td><strong><span class="red">Wie schwer</span></strong></td>
+<td>ist</td>
+<td>der Koffer?</td>
+<td>&nbsp;</td>
+<td><strong>-</strong></td>
+<td><strong><span class="red">18 kg</span></strong>.</td>
+</tr>
+<tr>
+<th><strong><a title="Prädikativ" href="lernen.php?menu_id=11#adjektive_hinter_nomen">Prädikativ</a></strong></th>
+<td><strong><span class="red">Wie</span></strong></td>
+<td>ist</td>
+<td>das Bett?</td>
+<td>&nbsp;</td>
+<td><strong>-</strong></td>
+<td>Es <strong><span class="red">ist bequem</span></strong>.</td>
+</tr>
+<tr>
+<th><strong><a title="Adverbial" href="lernen.php?menu_id=11#adjektive_hinter_nomen">Adverbial</a></strong></th>
+<td><strong><span class="red">Wie</span></strong></td>
+<td>singt</td>
+<td>er?</td>
+<td>&nbsp;</td>
+<td><strong>-</strong></td>
+<td>Er <strong><span class="red">singt schlecht</span></strong>.</td>
+</tr>
+</tbody>
+</table>
+''';
+String htmlContent2_15 = '''
+<br> Siehe auch: <strong><a title="Indirekte Fragesätze" href="lernen.php?menu_id=50">Indirekte Fragesätze</a></strong> </li>
+''';

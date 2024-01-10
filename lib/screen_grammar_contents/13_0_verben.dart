@@ -3,260 +3,71 @@ import 'package:flutter/material.dart';
 import '../app/app_localizations.dart';
 import '../html_table_to_dart_table.dart';
 import '../html_to_richtext.dart';
+import '../page_content.dart';
 
 class Verben_13 extends StatelessWidget {
   const Verben_13({super.key});
 
   @override
   Widget build(BuildContext context) {
-    final localizations = AppLocalizations.of(context);
-    final textTheme = Theme.of(context).textTheme;
     return Expanded(
       child: Scaffold(
         body: Padding(
-          padding: const EdgeInsets.all(8.0),
-          child: ListView(
-            children: <Widget>[
-              Card(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: <Widget>[
-                    Padding(
-                      padding: const EdgeInsets.only(top: 16.0, left: 16.0),
-                      child: Text('13. Verben', style: textTheme.titleMedium),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.only(top: 10.0, left: 16.0),
-                      child: Text(
-                          'Einführung / Was man über Verben wissen sollte.',
-                          style: textTheme.titleSmall),
-                    ),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                            top: 10.0, left: 16.0, bottom: 10),
-                        child: HtmlToRichText(
-                          htmlString: htmlContent1_1,
-                          textTheme: textTheme,
-                        )),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                            top: 10.0, left: 16.0, bottom: 10),
-                        child: HtmlTableToDartTable(
-                          htmlTable: htmlTable1_1,
-                          textTheme: textTheme,
-                          columnWidths: const {
-                            0: FractionColumnWidth(.34),
-                            1: FractionColumnWidth(.33),
-                            2: FractionColumnWidth(.33),
-                          },
-                        )),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                            top: 10.0, left: 16.0, bottom: 10),
-                        child: HtmlToRichText(
-                          htmlString: htmlContent1_2,
-                          textTheme: textTheme,
-                        )),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                            top: 10.0, left: 16.0, bottom: 10),
-                        child: HtmlTableToDartTable(
-                          htmlTable: htmlTable1_2,
-                          textTheme: textTheme,
-                          columnWidths: const {
-                            0: FractionColumnWidth(.34),
-                            1: FractionColumnWidth(.33),
-                            2: FractionColumnWidth(.33),
-                          },
-                        )),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                            top: 10.0, left: 16.0, bottom: 10),
-                        child: HtmlToRichText(
-                          htmlString: htmlContent1_3,
-                          textTheme: textTheme,
-                        )),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                            top: 10.0, left: 16.0, bottom: 10),
-                        child: HtmlTableToDartTable(
-                          htmlTable: htmlTable1_3,
-                          textTheme: textTheme,
-                          columnWidths: const {
-                            0: FractionColumnWidth(.25),
-                            1: FractionColumnWidth(.25),
-                            2: FractionColumnWidth(.25),
-                            3: FractionColumnWidth(.25),
-                          },
-                        )),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                            top: 10.0, left: 16.0, bottom: 10),
-                        child: HtmlToRichText(
-                          htmlString: htmlContent1_4,
-                          textTheme: textTheme,
-                        )),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                            top: 10.0, left: 16.0, bottom: 10),
-                        child: HtmlTableToDartTable(
-                          htmlTable: htmlTable1_4,
-                          textTheme: textTheme,
-                          columnWidths: const {
-                            0: FractionColumnWidth(.20),
-                            1: FractionColumnWidth(.20),
-                            2: FractionColumnWidth(.15),
-                            3: FractionColumnWidth(.30),
-                            4: FractionColumnWidth(.15),
-                          },
-                        )),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                            top: 10.0, left: 16.0, bottom: 10),
-                        child: HtmlToRichText(
-                          htmlString: htmlContent1_5,
-                          textTheme: textTheme,
-                        )),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                            top: 10.0, left: 16.0, bottom: 10),
-                        child: HtmlTableToDartTable(
-                          htmlTable: htmlTable1_5,
-                          textTheme: textTheme,
-                          columnWidths: const {
-                            0: FractionColumnWidth(.20),
-                            1: FractionColumnWidth(.20),
-                            2: FractionColumnWidth(.15),
-                            3: FractionColumnWidth(.30),
-                            4: FractionColumnWidth(.15),
-                          },
-                        )),
-                  ],
-                ),
-              ),
-              Card(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: <Widget>[
-                    Padding(
-                      padding: const EdgeInsets.only(
-                          top: 10.0, left: 16.0, bottom: 10),
-                      child: Text('Wie man Verben konjugiert',
-                          style: textTheme.titleSmall),
-                    ),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                            top: 10.0, left: 16.0, bottom: 10),
-                        child: HtmlToRichText(
-                          htmlString: htmlContent2_1,
-                          textTheme: textTheme,
-                        )),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                            top: 10.0, left: 16.0, bottom: 10),
-                        child: HtmlTableToDartTable(
-                          htmlTable: htmlTable2,
-                          textTheme: textTheme,
-                          columnWidths: const {
-                            0: FractionColumnWidth(.25),
-                            1: FractionColumnWidth(.25),
-                            2: FractionColumnWidth(.25),
-                            3: FractionColumnWidth(.25),
-                          },
-                        )),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                            top: 10.0, left: 16.0, bottom: 10),
-                        child: HtmlToRichText(
-                          htmlString: htmlContent2_2,
-                          textTheme: textTheme,
-                        )),
-                  ],
-                ),
-              ),
-              Card(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: <Widget>[
-                    Padding(
-                      padding: const EdgeInsets.only(
-                          top: 10.0, left: 16.0, bottom: 10),
-                      child: Text('Temporale Adverbien',
-                          style: textTheme.titleSmall),
-                    ),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                            top: 10.0, left: 16.0, bottom: 10),
-                        child: HtmlToRichText(
-                          htmlString: htmlContent3_1,
-                          textTheme: textTheme,
-                        )),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                            top: 10.0, left: 16.0, bottom: 10),
-                        child: HtmlTableToDartTable(
-                          htmlTable: htmlTable3_1,
-                          textTheme: textTheme,
-                          columnWidths: const {
-                            0: FractionColumnWidth(.32),
-                            1: FractionColumnWidth(.11),
-                            2: FractionColumnWidth(.10),
-                            3: FractionColumnWidth(.27),
-                            4: FractionColumnWidth(.20),
-                          },
-                        )),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                            top: 10.0, left: 16.0, bottom: 10),
-                        child: HtmlToRichText(
-                          htmlString: htmlContent3_2,
-                          textTheme: textTheme,
-                        )),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                            top: 10.0, left: 16.0, bottom: 10),
-                        child: HtmlTableToDartTable(
-                          htmlTable: htmlTable3_2,
-                          textTheme: textTheme,
-                          columnWidths: const {
-                            0: FractionColumnWidth(.30),
-                            1: FractionColumnWidth(.25),
-                            2: FractionColumnWidth(.15),
-                            3: FractionColumnWidth(.30),
-                          },
-                        )),
-                  ],
-                ),
-              ),
-              Card(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: <Widget>[
-                    Padding(
-                      padding: const EdgeInsets.only(
-                        top: 10.0,
-                        left: 16.0,
-                      ),
-                      child: Text('Übersicht', style: textTheme.titleSmall),
-                    ),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                            top: 10.0, left: 16.0, bottom: 10),
-                        child: HtmlToRichText(
-                          htmlString: htmlContent4,
-                          textTheme: textTheme,
-                        )),
-                  ],
-                ),
-              ),
-            ],
-          ),
-        ),
+            padding: const EdgeInsets.all(8.0),
+            child: MyPageContentView(contents: contents)),
       ),
     );
   }
 }
 
+List<CardContent> contents = [
+  CardContent(
+    elements: [
+      CardElement(type: ElementType.pageTitle, value: title),
+    ],
+  ),
+  CardContent(
+    elements: [
+      CardElement(type: ElementType.cardTitle, value: title1),
+      CardElement(type: ElementType.htmlContent, value: htmlContent1_1),
+      CardElement(type: ElementType.htmlTable, value: htmlTable1_1),
+      CardElement(type: ElementType.htmlContent, value: htmlContent1_2),
+      CardElement(type: ElementType.htmlTable, value: htmlTable1_2),
+      CardElement(type: ElementType.htmlContent, value: htmlContent1_3),
+      CardElement(type: ElementType.htmlTable, value: htmlTable1_3),
+      CardElement(type: ElementType.htmlContent, value: htmlContent1_4),
+      CardElement(type: ElementType.htmlTable, value: htmlTable1_4),
+      CardElement(type: ElementType.htmlContent, value: htmlContent1_5),
+      CardElement(type: ElementType.htmlTable, value: htmlTable1_5),
+    ],
+  ),
+  CardContent(
+    elements: [
+      CardElement(type: ElementType.cardTitle, value: title2),
+      CardElement(type: ElementType.htmlContent, value: htmlContent2_1),
+      CardElement(type: ElementType.htmlTable, value: htmlTable2),
+      CardElement(type: ElementType.htmlContent, value: htmlContent2_2),
+    ],
+  ),
+  CardContent(
+    elements: [
+      CardElement(type: ElementType.cardTitle, value: title3),
+      CardElement(type: ElementType.htmlContent, value: htmlContent3_1),
+      CardElement(type: ElementType.htmlTable, value: htmlTable3_1),
+      CardElement(type: ElementType.htmlContent, value: htmlContent3_2),
+      CardElement(type: ElementType.htmlTable, value: htmlTable3_2),
+      CardElement(type: ElementType.htmlContent, value: htmlContent3_3),
+    ],
+  ),
+  CardContent(
+    elements: [
+      CardElement(type: ElementType.cardTitle, value: title4),
+      CardElement(type: ElementType.htmlContent, value: htmlContent4),
+    ],
+  ),
+];
+String title = '13.Verben';
+String title1 = 'Einführung / Was man über Verben wissen sollte.';
 String htmlContent1_1 = '''
 <p>Verben werden auch als "<strong><span class="red">Tuwörter</span></strong>", "<strong><span class="red">Zeitwörter</span></strong>" oder <strong><span class="red">Tätigkeitswörter</span></strong> bezeichnet. Wörterbücher geben Verben immer mit dem <strong><span class="red">Infinitiv</span></strong> an (<strong><span class="red">Infinitiv = Grundform = nicht konjugiert</span></strong>). Verben bestehen aus einem <span style="text-decoration:underline">Verbstamm</span> und der <strong><span class="red">Endung</span></strong> "-<strong><span class="red"> e n</span></strong>" (sehr selten nur mit "-<strong><span class="red"> n</span></strong>").</p>
 ''';
@@ -451,6 +262,7 @@ String htmlTable1_5 = '''
 </table>
 ''';
 
+String title2 = 'Wie man Verben konjugiert';
 String htmlContent2_1 = '''
 <p>Das folgende Beispiel zeigt die <strong><span class="red">Konjugation</span></strong> des regelmäßigen Verbs "lernen":</p>
 ''';
@@ -531,6 +343,7 @@ String htmlContent2_2 = '''
 <p><br> Siehe auch: <strong><a title="Wie man Verben konjugiert." href="konjugation-der-verben.html#1.person" target="_blank">Konjugation</a></strong></p>  
 ''';
 
+String title3 = 'Was ist ein Prädikat?';
 String htmlContent3_1 = '''
 <p>Das Prädikat ist der <span style="text-decoration:underline">wichtigste Teil</span> im Satz. Es wird durch Verben ausgedrückt.</p>
 <h4>Kein Verb, kein Satz!</h4>
@@ -641,6 +454,7 @@ String htmlContent3_3 = '''
 <p><br> Siehe auch: <strong><a title="Weitere Informationen zur Konjugation" href="konjugation-der-verben.html" target="_blank">Konjugation</a>, <a title="Weitere Informationen zu Subjekt, Prädikat, Objekt und Angaben" href="satzlehre.html" target="_blank">Satzlehre</a></strong> und <strong><a title="Mehr Informationen zu Verben und seinen Ergänzungen: Akkusativ-, Dativ-, Präpositional-Ergänzung" href="verbergaenzungen.html" target="_blank">Ergänzungen</a></strong></p>
 ''';
 
+String title4 = 'Linkübersicht Verben';
 String htmlContent4 = '''
  <h3><a name="verben"></a> <strong><a title="Einführung Verben / Was man über Verben wissen sollte." href="verben.html" target="_blank">Verben</a></strong></h3>
 <p>- <a title="Wie man Verben konjugatiiert." href="konjugation-der-verben.html" target="_blank">Konjugation</a></p>

@@ -3,112 +3,53 @@ import 'package:flutter/material.dart';
 import '../app/app_localizations.dart';
 import '../html_table_to_dart_table.dart';
 import '../html_to_richtext.dart';
+import '../page_content.dart';
 
 class Verb_Sein_13_2 extends StatelessWidget {
   const Verb_Sein_13_2({super.key});
 
   @override
   Widget build(BuildContext context) {
-    final localizations = AppLocalizations.of(context);
-    final textTheme = Theme.of(context).textTheme;
     return Expanded(
       child: Scaffold(
         body: Padding(
-          padding: const EdgeInsets.all(8.0),
-          child: ListView(
-            children: <Widget>[
-              Card(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: <Widget>[
-                    Padding(
-                      padding: const EdgeInsets.only(top: 16.0, left: 16.0),
-                      child:
-                          Text('13.2. Verb sein', style: textTheme.titleMedium),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.only(top: 10.0, left: 16.0),
-                      child: Text('Einführung und Konjugation des Verbs sein',
-                          style: textTheme.titleSmall),
-                    ),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                            top: 10.0, left: 16.0,),
-                        child: HtmlToRichText(
-                          htmlString: htmlContent1_1,
-                          textTheme: textTheme,
-                        )),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                            top: 10.0, left: 16.0,),
-                        child: HtmlTableToDartTable(
-                          htmlTable: htmlTable1,
-                          textTheme: textTheme,
-                          columnWidths: const {
-                            0: FractionColumnWidth(.25),
-                            1: FractionColumnWidth(.25),
-                            2: FractionColumnWidth(.25),
-                            3: FractionColumnWidth(.25),
-                          },
-                        )),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                            top: 10.0, left: 16.0,),
-                        child: HtmlToRichText(
-                          htmlString: htmlContent1_2,
-                          textTheme: textTheme,
-                        )),
-                  ],
-                ),
-              ),
-              Card(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: <Widget>[
-                    Padding(
-                      padding: const EdgeInsets.only(
-                          top: 10.0, left: 16.0,),
-                      child: Text('Funktionen als Vollverb',
-                          style: textTheme.titleSmall),
-                    ),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                            top: 10.0, left: 16.0,),
-                        child: HtmlToRichText(
-                          htmlString: htmlContent2,
-                          textTheme: textTheme,
-                        )),
-                  ],
-                ),
-              ),
-              Card(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: <Widget>[
-                    Padding(
-                      padding: const EdgeInsets.only(
-                          top: 10.0, left: 16.0,),
-                      child: Text('Verbverbindungen',
-                          style: textTheme.titleSmall),
-                    ),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                            top: 10.0, left: 16.0,),
-                        child: HtmlToRichText(
-                          htmlString: htmlContent3,
-                          textTheme: textTheme,
-                        )),
-                  ],
-                ),
-              ),
-            ],
-          ),
-        ),
+            padding: const EdgeInsets.all(8.0),
+            child: MyPageContentView(contents: contents)),
       ),
     );
   }
 }
 
+List<CardContent> contents = [
+  CardContent(
+    elements: [
+      CardElement(type: ElementType.pageTitle, value: title),
+    ],
+  ),
+  CardContent(
+    elements: [
+      CardElement(type: ElementType.cardTitle, value: title1),
+      CardElement(type: ElementType.htmlContent, value: htmlContent1_1),
+      CardElement(type: ElementType.htmlTable, value: htmlTable1),
+      CardElement(type: ElementType.htmlContent, value: htmlContent1_2),
+    ],
+  ),
+  CardContent(
+    elements: [
+      CardElement(type: ElementType.cardTitle, value: title2),
+      CardElement(type: ElementType.htmlContent, value: htmlContent2),
+    ],
+  ),
+  CardContent(
+    elements: [
+      CardElement(type: ElementType.cardTitle, value: title3),
+      CardElement(type: ElementType.htmlContent, value: htmlContent3),
+    ],
+  ),
+];
+
+String title = '13.2. Verb sein';
+String title1 = 'Einführung und Konjugation des Verbs sein';
 String htmlContent1_1 = '''
 <p>Das Verb " <strong><span class="red">sein</span></strong>" gehört zu der Gruppe der unregelmäßigen Verben.</p>
 <h3 align="center">Konjugation:</h3>
@@ -165,6 +106,7 @@ String htmlContent1_2 = '''
 <p>Das unregelmäßige Verb " sein " ist grammatikalisch gesehen sehr interessant, hat es doch als <strong><span class="red">Vollverb</span></strong> mehrere Funktionsweisen. Darüber hinaus wird es auch als <strong><a title="Die Bildung des Pefekts mit dem Hilfsverb sein" href="perfekt.html#hilfsverbsein" target="_blank">Hilfsverb</a></strong> im Perfekt eingesetzt.</p>
 ''';
 
+String title2 = 'Funktionen als Vollverb';
 String htmlContent2 = '''
 <h3>Präsentation</h3>
 <p style="padding-left: 30px;">- Wer sind Sie? - Ich bin Herr Niemand.<br> 
@@ -231,7 +173,7 @@ String htmlContent2 = '''
 - Ist das dein Porsche? - Natürlich ist das meiner.</p>  
 ''';
 
-
+String title3 = 'Verbverbindungen';
 String htmlContent3 = '''
 <p>Des Weitern gibt es noch <strong><a title="Zusammengesetzte Verben sind eine Verbindung zwischen einer Wortart und einem Verb" href="trennbare-verben.html#zusammengesetze Verben" target="_blank">zusammengesetzte Verben</a></strong>. Bei diesen Verbverbindungen bilden zwei Wortarten gemeinsam den Infinitiv, werden aber getrennt geschrieben.</p>
 <p style="padding-left: 30px;">- <strong><span class="red">auf sein</span></strong>: Du siehst müde aus. Wie lange <strong><span class="red">bist</span></strong> du schon <strong><span class="red">auf</span></strong>?<br> 

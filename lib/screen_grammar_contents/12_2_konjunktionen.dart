@@ -3,185 +3,62 @@ import 'package:flutter/material.dart';
 import '../app/app_localizations.dart';
 import '../html_table_to_dart_table.dart';
 import '../html_to_richtext.dart';
+import '../page_content.dart';
 
 class Konjunktionen_12_2 extends StatelessWidget {
   const Konjunktionen_12_2({super.key});
 
   @override
   Widget build(BuildContext context) {
-    final localizations = AppLocalizations.of(context);
-    final textTheme = Theme.of(context).textTheme;
     return Expanded(
       child: Scaffold(
         body: Padding(
-          padding: const EdgeInsets.all(8.0),
-          child: ListView(
-            children: <Widget>[
-              Card(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: <Widget>[
-                    Padding(
-                      padding: const EdgeInsets.only(top: 16.0, left: 16.0),
-                      child:
-                          Text('12.2. Konjunktionen', style: textTheme.titleMedium),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.only(top: 10.0, left: 16.0),
-                      child: Text(
-                          'Was man über Konjunktionen wissen sollte.',
-                          style: textTheme.titleSmall),
-                    ),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                            top: 10.0, left: 16.0, bottom: 10),
-                        child: HtmlToRichText(
-                          htmlString: htmlContent1,
-                          textTheme: textTheme,
-                        )),
-                  ],
-                ),
-              ),
-              Card(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: <Widget>[
-                    Padding(
-                      padding: const EdgeInsets.only(
-                          top: 10.0, left: 16.0, bottom: 10),
-                      child: Text('Nebenordnende Konjunktionen (Hauptsatz + Hauptsatz)', style: textTheme.titleSmall),
-                    ),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                            top: 10.0, left: 16.0, bottom: 10),
-                        child: HtmlToRichText(
-                          htmlString: htmlContent2_1,
-                          textTheme: textTheme,
-                        )),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                            top: 10.0, left: 16.0, bottom: 10),
-                        child: HtmlTableToDartTable(
-                          htmlTable: htmlTable2_1,
-                          textTheme: textTheme,
-                          columnWidths: const {
-                            0: FractionColumnWidth(.33),
-                            1: FractionColumnWidth(.15),
-                            2: FractionColumnWidth(.10),
-                            3: FractionColumnWidth(.15),
-                            4: FractionColumnWidth(.27),
-                          },
-                        )),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                            top: 10.0, left: 16.0, bottom: 10),
-                        child: HtmlToRichText(
-                          htmlString: htmlContent2_2,
-                          textTheme: textTheme,
-                        )),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                            top: 10.0, left: 16.0, bottom: 10),
-                        child: HtmlTableToDartTable(
-                          htmlTable: htmlTable2_2,
-                          textTheme: textTheme,
-                          columnWidths: const {
-                            0: FractionColumnWidth(.20),
-                            1: FractionColumnWidth(.28),
-                            2: FractionColumnWidth(.12),
-                            3: FractionColumnWidth(.40),
-                          },
-                        )),
-
-                  ],
-                ),
-              ),
-              Card(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: <Widget>[
-                    Padding(
-                      padding: const EdgeInsets.only(
-                          top: 10.0, left: 16.0, bottom: 10),
-                      child: Text('Unterordnende Konjunktionen (Hauptsatz + Nebensatz)', style: textTheme.titleSmall),
-                    ),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                            top: 10.0, left: 16.0, bottom: 10),
-                        child: HtmlToRichText(
-                          htmlString: htmlContent3_1,
-                          textTheme: textTheme,
-                        )),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                            top: 10.0, left: 16.0, bottom: 10),
-                        child: HtmlTableToDartTable(
-                          htmlTable: htmlTable3,
-                          textTheme: textTheme,
-                          columnWidths: const {
-                            0: FractionColumnWidth(.26),
-                            1: FractionColumnWidth(.17),
-                            2: FractionColumnWidth(.15),
-                            3: FractionColumnWidth(.22),
-                            4: FractionColumnWidth(.20),
-                          },
-                        )),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                            top: 10.0, left: 16.0, bottom: 10),
-                        child: HtmlToRichText(
-                          htmlString: htmlContent3_2,
-                          textTheme: textTheme,
-                        )),
-                 ],
-                ),
-              ),
-              Card(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: <Widget>[
-                    Padding(
-                      padding: const EdgeInsets.only(
-                        top: 10.0,
-                        left: 16.0,
-                      ),
-                      child: Text('Doppelkonjunktionen',
-                          style: textTheme.titleSmall),
-                    ),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                          top: 10.0,
-                          left: 16.0,
-                        ),
-                        child: HtmlToRichText(
-                          htmlString: htmlContent4,
-                          textTheme: textTheme,
-                        )),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                          top: 10.0,
-                          left: 16.0,
-                        ),
-                        child: HtmlTableToDartTable(
-                          htmlTable: htmlTable4,
-                          textTheme: textTheme,
-                          columnWidths: const {
-                            0: FractionColumnWidth(.27),
-                            1: FractionColumnWidth(.31),
-                            2: FractionColumnWidth(.42),
-                          },
-                        )),
-                  ],
-                ),
-              ),
-            ],
-          ),
-        ),
+            padding: const EdgeInsets.all(8.0),
+            child: MyPageContentView(contents: contents)),
       ),
     );
   }
 }
 
+List<CardContent> contents = [
+  CardContent(
+    elements: [
+      CardElement(type: ElementType.pageTitle, value: title),
+    ],
+  ),
+  CardContent(
+    elements: [
+      CardElement(type: ElementType.cardTitle, value: title1),
+      CardElement(type: ElementType.htmlContent, value: htmlContent1),
+    ],
+  ),
+  CardContent(
+    elements: [
+      CardElement(type: ElementType.cardTitle, value: title2),
+      CardElement(type: ElementType.htmlContent, value: htmlContent2_1),
+      CardElement(type: ElementType.htmlTable, value: htmlTable2_1),
+      CardElement(type: ElementType.htmlContent, value: htmlContent2_2),
+      CardElement(type: ElementType.htmlTable, value: htmlTable2_2),
+    ],
+  ),
+  CardContent(
+    elements: [
+      CardElement(type: ElementType.cardTitle, value: title3),
+      CardElement(type: ElementType.htmlContent, value: htmlContent3_1),
+      CardElement(type: ElementType.htmlTable, value: htmlTable3),
+      CardElement(type: ElementType.htmlContent, value: htmlContent3_2),
+    ],
+  ),
+  CardContent(
+    elements: [
+      CardElement(type: ElementType.cardTitle, value: title4),
+      CardElement(type: ElementType.htmlContent, value: htmlContent4),
+      CardElement(type: ElementType.htmlTable, value: htmlTable4),
+    ],
+  ),
+];
+String title = '12.2. Konjunktionen';
+String title1 = 'Was man über Konjunktionen wissen sollte.';
 String htmlContent1 = '''
 <p>Konjunktionen, auch Bindewörter genannt, haben die Aufgabe, Wörter, Wortgruppen, Satzglieder oder gleich ganze Sätze miteinander zu verbinden. Am häufigsten treten Konjunktionen bei Satzverbindungen auf. Je nach Satzverbindung (HS + HS, HS + NS) verhalten sie sich unterschiedlich. Daher werden zwei Arten von Konjunktionen unterschieden:</p>
 <li><strong><a title="Nebenordnende Konjunktionen" href="#nebenordnende_konj">Nebenordnende Konjunktionen (Position 0)</a></strong></li>
@@ -190,6 +67,7 @@ String htmlContent1 = '''
 <li><strong>Mehrteilige Konjunktionen</strong></li> 
 ''';
 
+String title2 = 'Nebenordnende Konjunktionen (Hauptsatz + Hauptsatz)';
 String htmlContent2_1 = '''
 <p><strong><span class="red">Nebenordnende Konjunktionen</span></strong> haben die Aufgabe, gleichrangige Sätze (HS + HS, NS + NS), Satzglieder, Wortgruppen oder einzelne Wörter zu verbinden. Verbinden sie Hauptsätze, so steht die <strong><span class="red">Konjunktion</span></strong> immer auf <strong><span class="red">Position 0</span></strong>:</p>
 ''';
@@ -304,6 +182,7 @@ String htmlTable2_2 = '''
 </table>  
 ''';
 
+String title3 = 'Unterordnende Konjunktionen (Hauptsatz + Nebensatz)';
 String htmlContent3_1 = '''
 <p><strong><span class="red">Unterordnende Konjunktionen</span></strong> haben die Aufgabe, einen <strong><a title="Hauptsatz und Nebensatz" href="lernen.php?menu_id=88#nebensaetze">Hauptsatz</a></strong> mit einem <strong><a title="Hauptsatz und Nebensatz" href="lernen.php?menu_id=88#nebensaetze">Nebensatz</a></strong> zu verbinden. In Nebensätzen werden weitere Informationen zu bestimmten Wörtern, Wortgruppen oder <strong><a title="Satzglieder" href="lernen.php?menu_id=19#satzglieder">Satzgliedern</a></strong> im Hauptsatz gegeben. Ein Nebensatz wird stets mit einer unterordnenden Konjunktion eingeleitet (dass, weil, ...). In Nebensätzen wird das <strong><a title="Konjugation" href="lernen.php?menu_id=6#konjugation">konjugierte Verb</a></strong> ans Satzende gestellt. HS und NS werden mit einem <strong><span class="red">Komma</span></strong> voneinander getrennt. <br> Es gibt sehr viele Möglichkeiten, <strong><a title="Nebensätze" href="lernen.php?menu_id=91">Nebensätze</a></strong> zu bilden. Dementsprechend groß ist die Zahl der möglichen unterordnenden Konjunktionen. Einige ausgewählte Beispiele dazu:</p>
 ''';
@@ -361,6 +240,7 @@ String htmlContent3_2 = '''
 <p><br> Siehe auch: <strong><a title="Nebensätze" href="lernen.php?menu_id=91">Nebensätze</a></strong></p>  
 ''';
 
+String title4 = 'Doppelkonjunktionen';
 String htmlContent4 = '''
 <p><strong><span class="red">Doppelkonjunktionen</span></strong>, auch <strong><span class="red">mehrteilige Konjunktionen</span></strong> genannt, gehören zu den <strong><a title="Nebenordnende Konjunktionen" href="#nebenordnende_konj">nebenordnenden Konjunktionen</a></strong>. Sie bestehen aus mindestens zwei Teilen. Man kann sie folgendermaßen einteilen:</p>
 ''';

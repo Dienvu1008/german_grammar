@@ -63,17 +63,12 @@ List<CardContent> contents = [
   ),
 ];
 
-
 String title = '14.1. Nominativ';
 String title1 = 'Was man über die Nominativ-Ergänzung wissen sollte.';
 String htmlContent1_1 = '''
- <div>
 <p>Das <strong><a title="In Aussagesätzen steht das Prädikat auf Position 2" href="satzlehre.html#praedikat" target="_blank">Prädikat</a></strong> ist der <span style="text-decoration:underline">wichtigste Teil</span> im Satz und wird durch <strong><span class="red">Verben</span></strong> ausgedrückt. Das Verb kann allerdings <span style="text-decoration:underline">nicht alleine</span> stehen (Es gibt nur wenige Ausnahmen!). Es braucht immer eine <strong><span class="red">Nominativ-Ergänzung</span></strong>, kurz <strong><span class="red">Nominativ</span></strong>. Im Nominativ steht immer das <strong><span class="red">Subjekt</span></strong>. Das Subjekt kann eine <strong><span class="red">Person</span></strong> oder eine <strong><span class="blue">Sache</span></strong> sein und kann im Singular oder Plural stehen.</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-</div>
-<h3><strong>Ist das <span style="text-decoration:underline">Subjekt</span> eine <strong><span class="red">Person</span></strong>, so lautet die <span style="text-decoration:underline">W-Frage</span> " <strong><span class="red">Wer</span></strong> " ?</strong> <br><br></h3>
 
+<h3><strong>Ist das <span style="text-decoration:underline">Subjekt</span> eine <strong><span class="red">Person</span></strong>, so lautet die <span style="text-decoration:underline">W-Frage</span> " <strong><span class="red">Wer</span></strong> " ?</strong> <br><br></h3>
 ''';
 String htmlTable1_2 = '''
 <table><colgroup> <col style="width: 24%;"> <col style="width: 25%;"> <col style="width: 2%;"> <col style="width: 24%;"> <col style="width: 25%;"> </colgroup>
@@ -119,13 +114,11 @@ String htmlTable1_2 = '''
 </table>
 ''';
 String htmlContent1_3 = '''
-<div>
 <p style="padding-left: 30px;">- Die W-Frage " <strong><span class="red">Wer</span></strong>? " fragt <span style="text-decoration:underline">nach der Person</span>, die etwas macht.<br> - Die Fragestellung geschieht immer in der <strong><span class="red">3. Person Singular</span></strong>.<br> - ( <span style="text-decoration:underline"><strong>nicht</strong>: Wer weine / wer weinst / wer weinen !!!</span> )<br> - In der Antwort wird <span style="text-decoration:underline">die Person</span> wiedergegeben, die etwas macht.<br> - Die Person kann im <span style="text-decoration:underline">Singular</span> oder <span style="text-decoration:underline">Plural</span> stehen.<br> - <strong><span class="blue">Subjekt und Verb bilden eine Einheit</span></strong> und sind voneinander abhängig.</p>
 <p style="padding-left: 30px;">&nbsp;</p>
 <p style="padding-left: 30px;">&nbsp;</p>
-</div>
-<h3><strong>Ist das <span style="text-decoration:underline">Subjekt</span> eine <strong><span class="blue">Sache</span></strong>, so lautet die <span style="text-decoration:underline">W-Frage</span> " <strong><span class="blue">Was</span></strong> " ?</strong> <br><br></h3>
 
+<h3><strong>Ist das <span style="text-decoration:underline">Subjekt</span> eine <strong><span class="blue">Sache</span></strong>, so lautet die <span style="text-decoration:underline">W-Frage</span> " <strong><span class="blue">Was</span></strong> " ?</strong> <br><br></h3>
 ''';
 String htmlTable1_4 = '''
 <table><colgroup> <col style="width: 16%;"> <col style="width: 16%;"> <col style="width: 17%;"> <col style="width: 2%;"> <col style="width: 17%;"> <col style="width: 16%;"> <col style="width: 16%;"> </colgroup>
@@ -181,11 +174,7 @@ String htmlTable1_4 = '''
 </table>
 ''';
 String htmlContent1_5 = '''
-<div>
 <p style="padding-left: 30px;">- Die W-Frage " <strong><span class="blue">Was</span></strong> " fragt <span style="text-decoration:underline">nach der Sache</span>, die gemeint ist.<br> - Die Fragestellung geschieht immer in der <strong><span class="red">3. Person Singular</span></strong>.<br> - In der Antwort wird <span style="text-decoration:underline">die Sache</span> wiedergegeben, die gemeint ist.<br> - Die Sache kann im <span style="text-decoration:underline">Singular</span> oder <span style="text-decoration:underline">Plural</span> stehen.<br> - <strong><span class="blue">Subjekt ( = Sache ) und Verb bilden eine Einheit</span></strong> und sind voneinander abhängig.</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-</div>
 ''';
 String htmlTable1_6 = '''
 <table class="eins">
@@ -204,13 +193,9 @@ String htmlTable1_6 = '''
 </table>
 ''';
 
-
 String title2 = 'Sätze als Subjekt';
 String htmlContent2_1 = '''
- <div>
 <p>Gelegentlich kommt es vor, dass ganze <strong><span class="red">Satzinhalte</span></strong> an der Subjektstelle stehen:</p>
-</div>
-<p>&nbsp;</p>
 ''';
 String htmlTable2_2 = '''
 <table><colgroup> <col style="width: 60%;"> <col style="width: 15%;"> <col style="width: 25%;"> </colgroup>
@@ -246,13 +231,10 @@ String htmlTable2_2 = '''
 </table>
 ''';
 
-
 String title3 = 'Scheinsubjekt';
 String htmlContent3_1 = '''
-<div>
 <p>Es gibt <strong><span class="red">unpersönliche Verben</span></strong>, die <span style="text-decoration:underline">kein Subjekt brauchen</span>. Bei diesen Verben wird ein so genanntes <strong><span class="red">Scheinsubjekt</span></strong> benutzt. Als "Scheinsubjekt" wird das <strong><a title="Das Prononomen es als Platzhalter bei unpersönlichen Verben" href="pronomen-es.html#unpersoenliche_verben" target="_blank">unpersönliche Pronomen<span class="red"> es</span></a></strong> verwendet, andere Personen sind nicht möglich. Diese unpersönlichen Verben geben Informationen über <strong><span class="red">das Wetter</span></strong> oder <strong><span class="red">die Tageszeit</span></strong>:</p>
-<p>&nbsp;</p>
-</div>
+
 <p style="padding-left: 60px;">- Es müsste schon gegen Mittag sein.</p>
 <p style="padding-left: 60px;">- Es ist 10:00 Uhr.</p>
 <p style="padding-left: 60px;">- Es schneit.</p>
@@ -262,16 +244,11 @@ String htmlContent3_1 = '''
 <p style="padding-left: 60px;">- Es ist kalt.</p>
 <p style="padding-left: 60px;">- Es war heiß.</p>
 <p style="padding-left: 60px;">- Es ist ...</p>  
-  
 ''';
-
 
 String title4 = 'Subjekt nur in der 3. Person';
 String htmlContent4_1 = '''
-<div>
 <p>Bei folgenden Verben ist ein <strong><span class="red">Subjekt</span></strong> <span style="text-decoration:underline">nur in der 3. Person</span> möglich:</p>
-</div>
-<p>&nbsp;</p>
 ''';
 String htmlTable4_2 = '''
 <table><colgroup> <col style="width: 20%;"> <col style="width: 80%;"> </colgroup>
@@ -306,14 +283,9 @@ String htmlTable4_2 = '''
 </table>
 ''';
 
-
-
 String title5 = '2 Nominativergänzungen';
 String htmlContent5_1 = '''
- <div>
 <p>Folgende Verben haben <strong><span class="red">2 Nominativ-Ergänzungen</span></strong>:</p>
-<p>&nbsp;</p>
-</div>
 ''';
 String htmlTable5_2 = '''
 <table><colgroup> <col style="width: 40%;"> <col style="width: 60%;"> </colgroup>
@@ -343,4 +315,3 @@ String htmlTable5_2 = '''
 </tbody>
 </table>  
 ''';
-

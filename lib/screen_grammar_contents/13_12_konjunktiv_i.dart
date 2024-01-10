@@ -5,7 +5,7 @@ import '../page_content.dart';
 class Konjunktiv_I_13_12 extends StatelessWidget {
   const Konjunktiv_I_13_12({super.key});
 
-   @override
+  @override
   Widget build(BuildContext context) {
     return Expanded(
       child: Scaffold(
@@ -107,70 +107,54 @@ List<CardContent> contents = [
   ),
 ];
 
-
 String title = '13.12. Konjunktiv I';
 String title1 = 'Wann wird der Konjunktiv I verwendet?';
 String htmlContent1_1 = '''
- <div>
 <p>Der Konjunktiv I wird in der <strong><span class="red">indirekten Rede</span></strong> verwendet. In der <strong><span class="red">indirekten Rede</span></strong> gibt ein Sprecher eine Äußerung eines anderen Sprechers wieder, <span style="text-decoration:underline">ohne</span> sie <span style="text-decoration:underline">wörtlich</span> zu wiederholen.</p>
-<p>&nbsp;</p>
-</div>
+
 <p style="padding-left: 60px;"><strong><span class="blue">direkte Rede</span></strong>: Der Präsident sagt: "Ich werde die Steuern senken."</p>
 <p style="padding-left: 60px;">&nbsp;</p>
 <p style="padding-left: 60px;"><strong><span class="red">indirekte Rede</span></strong>: Der Reporter berichtet: Der Präsident sagte, er werde die Steuern senken.</p>
 <p style="padding-left: 30px;">&nbsp;</p>
 <p style="padding-left: 30px;">&nbsp;</p>
-<div>
+
 <p><strong><span class="red">Der Sprecher</span></strong> ist in diesem Fall <strong><span class="red">der Präsident</span></strong>. Seine Äußerung <strong><span class="blue">"Ich werde die Steuern senken."</span></strong> gibt der Reporter <strong><span class="red">indirekt</span></strong> wieder und berichtet, dass der Präsident die Steuern senken werde.</p>
 <p><br> Bei der indirekten Rede muss man allerdings zwischen <strong><span class="red">privaten</span></strong> und <strong><span class="blue">offiziellen Aussagen</span></strong> unterscheiden.</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-</div>
-<div>
+
 <p style="padding-left: 30px;">Im <strong><span class="red">privaten Bereich</span></strong> (Freunde, Familie) wird der Konjunktiv kaum angewandt. Man benutzt den Indikativ und einen Nebensatz, der mit <strong><span class="red">dass</span></strong> eingeleitet wird.</p>
 <p style="padding-left: 30px;">&nbsp;</p>
-</div>
+
 <p style="padding-left: 60px;"><strong><span class="blue">direkte Rede</span></strong>: Tom sagt zu Ute: "Ich liebe dich."</p>
 <p style="padding-left: 60px;">&nbsp;</p>
 <p style="padding-left: 60px;"><strong><span class="red">indirekte Rede</span></strong>: Toms Bruder sagt zu Utes Schwester: Tom hat zu Ute gesagt, dass er sie liebt.</p>
-<p>&nbsp;</p>
-<div>
+
 <p style="padding-left: 30px;">Der Konjunktiv findet in der indirekten Rede ausschließlich in <strong><span class="red">öffentlichen Berichten</span></strong> Verwendung, wie zum Beispiel in den Nachrichten von Funk und Fernsehen, Zeitungsberichten, politische Reden etc.</p>
 <p style="padding-left: 30px;">&nbsp;</p>
-</div>
+
 <p style="padding-left: 60px;"><strong><span class="blue">direkte Rede</span></strong>: Der Polizeisprecher sagt: "Der Täter ist gefasst."</p>
 <p style="padding-left: 60px;">&nbsp;</p>
 <p style="padding-left: 60px;"><strong><span class="red">indirekte Rede</span></strong>: Die Zeitung schreibt: Der Polizeisprecher sagte, dass der Täter gefasst sei.</p>  
-  
-
 ''';
-
 
 String title2 = 'Satzeinleitende Verben und Nomen';
 String htmlContent2_1 = '''
- <div>
 <p>Damit Zuhörende erkennen, dass eine Äußerung indirekt wiedergegeben wird, muss die indirekte Rede durch ein Verb des Sagens / Fragens / Denkens oder durch ein entsprechendes Nomen eingeleitet werden.</p>
-</div>
+
 <h3>Verben, die eine indirekte Rede einleiten:</h3>
 <p style="padding-left: 30px;">antworten, äußern, behaupten, berichten, denken, erklären, fragen, glauben, meinen, sagen etc.</p>
 <p style="padding-left: 60px;"><br> - Der Minister <strong><span class="red">antwortete</span></strong>, dass er den Bericht so nicht akzeptieren könne.</p>
 <p style="padding-left: 60px;"><br> - Der Regierungssprecher <strong><span class="red">erklärte</span></strong>, der Minister sei sich der Umweltproblematik bewusst.</p>
-<p>&nbsp;</p>
+
 <h3>Nomen, die eine indirekte Rede einleiten:</h3>
 <p style="padding-left: 30px;">die Antwort, die Aussage, die Äußerung, die Behauptung, die Erklärung, die Frage etc.</p>
 <p style="padding-left: 30px;">&nbsp;</p>
 <p style="padding-left: 60px;">- Die <strong><span class="red">Antwort</span></strong> des Ministers habe lange auf sich warten lassen.</p>
 <p style="padding-left: 60px;"><br> - Seine <strong><span class="red">Äußerungen</span></strong> seien eine Zumutung für alle Anwesenden gewesen.</p>  
-  
-  
 ''';
 
 String title3 = 'Bildung der Gegenwartsformen';
 String htmlContent3_1 = '''
- <div>
 <p>Der Konjunktiv I wird gebildet durch <strong><span class="blue">Verbstamm</span></strong> + <strong><span class="red">Konjunktiv-Endung</span></strong>:</p>
-</div>
-<p>&nbsp;</p>
 ''';
 String htmlTable3_2 = '''
 <table class="zwei">
@@ -230,30 +214,17 @@ String htmlTable3_2 = '''
 </table>
 ''';
 String htmlContent3_3 = '''
-<div>
 <p>Die 1. Person Singular " <strong><span class="red">ich</span></strong> " ist im Konjunktiv I mit dem Indikativ übereinstimmend, sodass kein Unterschied zwischen diesen beiden Formen zu erkennen ist. Deshalb werden in der indirekten Rede die Ersatzformen des <strong><a title="Konjunktiv II" href="konjunktiv-2.html" target="_blank">Konjunktiv II</a></strong> benutzt, damit erkennbar ist, dass es sich um eine indirekte Rede handelt. <span style="text-decoration:underline">Ausnahmen</span> bilden nur die <strong><span class="red">Modalverben</span></strong> und das Verb "<strong><span class="red">sein</span></strong>".</p>
-<p>&nbsp;</p>
-</div>
-<div>
+
 <p>Der Gebrauch des Konjunktiv I in der 2. Person Singular " <strong><span class="red">du</span></strong> " ist mittlerweile veraltet und wird in der Praxis kaum noch angewandt. Auch hier werden die Ersatzformen des Konjunktiv II angewandt.</p>
-<p>&nbsp;</p>
-</div>
-<div>
+
 <p>Die 3. Person Singular " <strong><span class="red">man / er / sie / es</span></strong> " ist die einzige Form, die durchgängig im Konjunktiv I benutzt wird. Sie ist sehr einfach, denn man nehme den Infinitiv und streiche die Endung " <strong><span class="red">-n</span></strong> " und schon ist der Konjunktiv I gebildet.</p>
-<p>&nbsp;</p>
-</div>
-<div>
+
 <p>Im Plural werden für alle Personen die Ersatzfomen des Konjunktiv II angewandt. Einzige Ausnahme ist wiederum das Verb "sein".</p>
-<p>&nbsp;</p>
-</div>
-<div>
+
 <p>Folgende Tabelle zeigt auf, welche Konjunktivformen bei welchen Personen angewandt werden:</p>
-<p>&nbsp;</p>
-</div>
-<div>
+
 <p style="padding-left: 30px;"><strong><span class="blue">blau = Konjunktiv I</span></strong><br> <strong><span class="red">rot = Konjunktiv II</span></strong></p>
-</div>
-<p>&nbsp;</p>
 ''';
 String htmlTable3_4 = '''
 <table><colgroup> <col style="width: 20%;"> <col style="width: 14%;"> <col style="width: 14%;"> <col style="width: 15%;"> <col style="width: 17%;"> <col style="width: 20%;"> </colgroup>
@@ -322,10 +293,7 @@ String htmlTable3_4 = '''
 
 String title4 = 'Weitere Veränderungen bei der Bildung der indirekten Rede';
 String htmlContent4_1 = '''
-  <div>
 <p>Die indirekte Rede steht <strong><span class="red">immer</span></strong> <span style="text-decoration:underline">in derselben Zeit</span> wie die entsprechende direkte Rede, <span style="text-decoration:underline">unabhängig</span> von der Zeitform, in der das Verb des redeeinleitenden Satzes steht:</p>
-</div>
-<p>&nbsp;</p>
 ''';
 String htmlTable4_2 = '''
 <table><colgroup> <col style="width: 25%;"> <col style="width: 25%;"> <col style="width: 50%;"> </colgroup>
@@ -359,10 +327,7 @@ String htmlTable4_2 = '''
 </table>
 ''';
 String htmlContent4_3 = '''
-<div>
 <p>Die indirekte Rede kann mit einem <strong><span class="red">dass-Satz</span></strong> (Nebensatz) eingeleitet werden:</p>
-<p>&nbsp;</p>
-</div>
 ''';
 String htmlTable4_4 = '''
 <table><colgroup> <col style="width: 25%;"> <col style="width: 20%;"> <col style="width: 55%;"> </colgroup>
@@ -386,10 +351,7 @@ String htmlTable4_4 = '''
 </table>
 ''';
 String htmlContent4_5 = '''
-<div>
 <p>In der indirekten Rede ändern sich die <strong><span class="red">Pronomen</span></strong> sinngemäß:</p>
-<p>&nbsp;</p>
-</div>
 ''';
 String htmlTable4_6 = '''
 <table><colgroup> <col style="width: 22%;"> <col style="width: 15%;"> <col style="width: 63%;"> </colgroup>
@@ -413,10 +375,7 @@ String htmlTable4_6 = '''
 </table>
 ''';
 String htmlContent4_7 = '''
-<div>
 <p><strong><span class="red">Adverbiale Angaben des Ortes oder der Zeit</span></strong> müssen in der indirekten Rede sinngemäß geändert werden:</p>
-<p>&nbsp;</p>
-</div>
 ''';
 String htmlTable4_8 = '''
 <table><colgroup> <col style="width: 22%;"> <col style="width: 14%;"> <col style="width: 64%;"> </colgroup>
@@ -442,14 +401,12 @@ String htmlTable4_8 = '''
 
 String title5 = 'Fragen in der indirekten Rede';
 String htmlContent5_1 = '''
- <div>
 <p>Eine direkte Frage wird in der indirekten Frage als Nebensatz wiedergegeben.</p>
-<p>&nbsp;</p>
+
 <p style="padding-left: 30px;">- Bei Fragen ohne Fragewort (<strong><span class="red">Ja- / Nein- Fragen</span></strong>) wird die Konjunktion " <strong><span class="red">ob</span></strong> " verwendet,</p>
 <p style="padding-left: 30px;">&nbsp;</p>
 <p style="padding-left: 30px;">- bei Fragen mit Fragewort (<strong><span class="red">W-Fragen</span></strong>) wird dasselbe Fragewort als Einleitung des Nebensatzes verwendet:</p>
 <p style="padding-left: 30px;">&nbsp;</p>
-</div>
 ''';
 String htmlTable5_2 = '''
 <table><colgroup> <col style="width: 30%;"> <col style="width: 25%;"> <col style="width: 45%;"> </colgroup>
@@ -480,15 +437,11 @@ String htmlTable5_2 = '''
 
 String title6 = 'Imperativ in der indirekten Rede';
 String htmlContent6_1 = '''
- <div>
 <p>Der Imperativ in der indirekten Rede wird durch Modalverben wiedergegeben.</p>
-<p>&nbsp;</p>
+
 <p style="padding-left: 30px;">"<strong><span class="red">Sollen</span></strong>" gebraucht man bei einer Aufforderung oder einem Befehl.</p>
-<p>&nbsp;</p>
+
 <p style="padding-left: 30px;">"<strong><span class="red">Mögen</span></strong>" gebraucht man bei einer höflichen Bitte.</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-</div>
 ''';
 String htmlTable6_2 = '''
 <table><colgroup> <col style="width: 27%;"> <col style="width: 25%;"> <col style="width: 48%;"> </colgroup>
@@ -512,15 +465,11 @@ String htmlTable6_2 = '''
 </table>  
 ''';
 
-
 String title7 = 'Bildung der Vergangenheit';
 String htmlContent7_1 = '''
  <div>In der indirekten Rede gibt es <strong><span class="red">nur eine Vergangenheit</span></strong>.<br>
 <p style="padding-left: 30px;">&nbsp;</p>
 <p style="padding-left: 30px;">Basis bilden die Perfektformen von haben / sein:</p>
-</div>
-<p>&nbsp;</p>
-<div>
 ''';
 String htmlTable7_2 = '''
 <table>
@@ -558,8 +507,6 @@ String htmlTable7_3 = '''
 ''';
 String htmlContent7_4 = '''
 <p>Sofern das Verb im Perfekt mit dem Hilfsverb "haben" gebildet wird, werden selbstverständlich alle anderen Personen mit den <strong><span class="red">Konjunktivformen des Hilfsverbs "haben"</span></strong> gebildet (siehe Bildung Konjunktiv I). Die Konjunktiv I-Formen des <strong><span class="red">Hilfsverbs "sein"</span></strong> werden ebenso übernommen:</p>
-</div>
-<p>&nbsp;</p>
 ''';
 String htmlTable7_5 = '''
 <table><colgroup> <col style="width: 24%;"> <col style="width: 38%;"> <col style="width: 38%;"> </colgroup>
@@ -585,10 +532,7 @@ String htmlTable7_5 = '''
 </table>
 ''';
 String htmlContent7_6 = '''
-<div>
 <p>Auch bei der Bildung der Vergangenheit mit Modalverben wird als Basis das Perfekt benutzt:</p>
-</div>
-<p>&nbsp;</p>
 ''';
 String htmlTable7_7 = '''
 <table><colgroup> <col style="width: 14%;"> <col style="width: 43%;"> <col style="width: 43%;"> </colgroup>
@@ -613,7 +557,6 @@ String title8 = 'Das Futur in der indirekten Rede';
 String htmlContent8_1 = '''
   <h3>Futur I</h3>
 <p>Die indirekte Rede des Futur I bildet man wie folgt:</p>
-<p>&nbsp;</p>
 ''';
 String htmlTable8_2 = '''
 <table>
@@ -632,8 +575,6 @@ String htmlContent8_3 = '''
 <p style="padding-left: 30px;">&nbsp;</p>
 <h3>Futur II</h3>
 <p>Die indirekte Rede des Futur II bildet man wie folgt:</p>
-<p>&nbsp;</p>
-<div>
 ''';
 String htmlTable8_4 = '''
 <table>
@@ -670,11 +611,9 @@ String htmlTable9_2 = '''
 String htmlContent9_3 = '''
 <p style="padding-left: 30px;"><br> - ich würde operiert, du würdest operiert, er werde operiert, ...</p>
 <p style="padding-left: 30px;">&nbsp;</p>
-<p>&nbsp;</p>
+
 <h3>Passiv Vergangenheit</h3>
 <p>Passiv + Vergangenheit bildet man wie folgt:</p>
-<p>&nbsp;</p>
-<div>
 ''';
 String htmlTable9_4 = '''
 <table>
@@ -689,12 +628,9 @@ String htmlTable9_4 = '''
 ''';
 String htmlContent9_5 = '''
 <p style="padding-left: 30px;"><br> - ich sei operiert worden, du seiest operiert worden, er sei operiert worden, ...</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
+
 <h3>Passiv Zukunft</h3>
 <p>Passiv + Zukunft bildet man wie folgt:</p>
-<p>&nbsp;</p>
-<div>
 ''';
 String htmlTable9_6 = '''
 <table>

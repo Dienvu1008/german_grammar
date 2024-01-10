@@ -1,533 +1,126 @@
 import 'package:flutter/material.dart';
 
 import '../app/app_localizations.dart';
+import '../page_content.dart';
 
 class Dass_Saetze_Als_Praepositional_Ergaenzung_5_3 extends StatelessWidget {
   const Dass_Saetze_Als_Praepositional_Ergaenzung_5_3({super.key});
 
   @override
   Widget build(BuildContext context) {
-    final localizations = AppLocalizations.of(context);
-    final textTheme = Theme.of(context).textTheme;
     return Expanded(
       child: Scaffold(
         body: Padding(
-          padding: const EdgeInsets.all(8.0),
-          child: ListView(
-            children: <Widget>[
-              Card(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: <Widget>[
-                    Padding(
-                        padding: const EdgeInsets.only(top: 16.0, left: 16.0),
-                        child: RichText(
-                          text: TextSpan(
-                            text: '5.3. ',
-                            style: textTheme.titleMedium,
-                            children: <TextSpan>[
-                              TextSpan(
-                                  text: 'dass',
-                                  style: TextStyle(color: Colors.red)),
-                              TextSpan(
-                                  text: '-Sätze als Präpositional-Ergänzungen'),
-                            ],
-                          ),
-                        )),
-                    Padding(
-                      padding: const EdgeInsets.only(top: 10.0, left: 16.0),
-                      child: Text(
-                          'Was man über "dass"-Sätze als Präpositional-Ergänzungen wissen sollte.',
-                          style: textTheme.titleSmall),
-                    ),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                            top: 10.0, left: 16.0, bottom: 10),
-                        child: RichText(
-                          text: TextSpan(
-                            style: textTheme.bodyMedium,
-                            children: <TextSpan>[
-                              TextSpan(text: '"'),
-                              TextSpan(
-                                  text:
-                                      'Die Präpositional-Ergänzung im Hauptsatz',
-                                  style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      color: Colors.red)),
-                              TextSpan(text: '" sind normalerweise '),
-                              TextSpan(
-                                  text: 'Pronomen',
-                                  style: TextStyle(
-                                      decoration: TextDecoration.underline)),
-                              TextSpan(text: ', '),
-                              TextSpan(
-                                  text: 'Namen',
-                                  style: TextStyle(
-                                      decoration: TextDecoration.underline)),
-                              TextSpan(text: ' oder '),
-                              TextSpan(
-                                  text: 'Nomen',
-                                  style: TextStyle(
-                                      decoration: TextDecoration.underline)),
-                              TextSpan(text: '.\n\n'),
-                              TextSpan(text: 'Ich interessiere mich nur für '),
-                              TextSpan(
-                                  text: 'dich',
-                                  style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      color: Colors.red)),
-                              TextSpan(text: '.\n'),
-                              TextSpan(
-                                  text: 'Peter interessiert sich nur für '),
-                              TextSpan(
-                                  text: 'Petra',
-                                  style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      color: Colors.red)),
-                              TextSpan(text: '.\n'),
-                              TextSpan(
-                                  text: 'Holger interessiert sich nur für '),
-                              TextSpan(
-                                  text: 'schnelle Autos',
-                                  style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      color: Colors.red)),
-                              TextSpan(text: '.\n\n'),
-                              TextSpan(
-                                  text:
-                                      'In einem "dass"-Satz als Präpositional-Ergänzung ist die Präpositional-Ergänzung '),
-                              TextSpan(
-                                  text: 'kein Nomen',
-                                  style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      color: Colors.red)),
-                              TextSpan(text: ', sondern ein '),
-                              TextSpan(
-                                  text: 'Nebensatz',
-                                  style:
-                                      TextStyle(fontWeight: FontWeight.bold)),
-                              TextSpan(text: ', der mit der '),
-                              TextSpan(
-                                  text: 'Konjunktion',
-                                  style:
-                                      TextStyle(fontWeight: FontWeight.bold)),
-                              TextSpan(text: ' "'),
-                              TextSpan(
-                                  text: 'dass',
-                                  style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      color: Colors.blue)),
-                              TextSpan(text: '" eingeleitet wird.\n\n'),
-                              TextSpan(text: 'Ich freue mich '),
-                              TextSpan(
-                                  text: 'darüber',
-                                  style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      color: Colors.blue)),
-                              TextSpan(text: ', '),
-                              TextSpan(
-                                  text: 'dass du die Prüfung bestanden hast',
-                                  style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      color: Colors.blue)),
-                              TextSpan(text: '.\n'),
-                              TextSpan(text: 'Wir verlassen uns '),
-                              TextSpan(
-                                  text: 'darauf',
-                                  style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      color: Colors.blue)),
-                              TextSpan(text: ', '),
-                              TextSpan(
-                                  text: 'dass ihr uns helft',
-                                  style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      color: Colors.blue)),
-                              TextSpan(text: '.\n'),
-                              TextSpan(text: 'Achte bitte '),
-                              TextSpan(
-                                  text: 'darauf',
-                                  style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      color: Colors.blue)),
-                              TextSpan(text: ', '),
-                              TextSpan(
-                                  text: 'dass du dich nicht schmutzig machst',
-                                  style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      color: Colors.blue)),
-                              TextSpan(text: '.\n\n'),
-                              TextSpan(
-                                  text:
-                                      'Die Präposition bleibt jedoch dem Hauptsatz erhalten. Aus diesem Grund muss man '),
-                              TextSpan(
-                                  text:
-                                      'einen Bezug vom Nebensatz zur Präposition im Hauptsatz herstellen',
-                                  style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      color: Colors.red)),
-                              TextSpan(text: '. Dies geschieht\n\n'),
-                              TextSpan(text: 'bei '),
-                              TextSpan(
-                                  text: 'Sachen',
-                                  style: TextStyle(
-                                      decoration: TextDecoration.underline)),
-                              TextSpan(text: ' mit so genannten '),
-                              TextSpan(
-                                  text: 'Präpositionaladverbien',
-                                  style:
-                                      TextStyle(fontWeight: FontWeight.bold)),
-                              TextSpan(text: ' "'),
-                              TextSpan(
-                                  text: 'wo(r)',
-                                  style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      color: Colors.blue)),
-                              TextSpan(text: '" und "'),
-                              TextSpan(
-                                  text: 'da(r)',
-                                  style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      color: Colors.blue)),
-                              TextSpan(text: ' + Präposition"\n'),
-                              TextSpan(text: 'Die Präpositionaladverbien '),
-                              TextSpan(
-                                  text: 'wo(r) + Präposition',
-                                  style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      color: Colors.blue)),
-                              TextSpan(
-                                  text:
-                                      ' fragen nach der Präpositional-Ergänzung: \n - '),
-                              TextSpan(
-                                  text: 'Wofür',
-                                  style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      color: Colors.blue)),
-                              TextSpan(text: ' interessierst du dich? \n'),
-                              TextSpan(text: 'Das "'),
-                              TextSpan(
-                                  text: 'r',
-                                  style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      color: Colors.blue)),
-                              TextSpan(
-                                  text:
-                                      '" wird benutzt, wenn die Präposition mit einem Selbstlaut beginnt: \n - '),
-                              TextSpan(
-                                  text:
-                                      'woran, worauf, woraus, worin, worüber, worum, worunter',
-                                  style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      color: Colors.blue)),
-                              TextSpan(text: '. \n'),
-                              TextSpan(
-                                  text:
-                                      'Alle anderen Präpositionen ohne (r): \n - wobei, wofür, wogegen, womit, wovon, wovor, wozu. \n'),
-                              TextSpan(text: 'Die Präpositionaladverbien '),
-                              TextSpan(
-                                  text: 'da(r) + Präposition',
-                                  style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      color: Colors.blue)),
-                              TextSpan(text: ' werden benutzt\n'),
-                              TextSpan(
-                                  text:
-                                      'wenn die Sache wiederholt wird und somit bekannt ist\n'),
-                              TextSpan(
-                                  text:
-                                      'oder wenn die Sache in einem folgenden Nebensatz angegeben wird. \n - siehe Anwendungsbeispiele mit Bezug auf Sachen weiter unten.\n\n'),
-                              TextSpan(text: 'und bei '),
-                              TextSpan(
-                                  text: 'Personen',
-                                  style: TextStyle(
-                                      decoration: TextDecoration.underline)),
-                              TextSpan(text: ' mit '),
-                              TextSpan(
-                                  text: 'Präposition + wen / wem / Pronomen',
-                                  style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      color: Colors.red)),
-                              TextSpan(
-                                  text:
-                                      '. Der Kasus ist dann von der benutzten Präposition abhängig.\n'),
-                              TextSpan(text: ''),
-                              TextSpan(
-                                  text: 'Auf wen',
-                                  style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      color: Colors.red)),
-                              TextSpan(
-                                  text: ' kannst du dich immer verlassen? - '),
-                              TextSpan(
-                                  text: 'Auf dich',
-                                  style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      color: Colors.red)),
-                              TextSpan(text: '.\n'),
-                              TextSpan(text: ''),
-                              TextSpan(
-                                  text: 'Mit wem',
-                                  style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      color: Colors.red)),
-                              TextSpan(text: ' hast du getanzt? - '),
-                              TextSpan(
-                                  text: 'Mit der Lehrerin',
-                                  style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      color: Colors.red)),
-                              TextSpan(text: '.'),
-                            ],
-                          ),
-                        )),
-                  ],
-                ),
-              ),
-              Card(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: <Widget>[
-                    Padding(
-                      padding: const EdgeInsets.only(
-                          top: 10.0, left: 16.0, bottom: 10),
-                      child: Text('Anwendungsbeispiele mit Bezug auf Personen',
-                          style: textTheme.titleSmall),
-                    ),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                            top: 10.0, left: 16.0, bottom: 10),
-                        child: RichText(
-                          text: TextSpan(
-                            style: textTheme.bodyMedium,
-                            children: <TextSpan>[
-                              TextSpan(text: 'Wenn die '),
-                              TextSpan(
-                                  text: 'Präpositional-Ergänzung',
-                                  style: TextStyle(
-                                      decoration: TextDecoration.underline)),
-                              TextSpan(text: ' eine '),
-                              TextSpan(
-                                  text: 'Person',
-                                  style: TextStyle(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(text: ' ist, ist in der Regel '),
-                              TextSpan(
-                                  text: 'kein',
-                                  style: TextStyle(
-                                      decoration: TextDecoration.underline)),
-                              TextSpan(
-                                  text:
-                                      ' dass-Satz als Präpositional-Ergänzung möglich, da die Personen entweder mit Namen oder Pronomen angegeben werden. Präpositionaladverbien werden '),
-                              TextSpan(
-                                  text: 'nur',
-                                  style: TextStyle(
-                                      decoration: TextDecoration.underline)),
-                              TextSpan(
-                                  text:
-                                      ' gebraucht, wenn sich die Präpositional-Ergänzung auf '),
-                              TextSpan(
-                                  text: 'Sachen oder Sachinhalte',
-                                  style: TextStyle(
-                                      decoration: TextDecoration.underline)),
-                              TextSpan(text: ' bezieht.\n\n'),
-                              TextSpan(
-                                  text: 'sich ärgern ',
-                                  style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      color: Colors.red)),
-                              TextSpan(text: 'über + Akk\n'),
-                              TextSpan(
-                                  text: 'Über wen ärgerst du dich manchmal?\n'),
-                              TextSpan(text: 'Ich ärgere mich täglich '),
-                              TextSpan(
-                                  text: 'über meinen Chef',
-                                  style: TextStyle(color: Colors.red)),
-                              TextSpan(text: '.\n'),
-                              TextSpan(
-                                  text: 'Über ihn',
-                                  style: TextStyle(color: Colors.red)),
-                              TextSpan(
-                                  text:
-                                      ' ärgere ich mich allerdings auch öfters.\n'),
-                              TextSpan(
-                                  text: 'sich beschäftigen ',
-                                  style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      color: Colors.red)),
-                              TextSpan(text: 'mit + Dat\n'),
-                              TextSpan(
-                                  text:
-                                      'Warum beschäftigst du dich so selten '),
-                              TextSpan(
-                                  text: 'mit deinen Kindern',
-                                  style: TextStyle(color: Colors.red)),
-                              TextSpan(text: '?\n'),
-                              TextSpan(
-                                  text: 'Mit ihnen',
-                                  style: TextStyle(color: Colors.red)),
-                              TextSpan(
-                                  text: ' beschäftige ich mich täglich.\n'),
-                              TextSpan(text: 'Aber du beschäftigst dich nur '),
-                              TextSpan(
-                                  text: 'mit deinen Pferden',
-                                  style: TextStyle(color: Colors.red)),
-                              TextSpan(text: '.\n'),
-                              TextSpan(
-                                  text: 'sich interessieren ',
-                                  style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      color: Colors.red)),
-                              TextSpan(text: 'für + Akk\n'),
-                              TextSpan(
-                                  text:
-                                      'Ist dir auch schon aufgefallen, dass sich unser Sohn nur noch '),
-                              TextSpan(
-                                  text: 'für Mädchen',
-                                  style: TextStyle(color: Colors.red)),
-                              TextSpan(text: ' interessiert?\n'),
-                              TextSpan(
-                                  text:
-                                      'Das stimmt so nicht. Er interessiert sich nur '),
-                              TextSpan(
-                                  text: 'für Martina',
-                                  style: TextStyle(color: Colors.red)),
-                              TextSpan(text: '.\n'),
-                              TextSpan(text: 'Da gebe ich dir Recht. '),
-                              TextSpan(
-                                  text: 'Für sie',
-                                  style: TextStyle(color: Colors.red)),
-                              TextSpan(
-                                  text: ' interessiert er sich auch, und '),
-                              TextSpan(
-                                  text: 'für Gerda, Lena, Sabine, ...',
-                                  style: TextStyle(color: Colors.red)),
-                            ],
-                          ),
-                        )),
-                  ],
-                ),
-              ),
-              Card(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: <Widget>[
-                    Padding(
-                      padding: const EdgeInsets.only(
-                          top: 10.0, left: 16.0, bottom: 10),
-                      child: Text('Anwendungsbeispiele mit Bezug auf Sachen',
-                          style: textTheme.titleSmall),
-                    ),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                            top: 10.0, left: 16.0, bottom: 10),
-                        child: RichText(
-                          text: TextSpan(
-                            style: textTheme.bodyMedium,
-                            children: <TextSpan>[
-                              TextSpan(
-                                  text: 'sich ärgern ',
-                                  style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      color: Colors.red)),
-                              TextSpan(text: 'über + Akk\n'),
-                              TextSpan(
-                                  text: 'Wor',
-                                  style: TextStyle(color: Colors.blue)),
-                              TextSpan(
-                                  text: 'über ärgerst du dich manchmal?\n'),
-                              TextSpan(text: 'Ich ärgere mich täglich '),
-                              TextSpan(
-                                  text: 'dar',
-                                  style: TextStyle(color: Colors.blue)),
-                              TextSpan(text: 'über, '),
-                              TextSpan(
-                                  text: 'dass mein Kollege so faul ist',
-                                  style: TextStyle(color: Colors.blue)),
-                              TextSpan(
-                                  text:
-                                      '. (Ich ärgere mich täglich über die Faulheit meines Kollegen.)\n'),
-                              TextSpan(
-                                  text: 'Dar',
-                                  style: TextStyle(color: Colors.blue)),
-                              TextSpan(
-                                  text:
-                                      'über ärgerst du dich? (Über seine Faulheit ärgerst du dich?)\n'),
-                              TextSpan(
-                                  text: 'sich verlassen ',
-                                  style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      color: Colors.red)),
-                              TextSpan(text: 'auf + Akk\n'),
-                              TextSpan(
-                                  text: 'Wor',
-                                  style: TextStyle(color: Colors.blue)),
-                              TextSpan(
-                                  text:
-                                      'auf kann man sich heute noch verlassen?\n'),
-                              TextSpan(text: 'Du kannst dich '),
-                              TextSpan(
-                                  text: 'dar',
-                                  style: TextStyle(color: Colors.blue)),
-                              TextSpan(text: 'auf verlassen, '),
-                              TextSpan(
-                                  text: 'dass dir deine Freunde helfen',
-                                  style: TextStyle(color: Colors.blue)),
-                              TextSpan(
-                                  text:
-                                      '. (Du kannst dich auf die Hilfe deiner Freunde verlassen.)\n'),
-                              TextSpan(text: 'Natürlich kann ich mich '),
-                              TextSpan(
-                                  text: 'dar',
-                                  style: TextStyle(color: Colors.blue)),
-                              TextSpan(text: 'auf verlassen, '),
-                              TextSpan(
-                                  text: 'dass mir geholfen wird',
-                                  style: TextStyle(color: Colors.blue)),
-                              TextSpan(
-                                  text:
-                                      '. (Natürlich kann ich mich auf die Hilfe meiner Freunde verlassen.)\n'),
-                              TextSpan(
-                                  text: 'rechnen ',
-                                  style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      color: Colors.red)),
-                              TextSpan(text: 'mit + Dat\n'),
-                              TextSpan(
-                                  text: 'Wo',
-                                  style: TextStyle(color: Colors.blue)),
-                              TextSpan(
-                                  text:
-                                      'mit muss am Wochenende gerechnet werden?\n'),
-                              TextSpan(text: 'Natürlich muss am Wochenende '),
-                              TextSpan(
-                                  text: 'da',
-                                  style: TextStyle(color: Colors.blue)),
-                              TextSpan(text: 'mit gerechnet werden, '),
-                              TextSpan(
-                                  text: 'dass es regnet',
-                                  style: TextStyle(color: Colors.blue)),
-                              TextSpan(
-                                  text:
-                                      '. (Natürlich muss am Wochenende mit Regen gerechnet werden.)\n'),
-                              TextSpan(
-                                  text: 'Da',
-                                  style: TextStyle(color: Colors.blue)),
-                              TextSpan(
-                                  text:
-                                      'mit muss man in Deutschland immer rechnen. (Mit Regen muss man in Deutschland immer rechnen.)\n'),
-                              TextSpan(text: 'Vergleiche auch Nominalisierung'),
-                            ],
-                          ),
-                        )),
-                  ],
-                ),
-              ),
-            ],
-          ),
-        ),
+            padding: const EdgeInsets.all(8.0),
+            child: MyPageContentView(contents: contents)),
       ),
     );
   }
 }
+
+List<CardContent> contents = [
+  CardContent(
+    elements: [
+      CardElement(type: ElementType.pageTitle, value: title),
+    ],
+  ),
+  CardContent(
+    elements: [
+      CardElement(type: ElementType.cardTitle, value: title1),
+      CardElement(type: ElementType.htmlContent, value: htmlContent1_1),
+    ],
+  ),
+  CardContent(
+    elements: [
+      CardElement(type: ElementType.cardTitle, value: title2),
+      CardElement(type: ElementType.htmlContent, value: htmlContent2_1),
+    ],
+  ),
+  CardContent(
+    elements: [
+      CardElement(type: ElementType.cardTitle, value: title3),
+      CardElement(type: ElementType.htmlContent, value: htmlContent3_1),
+    ],
+  ),
+];
+
+String title = '5.3. "dass"-Sätze als Präpositional-Ergänzungen';
+
+String title1 =
+    'Was man über "dass"-Sätze als Präpositional-Ergänzungen wissen sollte.';
+String htmlContent1_1 = '''
+<p>"<strong><span class="red">Die <a title="Präpositional-Ergänzung" href="lernen.php?menu_id=45">Präpositional-Ergänzung</a> im Hauptsatz</span></strong>" sind normalerweise <span style="text-decoration:underline">Pronomen</span>, <span style="text-decoration:underline">Namen</span> oder <span style="text-decoration:underline">Nomen</span>.</p>
+
+<li>Ich interessiere mich nur für <strong><span class="red">dich</span></strong>.</li>
+<li>Peter interessiert sich nur für <strong><span class="red">Petra</span></strong>.</li>
+<li>Holger interessiert sich nur für <strong><span class="red">schnelle Autos</span></strong>.</li>
+
+<p>In einem "dass"-Satz als Präpositional-Ergänzung ist die Präpositional-Ergänzung <strong><span class="red">kein Nomen</span></strong>, sondern ein <strong><a title="Nebensätze" href="lernen.php?menu_id=91">Nebensatz</a></strong>, der mit der <strong><a title="Konjunktion" href="lernen.php?menu_id=89#unterordnende_konj">Konjunktion</a></strong> "<strong><span class="blue">dass</span></strong>" eingeleitet wird.</p>
+
+<li>Ich freue mich <strong><span class="blue">dar</span></strong>über, <strong><span class="blue">dass du die Prüfung bestanden hast</span></strong>.</li>
+<li>Wir verlassen uns <strong><span class="blue">dar</span></strong>auf, <strong><span class="blue">dass ihr uns helft</span></strong>.</li>
+<li>Achte bitte <strong><span class="blue">dar</span></strong>auf, <strong><span class="blue">dass du dich nicht schmutzig machst</span></strong>.</li>
+
+<p><span style="text-decoration:underline">Die Präposition bleibt jedoch dem Hauptsatz erhalten</span>. Aus diesem Grund muss man <strong><span class="red">einen Bezug vom Nebensatz zur Präposition im Hauptsatz herstellen</span></strong>. Dies geschieht</p>
+
+<li>bei <span style="text-decoration:underline">Sachen</span> mit so genannten <strong><a title="Präpositionaladverbien" href="lernen.php?menu_id=45#fragen_mit_praeposition">Präpositionaladverbien</a></strong> " <strong><span class="blue">wo(r)</span></strong> " und " <strong><span class="blue">da(r)</span></strong> + Präposition"
+
+<li>Die Präpositionaladverbien <strong><span class="blue">wo(r) + Präposition</span></strong> fragen nach der Präpositional-Ergänzung: <br> - <strong><span class="blue">Wofür</span></strong> interessierst du dich? </li>
+<li>Das "<strong><span class="blue">r</span></strong>" wird benutzt, wenn die Präposition mit einem Selbstlaut beginnt: <br> - wo<strong><span class="blue">r</span></strong>an, wo<strong><span class="blue">r</span></strong>auf, wo<strong><span class="blue">r</span></strong>aus, wo<strong><span class="blue">r</span></strong>in, wo<strong><span class="blue">r</span></strong>über, wo<strong><span class="blue">r</span></strong>um, wo<strong><span class="blue">r</span></strong>unter. </li>
+<li>Alle anderen Präpositionen ohne (r): <br> - wobei, wofür, wogegen, womit, wovon, wovor, wozu. </li>
+<li>Die Präpositionaladverbien <strong><span class="blue">da(r) + Präposition</span></strong> werden benutzt
+
+<li>wenn die Sache wiederholt wird und somit bekannt ist</li>
+<li>oder wenn die Sache in einem folgenden Nebensatz angegeben wird. <br> - siehe Anwendungsbeispiele mit Bezug auf Sachen weiter unten.</li>
+
+<li>und bei <span style="text-decoration:underline">Personen</span> mit <strong><span class="red">Präposition + wen / wem / Pronomen</span></strong>. Der Kasus ist dann von der benutzten Präposition abhängig.
+
+<li><strong><span class="red">Auf wen</span></strong> kannst du dich immer verlassen? - <strong><span class="red">Auf dich</span></strong>.</li>
+<li><strong><span class="red">Mit wem</span></strong> hast du getanzt? - <strong><span class="red">Mit der Lehrerin</span></strong>.</li>
+''';
+
+String title2 = 'Anwendungsbeispiele mit Bezug auf Personen';
+String htmlContent2_1 = '''
+<p>Wenn die <span style="text-decoration:underline">Präpositional-Ergänzung</span> eine <strong><span class="red">Person</span></strong> ist, ist in der Regel <span style="text-decoration:underline">kein</span> dass-Satz als Präpositional-Ergänzung möglich, da die Personen entweder mit Namen oder Pronomen angegeben werden. Präpositionaladverbien werden <span style="text-decoration:underline">nur</span> gebraucht, wenn sich die Präpositional-Ergänzung auf <span style="text-decoration:underline">Sachen oder Sachinhalte</span> bezieht.</p>
+
+<li>sich ärgern <strong><span class="red">über + Akk</span></strong>
+
+<li><strong><span class="red">Über wen</span></strong> ärgerst du dich manchmal?</li>
+<li>Ich ärgere mich täglich <strong><span class="red">über meinen Chef</span></strong>.</li>
+<li><strong><span class="red">Über ihn</span></strong> ärgere ich mich allerdings auch öfters.</li>
+
+<li>sich beschäftigen <strong><span class="red">mit + Dat</span></strong>
+
+<li>Warum beschäftigst du dich so selten <strong><span class="red">mit deinen Kindern</span></strong>?</li>
+<li><strong><span class="red">Mit ihnen</span></strong> beschäftige ich mich täglich.</li>
+<li>Aber du beschäftigst dich nur <strong><span class="red">mit deinen Pferden</span></strong>.</li>
+
+<li>sich interessieren <strong><span class="red">für + Akk</span></strong>
+
+<li>Ist dir auch schon aufgefallen, dass sich unser Sohn nur noch <strong><span class="red">für Mädchen</span></strong> interessiert?</li>
+<li>Das stimmt so nicht. Er interessiert sich nur <strong><span class="red">für Martina</span></strong>.</li>
+<li>Da gebe ich dir Recht. <strong><span class="red">Für sie</span></strong> interessiert er sich auch, und <strong><span class="red">für Gerda, Lena, Sabine, ...</span></strong></li> 
+''';
+
+String title3 = 'Anwendungsbeispiele mit Bezug auf Sachen';
+String htmlContent3_1 = '''
+<li>sich ärgern <strong><span class="red">über + Akk</span></strong>
+
+<li><strong><span class="blue">Wor</span></strong><strong><span class="red">über</span></strong> ärgerst du dich manchmal?</li>
+<li>Ich ärgere mich täglich <strong><span class="blue">dar</span></strong><strong><span class="red">über</span></strong>, <strong><span class="blue">dass mein Kollege so faul ist</span></strong>. <br> (Ich ärgere mich täglich <strong><span class="red">über</span></strong> <strong><span class="blue">die Faulheit meines Kollegen</span></strong>.)</li>
+<li><strong><span class="blue">Dar</span></strong><strong><span class="red">über</span></strong> ärgerst du dich? <br> (<strong><span class="red">Über</span></strong> <strong><span class="blue">seine Faulheit</span></strong> ärgerst du dich?)</li>
+
+<li>sich verlassen <strong><span class="red">auf + Akk</span></strong>
+
+<li><strong><span class="blue">Wor</span></strong><strong><span class="red">auf</span></strong> kann man sich heute noch verlassen?</li>
+<li>Du kannst dich <strong><span class="blue">dar</span></strong><strong><span class="red">auf</span></strong> verlassen, <strong><span class="blue">dass dir deine Freunde helfen</span></strong>. <br> (Du kannst dich <strong><span class="red">auf</span></strong> <strong><span class="red">die Hilfe deiner Freunde</span></strong> verlassen.)</li>
+<li>Natürlich kann ich mich <strong><span class="blue">dar</span></strong><strong><span class="red">auf</span></strong> verlassen, <strong><span class="blue">dass mir geholfen wird</span></strong>. <br> (Natürlich kann ich mich <strong><span class="red">auf</span></strong> <strong><span class="red">die Hilfe meiner Freunde</span></strong> verlassen.)</li>
+
+<li>rechnen <strong><span class="red">mit + Dat</span></strong>
+
+<li><strong><span class="blue">Wo</span></strong><strong><span class="red">mit</span></strong> muss am Wochenende gerechnet werden?</li>
+<li>Natürlich muss am Wochenende <strong><span class="blue">da</span></strong><strong><span class="red">mit</span></strong> gerechnet werden, <strong><span class="blue">dass es regnet</span></strong>. <br> (Natürlich muss am Wochenende <strong><span class="red">mit</span></strong> <strong><span class="blue">Regen</span></strong> gerechnet werden.)</li>
+<li><strong><span class="blue">Da</span></strong><strong><span class="red">mit</span></strong> muss man in Deutschland immer rechnen. <br> (<strong><span class="red">Mit</span></strong> <strong><span class="blue">Regen</span></strong> muss man in Deutschland immer rechnen.)</li>
+
+<p><br> Vergleiche auch <strong><a title="Nominalisierung" href="lernen.php?menu_id=20">Nominalisierung</a></strong></p>  
+''';

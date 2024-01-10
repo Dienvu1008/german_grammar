@@ -3,415 +3,486 @@ import 'package:german_grammar/html_table_to_dart_table.dart';
 
 import '../app/app_localizations.dart';
 import '../html_to_richtext.dart';
+import '../page_content.dart';
 
 class Satzlehre_12 extends StatelessWidget {
   const Satzlehre_12({super.key});
 
-  @override
+  // @override
+  // Widget build(BuildContext context) {
+  //   final localizations = AppLocalizations.of(context);
+  //   final textTheme = Theme.of(context).textTheme;
+  //   return Expanded(
+  //     child: Scaffold(
+  //       body: Padding(
+  //         padding: const EdgeInsets.all(8.0),
+  //         child: ListView(
+  //           children: <Widget>[
+  //             Card(
+  //               child: Column(
+  //                 crossAxisAlignment: CrossAxisAlignment.start,
+  //                 children: <Widget>[
+  //                   Padding(
+  //                     padding: const EdgeInsets.only(top: 16.0, left: 16.0),
+  //                     child:
+  //                         Text('12. Satzlehre', style: textTheme.titleMedium),
+  //                   ),
+  //                   Padding(
+  //                     padding: const EdgeInsets.only(top: 10.0, left: 16.0),
+  //                     child: Text(
+  //                         'Einführung / Was man über Sätze wissen sollte.',
+  //                         style: textTheme.titleSmall),
+  //                   ),
+  //                   Padding(
+  //                       padding: const EdgeInsets.only(
+  //                           top: 10.0, left: 16.0, bottom: 10),
+  //                       child: HtmlToRichText(
+  //                         htmlString: htmlContent1_1,
+  //                         textTheme: textTheme,
+  //                       )),
+  //                   Padding(
+  //                       padding: const EdgeInsets.only(
+  //                           top: 10.0, left: 16.0, bottom: 10),
+  //                       child: HtmlTableToDartTable(
+  //                         htmlTable: htmlTable1_1,
+  //                         textTheme: textTheme,
+  //                         columnWidths: {
+  //                           0: FractionColumnWidth(1),
+  //                         },
+  //                       )),
+  //                   Padding(
+  //                       padding: const EdgeInsets.only(
+  //                           top: 10.0, left: 16.0, bottom: 10),
+  //                       child: HtmlTableToDartTable(
+  //                         htmlTable: htmlTable1_2,
+  //                         textTheme: textTheme,
+  //                         columnWidths: {
+  //                           0: FractionColumnWidth(.5),
+  //                           1: FractionColumnWidth(.5),
+  //                         },
+  //                       )),
+  //                   Padding(
+  //                       padding: const EdgeInsets.only(
+  //                           top: 10.0, left: 16.0, bottom: 10),
+  //                       child: HtmlToRichText(
+  //                         htmlString: htmlContent1_2,
+  //                         textTheme: textTheme,
+  //                       )),
+  //                 ],
+  //               ),
+  //             ),
+  //             Card(
+  //               child: Column(
+  //                 crossAxisAlignment: CrossAxisAlignment.start,
+  //                 children: <Widget>[
+  //                   Padding(
+  //                     padding: const EdgeInsets.only(
+  //                         top: 10.0, left: 16.0, bottom: 10),
+  //                     child: Text('Ergänzungen / Objekte',
+  //                         style: textTheme.titleSmall),
+  //                   ),
+  //                   Padding(
+  //                       padding: const EdgeInsets.only(
+  //                           top: 10.0, left: 16.0, bottom: 10),
+  //                       child: HtmlToRichText(
+  //                         htmlString: htmlContent2_1,
+  //                         textTheme: textTheme,
+  //                       )),
+  //                   Padding(
+  //                       padding: const EdgeInsets.only(
+  //                           top: 10.0, left: 16.0, bottom: 10),
+  //                       child: HtmlTableToDartTable(
+  //                         htmlTable: htmlTable2_1,
+  //                         textTheme: textTheme,
+  //                         columnWidths: const {
+  //                           0: FractionColumnWidth(1),
+  //                         },
+  //                       )),
+  //                   Padding(
+  //                       padding: const EdgeInsets.only(
+  //                           top: 10.0, left: 16.0, bottom: 10),
+  //                       child: HtmlTableToDartTable(
+  //                         htmlTable: htmlTable2_2,
+  //                         textTheme: textTheme,
+  //                         columnWidths: const {
+  //                           0: FractionColumnWidth(.2),
+  //                           1: FractionColumnWidth(.2),
+  //                           2: FractionColumnWidth(.15),
+  //                           3: FractionColumnWidth(.45),
+  //                         },
+  //                       )),
+  //                   Padding(
+  //                       padding: const EdgeInsets.only(
+  //                           top: 10.0, left: 16.0, bottom: 10),
+  //                       child: HtmlToRichText(
+  //                         htmlString: htmlContent2_2,
+  //                         textTheme: textTheme,
+  //                       )),
+  //                 ],
+  //               ),
+  //             ),
+  //             Card(
+  //               child: Column(
+  //                 crossAxisAlignment: CrossAxisAlignment.start,
+  //                 children: <Widget>[
+  //                   Padding(
+  //                     padding: const EdgeInsets.only(
+  //                         top: 10.0, left: 16.0, bottom: 10),
+  //                     child: Text('Angaben', style: textTheme.titleSmall),
+  //                   ),
+  //                   Padding(
+  //                       padding: const EdgeInsets.only(
+  //                           top: 10.0, left: 16.0, bottom: 10),
+  //                       child: HtmlToRichText(
+  //                         htmlString: htmlContent3_1,
+  //                         textTheme: textTheme,
+  //                       )),
+  //                   Padding(
+  //                       padding: const EdgeInsets.only(
+  //                           top: 10.0, left: 16.0, bottom: 10),
+  //                       child: HtmlTableToDartTable(
+  //                         htmlTable: htmlTable3,
+  //                         textTheme: textTheme,
+  //                         columnWidths: const {
+  //                           0: FractionColumnWidth(.12),
+  //                           1: FractionColumnWidth(.11),
+  //                           2: FractionColumnWidth(.25),
+  //                           3: FractionColumnWidth(.13),
+  //                           4: FractionColumnWidth(.12),
+  //                           5: FractionColumnWidth(.25),
+  //                         },
+  //                       )),
+  //                   Padding(
+  //                       padding: const EdgeInsets.only(
+  //                           top: 10.0, left: 16.0, bottom: 10),
+  //                       child: HtmlToRichText(
+  //                         htmlString: htmlContent3_2,
+  //                         textTheme: textTheme,
+  //                       )),
+  //                 ],
+  //               ),
+  //             ),
+  //             Card(
+  //               child: Column(
+  //                 crossAxisAlignment: CrossAxisAlignment.start,
+  //                 children: <Widget>[
+  //                   Padding(
+  //                     padding: const EdgeInsets.only(
+  //                       top: 10.0,
+  //                       left: 16.0,
+  //                     ),
+  //                     child: Text('Das Prädikat', style: textTheme.titleSmall),
+  //                   ),
+  //                   Padding(
+  //                       padding: const EdgeInsets.only(
+  //                         top: 10.0,
+  //                         left: 16.0,
+  //                       ),
+  //                       child: HtmlToRichText(
+  //                         htmlString: htmlContent4_1,
+  //                         textTheme: textTheme,
+  //                       )),
+  //                   Padding(
+  //                       padding: const EdgeInsets.only(
+  //                         top: 10.0,
+  //                         left: 16.0,
+  //                       ),
+  //                       child: HtmlTableToDartTable(
+  //                         htmlTable: htmlTable4_1,
+  //                         textTheme: textTheme,
+  //                         columnWidths: const {
+  //                           0: FractionColumnWidth(.2),
+  //                           1: FractionColumnWidth(.2),
+  //                           2: FractionColumnWidth(.6),
+  //                         },
+  //                       )),
+  //                   Padding(
+  //                       padding: const EdgeInsets.only(
+  //                         top: 10.0,
+  //                         left: 16.0,
+  //                       ),
+  //                       child: HtmlToRichText(
+  //                         htmlString: htmlContent4_2,
+  //                         textTheme: textTheme,
+  //                       )),
+  //                   Padding(
+  //                       padding: const EdgeInsets.only(
+  //                         top: 10.0,
+  //                         left: 16.0,
+  //                       ),
+  //                       child: HtmlTableToDartTable(
+  //                         htmlTable: htmlTable4_2,
+  //                         textTheme: textTheme,
+  //                         columnWidths: const {
+  //                           0: FractionColumnWidth(.18),
+  //                           1: FractionColumnWidth(.16),
+  //                           2: FractionColumnWidth(.14),
+  //                           3: FractionColumnWidth(.15),
+  //                           4: FractionColumnWidth(.16),
+  //                           5: FractionColumnWidth(.21),
+  //                         },
+  //                       )),
+  //                 ],
+  //               ),
+  //             ),
+  //             Card(
+  //               child: Column(
+  //                 crossAxisAlignment: CrossAxisAlignment.start,
+  //                 children: <Widget>[
+  //                   Padding(
+  //                     padding: const EdgeInsets.only(
+  //                       top: 10.0,
+  //                       left: 16.0,
+  //                     ),
+  //                     child: Text('Satzglieder', style: textTheme.titleSmall),
+  //                   ),
+  //                   Padding(
+  //                       padding: const EdgeInsets.only(
+  //                         top: 10.0,
+  //                         left: 16.0,
+  //                       ),
+  //                       child: HtmlToRichText(
+  //                         htmlString: htmlContent5_1,
+  //                         textTheme: textTheme,
+  //                       )),
+  //                   Padding(
+  //                       padding: const EdgeInsets.only(
+  //                         top: 10.0,
+  //                         left: 16.0,
+  //                       ),
+  //                       child: HtmlTableToDartTable(
+  //                         htmlTable: htmlTable5,
+  //                         textTheme: textTheme,
+  //                         columnWidths: const {
+  //                           0: FractionColumnWidth(.15),
+  //                           1: FractionColumnWidth(.25),
+  //                           2: FractionColumnWidth(.18),
+  //                           3: FractionColumnWidth(.2),
+  //                           4: FractionColumnWidth(.22),
+  //                         },
+  //                       )),
+  //                   Padding(
+  //                       padding: const EdgeInsets.only(
+  //                         top: 10.0,
+  //                         left: 16.0,
+  //                       ),
+  //                       child: HtmlToRichText(
+  //                         htmlString: htmlContent5_2,
+  //                         textTheme: textTheme,
+  //                       )),
+  //                 ],
+  //               ),
+  //             ),
+  //             Card(
+  //               child: Column(
+  //                 crossAxisAlignment: CrossAxisAlignment.start,
+  //                 children: <Widget>[
+  //                   Padding(
+  //                     padding: const EdgeInsets.only(
+  //                       top: 10.0,
+  //                       left: 16.0,
+  //                     ),
+  //                     child: Text('Wortgruppen', style: textTheme.titleSmall),
+  //                   ),
+  //                   Padding(
+  //                       padding: const EdgeInsets.only(
+  //                         top: 10.0,
+  //                         left: 16.0,
+  //                       ),
+  //                       child: HtmlToRichText(
+  //                         htmlString: htmlContent6_1,
+  //                         textTheme: textTheme,
+  //                       )),
+  //                   Padding(
+  //                       padding: const EdgeInsets.only(
+  //                         top: 10.0,
+  //                         left: 16.0,
+  //                       ),
+  //                       child: HtmlTableToDartTable(
+  //                         htmlTable: htmlTable6_1,
+  //                         textTheme: textTheme,
+  //                         columnWidths: const {
+  //                           0: FractionColumnWidth(.2),
+  //                           1: FractionColumnWidth(.2),
+  //                           2: FractionColumnWidth(.4),
+  //                           3: FractionColumnWidth(.2),
+  //                         },
+  //                       )),
+  //                   Padding(
+  //                       padding: const EdgeInsets.only(
+  //                         top: 10.0,
+  //                         left: 16.0,
+  //                       ),
+  //                       child: HtmlToRichText(
+  //                         htmlString: htmlContent6_2,
+  //                         textTheme: textTheme,
+  //                       )),
+  //                   Padding(
+  //                       padding: const EdgeInsets.only(
+  //                         top: 10.0,
+  //                         left: 16.0,
+  //                       ),
+  //                       child: HtmlTableToDartTable(
+  //                         htmlTable: htmlTable6_2,
+  //                         textTheme: textTheme,
+  //                         columnWidths: const {
+  //                           0: FractionColumnWidth(.15),
+  //                           1: FractionColumnWidth(.15),
+  //                           2: FractionColumnWidth(.15),
+  //                           3: FractionColumnWidth(.2),
+  //                           4: FractionColumnWidth(.2),
+  //                           5: FractionColumnWidth(.15),
+  //                         },
+  //                       )),
+  //                   Padding(
+  //                       padding: const EdgeInsets.only(
+  //                         top: 10.0,
+  //                         left: 16.0,
+  //                       ),
+  //                       child: HtmlToRichText(
+  //                         htmlString: htmlContent6_3,
+  //                         textTheme: textTheme,
+  //                       )),
+  //                   Padding(
+  //                       padding: const EdgeInsets.only(
+  //                         top: 10.0,
+  //                         left: 16.0,
+  //                       ),
+  //                       child: HtmlTableToDartTable(
+  //                         htmlTable: htmlTable6_3,
+  //                         textTheme: textTheme,
+  //                         columnWidths: const {
+  //                           0: FractionColumnWidth(.14),
+  //                           1: FractionColumnWidth(.14),
+  //                           2: FractionColumnWidth(.72),
+  //                         },
+  //                       )),
+  //                   Padding(
+  //                       padding: const EdgeInsets.only(
+  //                         top: 10.0,
+  //                         left: 16.0,
+  //                       ),
+  //                       child: HtmlToRichText(
+  //                         htmlString: htmlContent6_4,
+  //                         textTheme: textTheme,
+  //                       )),
+  //                 ],
+  //               ),
+  //             ),
+  //             Card(
+  //               child: Column(
+  //                 crossAxisAlignment: CrossAxisAlignment.start,
+  //                 children: <Widget>[
+  //                   Padding(
+  //                     padding: const EdgeInsets.only(
+  //                       top: 10.0,
+  //                       left: 16.0,
+  //                     ),
+  //                     child: Text('Übersicht Satzarten',
+  //                         style: textTheme.titleSmall),
+  //                   ),
+  //                   Padding(
+  //                       padding: const EdgeInsets.only(
+  //                         top: 10.0,
+  //                         left: 16.0,
+  //                       ),
+  //                       child: HtmlToRichText(
+  //                         htmlString: htmlContent7,
+  //                         textTheme: textTheme,
+  //                       )),
+  //                 ],
+  //               ),
+  //             ),
+  //           ],
+  //         ),
+  //       ),
+  //     ),
+  //   );
+  // }
+  
+
+    @override
   Widget build(BuildContext context) {
-    final localizations = AppLocalizations.of(context);
-    final textTheme = Theme.of(context).textTheme;
     return Expanded(
       child: Scaffold(
         body: Padding(
-          padding: const EdgeInsets.all(8.0),
-          child: ListView(
-            children: <Widget>[
-              Card(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: <Widget>[
-                    Padding(
-                      padding: const EdgeInsets.only(top: 16.0, left: 16.0),
-                      child:
-                          Text('12. Satzlehre', style: textTheme.titleMedium),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.only(top: 10.0, left: 16.0),
-                      child: Text(
-                          'Einführung / Was man über Sätze wissen sollte.',
-                          style: textTheme.titleSmall),
-                    ),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                            top: 10.0, left: 16.0, bottom: 10),
-                        child: HtmlToRichText(
-                          htmlString: htmlContent1_1,
-                          textTheme: textTheme,
-                        )),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                            top: 10.0, left: 16.0, bottom: 10),
-                        child: HtmlTableToDartTable(
-                          htmlTable: htmlTable1_1,
-                          textTheme: textTheme,
-                          columnWidths: {
-                            0: FractionColumnWidth(1),
-                          },
-                        )),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                            top: 10.0, left: 16.0, bottom: 10),
-                        child: HtmlTableToDartTable(
-                          htmlTable: htmlTable1_2,
-                          textTheme: textTheme,
-                          columnWidths: {
-                            0: FractionColumnWidth(.5),
-                            1: FractionColumnWidth(.5),
-                          },
-                        )),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                            top: 10.0, left: 16.0, bottom: 10),
-                        child: HtmlToRichText(
-                          htmlString: htmlContent1_2,
-                          textTheme: textTheme,
-                        )),
-                  ],
-                ),
-              ),
-              Card(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: <Widget>[
-                    Padding(
-                      padding: const EdgeInsets.only(
-                          top: 10.0, left: 16.0, bottom: 10),
-                      child: Text('Ergänzungen / Objekte',
-                          style: textTheme.titleSmall),
-                    ),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                            top: 10.0, left: 16.0, bottom: 10),
-                        child: HtmlToRichText(
-                          htmlString: htmlContent2_1,
-                          textTheme: textTheme,
-                        )),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                            top: 10.0, left: 16.0, bottom: 10),
-                        child: HtmlTableToDartTable(
-                          htmlTable: htmlTable2_1,
-                          textTheme: textTheme,
-                          columnWidths: const {
-                            0: FractionColumnWidth(1),
-                          },
-                        )),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                            top: 10.0, left: 16.0, bottom: 10),
-                        child: HtmlTableToDartTable(
-                          htmlTable: htmlTable2_2,
-                          textTheme: textTheme,
-                          columnWidths: const {
-                            0: FractionColumnWidth(.2),
-                            1: FractionColumnWidth(.2),
-                            2: FractionColumnWidth(.15),
-                            3: FractionColumnWidth(.45),
-                          },
-                        )),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                            top: 10.0, left: 16.0, bottom: 10),
-                        child: HtmlToRichText(
-                          htmlString: htmlContent2_2,
-                          textTheme: textTheme,
-                        )),
-                  ],
-                ),
-              ),
-              Card(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: <Widget>[
-                    Padding(
-                      padding: const EdgeInsets.only(
-                          top: 10.0, left: 16.0, bottom: 10),
-                      child: Text('Angaben', style: textTheme.titleSmall),
-                    ),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                            top: 10.0, left: 16.0, bottom: 10),
-                        child: HtmlToRichText(
-                          htmlString: htmlContent3_1,
-                          textTheme: textTheme,
-                        )),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                            top: 10.0, left: 16.0, bottom: 10),
-                        child: HtmlTableToDartTable(
-                          htmlTable: htmlTable3,
-                          textTheme: textTheme,
-                          columnWidths: const {
-                            0: FractionColumnWidth(.12),
-                            1: FractionColumnWidth(.11),
-                            2: FractionColumnWidth(.25),
-                            3: FractionColumnWidth(.13),
-                            4: FractionColumnWidth(.12),
-                            5: FractionColumnWidth(.25),
-                          },
-                        )),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                            top: 10.0, left: 16.0, bottom: 10),
-                        child: HtmlToRichText(
-                          htmlString: htmlContent3_2,
-                          textTheme: textTheme,
-                        )),
-                  ],
-                ),
-              ),
-              Card(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: <Widget>[
-                    Padding(
-                      padding: const EdgeInsets.only(
-                        top: 10.0,
-                        left: 16.0,
-                      ),
-                      child: Text('Das Prädikat', style: textTheme.titleSmall),
-                    ),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                          top: 10.0,
-                          left: 16.0,
-                        ),
-                        child: HtmlToRichText(
-                          htmlString: htmlContent4_1,
-                          textTheme: textTheme,
-                        )),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                          top: 10.0,
-                          left: 16.0,
-                        ),
-                        child: HtmlTableToDartTable(
-                          htmlTable: htmlTable4_1,
-                          textTheme: textTheme,
-                          columnWidths: const {
-                            0: FractionColumnWidth(.2),
-                            1: FractionColumnWidth(.2),
-                            2: FractionColumnWidth(.6),
-                          },
-                        )),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                          top: 10.0,
-                          left: 16.0,
-                        ),
-                        child: HtmlToRichText(
-                          htmlString: htmlContent4_2,
-                          textTheme: textTheme,
-                        )),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                          top: 10.0,
-                          left: 16.0,
-                        ),
-                        child: HtmlTableToDartTable(
-                          htmlTable: htmlTable4_2,
-                          textTheme: textTheme,
-                          columnWidths: const {
-                            0: FractionColumnWidth(.18),
-                            1: FractionColumnWidth(.16),
-                            2: FractionColumnWidth(.14),
-                            3: FractionColumnWidth(.15),
-                            4: FractionColumnWidth(.16),
-                            5: FractionColumnWidth(.21),
-                          },
-                        )),
-                  ],
-                ),
-              ),
-              Card(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: <Widget>[
-                    Padding(
-                      padding: const EdgeInsets.only(
-                        top: 10.0,
-                        left: 16.0,
-                      ),
-                      child: Text('Satzglieder', style: textTheme.titleSmall),
-                    ),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                          top: 10.0,
-                          left: 16.0,
-                        ),
-                        child: HtmlToRichText(
-                          htmlString: htmlContent5_1,
-                          textTheme: textTheme,
-                        )),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                          top: 10.0,
-                          left: 16.0,
-                        ),
-                        child: HtmlTableToDartTable(
-                          htmlTable: htmlTable5,
-                          textTheme: textTheme,
-                          columnWidths: const {
-                            0: FractionColumnWidth(.15),
-                            1: FractionColumnWidth(.25),
-                            2: FractionColumnWidth(.18),
-                            3: FractionColumnWidth(.2),
-                            4: FractionColumnWidth(.22),
-                          },
-                        )),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                          top: 10.0,
-                          left: 16.0,
-                        ),
-                        child: HtmlToRichText(
-                          htmlString: htmlContent5_2,
-                          textTheme: textTheme,
-                        )),
-                  ],
-                ),
-              ),
-              Card(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: <Widget>[
-                    Padding(
-                      padding: const EdgeInsets.only(
-                        top: 10.0,
-                        left: 16.0,
-                      ),
-                      child: Text('Wortgruppen', style: textTheme.titleSmall),
-                    ),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                          top: 10.0,
-                          left: 16.0,
-                        ),
-                        child: HtmlToRichText(
-                          htmlString: htmlContent6_1,
-                          textTheme: textTheme,
-                        )),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                          top: 10.0,
-                          left: 16.0,
-                        ),
-                        child: HtmlTableToDartTable(
-                          htmlTable: htmlTable6_1,
-                          textTheme: textTheme,
-                          columnWidths: const {
-                            0: FractionColumnWidth(.2),
-                            1: FractionColumnWidth(.2),
-                            2: FractionColumnWidth(.4),
-                            3: FractionColumnWidth(.2),
-                          },
-                        )),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                          top: 10.0,
-                          left: 16.0,
-                        ),
-                        child: HtmlToRichText(
-                          htmlString: htmlContent6_2,
-                          textTheme: textTheme,
-                        )),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                          top: 10.0,
-                          left: 16.0,
-                        ),
-                        child: HtmlTableToDartTable(
-                          htmlTable: htmlTable6_2,
-                          textTheme: textTheme,
-                          columnWidths: const {
-                            0: FractionColumnWidth(.15),
-                            1: FractionColumnWidth(.15),
-                            2: FractionColumnWidth(.15),
-                            3: FractionColumnWidth(.2),
-                            4: FractionColumnWidth(.2),
-                            5: FractionColumnWidth(.15),
-                          },
-                        )),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                          top: 10.0,
-                          left: 16.0,
-                        ),
-                        child: HtmlToRichText(
-                          htmlString: htmlContent6_3,
-                          textTheme: textTheme,
-                        )),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                          top: 10.0,
-                          left: 16.0,
-                        ),
-                        child: HtmlTableToDartTable(
-                          htmlTable: htmlTable6_3,
-                          textTheme: textTheme,
-                          columnWidths: const {
-                            0: FractionColumnWidth(.14),
-                            1: FractionColumnWidth(.14),
-                            2: FractionColumnWidth(.72),
-                          },
-                        )),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                          top: 10.0,
-                          left: 16.0,
-                        ),
-                        child: HtmlToRichText(
-                          htmlString: htmlContent6_4,
-                          textTheme: textTheme,
-                        )),
-                  ],
-                ),
-              ),
-              Card(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: <Widget>[
-                    Padding(
-                      padding: const EdgeInsets.only(
-                        top: 10.0,
-                        left: 16.0,
-                      ),
-                      child: Text('Übersicht Satzarten', style: textTheme.titleSmall),
-                    ),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                          top: 10.0,
-                          left: 16.0,
-                        ),
-                        child: HtmlToRichText(
-                          htmlString: htmlContent7,
-                          textTheme: textTheme,
-                        )),
-                  ],
-                ),
-              ),
- 
-            ],
-          ),
-        ),
+            padding: const EdgeInsets.all(8.0),
+            child: MyPageContentView(contents: contents)),
       ),
     );
   }
 }
-// htmlContent1_1
-// Ein Satz kann aus vielen einzelnen Wörtern bestehen.
-//Diese Wörter können aber nicht beliebig irgendwo im Satz stehen.
-//Sie werden geordnet und in Satzgliedern zusammengefasst.
-//Ein Satzglied kann also durchaus aus mehreren Wörtern bestehen, den so genannten Wortgruppen.
-//Die einzelnen Satzglieder wiederum haben in einem Satz feste Regeln.
 
-//Es werden drei Satzglieder unterschieden:
-// Prädikat
-// Ergänzungen
-// Angaben
-// Um einen vollständigen Satz bilden zu können, braucht man mindestens zwei Satzglieder.
-
+List<CardContent> contents = [
+  CardContent(
+    elements: [
+      CardElement(type: ElementType.pageTitle, value: title),
+    ],
+  ),
+  CardContent(
+    elements: [
+      CardElement(type: ElementType.cardTitle, value: title1),
+      CardElement(type: ElementType.htmlContent, value: htmlContent1_1),
+      CardElement(type: ElementType.htmlTable, value: htmlTable1_1),
+      CardElement(type: ElementType.htmlTable, value: htmlTable1_2),
+      CardElement(type: ElementType.htmlContent, value: htmlContent1_2),
+    ],
+  ),
+  CardContent(
+    elements: [
+      CardElement(type: ElementType.cardTitle, value: title2),
+      CardElement(type: ElementType.htmlContent, value: htmlContent2_1),
+      CardElement(type: ElementType.htmlTable, value: htmlTable2_1),
+      CardElement(type: ElementType.htmlTable, value: htmlTable2_2),
+      CardElement(type: ElementType.htmlContent, value: htmlContent2_2),
+    ],
+  ),
+  CardContent(
+    elements: [
+      CardElement(type: ElementType.cardTitle, value: title3),
+      CardElement(type: ElementType.htmlContent, value: htmlContent3_1),
+      CardElement(type: ElementType.htmlTable, value: htmlTable3),
+      CardElement(type: ElementType.htmlContent, value: htmlContent3_2),
+    ],
+  ),
+  CardContent(
+    elements: [
+      CardElement(type: ElementType.cardTitle, value: title4),
+      CardElement(type: ElementType.htmlContent, value: htmlContent4_1),
+      CardElement(type: ElementType.htmlTable, value: htmlTable4_1),
+      CardElement(type: ElementType.htmlContent, value: htmlContent4_2),
+      CardElement(type: ElementType.htmlTable, value: htmlTable4_2),
+    ],
+  ),
+  CardContent(
+    elements: [
+      CardElement(type: ElementType.cardTitle, value: title5),
+      CardElement(type: ElementType.htmlContent, value: htmlContent5_1),
+      CardElement(type: ElementType.htmlTable, value: htmlTable5),
+      CardElement(type: ElementType.htmlContent, value: htmlContent5_2),
+    ],
+  ),
+  CardContent(
+    elements: [
+      CardElement(type: ElementType.cardTitle, value: title6),
+      CardElement(type: ElementType.htmlContent, value: htmlContent6_1),
+      CardElement(type: ElementType.htmlTable, value: htmlTable6_1),
+      CardElement(type: ElementType.htmlContent, value: htmlContent6_2),
+      CardElement(type: ElementType.htmlTable, value: htmlTable6_2),
+      CardElement(type: ElementType.htmlContent, value: htmlContent6_3),
+      CardElement(type: ElementType.htmlTable, value: htmlTable6_3),
+      CardElement(type: ElementType.htmlContent, value: htmlContent6_4),
+    ],
+  ),
+    CardContent(
+    elements: [
+      CardElement(type: ElementType.cardTitle, value: title7),
+      CardElement(type: ElementType.htmlContent, value: htmlContent7),
+    ],
+  ),
+];
+String title = '12. Satzlehre';
+String title1 = 'Einführung / Was man über Sätze wissen sollte.';
 String htmlContent1_1 = '''
 <p>Ein Satz kann aus <span style="text-decoration:underline">vielen einzelnen Wörtern</span> bestehen. Diese Wörter können aber nicht beliebig irgendwo im Satz stehen. Sie werden geordnet und in <strong><span class="red">Satzgliedern</span></strong> zusammengefasst. Ein Satzglied kann also durchaus aus mehreren Wörtern bestehen, den so genannten <strong><a title="Wortgruppen" href="#wortgruppen">Wortgruppen</a></strong>. Die einzelnen Satzglieder wiederum haben in einem Satz <strong><a title="Satzglieder" href="#satzglieder">feste Regeln</a></strong>. Es werden <strong><span class="red">drei Satzglieder</span></strong> unterschieden:</p>
 <li><strong><a title="Prädikat" href="#praedikat">Prädikat</a></strong></li>
@@ -459,6 +530,7 @@ String htmlContent1_2 = '''
 <li>Das Prädikat wird durch ein <strong><a title="Verb" href="lernen.php?menu_id=6">Verb</a></strong> ausgedrückt.</li>
 ''';
 
+String title2 = 'Ergänzungen / Objekte';
 String htmlContent2_1 = '''
 <p>Das Herzstück eines jeden Satzes bildet das <strong><a title="Prädikat" href="lernen.php?menu_id=6#praedikat">Prädikat</a></strong>. Das Prädikat wird im Satz durch ein <strong><a title="Verben" href="lernen.php?menu_id=6">Verb</a></strong> vertreten. Das Verb kann jedoch nicht alleine stehen und benötigt mindestens einen Begleiter, das so genannte Subjekt. <strong><a title="Nominativ-Ergänzung" href="lernen.php?menu_id=38">Das Subjekt ist eine Nominativ-Ergänzung</a></strong>. Die Nominativ-Ergänzung wird <strong><span class="red">durch das Verb bestimmt</span></strong> und ist eine <span style="text-decoration:underline"><strong><span class="red">notwendige Erweiterung des Verbs</span></strong></span>. Eine notwendige Ergänzung kann also <span style="text-decoration:underline">nicht weggelassen werden</span>, sonst ist der Satz unvollständig. Ein Verb kann auch weitere <strong><a title="Verbergänzungen" href="lernen.php?menu_id=7">(notwendige) Ergänzungen</a></strong> haben. Welche anderen Ergänzungen, auch <strong><span class="red">Objekte</span></strong> genannt, in einem Satz benötigt werden, wird jeweils vom Verb bestimmt. Bei weiteren (<strong><span class="red">notwendigen</span></strong>) Ergänzungen gilt:</p>
 ''';
@@ -551,6 +623,7 @@ String htmlContent2_2 = '''
 <p><strong><a title="Verbliste der Kasusergänzungen" href="lernen.php?menu_id=22">Verbliste der Kasusergänzungen</a></strong></p>
 ''';
 
+String title3 = 'Angaben';
 String htmlContent3_1 = '''
 <p>Das Verb gibt vor, welche Ergänzungen zu gebrauchen sind. Ergänzungen sind zum größten Teil <strong><span class="red">obligatorisch</span></strong>, sie müssen in einem Satz gebraucht werden. Neben den Ergänzungen gibt es so genannte <strong><span class="red">Angaben</span></strong>. Angaben werden <span style="text-decoration:underline">nicht durch das Verb bestimmt</span>. Angaben sind <strong><span class="red">fakultativ</span></strong> und sind für einen Satz <strong><span class="red">nicht notwendige Satzglieder</span></strong>. Bei den Angaben handelt es sich um <strong><span class="red">freie Satzglieder</span></strong>, die einem Satz weitere Informationen geben können. Diese Angaben lassen sich unter anderem mit den W-Fragen "wann, warum, wozu, wie und wo" erfragen. Je nach Fragewort lassen sich die unterschiedlichsten Angaben unterscheiden. Die wichtigsten sind:</p>
 ''';
@@ -660,6 +733,7 @@ String htmlContent3_2 = '''
 <li>Obwohl der Gebrauch der Angaben in einem Satzgefüge frei ist, gibt es im Satzbau bestimmte Regeln, die man beachten sollte. <br> Siehe dazu: <strong><a title="Angaben" href="lernen.php?menu_id=91#einfuehrung">Stellung der Angaben im Satz</a></strong></li>
 ''';
 
+String title4 = 'Das Prädikat';
 String htmlContent4_1 = '''  
 <p><strong><span class="red">Das Prädikat</span></strong> steht <strong><span class="red">im Mittelpunkt eines jeden Satzes</span></strong>. Das Prädikat wird durch ein <strong><a title="Verben" href="lernen.php?menu_id=6">Verb</a></strong> ausgedrückt. Das Verb wiederum bestimmt die jeweiligen <strong><a title="Ergänzungen" href="#ergaenzungen">Ergänzungen</a></strong>.</p>
 <p>Während die Ergänzungen und <strong><a title="Angaben" href="#angaben">Angaben</a></strong> in einem Satz unterschiedliche <strong><a title="Satzglieder" href="#satzglieder">Positionen</a></strong> einnehmen können, hat das Prädikat <strong><span class="red">feste Positionen</span></strong>, die eingehalten werden müssen. Die Stellung des Prädikats ist auch von der <strong><a title="Satzarten" href="#satzarten">Satzart</a></strong> abhängig, in denen das Prädikat unterschiedliche Positionen belegt.</p>
@@ -801,6 +875,7 @@ String htmlTable4_2 = '''
 </table>  
 ''';
 
+String title5 = 'Satzglieder';
 String htmlContent5_1 = '''
 <p>Wie oben gesehen, werden drei Satzglieder unterschieden:</p>
 <li><strong><a title="Prädikat" href="#praedikat">Prädikat</a></strong> (obligatorisch)</li>
@@ -873,6 +948,7 @@ String htmlContent5_2 = '''
 <p>* Handelt es sich um ein längeres Subjekt (<strong><a title="Wortgruppen" href="#wortgruppen">Nomengruppe</a></strong>), können kleinere Wörter, wie z.B. die kurzen <strong><a title="Pronomen" href="lernen.php?menu_id=13">Pronomen</a></strong>, <strong><a title="Adverbien" href="lernen.php?menu_id=12">Adverbien</a></strong>, etc., vorgezogen werden. Die Nomengruppe als Subjekt belegt dann Position 4.</p>
 ''';
 
+String title6 = 'Wortgruppen';
 String htmlContent6_1 = '''
 <p>Wir wissen bereits, dass man <a title="Einführung" href="#einfuehrung">drei Satzglieder</a> unterscheidet: <strong><a title="Prädikat" href="#praedikat">Prädikat</a></strong>, <strong><a title="Ergänzungen" href="#ergaenzungen">Ergänzungen</a></strong> und <strong><a title="Angaben" href="#angaben">Angaben</a></strong>. Ein einzelner Satz kann aus mehreren Satzgliedern bestehen. Das Verb "<strong><span class="red">warten</span></strong>" hat beispielsweise 2 Ergänzungen (<strong><a title="Nominativ-Ergänzung" href="lernen.php?menu_id=38">Nominativ-</a></strong> + <strong><a title="Präpositional-Ergänzung" href="lernen.php?menu_id=45">Präpositional-Ergänzung</a></strong>):</p>
 ''';
@@ -987,6 +1063,7 @@ String htmlContent6_4 = '''
 <li><strong><a title="Partizipialkonstruktionen" href="lernen.php?menu_id=69#partizipialkonstruktionen">Partizipialkonstruktionen</a></strong></li>
 ''';
 
+String title7 = 'Übersicht Satzarten';
 String htmlContent7 = '''
 <p>Im Deutschen gibt es verschiedene <strong><span class="red">Satzarten</span></strong>. Eine Unterscheidung der Satzarten ist notwendig, weil die Stellung des <strong><a title="Prädikat" href="#praedikat">Prädikats</a></strong> je nach Satzart variiert. Folgende Satzarten werden unterschieden:</p>
 <li><strong><a title="Satzarten" href="lernen.php?menu_id=88">Aussagesätze</a></strong></li>

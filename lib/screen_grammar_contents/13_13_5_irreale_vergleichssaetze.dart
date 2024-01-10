@@ -39,14 +39,11 @@ List<CardContent> contents = [
 String title = '13.13.5. Irreale Vergleichssätze';
 String title1 = 'Was man über irreale Vergleichssätze wissen sollte.';
 String htmlContent1_1 = '''
- <div>
 <p><strong><span class="blue">Irreale Vergleichssätze</span></strong> drücken einen Vergleich aus, der <span style="text-decoration:underline">nicht real</span> ist. Der Hauptsatz äußert eine reale Feststellung und steht daher im Indikativ. Der Nebensatz gibt den irrealen Vergleich an und steht im Konjunktiv II.</p>
-<p>&nbsp;</p>
+
 <p><br> Irreale Vergleichssätze stehen normalerweise nach Verben des persönlichen Befindens oder der persönlichen Wahrnehmung. Folgende Konnektoren leiten irreale Vergleichssätze ein:</p>
-</div>
-<p>&nbsp;</p>
+
 <h3>als ob + Nebensatz</h3>
-<p>&nbsp;</p>
 ''';
 String htmlTable1_2 = '''
 <table><colgroup> 
@@ -85,9 +82,7 @@ String htmlTable1_2 = '''
 </table>
 ''';
 String htmlContent1_3 = '''
-<p>&nbsp;</p>
 <h3>als + Hauptsatz</h3>
-<p>&nbsp;</p>
 ''';
 String htmlTable1_4 = '''
 <table><colgroup> 
@@ -131,9 +126,7 @@ String htmlTable1_4 = '''
 </table>
 ''';
 String htmlContent1_5 = '''
-<p>&nbsp;</p>
 <h3>als wenn, wie wenn + Nebensatz (seltener)</h3>
-<p>&nbsp;</p>
 ''';
 String htmlTable1_6 = '''
 <table>
@@ -171,5 +164,3 @@ String htmlTable1_6 = '''
 </tbody>
 </table>
 ''';
-
-

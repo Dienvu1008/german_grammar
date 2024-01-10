@@ -1,1646 +1,351 @@
 import 'package:flutter/material.dart';
 
 import '../app/app_localizations.dart';
+import '../page_content.dart';
 
 class Demonstrativpronomen_11_2 extends StatelessWidget {
   const Demonstrativpronomen_11_2({super.key});
 
   @override
   Widget build(BuildContext context) {
-    final localizations = AppLocalizations.of(context);
-    final textTheme = Theme.of(context).textTheme;
     return Expanded(
       child: Scaffold(
         body: Padding(
-          padding: const EdgeInsets.all(8.0),
-          child: ListView(
-            children: <Widget>[
-              Card(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: <Widget>[
-                    Padding(
-                      padding: const EdgeInsets.only(top: 16.0, left: 16.0),
-                      child: Text('11.2. Demonstrativpronomen',
-                          style: textTheme.titleMedium),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.only(top: 10.0, left: 16.0),
-                      child: Text(
-                          'Was man über Demonstrativpronomen wissen sollte.',
-                          style: textTheme.titleSmall),
-                    ),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                            top: 10.0, left: 16.0, bottom: 10),
-                        child: RichText(
-                          text: TextSpan(
-                            style: textTheme.bodyMedium,
-                            children: <TextSpan>[
-                              TextSpan(text: 'Demonstrativpronomen, auch '),
-                              TextSpan(
-                                  text: 'hinweisende Fürwörter',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(
-                                  text:
-                                      ' genannt, ordnen einer Person oder einer Sache im Kontext '),
-                              TextSpan(
-                                  text: 'eine stärkere Betonung',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      decoration: TextDecoration.underline)),
-                              TextSpan(text: ' zu und heben eine gewisse '),
-                              TextSpan(
-                                  text: 'Wichtigkeit',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      decoration: TextDecoration.underline)),
-                              TextSpan(
-                                  text:
-                                      ' der Person oder der Sache hervor. Demonstrativpronomen werden sprachlich stärker betont als die Artikelwörter. Zur stärkeren Betonung stehen sie meist auf Position 1. Das Demonstrativpronomen kann '),
-                              TextSpan(
-                                  text: 'in Funktion eines Artikels',
-                                  style: textTheme.bodyMedium!
-                                      .copyWith(color: Colors.blue)),
-                              TextSpan(text: ' oder als '),
-                              TextSpan(
-                                  text: 'Stellvertreter eines Nomens',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      decoration: TextDecoration.underline)),
-                              TextSpan(
-                                  text:
-                                      ' auftreten. Man darf das Demonstrativpronomen als '),
-                              TextSpan(
-                                  text: 'Stellvertreter eines Nomens',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(text: ' nicht mit einem '),
-                              TextSpan(
-                                  text: 'Demonstrativartikel',
-                                  style: textTheme.bodyMedium!
-                                      .copyWith(color: Colors.blue)),
-                              TextSpan(text: ' verwechseln, da es zum Teil '),
-                              TextSpan(
-                                  text: 'anders dekliniert',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      decoration: TextDecoration.underline)),
-                              TextSpan(
-                                  text:
-                                      ' wird. Die wichtigsten Demonstrativpronomen sind:\n\n'),
-                              TextSpan(
-                                  text: 'der, die, das, ...\n',
-                                  style: textTheme.bodyMedium!
-                                      .copyWith(fontWeight: FontWeight.bold)),
-                              TextSpan(text: 'Kennst du diesen Mann dort? '),
-                              TextSpan(
-                                  text: 'Den',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(
-                                  text:
-                                      ' habe ich hier bei uns noch nie gesehen.\n'),
-                              TextSpan(
-                                  text: 'dieser, jener, ...\n',
-                                  style: textTheme.bodyMedium!
-                                      .copyWith(fontWeight: FontWeight.bold)),
-                              TextSpan(
-                                  text:
-                                      'Hast du schon das Buch hier gelesen? - Nein, '),
-                              TextSpan(
-                                  text: 'dieses',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(text: ' kenne ich noch nicht, aber '),
-                              TextSpan(
-                                  text: 'jenes',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(text: '.\n'),
-                              TextSpan(
-                                  text: 'derjenige, diejenige, ...\n',
-                                  style: textTheme.bodyMedium!
-                                      .copyWith(fontWeight: FontWeight.bold)),
-                              TextSpan(text: ''),
-                              TextSpan(
-                                  text: 'Diejenigen',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(
-                                  text:
-                                      ', die etwas sagen wollen, sagen es jetzt oder schweigen für immer.\n'),
-                              TextSpan(
-                                  text: 'derselbe, dieselbe, ...\n',
-                                  style: textTheme.bodyMedium!
-                                      .copyWith(fontWeight: FontWeight.bold)),
-                              TextSpan(text: 'Das ist '),
-                              TextSpan(
-                                  text: 'derselbe',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(
-                                  text:
-                                      ', der gestern auch schon mal nach Ihnen gefragt hat.\n'),
-                              TextSpan(
-                                  text: 'selbst, selber\n',
-                                  style: textTheme.bodyMedium!
-                                      .copyWith(fontWeight: FontWeight.bold)),
-                              TextSpan(text: 'Du bist '),
-                              TextSpan(
-                                  text: 'selbst',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(
-                                  text:
-                                      ' dran schuld, dass du dir weh getan hast.'),
-                            ],
-                          ),
-                        )),
-                  ],
-                ),
-              ),
-              Card(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: <Widget>[
-                    Padding(
-                      padding: const EdgeInsets.only(
-                          top: 10.0, left: 16.0, bottom: 10),
-                      child: Text(
-                          'Die Demonstrativpronomen "der, die, das, ..."',
-                          style: textTheme.titleSmall),
-                    ),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                            top: 10.0, left: 16.0, bottom: 10),
-                        child: RichText(
-                          text: TextSpan(
-                            style: textTheme.bodyMedium,
-                            children: <TextSpan>[
-                              TextSpan(text: 'Die Demonstrativpronomen "'),
-                              TextSpan(
-                                  text: 'der, die, das, ...',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(text: '" werden benutzt, '),
-                              TextSpan(
-                                  text: 'um Wiederholungen zu vermeiden',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      decoration: TextDecoration.underline)),
-                              TextSpan(
-                                  text:
-                                      '. Es kann stellvertretend für eine Person, eine Sache oder einen ganzen Satzinhalt stehen. Demonstrativpronomen ersetzen ein '),
-                              TextSpan(
-                                  text: 'Nomen',
-                                  style: textTheme.bodyMedium!
-                                      .copyWith(color: Colors.blue)),
-                              TextSpan(text: ' und dürfen nicht mit '),
-                              TextSpan(
-                                  text: 'den bestimmten Artikeln',
-                                  style: textTheme.bodyMedium!
-                                      .copyWith(color: Colors.blue)),
-                              TextSpan(
-                                  text:
-                                      ' vertauscht werden. Ihre Deklination ist teilweise verschieden:'),
-                            ],
-                          ),
-                        )),
-                    SingleChildScrollView(
-                      child: ConstrainedBox(
-                        constraints: const BoxConstraints(
-                            //minHeight: MediaQuery.of(context).size.height
-                            ),
-                        child: IntrinsicHeight(
-                          child: Column(children: [
-                            Table(
-                              border: TableBorder.all(
-                                  color: Colors.purple, width: 1),
-                              columnWidths: {
-                                0: FractionColumnWidth(.2),
-                                1: FractionColumnWidth(.6),
-                                2: FractionColumnWidth(.2),
-                              },
-                              children: [
-                                TableRow(children: [
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'Kasus',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: '3. Person Singular',
-                                          style: textTheme.bodyMedium),
-                                      textAlign: TextAlign.center),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: '3. Person Plural',
-                                          style: textTheme.bodyMedium)),
-                                ]),
-                              ],
-                            ),
-                            Table(
-                              border: TableBorder.all(
-                                  color: Colors.purple, width: 1),
-                              columnWidths: {
-                                0: FractionColumnWidth(.2),
-                                1: FractionColumnWidth(.2),
-                                2: FractionColumnWidth(.2),
-                                3: FractionColumnWidth(.2),
-                                4: FractionColumnWidth(.2),
-                              },
-                              children: [
-                                TableRow(children: [
-                                  RichText(
-                                      text: TextSpan(
-                                          text: '',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'maskulin',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'feminin',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'neutral',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: '',
-                                          style: textTheme.bodyMedium)),
-                                ]),
-                              ],
-                            ),
-                            Table(
-                              border: TableBorder.all(
-                                  color: Colors.purple, width: 1),
-                              columnWidths: {
-                                0: FractionColumnWidth(.2),
-                                1: FractionColumnWidth(.2),
-                                2: FractionColumnWidth(.2),
-                                3: FractionColumnWidth(.2),
-                                4: FractionColumnWidth(.2),
-                              },
-                              children: [
-                                TableRow(children: [
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'Nominativ',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'der',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'die',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'das',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'die',
-                                          style: textTheme.bodyMedium)),
-                                ]),
-                                TableRow(children: [
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'Akkusativ',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'den',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'die',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'das',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'die',
-                                          style: textTheme.bodyMedium)),
-                                ]),
-                                TableRow(children: [
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'Dativ',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'dem',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'der',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'dem',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'denen',
-                                          style: textTheme.bodyMedium!.copyWith(
-                                              color: Colors.red,
-                                              fontWeight: FontWeight.bold))),
-                                ]),
-                                TableRow(children: [
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'Genitiv',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'dessen',
-                                          style: textTheme.bodyMedium!.copyWith(
-                                              color: Colors.red,
-                                              fontWeight: FontWeight.bold))),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'deren',
-                                          style: textTheme.bodyMedium!.copyWith(
-                                              color: Colors.red,
-                                              fontWeight: FontWeight.bold))),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'dessen',
-                                          style: textTheme.bodyMedium!.copyWith(
-                                              color: Colors.red,
-                                              fontWeight: FontWeight.bold))),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'deren / derer',
-                                          style: textTheme.bodyMedium!.copyWith(
-                                              color: Colors.red,
-                                              fontWeight: FontWeight.bold))),
-                                ]),
-                              ],
-                            )
-                          ]),
-                        ),
-                      ),
-                    ),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                            top: 10.0, left: 16.0, bottom: 10),
-                        child: RichText(
-                          text: TextSpan(
-                            style: textTheme.bodyMedium,
-                            children: <TextSpan>[
-                              TextSpan(
-                                  text:
-                                      'Diese Demonstrativpronomen werden oft dazu gebraucht, um eine Person oder Sache '),
-                              TextSpan(
-                                  text: 'stärker zu betonten',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      decoration: TextDecoration.underline)),
-                              TextSpan(text: ' (im Gegensatz zu den '),
-                              TextSpan(
-                                  text: 'Personalpronomen',
-                                  style: textTheme.bodyMedium!
-                                      .copyWith(color: Colors.blue)),
-                              TextSpan(text: ', die nicht betont werden!) "'),
-                              TextSpan(
-                                  text: 'Betonte Pronomen',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(
-                                  text:
-                                      '" werden meist auf Position 1 gestellt.\n'),
-                              TextSpan(text: 'Wo hast du denn '),
-                              TextSpan(
-                                  text: 'das Tischchen',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      decoration: TextDecoration.underline)),
-                              TextSpan(text: ' her? - '),
-                              TextSpan(
-                                  text: 'Das',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(
-                                  text:
-                                      ' habe ich auf dem Flohmarkt gekauft.\n'),
-                              TextSpan(text: 'Bist du nicht mehr mit '),
-                              TextSpan(
-                                  text: 'Heiko',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      decoration: TextDecoration.underline)),
-                              TextSpan(text: ' zusammen? - '),
-                              TextSpan(
-                                  text: 'Dem',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(
-                                  text: ' habe ich den Laufpass gegeben.\n'),
-                              TextSpan(text: 'Wie findest du '),
-                              TextSpan(
-                                  text: 'die Schuhe',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      decoration: TextDecoration.underline)),
-                              TextSpan(text: '? - '),
-                              TextSpan(
-                                  text: 'Die',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(
-                                  text:
-                                      ' finde sehr hübsch, aber viel zu teuer.\n'),
-                              TextSpan(
-                                  text:
-                                      'Was hältst du von Peter und Mike? - Mit '),
-                              TextSpan(
-                                  text: 'denen',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(
-                                  text: ' will ich nichts zu tun haben.\n'),
-                              TextSpan(text: 'Der Chef gibt der Sekretärin '),
-                              TextSpan(
-                                  text: 'den Brief',
-                                  style: textTheme.bodyMedium!
-                                      .copyWith(color: Colors.red)),
-                              TextSpan(text: '.\n - Der Chef gibt '),
-                              TextSpan(
-                                  text: 'den',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(
-                                  text: ' der Sekretärin.\n - Er gibt ihr '),
-                              TextSpan(
-                                  text: 'den',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(text: '.\n - '),
-                              TextSpan(
-                                  text: 'Den',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(text: ' gibt er ihr.\n - (Vergleiche: '),
-                              TextSpan(
-                                  text: 'Satzstellung Personalpronomen',
-                                  style: textTheme.bodyMedium!
-                                      .copyWith(color: Colors.blue)),
-                              TextSpan(text: ')\n'),
-                              TextSpan(text: '" '),
-                              TextSpan(
-                                  text: 'Das',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(text: ' " in Verbindung mit dem Verb "'),
-                              TextSpan(
-                                  text: 'sein',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      decoration: TextDecoration.underline)),
-                              TextSpan(
-                                  text:
-                                      '" verweist auf eine Person, eine Sache oder einen Gegenstand und wird oft zusätzlich mit den Adverbien '),
-                              TextSpan(
-                                  text: 'hier',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(text: ', '),
-                              TextSpan(
-                                  text: 'da',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(text: ' und '),
-                              TextSpan(
-                                  text: 'dort',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(text: ' kombiniert.\n'),
-                              TextSpan(text: 'Mama, was ist '),
-                              TextSpan(
-                                  text: 'das hier',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(text: '? - '),
-                              TextSpan(
-                                  text: 'Das',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(
-                                  text: ' ist eine Taschenlampe, mein Sohn.\n'),
-                              TextSpan(text: 'Wer ist die Frau dort? - '),
-                              TextSpan(
-                                  text: 'Das',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(
-                                  text:
-                                      ' ist Frau Axt, unsere neue Nachbarin.\n'),
-                              TextSpan(
-                                  text:
-                                      'Wem gehört die Uhr / der Hut / das Handy hier? - '),
-                              TextSpan(
-                                  text: 'Das',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(text: ' ist meine / meiner / meins.\n'),
-                              TextSpan(text: 'Wem '),
-                              TextSpan(
-                                  text: 'gehören',
-                                  style: textTheme.bodyMedium!
-                                      .copyWith(color: Colors.blue)),
-                              TextSpan(text: ' diese Bücher dort? - '),
-                              TextSpan(
-                                  text: 'Das',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(text: ' '),
-                              TextSpan(
-                                  text: 'sind',
-                                  style: textTheme.bodyMedium!
-                                      .copyWith(color: Colors.blue)),
-                              TextSpan(
-                                  text: ' meine. (Plural bleibt Plural!)\n'),
-                              TextSpan(text: '" '),
-                              TextSpan(
-                                  text: 'Das',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(
-                                  text:
-                                      ' " kann sich auch auf einen ganzen Satzinhalt beziehen, wobei " '),
-                              TextSpan(
-                                  text: 'das',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(
-                                  text:
-                                      ' " als Nominativ- oder Akkusativergänzung stehen kann.\n'),
-                              TextSpan(
-                                  text:
-                                      'Viele Leute schmeißen ihren Müll einfach auf die Straße. '),
-                              TextSpan(
-                                  text: 'Das',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(text: ' kann nicht sein.\n'),
-                              TextSpan(
-                                  text:
-                                      'Frau Hansen will sich scheiden lassen. - '),
-                              TextSpan(
-                                  text: 'Das',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(text: ' habe ich auch schon gehört.\n'),
-                              TextSpan(
-                                  text:
-                                      'Ich kann das Radio nicht mehr reparieren. - '),
-                              TextSpan(
-                                  text: 'Das',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(
-                                  text:
-                                      ' hätte ich dir gleich sagen können.\n'),
-                              TextSpan(
-                                  text: 'Die beiden Genitivformen im Plural '),
-                              TextSpan(
-                                  text: 'deren',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(text: ' und '),
-                              TextSpan(
-                                  text: 'derer',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.blue,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(
-                                  text: ' haben verschiedene Bedeutungen. '),
-                              TextSpan(
-                                  text: 'Deren',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(text: ' weist auf etwas hin, was '),
-                              TextSpan(
-                                  text: 'zurückweist',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold,
-                                      decoration: TextDecoration.underline)),
-                              TextSpan(text: '. '),
-                              TextSpan(
-                                  text: 'Derer',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.blue,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(text: ' weist auf etwas hin, was '),
-                              TextSpan(
-                                  text: 'vorausweist',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.blue,
-                                      fontWeight: FontWeight.bold,
-                                      decoration: TextDecoration.underline)),
-                              TextSpan(text: '.\n'),
-                              TextSpan(text: 'Am Wochenende fahren wir '),
-                              TextSpan(
-                                  text: 'mit unseren Freunden',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      decoration: TextDecoration.underline)),
-                              TextSpan(text: ' und '),
-                              TextSpan(
-                                  text: 'deren',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(text: ' Kinder zum Kölner Zoo.\n'),
-                              TextSpan(text: 'Die Zahl '),
-                              TextSpan(
-                                  text: 'derer',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.blue,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(text: ', '),
-                              TextSpan(
-                                  text:
-                                      'die durch die hiesigen Prüfungen fallen',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      decoration: TextDecoration.underline)),
-                              TextSpan(text: ', ist äußerst gering.'),
-                            ],
-                          ),
-                        )),
-                  ],
-                ),
-              ),
-              Card(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: <Widget>[
-                    Padding(
-                      padding: const EdgeInsets.only(
-                          top: 10.0, left: 16.0, bottom: 10),
-                      child: Text(
-                          'Die Demonstrativpronomen "dieser, ... und jener, ..."',
-                          style: textTheme.titleSmall),
-                    ),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                            top: 10.0, left: 16.0, bottom: 10),
-                        child: RichText(
-                          text: TextSpan(
-                            style: textTheme.bodyMedium,
-                            children: <TextSpan>[
-                              TextSpan(text: 'Wie alle Pronomen können auch "'),
-                              TextSpan(
-                                  text: 'dieser, diese, ...',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(text: '" und "'),
-                              TextSpan(
-                                  text: 'jener, jene, ...',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(text: '" als '),
-                              TextSpan(
-                                  text: 'Nomenbegleiter',
-                                  style: textTheme.bodyMedium!
-                                      .copyWith(color: Colors.blue)),
-                              TextSpan(text: ' oder als '),
-                              TextSpan(
-                                  text: 'Stellvertreter für ein Nomen',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(text: ' stehen. "'),
-                              TextSpan(
-                                  text: 'Dies-',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(
-                                  text:
-                                      '" wird benutzt, wenn eine Person oder Sache vom Sprecher aus gesehen räumlich oder zeitlich näher ist. "'),
-                              TextSpan(
-                                  text: 'Jene-',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(
-                                  text:
-                                      '" wird benutzt, wenn eine Person oder Sache vom Sprecher aus gesehen räumlich oder zeitlich weiter entfernt ist. Werden beide Pronomen in einem Satz gebraucht, dient es einer Unterscheidung bzw. einer Gegenüberstellung zweier Personen oder Sachen. Beide Pronomen werden '),
-                              TextSpan(
-                                  text: 'gleich dekliniert',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      decoration: TextDecoration.underline)),
-                              TextSpan(text: ' ('),
-                              TextSpan(
-                                  text: 'Endungen wie bestimmter Artikel',
-                                  style: textTheme.bodyMedium!
-                                      .copyWith(color: Colors.blue)),
-                              TextSpan(text: ').'),
-                            ],
-                          ),
-                        )),
-                    SingleChildScrollView(
-                      child: ConstrainedBox(
-                        constraints: const BoxConstraints(
-                            //minHeight: MediaQuery.of(context).size.height
-                            ),
-                        child: IntrinsicHeight(
-                          child: Column(children: [
-                            Table(
-                              border: TableBorder.all(
-                                  color: Colors.purple, width: 1),
-                              columnWidths: {
-                                0: FractionColumnWidth(.2),
-                                1: FractionColumnWidth(.2),
-                                2: FractionColumnWidth(.2),
-                                3: FractionColumnWidth(.2),
-                                4: FractionColumnWidth(.2),
-                              },
-                              children: [
-                                TableRow(children: [
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'Kasus',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'Maskulinum',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'Femininum',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'Neutrum',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'Plural',
-                                          style: textTheme.bodyMedium)),
-                                ]),
-                                TableRow(children: [
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'Nominativ',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(children: [
-                                    TextSpan(
-                                        text: 'dies',
-                                        style: textTheme.bodyMedium),
-                                    TextSpan(
-                                        text: 'er',
-                                        style: textTheme.bodyMedium!.copyWith(
-                                            color: Colors.red,
-                                            fontWeight: FontWeight.bold))
-                                  ])),
-                                  RichText(
-                                      text: TextSpan(children: [
-                                    TextSpan(
-                                        text: 'dies',
-                                        style: textTheme.bodyMedium),
-                                    TextSpan(
-                                        text: 'e',
-                                        style: textTheme.bodyMedium!.copyWith(
-                                            color: Colors.red,
-                                            fontWeight: FontWeight.bold))
-                                  ])),
-                                  RichText(
-                                      text: TextSpan(children: [
-                                    TextSpan(
-                                        text: 'dies',
-                                        style: textTheme.bodyMedium),
-                                    TextSpan(
-                                        text: 'es',
-                                        style: textTheme.bodyMedium!.copyWith(
-                                            color: Colors.red,
-                                            fontWeight: FontWeight.bold))
-                                  ])),
-                                  RichText(
-                                      text: TextSpan(children: [
-                                    TextSpan(
-                                        text: 'dies',
-                                        style: textTheme.bodyMedium),
-                                    TextSpan(
-                                        text: 'e',
-                                        style: textTheme.bodyMedium!.copyWith(
-                                            color: Colors.red,
-                                            fontWeight: FontWeight.bold))
-                                  ])),
-                                ]),
-                                TableRow(children: [
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'Akkusativ',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(children: [
-                                    TextSpan(
-                                        text: 'dies',
-                                        style: textTheme.bodyMedium),
-                                    TextSpan(
-                                        text: 'en',
-                                        style: textTheme.bodyMedium!.copyWith(
-                                            color: Colors.red,
-                                            fontWeight: FontWeight.bold))
-                                  ])),
-                                  RichText(
-                                      text: TextSpan(children: [
-                                    TextSpan(
-                                        text: 'dies',
-                                        style: textTheme.bodyMedium),
-                                    TextSpan(
-                                        text: 'e',
-                                        style: textTheme.bodyMedium!.copyWith(
-                                            color: Colors.red,
-                                            fontWeight: FontWeight.bold))
-                                  ])),
-                                  RichText(
-                                      text: TextSpan(children: [
-                                    TextSpan(
-                                        text: 'dies',
-                                        style: textTheme.bodyMedium),
-                                    TextSpan(
-                                        text: 'es',
-                                        style: textTheme.bodyMedium!.copyWith(
-                                            color: Colors.red,
-                                            fontWeight: FontWeight.bold))
-                                  ])),
-                                  RichText(
-                                      text: TextSpan(children: [
-                                    TextSpan(
-                                        text: 'die',
-                                        style: textTheme.bodyMedium),
-                                    TextSpan(
-                                        text: 'se',
-                                        style: textTheme.bodyMedium!.copyWith(
-                                            color: Colors.red,
-                                            fontWeight: FontWeight.bold))
-                                  ])),
-                                ]),
-                                TableRow(children: [
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'Dativ',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(children: [
-                                    TextSpan(
-                                        text: 'dies',
-                                        style: textTheme.bodyMedium),
-                                    TextSpan(
-                                        text: 'em',
-                                        style: textTheme.bodyMedium!.copyWith(
-                                            color: Colors.red,
-                                            fontWeight: FontWeight.bold))
-                                  ])),
-                                  RichText(
-                                      text: TextSpan(children: [
-                                    TextSpan(
-                                        text: 'dies',
-                                        style: textTheme.bodyMedium),
-                                    TextSpan(
-                                        text: 'er',
-                                        style: textTheme.bodyMedium!.copyWith(
-                                            color: Colors.red,
-                                            fontWeight: FontWeight.bold))
-                                  ])),
-                                  RichText(
-                                      text: TextSpan(children: [
-                                    TextSpan(
-                                        text: 'dies',
-                                        style: textTheme.bodyMedium),
-                                    TextSpan(
-                                        text: 'em',
-                                        style: textTheme.bodyMedium!.copyWith(
-                                            color: Colors.red,
-                                            fontWeight: FontWeight.bold))
-                                  ])),
-                                  RichText(
-                                      text: TextSpan(children: [
-                                    TextSpan(
-                                        text: 'dies',
-                                        style: textTheme.bodyMedium),
-                                    TextSpan(
-                                        text: 'en',
-                                        style: textTheme.bodyMedium!.copyWith(
-                                            color: Colors.red,
-                                            fontWeight: FontWeight.bold))
-                                  ])),
-                                ]),
-                                TableRow(children: [
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'Genitiv',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(children: [
-                                    TextSpan(
-                                        text: 'dies',
-                                        style: textTheme.bodyMedium),
-                                    TextSpan(
-                                        text: 'es',
-                                        style: textTheme.bodyMedium!.copyWith(
-                                            color: Colors.red,
-                                            fontWeight: FontWeight.bold))
-                                  ])),
-                                  RichText(
-                                      text: TextSpan(children: [
-                                    TextSpan(
-                                        text: 'dies',
-                                        style: textTheme.bodyMedium),
-                                    TextSpan(
-                                        text: 'er',
-                                        style: textTheme.bodyMedium!.copyWith(
-                                            color: Colors.red,
-                                            fontWeight: FontWeight.bold))
-                                  ])),
-                                  RichText(
-                                      text: TextSpan(children: [
-                                    TextSpan(
-                                        text: 'dies',
-                                        style: textTheme.bodyMedium),
-                                    TextSpan(
-                                        text: 'es',
-                                        style: textTheme.bodyMedium!.copyWith(
-                                            color: Colors.red,
-                                            fontWeight: FontWeight.bold))
-                                  ])),
-                                  RichText(
-                                      text: TextSpan(children: [
-                                    TextSpan(
-                                        text: 'dies',
-                                        style: textTheme.bodyMedium),
-                                    TextSpan(
-                                        text: 'er',
-                                        style: textTheme.bodyMedium!.copyWith(
-                                            color: Colors.red,
-                                            fontWeight: FontWeight.bold))
-                                  ])),
-                                ]),
-                              ],
-                            )
-                          ]),
-                        ),
-                      ),
-                    ),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                            top: 10.0, left: 16.0, bottom: 10),
-                        child: RichText(
-                          text: TextSpan(
-                            style: textTheme.bodyMedium,
-                            children: <TextSpan>[
-                              TextSpan(text: 'ebenso: '),
-                              TextSpan(
-                                  text: 'jene-',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(text: '\n'),
-                              TextSpan(
-                                  text:
-                                      'Kennst du diesen Mann auf dem Foto? - '),
-                              TextSpan(
-                                  text: 'Diesen',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(text: ' kenne ich nicht , aber '),
-                              TextSpan(
-                                  text: 'jenen',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(text: '.\n'),
-                              TextSpan(
-                                  text: 'Wie findest du die roten Schuhe? - '),
-                              TextSpan(
-                                  text: 'Diese',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(text: ' finde ich nicht schön, aber '),
-                              TextSpan(
-                                  text: 'jene',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(text: ' sind hübsch.\n'),
-                              TextSpan(
-                                  text:
-                                      'Magst du noch ein Glas Wein? - Ja gern, aber nicht mehr von '),
-                              TextSpan(
-                                  text: 'diesem',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(text: '.\n\n'),
-                              TextSpan(text: 'Die Kurzform '),
-                              TextSpan(
-                                  text: 'dies',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(
-                                  text:
-                                      ' wird vor allem dann benutzt, wenn "dies" für einen ganzen Satzinhalt steht.\n'),
-                              TextSpan(
-                                  text:
-                                      'Man sollte die Studiengebühren wieder abschaffen. - '),
-                              TextSpan(
-                                  text: 'Dies',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(text: ' finde ich allerdings auch.\n'),
-                              TextSpan(
-                                  text:
-                                      'Warum hast du zu Ulli gesagt, dass ich dumm bin? - '),
-                              TextSpan(
-                                  text: 'Dies',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(text: ' habe ich nicht gesagt.'),
-                            ],
-                          ),
-                        )),
-                  ],
-                ),
-              ),
-              Card(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: <Widget>[
-                    Padding(
-                      padding: const EdgeInsets.only(
-                          top: 10.0, left: 16.0, bottom: 10),
-                      child: Text(
-                          'Die Demonstrativpronomen "derjenige, diejenige, ..."',
-                          style: textTheme.titleSmall),
-                    ),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                            top: 10.0, left: 16.0, bottom: 10),
-                        child: RichText(
-                          text: TextSpan(
-                            style: textTheme.bodyMedium,
-                            children: <TextSpan>[
-                              TextSpan(text: 'Die Demonstrativpronomen "'),
-                              TextSpan(
-                                  text: 'derjenige, diejenige, ...',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(
-                                  text:
-                                      '" bestehen aus zwei Wortteilen. Der erste Wortteil entspricht dem '),
-                              TextSpan(
-                                  text: 'bestimmten Artikel',
-                                  style: textTheme.bodyMedium!
-                                      .copyWith(color: Colors.blue)),
-                              TextSpan(
-                                  text:
-                                      ' und wird wie dieser dekliniert. Der zweite Wortteil entspricht '),
-                              TextSpan(
-                                  text:
-                                      'der Endung der Adjektivdeklination des bestimmten Artikels',
-                                  style: textTheme.bodyMedium!
-                                      .copyWith(color: Colors.blue)),
-                              TextSpan(
-                                  text:
-                                      '. Die Demonstrativpronomen "derjenige, diejenige, ..." werden benutzt, wenn in einem anschließenden '),
-                              TextSpan(
-                                  text: 'Relativsatz',
-                                  style: textTheme.bodyMedium!
-                                      .copyWith(color: Colors.blue)),
-                              TextSpan(
-                                  text: ' weitere Informationen folgen.\n\n'),
-                              TextSpan(text: 'Wenn ich '),
-                              TextSpan(
-                                  text: 'denjenigen',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(
-                                  text:
-                                      ' erwische, der mein Geld genommen hat, bekommt etwas zu hören.\n'),
-                              TextSpan(text: ''),
-                              TextSpan(
-                                  text: 'Diejenigen',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(
-                                  text:
-                                      ', die schon gestern anwesend waren, können jetzt mit den Übungen beginnen.\n'),
-                              TextSpan(text: 'Wir gratulieren '),
-                              TextSpan(
-                                  text: 'denjenigen',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(
-                                  text:
-                                      ', die die Prüfung mit "sehr gut" bestanden haben.'),
-                            ],
-                          ),
-                        )),
-                    SingleChildScrollView(
-                      child: ConstrainedBox(
-                        constraints: const BoxConstraints(
-                            //minHeight: MediaQuery.of(context).size.height
-                            ),
-                        child: IntrinsicHeight(
-                          child: Column(children: [
-                            Table(
-                              border: TableBorder.all(
-                                  color: Colors.purple, width: 1),
-                              columnWidths: {
-                                0: FractionColumnWidth(.2),
-                                1: FractionColumnWidth(.2),
-                                2: FractionColumnWidth(.2),
-                                3: FractionColumnWidth(.2),
-                                4: FractionColumnWidth(.2),
-                              },
-                              children: [
-                                TableRow(children: [
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'Kasus',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'Maskulinum',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'Femininum',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'Neutrum',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'Plural',
-                                          style: textTheme.bodyMedium)),
-                                ]),
-                                TableRow(children: [
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'Nominativ',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'derjenige',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'diejenige',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'dasjenige',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'diejenigen',
-                                          style: textTheme.bodyMedium)),
-                                ]),
-                                TableRow(children: [
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'Akkusativ',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'denjenigen',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'diejenige',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'dasjenige',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'diejenigen',
-                                          style: textTheme.bodyMedium)),
-                                ]),
-                                TableRow(children: [
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'Dativ',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'demjenigen',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'derjenigen',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'demjenigen',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'denjenigen',
-                                          style: textTheme.bodyMedium)),
-                                ]),
-                                TableRow(children: [
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'Genitiv',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'desjenigen',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'derjenigen',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'desjenigen',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'derjenigen',
-                                          style: textTheme.bodyMedium)),
-                                ]),
-                              ],
-                            )
-                          ]),
-                        ),
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-              Card(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: <Widget>[
-                    Padding(
-                      padding: const EdgeInsets.only(
-                          top: 10.0, left: 16.0, bottom: 10),
-                      child: Text(
-                          'Die Demonstrativpronomen "derselbe, dieselbe, ..."',
-                          style: textTheme.titleSmall),
-                    ),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                            top: 10.0, left: 16.0, bottom: 10),
-                        child: RichText(
-                          text: TextSpan(
-                            style: textTheme.bodyMedium,
-                            children: <TextSpan>[
-                              TextSpan(text: 'Auch die Demonstrativpronomen "'),
-                              TextSpan(
-                                  text: 'derselbe, dieselbe, ...',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(
-                                  text:
-                                      '" bestehen aus zwei Wortteilen. Der erste Wortteil entspricht dem '),
-                              TextSpan(
-                                  text: 'bestimmten Artikel',
-                                  style: textTheme.bodyMedium!
-                                      .copyWith(color: Colors.blue)),
-                              TextSpan(
-                                  text:
-                                      ' und wird wie dieser dekliniert. Der zweite Wortteil entspricht '),
-                              TextSpan(
-                                  text:
-                                      'der Endung der Adjektivdeklination des bestimmten Artikels',
-                                  style: textTheme.bodyMedium!
-                                      .copyWith(color: Colors.blue)),
-                              TextSpan(
-                                  text:
-                                      '. Die Demonstrativpronomen "derselbe, dieselbe, etc." bezeichnen die Person oder die Sache, die mit einer '),
-                              TextSpan(
-                                  text:
-                                      'vorher genannten Person oder Sache übereinstimmt',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      decoration: TextDecoration.underline)),
-                              TextSpan(text: '.\n\n'),
-                              TextSpan(text: 'Warum fragst du mich jeden Tag '),
-                              TextSpan(
-                                  text: 'dasselbe',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(text: '?\n'),
-                              TextSpan(
-                                  text: 'Ein Freund sagt: "Alle Frauen sind '),
-                              TextSpan(
-                                  text: 'dieselben',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(
-                                  text:
-                                      '." (= Alle Frauen machen gleich viel Ärger.)\n'),
-                              TextSpan(
-                                  text:
-                                      'Der Mann mit Hut war schon wieder hier. Es war '),
-                              TextSpan(
-                                  text: 'derselbe',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(
-                                  text:
-                                      ', der schon gestern nach Ihnen gefragt hat.'),
-                            ],
-                          ),
-                        )),
-                    SingleChildScrollView(
-                      child: ConstrainedBox(
-                        constraints: const BoxConstraints(
-                            //minHeight: MediaQuery.of(context).size.height
-                            ),
-                        child: IntrinsicHeight(
-                          child: Column(children: [
-                            Table(
-                              border: TableBorder.all(
-                                  color: Colors.purple, width: 1),
-                              columnWidths: {
-                                0: FractionColumnWidth(.2),
-                                1: FractionColumnWidth(.2),
-                                2: FractionColumnWidth(.2),
-                                3: FractionColumnWidth(.2),
-                                4: FractionColumnWidth(.2),
-                              },
-                              children: [
-                                TableRow(children: [
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'Kasus',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'Maskulinum',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'Femininum',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'Neutrum',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'Plural',
-                                          style: textTheme.bodyMedium)),
-                                ]),
-                                TableRow(children: [
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'Nominativ',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'derselbe',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'dieselbe',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'dasselbe',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'dieselben',
-                                          style: textTheme.bodyMedium)),
-                                ]),
-                                TableRow(children: [
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'Akkusativ',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'denselben',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'dieselbe',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'dasselbe',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'dieselben',
-                                          style: textTheme.bodyMedium)),
-                                ]),
-                                TableRow(children: [
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'Dativ',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'demselben',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'derselben',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'demselben',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'denselben',
-                                          style: textTheme.bodyMedium)),
-                                ]),
-                                TableRow(children: [
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'Genitiv',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'desselben',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'derselben',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'desselben',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'derselben',
-                                          style: textTheme.bodyMedium)),
-                                ]),
-                              ],
-                            )
-                          ]),
-                        ),
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-              Card(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: <Widget>[
-                    Padding(
-                      padding: const EdgeInsets.only(
-                          top: 10.0, left: 16.0, bottom: 10),
-                      child: Text('Die Demonstrativpronomen "selbst / selber"',
-                          style: textTheme.titleSmall),
-                    ),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                            top: 10.0, left: 16.0, bottom: 10),
-                        child: RichText(
-                          text: TextSpan(
-                            style: textTheme.bodyMedium,
-                            children: <TextSpan>[
-                              TextSpan(text: '"'),
-                              TextSpan(
-                                  text: 'Selbst',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(text: '" und "'),
-                              TextSpan(
-                                  text: 'selber',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(
-                                  text:
-                                      '" haben im Grunde genommen die gleiche Bedeutung, wobei "selbst" mehr der Standardsprache und "selber" mehr der Umgangssprache angehören. Beide sind '),
-                              TextSpan(
-                                  text: 'unveränderlich',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      decoration: TextDecoration.underline)),
-                              TextSpan(
-                                  text:
-                                      ', werden also nicht dekliniert. Sie können sich auf ein Nomen, ein Personalpronomen oder ein Reflexivpronomen beziehen und werden '),
-                              TextSpan(
-                                  text: 'hinter dem Bezugswort',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      decoration: TextDecoration.underline)),
-                              TextSpan(
-                                  text:
-                                      ' gestellt. "Selbst" und "selber" bezieht sich nur auf das Bezugswort, '),
-                              TextSpan(
-                                  text:
-                                      'alle anderen Personen oder Sachen werden ausgeschlossen',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      decoration: TextDecoration.underline)),
-                              TextSpan(text: '.\n\n'),
-                              TextSpan(
-                                  text:
-                                      'Niemand wollte ihm helfen, sodass er sich '),
-                              TextSpan(
-                                  text: 'selbst',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(text: ' helfen musste.\n'),
-                              TextSpan(
-                                  text:
-                                      'In einem Selbsterfahrungskurs kann man sehr viel über sich '),
-                              TextSpan(
-                                  text: 'selbst',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(text: ' lernen.\n'),
-                              TextSpan(text: 'Mein Mann hat '),
-                              TextSpan(
-                                  text: 'selbst',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(text: ' das Radio repariert.\n'),
-                              TextSpan(
-                                  text: 'Dass du dir weh getan hast, bist du '),
-                              TextSpan(
-                                  text: 'selber',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(text: ' schuld.\n'),
-                              TextSpan(
-                                  text:
-                                      'Das schlechte Ergebnis haben wir uns '),
-                              TextSpan(
-                                  text: 'selber',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(text: ' zuzuschreiben.'),
-                            ],
-                          ),
-                        )),
-                  ],
-                ),
-              ),
-            ],
-          ),
-        ),
+            padding: const EdgeInsets.all(8.0),
+            child: MyPageContentView(contents: contents)),
       ),
     );
   }
 }
+
+List<CardContent> contents = [
+  CardContent(
+    elements: [
+      CardElement(type: ElementType.pageTitle, value: title),
+    ],
+  ),
+  CardContent(
+    elements: [
+      CardElement(type: ElementType.cardTitle, value: title1),
+      CardElement(type: ElementType.htmlContent, value: htmlContent1_1),
+    ],
+  ),
+  CardContent(
+    elements: [
+      CardElement(type: ElementType.cardTitle, value: title2),
+      CardElement(type: ElementType.htmlContent, value: htmlContent2_1),
+      CardElement(type: ElementType.htmlTable, value: htmlTable2_2),
+      CardElement(type: ElementType.htmlContent, value: htmlContent2_3),
+    ],
+  ),
+  CardContent(
+    elements: [
+      CardElement(type: ElementType.cardTitle, value: title3),
+      CardElement(type: ElementType.htmlContent, value: htmlContent3_1),
+      CardElement(type: ElementType.htmlTable, value: htmlTable3_2),
+      CardElement(type: ElementType.htmlContent, value: htmlContent3_3),
+    ],
+  ),
+  CardContent(
+    elements: [
+      CardElement(type: ElementType.cardTitle, value: title4),
+      CardElement(type: ElementType.htmlContent, value: htmlContent4_1),
+      CardElement(type: ElementType.htmlTable, value: htmlTable4_2),
+    ],
+  ),
+  CardContent(
+    elements: [
+      CardElement(type: ElementType.cardTitle, value: title5),
+      CardElement(type: ElementType.htmlContent, value: htmlContent5_1),
+      CardElement(type: ElementType.htmlTable, value: htmlTable5_2),
+    ],
+  ),
+  CardContent(
+    elements: [
+      CardElement(type: ElementType.cardTitle, value: title6),
+      CardElement(type: ElementType.htmlContent, value: htmlContent6_1),
+    ],
+  ),
+];
+
+String title = '11.2. Demonstrativpronomen';
+
+String title1 = 'Was man über Demonstrativpronomen wissen sollte.';
+String htmlContent1_1 = '''
+<p>Demonstrativpronomen, auch <strong><span class="red">hinweisende Fürwörter</span></strong> genannt, ordnen einer Person oder einer Sache im Kontext <span style="text-decoration:underline">eine stärkere Betonung</span> zu und heben eine gewisse <span style="text-decoration:underline">Wichtigkeit</span> der Person oder der Sache hervor. Demonstrativpronomen werden sprachlich stärker betont als die Artikelwörter. Zur stärkeren Betonung stehen sie meist auf Position 1. <br> Das Demonstrativpronomen kann <strong><a title="Demonstrativartikel" href="lernen.php?menu_id=62">in Funktion eines Artikels</a></strong> oder als <span style="text-decoration:underline">Stellvertreter eines Nomens</span> auftreten. Man darf das Demonstrativpronomen als <strong><span class="red">Stellvertreter eines Nomens</span></strong> nicht mit einem <strong><a title="Demonstrativartikel" href="lernen.php?menu_id=62">Demonstrativartikel</a></strong> verwechseln, da es zum Teil <span style="text-decoration:underline">anders dekliniert</span> wird. Die wichtigsten Demonstrativpronomen sind:</p>
+
+<li><strong><a href="#der_die_das">der, die, das, ...</a></strong>
+
+<li>Kennst du diesen Mann dort? <strong><span class="red">Den</span></strong> habe ich hier bei uns noch nie gesehen.</li>
+
+<li><strong><a href="#dieser">dieser, jener, ...</a></strong>
+
+<li>Hast du schon das Buch hier gelesen? - Nein, <strong><span class="red">dieses</span></strong> kenne ich noch nicht, aber <strong><span class="red">jenes</span></strong>.</li>
+
+<li><strong><a href="#derjenige">derjenige, diejenige, ...</a></strong>
+
+<li><strong><span class="red">Diejenigen</span></strong>, die etwas sagen wollen, sagen es jetzt oder schweigen für immer.</li>
+
+<li><strong><a href="#derselbe">derselbe, dieselbe, ...</a></strong>
+
+<li>Das ist <strong><span class="red">derselbe</span></strong>, der gestern auch schon mal nach Ihnen gefragt hat.</li>
+
+<li><strong><a href="#selbst">selbst, selber</a></strong>
+
+<li>Du bist <strong><span class="red">selbst</span></strong> dran schuld, dass du dir weh getan hast.</li> 
+''';
+
+String title2 = 'Die Demonstrativpronomen "der, die, das, ..."';
+String htmlContent2_1 = '''
+<p>Die Demonstrativpronomen "<strong><span class="red">der, die, das, ...</span></strong>" werden benutzt, <span style="text-decoration:underline">um Wiederholungen zu vermeiden</span>. Es kann stellvertretend für eine Person, eine Sache oder einen ganzen Satzinhalt stehen. Demonstrativpronomen ersetzen ein <strong><a title="Nomen" href="lernen.php?menu_id=9">Nomen</a></strong> und dürfen nicht mit <strong><a title="Bestimmter Artikel" href="lernen.php?menu_id=59#deklination">den bestimmten Artikeln</a></strong> vertauscht werden. Ihre Deklination ist teilweise verschieden:</p>
+''';
+String htmlTable2_2 = '''
+<table><colgroup> 
+<col style="width: 20%;"> 
+<col style="width: 20%;"> 
+<col style="width: 20%;"> 
+<col style="width: 20%;"> 
+<col style="width: 20%;"> </colgroup>
+<thead>
+<tr>
+<th >Kasus</th>
+<th >3. Person Singular\nmaskulin</th>
+<th >3. Person Singular\nfeminin</th>
+<th >3. Person Singular\nneutral</th>
+<th >3. Person Plural</th>
+</tr>
+</thead>
+<tbody align="center">
+<tr>
+<th>Nominativ</th>
+<td>der</td>
+<td>die</td>
+<td>das</td>
+<td>die</td>
+</tr>
+<tr>
+<th>Akkusativ</th>
+<td>den</td>
+<td>die</td>
+<td>das</td>
+<td>die</td>
+</tr>
+<tr>
+<th>Dativ</th>
+<td>dem</td>
+<td>der</td>
+<td>dem</td>
+<td><strong><span class="red">denen</span></strong></td>
+</tr>
+<tr>
+<th>Genitiv</th>
+<td><strong><span class="red">dessen</span></strong></td>
+<td><strong><span class="red">deren</span></strong></td>
+<td><strong><span class="red">dessen</span></strong></td>
+<td><strong><span class="red">deren</span></strong> / <strong><span class="red">derer</span></strong></td>
+</tr>
+</tbody>
+</table>
+''';
+String htmlContent2_3 = '''
+<p>Diese Demonstrativpronomen werden oft dazu gebraucht, um eine Person oder Sache <span style="text-decoration:underline">stärker zu betonten</span> (im Gegensatz zu den <strong><a title="Personalpronomen" href="lernen.php?menu_id=76">Personalpronomen</a></strong>, die nicht betont werden!) "<strong><span class="red">Betonte Pronomen</span></strong>" werden meist auf Position 1 gestellt.</p>
+
+<li>Wo hast du denn <span style="text-decoration:underline">das Tischchen</span> her? - <strong><span class="red">Das</span></strong> habe ich auf dem Flohmarkt gekauft.</li>
+<li>Bist du nicht mehr mit <span style="text-decoration:underline">Heiko</span> zusammen? - <strong><span class="red">Dem</span></strong> habe ich den Laufpass gegeben.</li>
+<li>Wie findest du <span style="text-decoration:underline">die Schuhe</span>? - <strong><span class="red">Die</span></strong> finde sehr hübsch, aber viel zu teuer.</li>
+<li>Was hältst du von Peter und Mike? - Mit <strong><span class="red">denen</span></strong> will ich nichts zu tun haben.</li>
+<li>Der Chef gibt der Sekretärin <span class="red">den Brief</span>.<br> - Der Chef gibt <strong><span class="red">den</span></strong> der Sekretärin.<br> - Er gibt ihr <strong><span class="red">den</span></strong>.<br> - <strong><span class="red">Den</span></strong> gibt er ihr.<br> - (Vergleiche: <strong><a title="Satzstellung Personalpronomen" href="lernen.php?menu_id=76#satzstellung">Satzstellung Personalpronomen</a></strong>) </li>
+
+<p>" <strong><span class="red">Das</span></strong> " in Verbindung mit dem Verb "<span style="text-decoration:underline">sein</span>" verweist auf eine Person, eine Sache oder einen Gegenstand und wird oft zusätzlich mit den Adverbien <strong><span class="red">hier</span></strong>, <strong><span class="red">da</span></strong> und <strong><span class="red">dort</span></strong> kombiniert.</p>
+
+<li>Mama, was ist <strong><span class="red">das hier</span></strong>? - <strong><span class="red">Das</span></strong> ist eine Taschenlampe, mein Sohn.</li>
+<li>Wer ist die Frau dort? - <strong><span class="red">Das</span></strong> ist Frau Axt, unsere neue Nachbarin.</li>
+<li>Wem gehört die Uhr / der Hut / das Handy hier? - <strong><span class="red">Das</span></strong> ist meine / meiner / meins.</li>
+<li>Wem <strong><span class="blue">gehören</span></strong> diese Bücher dort? - <strong><span class="red">Das</span></strong> <strong><span class="blue">sind</span></strong> meine. (Plural bleibt Plural!)</li>
+
+<p>" <strong><span class="red">Das</span></strong> " kann sich auch auf einen ganzen Satzinhalt beziehen, wobei " <strong><span class="red">das</span></strong> " als Nominativ- oder Akkusativergänzung stehen kann.</p>
+
+<li><span style="text-decoration:underline">Viele Leute schmeißen ihren Müll einfach auf die Straße</span>. <strong><span class="red">Das</span></strong> kann nicht sein.</li>
+<li><span style="text-decoration:underline">Frau Hansen will sich scheiden lassen</span>. - <strong><span class="red">Das</span></strong> habe ich auch schon gehört.</li>
+<li><span style="text-decoration:underline">Ich kann das Radio nicht mehr reparieren</span>. - <strong><span class="red">Das</span></strong> hätte ich dir gleich sagen können.</li>
+
+<p>Die beiden Genitivformen im Plural <strong><span class="red">deren</span></strong> und <strong><span class="blue">derer</span></strong> haben verschiedene Bedeutungen. <strong><span class="red">Deren</span></strong> weist auf etwas hin, was <strong><span class="red"><span style="text-decoration:underline">zurück</span>weist</span></strong>. <strong><span class="blue">Derer</span></strong> weist auf etwas hin, was <strong><span class="blue"><span style="text-decoration:underline">voraus</span>weist</span></strong>.</p>
+
+<li>Am Wochenende fahren wir <span style="text-decoration:underline">mit unseren Freunden</span> und <strong><span class="red">deren</span></strong> Kinder zum Kölner Zoo.</li>
+<li>Die Zahl <strong><span class="blue">derer</span></strong>, <span style="text-decoration:underline">die durch die hiesigen Prüfungen fallen</span>, ist äußerst gering.</li>
+''';
+
+String title3 = 'Die Demonstrativpronomen "dieser, ... und jener, ..."';
+String htmlContent3_1 = '''
+<p>Wie alle Pronomen können auch "<strong><span class="red">dieser, diese, ...</span></strong>" und "<strong><span class="red">jener, jene, ...</span></strong>" als <strong><a title="Demonstrativartikel" href="lernen.php?menu_id=62#dies">Nomenbegleiter</a></strong> oder als <strong><span class="red">Stellvertreter für ein Nomen</span></strong> stehen. <br> "<strong><span class="red">Dies-</span></strong>" wird benutzt, wenn eine Person oder Sache vom Sprecher aus gesehen räumlich oder zeitlich näher ist. <br> "<strong><span class="red">Jene-</span></strong>" wird benutzt, wenn eine Person oder Sache vom Sprecher aus gesehen räumlich oder zeitlich weiter entfernt ist. <br> Werden beide Pronomen in einem Satz gebraucht, dient es einer Unterscheidung bzw. einer Gegenüberstellung zweier Personen oder Sachen. Beide Pronomen werden <span style="text-decoration:underline">gleich dekliniert</span> (<strong><a title="Deklination bestimmter Artikel" href="lernen.php?menu_id=59#deklination">Endungen wie bestimmter Artikel</a></strong>).</p>
+''';
+String htmlTable3_2 = '''
+<table><colgroup> <col style="width: 20%;"> <col style="width: 20%;"> <col style="width: 20%;"> <col style="width: 20%;"> <col style="width: 20%;"> </colgroup>
+<thead>
+<tr>
+<th>Kasus</th>
+<th>Maskulinum</th>
+<th>Femininum</th>
+<th>Neutrum</th>
+<th>Plural</th>
+</tr>
+</thead>
+<tbody align="center">
+<tr>
+<th>Nominativ</th>
+<td>dies<strong><span class="red">er</span></strong></td>
+<td>dies<strong><span class="red">e</span></strong></td>
+<td>dies(<strong><span class="red">es</span></strong>)</td>
+<td>dies<strong><span class="red">e</span></strong></td>
+</tr>
+<tr>
+<th>Akkusativ</th>
+<td>diese<strong><span class="red">n</span></strong></td>
+<td>dies<strong><span class="red">e</span></strong></td>
+<td>dies(<strong><span class="red">es</span></strong>)</td>
+<td>die<strong><span class="red">se</span></strong></td>
+</tr>
+<tr>
+<th>Dativ</th>
+<td>diese<strong><span class="red">m</span></strong></td>
+<td>dies<strong><span class="red">er</span></strong></td>
+<td>dies<strong><span class="red">em</span></strong></td>
+<td>dies<strong><span class="red">en</span></strong></td>
+</tr>
+<tr>
+<th>Genitiv</th>
+<td>dies<strong><span class="red">es</span></strong></td>
+<td>dies<strong><span class="red">er</span></strong></td>
+<td>dies<strong><span class="red">es</span></strong></td>
+<td>dies<strong><span class="red">er</span></strong></td>
+</tr>
+</tbody>
+</table>
+''';
+String htmlContent3_3 = '''
+<p><br> ebenso: <strong><span class="red">jene-</span></strong> </p>
+
+<li>Kennst du diesen Mann auf dem Foto? - <strong><span class="red">Diesen</span></strong> kenne ich nicht , aber <strong><span class="red">jenen</span></strong>.</li>
+<li>Wie findest du die roten Schuhe? - <strong><span class="red">Diese</span></strong> finde ich nicht schön, aber <strong><span class="red">jene</span></strong> sind hübsch.</li>
+<li>Magst du noch ein Glas Wein? - Ja gern, aber nicht mehr von <strong><span class="red">diesem</span></strong>.</li>
+
+<p>Die Kurzform <strong><span class="red">dies</span></strong> wird vor allem dann benutzt, wenn "dies" für einen ganzen Satzinhalt steht.</p>
+
+<li>Man sollte die Studiengebühren wieder abschaffen. - <strong><span class="red">Dies</span></strong> finde ich allerdings auch.</li>
+<li>Warum hast du zu Ulli gesagt, dass ich dumm bin? - <strong><span class="red">Dies</span></strong> habe ich nicht gesagt.</li> 
+''';
+
+String title4 = 'Die Demonstrativpronomen "derjenige, diejenige, ..."';
+String htmlContent4_1 = '''
+<p>Die Demonstrativpronomen "<strong><span class="red">derjenige, diejenige, ...</span></strong>" bestehen aus zwei Wortteilen. Der erste Wortteil entspricht dem <strong><a title="Deklination bestimmter Artikel" href="lernen.php?menu_id=59#deklination">bestimmten Artikel</a></strong> und wird wie dieser dekliniert. Der zweite Wortteil entspricht <strong><a title="Adjektivdeklination nach dem bestimmten Artikel" href="lernen.php?menu_id=65#deklination">der Endung der Adjektivdeklination des bestimmten Artikels</a></strong>. <br> Die Demonstrativpronomen "derjenige, diejenige, ..." werden benutzt, wenn in einem anschließenden <strong><a title="Relativsatz" href="lernen.php?menu_id=81">Relativsatz</a></strong> weitere Informationen folgen.</p>
+
+<li>Wenn ich <strong><span class="red">denjenigen</span></strong> erwische, der mein Geld genommen hat, bekommt etwas zu hören.</li>
+<li><strong><span class="red">Diejenigen</span></strong>, die schon gestern anwesend waren, können jetzt mit den Übungen beginnen.</li>
+<li>Wir gratulieren <strong><span class="red">denjenigen</span></strong>, die die Prüfung mit "sehr gut" bestanden haben.</li>
+''';
+String htmlTable4_2 = '''
+<table><colgroup> <col style="width: 14%;"> <col style="width: 19%;"> <col style="width: 19%;"> <col style="width: 19%;"> <col style="width: 19%;"> </colgroup>
+<thead>
+<tr>
+<th>Kasus</th>
+<th>Maskulinum</th>
+<th>Femininum</th>
+<th>Neutrum</th>
+<th>Plural</th>
+</tr>
+</thead>
+<tbody align="center">
+<tr>
+<th>Nominativ</th>
+<td>derjenige</td>
+<td>diejenige</td>
+<td>dasjenige</td>
+<td>diejenigen</td>
+</tr>
+<tr>
+<th>Akkusativ</th>
+<td>denjenigen</td>
+<td>diejenige</td>
+<td>dasjenige</td>
+<td>diejenigen</td>
+</tr>
+<tr>
+<th>Dativ</th>
+<td>demjenigen</td>
+<td>derjenigen</td>
+<td>demjenigen</td>
+<td>denjenigen</td>
+</tr>
+<tr>
+<th>Genitiv</th>
+<td>desjenigen</td>
+<td>derjenigen</td>
+<td>desjenigen</td>
+<td>derjenigen</td>
+</tr>
+</tbody>
+</table>  
+''';
+
+String title5 = 'Die Demonstrativpronomen "derselbe, dieselbe, ..."';
+String htmlContent5_1 = '''
+<p>Auch die Demonstrativpronomen "<strong><span class="red">derselbe, dieselbe, ...</span></strong>" bestehen aus zwei Wortteilen. Der erste Wortteil entspricht dem <strong><a title="Deklination bestimmter Artikel" href="lernen.php?menu_id=59#deklination">bestimmten Artikel</a></strong> und wird wie dieser dekliniert. Der zweite Wortteil entspricht <strong><a title="Adjektivdeklination nach dem bestimmten Artikel" href="lernen.php?menu_id=65#deklination">der Endung der Adjektivdeklination des bestimmten Artikels</a></strong>. <br> Die Demonstrativpronomen "derselbe, dieselbe, etc." bezeichnen die Person oder die Sache, die mit einer <span style="text-decoration:underline">vorher genannten Person oder Sache übereinstimmt</span>.</p>
+
+<li>Warum fragst du mich jeden Tag <strong><span class="red">dasselbe</span></strong>?</li>
+<li>Ein Freund sagt: "Alle Frauen sind <strong><span class="red">dieselben</span></strong>." (= Alle Frauen machen gleich viel Ärger.)</li>
+<li>Der Mann mit Hut war schon wieder hier. Es war <strong><span class="red">derselbe</span></strong>, der schon gestern nach Ihnen gefragt hat.</li>
+''';
+String htmlTable5_2 = '''
+<table><colgroup> <col style="width: 14%;"> <col style="width: 19%;"> <col style="width: 19%;"> <col style="width: 19%;"> <col style="width: 19%;"> </colgroup>
+<thead>
+<tr>
+<th>Kasus</th>
+<th>Maskulinum</th>
+<th>Femininum</th>
+<th>Neutrum</th>
+<th>Plural</th>
+</tr>
+</thead>
+<tbody align="center">
+<tr>
+<th>Nominativ</th>
+<td>derselbe</td>
+<td>dieselbe</td>
+<td>dasselbe</td>
+<td>dieselben</td>
+</tr>
+<tr>
+<th>Akkusativ</th>
+<td>denselben</td>
+<td>dieselbe</td>
+<td>dasselbe</td>
+<td>dieselben</td>
+</tr>
+<tr>
+<th>Dativ</th>
+<td>demselben</td>
+<td>derselben</td>
+<td>demselben</td>
+<td>denselben</td>
+</tr>
+<tr>
+<th>Genitiv</th>
+<td>desselben</td>
+<td>derselben</td>
+<td>desselben</td>
+<td>derselben</td>
+</tr>
+</tbody>
+</table>  
+''';
+
+String title6 = 'Die Demonstrativpronomen "selbst / selber"';
+String htmlContent6_1 = '''
+<p>"<strong><span class="red">Selbst</span></strong>" und "<strong><span class="red">selber</span></strong>" haben im Grunde genommen die gleiche Bedeutung, wobei "selbst" mehr der Standardsprache und "selber" mehr der Umgangssprache angehören. Beide sind <span style="text-decoration:underline">unveränderlich</span>, werden also nicht dekliniert. Sie können sich auf ein Nomen, ein Personalpronomen oder ein Reflexivpronomen beziehen und werden <span style="text-decoration:underline">hinter dem Bezugswort</span> gestellt. "Selbst" und "selber" bezieht sich nur auf das Bezugswort, <span style="text-decoration:underline">alle anderen Personen oder Sachen werden ausgeschlossen</span>.</p>
+
+<li>Niemand wollte ihm helfen, sodass er sich <strong><span class="red">selbst</span></strong> helfen musste.</li>
+<li>In einem Selbsterfahrungskurs kann man sehr viel über sich <strong><span class="red">selbst</span></strong> lernen.</li>
+<li>Mein Mann hat <strong><span class="red">selbst</span></strong> das Radio repariert.</li>
+<li>Dass du dir weh getan hast, bist du <strong><span class="red">selber</span></strong> schuld.</li>
+<li>Das schlechte Ergebnis haben wir uns <strong><span class="red">selber</span></strong> zuzuschreiben.</li>
+''';

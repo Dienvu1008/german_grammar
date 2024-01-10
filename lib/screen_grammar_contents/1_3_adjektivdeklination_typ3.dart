@@ -1,496 +1,112 @@
 import 'package:flutter/material.dart';
 
-import '../app/app_localizations.dart';
+import '../page_content.dart';
 
 class Adjektivdeklination_Typ3_1_3 extends StatelessWidget {
   const Adjektivdeklination_Typ3_1_3({super.key});
 
   @override
   Widget build(BuildContext context) {
-    final localizations = AppLocalizations.of(context);
-    final textTheme = Theme.of(context).textTheme;
     return Expanded(
       child: Scaffold(
         body: Padding(
-          padding: const EdgeInsets.all(8.0),
-          child: ListView(
-            children: <Widget>[
-              Card(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: <Widget>[
-                    Padding(
-                      padding: const EdgeInsets.only(top: 16.0, left: 16.0),
-                      child: Text(
-                          '1.3. Adjektivdeklination nach dem Nullartikel',
-                          style: textTheme.titleMedium),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.only(top: 10.0, left: 16.0),
-                      child: Text(
-                          'Was man über die Adjektivdeklination nach dem Nullartikel wissen sollte.',
-                          style: textTheme.titleSmall),
-                    ),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                            top: 10.0, left: 16.0, bottom: 10),
-                        child: RichText(
-                          text: TextSpan(
-                            style: textTheme.bodyMedium,
-                            children: const <TextSpan>[
-                              TextSpan(text: 'Wenn das Adjektiv nach dem '),
-                              TextSpan(
-                                  text: 'Nullartikel',
-                                  style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      color: Colors.red)),
-                              TextSpan(
-                                  text:
-                                      ' dekliniert wird, spricht man von einer '),
-                              TextSpan(
-                                  text: 'starken Deklination',
-                                  style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      color: Colors.red)),
-                              TextSpan(
-                                  text:
-                                      '. Das Artikelwort hat die Aufgabe, den '),
-                              TextSpan(
-                                  text: 'Kasus',
-                                  style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      color: Colors.red)),
-                              TextSpan(
-                                  text:
-                                      ' anzuzeigen. Bei der Verwendung eines Nullartikels '),
-                              TextSpan(
-                                  text:
-                                      'fehlt das Artikelwort und somit ein Kasussignal',
-                                  style: TextStyle(
-                                      decoration: TextDecoration.underline)),
-                              TextSpan(text: '. '),
-                              TextSpan(
-                                  text:
-                                      'Dieses Kasussignal übernimmt die Adjektivdeklination',
-                                  style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      color: Colors.red)),
-                              TextSpan(text: '. '),
-                              TextSpan(
-                                  text: 'Die Endung des Adjektivs',
-                                  style: TextStyle(
-                                      decoration: TextDecoration.underline)),
-                              TextSpan(text: ' zeigt Kasus und '),
-                              TextSpan(
-                                  text: 'Genus',
-                                  style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      color: Colors.red)),
-                              TextSpan(text: ' an.\n'),
-                            ],
-                          ),
-                        )),
-                    SingleChildScrollView(
-                      child: ConstrainedBox(
-                        constraints: const BoxConstraints(
-                            //minHeight: MediaQuery.of(context).size.height
-                            ),
-                        child: IntrinsicHeight(
-                          child: Column(children: [
-                            Table(
-                              border: TableBorder.all(
-                                  color: Colors.purple, width: 1),
-                              columnWidths: const {
-                                0: FractionColumnWidth(.20),
-                                1: FractionColumnWidth(.20),
-                                2: FractionColumnWidth(.20),
-                                3: FractionColumnWidth(.20),
-                                4: FractionColumnWidth(.20),
-                              },
-                              children: [
-                                TableRow(children: [
-                                  Text('Kasus'),
-                                  Text('Maskulinum'),
-                                  Text('Femininum'),
-                                  Text('Neutrum'),
-                                  Text('Plural'),
-                                ]),
-                                TableRow(children: [
-                                  Text('Nominativ'),
-                                  RichText(
-                                      text: TextSpan(children: [
-                                    TextSpan(
-                                        text: 'gut',
-                                        style:
-                                            DefaultTextStyle.of(context).style),
-                                    TextSpan(
-                                        text: 'er',
-                                        style: TextStyle(color: Colors.red)),
-                                    TextSpan(
-                                        text: ' Mann',
-                                        style:
-                                            DefaultTextStyle.of(context).style)
-                                  ])),
-                                  RichText(
-                                      text: TextSpan(children: [
-                                    TextSpan(
-                                        text: 'gut',
-                                        style:
-                                            DefaultTextStyle.of(context).style),
-                                    TextSpan(
-                                        text: 'e',
-                                        style: TextStyle(color: Colors.red)),
-                                    TextSpan(
-                                        text: ' Frau',
-                                        style:
-                                            DefaultTextStyle.of(context).style)
-                                  ])),
-                                  RichText(
-                                      text: TextSpan(children: [
-                                    TextSpan(
-                                        text: 'gut',
-                                        style:
-                                            DefaultTextStyle.of(context).style),
-                                    TextSpan(
-                                        text: 'es',
-                                        style: TextStyle(color: Colors.red)),
-                                    TextSpan(
-                                        text: ' Kind',
-                                        style:
-                                            DefaultTextStyle.of(context).style)
-                                  ])),
-                                  RichText(
-                                      text: TextSpan(children: [
-                                    TextSpan(
-                                        text: 'gut',
-                                        style:
-                                            DefaultTextStyle.of(context).style),
-                                    TextSpan(
-                                        text: 'e',
-                                        style: TextStyle(color: Colors.red)),
-                                    TextSpan(
-                                        text: ' Leute',
-                                        style:
-                                            DefaultTextStyle.of(context).style)
-                                  ])),
-                                ]),
-                                TableRow(children: [
-                                  Text('Akkusativ'),
-                                  RichText(
-                                      text: TextSpan(children: [
-                                    TextSpan(
-                                        text: 'gut',
-                                        style:
-                                            DefaultTextStyle.of(context).style),
-                                    TextSpan(
-                                        text: 'en',
-                                        style: TextStyle(color: Colors.red)),
-                                    TextSpan(
-                                        text: ' Mann',
-                                        style:
-                                            DefaultTextStyle.of(context).style)
-                                  ])),
-                                  RichText(
-                                      text: TextSpan(children: [
-                                    TextSpan(
-                                        text: 'gut',
-                                        style:
-                                            DefaultTextStyle.of(context).style),
-                                    TextSpan(
-                                        text: 'e',
-                                        style: TextStyle(color: Colors.red)),
-                                    TextSpan(
-                                        text: ' Frau',
-                                        style:
-                                            DefaultTextStyle.of(context).style)
-                                  ])),
-                                  RichText(
-                                      text: TextSpan(children: [
-                                    TextSpan(
-                                        text: 'gut',
-                                        style:
-                                            DefaultTextStyle.of(context).style),
-                                    TextSpan(
-                                        text: 'es',
-                                        style: TextStyle(color: Colors.red)),
-                                    TextSpan(
-                                        text: ' Kind',
-                                        style:
-                                            DefaultTextStyle.of(context).style)
-                                  ])),
-                                  RichText(
-                                      text: TextSpan(children: [
-                                    TextSpan(
-                                        text: 'gut',
-                                        style:
-                                            DefaultTextStyle.of(context).style),
-                                    TextSpan(
-                                        text: 'e',
-                                        style: TextStyle(color: Colors.red)),
-                                    TextSpan(
-                                        text: ' Leute',
-                                        style:
-                                            DefaultTextStyle.of(context).style)
-                                  ])),
-                                ]),
-                                TableRow(children: [
-                                  Text('Dativ'),
-                                  RichText(
-                                      text: TextSpan(children: [
-                                    TextSpan(
-                                        text: 'gut',
-                                        style:
-                                            DefaultTextStyle.of(context).style),
-                                    TextSpan(
-                                        text: 'em',
-                                        style: TextStyle(color: Colors.red)),
-                                    TextSpan(
-                                        text: ' Mann',
-                                        style:
-                                            DefaultTextStyle.of(context).style)
-                                  ])),
-                                  RichText(
-                                      text: TextSpan(children: [
-                                    TextSpan(
-                                        text: 'gut',
-                                        style:
-                                            DefaultTextStyle.of(context).style),
-                                    TextSpan(
-                                        text: 'er',
-                                        style: TextStyle(color: Colors.red)),
-                                    TextSpan(
-                                        text: ' Frau',
-                                        style:
-                                            DefaultTextStyle.of(context).style)
-                                  ])),
-                                  RichText(
-                                      text: TextSpan(children: [
-                                    TextSpan(
-                                        text: 'gut',
-                                        style:
-                                            DefaultTextStyle.of(context).style),
-                                    TextSpan(
-                                        text: 'em',
-                                        style: TextStyle(color: Colors.red)),
-                                    TextSpan(
-                                        text: ' Kind',
-                                        style:
-                                            DefaultTextStyle.of(context).style)
-                                  ])),
-                                  RichText(
-                                      text: TextSpan(children: [
-                                    TextSpan(
-                                        text: 'gut',
-                                        style:
-                                            DefaultTextStyle.of(context).style),
-                                    TextSpan(
-                                        text: 'en',
-                                        style: TextStyle(color: Colors.red)),
-                                    TextSpan(
-                                        text: ' Leuten',
-                                        style:
-                                            DefaultTextStyle.of(context).style)
-                                  ])),
-                                ]),
-                                TableRow(children: [
-                                  Text('Genitiv'),
-                                  RichText(
-                                      text: TextSpan(children: [
-                                    TextSpan(
-                                        text: 'gut',
-                                        style:
-                                            DefaultTextStyle.of(context).style),
-                                    TextSpan(
-                                        text: 'en',
-                                        style: TextStyle(color: Colors.red)),
-                                    TextSpan(
-                                        text: ' Mannes',
-                                        style:
-                                            DefaultTextStyle.of(context).style)
-                                  ])),
-                                  RichText(
-                                      text: TextSpan(children: [
-                                    TextSpan(
-                                        text: 'gut',
-                                        style:
-                                            DefaultTextStyle.of(context).style),
-                                    TextSpan(
-                                        text: 'er',
-                                        style: TextStyle(color: Colors.red)),
-                                    TextSpan(
-                                        text: ' Frau',
-                                        style:
-                                            DefaultTextStyle.of(context).style)
-                                  ])),
-                                  RichText(
-                                      text: TextSpan(children: [
-                                    TextSpan(
-                                        text: 'gut',
-                                        style:
-                                            DefaultTextStyle.of(context).style),
-                                    TextSpan(
-                                        text: 'en',
-                                        style: TextStyle(color: Colors.red)),
-                                    TextSpan(
-                                        text: ' Kindes',
-                                        style:
-                                            DefaultTextStyle.of(context).style)
-                                  ])),
-                                  RichText(
-                                      text: TextSpan(children: [
-                                    TextSpan(
-                                        text: 'gut',
-                                        style:
-                                            DefaultTextStyle.of(context).style),
-                                    TextSpan(
-                                        text: 'er',
-                                        style: TextStyle(color: Colors.red)),
-                                    TextSpan(
-                                        text: ' Leute',
-                                        style:
-                                            DefaultTextStyle.of(context).style)
-                                  ])),
-                                ]),
-                              ],
-                            )
-                          ]),
-                        ),
-                      ),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.only(
-                          top: 10.0, left: 16.0, bottom: 10),
-                      child: RichText(
-                        text: TextSpan(
-                          style: textTheme.bodyMedium,
-                          children: const <TextSpan>[
-                            TextSpan(
-                                text:
-                                    'Die Adjektivendung erhält bei der Nullartikeldeklination die Endung des '),
-                            TextSpan(
-                                text: 'bestimmten Artikels',
-                                style: TextStyle(
-                                    fontWeight: FontWeight.bold,
-                                    color: Colors.red)),
-                            TextSpan(text: ': der '),
-                            TextSpan(
-                                text: 'guter',
-                                style: TextStyle(color: Colors.red)),
-                            TextSpan(text: ' // den '),
-                            TextSpan(
-                                text: 'guten',
-                                style: TextStyle(color: Colors.red)),
-                            TextSpan(text: ' // dem '),
-                            TextSpan(
-                                text: 'gutem',
-                                style: TextStyle(color: Colors.red)),
-                            TextSpan(text: ' // die '),
-                            TextSpan(
-                                text: 'gute',
-                                style: TextStyle(color: Colors.red)),
-                            TextSpan(text: ' // ...\n'),
-                            TextSpan(
-                                text:
-                                    'Ausnahmen bilden der maskuline und der neutrale Genitiv. Die Adjektivendung lautet dann '),
-                            TextSpan(
-                                text: '-en',
-                                style: TextStyle(
-                                    fontWeight: FontWeight.bold,
-                                    color: Colors.red)),
-                            TextSpan(
-                                text:
-                                    '. In diesen beiden genannten Fällen zeigt das Nomen das Kasussignal.\n'),
-                            TextSpan(
-                                text:
-                                    'Im Singular findet der Nullartikel selten Verwendung, im Plural dagegen häufiger. Siehe auch: '),
-                            TextSpan(
-                                text: 'Nullartikelgebrauch',
-                                style: TextStyle(
-                                    fontWeight: FontWeight.bold,
-                                    color: Colors.red)),
-                            TextSpan(text: '.\n'),
-                            TextSpan(
-                                text:
-                                    'Darüber hinaus werden Adjektive mit Nullartikeldeklination nach folgenden Begleitern stark dekliniert:\n'),
-                            TextSpan(text: 'nach '),
-                            TextSpan(
-                                text: 'etwas',
-                                style: TextStyle(
-                                    fontWeight: FontWeight.bold,
-                                    color: Colors.red)),
-                            TextSpan(text: ' und '),
-                            TextSpan(
-                                text: 'mehr',
-                                style: TextStyle(
-                                    fontWeight: FontWeight.bold,
-                                    color: Colors.red)),
-                            TextSpan(text: '\n'),
-                            TextSpan(text: 'Eure Kinder sollten '),
-                            TextSpan(
-                                text: 'mehr',
-                                style: TextStyle(color: Colors.red)),
-                            TextSpan(text: ' frisches Obst essen.\n'),
-                            TextSpan(text: 'Mit '),
-                            TextSpan(
-                                text: 'etwas',
-                                style: TextStyle(color: Colors.red)),
-                            TextSpan(
-                                text:
-                                    ' gutem Willen lassen sich sicherlich all deine Probleme lösen.\n'),
-                            TextSpan(text: 'nach den endungslosen Indefinite '),
-                            TextSpan(
-                                text: 'manch, solch, viel, welch, wenig',
-                                style: TextStyle(
-                                    fontWeight: FontWeight.bold,
-                                    color: Colors.red)),
-                            TextSpan(text: '\n'),
-                            TextSpan(text: 'Der Ozean verbirgt '),
-                            TextSpan(
-                                text: 'manch',
-                                style: TextStyle(color: Colors.red)),
-                            TextSpan(text: ' kostbare Perle.\n'),
-                            TextSpan(text: 'Solch'),
-                            TextSpan(
-                                text:
-                                    ' dummes Zeug habe ich schon lange nicht mehr gehört.\n'),
-                            TextSpan(
-                                text: 'Hinter der Grenze zu Polen kann man '),
-                            TextSpan(
-                                text: 'viel',
-                                style: TextStyle(color: Colors.red)),
-                            TextSpan(
-                                text:
-                                    ' billigere Schuhe kaufen als bei uns.\n'),
-                            TextSpan(text: 'Welch'),
-                            TextSpan(text: ' große Nase hat dieser Mann.\n'),
-                            TextSpan(text: 'Auf der Versammlung wurden nur '),
-                            TextSpan(
-                                text: 'wenig',
-                                style: TextStyle(color: Colors.red)),
-                            TextSpan(text: ' neue Fakten genannt.\n'),
-                            TextSpan(
-                                text:
-                                    'nach endungslosen Zahladjektiven zwei, drei, zehn, hundert, ...\n'),
-                            TextSpan(text: 'Drei'),
-                            TextSpan(
-                                text:
-                                    ' große und starke Männer haben der alten Frau beim Umzug geholfen.\n'),
-                            TextSpan(text: 'Das Leben bietet '),
-                            TextSpan(
-                                text: 'tausend',
-                                style: TextStyle(color: Colors.red)),
-                            TextSpan(text: ' schöne und spannende Dinge.\n'),
-                          ],
-                        ),
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-            ],
-          ),
-        ),
+            padding: const EdgeInsets.all(8.0),
+            child: MyPageContentView(contents: contents)),
       ),
     );
   }
 }
+
+List<CardContent> contents = [
+  CardContent(
+    elements: [
+      CardElement(type: ElementType.pageTitle, value: title),
+    ],
+  ),
+  CardContent(
+    elements: [
+      CardElement(type: ElementType.cardTitle, value: title1),
+      CardElement(type: ElementType.htmlContent, value: htmlContent1_1),
+      CardElement(type: ElementType.htmlTable, value: htmlTable1_2),
+      CardElement(type: ElementType.htmlContent, value: htmlContent1_3),
+    ],
+  ),
+];
+
+String title = '1.3. Adjektivdeklination nach dem Nullartikel';
+String title1 = 'Was man über die Adjektivdeklination nach dem Nullartikel wissen sollte.';
+String htmlContent1_1 = '''
+<p>Wenn das Adjektiv nach dem <strong><a title="Nullartikel" href="lernen.php?menu_id=58">Nullartikel</a></strong> dekliniert wird, spricht man von einer <strong><span class="red">starken Deklination</span></strong>. Das Artikelwort hat die Aufgabe, den <strong><a title="Kasus" href="lernen.php?menu_id=16">Kasus</a></strong> anzuzeigen. Bei der Verwendung eines Nullartikels <span style="text-decoration:underline">fehlt das Artikelwort und somit ein Kasussignal</span>. <strong><span class="red">Dieses Kasussignal übernimmt die Adjektivdeklination</span></strong>. <span style="text-decoration:underline">Die Endung des Adjektivs</span> zeigt Kasus und <strong><a title="Genus" href="lernen.php?menu_id=52#biologisches_geschlecht">Genus</a></strong> an.</p>
+''';
+String htmlTable1_2 = '''
+<table frame="" rules="" align="center"><colgroup>
+<col style="width: 20%;"> 
+<col style="width: 20%;"> 
+<col style="width: 20%;"> 
+<col style="width: 20%;"> 
+<col style="width: 20%;"> </colgroup>
+<thead>
+<tr align="center">
+<th>Kasus</th>
+<th>Maskulinum</th>
+<th>Femininum</th>
+<th>Neutrum</th>
+<th>Plural</th>
+</tr>
+</thead>
+<tbody align="center">
+<tr>
+<th>Nominativ</th>
+<td>gut<strong><span class="red">er</span></strong> Mann</td>
+<td>gut<strong><span class="red">e</span></strong> Frau</td>
+<td>gut<strong><span class="red">es</span></strong> Kind</td>
+<td>gut<strong><span class="red">e</span></strong> Leute</td>
+</tr>
+<tr>
+<th>Akkusativ</th>
+<td>gut<strong><span class="red">en</span></strong> Mann</td>
+<td>gut<strong><span class="red">e</span></strong> Frau</td>
+<td>gut<strong><span class="red">es</span></strong> Kind</td>
+<td>gut<strong><span class="red">e</span></strong> Leute</td>
+</tr>
+<tr>
+<th>Dativ</th>
+<td>gut<strong><span class="red">em</span></strong> Mann</td>
+<td>gut<strong><span class="red">er</span></strong> Frau</td>
+<td>gut<strong><span class="red">em</span></strong> Kind</td>
+<td>gut<strong><span class="red">en</span></strong> Leute<strong><span class="red">n</span></strong></td>
+</tr>
+<tr>
+<th>Genitiv</th>
+<td>gut<strong><span class="red">en</span></strong> Mann<strong><span class="red">es</span></strong></td>
+<td>gut<strong><span class="red">er</span></strong> Frau</td>
+<td>gut<strong><span class="red">en</span></strong> Kind<strong><span class="red">es</span></strong></td>
+<td>gut<strong><span class="red">er</span></strong> Leute</td>
+</tr>
+</tbody>
+</table>
+''';
+String htmlContent1_3 = '''
+<p>Die Adjektivendung erhält bei der Nullartikeldeklination die Endung des <strong><a title="Bestimmter Artikel" href="lernen.php?menu_id=59#deklination">bestimmten Artikels</a></strong>:</p>
+de<strong><span class="red">r</span></strong> - gute<strong><span class="red">r</span></strong> // de<strong><span class="red">n</span></strong> - gute<strong><span class="red">n</span></strong> // de<strong><span class="red">m</span></strong> - gute<strong><span class="red">m</span></strong> // di<strong><span class="red">e</span></strong> - gut<strong><span class="red">e</span></strong> // ... </li>
+<p><strong><span class="red">Ausnahmen</span></strong> bilden der <span style="text-decoration:underline">maskuline und der neutrale Genitiv</span>. Die Adjektivendung lautet dann <strong><span class="red">-en</span></strong>. In diesen beiden genannten Fällen zeigt das Nomen das Kasussignal.</p>
+
+<p>Im Singular findet der Nullartikel <span style="text-decoration:underline">selten</span> Verwendung, im Plural dagegen häufiger. Siehe auch: <strong><a title="Nullartikel" href="lernen.php?menu_id=58">Nullartikelgebrauch</a></strong></p>
+
+<p>Darüber hinaus werden Adjektive mit Nullartikeldeklination <span style="text-decoration:underline">nach folgenden <strong><a title="Nomenbegleiter" href="lernen.php?menu_id=10#nomenbegleiter">Begleitern</a></strong></span> stark dekliniert:</p>
+
+-nach <strong><span class="red">etwas</span></strong> und <strong><span class="red">mehr</span></strong>
+<li>Eure Kinder sollten <strong><span class="red">mehr</span></strong> frisches Obst essen.</li>
+<li>Mit <strong><span class="red">etwas</span></strong> gutem Willen lassen sich sicherlich all deine Probleme lösen.</li>
+
+-nach den <strong><a title="Indefinitartikel" href="lernen.php?menu_id=63">endungslosen Indefinite</a></strong> <strong><span class="red">manch, solch, viel, welch, wenig</span></strong>
+<li>Der Ozean verbirgt <strong><span class="red">manch</span></strong> kostbare Perle.</li>
+<li><strong><span class="red">Solch</span></strong> dummes Zeug habe ich schon lange nicht mehr gehört.</li>
+<li>Hinter der Grenze zu Polen kann man <strong><span class="red">viel</span></strong> billigere Schuhe kaufen als bei uns.</li>
+<li><strong><span class="red">Welch</span></strong> große Nase hat dieser Mann.</li>
+<li>Auf der Versammlung wurden nur <strong><span class="red">wenig</span></strong> neue Fakten genannt.</li>
+
+-nach endungslosen <strong><a title="Zahlwörter" href="lernen.php?menu_id=70">Zahladjektiven</a></strong> zwei, drei, zehn, hundert, ...
+<li><strong><span class="red">Drei</span></strong> große und starke Männer haben der alten Frau beim Umzug geholfen.</li>
+<li>Das Leben bietet <strong><span class="red">tausend</span></strong> schöne und spannende Dinge.</li> 
+''';

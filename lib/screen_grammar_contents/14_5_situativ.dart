@@ -55,11 +55,7 @@ List<CardContent> contents = [
 String title = '14.5. Situativ';
 String title1 = 'Was man über Verben mit einer Situativ-Ergänzung wissen sollte.';
 String htmlContent1_1 = '''
- <div>
 <p>Einige Verben haben eine <span style="text-decoration:underline">Ergänzung</span> mit lokaler Bedeutung, die nach einem <strong><span class="red">Ort</span></strong> fragen. Diese Ergänzung nennt man <strong><span class="red">Situativ-Ergänzung</span></strong>. Das Fragewort dazu lautet " <strong><span class="red">Wo</span></strong>? ".</p>
-<p>&nbsp;</p>
-</div>
-<p>&nbsp;</p>
 ''';
 String htmlTable1_2 = '''
 <table><colgroup> <col style="width: 8%;"> <col style="width: 10%;"> <col style="width: 28%;"> <col style="width: 4%;"> <col style="width: 12%;"> <col style="width: 12%;"> <col style="width: 36%;"> </colgroup>
@@ -88,7 +84,6 @@ String htmlTable1_2 = '''
 </table>
 ''';
 String htmlContent1_3 = '''
-<p>&nbsp;</p>
 <p style="padding-left: 30px;">- Die <strong><a title="Übersicht möglicher Fragewörter" href="fragewoerter.html#w-fragen" target="_blank">W-Frage</a></strong> der Situativ-Ergänzung lautet "<strong><span class="red">Wo" </span></strong>.</p>
 <p style="padding-left: 30px;">&nbsp;</p>
 <p style="padding-left: 30px;">- Verben mit einer Situativ-Ergänzung haben <span style="text-decoration:underline">keine Objekte</span>, <strong><span class="red">weder ein Dativ-, noch ein Akkusativ-Objekt!!!</span></strong></p>
@@ -106,7 +101,6 @@ String htmlContent1_3 = '''
 <p style="padding-left: 30px;">- Die Situativ-Ergänzung verlangt <span style="text-decoration:underline">Wechselpräpositionen</span> mit <strong><span class="red">Dativ</span></strong>.</p>
 <p style="padding-left: 30px;">&nbsp;</p>
 <p style="padding-left: 30px;">- Nur <span style="text-decoration:underline">wenige</span> Verben haben eine Situativ-Ergänzung.</p>
-<p>&nbsp;</p>
 ''';
 String htmlTable1_4 = '''
 <table class="eins">
@@ -126,10 +120,7 @@ String htmlTable1_4 = '''
 
 String title2 = 'Verben mit einer Situativ-Ergänzung';
 String htmlContent2_1 = '''
-<div>
 <p>Die Verben <strong><span class="red">hängen</span></strong>, <strong><span class="red">liegen</span></strong>, <strong><span class="red">sitzen</span></strong>, <strong><span class="red">stecken</span></strong> und <strong><span class="red">stehen</span></strong> gehören zu den <span style="text-decoration:underline">starken Verben</span>. Sie sind <span style="text-decoration:underline">intransitiv</span>, das heißt, sie haben <strong><span class="red">kein Akkusativobjekt</span></strong>!!! Sie sind leicht mit Verben aus der Verbgruppe mit <strong><a title="Verben mit Akkusativ- und Direktiv-Ergänzung" href="akkusativ-und-direktiv-ergaenzung.html#verben_direktiv" target="_blank">Akkusativ- und Direktiv-Ergänzung</a></strong> zu verwechseln.</p>
-</div>
-<p>&nbsp;</p>
 ''';
 String htmlTable2_2 = '''
 <table><colgroup> <col style="width: 15%;"> <col style="width: 20%;"> <col style="width: 15%;"> <col style="width: 25%;"> <col style="width: 25%;"> </colgroup>
@@ -182,9 +173,7 @@ String htmlTable2_2 = '''
 </table>
 ''';
 String htmlContent2_3 = '''
-<div>
 <p>Die genannten Verben fragen meist nach Sachen, Gegenständen aus dem Alltag oder nach Personen, die sich in der <span style="text-decoration:underline">unmittelbaren Umgebung</span> befinden. In der Antwort werden <strong><a title="Übersicht Wechselpräpositionen" href="wechselpraepositionen.html#einfuehrung" target="_blank">Wechselpräpositionen</a></strong> oder <strong><a title="Übersicht Lokale Adverbien" href="lokaladverbien.html#vergleich" target="_blank">lokale Adverbien</a></strong> benutzt, um den genauen Ort anzugeben. Vergleiche dazu die Verben mit <strong><a title="Verben mit Akkusativ- und Direktiv-Ergänzung" href="akkusativ-und-direktiv-ergaenzung.html#verben_direktiv" target="_blank">Akkusativ- und Direktiv-Ergänzung</a></strong>.</p>
-<p>&nbsp;</p>
 ''';
 String htmlTable2_4 = '''
 <table>
@@ -200,15 +189,10 @@ String htmlTable2_4 = '''
 </table>
 ''';
 String htmlContent2_5 = '''
-<p>&nbsp;</p>
 <p style="padding-left: 30px;">Wo liegt <span style="text-decoration:underline">das Buch</span>? - <span style="text-decoration:underline">Es</span> liegt <strong><span class="red">auf dem Tisch</span></strong>.</p>
 <p style="padding-left: 30px;">Wo sitzt <span style="text-decoration:underline">Helmut</span>? - <span style="text-decoration:underline">Er</span> sitzt <strong><span class="red">neben mir</span></strong>.</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<div>
+
 <p>Folgende Verben haben ebenfalls eine <span style="text-decoration:underline">Situativ-Ergänzung</span>. Sie geben darüber Auskunft, <strong><span class="red">wo</span></strong> sich Personen oder Sachen befinden. Meist sind es Orte, die vom Sprecher aus weiter entfernt sind. In der Antwort werden <strong><span class="blue">meist Wechselpräpositionen + Dativ</span></strong> benutzt, je nach Situation kann in der Antwort <strong><span class="red"> jedoch auch eine Präposition + Dativ</span></strong> stehen. Vergleiche dazu die Verben mit <strong><a title="Verben mit Direktiv-Ergänzung" href="direktiv-ergaenzung.html#verben_direktiv" target="_blank">Direktiv-Ergänzung</a></strong>.</p>
-</div>
-<p>&nbsp;</p>
 ''';
 String htmlTable2_6 = '''
 <table><colgroup> <col style="width: 15%;"> <col style="width: 17%;"> <col style="width: 13%;"> <col style="width: 30%;"> <col style="width: 25%;"> </colgroup>
@@ -268,10 +252,7 @@ String htmlTable2_6 = '''
 </table>
 ''';
 String htmlContent2_7 = '''
-<p>&nbsp;</p>
 <p><br> Weitere <strong><a title="Vergleich der W-Fragen wo, wohin und woher" href="direktiv-ergaenzung.html#anwendung" target="_blank">Anwendungsbeispiele</a></strong>.</p>
-<p>&nbsp;</p>  
-  
 ''';
 
 
@@ -391,5 +372,4 @@ String htmlTable3_1 = '''
 ''';
 String htmlContent3_2 = '''
 <p><br> Zum Vergleich die Vergangenheitsformen der Verben mit <strong><a title="Vergangenheitsformen der Verben mit Akkusativ- und Direktiv-Ergänzung" href="akkusativ-und-direktiv-ergaenzung.html#vergangenheitsformen" target="_blank">Akkusativ- und Direktiv-Ergänzung</a></strong>!</p>  
-
 ''';

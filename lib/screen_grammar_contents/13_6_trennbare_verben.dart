@@ -5,7 +5,7 @@ import '../page_content.dart';
 class Trennbare_Verben_13_6 extends StatelessWidget {
   const Trennbare_Verben_13_6({super.key});
 
- @override
+  @override
   Widget build(BuildContext context) {
     return Expanded(
       child: Scaffold(
@@ -17,14 +17,62 @@ class Trennbare_Verben_13_6 extends StatelessWidget {
   }
 }
 
+List<CardContent> contents = [
+  CardContent(
+    elements: [
+      CardElement(type: ElementType.pageTitle, value: title),
+    ],
+  ),
+  CardContent(
+    elements: [
+      CardElement(type: ElementType.cardTitle, value: title1),
+      CardElement(type: ElementType.htmlContent, value: htmlContent1_1),
+      CardElement(type: ElementType.htmlTable, value: htmlTable1_1),
+      CardElement(type: ElementType.htmlContent, value: htmlContent1_2),
+      CardElement(type: ElementType.htmlTable, value: htmlTable1_2),
+    ],
+  ),
+  CardContent(
+    elements: [
+      CardElement(type: ElementType.cardTitle, value: title2),
+      CardElement(type: ElementType.htmlContent, value: htmlContent2_1),
+      CardElement(type: ElementType.htmlTable, value: htmlTable2),
+      CardElement(type: ElementType.htmlContent, value: htmlContent2_2),
+    ],
+  ),
+  CardContent(
+    elements: [
+      CardElement(type: ElementType.cardTitle, value: title3),
+      CardElement(type: ElementType.htmlContent, value: htmlContent3),
+      CardElement(type: ElementType.htmlTable, value: htmlTable3),
+    ],
+  ),
+  CardContent(
+    elements: [
+      CardElement(type: ElementType.cardTitle, value: title4),
+      CardElement(type: ElementType.htmlContent, value: htmlContent4),
+      CardElement(type: ElementType.htmlTable, value: htmlTable4),
+    ],
+  ),
+  CardContent(
+    elements: [
+      CardElement(type: ElementType.cardTitle, value: title5),
+      CardElement(type: ElementType.htmlContent, value: htmlContent5_1),
+      CardElement(type: ElementType.htmlTable, value: htmlTable5_1),
+      CardElement(type: ElementType.htmlContent, value: htmlContent5_2),
+      CardElement(type: ElementType.htmlTable, value: htmlTable5_2),
+      CardElement(type: ElementType.htmlContent, value: htmlContent5_3),
+      CardElement(type: ElementType.htmlTable, value: htmlTable5_3),
+    ],
+  ),
+];
+
 String title = 'Trennbare Verben';
 String title1 = 'Einführung / Was man über trennbare Verben wissen sollte.';
 String htmlContent1_1 = '''
- <div>
 <p>In der deutschen Sprache gibt es die Möglichkeit, Verben so genannte <strong><span class="red">Präfixe</span></strong>, auch Verbzusätze genannt, anzufügen. Präfixe geben dem Verb eine völlig neue Bedeutung und gehen als neue Vokabel in den Wortschatz ein.</p>
-</div>
 ''';
-String htmlTable1_1 ='''
+String htmlTable1_1 = '''
 <table><colgroup> <col style="width: 15%;"> <col style="width: 12%;"> <col style="width: 11%;"> <col style="width: 52%;"> <col style="width: 10%;"> </colgroup>
 <thead>
 <tr>
@@ -54,11 +102,9 @@ String htmlTable1_1 ='''
 </table>
 ''';
 String htmlContent1_2 = '''
-<div>
 <p>Das Beispiel zeigt uns zwei Infinitive, zum einen den Infinitiv "<strong><span class="red">fahren</span></strong>", zum anderen den Infinitiv "<strong><span class="red">ab|fahren</span></strong>". Das trennbare Verb "<strong><span class="red">ab|fahren</span></strong>" besteht aus zwei Teilen. Die zwei Teile werden durch einen Trennstrich "<strong><span class="red"> | </span></strong>" gekennzeichnet. Der Trennstrich gibt die Information, dass dieses Verb "<strong><span class="red">trennbar</span></strong>" ist. Der erste Teil, das Präfix " ab ", wird nicht verändert und wird in einem Hauptsatz immer am Ende eines Satzes gestellt. Der zweite Teil des Verbs (fahren) wird wie gewohnt konjugiert. <br> Präfixe sind austauschbar, das heißt, dass auch andere Verben diese Vorsilben benutzen dürfen.</p>
-</div>
 ''';
-String htmlTable1_2 ='''
+String htmlTable1_2 = '''
 <table class="zwei"><colgroup> <col style="width: 50%;"> <col style="width: 50%;"> </colgroup>
 <thead>
 <tr align="center">
@@ -89,11 +135,9 @@ String htmlTable1_2 ='''
 
 String title2 = 'Trennbare Präfixe';
 String htmlContent2_1 = '''
-<div>
 <p>Das Problem bei den Präfixen ist, dass einige Präfixe trennbar sind, andere hingegen <span style="text-decoration:underline">nicht</span>. Die Regel lautet: Wenn das Präfix <strong><span style="text-decoration:underline"><span class="red">betont</span></span></strong> wird, ist es <strong><span style="text-decoration:underline"><span class="red">trennbar</span></span></strong>, wenn es <span style="text-decoration:underline">nicht</span> betont wird, ist es <span style="text-decoration:underline">nicht</span> trennbar. Folgende Tabelle zeigt Präfixe, die <strong><span class="red">immer trennbar</span></strong> sind und <strong><span class="red">immer betont</span></strong> werden:</p>
-</div>
 ''';
-String htmlTable2 ='''
+String htmlTable2 = '''
 <table><colgroup> <col style="width: 20%;"> <col style="width: 18%;"> <col style="width: 11%;"> <col style="width: 41%;"> <col style="width: 10%;"> </colgroup>
 <thead>
 <tr>
@@ -466,18 +510,14 @@ String htmlTable2 ='''
 </table>
 ''';
 String htmlContent2_2 = '''
-<div>
 <p>Es handelt sich hier nur um einen kleinen Teil von Beispielen. Insbesondere mit den Präfixen ab-, aus-, ein-, mit-, und zu- gibt es sehr viele Möglichkeiten.</p>
-</div> 
 ''';
 
 String title3 = 'Untrennbare Präfixe';
 String htmlContent3 = '''
-<div>
 <p>Wird ein Präfix <span style="text-decoration:underline">nicht betont</span>, wird es auch <span style="text-decoration:underline">nicht getrennt</span>. Folgende Tabelle zeigt Präfixe, die <strong><span class="red">nicht trennbar</span></strong> sind und <strong><span class="red">nicht betont</span></strong> werden:</p>
-</div>
 ''';
-String htmlTable3 ='''
+String htmlTable3 = '''
 <table><colgroup> <col style="width: 16%;"> <col style="width: 18%;"> <col style="width: 17%;"> <col style="width: 49%;"> </colgroup>
 <thead>
 <tr>
@@ -650,18 +690,14 @@ String htmlTable3 ='''
 
 String title4 = 'Problematische Präfixe';
 String htmlContent4 = '''
- <div>
 <p>Einige Präfixe sind sowohl trennbar, als auch untrennbar. Die alte gelernte Regel bleibt bestehen.</p>
-</div>
-<ul>
+
 <li><strong><span class="red">betontes Präfix = trennbar</span></strong></li>
 <li><strong><span class="blue">unbetontes Präfix = nicht trennbar</span></strong></li>
-</ul>
-<div>
+
 <p>Folgende Tabelle zeigt einige Beispiele auf:</p>
-</div>
 ''';
-String htmlTable4 ='''
+String htmlTable4 = '''
 <table><colgroup> <col style="width: 10%;"> <col style="width: 45%;"> <col style="width: 45%;"> </colgroup>
 <thead>
 <tr>
@@ -707,11 +743,9 @@ String htmlTable4 ='''
 
 String title5 = ' Zusammengesetzte Verben';
 String htmlContent5_1 = '''
- <div>
 <p>Neben den Verben mit Präfixen gibt es noch eine weitere Gruppe, die wie die trennbaren Verben behandelt werden, die so genannten "<strong><span class="red">zusammengesetzten Verben</span></strong>". In dieser Gruppe verbindet sich ein Verb mit einer anderen selbständig vorkommenden Wortart zu einem neuen Wort mit neuer Bedeutung.</p>
-</div>
 ''';
-String htmlTable5_1 ='''
+String htmlTable5_1 = '''
 <table><colgroup> <col style="width: 20%;"> <col style="width: 21%;"> <col style="width: 59%;"> </colgroup>
 <thead>
 <tr>
@@ -740,11 +774,9 @@ String htmlTable5_1 ='''
 </table>
 ''';
 String htmlContent5_2 = '''
-<div>
 <p>Bei diesen Kombinationen verschiedener "Wortarten" + Verb wird <span style="text-decoration:underline">ein neues Verb mit neuer Bedeutung</span> erzeugt. Dieses neue Verb ist <span style="text-decoration:underline">immer</span> trennbar, wird aber im Infinitiv manchmal zusammen (also ein Wort) und manchmal auseinander (also zwei Wörter) geschrieben. Einige Beispiele, bei denen der Infinitiv immer aus zwei Wörtern besteht:</p>
-</div>
 ''';
-String htmlTable5_2 ='''
+String htmlTable5_2 = '''
 <table width="80%">
 <thead>
 <tr>
@@ -763,11 +795,9 @@ String htmlTable5_2 ='''
 </table>
 ''';
 String htmlContent5_3 = '''
-<div>
 <p>Zu guter Letzt noch einige Beispiele mit dem Verb "fahren", um aufzuzeigen, wie viele Kombinationen möglich sein können: (dies gilt in gleicher Weise für viele andere Verben auch)</p>
-</div>
 ''';
-String htmlTable5_3 ='''
+String htmlTable5_3 = '''
 <table><colgroup> <col style="width: 21%;"> <col style="width: 79%;"> </colgroup>
     <thead>
         <tr align="center">
@@ -846,55 +876,5 @@ String htmlTable5_3 ='''
         </tr>
     </tbody>
 </table>
-
 ''';
 
-List<CardContent> contents = [
-  CardContent(
-    elements: [
-      CardElement(type: ElementType.pageTitle, value: title),
-    ],
-  ),
-  CardContent(
-    elements: [
-      CardElement(type: ElementType.cardTitle, value: title1),
-      CardElement(type: ElementType.htmlContent, value: htmlContent1_1),
-      CardElement(type: ElementType.htmlTable, value: htmlTable1_1),
-      CardElement(type: ElementType.htmlContent, value: htmlContent1_2),
-      CardElement(type: ElementType.htmlTable, value: htmlTable1_2),
-    ],
-  ),
-  CardContent(
-    elements: [
-      CardElement(type: ElementType.cardTitle, value: title2),
-      CardElement(type: ElementType.htmlContent, value: htmlContent2_1),
-      CardElement(type: ElementType.htmlTable, value: htmlTable2),
-      CardElement(type: ElementType.htmlContent, value: htmlContent2_2),
-    ],
-  ),
-  CardContent(
-    elements: [
-      CardElement(type: ElementType.cardTitle, value: title3),
-      CardElement(type: ElementType.htmlContent, value: htmlContent3),
-      CardElement(type: ElementType.htmlTable, value: htmlTable3),
-    ],
-  ),
-  CardContent(
-    elements: [
-      CardElement(type: ElementType.cardTitle, value: title4),
-      CardElement(type: ElementType.htmlContent, value: htmlContent4),
-      CardElement(type: ElementType.htmlTable, value: htmlTable4),
-    ],
-  ),
-  CardContent(
-    elements: [
-      CardElement(type: ElementType.cardTitle, value: title5),
-      CardElement(type: ElementType.htmlContent, value: htmlContent5_1),
-      CardElement(type: ElementType.htmlTable, value: htmlTable5_1),
-      CardElement(type: ElementType.htmlContent, value: htmlContent5_2),
-      CardElement(type: ElementType.htmlTable, value: htmlTable5_2),
-      CardElement(type: ElementType.htmlContent, value: htmlContent5_3),
-      CardElement(type: ElementType.htmlTable, value: htmlTable5_3),
-    ],
-  ),
-];

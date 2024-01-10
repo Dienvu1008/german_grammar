@@ -1,440 +1,148 @@
 import 'package:flutter/material.dart';
 
 import '../app/app_localizations.dart';
+import '../page_content.dart';
 
 class Indirekte_Fragesaetze_5_5 extends StatelessWidget {
   const Indirekte_Fragesaetze_5_5({super.key});
 
   @override
   Widget build(BuildContext context) {
-    final localizations = AppLocalizations.of(context);
-    final textTheme = Theme.of(context).textTheme;
     return Expanded(
       child: Scaffold(
         body: Padding(
-          padding: const EdgeInsets.all(8.0),
-          child: ListView(
-            children: <Widget>[
-              Card(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: <Widget>[
-                    Padding(
-                      padding: const EdgeInsets.only(top: 16.0, left: 16.0),
-                      child: Text(
-                        '5.5. Indirekte Fragesätze',
-                        style: textTheme.titleMedium,
-                      ),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.only(top: 10.0, left: 16.0),
-                      child: Text(
-                          'Was man über indirekte Fragesätze wissen sollte.',
-                          style: textTheme.titleSmall),
-                    ),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                            top: 10.0, left: 16.0, bottom: 10),
-                        child: RichText(
-                          text: TextSpan(
-                            style: textTheme.bodyMedium,
-                            children: <TextSpan>[
-                              TextSpan(text: 'Man unterscheidet zwei '),
-                              TextSpan(
-                                  text: 'Fragesätze',
-                                  style:
-                                      TextStyle(fontWeight: FontWeight.bold)),
-                              TextSpan(text: ':\n\n'),
-                              TextSpan(
-                                  text:
-                                      'Ja-/Nein- Fragen (Entscheidungsfragen: (Verb = Position 1)\n'),
-                              TextSpan(
-                                  text: 'Liebst',
-                                  style: TextStyle(color: Colors.red)),
-                              TextSpan(text: ' du deinen neuen Freund?\n'),
-                              TextSpan(
-                                  text: 'Wollen',
-                                  style: TextStyle(color: Colors.red)),
-                              TextSpan(
-                                  text:
-                                      ' die asiatischen Kunden Toilettenpapierrollen kaufen?\n'),
-                              TextSpan(
-                                  text: 'Interessiert',
-                                  style: TextStyle(color: Colors.red)),
-                              TextSpan(
-                                  text:
-                                      ' Frau Mutzke sich für den roten Sportwagen?\n'),
-                              TextSpan(
-                                  text: 'Warten',
-                                  style: TextStyle(color: Colors.red)),
-                              TextSpan(
-                                  text:
-                                      ' die Besucher auf Herrn Muckelschnuckel?\n\n'),
-                              TextSpan(
-                                  text: 'W-Fragen',
-                                  style:
-                                      TextStyle(fontWeight: FontWeight.bold)),
-                              TextSpan(
-                                  text:
-                                      ' (Ergänzungsfragen): (W-Frage = Position 1 und Verb = Position 2)\n'),
-                              TextSpan(
-                                  text: 'Woher',
-                                  style: TextStyle(color: Colors.red)),
-                              TextSpan(
-                                  text: ' kommt die attraktive Studentin?\n'),
-                              TextSpan(
-                                  text: 'Was',
-                                  style: TextStyle(color: Colors.red)),
-                              TextSpan(
-                                  text: ' suchen Sie hier in meinem Büro?\n'),
-                              TextSpan(
-                                  text: 'Worauf',
-                                  style: TextStyle(color: Colors.red)),
-                              TextSpan(
-                                  text:
-                                      ' warten die europäischen Touristen?\n'),
-                              TextSpan(
-                                  text: 'Welcher Wein',
-                                  style: TextStyle(color: Colors.red)),
-                              TextSpan(
-                                  text: ' schmeckt unseren Gästen besser?\n\n'),
-                              TextSpan(
-                                  text:
-                                      'Bei den gezeigten Beispielen handelt es sich um '),
-                              TextSpan(
-                                  text: 'direkte Fragen',
-                                  style: TextStyle(color: Colors.red)),
-                              TextSpan(text: '. Fragen können aber auch in '),
-                              TextSpan(
-                                  text: 'Nebensätzen',
-                                  style: TextStyle(color: Colors.red)),
-                              TextSpan(
-                                  text:
-                                      ' stehen. Steht eine Frage im Nebensatz, spricht man von einer '),
-                              TextSpan(
-                                  text: 'indirekten Frage',
-                                  style: TextStyle(color: Colors.red)),
-                              TextSpan(
-                                  text:
-                                      '. Indirekte Fragen wirken höflicher.\n\n'),
-                              TextSpan(
-                                  text:
-                                      'Bei Ja-/Nein- Fragen benutzt man die Konjunktion " '),
-                              TextSpan(
-                                  text: 'ob',
-                                  style: TextStyle(color: Colors.red)),
-                              TextSpan(text: ' " :'),
-                            ],
-                          ),
-                        )),
-                    SingleChildScrollView(
-                      child: ConstrainedBox(
-                        constraints: const BoxConstraints(
-                            //minHeight: MediaQuery.of(context).size.height
-                            ),
-                        child: IntrinsicHeight(
-                          child: Column(children: [
-                            Table(
-                              border: TableBorder.all(
-                                  color: Colors.purple, width: 1),
-                              columnWidths: {
-                                0: FractionColumnWidth(.25),
-                                1: FractionColumnWidth(.09),
-                                2: FractionColumnWidth(.49),
-                                3: FractionColumnWidth(.17),
-                              },
-                              children: [
-                                TableRow(children: [
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'Hauptsatz',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'Konj.',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'Mittelfeld',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'Verb',
-                                          style: textTheme.bodyMedium)),
-                                ]),
-                                TableRow(children: [
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'Kannst du mir sagen',
-                                          style: textTheme.bodyMedium!
-                                              .copyWith(color: Colors.red))),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'ob',
-                                          style: textTheme.bodyMedium!
-                                              .copyWith(color: Colors.blue))),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'du deinen neuen Freund',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'liebst.',
-                                          style: textTheme.bodyMedium!
-                                              .copyWith(color: Colors.blue))),
-                                ]),
-                                TableRow(children: [
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'Wissen Sie',
-                                          style: textTheme.bodyMedium!
-                                              .copyWith(color: Colors.red))),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'ob',
-                                          style: textTheme.bodyMedium!
-                                              .copyWith(color: Colors.blue))),
-                                  RichText(
-                                      text: TextSpan(
-                                          text:
-                                              'die asiatischen Kunden Toilettenpapierrollen',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'kaufen wollen.',
-                                          style: textTheme.bodyMedium!
-                                              .copyWith(color: Colors.blue))),
-                                ]),
-                                TableRow(children: [
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'Ich wüsste gern',
-                                          style: textTheme.bodyMedium!
-                                              .copyWith(color: Colors.red))),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'ob',
-                                          style: textTheme.bodyMedium!
-                                              .copyWith(color: Colors.blue))),
-                                  RichText(
-                                      text: TextSpan(
-                                          text:
-                                              'sich Frau Mutzke für den roten Sportwagen',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'interessiert.',
-                                          style: textTheme.bodyMedium!
-                                              .copyWith(color: Colors.blue))),
-                                ]),
-                                TableRow(children: [
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'Können Sie uns sagen',
-                                          style: textTheme.bodyMedium!
-                                              .copyWith(color: Colors.red))),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'ob',
-                                          style: textTheme.bodyMedium!
-                                              .copyWith(color: Colors.blue))),
-                                  RichText(
-                                      text: TextSpan(
-                                          text:
-                                              'die Besucher auf Herrn Muckelschnuckel',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'warten.',
-                                          style: textTheme.bodyMedium!
-                                              .copyWith(color: Colors.blue))),
-                                ]),
-                              ],
-                            )
-                          ]),
-                        ),
-                      ),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.only(
-                          top: 10.0, left: 16.0, bottom: 10),
-                      child: RichText(
-                        text: TextSpan(
-                          style: textTheme.bodyMedium,
-                          children: <TextSpan>[
-                            TextSpan(text: 'W-Fragen bleiben W-Fragen:'),
-                          ],
-                        ),
-                      ),
-                    ),
-                    SingleChildScrollView(
-                      child: ConstrainedBox(
-                        constraints: const BoxConstraints(
-                            //minHeight: MediaQuery.of(context).size.height
-                            ),
-                        child: IntrinsicHeight(
-                          child: Column(children: [
-                            Table(
-                              border: TableBorder.all(
-                                  color: Colors.purple, width: 1),
-                              columnWidths: {
-                                0: FractionColumnWidth(.37),
-                                1: FractionColumnWidth(.17),
-                                2: FractionColumnWidth(.31),
-                                3: FractionColumnWidth(.15),
-                              },
-                              children: [
-                                TableRow(children: [
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'Hauptsatz',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'Konjunktion',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'Mittelfeld',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'Verb',
-                                          style: textTheme.bodyMedium)),
-                                ]),
-                                TableRow(children: [
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'Ich hätte gern gewusst',
-                                          style: textTheme.bodyMedium!
-                                              .copyWith(color: Colors.red))),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'woher',
-                                          style: textTheme.bodyMedium!
-                                              .copyWith(color: Colors.blue))),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'die attraktive Studentin',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'kommt.',
-                                          style: textTheme.bodyMedium!
-                                              .copyWith(color: Colors.blue))),
-                                ]),
-                                TableRow(children: [
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'Könnten Sie mir bitte sagen',
-                                          style: textTheme.bodyMedium!
-                                              .copyWith(color: Colors.red))),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'was',
-                                          style: textTheme.bodyMedium!
-                                              .copyWith(color: Colors.blue))),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'Sie hier in meinem Büro',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'suchen.',
-                                          style: textTheme.bodyMedium!
-                                              .copyWith(color: Colors.blue))),
-                                ]),
-                                TableRow(children: [
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'Niemand weiß',
-                                          style: textTheme.bodyMedium!
-                                              .copyWith(color: Colors.red))),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'worauf',
-                                          style: textTheme.bodyMedium!
-                                              .copyWith(color: Colors.blue))),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'die europäischen Touristen',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'warten.',
-                                          style: textTheme.bodyMedium!
-                                              .copyWith(color: Colors.blue))),
-                                ]),
-                                TableRow(children: [
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'Unser Chef möchte wissen',
-                                          style: textTheme.bodyMedium!
-                                              .copyWith(color: Colors.red))),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'welcher Wein',
-                                          style: textTheme.bodyMedium!
-                                              .copyWith(color: Colors.blue))),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'unseren Gästen besser',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'schmeckt.',
-                                          style: textTheme.bodyMedium!
-                                              .copyWith(color: Colors.blue))),
-                                ]),
-                              ],
-                            )
-                          ]),
-                        ),
-                      ),
-                    ),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                            top: 10.0, left: 16.0, bottom: 10),
-                        child: RichText(
-                          text: TextSpan(
-                            style: textTheme.bodyMedium,
-                            children: <TextSpan>[
-                              TextSpan(text: 'Indirekte Fragesätze sind '),
-                              TextSpan(
-                                  text: 'Nebensätze',
-                                  style:
-                                      TextStyle(fontWeight: FontWeight.bold)),
-                              TextSpan(text: '.\n'),
-                              TextSpan(text: 'In Nebensätzen steht das '),
-                              TextSpan(
-                                  text: 'konjugierte Verb am Satzende',
-                                  style: TextStyle(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(text: '.\n'),
-                              TextSpan(text: 'Indirekte Fragesätze wirken '),
-                              TextSpan(
-                                  text: 'höflicher',
-                                  style: TextStyle(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(text: '.\n'),
-                              TextSpan(
-                                  text:
-                                      'Die Konjunktion "ob" steht bei Ja-/Nein- Fragen und leitet einen Nebensatz ein.\n'),
-                              TextSpan(
-                                  text:
-                                      'Eine W-Frage bleibt eine W-Frage, wird jedoch zum Nebensatz.'),
-                            ],
-                          ),
-                        )),
-                  ],
-                ),
-              ),
-            ],
-          ),
-        ),
+            padding: const EdgeInsets.all(8.0),
+            child: MyPageContentView(contents: contents)),
       ),
     );
   }
 }
+
+List<CardContent> contents = [
+  CardContent(
+    elements: [
+      CardElement(type: ElementType.pageTitle, value: title),
+    ],
+  ),
+  CardContent(
+    elements: [
+      CardElement(type: ElementType.cardTitle, value: title1),
+      CardElement(type: ElementType.htmlContent, value: htmlContent1_1),
+      CardElement(type: ElementType.htmlTable, value: htmlTable1_2),
+      CardElement(type: ElementType.htmlContent, value: htmlContent1_3),
+      CardElement(type: ElementType.htmlTable, value: htmlTable1_4),
+      CardElement(type: ElementType.htmlContent, value: htmlContent1_5),
+    ],
+  ),
+];
+
+String title = '5.5. Indirekte Fragesätze';
+
+String title1 = 'Was man über indirekte Fragesätze wissen sollte.';
+String htmlContent1_1 = '''
+<p>Man unterscheidet zwei <strong><a title="Fragesätze" href="lernen.php?menu_id=15">Fragesätze</a></strong>:</p>
+
+<h4>Ja-/Nein- Fragen (Entscheidungsfragen: (Verb = Position 1)</h4>
+
+<li><strong><span class="red">Liebst</span></strong> du deinen neuen Freund?</li>
+<li><strong><span class="red">Wollen</span></strong> die asiatischen Kunden Toilettenpapierrollen kaufen?</li>
+<li><strong><span class="red">Interessiert</span></strong> Frau Mutzke sich für den roten Sportwagen?</li>
+<li><strong><span class="red">Warten</span></strong> die Besucher auf Herrn Muckelschnuckel?</li>
+
+<h4><strong><a title="W-Fragen" href="lernen.php?menu_id=15#w-fragen">W-Fragen</a></strong> (Ergänzungsfragen): (W-Frage = Position 1 und Verb = Position 2)</h4>
+
+<li><strong><span class="red">Woher</span></strong> kommt die attraktive Studentin?</li>
+<li><strong><span class="red">Was</span></strong> suchen Sie hier in meinem Büro?</li>
+<li><strong><span class="red">Worauf</span></strong> warten die europäischen Touristen?</li>
+<li><strong><span class="red">Welcher Wein</span></strong> schmeckt unseren Gästen besser?</li>
+
+<p>Bei den gezeigten Beispielen handelt es sich um <strong><span class="red">direkte Fragen</span></strong>. Fragen können aber auch in <strong><span class="red">Nebensätzen</span></strong> stehen. Steht eine Frage im Nebensatz, spricht man von einer <strong><span class="red">indirekten Frage</span></strong>. Indirekte Fragen wirken höflicher.</p>
+
+<h4>Bei Ja-/Nein- Fragen benutzt man die Konjunktion " <strong><span class="red">ob</span></strong> " :</h4>
+''';
+String htmlTable1_2 = '''
+<table><colgroup> <col style="width: 25%;"> <col style="width: 9%;"> <col style="width: 49%;"> <col style="width: 17%;"> </colgroup>
+<thead>
+<tr align="center">
+<th>Hauptsatz</th>
+<th>Konj.</th>
+<th>Mittelfeld</th>
+<th>Verb</th>
+</tr>
+</thead>
+<tbody align="center">
+<tr>
+<td><strong><span class="red">Kannst du mir sagen</span></strong>,</td>
+<td><strong><span class="blue">ob</span></strong></td>
+<td>du deinen neuen Freund</td>
+<td><strong><span class="blue">liebst</span></strong>.</td>
+</tr>
+<tr>
+<td><strong><span class="red">Wissen Sie</span></strong>,</td>
+<td><strong><span class="blue">ob</span></strong></td>
+<td>die asiatischen Kunden Toilettenpapierrollen</td>
+<td><strong><span class="blue">kaufen wollen</span></strong>.</td>
+</tr>
+<tr>
+<td><strong><span class="red">Ich wüsste gern</span></strong>,</td>
+<td><strong><span class="blue">ob</span></strong></td>
+<td>sich Frau Mutzke für den roten Sportwagen</td>
+<td><strong><span class="blue">interessiert</span></strong>.</td>
+</tr>
+<tr>
+<td><strong><span class="red">Können Sie uns sagen</span></strong>,</td>
+<td><strong><span class="blue">ob</span></strong></td>
+<td>die Besucher auf Herrn Muckelschnuckel</td>
+<td><strong><span class="blue">warten</span></strong>.</td>
+</tr>
+</tbody>
+</table>
+''';
+String htmlContent1_3 = '''
+<h4>W-Fragen bleiben W-Fragen:</h4>
+''';
+String htmlTable1_4 = '''
+<table><colgroup> <col style="width: 37%;"> <col style="width: 17%;"> <col style="width: 31%;"> <col style="width: 15%;"> </colgroup>
+<thead>
+<tr align="center">
+<th>Hauptsatz</th>
+<th>Konjunktion</th>
+<th>Mittelfeld</th>
+<th>Verb</th>
+</tr>
+</thead>
+<tbody align="center">
+<tr>
+<td><strong><span class="red">Ich hätte gern gewusst</span></strong>,</td>
+<td><strong><span class="blue">woher</span></strong></td>
+<td>die attraktive Studentin</td>
+<td><strong><span class="blue">kommt</span></strong>.</td>
+</tr>
+<tr>
+<td><strong><span class="red">Könnten Sie mir bitte sagen</span></strong>,</td>
+<td><strong><span class="blue">was</span></strong></td>
+<td>Sie hier in meinem Büro</td>
+<td><strong><span class="blue">suchen</span></strong>.</td>
+</tr>
+<tr>
+<td><strong><span class="red">Niemand weiß</span></strong>,</td>
+<td><strong><span class="blue">worauf</span></strong></td>
+<td>die europäischen Touristen</td>
+<td><strong><span class="blue">warten</span></strong>.</td>
+</tr>
+<tr>
+<td><strong><span class="red">Unser Chef möchte wissen</span></strong>,</td>
+<td><strong><span class="blue">welcher Wein</span></strong></td>
+<td>unseren Gästen besser</td>
+<td><strong><span class="blue">schmeckt</span></strong>.</td>
+</tr>
+</tbody>
+</table>
+''';
+String htmlContent1_5 = '''
+<li>Indirekte Fragesätze sind <strong><a title="Nebensätze" href="lernen.php?menu_id=91#w-fragen">Nebensätze</a></strong>.</li>
+<li>In Nebensätzen steht das <strong><span class="red">konjugierte Verb am Satzende</span></strong>.</li>
+<li>Indirekte Fragesätze wirken <strong><span class="red">höflicher</span></strong>.</li>
+<li>Die Konjunktion "ob" steht bei Ja-/Nein- Fragen und leitet einen Nebensatz ein.</li>
+<li>Eine W-Frage bleibt eine W-Frage, wird jedoch zum Nebensatz.</li>
+''';

@@ -1,1938 +1,349 @@
 import 'package:flutter/material.dart';
 
 import '../app/app_localizations.dart';
+import '../page_content.dart';
 
 class Adjektive_Und_Partizipien_Als_Nomen_9_6 extends StatelessWidget {
   const Adjektive_Und_Partizipien_Als_Nomen_9_6({super.key});
 
   @override
   Widget build(BuildContext context) {
-    final localizations = AppLocalizations.of(context);
-    final textTheme = Theme.of(context).textTheme;
     return Expanded(
       child: Scaffold(
         body: Padding(
-          padding: const EdgeInsets.all(8.0),
-          child: ListView(
-            children: <Widget>[
-              Card(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: <Widget>[
-                    Padding(
-                      padding: const EdgeInsets.only(top: 16.0, left: 16.0),
-                      child: Text('9.6. Adjektive und Partizipien als Nomen',
-                          style: textTheme.titleMedium),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.only(top: 10.0, left: 16.0),
-                      child: Text(
-                          'Was man über Adjektive und Partizipien als Nomen wissen sollte.',
-                          style: textTheme.titleSmall),
-                    ),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                            top: 10.0, left: 16.0, bottom: 10),
-                        child: RichText(
-                          text: TextSpan(
-                            style: textTheme.bodyMedium,
-                            children: <TextSpan>[
-                              TextSpan(text: 'Theoretisch können alle '),
-                              TextSpan(
-                                text: 'Adjektive',
-                                style: textTheme.bodyMedium!
-                                    .copyWith(color: Colors.red),
-                              ),
-                              TextSpan(text: ' und '),
-                              TextSpan(
-                                text: 'Partizipien',
-                                style: textTheme.bodyMedium!
-                                    .copyWith(color: Colors.red),
-                              ),
-                              TextSpan(
-                                  text:
-                                      ' nominalisiert werden, das heißt, dass sie wie ein '),
-                              TextSpan(
-                                text: 'selbständiges Nomen',
-                                style: textTheme.bodyMedium!
-                                    .copyWith(color: Colors.red),
-                              ),
-                              TextSpan(
-                                  text:
-                                      ' gebraucht werden. In der Regel bezeichnen Nomen aus Adjektive und Partizipien '),
-                              TextSpan(
-                                text: 'Personen',
-                                style: textTheme.bodyMedium!
-                                    .copyWith(color: Colors.red),
-                              ),
-                              TextSpan(text: ' oder '),
-                              TextSpan(
-                                text: 'Abstrakta',
-                                style: textTheme.bodyMedium!
-                                    .copyWith(color: Colors.red),
-                              ),
-                              TextSpan(
-                                  text:
-                                      '. Alle nominalisierten Adjektive und Partizipien sind zwar Nomen, '),
-                              TextSpan(
-                                text: 'werden aber wie Adjektive dekliniert',
-                                style: textTheme.bodyMedium!
-                                    .copyWith(color: Colors.red),
-                              ),
-                              TextSpan(text: '.\n\nGestern wurde ein '),
-                              TextSpan(
-                                text: 'toter',
-                                style: textTheme.bodyMedium!
-                                    .copyWith(color: Colors.red),
-                              ),
-                              TextSpan(text: ' '),
-                              TextSpan(
-                                text: 'Mann',
-                                style: textTheme.bodyMedium!
-                                    .copyWith(color: Colors.blue),
-                              ),
-                              TextSpan(
-                                  text: ' auf einer Parkbank gefunden.\nZwei '),
-                              TextSpan(
-                                text: 'betrunkene',
-                                style: textTheme.bodyMedium!
-                                    .copyWith(color: Colors.red),
-                              ),
-                              TextSpan(text: ' '),
-                              TextSpan(
-                                text: 'Männer',
-                                style: textTheme.bodyMedium!
-                                    .copyWith(color: Colors.blue),
-                              ),
-                              TextSpan(
-                                  text: ' schliefen gleich neben ihm.\nEine '),
-                              TextSpan(
-                                text: 'blinde',
-                                style: textTheme.bodyMedium!
-                                    .copyWith(color: Colors.red),
-                              ),
-                              TextSpan(text: ' '),
-                              TextSpan(
-                                text: 'Frau',
-                                style: textTheme.bodyMedium!
-                                    .copyWith(color: Colors.blue),
-                              ),
-                              TextSpan(text: ' saß daneben und weinte.\nEin '),
-                              TextSpan(
-                                text: 'obdachloser',
-                                style: textTheme.bodyMedium!
-                                    .copyWith(color: Colors.red),
-                              ),
-                              TextSpan(text: ' '),
-                              TextSpan(
-                                text: 'Spaziergänger',
-                                style: textTheme.bodyMedium!
-                                    .copyWith(color: Colors.blue),
-                              ),
-                              TextSpan(
-                                  text:
-                                      ' benachrichtigte schließlich die Polizei.\n\nIn den gezeigten Beispielen gilt: Artikel + '),
-                              TextSpan(
-                                text: 'Adjektiv / Partizip',
-                                style: textTheme.bodyMedium!
-                                    .copyWith(color: Colors.red),
-                              ),
-                              TextSpan(text: ' + '),
-                              TextSpan(
-                                text: 'Nomen',
-                                style: textTheme.bodyMedium!
-                                    .copyWith(color: Colors.blue),
-                              ),
-                              TextSpan(
-                                  text:
-                                      '.\n\nWerden Adjektive und Partizipien nominalisiert, bezeichnen sie oft Personen. Nominalisierte Adjektive und Partizipien sind Nomen und werden mit großem Anfangsbuchstaben geschrieben, '),
-                              TextSpan(
-                                text: 'das ursprüngliche Nomen entfällt',
-                                style: textTheme.bodyMedium!
-                                    .copyWith(color: Colors.red),
-                              ),
-                              TextSpan(
-                                  text: ' (Mann, ...):\n\nGestern wurde ein '),
-                              TextSpan(
-                                text: 'Toter',
-                                style: textTheme.bodyMedium!
-                                    .copyWith(color: Colors.red),
-                              ),
-                              TextSpan(
-                                  text:
-                                      ' Mann auf einer Parkbank gefunden.\nZwei '),
-                              TextSpan(
-                                text: 'Betrunkene',
-                                style: textTheme.bodyMedium!
-                                    .copyWith(color: Colors.red),
-                              ),
-                              TextSpan(
-                                  text:
-                                      ' Männer schliefen gleich neben ihm.\nEine '),
-                              TextSpan(
-                                text: 'Blinde',
-                                style: textTheme.bodyMedium!
-                                    .copyWith(color: Colors.red),
-                              ),
-                              TextSpan(
-                                  text: ' Frau saß daneben und weinte.\nEin '),
-                              TextSpan(
-                                text: 'Obdachloser',
-                                style: textTheme.bodyMedium!
-                                    .copyWith(color: Colors.red),
-                              ),
-                              TextSpan(
-                                  text:
-                                      ' Spaziergänger benachrichtigte schließlich die Polizei.\n\nIn den gezeigten Beispielen gilt: Artikel + '),
-                              TextSpan(
-                                text: 'Adjektiv / Partizip als Nomen',
-                                style: textTheme.bodyMedium!
-                                    .copyWith(color: Colors.red),
-                              ),
-                              TextSpan(
-                                  text:
-                                      '.\n\nDer deutsche Mann / die deutsche Frau /// ein deutscher Mann / eine deutsche Frau\nDer '),
-                              TextSpan(
-                                text: 'Deutsche',
-                                style: textTheme.bodyMedium!
-                                    .copyWith(color: Colors.red),
-                              ),
-                              TextSpan(text: ' Mann / die '),
-                              TextSpan(
-                                text: 'Deutsche',
-                                style: textTheme.bodyMedium!
-                                    .copyWith(color: Colors.red),
-                              ),
-                              TextSpan(text: ' Frau /// ein '),
-                              TextSpan(
-                                text: 'Deutscher',
-                                style: textTheme.bodyMedium!
-                                    .copyWith(color: Colors.red),
-                              ),
-                              TextSpan(text: ' Mann / eine '),
-                              TextSpan(
-                                text: 'Deutsche',
-                                style: textTheme.bodyMedium!
-                                    .copyWith(color: Colors.red),
-                              ),
-                              TextSpan(text: ' Frau\n'),
-                            ],
-                          ),
-                        )),
-                  ],
-                ),
-              ),
-              Card(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: <Widget>[
-                    Padding(
-                      padding: const EdgeInsets.only(
-                          top: 10.0, left: 16.0, bottom: 10),
-                      child: Text('Adjektive als Nomen',
-                          style: textTheme.titleSmall),
-                    ),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                            top: 10.0, left: 16.0, bottom: 10),
-                        child: RichText(
-                          text: TextSpan(
-                            style: textTheme.bodyMedium,
-                            children: <TextSpan>[
-                              TextSpan(
-                                  text:
-                                      'Nominalisierte Adjektive und Partizipien bezeichnen '),
-                              TextSpan(
-                                text: 'Personen',
-                                style: textTheme.bodyMedium!
-                                    .copyWith(color: Colors.red),
-                              ),
-                              TextSpan(text: ' oder '),
-                              TextSpan(
-                                text: 'Abstrakta',
-                                style: textTheme.bodyMedium!
-                                    .copyWith(color: Colors.red),
-                              ),
-                              TextSpan(
-                                  text:
-                                      '. Einige nominalisierte Adjektive werden sehr häufig gebraucht. Die gebräuchlichsten Adjektive zeigt folgende Tabelle auf:'),
-                            ],
-                          ),
-                        )),
-                    SingleChildScrollView(
-                      child: ConstrainedBox(
-                        constraints: const BoxConstraints(
-                            //minHeight: MediaQuery.of(context).size.height
-                            ),
-                        child: IntrinsicHeight(
-                          child: Column(children: [
-                            Table(
-                              border: TableBorder.all(
-                                  color: Colors.purple, width: 1),
-                              columnWidths: {
-                                0: FractionColumnWidth(.16),
-                                1: FractionColumnWidth(.84),
-                              },
-                              children: [
-                                TableRow(children: [
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'Adjektiv',
-                                      style: textTheme.bodyMedium,
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'Beispiel',
-                                      style: textTheme.bodyMedium,
-                                    ),
-                                  ),
-                                ]),
-                                TableRow(children: [
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'alt',
-                                      style: textTheme.bodyMedium!.copyWith(
-                                          color: Colors.red,
-                                          ),
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      children: <TextSpan>[
-                                        TextSpan(
-                                          text: 'Der Alte',
-                                          style: textTheme.bodyMedium!
-                                              .copyWith(color: Colors.red),
-                                        ),
-                                        TextSpan(
-                                          text:
-                                              ' hinter dem Steuer sollte wirklich seinen Führerschein abgeben.',
-                                          style: textTheme.bodyMedium,
-                                        ),
-                                      ],
-                                    ),
-                                  )
-                                ]),
-                                TableRow(children: [
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'arbeitslos',
-                                      style: textTheme.bodyMedium!.copyWith(
-                                          color: Colors.red,
-                                          ),
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      children: <TextSpan>[
-                                        TextSpan(
-                                          text: 'Arbeitslose',
-                                          style: textTheme.bodyMedium!
-                                              .copyWith(color: Colors.red),
-                                        ),
-                                        TextSpan(
-                                          text:
-                                              ' erhalten vom Arbeitsamt eine finanzielle Unterstützung.',
-                                          style: textTheme.bodyMedium,
-                                        ),
-                                      ],
-                                    ),
-                                  )
-                                ]),
-                                TableRow(children: [
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'arm',
-                                      style: textTheme.bodyMedium!.copyWith(
-                                          color: Colors.red,
-                                          ),
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      children: <TextSpan>[
-                                        TextSpan(
-                                          text: 'Viele Arme',
-                                          style: textTheme.bodyMedium!
-                                              .copyWith(color: Colors.red),
-                                        ),
-                                        TextSpan(
-                                          text:
-                                              ' in der Region wissen nicht, wie sie überleben sollen.',
-                                          style: textTheme.bodyMedium,
-                                        ),
-                                      ],
-                                    ),
-                                  )
-                                ]),
-                                TableRow(children: [
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'bekannt',
-                                      style: textTheme.bodyMedium!.copyWith(
-                                          color: Colors.red,
-                                          ),
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      children: <TextSpan>[
-                                        TextSpan(
-                                          text: 'Ein Bekannter',
-                                          style: textTheme.bodyMedium!
-                                              .copyWith(color: Colors.red),
-                                        ),
-                                        TextSpan(
-                                          text:
-                                              ' von mir hat vor kurzem im Lotto 1 Million Euro gewonnen.',
-                                          style: textTheme.bodyMedium,
-                                        ),
-                                      ],
-                                    ),
-                                  )
-                                ]),
-                                TableRow(children: [
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'blind',
-                                      style: textTheme.bodyMedium!.copyWith(
-                                          color: Colors.red,
-                                          ),
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      children: <TextSpan>[
-                                        TextSpan(
-                                          text: 'Der Blinde',
-                                          style: textTheme.bodyMedium!
-                                              .copyWith(color: Colors.red),
-                                        ),
-                                        TextSpan(
-                                          text:
-                                              ' hinter dem Steuer sieht nicht, dass die Ampel rot zeigt.',
-                                          style: textTheme.bodyMedium,
-                                        ),
-                                      ],
-                                    ),
-                                  )
-                                ]),
-                                TableRow(children: [
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'blond',
-                                      style: textTheme.bodyMedium!.copyWith(
-                                          color: Colors.red,
-                                          ),
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      children: <TextSpan>[
-                                        TextSpan(
-                                          text: 'Schau mal! Sieht ',
-                                          style: textTheme.bodyMedium,
-                                        ),
-                                        TextSpan(
-                                          text: 'die Blonde',
-                                          style: textTheme.bodyMedium!
-                                              .copyWith(color: Colors.red),
-                                        ),
-                                        TextSpan(
-                                          text:
-                                              ' hinter der Theke nicht klasse aus?',
-                                          style: textTheme.bodyMedium,
-                                        ),
-                                      ],
-                                    ),
-                                  )
-                                ]),
-                                TableRow(children: [
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'böse',
-                                      style: textTheme.bodyMedium!.copyWith(
-                                          color: Colors.red,
-                                          ),
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      children: <TextSpan>[
-                                        TextSpan(
-                                          text: 'Nimm dich in Acht! ',
-                                          style: textTheme.bodyMedium,
-                                        ),
-                                        TextSpan(
-                                          text: 'Das Böse',
-                                          style: textTheme.bodyMedium!
-                                              .copyWith(color: Colors.red),
-                                        ),
-                                        TextSpan(
-                                          text: ' ist überall.',
-                                          style: textTheme.bodyMedium,
-                                        ),
-                                      ],
-                                    ),
-                                  )
-                                ]),
-                                TableRow(children: [
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'deutsch',
-                                      style: textTheme.bodyMedium!.copyWith(
-                                          color: Colors.red,
-                                          ),
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      children: <TextSpan>[
-                                        TextSpan(
-                                          text: 'Die meisten Deutschen',
-                                          style: textTheme.bodyMedium!
-                                              .copyWith(color: Colors.red),
-                                        ),
-                                        TextSpan(
-                                          text:
-                                              ' verbringen ihren Urlaub an der See.',
-                                          style: textTheme.bodyMedium,
-                                        ),
-                                      ],
-                                    ),
-                                  )
-                                ]),
-                                TableRow(children: [
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'dumm',
-                                      style: textTheme.bodyMedium!.copyWith(
-                                          color: Colors.red,
-                                          ),
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      children: <TextSpan>[
-                                        TextSpan(
-                                          text: 'Der Dumme',
-                                          style: textTheme.bodyMedium!
-                                              .copyWith(color: Colors.red),
-                                        ),
-                                        TextSpan(
-                                          text: ' verurteilt, ',
-                                          style: textTheme.bodyMedium,
-                                        ),
-                                        TextSpan(
-                                          text: 'der Kluge',
-                                          style: textTheme.bodyMedium!
-                                              .copyWith(color: Colors.red),
-                                        ),
-                                        TextSpan(
-                                          text: ' beurteilt.',
-                                          style: textTheme.bodyMedium,
-                                        ),
-                                      ],
-                                    ),
-                                  )
-                                ]),
-                                TableRow(children: [
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'einheimisch',
-                                      style: textTheme.bodyMedium!.copyWith(
-                                          color: Colors.red,
-                                          ),
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      children: <TextSpan>[
-                                        TextSpan(
-                                          text:
-                                              'Sie suchen die Landgasse? Fragen Sie am besten ',
-                                          style: textTheme.bodyMedium,
-                                        ),
-                                        TextSpan(
-                                          text: 'einen Einheimischen',
-                                          style: textTheme.bodyMedium!
-                                              .copyWith(color: Colors.red),
-                                        ),
-                                        TextSpan(
-                                          text: '.',
-                                          style: textTheme.bodyMedium,
-                                        ),
-                                      ],
-                                    ),
-                                  )
-                                ]),
-                                TableRow(children: [
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'freiwillig',
-                                      style: textTheme.bodyMedium!.copyWith(
-                                          color: Colors.red,
-                                          ),
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      children: <TextSpan>[
-                                        TextSpan(
-                                          text: 'Viele Freiwillige',
-                                          style: textTheme.bodyMedium!
-                                              .copyWith(color: Colors.red),
-                                        ),
-                                        TextSpan(
-                                          text:
-                                              ' halfen dabei, die Sturmschäden zu beseitigen.',
-                                          style: textTheme.bodyMedium,
-                                        ),
-                                      ],
-                                    ),
-                                  )
-                                ]),
-                                TableRow(children: [
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'fremd',
-                                      style: textTheme.bodyMedium!.copyWith(
-                                          color: Colors.red,
-                                          ),
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      children: <TextSpan>[
-                                        TextSpan(
-                                          text:
-                                              'Das hübsche Mädchen wird oft von ',
-                                          style: textTheme.bodyMedium,
-                                        ),
-                                        TextSpan(
-                                          text: 'Fremden',
-                                          style: textTheme.bodyMedium!
-                                              .copyWith(color: Colors.red),
-                                        ),
-                                        TextSpan(
-                                          text: ' angesprochen.',
-                                          style: textTheme.bodyMedium,
-                                        ),
-                                      ],
-                                    ),
-                                  )
-                                ]),
-                                TableRow(children: [
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'gut',
-                                      style: textTheme.bodyMedium!.copyWith(
-                                          color: Colors.red,
-                                          ),
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      children: <TextSpan>[
-                                        TextSpan(
-                                          text: 'Das Gute',
-                                          style: textTheme.bodyMedium!
-                                              .copyWith(color: Colors.red),
-                                        ),
-                                        TextSpan(
-                                          text:
-                                              ' daran ist, dass ihm bei seinem Unfall nichts passiert ist.',
-                                          style: textTheme.bodyMedium,
-                                        ),
-                                      ],
-                                    ),
-                                  )
-                                ]),
-                                TableRow(children: [
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'spannend',
-                                      style: textTheme.bodyMedium!.copyWith(
-                                          color: Colors.red,
-                                          ),
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      children: <TextSpan>[
-                                        TextSpan(
-                                          text: 'Im Museum gab es viel ',
-                                          style: textTheme.bodyMedium,
-                                        ),
-                                        TextSpan(
-                                          text: 'Spannendes',
-                                          style: textTheme.bodyMedium!
-                                              .copyWith(color: Colors.red),
-                                        ),
-                                        TextSpan(
-                                          text: ' zu sehen.',
-                                          style: textTheme.bodyMedium,
-                                        ),
-                                      ],
-                                    ),
-                                  )
-                                ]),
-                                TableRow(children: [
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'klein',
-                                      style: textTheme.bodyMedium!.copyWith(
-                                          color: Colors.red,
-                                          ),
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      children: <TextSpan>[
-                                        TextSpan(
-                                          text: 'Die Kleine',
-                                          style: textTheme.bodyMedium!
-                                              .copyWith(color: Colors.red),
-                                        ),
-                                        TextSpan(
-                                          text:
-                                              ', die neben Petra steht, sieht wirklich klasse aus.',
-                                          style: textTheme.bodyMedium,
-                                        ),
-                                      ],
-                                    ),
-                                  )
-                                ]),
-                                TableRow(children: [
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'krank',
-                                      style: textTheme.bodyMedium!.copyWith(
-                                          color: Colors.red,
-                                          ),
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      children: <TextSpan>[
-                                        TextSpan(
-                                          text: 'Diese Klinik hat schon ',
-                                          style: textTheme.bodyMedium,
-                                        ),
-                                        TextSpan(
-                                          text: 'vielen Kranken',
-                                          style: textTheme.bodyMedium!
-                                              .copyWith(color: Colors.red),
-                                        ),
-                                        TextSpan(
-                                          text: ' helfen können.',
-                                          style: textTheme.bodyMedium,
-                                        ),
-                                      ],
-                                    ),
-                                  )
-                                ]),
-                                TableRow(children: [
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'kriminell',
-                                      style: textTheme.bodyMedium!.copyWith(
-                                          color: Colors.red,
-                                          ),
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      children: <TextSpan>[
-                                        TextSpan(
-                                          text:
-                                              'In dieser Stadt gibt es leider viel zu viele ',
-                                          style: textTheme.bodyMedium,
-                                        ),
-                                        TextSpan(
-                                          text: 'Kriminelle',
-                                          style: textTheme.bodyMedium!
-                                              .copyWith(color: Colors.red),
-                                        ),
-                                        TextSpan(
-                                          text: '.',
-                                          style: textTheme.bodyMedium,
-                                        ),
-                                      ],
-                                    ),
-                                  )
-                                ]),
-                                TableRow(children: [
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'ledig',
-                                      style: textTheme.bodyMedium!.copyWith(
-                                          color: Colors.red,
-                                          ),
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      children: <TextSpan>[
-                                        TextSpan(
-                                          text: 'Ein Lediger',
-                                          style: textTheme.bodyMedium!
-                                              .copyWith(color: Colors.red),
-                                        ),
-                                        TextSpan(
-                                          text: ' hat andere Probleme als ',
-                                          style: textTheme.bodyMedium,
-                                        ),
-                                        TextSpan(
-                                          text: 'ein Verheirateter',
-                                          style: textTheme.bodyMedium!
-                                              .copyWith(color: Colors.red),
-                                        ),
-                                        TextSpan(
-                                          text: '.',
-                                          style: textTheme.bodyMedium,
-                                        ),
-                                      ],
-                                    ),
-                                  )
-                                ]),
-                                TableRow(children: [
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'nächste',
-                                      style: textTheme.bodyMedium!.copyWith(
-                                          color: Colors.red,
-                                          ),
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      children: <TextSpan>[
-                                        TextSpan(
-                                          text:
-                                              'Eine freundliche Arzthelferin ruft ',
-                                          style: textTheme.bodyMedium,
-                                        ),
-                                        TextSpan(
-                                          text: 'den Nächsten',
-                                          style: textTheme.bodyMedium!
-                                              .copyWith(color: Colors.red),
-                                        ),
-                                        TextSpan(
-                                          text: ' auf.',
-                                          style: textTheme.bodyMedium,
-                                        ),
-                                      ],
-                                    ),
-                                  )
-                                ]),
-                                TableRow(children: [
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'obdachlos',
-                                      style: textTheme.bodyMedium!.copyWith(
-                                          color: Colors.red,
-                                          ),
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      children: <TextSpan>[
-                                        TextSpan(
-                                          text:
-                                              'Gibt es in eurer Stadt auch so ',
-                                          style: textTheme.bodyMedium,
-                                        ),
-                                        TextSpan(
-                                          text: 'viele Obdachlose',
-                                          style: textTheme.bodyMedium!
-                                              .copyWith(color: Colors.red),
-                                        ),
-                                        TextSpan(
-                                          text: '?',
-                                          style: textTheme.bodyMedium,
-                                        ),
-                                      ],
-                                    ),
-                                  )
-                                ]),
-                                TableRow(children: [
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'schön',
-                                      style: textTheme.bodyMedium!.copyWith(
-                                          color: Colors.red,
-                                          ),
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      children: <TextSpan>[
-                                        TextSpan(
-                                          text: 'Es gibt viele Frauen. Aber ',
-                                          style: textTheme.bodyMedium,
-                                        ),
-                                        TextSpan(
-                                          text: 'die Schönen',
-                                          style: textTheme.bodyMedium!
-                                              .copyWith(color: Colors.red),
-                                        ),
-                                        TextSpan(
-                                          text: ' sind unerreichbar.',
-                                          style: textTheme.bodyMedium,
-                                        ),
-                                      ],
-                                    ),
-                                  )
-                                ]),
-                                TableRow(children: [
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'schwarzhaarig',
-                                      style: textTheme.bodyMedium!.copyWith(
-                                          color: Colors.red,
-                                          ),
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      children: <TextSpan>[
-                                        TextSpan(
-                                          text:
-                                              'Hannelore verliebt sich immer nur in ',
-                                          style: textTheme.bodyMedium,
-                                        ),
-                                        TextSpan(
-                                          text: 'Schwarzhaarige',
-                                          style: textTheme.bodyMedium!
-                                              .copyWith(color: Colors.red),
-                                        ),
-                                        TextSpan(
-                                          text: '.',
-                                          style: textTheme.bodyMedium,
-                                        ),
-                                      ],
-                                    ),
-                                  )
-                                ]),
-                                TableRow(children: [
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'selbständig',
-                                      style: textTheme.bodyMedium!.copyWith(
-                                          color: Colors.red,
-                                          ),
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      children: <TextSpan>[
-                                        TextSpan(
-                                          text: 'Selbständige',
-                                          style: textTheme.bodyMedium!
-                                              .copyWith(color: Colors.red),
-                                        ),
-                                        TextSpan(
-                                          text:
-                                              ' arbeiten in der Regel mehr als ',
-                                          style: textTheme.bodyMedium,
-                                        ),
-                                        TextSpan(
-                                          text: 'Angestellte',
-                                          style: textTheme.bodyMedium!
-                                              .copyWith(color: Colors.red),
-                                        ),
-                                        TextSpan(
-                                          text: '.',
-                                          style: textTheme.bodyMedium,
-                                        ),
-                                      ],
-                                    ),
-                                  )
-                                ]),
-                                TableRow(children: [
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'tot',
-                                      style: textTheme.bodyMedium!.copyWith(
-                                          color: Colors.red,
-                                          ),
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      children: <TextSpan>[
-                                        TextSpan(
-                                          text:
-                                              'Am Donnerstag wurde am Steuer eines Kleinwagens ',
-                                          style: textTheme.bodyMedium,
-                                        ),
-                                        TextSpan(
-                                          text: 'ein Toter',
-                                          style: textTheme.bodyMedium!
-                                              .copyWith(color: Colors.red),
-                                        ),
-                                        TextSpan(
-                                          text: ' entdeckt.',
-                                          style: textTheme.bodyMedium,
-                                        ),
-                                      ],
-                                    ),
-                                  )
-                                ]),
-                              ],
-                            ),
-                          ]),
-                        ),
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-              Card(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: <Widget>[
-                    Padding(
-                      padding: const EdgeInsets.only(
-                          top: 10.0, left: 16.0, bottom: 10),
-                      child: Text('Partizip I als Nomen',
-                          style: textTheme.titleSmall),
-                    ),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                            top: 10.0, left: 16.0, bottom: 10),
-                        child: RichText(
-                          text: TextSpan(
-                            style: textTheme.bodyMedium,
-                            children: const <TextSpan>[
-                              TextSpan(
-                                  text:
-                                      'Folgende Partizipien I werden häufig als selbständiges Nomen gebraucht:'),
-                            ],
-                          ),
-                        )),
-                    SingleChildScrollView(
-                      child: ConstrainedBox(
-                        constraints: const BoxConstraints(
-                            //minHeight: MediaQuery.of(context).size.height
-                            ),
-                        child: IntrinsicHeight(
-                          child: Column(children: [
-                            Table(
-                              border: TableBorder.all(
-                                  color: Colors.purple, width: 1),
-                              columnWidths: {
-                                0: FractionColumnWidth(.16),
-                                1: FractionColumnWidth(.84),
-                              },
-                              children: [
-                                TableRow(children: [
-                                  Text('Partizip I',
-                                      style: textTheme.bodyMedium),
-                                  Text('Beispiel', style: textTheme.bodyMedium),
-                                ]),
-                                TableRow(children: [
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'abwesend',
-                                      style: textTheme.bodyMedium!.copyWith(
-                                          color: Colors.red,
-                                          ),
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'Alle ',
-                                      style: textTheme.bodyMedium,
-                                      children: <TextSpan>[
-                                        TextSpan(
-                                            text: 'Abwesenden',
-                                            style: textTheme.bodyMedium!
-                                                .copyWith(
-                                                    color: Colors.red,
-                                                    )),
-                                        TextSpan(
-                                            text:
-                                                ' haben diese wichtige Information nicht erhalten.',
-                                            style: textTheme.bodyMedium),
-                                      ],
-                                    ),
-                                  ),
-                                ]),
-                                TableRow(children: [
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'anwesend',
-                                      style: textTheme.bodyMedium!.copyWith(
-                                          color: Colors.red,
-                                          ),
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'Alle ',
-                                      style: textTheme.bodyMedium,
-                                      children: <TextSpan>[
-                                        TextSpan(
-                                            text: 'Anwesenden',
-                                            style: textTheme.bodyMedium!
-                                                .copyWith(
-                                                    color: Colors.red,
-                                                    )),
-                                        TextSpan(
-                                            text:
-                                                ' haben die Prüfung bestanden.',
-                                            style: textTheme.bodyMedium),
-                                      ],
-                                    ),
-                                  ),
-                                ]),
-                                TableRow(children: [
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'ausbildend',
-                                      style: textTheme.bodyMedium!.copyWith(
-                                          color: Colors.red,
-                                          ),
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'Die ',
-                                      style: textTheme.bodyMedium,
-                                      children: <TextSpan>[
-                                        TextSpan(
-                                            text: 'Auszubildenden',
-                                            style: textTheme.bodyMedium!
-                                                .copyWith(
-                                                    color: Colors.red,
-                                                    )),
-                                        TextSpan(
-                                            text:
-                                                ' müssen einen Nachweis über die Ausbildung führen.',
-                                            style: textTheme.bodyMedium),
-                                      ],
-                                    ),
-                                  ),
-                                ]),
-                                TableRow(children: [
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'heranwachsend',
-                                      style: textTheme.bodyMedium!.copyWith(
-                                          color: Colors.red,
-                                          ),
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      text: '',
-                                      style: textTheme.bodyMedium,
-                                      children: <TextSpan>[
-                                        TextSpan(
-                                            text: 'Heranwachsende',
-                                            style: textTheme.bodyMedium!
-                                                .copyWith(
-                                                    color: Colors.red,
-                                                    )),
-                                        TextSpan(
-                                            text:
-                                                ' sind Personen, die ein Alter von 18 - 20 Jahren haben.',
-                                            style: textTheme.bodyMedium),
-                                      ],
-                                    ),
-                                  ),
-                                ]),
-                                TableRow(children: [
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'leidtragend',
-                                      style: textTheme.bodyMedium!.copyWith(
-                                          color: Colors.red,
-                                          ),
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      text:
-                                          'Bei einer Scheidung sind die Kinder immer ',
-                                      style: textTheme.bodyMedium,
-                                      children: <TextSpan>[
-                                        TextSpan(
-                                            text: 'die Leidtragenden',
-                                            style: textTheme.bodyMedium!
-                                                .copyWith(
-                                                    color: Colors.red,
-                                                    )),
-                                        TextSpan(
-                                            text: '.',
-                                            style: textTheme.bodyMedium),
-                                      ],
-                                    ),
-                                  ),
-                                ]),
-                                TableRow(children: [
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'mitwirkend',
-                                      style: textTheme.bodyMedium!.copyWith(
-                                          color: Colors.red,
-                                          ),
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'Allen ',
-                                      style: textTheme.bodyMedium,
-                                      children: <TextSpan>[
-                                        TextSpan(
-                                            text: 'Mitwirkenden',
-                                            style: textTheme.bodyMedium!
-                                                .copyWith(
-                                                    color: Colors.red,
-                                                    )),
-                                        TextSpan(
-                                            text:
-                                                ' an dieser Sendung gilt ein besonderer Dank.',
-                                            style: textTheme.bodyMedium),
-                                      ],
-                                    ),
-                                  ),
-                                ]),
-                                TableRow(children: [
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'reisend',
-                                      style: textTheme.bodyMedium!.copyWith(
-                                          color: Colors.red,
-                                          ),
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      text: '',
-                                      style: textTheme.bodyMedium,
-                                      children: <TextSpan>[
-                                        TextSpan(
-                                            text: 'Reisende',
-                                            style: textTheme.bodyMedium!
-                                                .copyWith(
-                                                    color: Colors.red,
-                                                    )),
-                                        TextSpan(
-                                            text: ' soll man nicht aufhalten.',
-                                            style: textTheme.bodyMedium),
-                                      ],
-                                    ),
-                                  ),
-                                ]),
-                                TableRow(children: [
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'überlebend',
-                                      style: textTheme.bodyMedium!.copyWith(
-                                          color: Colors.red,
-                                          ),
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      text:
-                                          'Bei dem gestrigen Flugzeugabsturz gab es ',
-                                      style: textTheme.bodyMedium,
-                                      children: <TextSpan>[
-                                        TextSpan(
-                                            text: 'keine Überlebenden',
-                                            style: textTheme.bodyMedium!
-                                                .copyWith(
-                                                    color: Colors.red,
-                                                   )),
-                                        TextSpan(
-                                            text: '.',
-                                            style: textTheme.bodyMedium),
-                                      ],
-                                    ),
-                                  ),
-                                ]),
-                                TableRow(children: [
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'vorsitzend',
-                                      style: textTheme.bodyMedium!.copyWith(
-                                          color: Colors.red,
-                                          ),
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'Der ',
-                                      style: textTheme.bodyMedium,
-                                      children: <TextSpan>[
-                                        TextSpan(
-                                            text: 'Vorsitzende',
-                                            style: textTheme.bodyMedium!
-                                                .copyWith(
-                                                    color: Colors.red,
-                                                   )),
-                                        TextSpan(
-                                            text:
-                                                ' des Vereins stellt sein Amt zur Verfügung.',
-                                            style: textTheme.bodyMedium),
-                                      ],
-                                    ),
-                                  ),
-                                ]),
-                              ],
-                            )
-                          ]),
-                        ),
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-              Card(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: <Widget>[
-                    Padding(
-                      padding: const EdgeInsets.only(
-                          top: 10.0, left: 16.0, bottom: 10),
-                      child: Text('Partizip II als Nomen',
-                          style: textTheme.titleSmall),
-                    ),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                            top: 10.0, left: 16.0, bottom: 10),
-                        child: RichText(
-                          text: TextSpan(
-                            style: textTheme.bodyMedium,
-                            children: const <TextSpan>[
-                              TextSpan(
-                                  text:
-                                      'Folgende Partizipien II werden sehr häufig als selbständiges Nomen gebraucht:'),
-                            ],
-                          ),
-                        )),
-                    SingleChildScrollView(
-                      child: ConstrainedBox(
-                        constraints: const BoxConstraints(
-                            //minHeight: MediaQuery.of(context).size.height
-                            ),
-                        child: IntrinsicHeight(
-                          child: Column(children: [
-                            Table(
-                              border: TableBorder.all(
-                                  color: Colors.purple, width: 1),
-                              columnWidths: {
-                                0: FractionColumnWidth(.15),
-                                1: FractionColumnWidth(.16),
-                                2: FractionColumnWidth(.69),
-                              },
-                              children: [
-                                TableRow(children: [
-                                  Text('Partizip II',
-                                      style: textTheme.bodyMedium),
-                                  Text('Infinitiv',
-                                      style: textTheme.bodyMedium),
-                                  Text('Beispiel', style: textTheme.bodyMedium),
-                                ]),
-                                TableRow(children: [
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'abgeordnet',
-                                      style: textTheme.bodyMedium!.copyWith(
-                                          color: Colors.red,
-                                          ),
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'ab|ordnen',
-                                      style: textTheme.bodyMedium,
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      text: '',
-                                      style: textTheme.bodyMedium,
-                                      children: <TextSpan>[
-                                        TextSpan(
-                                            text: 'Abgeordnete',
-                                            style: textTheme.bodyMedium!
-                                                .copyWith(
-                                                    color: Colors.red,
-                                                    )),
-                                        TextSpan(
-                                            text: ' sitzen z.B. im Bundestag.',
-                                            style: textTheme.bodyMedium),
-                                      ],
-                                    ),
-                                  ),
-                                ]),
-                                TableRow(children: [
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'angehörig',
-                                      style: textTheme.bodyMedium!.copyWith(
-                                          color: Colors.red,
-                                          ),
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'an|gehören',
-                                      style: textTheme.bodyMedium,
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'Sind Sie ',
-                                      style: textTheme.bodyMedium,
-                                      children: <TextSpan>[
-                                        TextSpan(
-                                            text:
-                                                'ein Angehöriger des Verstorbenen',
-                                            style: textTheme.bodyMedium!
-                                                .copyWith(
-                                                    color: Colors.red,
-                                                    )),
-                                        TextSpan(
-                                            text: '?',
-                                            style: textTheme.bodyMedium),
-                                      ],
-                                    ),
-                                  ),
-                                ]),
-                                TableRow(children: [
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'angeklagt',
-                                      style: textTheme.bodyMedium!.copyWith(
-                                          color: Colors.red,
-                                          ),
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'an|klagen',
-                                      style: textTheme.bodyMedium,
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      text: '',
-                                      style: textTheme.bodyMedium,
-                                      children: <TextSpan>[
-                                        TextSpan(
-                                            text: 'Der Angeklagte',
-                                            style: textTheme.bodyMedium!
-                                                .copyWith(
-                                                    color: Colors.red,
-                                                    )),
-                                        TextSpan(
-                                            text: ' verweigerte seine Aussage.',
-                                            style: textTheme.bodyMedium),
-                                      ],
-                                    ),
-                                  ),
-                                ]),
-                                TableRow(children: [
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'angestellt',
-                                      style: textTheme.bodyMedium!.copyWith(
-                                          color: Colors.red,
-                                          ),
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'an|stellen',
-                                      style: textTheme.bodyMedium,
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      text: '',
-                                      style: textTheme.bodyMedium,
-                                      children: <TextSpan>[
-                                        TextSpan(
-                                            text: 'Angestellte',
-                                            style: textTheme.bodyMedium!
-                                                .copyWith(
-                                                    color: Colors.red,
-                                                    )),
-                                        TextSpan(
-                                            text:
-                                                ' haben bessere Tarifverträge als Arbeiter.',
-                                            style: textTheme.bodyMedium),
-                                      ],
-                                    ),
-                                  ),
-                                ]),
-                                TableRow(children: [
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'beamtet',
-                                      style: textTheme.bodyMedium!.copyWith(
-                                          color: Colors.red,
-                                          ),
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'beamten',
-                                      style: textTheme.bodyMedium,
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'Der Arbeitgeber ',
-                                      style: textTheme.bodyMedium,
-                                      children: <TextSpan>[
-                                        TextSpan(
-                                            text: 'aller Beamten',
-                                            style: textTheme.bodyMedium!
-                                                .copyWith(
-                                                    color: Colors.red,
-                                                    )),
-                                        TextSpan(
-                                            text: ' ist der Staat.',
-                                            style: textTheme.bodyMedium),
-                                      ],
-                                    ),
-                                  ),
-                                ]),
-                                TableRow(children: [
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'betrogen',
-                                      style: textTheme.bodyMedium!.copyWith(
-                                          color: Colors.red,
-                                      ),
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'betrügen',
-                                      style: textTheme.bodyMedium,
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      text: '',
-                                      style: textTheme.bodyMedium,
-                                      children: <TextSpan>[
-                                        TextSpan(
-                                            text: 'Der Betrogene',
-                                            style: textTheme.bodyMedium!
-                                                .copyWith(
-                                                    color: Colors.red,
-                                                    )),
-                                        TextSpan(
-                                            text:
-                                                ' verschwieg zuerst seinen Schaden.',
-                                            style: textTheme.bodyMedium),
-                                      ],
-                                    ),
-                                  ),
-                                ]),
-                                TableRow(children: [
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'betrunken',
-                                      style: textTheme.bodyMedium!.copyWith(
-                                          color: Colors.red,
-                                          ),
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'betrinken',
-                                      style: textTheme.bodyMedium,
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'Hier in der Kneipe gibt es nur ',
-                                      style: textTheme.bodyMedium,
-                                      children: <TextSpan>[
-                                        TextSpan(
-                                            text: 'Betrunkene',
-                                            style: textTheme.bodyMedium!
-                                                .copyWith(
-                                                    color: Colors.red,
-                                                    )),
-                                        TextSpan(
-                                            text: '.',
-                                            style: textTheme.bodyMedium),
-                                      ],
-                                    ),
-                                  ),
-                                ]),
-                                TableRow(children: [
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'gefangen',
-                                      style: textTheme.bodyMedium!.copyWith(
-                                          color: Colors.red,
-                                          ),
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'fangen',
-                                      style: textTheme.bodyMedium,
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      text: '',
-                                      style: textTheme.bodyMedium,
-                                      children: <TextSpan>[
-                                        TextSpan(
-                                            text: 'Diese Gefangenen',
-                                            style: textTheme.bodyMedium!
-                                                .copyWith(
-                                                    color: Colors.red,
-                                                    )),
-                                        TextSpan(
-                                            text:
-                                                ' sitzen lebenslang hinter Gitter.',
-                                            style: textTheme.bodyMedium),
-                                      ],
-                                    ),
-                                  ),
-                                ]),
-                                TableRow(children: [
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'geliebt',
-                                      style: textTheme.bodyMedium!.copyWith(
-                                          color: Colors.red,
-                                          ),
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'lieben',
-                                      style: textTheme.bodyMedium,
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'Hans hat ',
-                                      style: textTheme.bodyMedium,
-                                      children: <TextSpan>[
-                                        TextSpan(
-                                            text: 'eine Geliebte',
-                                            style: textTheme.bodyMedium!
-                                                .copyWith(
-                                                    color: Colors.red,
-                                                   )),
-                                        TextSpan(
-                                            text:
-                                                ' und seine Frau weiß von nichts.',
-                                            style: textTheme.bodyMedium),
-                                      ],
-                                    ),
-                                  ),
-                                ]),
-                                TableRow(children: [
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'prostituiert',
-                                      style: textTheme.bodyMedium!.copyWith(
-                                          color: Colors.red,
-                                          ),
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'prostituieren',
-                                      style: textTheme.bodyMedium,
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      text: '',
-                                      style: textTheme.bodyMedium,
-                                      children: <TextSpan>[
-                                        TextSpan(
-                                            text: 'Die Prostituierte',
-                                            style: textTheme.bodyMedium!
-                                                .copyWith(
-                                                    color: Colors.red,
-                                                    )),
-                                        TextSpan(
-                                            text:
-                                                ' kämpft immer mit Vorurteilen.',
-                                            style: textTheme.bodyMedium),
-                                      ],
-                                    ),
-                                  ),
-                                ]),
-                                TableRow(children: [
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'verdächtigt',
-                                      style: textTheme.bodyMedium!.copyWith(
-                                          color: Colors.red,
-                                          ),
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'verdächtigen',
-                                      style: textTheme.bodyMedium,
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      text: '',
-                                      style: textTheme.bodyMedium,
-                                      children: <TextSpan>[
-                                        TextSpan(
-                                            text: 'Die Verdächtigten',
-                                            style: textTheme.bodyMedium!
-                                                .copyWith(
-                                                    color: Colors.red,
-                                                    )),
-                                        TextSpan(
-                                            text:
-                                                ' werden von der Polizei vernommen.',
-                                            style: textTheme.bodyMedium),
-                                      ],
-                                    ),
-                                  ),
-                                ]),
-                                TableRow(children: [
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'verheiratet',
-                                      style: textTheme.bodyMedium!.copyWith(
-                                          color: Colors.red,
-                                          ),
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'verheiraten',
-                                      style: textTheme.bodyMedium,
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'Sind ',
-                                      style: textTheme.bodyMedium,
-                                      children: <TextSpan>[
-                                        TextSpan(
-                                            text: 'Verheiratete',
-                                            style: textTheme.bodyMedium!
-                                                .copyWith(
-                                                    color: Colors.red,
-                                                    )),
-                                        TextSpan(
-                                            text: ' wirklich glücklicher als ',
-                                            style: textTheme.bodyMedium),
-                                        TextSpan(
-                                            text: 'Ledige',
-                                            style: textTheme.bodyMedium!
-                                                .copyWith(
-                                                    color: Colors.red,
-                                                    )),
-                                        TextSpan(
-                                            text: '?',
-                                            style: textTheme.bodyMedium),
-                                      ],
-                                    ),
-                                  ),
-                                ]),
-                                TableRow(children: [
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'verletzt',
-                                      style: textTheme.bodyMedium!.copyWith(
-                                          color: Colors.red,
-                                          ),
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'verletzen',
-                                      style: textTheme.bodyMedium,
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      text:
-                                          'Die Sanitäter konnten die Blutung ',
-                                      style: textTheme.bodyMedium,
-                                      children: <TextSpan>[
-                                        TextSpan(
-                                            text: 'des Verletzten',
-                                            style: textTheme.bodyMedium!
-                                                .copyWith(
-                                                    color: Colors.red,
-                                                    )),
-                                        TextSpan(
-                                            text: ' stoppen.',
-                                            style: textTheme.bodyMedium),
-                                      ],
-                                    ),
-                                  ),
-                                ]),
-                                TableRow(children: [
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'verliebt',
-                                      style: textTheme.bodyMedium!.copyWith(
-                                          color: Colors.red,
-                                          ),
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'verlieben',
-                                      style: textTheme.bodyMedium,
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      text:
-                                          'Dieser idyllische Ort ist ein Treffpunkt für ',
-                                      style: textTheme.bodyMedium,
-                                      children: <TextSpan>[
-                                        TextSpan(
-                                            text: 'Verliebte',
-                                            style: textTheme.bodyMedium!
-                                                .copyWith(
-                                                    color: Colors.red,
-                                                    )),
-                                        TextSpan(
-                                            text: '.',
-                                            style: textTheme.bodyMedium),
-                                      ],
-                                    ),
-                                  ),
-                                ]),
-                                TableRow(children: [
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'vermisst',
-                                      style: textTheme.bodyMedium!.copyWith(
-                                          color: Colors.red,
-                                          ),
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'vermissen',
-                                      style: textTheme.bodyMedium,
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'Nach drei Monaten tauchte ',
-                                      style: textTheme.bodyMedium,
-                                      children: <TextSpan>[
-                                        TextSpan(
-                                            text: 'der Vermisste',
-                                            style: textTheme.bodyMedium!
-                                                .copyWith(
-                                                    color: Colors.red,
-                                                    )),
-                                        TextSpan(
-                                            text: ' wieder auf.',
-                                            style: textTheme.bodyMedium),
-                                      ],
-                                    ),
-                                  ),
-                                ]),
-                                TableRow(children: [
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'verstorben',
-                                      style: textTheme.bodyMedium!.copyWith(
-                                          color: Colors.red,
-                                          ),
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'versterben',
-                                      style: textTheme.bodyMedium,
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      text: '',
-                                      style: textTheme.bodyMedium,
-                                      children: <TextSpan>[
-                                        TextSpan(
-                                            text: 'Die Verstorbene',
-                                            style: textTheme.bodyMedium!
-                                                .copyWith(
-                                                    color: Colors.red,
-                                                    )),
-                                        TextSpan(
-                                            text:
-                                                ' hinterließ dem Zoo ein großes Vermögen.',
-                                            style: textTheme.bodyMedium),
-                                      ],
-                                    ),
-                                  ),
-                                ]),
-                                TableRow(children: [
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'vorgesetzt',
-                                      style: textTheme.bodyMedium!.copyWith(
-                                          color: Colors.red,
-                                          ),
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'vor|setzen',
-                                      style: textTheme.bodyMedium,
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      text:
-                                          'Erich streitet sich andauernd mit ',
-                                      style: textTheme.bodyMedium,
-                                      children: <TextSpan>[
-                                        TextSpan(
-                                            text: 'seinem Vorgesetzten',
-                                            style: textTheme.bodyMedium!
-                                                .copyWith(
-                                                    color: Colors.red,
-                                                    )),
-                                        TextSpan(
-                                            text: '.',
-                                            style: textTheme.bodyMedium),
-                                      ],
-                                    ),
-                                  ),
-                                ]),
-                              ],
-                            )
-                          ]),
-                        ),
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-            ],
-          ),
-        ),
+            padding: const EdgeInsets.all(8.0),
+            child: MyPageContentView(contents: contents)),
       ),
     );
   }
 }
+
+List<CardContent> contents = [
+  CardContent(
+    elements: [
+      CardElement(type: ElementType.pageTitle, value: title),
+    ],
+  ),
+  CardContent(
+    elements: [
+      CardElement(type: ElementType.cardTitle, value: title1),
+      CardElement(type: ElementType.htmlContent, value: htmlContent1_1),
+    ],
+  ),
+  CardContent(
+    elements: [
+      CardElement(type: ElementType.cardTitle, value: title2),
+      CardElement(type: ElementType.htmlContent, value: htmlContent2_1),
+      CardElement(type: ElementType.htmlTable, value: htmlTable2_2),
+    ],
+  ),
+  CardContent(
+    elements: [
+      CardElement(type: ElementType.cardTitle, value: title3),
+      CardElement(type: ElementType.htmlContent, value: htmlContent3_1),
+      CardElement(type: ElementType.htmlTable, value: htmlTable3_2),
+    ],
+  ),
+  CardContent(
+    elements: [
+      CardElement(type: ElementType.cardTitle, value: title4),
+      CardElement(type: ElementType.htmlContent, value: htmlContent4_1),
+      CardElement(type: ElementType.htmlTable, value: htmlTable4_2),
+    ],
+  ),
+];
+
+String title = '9.6. Adjektive und Partizipien als Nomen';
+
+String title1 = 'Was man über Adjektive und Partizipien als Nomen wissen sollte.';
+String htmlContent1_1 = '''
+<p>Theoretisch können alle <strong><a title="Adjektive" href="lernen.php?menu_id=11">Adjektive</a></strong> und <strong><a title="Partizipien" href="lernen.php?menu_id=69">Partizipien</a></strong> nominalisiert werden, das heißt, dass sie wie ein <strong><span class="red">selbständiges Nomen</span></strong> gebraucht werden. In der Regel bezeichnen Nomen aus Adjektive und Partizipien <strong><span class="red">Personen</span></strong> oder <strong><span class="red">Abstrakta</span></strong>. Alle nominalisierten Adjektive und Partizipien sind zwar Nomen, <strong><span class="red">werden aber wie <strong><a title="Übersicht Deklination Adjektive" href="lernen.php?menu_id=11#adjektive_vor_nomen">Adjektive</a></strong> dekliniert</span></strong>.</p>
+
+<li>Gestern wurde <span style="text-decoration:underline">ein</span> <strong><span class="red">toter</span></strong> <strong><span class="blue">Mann</span></strong> auf einer Parkbank gefunden.</li>
+<li><span style="text-decoration:underline">Zwei</span> <strong><span class="red">betrunkene</span></strong> <strong><span class="blue">Männer</span></strong> schliefen gleich neben ihm.</li>
+<li><span style="text-decoration:underline">Eine</span> <strong><span class="red">blinde</span></strong> <strong><span class="blue">Frau</span></strong> saß daneben und weinte.</li>
+<li><span style="text-decoration:underline">Ein</span> <strong><span class="red">obdachloser</span></strong> <strong><span class="blue">Spaziergänger</span></strong> benachrichtigte schließlich die Polizei.</li>
+
+<p>In den gezeigten Beispielen gilt: <span style="text-decoration:underline">Artikel</span> + <strong><span class="red">Adjektiv / Partizip</span></strong> + <strong><span class="blue">Nomen</span></strong>.</p>
+
+<p>Werden Adjektive und Partizipien nominalisiert, bezeichnen sie oft Personen. Nominalisierte Adjektive und Partizipien sind Nomen und werden mit großem Anfangsbuchstaben geschrieben, <strong><span class="red">das ursprüngliche Nomen entfällt</span></strong> (<s>Mann</s>, ...):</p>
+
+<li>Gestern wurde <span style="text-decoration:underline">ein</span> <strong><span class="red">Toter</span></strong> <s>Mann</s> auf einer Parkbank gefunden.</li>
+<li><span style="text-decoration:underline">Zwei</span> <strong><span class="red">Betrunkene</span></strong> <s>Männer</s> schliefen gleich neben ihm.</li>
+<li><span style="text-decoration:underline">Eine</span> <strong><span class="red">Blinde</span></strong> <s>Frau</s> saß daneben und weinte.</li>
+<li><span style="text-decoration:underline">Ein</span> <strong><span class="red">Obdachloser</span></strong> <s>Spaziergänger</s> benachrichtigte schließlich die Polizei.</li>
+
+<p>In den gezeigten Beispielen gilt: <span style="text-decoration:underline">Artikel</span> + <strong><span class="red">Adjektiv / Partizip als Nomen</span></strong>.</p>
+
+<li>Der deutsche Mann / die deutsche Frau /// ein deutscher Mann / eine deutsche Frau</li>
+<li>Der Deutsche <s>Mann</s> / die Deutsche <s>Frau</s> /// ein Deutscher <s>Mann</s> / eine Deutsche <s>Frau</s></li> 
+''';
+
+String title2 = 'Adjektive als Nomen';
+String htmlContent2_1 = '''
+<p>Nominalisierte Adjektive und Partizipien bezeichnen <strong><span class="red">Personen</span></strong> oder <strong><span class="red">Abstrakta</span></strong>. Einige nominalisierte Adjektive werden sehr häufig gebraucht. Die gebräuchlichsten Adjektive zeigt folgende Tabelle auf:</p>
+''';
+String htmlTable2_2 = '''
+<table><colgroup> <col style="width: 16%;"> <col style="width: 84%;"> </colgroup>
+<thead>
+<tr>
+<th>Adjektiv</th>
+<th>Beispiel</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong><span class="red">alt</span></strong></td>
+<td><strong><span class="red">Der Alte</span></strong> hinter dem Steuer sollte wirklich seinen Führerschein abgeben.</td>
+</tr>
+<tr>
+<td><strong><span class="red">arbeitslos</span></strong></td>
+<td><strong><span class="red">Arbeitslose</span></strong> erhalten vom Arbeitsamt eine finanzielle Unterstützung.</td>
+</tr>
+<tr>
+<td><strong><span class="red">arm</span></strong></td>
+<td><strong><span class="red">Viele Arme</span></strong> in der Region wissen nicht, wie sie überleben sollen.</td>
+</tr>
+<tr>
+<td><strong><span class="red">bekannt</span></strong></td>
+<td><strong><span class="red">Ein Bekannter</span></strong> von mir hat vor kurzem im Lotto 1 Million Euro gewonnen.</td>
+</tr>
+<tr>
+<td><strong><span class="red">blind</span></strong></td>
+<td><strong><span class="red">Der Blinde</span></strong> hinter dem Steuer sieht nicht, dass die Ampel rot zeigt.</td>
+</tr>
+<tr>
+<td><strong><span class="red">blond</span></strong></td>
+<td>Schau mal! Sieht <strong><span class="red">die Blonde</span></strong> hinter der Theke nicht klasse aus?</td>
+</tr>
+<tr>
+<td><strong><span class="red">böse</span></strong></td>
+<td>Nimm dich in Acht! <strong><span class="red">Das Böse</span></strong> ist überall.</td>
+</tr>
+<tr>
+<td><strong><span class="red">deutsch</span></strong></td>
+<td><strong><span class="red">Die meisten Deutschen</span></strong> verbringen ihren Urlaub an der See.</td>
+</tr>
+<tr>
+<td><strong><span class="red">dumm</span></strong></td>
+<td><strong><span class="red">Der Dumme</span></strong> verurteilt, <strong><span class="red">der Kluge</span></strong> beurteilt.</td>
+</tr>
+<tr>
+<td><strong><span class="red">einheimisch</span></strong></td>
+<td>Sie suchen die Landgasse? Fragen Sie am besten <strong><span class="red">einen Einheimischen</span></strong>.</td>
+</tr>
+<tr>
+<td><strong><span class="red">freiwillig</span></strong></td>
+<td><strong><span class="red">Viele Freiwillige</span></strong> halfen dabei, die Sturmschäden zu beseitigen.</td>
+</tr>
+<tr>
+<td><strong><span class="red">fremd</span></strong></td>
+<td>Das hübsche Mädchen wird oft von <strong><span class="red">Fremden</span></strong> angesprochen.</td>
+</tr>
+<tr>
+<td><strong><span class="red">gut</span></strong></td>
+<td><strong><span class="red">Das Gute</span></strong> daran ist, dass ihm bei seinem Unfall nichts passiert ist.</td>
+</tr>
+<tr>
+<td><strong><span class="red">spannend</span></strong></td>
+<td>Im Museum gab es viel <strong><span class="red">Spannendes</span></strong> zu sehen.</td>
+</tr>
+<tr>
+<td><strong><span class="red">klein</span></strong></td>
+<td><strong><span class="red">Die Kleine</span></strong>, die neben Petra steht, sieht wirklich klasse aus.</td>
+</tr>
+<tr>
+<td><strong><span class="red">krank</span></strong></td>
+<td>Diese Klinik hat schon <strong><span class="red">vielen Kranken</span></strong> helfen können.</td>
+</tr>
+<tr>
+<td><strong><span class="red">kriminell</span></strong></td>
+<td>In dieser Stadt gibt es leider viel zu viele <strong><span class="red">Kriminelle</span></strong>.</td>
+</tr>
+<tr>
+<td><strong><span class="red">ledig</span></strong></td>
+<td><strong><span class="red">Ein Lediger</span></strong> hat andere Probleme als <strong><span class="red">ein Verheirateter</span></strong>.</td>
+</tr>
+<tr>
+<td><strong><span class="red">nächste</span></strong></td>
+<td>Eine freundliche Arzthelferin ruft <strong><span class="red">den Nächsten</span></strong> auf.</td>
+</tr>
+<tr>
+<td><strong><span class="red">obdachlos</span></strong></td>
+<td>Gibt es in eurer Stadt auch so <strong><span class="red">viele Obdachlose</span></strong>?</td>
+</tr>
+<tr>
+<td><strong><span class="red">schön</span></strong></td>
+<td>Es gibt viele Frauen. Aber <strong><span class="red">die Schönen</span></strong> sind unerreichbar.</td>
+</tr>
+<tr>
+<td><strong><span class="red">schwarzhaarig</span></strong></td>
+<td>Hannelore verliebt sich immer nur in <strong><span class="red">Schwarzhaarige</span></strong>.</td>
+</tr>
+<tr>
+<td><strong><span class="red">selbständig</span></strong></td>
+<td><strong><span class="red">Selbständige</span></strong> arbeiten in der Regel mehr als <strong><span class="red">Angestellte</span></strong>.</td>
+</tr>
+<tr>
+<td><strong><span class="red">tot</span></strong></td>
+<td>Am Donnerstag wurde am Steuer eines Kleinwagens <strong><span class="red">ein Toter</span></strong> entdeckt.</td>
+</tr>
+</tbody>
+</table>  
+''';
+
+String title3 = 'Partizip I als Nomen';
+String htmlContent3_1 = '''
+<p>Folgende Partizipien I werden häufig als selbständiges Nomen gebraucht:</p>
+''';
+String htmlTable3_2 = '''
+<table><colgroup> <col style="width: 20%;"> <col style="width: 80%;"> </colgroup>
+<thead>
+<tr>
+<th>Partizip I</th>
+<th>Beispiel</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong><span class="red">abwesend</span></strong></td>
+<td><strong><span class="red">Alle Abwesenden</span></strong> haben diese wichtige Information nicht erhalten.</td>
+</tr>
+<tr>
+<td><strong><span class="red">anwesend</span></strong></td>
+<td><strong><span class="red">Alle Anwesenden</span></strong> haben die Prüfung bestanden.</td>
+</tr>
+<tr>
+<td><strong><span class="red">ausbildend</span></strong></td>
+<td><strong><span class="red">Die Auszubildenden</span></strong> müssen einen Nachweis über die Ausbildung führen.</td>
+</tr>
+<tr>
+<td><strong><span class="red">heranwachsend</span></strong></td>
+<td><strong><span class="red">Heranwachsende</span></strong> sind Personen, die ein Alter von 18 - 20 Jahren haben.</td>
+</tr>
+<tr>
+<td><strong><span class="red">leidtragend</span></strong></td>
+<td>Bei einer Scheidung sind die Kinder immer <strong><span class="red">die Leidtragenden</span></strong>.</td>
+</tr>
+<tr>
+<td><strong><span class="red">mitwirkend</span></strong></td>
+<td><strong><span class="red">Allen Mitwirkenden</span></strong> an dieser Sendung gilt ein besonderer Dank.</td>
+</tr>
+<tr>
+<td><strong><span class="red">reisend</span></strong></td>
+<td><strong><span class="red">Reisende</span></strong> soll man nicht aufhalten.</td>
+</tr>
+<tr>
+<td><strong><span class="red">überlebend</span></strong></td>
+<td>Bei dem gestrigen Flugzeugabsturz gab es <strong><span class="red">keine Überlebenden</span></strong>.</td>
+</tr>
+<tr>
+<td><strong><span class="red">vorsitzend</span></strong></td>
+<td><strong><span class="red">Der Vorsitzende</span></strong> des Vereins stellt sein Amt zur Verfügung.</td>
+</tr>
+</tbody>
+</table>  
+''';
+
+String title4 = 'Partizip II als Nomen';
+String htmlContent4_1 = '''
+<p>Folgende Partizipien II werden sehr häufig als selbständiges Nomen gebraucht:</p>
+''';
+String htmlTable4_2 = '''
+<table><colgroup> <col style="width: 15%;"> <col style="width: 16%;"> <col style="width: 69%;"> </colgroup>
+<thead>
+<tr>
+<th>Partizip II</th>
+<th>Infinitiv</th>
+<th>Beispiel</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong><span class="red">abgeordnet</span></strong></td>
+<td>ab|ordnen</td>
+<td><strong><span class="red">Abgeordnete</span></strong> sitzen z.B. im Bundestag.</td>
+</tr>
+<tr>
+<td><strong><span class="red">angehörig</span></strong></td>
+<td>an|gehören</td>
+<td>Sind Sie <strong><span class="red">ein Angehöriger des Verstorbenen</span></strong>?</td>
+</tr>
+<tr>
+<td><strong><span class="red">angeklagt</span></strong></td>
+<td>an|klagen</td>
+<td><strong><span class="red">Der Angeklagte</span></strong> verweigerte seine Aussage.</td>
+</tr>
+<tr>
+<td><strong><span class="red">angestellt</span></strong></td>
+<td>an|stellen</td>
+<td><strong><span class="red">Angestellte</span></strong> haben bessere Tarifverträge als Arbeiter.</td>
+</tr>
+<tr>
+<td><strong><span class="red">beamtet</span></strong></td>
+<td>beamten</td>
+<td>Der Arbeitgeber <strong><span class="red">aller Beamten</span></strong> ist der Staat.</td>
+</tr>
+<tr>
+<td><strong><span class="red">betrogen</span></strong></td>
+<td>betrügen</td>
+<td><strong><span class="red">Der Betrogene</span></strong> verschwieg zuerst seinen Schaden.</td>
+</tr>
+<tr>
+<td><strong><span class="red">betrunken</span></strong></td>
+<td>betrinken</td>
+<td>Hier in der Kneipe gibt es nur <strong><span class="red">Betrunkene</span></strong>.</td>
+</tr>
+<tr>
+<td><strong><span class="red">gefangen</span></strong></td>
+<td>fangen</td>
+<td><strong><span class="red">Diese Gefangenen</span></strong> sitzen lebenslang hinter Gitter.</td>
+</tr>
+<tr>
+<td><strong><span class="red">geliebt</span></strong></td>
+<td>lieben</td>
+<td>Hans hat <strong><span class="red">eine Geliebte</span></strong> und seine Frau weiß von nichts.</td>
+</tr>
+<tr>
+<td><strong><span class="red">prostituiert</span></strong></td>
+<td>prostituieren</td>
+<td><strong><span class="red">Die Prostituierte</span></strong>&nbsp;kämpft immer mit Vorurteilen.</td>
+</tr>
+<tr>
+<td><strong><span class="red">verdächtigt</span></strong></td>
+<td>verdächtigen</td>
+<td><strong><span class="red">Die Verdächtigten</span></strong> werden von der Polizei vernommen.</td>
+</tr>
+<tr>
+<td><strong><span class="red">verheiratet</span></strong></td>
+<td>verheiraten</td>
+<td>Sind <strong><span class="red">Verheiratete</span></strong> wirklich glücklicher als <strong><span class="red">Ledige</span></strong>?</td>
+</tr>
+<tr>
+<td><strong><span class="red">verletzt</span></strong></td>
+<td>verletzen</td>
+<td>Die Sanitäter konnten die Blutung <strong><span class="red">des Verletzten</span></strong> stoppen.</td>
+</tr>
+<tr>
+<td><strong><span class="red">verliebt</span></strong></td>
+<td>verlieben</td>
+<td>Dieser idyllische Ort ist ein Treffpunkt für <strong><span class="red">Verliebte</span></strong>.</td>
+</tr>
+<tr>
+<td><strong><span class="red">vermisst</span></strong></td>
+<td>vermissen</td>
+<td>Nach drei Monaten tauchte <strong><span class="red">der Vermisste</span></strong> wieder auf.</td>
+</tr>
+<tr>
+<td><strong><span class="red">verstorben</span></strong></td>
+<td>versterben</td>
+<td><strong><span class="red">Die Verstorbene</span></strong> hinterließ dem Zoo ein großes Vermögen.</td>
+</tr>
+<tr>
+<td><strong><span class="red">vorgesetzt</span></strong></td>
+<td>vor|setzen</td>
+<td>Erich streitet sich andauernd mit <strong><span class="red">seinem Vorgesetzten</span></strong>.</td>
+</tr>
+</tbody>
+</table> 
+''';

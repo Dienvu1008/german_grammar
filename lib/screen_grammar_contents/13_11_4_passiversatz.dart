@@ -16,6 +16,7 @@ class Passiversatz_13_11_4 extends StatelessWidget {
     );
   }
 }
+
 List<CardContent> contents = [
   CardContent(
     elements: [
@@ -45,24 +46,17 @@ List<CardContent> contents = [
   ),
 ];
 
-
 String title = '13.11.4. Passiversatz';
 String title1 = 'Was man über die Passiversatzformen wissen sollte.';
 String htmlContent1_1 = '''
-<div>
 <p>In Passivsätzen ist die handelnde Person (Agens) nicht wichtig und wird in der Regel weggelassen. Um eine Häufung von Passivkonstruktionen zu vermeiden, können Ersatzformen verwendet werden. Obwohl es sich bei den Ersatzformen um Aktivsätze handelt, geben sie keine Auskunft über die handelnden Personen.</p>
-</div>  
-  
 ''';
-
 
 String title2 = 'Die Passiversatzformen';
 String htmlContent2_1 = '''
  <h3>Unpersönliche Pronomen</h3>
-<div>
+
 <p style="padding-left: 30px;">Die einfachste Form das Passiv zu umschreiben und die handelnde Person nicht zu benennen, ist die Benutzung unpersönlicher Pronomen wie, " <strong><span class="red">man</span></strong> " und " <strong><span class="red">jemand</span></strong> ". (zählt jedoch nicht zu den klassischen Passiversatzformen)</p>
-</div>
-<p>&nbsp;</p>
 ''';
 String htmlTable2_2 = '''
 <table><colgroup> 
@@ -128,10 +122,9 @@ String htmlTable2_2 = '''
 ''';
 String htmlContent2_3 = '''
 <h3>sich lassen + Infinitiv</h3>
-<div>
+
 <p style="padding-left: 30px;">Diese Form ist eine Umschreibung des Passivs mit dem modalen Aspekt von " <span class="red">können</span> ".</p>
-</div>
-<p>&nbsp;</p>
+
 ''';
 String htmlTable2_4 = '''
 <table><colgroup> <col style="width: 21%;"> <col style="width: 17%;"> <col style="width: 13%;"> <col style="width: 22%;"> <col style="width: 14%;"> <col style="width: 13%;"> </colgroup>
@@ -199,10 +192,9 @@ String htmlTable2_4 = '''
 ''';
 String htmlContent2_5 = '''
 <h3>sein + Adjektivendung auf -bar oder -lich</h3>
-<div>
+
 <p style="padding-left: 30px;">Diese Form ist ebenfalls eine Umschreibung des Passivs mit dem modalen Aspekt von " <strong><span class="red">können</span></strong> ".</p>
-</div>
-<p>&nbsp;</p>
+
 ''';
 String htmlTable2_6 = '''
 <table><colgroup> <col style="width: 21%;"> <col style="width: 17%;"> <col style="width: 13%;"> <col style="width: 22%;"> <col style="width: 14%;"> <col style="width: 13%;"> </colgroup>
@@ -286,11 +278,8 @@ String htmlTable2_6 = '''
 ''';
 String htmlContent2_7 = '''
 <h3>sein + zu + Infinitiv</h3>
-<div>
-<p style="padding-left: 30px;">Diese Form ist eine Umschreibung des Passivs mit den modalen Aspekten von " <strong><span class="red">können</span></strong> " oder " <strong><span class="red">müssen</span></strong> " sowie <strong><span class="red">nicht können, nicht müssen, nicht wollen</span></strong> und <strong><span class="red">nicht dürfen</span></strong>.</p>
-</div>
-<p>&nbsp;</p>
 
+<p style="padding-left: 30px;">Diese Form ist eine Umschreibung des Passivs mit den modalen Aspekten von " <strong><span class="red">können</span></strong> " oder " <strong><span class="red">müssen</span></strong> " sowie <strong><span class="red">nicht können, nicht müssen, nicht wollen</span></strong> und <strong><span class="red">nicht dürfen</span></strong>.</p>
 ''';
 String htmlTable2_8 = '''
 <table><colgroup> <col style="width: 24%;"> <col style="width: 19%;"> <col style="width: 12%;"> <col style="width: 25%;"> <col style="width: 20%;"> </colgroup>
@@ -337,11 +326,8 @@ String htmlTable2_8 = '''
 ''';
 String htmlContent2_9 = '''
 <h3>bekommen-Gruppe + Partizip II</h3>
-<div>
-<p style="padding-left: 30px;">Diese Form wird oft in der Umgangssprache angewendet. Sie kann nur mit Verben gebildet werden, die eine <strong><a title="Verben mit drei Ergänzungen, Nominativ-, Dativ- und Akkusativ-Ergänzung" href="dativ-und-akkusativ-ergaenzung.html#einfuehrung" target="_blank">Dativ- und Akkusativ-Ergänzung</a></strong> besitzen.</p>
-</div>
-<p>&nbsp;</p>
 
+<p style="padding-left: 30px;">Diese Form wird oft in der Umgangssprache angewendet. Sie kann nur mit Verben gebildet werden, die eine <strong><a title="Verben mit drei Ergänzungen, Nominativ-, Dativ- und Akkusativ-Ergänzung" href="dativ-und-akkusativ-ergaenzung.html#einfuehrung" target="_blank">Dativ- und Akkusativ-Ergänzung</a></strong> besitzen.</p>
 ''';
 String htmlTable2_10 = '''
 <table><colgroup> <col style="width: 20%;"> <col style="width: 17%;"> <col style="width: 15%;"> <col style="width: 33%;"> <col style="width: 15%;"> </colgroup>
@@ -400,5 +386,3 @@ String htmlTable2_10 = '''
 </tbody>
 </table>
 ''';
-
-

@@ -1,856 +1,169 @@
 import 'package:flutter/material.dart';
 
 import '../app/app_localizations.dart';
+import '../page_content.dart';
 
 class Indefinitartikel_3_6 extends StatelessWidget {
   const Indefinitartikel_3_6({super.key});
 
   @override
   Widget build(BuildContext context) {
-    final localizations = AppLocalizations.of(context);
-    final textTheme = Theme.of(context).textTheme;
     return Expanded(
       child: Scaffold(
         body: Padding(
-          padding: const EdgeInsets.all(8.0),
-          child: ListView(
-            children: <Widget>[
-              Card(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: <Widget>[
-                    Padding(
-                      padding: const EdgeInsets.only(top: 16.0, left: 16.0),
-                      child: Text('3.6. Indefinitartikel',
-                          style: textTheme.titleMedium),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.only(top: 10.0, left: 16.0),
-                      child: Text(
-                          'Was man über die Indefinitartikel wissen sollte.',
-                          style: textTheme.titleSmall),
-                    ),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                            top: 10.0, left: 16.0, bottom: 10),
-                        child: RichText(
-                          text: TextSpan(
-                            style: textTheme.bodyMedium,
-                            children: <TextSpan>[
-                              TextSpan(text: 'Indefinitpronomen können '),
-                              TextSpan(
-                                  text: 'allein',
-                                  style:
-                                      TextStyle(fontWeight: FontWeight.bold)),
-                              TextSpan(text: ' oder '),
-                              TextSpan(
-                                  text: 'in Funktion eines Artikels',
-                                  style: TextStyle(
-                                      decoration: TextDecoration.underline)),
-                              TextSpan(
-                                  text:
-                                      ' auftreten. Treten sie in Funktion eines Artikels auf, spricht man von einem '),
-                              TextSpan(
-                                  text: 'Indefinitartikel',
-                                  style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      color: Colors.red)),
-                              TextSpan(
-                                  text: '. Indefinitartikel gehören wie die '),
-                              TextSpan(
-                                  text: 'bestimmten Artikel',
-                                  style:
-                                      TextStyle(fontWeight: FontWeight.bold)),
-                              TextSpan(text: ' '),
-                              TextSpan(
-                                  text: 'zu den ',
-                                  style: TextStyle(
-                                      decoration: TextDecoration.underline)),
-                              TextSpan(
-                                  text: 'Begleitern',
-                                  style:
-                                      TextStyle(fontWeight: FontWeight.bold)),
-                              TextSpan(
-                                  text: ' eines Nomens',
-                                  style: TextStyle(
-                                      decoration: TextDecoration.underline)),
-                              TextSpan(text: ' und können '),
-                              TextSpan(
-                                  text: 'nicht alleine',
-                                  style: TextStyle(
-                                      decoration: TextDecoration.underline)),
-                              TextSpan(
-                                  text:
-                                      ' stehen, sondern nur in Verbindung mit einem Nomen. Die meisten Indefinitartikel stehen dem '),
-                              TextSpan(
-                                  text: 'bestimmten Artikel',
-                                  style:
-                                      TextStyle(fontWeight: FontWeight.bold)),
-                              TextSpan(
-                                  text:
-                                      ' sehr nahe und werden wie die bestimmten Artikel '),
-                              TextSpan(
-                                  text: 'dekliniert',
-                                  style:
-                                      TextStyle(fontWeight: FontWeight.bold)),
-                              TextSpan(text: '. '),
-                              TextSpan(
-                                  text: 'Ausnahmen',
-                                  style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      color: Colors.red)),
-                              TextSpan(text: ': irgendein-, '),
-                              TextSpan(
-                                  text: 'kein-',
-                                  style:
-                                      TextStyle(fontWeight: FontWeight.bold)),
-                              TextSpan(text: ' und '),
-                              TextSpan(
-                                  text: 'was für ein-',
-                                  style:
-                                      TextStyle(fontWeight: FontWeight.bold)),
-                              TextSpan(text: '. ('),
-                              TextSpan(
-                                  text: 'Deklination wie unbestimmter Artikel',
-                                  style:
-                                      TextStyle(fontWeight: FontWeight.bold)),
-                              TextSpan(text: ')'),
-                            ],
-                          ),
-                        )),
-                  ],
-                ),
-              ),
-              Card(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: <Widget>[
-                    Padding(
-                      padding: const EdgeInsets.only(
-                          top: 10.0, left: 16.0, bottom: 10),
-                      child: Text(
-                          'Indefinitartikel mit den Endungen des bestimmten Artikels',
-                          style: textTheme.titleSmall),
-                    ),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                            top: 10.0, left: 16.0, bottom: 10),
-                        child: RichText(
-                          text: TextSpan(
-                            style: textTheme.bodyMedium,
-                            children: <TextSpan>[
-                              TextSpan(text: 'Mit "'),
-                              TextSpan(
-                                  text: 'Jeder',
-                                  style:
-                                      TextStyle(fontWeight: FontWeight.bold)),
-                              TextSpan(text: '" werden '),
-                              TextSpan(
-                                  text: 'alle Elemente einer Gruppe',
-                                  style: TextStyle(
-                                      decoration: TextDecoration.underline)),
-                              TextSpan(text: ' angesprochen, in der es '),
-                              TextSpan(
-                                  text: 'keine Ausnahmen',
-                                  style: TextStyle(
-                                      decoration: TextDecoration.underline)),
-                              TextSpan(
-                                  text:
-                                      ' gibt. Jeder wechselt im Plural zu "alle".'),
-                            ],
-                          ),
-                        )),
-                    SingleChildScrollView(
-                      child: ConstrainedBox(
-                        constraints: const BoxConstraints(
-                            //minHeight: MediaQuery.of(context).size.height
-                            ),
-                        child: IntrinsicHeight(
-                          child: Column(children: [
-                            Table(
-                              border: TableBorder.all(
-                                  color: Colors.purple, width: 1),
-                              columnWidths: {
-                                0: FractionColumnWidth(.20),
-                                1: FractionColumnWidth(.20),
-                                2: FractionColumnWidth(.20),
-                                3: FractionColumnWidth(.20),
-                                4: FractionColumnWidth(.20),
-                              },
-                              children: [
-                                TableRow(children: [
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'Kasus',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'Maskulinum',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'Femininum',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'Neutrum',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'Plural',
-                                          style: textTheme.bodyMedium)),
-                                ]),
-                                TableRow(children: [
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'Nominativ',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'jed',
-                                      style: textTheme.bodyMedium,
-                                      children: <TextSpan>[
-                                        TextSpan(
-                                            text: 'er',
-                                            style:
-                                                TextStyle(color: Colors.red)),
-                                        TextSpan(text: ' Mann'),
-                                      ],
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'jed',
-                                      style: textTheme.bodyMedium,
-                                      children: <TextSpan>[
-                                        TextSpan(
-                                            text: 'e',
-                                            style:
-                                                TextStyle(color: Colors.red)),
-                                        TextSpan(text: ' Frau'),
-                                      ],
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'jed',
-                                      style: textTheme.bodyMedium,
-                                      children: <TextSpan>[
-                                        TextSpan(
-                                            text: 'es',
-                                            style:
-                                                TextStyle(color: Colors.red)),
-                                        TextSpan(text: ' Kind'),
-                                      ],
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'all',
-                                      style: textTheme.bodyMedium,
-                                      children: <TextSpan>[
-                                        TextSpan(
-                                            text: 'e',
-                                            style:
-                                                TextStyle(color: Colors.red)),
-                                        TextSpan(text: ' Leute'),
-                                      ],
-                                    ),
-                                  ),
-                                ]),
-                                TableRow(children: [
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'Akkusativ',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'jed',
-                                      style: textTheme.bodyMedium,
-                                      children: <TextSpan>[
-                                        TextSpan(
-                                            text: 'en',
-                                            style:
-                                                TextStyle(color: Colors.red)),
-                                        TextSpan(text: ' Mann'),
-                                      ],
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'jed',
-                                      style: textTheme.bodyMedium,
-                                      children: <TextSpan>[
-                                        TextSpan(
-                                            text: 'e',
-                                            style:
-                                                TextStyle(color: Colors.red)),
-                                        TextSpan(text: ' Frau'),
-                                      ],
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'jed',
-                                      style: textTheme.bodyMedium,
-                                      children: <TextSpan>[
-                                        TextSpan(
-                                            text: 'es',
-                                            style:
-                                                TextStyle(color: Colors.red)),
-                                        TextSpan(text: ' Kind'),
-                                      ],
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'all',
-                                      style: textTheme.bodyMedium,
-                                      children: <TextSpan>[
-                                        TextSpan(
-                                            text: 'e',
-                                            style:
-                                                TextStyle(color: Colors.red)),
-                                        TextSpan(text: ' Leute'),
-                                      ],
-                                    ),
-                                  ),
-                                ]),
-                                TableRow(children: [
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'Dativ',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'jed',
-                                      style: textTheme.bodyMedium,
-                                      children: <TextSpan>[
-                                        TextSpan(
-                                            text: 'em',
-                                            style:
-                                                TextStyle(color: Colors.red)),
-                                        TextSpan(text: ' Mann'),
-                                      ],
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'jed',
-                                      style: textTheme.bodyMedium,
-                                      children: <TextSpan>[
-                                        TextSpan(
-                                            text: 'er',
-                                            style:
-                                                TextStyle(color: Colors.red)),
-                                        TextSpan(text: ' Frau'),
-                                      ],
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'jed',
-                                      style: textTheme.bodyMedium,
-                                      children: <TextSpan>[
-                                        TextSpan(
-                                            text: 'em',
-                                            style:
-                                                TextStyle(color: Colors.red)),
-                                        TextSpan(text: ' Kind'),
-                                      ],
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'all',
-                                      style: textTheme.bodyMedium,
-                                      children: <TextSpan>[
-                                        TextSpan(
-                                            text: 'en',
-                                            style:
-                                                TextStyle(color: Colors.red)),
-                                        TextSpan(text: ' Leute'),
-                                        TextSpan(
-                                            text: 'n',
-                                            style:
-                                                TextStyle(color: Colors.red)),
-                                      ],
-                                    ),
-                                  ),
-                                ]),
-                                TableRow(children: [
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'Genitiv',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'jed',
-                                      style: textTheme.bodyMedium,
-                                      children: <TextSpan>[
-                                        TextSpan(
-                                            text: 'es',
-                                            style:
-                                                TextStyle(color: Colors.red)),
-                                        TextSpan(text: ' Mann'),
-                                        TextSpan(
-                                            text: 'es',
-                                            style:
-                                                TextStyle(color: Colors.red)),
-                                      ],
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'jed',
-                                      style: textTheme.bodyMedium,
-                                      children: <TextSpan>[
-                                        TextSpan(
-                                            text: 'er',
-                                            style:
-                                                TextStyle(color: Colors.red)),
-                                        TextSpan(text: ' Frau'),
-                                      ],
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'jed',
-                                      style: textTheme.bodyMedium,
-                                      children: <TextSpan>[
-                                        TextSpan(
-                                            text: 'es',
-                                            style:
-                                                TextStyle(color: Colors.red)),
-                                        TextSpan(text: ' Kind'),
-                                        TextSpan(
-                                            text: 'es',
-                                            style:
-                                                TextStyle(color: Colors.red)),
-                                      ],
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'all',
-                                      style: textTheme.bodyMedium,
-                                      children: <TextSpan>[
-                                        TextSpan(
-                                            text: 'er',
-                                            style:
-                                                TextStyle(color: Colors.red)),
-                                        TextSpan(text: ' Leute'),
-                                      ],
-                                    ),
-                                  ),
-                                ]),
-                              ],
-                            )
-                          ]),
-                        ),
-                      ),
-                    ),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                            top: 10.0, left: 16.0, bottom: 10),
-                        child: RichText(
-                          text: TextSpan(
-                            style: textTheme.bodyMedium,
-                            children: <TextSpan>[
-                              TextSpan(
-                                  text:
-                                      'Mein 6-jähriger Sohn sagt mir immer; "Das weiß doch '),
-                              TextSpan(
-                                  text: 'jedes Kind',
-                                  style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      color: Colors.red)),
-                              TextSpan(text: '".\n'),
-                              TextSpan(text: ''),
-                              TextSpan(
-                                  text: 'Jeder Mensch',
-                                  style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      color: Colors.red)),
-                              TextSpan(text: ' muss Regeln lernen.\n'),
-                              TextSpan(text: ''),
-                              TextSpan(
-                                  text: 'Alle Lebewesen',
-                                  style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      color: Colors.red)),
-                              TextSpan(
-                                  text:
-                                      ' müssen irgendwann einmal sterben.\n\n'),
-                              TextSpan(text: '"'),
-                              TextSpan(
-                                  text: 'Manch-',
-                                  style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      color: Colors.red)),
-                              TextSpan(
-                                  text:
-                                      '" bezeichnet eine Gruppe von unbestimmten Personen oder Sachen, deren Prozentzahl irgendwo zwischen 10% - 45% anzusiedeln ist.'),
-                            ],
-                          ),
-                        )),
-                    SingleChildScrollView(
-                      child: ConstrainedBox(
-                        constraints: const BoxConstraints(
-                            //minHeight: MediaQuery.of(context).size.height
-                            ),
-                        child: IntrinsicHeight(
-                          child: Column(children: [
-                            Table(
-                              border: TableBorder.all(
-                                  color: Colors.purple, width: 1),
-                              columnWidths: {
-                                0: FractionColumnWidth(.15),
-                                1: FractionColumnWidth(.20),
-                                2: FractionColumnWidth(.20),
-                                3: FractionColumnWidth(.20),
-                                4: FractionColumnWidth(.20),
-                              },
-                              children: [
-                                TableRow(children: [
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'Kasus',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'Maskulinum',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'Femininum',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'Neutrum',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'Plural',
-                                          style: textTheme.bodyMedium)),
-                                ]),
-                                TableRow(children: [
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'Nominativ',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'manch',
-                                      style: textTheme.bodyMedium,
-                                      children: <TextSpan>[
-                                        TextSpan(
-                                            text: 'er',
-                                            style:
-                                                TextStyle(color: Colors.red)),
-                                        TextSpan(text: ' Mann'),
-                                      ],
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'manch',
-                                      style: textTheme.bodyMedium,
-                                      children: <TextSpan>[
-                                        TextSpan(
-                                            text: 'e',
-                                            style:
-                                                TextStyle(color: Colors.red)),
-                                        TextSpan(text: ' Frau'),
-                                      ],
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'manch',
-                                      style: textTheme.bodyMedium,
-                                      children: <TextSpan>[
-                                        TextSpan(
-                                            text: 'es',
-                                            style:
-                                                TextStyle(color: Colors.red)),
-                                        TextSpan(text: ' Kind'),
-                                      ],
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'manch',
-                                      style: textTheme.bodyMedium,
-                                      children: <TextSpan>[
-                                        TextSpan(
-                                            text: 'e',
-                                            style:
-                                                TextStyle(color: Colors.red)),
-                                        TextSpan(text: ' Leute'),
-                                      ],
-                                    ),
-                                  ),
-                                ]),
-                                TableRow(children: [
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'Akkusativ',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'manch',
-                                      style: textTheme.bodyMedium,
-                                      children: <TextSpan>[
-                                        TextSpan(
-                                            text: 'en',
-                                            style:
-                                                TextStyle(color: Colors.red)),
-                                        TextSpan(text: ' Mann'),
-                                      ],
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'manch',
-                                      style: textTheme.bodyMedium,
-                                      children: <TextSpan>[
-                                        TextSpan(
-                                            text: 'e',
-                                            style:
-                                                TextStyle(color: Colors.red)),
-                                        TextSpan(text: ' Frau'),
-                                      ],
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'manch',
-                                      style: textTheme.bodyMedium,
-                                      children: <TextSpan>[
-                                        TextSpan(
-                                            text: 'es',
-                                            style:
-                                                TextStyle(color: Colors.red)),
-                                        TextSpan(text: ' Kind'),
-                                      ],
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'manch',
-                                      style: textTheme.bodyMedium,
-                                      children: <TextSpan>[
-                                        TextSpan(
-                                            text: 'e',
-                                            style:
-                                                TextStyle(color: Colors.red)),
-                                        TextSpan(text: ' Leute'),
-                                      ],
-                                    ),
-                                  ),
-                                ]),
-                                TableRow(children: [
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'Dativ',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'manch',
-                                      style: textTheme.bodyMedium,
-                                      children: <TextSpan>[
-                                        TextSpan(
-                                            text: 'em',
-                                            style:
-                                                TextStyle(color: Colors.red)),
-                                        TextSpan(text: ' Mann'),
-                                      ],
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'manch',
-                                      style: textTheme.bodyMedium,
-                                      children: <TextSpan>[
-                                        TextSpan(
-                                            text: 'er',
-                                            style:
-                                                TextStyle(color: Colors.red)),
-                                        TextSpan(text: ' Frau'),
-                                      ],
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'manch',
-                                      style: textTheme.bodyMedium,
-                                      children: <TextSpan>[
-                                        TextSpan(
-                                            text: 'em',
-                                            style:
-                                                TextStyle(color: Colors.red)),
-                                        TextSpan(text: ' Kind'),
-                                      ],
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'manch',
-                                      style: textTheme.bodyMedium,
-                                      children: <TextSpan>[
-                                        TextSpan(
-                                            text: 'en',
-                                            style:
-                                                TextStyle(color: Colors.red)),
-                                        TextSpan(text: ' Leute'),
-                                        TextSpan(
-                                            text: 'n',
-                                            style:
-                                                TextStyle(color: Colors.red)),
-                                      ],
-                                    ),
-                                  ),
-                                ]),
-                                TableRow(children: [
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'Genitiv',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'manch',
-                                      style: textTheme.bodyMedium,
-                                      children: <TextSpan>[
-                                        TextSpan(
-                                            text: 'es',
-                                            style:
-                                                TextStyle(color: Colors.red)),
-                                        TextSpan(text: ' Mann'),
-                                        TextSpan(
-                                            text: 'es',
-                                            style:
-                                                TextStyle(color: Colors.red)),
-                                      ],
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'manch',
-                                      style: textTheme.bodyMedium,
-                                      children: <TextSpan>[
-                                        TextSpan(
-                                            text: 'er',
-                                            style:
-                                                TextStyle(color: Colors.red)),
-                                        TextSpan(text: ' Frau'),
-                                      ],
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'manch',
-                                      style: textTheme.bodyMedium,
-                                      children: <TextSpan>[
-                                        TextSpan(
-                                            text: 'es',
-                                            style:
-                                                TextStyle(color: Colors.red)),
-                                        TextSpan(text: ' Kind'),
-                                        TextSpan(
-                                            text: 'es',
-                                            style:
-                                                TextStyle(color: Colors.red)),
-                                      ],
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'manch',
-                                      style: textTheme.bodyMedium,
-                                      children: <TextSpan>[
-                                        TextSpan(
-                                            text: 'er',
-                                            style:
-                                                TextStyle(color: Colors.red)),
-                                        TextSpan(text: ' Leute'),
-                                      ],
-                                    ),
-                                  ),
-                                ]),
-                              ],
-                            )
-                          ]),
-                        ),
-                      ),
-                    ),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                            top: 10.0, left: 16.0, bottom: 10),
-                        child: RichText(
-                          text: TextSpan(
-                            style: textTheme.bodyMedium,
-                            children: <TextSpan>[
-                              TextSpan(text: ''),
-                              TextSpan(
-                                  text: 'Manchen Leuten',
-                                  style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      color: Colors.red)),
-                              TextSpan(
-                                  text:
-                                      ' kann man es einfach nicht recht machen.\n'),
-                              TextSpan(text: ''),
-                              TextSpan(
-                                  text: 'Manche Menschen',
-                                  style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      color: Colors.red)),
-                              TextSpan(text: ' lernen es nicht.\n'),
-                              TextSpan(
-                                  text: 'Bei meinem Nachbarn gingen schon '),
-                              TextSpan(
-                                  text: 'manche',
-                                  style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      color: Colors.red)),
-                              TextSpan(text: ' Frauen ein und aus.\n\n'),
-                              TextSpan(text: 'Weitere Indefinitartikel:\n'),
-                              TextSpan(text: '"'),
-                              TextSpan(
-                                  text: 'einige-',
-                                  style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      color: Colors.red)),
-                              TextSpan(text: '": Bedeutung wie "manch-".\n'),
-                              TextSpan(text: '"'),
-                              TextSpan(
-                                  text: 'mehrere-',
-                                  style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      color: Colors.red)),
-                              TextSpan(
-                                  text:
-                                      '": Bedeutung in etwa wie "manch". Existiert nur im Plural.\n'),
-                              TextSpan(text: '"'),
-                              TextSpan(
-                                  text: 'all-',
-                                  style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      color: Colors.red)),
-                              TextSpan(
-                                  text:
-                                      '": Bezeichnet eine Gesamtheit. Bedeutung in etwa wie "jeder".'),
-                            ],
-                          ),
-                        )),
-                  ],
-                ),
-              ),
-            ],
-          ),
-        ),
+            padding: const EdgeInsets.all(8.0),
+            child: MyPageContentView(contents: contents)),
       ),
     );
   }
 }
+
+List<CardContent> contents = [
+  CardContent(
+    elements: [
+      CardElement(type: ElementType.pageTitle, value: title),
+    ],
+  ),
+  CardContent(
+    elements: [
+      CardElement(type: ElementType.cardTitle, value: title1),
+      CardElement(type: ElementType.htmlContent, value: htmlContent1_1),
+    ],
+  ),
+  CardContent(
+    elements: [
+      CardElement(type: ElementType.cardTitle, value: title2),
+      CardElement(type: ElementType.htmlContent, value: htmlContent2_1),
+      CardElement(type: ElementType.htmlTable, value: htmlTable2_2),
+      CardElement(type: ElementType.htmlContent, value: htmlContent2_3),
+      CardElement(type: ElementType.htmlTable, value: htmlTable2_4),
+      CardElement(type: ElementType.htmlContent, value: htmlContent2_5),
+    ],
+  ),
+];
+
+String title = '3.6. Indefinitartikel';
+
+String title1 = 'Was man über die Indefinitartikel wissen sollte.';
+String htmlContent1_1 = '''
+<p>Indefinitpronomen können <strong><a title="Indefinitpronomen" href="lernen.php?menu_id=80">allein</a></strong> oder <span style="text-decoration:underline">in Funktion eines Artikels</span> auftreten. Treten sie in Funktion eines Artikels auf, spricht man von einem <strong><span class="red">Indefinitartikel</span></strong>. Indefinitartikel gehören wie die <strong><a title="Bestimmter Artikel" href="lernen.php?menu_id=59">bestimmten Artikel</a></strong> <span style="text-decoration:underline">zu den <strong><a title="Nomenbegleiter" href="lernen.php?menu_id=10">Begleitern</a></strong> eines Nomens</span> und können <span style="text-decoration:underline">nicht alleine</span> stehen, sondern nur in Verbindung mit einem Nomen. <br> Die meisten Indefinitartikel stehen dem <strong><a title="Bestimmter Artikel" href="lernen.php?menu_id=59">bestimmten Artikel</a></strong> sehr nahe und werden wie die bestimmten Artikel <strong><a title="Deklination bestimmter Artikel" href="lernen.php?menu_id=59#deklination">dekliniert</a></strong>. <br> <strong><span class="red">Ausnahmen</span></strong>: irgendein-, <strong><a title="Negativartikel" href="lernen.php?menu_id=60#negation">kein-</a></strong> und <strong><a title="Interrogativartikel" href="lernen.php?menu_id=64#was_fuer_ein">was für ein-</a></strong>. (<strong><a title="Deklination Unbestimmter Artikel" href="lernen.php?menu_id=60">Deklination wie unbestimmter Artikel</a></strong>)</p>
+''';
+
+String title2 = 'Indefinitartikel mit den Endungen des bestimmten Artikels';
+String htmlContent2_1 = '''
+<p>Mit "<strong>Jeder</strong>" werden <span style="text-decoration:underline">alle Elemente einer Gruppe</span> angesprochen, in der es <span style="text-decoration:underline">keine Ausnahmen</span> gibt. Jeder wechselt im Plural zu "alle".</p>
+''';
+String htmlTable2_2 = '''
+<table><colgroup> 
+<col style="width: 20%;"> 
+<col style="width: 20%;"> 
+<col style="width: 20%;"> 
+<col style="width: 20%;"> 
+<col style="width: 20%;"> </colgroup>
+<thead>
+<tr align="center">
+<th>Kasus</th>
+<th>Maskulinum</th>
+<th>Femininum</th>
+<th>Neutrum</th>
+<th>Plural</th>
+</tr>
+</thead>
+<tbody align="center">
+<tr>
+<td>Nominativ</td>
+<td>jed<strong><span class="red">er</span></strong> Mann</td>
+<td>jed<strong><span class="red">e</span></strong> Frau</td>
+<td>jed<strong><span class="red">es</span></strong> Kind</td>
+<td><strong><span class="red">alle</span></strong> Leute</td>
+</tr>
+<tr>
+<td>Akkusativ</td>
+<td>jed<strong><span class="red">en</span></strong> Mann</td>
+<td>jed<strong><span class="red">e</span></strong> Frau</td>
+<td>jed<strong><span class="red">es</span></strong> Kind</td>
+<td><strong><span class="red">alle</span></strong> Leute</td>
+</tr>
+<tr>
+<td>Dativ</td>
+<td>jed<strong><span class="red">em</span></strong> Mann</td>
+<td>jed<strong><span class="red">er</span></strong> Frau</td>
+<td>jed<strong><span class="red">em</span></strong> Kind</td>
+<td><strong><span class="red">allen</span></strong> Leute<strong><span class="red">n</span></strong></td>
+</tr>
+<tr>
+<td>Genitiv</td>
+<td>jed<strong><span class="red">es</span></strong> Mann<strong><span class="red">es</span></strong></td>
+<td>jed<strong><span class="red">er</span></strong> Frau</td>
+<td>jed<strong><span class="red">es</span></strong> Kind<strong><span class="red">es</span></strong></td>
+<td><strong><span class="red">aller</span></strong> Leute</td>
+</tr>
+</tbody>
+</table>
+''';
+String htmlContent2_3 = '''
+<li>Mein 6-jähriger Sohn sagt mir immer;" Das weiß doch <strong><span class="red">jedes Kind</span></strong>."</li>
+<li><strong><span class="red">Jeder Mensch</span></strong> muss Regeln lernen.</li>
+<li><strong><span class="red">Alle Lebewesen</span></strong> müssen irgendwann einmal sterben.</li>
+
+<p>"<strong><span class="red">Manch-</span></strong>" bezeichnet eine Gruppe von unbestimmten Personen oder Sachen, deren Prozentzahl irgendwo zwischen 10% - 45% anzusiedeln ist.</p>
+''';
+String htmlTable2_4 = '''
+<table><colgroup> 
+<col style="width: 20%;"> 
+<col style="width: 20%;"> 
+<col style="width: 20%;"> 
+<col style="width: 20%;"> 
+<col style="width: 20%;"> </colgroup>
+<thead>
+<tr align="center">
+<th>Kasus</th>
+<th>Maskulinum</th>
+<th>Femininum</th>
+<th>Neutrum</th>
+<th>Plural</th>
+</tr>
+</thead>
+<tbody align="center">
+<tr>
+<td>Nominativ</td>
+<td>manch<strong><span class="red">er</span></strong> Mann</td>
+<td>manch<strong><span class="red">e</span></strong> Frau</td>
+<td>manch<strong><span class="red">es</span></strong> Kind</td>
+<td>manch<strong><span class="red">e</span></strong> Leute</td>
+</tr>
+<tr>
+<td>Akkusativ</td>
+<td>manch<strong><span class="red">en</span></strong> Mann</td>
+<td>manch<strong><span class="red">e</span></strong> Frau</td>
+<td>manch<strong><span class="red">es</span></strong> Kind</td>
+<td>manch<strong><span class="red">e</span></strong> Leute</td>
+</tr>
+<tr>
+<td>Dativ</td>
+<td>manch<strong><span class="red">em</span></strong> Mann</td>
+<td>manch<strong><span class="red">er</span></strong> Frau</td>
+<td>manch<strong><span class="red">em</span></strong> Kind</td>
+<td>manch<strong><span class="red">en</span></strong> Leute<strong><span class="red">n</span></strong></td>
+</tr>
+<tr>
+<td>Genitiv</td>
+<td>manch<strong><span class="red">es</span></strong> Mann<strong><span class="red">es</span></strong></td>
+<td>manch<strong><span class="red">er</span></strong> Frau</td>
+<td>manch<strong><span class="red">es</span></strong> Kind<strong><span class="red">es</span></strong></td>
+<td>manch<strong><span class="red">er</span></strong> Leute</td>
+</tr>
+</tbody>
+</table>
+''';
+String htmlContent2_5 = '''
+<li><strong><span class="red">Manchen Leuten</span></strong> kann man es einfach nicht recht machen.</li>
+<li><strong><span class="red">Manche Menschen</span></strong> lernen es nicht.</li>
+<li>Bei meinem Nachbarn gingen schon <strong><span class="red">manche</span></strong> Frauen ein und aus.</li>
+
+<p><br> Weitere Indefinitartikel:</p>
+
+<li>"<strong><span class="red">einige-</span></strong>": Bedeutung wie "manch-".</li>
+<li>"<strong><span class="red">mehrere-</span></strong>": Bedeutung in etwa wie "manch". Existiert nur im Plural.</li>
+<li>"<strong><span class="red">all-</span></strong>": Bezeichnet eine Gesamtheit. Bedeutung in etwa wie "jeder".</li>
+''';

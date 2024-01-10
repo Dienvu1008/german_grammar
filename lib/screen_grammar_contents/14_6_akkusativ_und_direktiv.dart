@@ -53,10 +53,7 @@ List<CardContent> contents = [
 String title = '14.6. Akkusativ und Direktiv';
 String title1 = 'Was man über Verben mit Akkusativ- und Direktiv-Ergänzung wissen sollte.';
 String htmlContent1_1 = '''
-<div>
 <p>Einige Verben haben eine <strong><span class="blue">Akkusativ-</span></strong> und eine <strong><span class="red">Direktiv-Ergänzung</span></strong>. Die <span style="text-decoration:underline">Direktiv-Ergänzung</span> gibt eine <strong><span class="red">Orts- bzw. eine Richtungsänderung</span></strong> an. Wird in einer Direktiv-Ergänzung eine <strong><a title="Wechselpräpositionen fordern manchmal den Dativ, manchmal den Akkusativ." href="wechselpraepositionen.html#einfuehrung" target="_blank">Wechselpräposition</a></strong> benutzt, verlangt <span style="text-decoration:underline">diese</span> den <strong><span class="blue">Akkusativ</span></strong>. Das Fragewort dazu lautet "<strong><span class="red">wohin</span></strong>".</p>
-</div>
-<p>&nbsp;</p>
 ''';
 String htmlTable1_2 = '''
 <table><colgroup> <col style="width: 15%;"> <col style="width: 10%;"> <col style="width: 11%;"> <col style="width: 30;"> <col style="width: 34%;"> </colgroup>
@@ -88,7 +85,6 @@ String htmlTable1_2 = '''
 </table>
 ''';
 String htmlContent1_3 = '''
-<p>&nbsp;</p>
 <p style="padding-left: 30px;">- Die <span style="text-decoration:underline">W-Frage</span> der Direktiv-Ergänzung lautet <strong><span class="red">wohin</span></strong>.</p>
 <p style="padding-left: 30px;">&nbsp;</p>
 <p style="padding-left: 30px;">- Die Verben haben drei Ergänzungen, <span style="text-decoration:underline">Nominativ</span> + <strong><span class="blue">Akkusativ-</span></strong> + <strong><span class="red">Direktiv-Ergänzung</span></strong>!!!</p>
@@ -104,7 +100,6 @@ String htmlContent1_3 = '''
 <p style="padding-left: 30px;">- Die Wechselpräposition verlangt in einer Direktiv-Ergänzung den <strong><span class="blue">Akkusativ</span></strong>.</p>
 <p style="padding-left: 30px;">&nbsp;</p>
 <p style="padding-left: 30px;">- Nur <span style="text-decoration:underline">wenige</span> <strong><a title="Verben mit Akkusativ- und Direktiv-Ergänzung" href="akkusativ-und-direktiv-ergaenzung.html#verben_direktiv" target="_blank">Verben</a></strong> haben eine Akkusativ- und Direktiv-Ergänzung.</p>
-<p>&nbsp;</p>
 ''';
 String htmlTable1_4 = '''
 <table>
@@ -124,12 +119,7 @@ String htmlTable1_4 = '''
 
 String title2 = 'Verben mit Akkusativ und Direktiv-Ergänzung';
 String htmlContent2_1 = '''
-<div>
-<p>&nbsp;</p>
 <p>Die Verben <strong><span class="red">hängen</span></strong>, <strong><span class="red">legen</span></strong>, <strong><span class="red">setzen</span></strong>, <strong><span class="red">stecken</span></strong> und <strong><span class="red">stellen</span></strong> gehören zu den <span style="text-decoration:underline">schwachen Verben</span>. Sie sind <strong><a title="Verben mit einer Akkusativ-Ergänzung nennt man transitive Verben" href="akkusativ-ergaenzung.html#einfuehrung" target="_blank">transitiv</a></strong>, das heißt, sie haben <strong><span class="red">ein Akkusativobjekt</span></strong>!!! Sie sind leicht mit den Verben mit einer <strong><a title="Einführung Verben mit einer Situativ-Ergänzung" href="situativ-ergaenzung.html#einfuehrung" target="_blank">Situativ-Ergänzung</a></strong> zu verwechseln.</p>
-</div>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
 ''';
 String htmlTable2_2 = '''
 <table><colgroup> <col style="width: 18%;"> <col style="width: 18%;"> <col style="width: 13%;"> <col style="width: 24%;"> <col style="width: 27%;"> </colgroup>
@@ -195,19 +185,14 @@ String htmlTable2_3 = '''
 </table>
 ''';
 String htmlContent2_4 = '''
-<p>&nbsp;</p>
 <p style="padding-left: 30px;"><strong><span class="red">- Wohin</span></strong> legt <span style="text-decoration:underline">Hans</span> <strong><span class="blue">das Buch</span></strong>? - <strong><span class="red">Auf den Tisch</span></strong>.</p>
 <p style="padding-left: 30px;">&nbsp;</p>
 <p style="padding-left: 30px;"><strong><span class="red">- Wohin</span></strong> setzt <strong><span class="blue">sich</span></strong> <span style="text-decoration:underline">Helmut</span>? - <strong><span class="red">Neben mich</span></strong>.</p>
 <p style="padding-left: 30px;">&nbsp;</p>
 <p><br> Vergleiche dazu die Verben mit einer <strong><a title="Übersicht der Verben mit Situativ-Ergänzung" href="situativ-ergaenzung.html#verben_situativ" target="_blank">Situativ-Ergänzung</a></strong>.</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<div>
+
 <p>Folgende Verben haben ebenfalls eine <span style="text-decoration:underline">Akkusativ-Ergänzung</span> und eine <span style="text-decoration:underline">Direktiv-Ergänzung</span>. In der Antwort werden <strong><span class="blue">meist Wechselpräpositionen (+Akkusativ)</span></strong> benutzt, je nach Situation kann in der Antwort jedoch <strong><span class="red">auch eine Dativpräposition</span></strong> stehen.</p>
 <p>Vergleiche dazu die Verben mit einer <strong><a title="Übersicht der Verben mit Direktiv-Ergänzung" href="direktiv-ergaenzung.html#verben_direktiv" target="_blank">Direktiv-Ergänzung aber ohne Akkusativ-Ergänzung</a></strong>!</p>
-</div>
-<p>&nbsp;</p>
 ''';
 String htmlTable2_5 = '''
 <table><colgroup> <col style="width: 15%;"> <col style="width: 19%;"> <col style="width: 10%;"> <col style="width: 28%;"> <col style="width: 28%;"> </colgroup>
@@ -397,7 +382,5 @@ String htmlTable3_1 = '''
 </table>
 ''';
 String htmlContent3_2 = '''
-<div>
 <p>Zum Vergleich die Vergangenheitsformen der Verbgruppe mit <strong><a title="Vergangenheitsformen der Verben mit Situativ-Ergänzung" href="situativ-ergaenzung.html#vergangenheitsformen" target="_blank">Situativ-Ergänzung</a></strong></p>
-</div>  
 ''';

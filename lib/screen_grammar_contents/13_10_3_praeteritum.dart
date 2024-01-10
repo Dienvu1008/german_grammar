@@ -58,35 +58,21 @@ List<CardContent> contents = [
   ),
 ];
 
-
 String title = '13.10.3 Präteritum';
 String title1 = 'Was man über das Präteritum wissen sollte.';
 String htmlContent1_1 = '''
-<div>
 <p>Das Präteritum, auch <strong><span class="red">Imperfekt</span></strong> genannt, bildet zusammen mit dem Perfekt <span style="text-decoration:underline">eine Zeitstufe</span>. Der Unterschied liegt alleinig in ihrer Verwendung. Das Perfekt wird in der gesprochenen Sprache benutzt, während das Präteritum überwiegend in geschriebenen Texten Verwendung findet, wie zum Beispiel in Zeitungen, Zeitschriften, Literatur, Geschichten, Märchen etc. Aber auch in den Nachrichten, im Fernsehen oder im Radio wird das Präteritum benutzt, um über Vergangenes zu berichten.</p>
-</div>
-<p>&nbsp;</p>
-<div>
-<p>Die Personalpronomen "<strong><span class="red">du</span></strong>" und "<strong><span class="red">ihr</span></strong>" werden im Präteritum sehr selten benutzt, da diese Personen ausschließlich in der gesprochenen Sprache, also im <span style="text-decoration:underline">Perfekt</span>, Anwendung finden.</p>
-</div>
-<p>&nbsp;</p>
-<div>
-<p>Die <span style="text-decoration:underline">Ausnahme</span> bilden die Verben " <strong><span class="red">haben</span></strong> ", " <strong><span class="red">sein</span></strong> " sowie die " <strong><span class="red">Modalverben</span></strong> ". Sie sind im Präteritum einfacher zu bilden. Daher werden die Präteritumformen dieser Verben <span style="text-decoration:underline">auch im Perfekt</span> benutzt. Das ist möglich, da das Perfekt und das Präteritum die gleiche Zeitstufe vertreten.</p>
-</div>
-<p>&nbsp;</p>
-<div>
-<p>Für <strong><span class="red">alle Verben</span></strong> im Präteritum gilt: Die 1. und 3. Person wird <span style="text-decoration:underline">gleich konjugiert</span>, im Singular wie im Plural.</p>
-</div> 
 
+<p>Die Personalpronomen "<strong><span class="red">du</span></strong>" und "<strong><span class="red">ihr</span></strong>" werden im Präteritum sehr selten benutzt, da diese Personen ausschließlich in der gesprochenen Sprache, also im <span style="text-decoration:underline">Perfekt</span>, Anwendung finden.</p>
+
+<p>Die <span style="text-decoration:underline">Ausnahme</span> bilden die Verben " <strong><span class="red">haben</span></strong> ", " <strong><span class="red">sein</span></strong> " sowie die " <strong><span class="red">Modalverben</span></strong> ". Sie sind im Präteritum einfacher zu bilden. Daher werden die Präteritumformen dieser Verben <span style="text-decoration:underline">auch im Perfekt</span> benutzt. Das ist möglich, da das Perfekt und das Präteritum die gleiche Zeitstufe vertreten.</p>
+
+<p>Für <strong><span class="red">alle Verben</span></strong> im Präteritum gilt: Die 1. und 3. Person wird <span style="text-decoration:underline">gleich konjugiert</span>, im Singular wie im Plural.</p>
 ''';
 
 String title2 = 'Die Bildung des Präteritums der "regelmäßigen Verben"';
 String htmlContent2_1 = '''
-<div>
 <p>Das Präteritum der <strong><a title="Einführung regelmäßige Verben" href="verben-mit-regelmaessigen-stammformen.html#einfuehrung" target="blank">regelmäßigen Verben</a></strong>, auch <strong><span class="red">schwache Verben</span></strong> genannt, bildet man wie folgt:</p>
-</div>
-<p>&nbsp;</p>
-<div>
 ''';
 String htmlTable2_2 = '''
 <table class="eins">
@@ -150,12 +136,9 @@ String htmlTable2_3 = '''
 </table>
 ''';
 String htmlContent2_4 = '''
-<p>&nbsp;</p>
 <h3>- <strong><a title="Lautliche Besonderheiten bei der Konjugation regelmäßiger Verben" href="verben-mit-regelmaessigen-stammformen.html#lautlichebesonderheiten" target="blank">Lautliche Besonderheiten</a></strong>:</h3>
-<div>
+
 <p>Gelegentlich kommt es vor, dass der Verbstamm mit <strong><span class="blue">t</span></strong>; <strong><span class="blue">d</span></strong>; <strong><span class="blue">m</span></strong>* oder <strong><span class="blue">n</span></strong>* endet (*ohne Verben mit der Endung -ln oder -rn; klinge<strong>ln</strong>, zitte<strong>rn</strong>). Beispiele sind die Verben: arbei<strong><span class="blue">t</span></strong>en, at<strong><span class="blue">m</span></strong>en, rech<strong><span class="blue">n</span></strong>en usw. Die Folge sind Ausspracheprobleme beim Bilden des Präteritums. Deshalb wird beim Präteritum ein "<strong><span class="blue"> e </span></strong>" zwischen " Verbstamm " und der " Endung " eingeschoben.</p>
-</div>
-<p>&nbsp;</p>
 ''';
 String htmlTable2_5 = '''
 <table><colgroup> <col style="width: 13%;"> <col style="width: 15%;"> <col style="width: 10%;"> <col style="width: 62%;"> </colgroup>
@@ -210,10 +193,7 @@ String htmlTable2_5 = '''
 
 String title3 = 'Die Bildung des Präteritums der "unregelmäßigen Verben"';
 String htmlContent3_1 = '''
-<div>
 <p>Einige Verben, zum Beispiel "haben", "sein", und "werden", werden sehr häufig benutzt, da sie auch in der gesprochenen Sprache, also im Perfekt, benutzt werden. Einige davon finden darüber hinaus auch als Hilfsverb Verwendung. Die Präteritumsformen der folgenden Verben sollte man unbedingt kennen:</p>
-</div>
-<p>&nbsp;</p>
 ''';
 String htmlTable3_2 = '''
 <table>
@@ -304,23 +284,14 @@ String htmlTable3_2 = '''
 </table>
 ''';
 String htmlContent3_3 = '''
-<div>
 <p>Das Präteritum der <strong><a title="Einführung unregelmäßige Verben" href="starke-und-unregelmaessige-verben.html" target="_blank">unregelmäßigen Verben</a></strong> hat sehr oft eine andere Stammform als im Infinitiv. Weitere unregelmäßige und starke Verben gibt es in folgender Liste:</p>
-</div>
-<p>&nbsp;</p>
-<div align="center">
+
 <h3>Liste der <strong><a title="Liste der unregelmäßigen Verben zum kostenlosen Downloaden" href="verbliste-starker-verben.html" target="_blank">unregelmäßigen Verben</a></strong> !</h3>
-</div>
-<p>&nbsp;</p>  
-  
 ''';
 
 String title4 = 'Die Bildung des Präteritums der Modalverben';
 String htmlContent4_1 = '''
- <div>
 <p>Die Perfektformen der Modalverben sind vom Satzbau ein wenig kompliziert, daher werden auch in der gesprochenen Sprache die Modalverben im Präteritum benutzt.</p>
-</div>
-<p>&nbsp;</p>
 ''';
 String htmlTable4_2 = '''
 <table>
@@ -395,11 +366,7 @@ String htmlTable4_2 = '''
 </table>
 ''';
 String htmlContent4_3 = '''
-<p>&nbsp;</p>
-<div>
 <p>* Der Konjunktiv II. von mögen ist "<strong><span class="red">möchten</span></strong>". " <span style="text-decoration:underline">Möchten</span> " ändert sich allerdings im Präteritum in "<strong><span class="red">wollten</span></strong>".</p>
-</div>
-<p>&nbsp;</p>
 ''';
 String htmlTable4_4 = '''
 <table><colgroup> <col style="width: 23%;"> <col style="width: 13%;"> <col style="width: 52%;"> <col style="width: 12%;"> </colgroup>

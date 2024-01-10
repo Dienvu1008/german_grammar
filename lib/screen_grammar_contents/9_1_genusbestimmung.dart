@@ -1,688 +1,204 @@
 import 'package:flutter/material.dart';
 
 import '../app/app_localizations.dart';
+import '../page_content.dart';
 
 class Genusbestimmung_9_1 extends StatelessWidget {
   const Genusbestimmung_9_1({super.key});
 
   @override
   Widget build(BuildContext context) {
-    final localizations = AppLocalizations.of(context);
-    final textTheme = Theme.of(context).textTheme;
     return Expanded(
       child: Scaffold(
         body: Padding(
-          padding: const EdgeInsets.all(8.0),
-          child: ListView(
-            children: <Widget>[
-              Card(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: <Widget>[
-                    Padding(
-                      padding: const EdgeInsets.only(top: 16.0, left: 16.0),
-                      child: Text(
-                        '9.1. Genusbestimmung',
-                        style: textTheme.titleMedium,
-                      ),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.only(top: 10.0, left: 16.0),
-                      child: Text(
-                          'Kleine Hilfen zur Artikelbestimmung (Genusbestimmung) der Nomen',
-                          style: textTheme.titleSmall),
-                    ),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                            top: 10.0, left: 16.0, bottom: 10),
-                        child: RichText(
-                          text: TextSpan(
-                            style: textTheme.bodyMedium,
-                            children: <TextSpan>[
-                              TextSpan(
-                                  text:
-                                      'Die englische Sprache zeigt sich bei der Artikelbestimmung äußerst intelligent. Alle Nomen haben den gleichen Artikel "'),
-                              TextSpan(
-                                  text: 'the',
-                                  style: TextStyle(
-                                      decoration: TextDecoration.underline)),
-                              TextSpan(
-                                  text:
-                                      '". Das Spanische hingegen hat zwei Geschlechter, maskulin ("'),
-                              TextSpan(
-                                  text: 'el',
-                                  style: TextStyle(
-                                      decoration: TextDecoration.underline)),
-                              TextSpan(text: '") und feminin ("'),
-                              TextSpan(
-                                  text: 'la',
-                                  style: TextStyle(
-                                      decoration: TextDecoration.underline)),
-                              TextSpan(
-                                  text:
-                                      '"). Im Deutschen dagegen unterscheidet man '),
-                              TextSpan(
-                                  text: 'drei',
-                                  style: TextStyle(
-                                      decoration: TextDecoration.underline)),
-                              TextSpan(text: ' Geschlechter (Genus):\n\n'),
-                              TextSpan(
-                                  text: 'Maskulinum',
-                                  style: TextStyle(color: Colors.blue)),
-                              TextSpan(text: ': Der Artikel lautet "'),
-                              TextSpan(
-                                  text: 'der',
-                                  style: TextStyle(color: Colors.blue)),
-                              TextSpan(text: '": '),
-                              TextSpan(
-                                  text: 'der Mann',
-                                  style: TextStyle(color: Colors.red)),
-                              TextSpan(text: '.\n'),
-                              TextSpan(
-                                  text: 'Femininum',
-                                  style: TextStyle(color: Colors.blue)),
-                              TextSpan(text: ': Der Artikel lautet "'),
-                              TextSpan(
-                                  text: 'die',
-                                  style: TextStyle(color: Colors.blue)),
-                              TextSpan(text: '": '),
-                              TextSpan(
-                                  text: 'die Frau',
-                                  style: TextStyle(color: Colors.red)),
-                              TextSpan(text: '.\n'),
-                              TextSpan(
-                                  text: 'Neutrum',
-                                  style: TextStyle(color: Colors.blue)),
-                              TextSpan(text: ': Der Artikel lautet "'),
-                              TextSpan(
-                                  text: 'das',
-                                  style: TextStyle(color: Colors.blue)),
-                              TextSpan(text: '": '),
-                              TextSpan(
-                                  text: 'das Kind',
-                                  style: TextStyle(color: Colors.red)),
-                              TextSpan(
-                                  text:
-                                      '.\n\nBei der Artikelbestimmung ergibt sich folgende Problematik:\n'),
-                              TextSpan(text: 'the sun, el sol, die Sonne\n'),
-                              TextSpan(text: 'the moon, la luna, der Mond\n\n'),
-                              TextSpan(
-                                  text:
-                                      'Eine Artikelbestimmung in der englischen Sprache ist demnach kein Problem. Aber warum ist:\n'),
-                              TextSpan(text: '"the sun" im Spanischen '),
-                              TextSpan(
-                                  text: 'maskulin',
-                                  style: TextStyle(color: Colors.blue)),
-                              TextSpan(text: ' und im Deutschen '),
-                              TextSpan(
-                                  text: 'feminin',
-                                  style: TextStyle(color: Colors.red)),
-                              TextSpan(text: ' und\n'),
-                              TextSpan(text: '"the moon" im Spanischen '),
-                              TextSpan(
-                                  text: 'feminin',
-                                  style: TextStyle(color: Colors.red)),
-                              TextSpan(text: ' und im Deutschen '),
-                              TextSpan(
-                                  text: 'maskulin',
-                                  style: TextStyle(color: Colors.blue)),
-                              TextSpan(text: '?\n\n'),
-                              TextSpan(
-                                  text:
-                                      'Die Artikelbestimmung im Deutschen ist leider sehr schwierig.'),
-                              TextSpan(
-                                  text:
-                                      '\nAm besten lernt man ein neues Nomen immer zusammen mit dem jeweiligen Artikel.',
-                                  style: TextStyle(color: Colors.red)),
-                              TextSpan(
-                                  text: '\nTipp',
-                                  style: TextStyle(color: Colors.red)),
-                              TextSpan(
-                                  text:
-                                      ': Alle neuen Nomen werden mit Pluralbildung in eine Tabelle geschrieben:'),
-                            ],
-                          ),
-                        )),
-                    SingleChildScrollView(
-                      child: ConstrainedBox(
-                        constraints: const BoxConstraints(
-                            //minHeight: MediaQuery.of(context).size.height
-                            ),
-                        child: IntrinsicHeight(
-                          child: Column(children: [
-                            Table(
-                              border: TableBorder.all(
-                                  color: Colors.purple, width: 1),
-                              columnWidths: {
-                                0: FractionColumnWidth(.25),
-                                1: FractionColumnWidth(.25),
-                                2: FractionColumnWidth(.25),
-                                3: FractionColumnWidth(.25),
-                              },
-                              children: [
-                                TableRow(children: [
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'Maskulinum',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'Femininum',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'Neutrum',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'nur Plural',
-                                          style: textTheme.bodyMedium)),
-                                ]),
-                                TableRow(children: [
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'der Mond, -e',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'die Sonne, -n',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'das Auge, -n',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'die Ferien',
-                                          style: textTheme.bodyMedium)),
-                                ]),
-                                TableRow(children: [
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'der Osterhase, -n',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'die Tafel, -n',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'das Bett, -en',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'die Leute',
-                                          style: textTheme.bodyMedium)),
-                                ]),
-                                TableRow(children: [
-                                  RichText(
-                                      text: TextSpan(
-                                          text: '...',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: '...',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: '...',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: '...',
-                                          style: textTheme.bodyMedium)),
-                                ]),
-                              ],
-                            )
-                          ]),
-                        ),
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-              Card(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: <Widget>[
-                    Padding(
-                      padding: const EdgeInsets.only(top: 10.0, left: 16.0),
-                      child: Text(
-                          'Genusbestimmung durch das biologische Geschlecht',
-                          style: textTheme.titleSmall),
-                    ),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                            top: 10.0, left: 16.0, bottom: 10),
-                        child: RichText(
-                          text: TextSpan(
-                            style: textTheme.bodyMedium,
-                            children: <TextSpan>[
-                              TextSpan(
-                                  text:
-                                      'Das Genus richtet sich normalerweise nach dem '),
-                              TextSpan(
-                                  text: 'biologischen Geschlecht',
-                                  style: TextStyle(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(text: ':\n\n'),
-                              TextSpan(
-                                  text: 'Maskulin',
-                                  style: TextStyle(color: Colors.blue)),
-                              TextSpan(
-                                  text:
-                                      ': der Mann, der Schüler, der Student, der Lehrer, der Dozent, der Herr, der Mechaniker, ...\n'),
-                              TextSpan(
-                                  text: 'Feminin',
-                                  style: TextStyle(color: Colors.blue)),
-                              TextSpan(
-                                  text:
-                                      ': die Frau, die Schülerin, die Studentin, die Lehrerin, die Dozentin, die Mechanikerin, ...\n'),
-                              TextSpan(
-                                  text:
-                                      'Bei Berufen wird beim femininen Geschlecht in der Regel ein '),
-                              TextSpan(
-                                  text: '- in',
-                                  style: TextStyle(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(text: ' angehängt.\n'),
-                              TextSpan(
-                                  text:
-                                      'Es gibt folgende Ausnahmen: das Weib, das Baby, das Kind, das Mädchen, das Fräulein, die Person\n'),
-                              TextSpan(
-                                  text:
-                                      'Bei bestimmten Berufen gilt: die Hausfrau / der Hausmann // der Kaufmann / die Kauffrau'),
-                            ],
-                          ),
-                        )),
-                  ],
-                ),
-              ),
-              Card(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: <Widget>[
-                    Padding(
-                      padding: const EdgeInsets.only(top: 10.0, left: 16.0),
-                      child: Text('Genusbestimmung durch Nachsilben',
-                          style: textTheme.titleSmall),
-                    ),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                            top: 10.0, left: 16.0, bottom: 10),
-                        child: RichText(
-                          text: TextSpan(
-                            style: textTheme.bodyMedium,
-                            children: <TextSpan>[
-                              TextSpan(
-                                  text:
-                                      'Das Genus kann man bei einigen Nomen an den Nachsilben erkennen. Nomen sind\n\n'),
-                              TextSpan(
-                                  text: 'Neutral',
-                                  style: TextStyle(color: Colors.blue)),
-                              TextSpan(text: ' (Neutrum = das):\n'),
-                              TextSpan(text: '-'),
-                              TextSpan(
-                                  text: 'chen',
-                                  style: TextStyle(color: Colors.red)),
-                              TextSpan(
-                                  text:
-                                      ' (Diminutive: -chen und -lein macht alles klein) - Bäumchen, Bärchen, Häschen, Herzchen, Mädchen, Schätzchen, Stühlchen, ...\n'),
-                              TextSpan(text: '-'),
-                              TextSpan(
-                                  text: 'lein',
-                                  style: TextStyle(color: Colors.red)),
-                              TextSpan(
-                                  text:
-                                      ' - Bächlein, Fräulein, Häuslein, Peterlein, Strümpflein, Stühllein, Tischlein, ...\n'),
-                              TextSpan(text: '-'),
-                              TextSpan(
-                                  text: 'ment',
-                                  style: TextStyle(color: Colors.red)),
-                              TextSpan(
-                                  text:
-                                      ' - Argument, Dokument, Element, Instrument, Medikament, Statement, ...\n'),
-                              TextSpan(text: '-'),
-                              TextSpan(
-                                  text: 'tum',
-                                  style: TextStyle(color: Colors.red)),
-                              TextSpan(
-                                  text:
-                                      ' - Brauchtum, Christentum, Eigentum, ... (Ausnahmen: der Irrtum, der Reichtum)\n'),
-                              TextSpan(text: '-'),
-                              TextSpan(
-                                  text: 'um',
-                                  style: TextStyle(color: Colors.red)),
-                              TextSpan(
-                                  text:
-                                      ' - Datum, Publikum, Stadium, Universum, ...\n\n'),
-                              TextSpan(
-                                  text: 'Feminin',
-                                  style: TextStyle(color: Colors.blue)),
-                              TextSpan(text: ' (Femininum = die):\n'),
-                              TextSpan(text: '-'),
-                              TextSpan(
-                                  text: 'anz',
-                                  style: TextStyle(color: Colors.red)),
-                              TextSpan(
-                                  text:
-                                      ' - Allianz, Arroganz, Bilanz, Distanz, Toleranz, ...\n'),
-                              TextSpan(text: '-'),
-                              TextSpan(
-                                  text: 'ei',
-                                  style: TextStyle(color: Colors.red)),
-                              TextSpan(
-                                  text:
-                                      ' - Bäckerei, Bücherei, Druckerei, Metzgerei, Reederei, Tischlerei, Schlägerei, ...\n'),
-                              TextSpan(text: '-'),
-                              TextSpan(
-                                  text: 'enz',
-                                  style: TextStyle(color: Colors.red)),
-                              TextSpan(
-                                  text:
-                                      ' - Existenz, Intelligenz, Konferenz, Prominenz, Tendenz, ...\n'),
-                              TextSpan(text: '-'),
-                              TextSpan(
-                                  text: 'heit',
-                                  style: TextStyle(color: Colors.red)),
-                              TextSpan(
-                                  text:
-                                      ' - Frechheit, Freiheit, Geborgenheit, Krankheit, Sicherheit, Trunkenheit, Wahrheit, ...\n'),
-                              TextSpan(text: '-'),
-                              TextSpan(
-                                  text: 'ie',
-                                  style: TextStyle(color: Colors.red)),
-                              TextSpan(
-                                  text:
-                                      ' - Demokratie, Energie, Fotografie, Linie, Ökonomie, Prämie, Studie, ...\n'),
-                              TextSpan(text: '-'),
-                              TextSpan(
-                                  text: 'keit',
-                                  style: TextStyle(color: Colors.red)),
-                              TextSpan(
-                                  text:
-                                      ' - Einigkeit, Einsamkeit, Geschwindigkeit, Heiterkeit, Müdigkeit, Sauberkeit, ...\n'),
-                              TextSpan(text: '-'),
-                              TextSpan(
-                                  text: 'ik',
-                                  style: TextStyle(color: Colors.red)),
-                              TextSpan(
-                                  text:
-                                      ' - Fabrik, Klinik, Politik, Statistik, Technik, ...\n'),
-                              TextSpan(text: '-'),
-                              TextSpan(
-                                  text: 'in',
-                                  style: TextStyle(color: Colors.red)),
-                              TextSpan(
-                                  text:
-                                      ' (weibliche Berufsbezeichnungen) - Ärztin, Köchin, Sekretärin, Schneiderin, Chemikerin, ...\n'),
-                              TextSpan(text: '-'),
-                              TextSpan(
-                                  text: 'ion',
-                                  style: TextStyle(color: Colors.red)),
-                              TextSpan(
-                                  text:
-                                      ' - Aktion, Diskussion, Information, Nation, Position, Produktion, Region, Religion, ...\n'),
-                              TextSpan(text: '-'),
-                              TextSpan(
-                                  text: 'ität',
-                                  style: TextStyle(color: Colors.red)),
-                              TextSpan(
-                                  text:
-                                      ' - Aggressivität, Aktivität, Humanität, Objektivität, Passivität, Stabilität, ...\n'),
-                              TextSpan(text: '-'),
-                              TextSpan(
-                                  text: 'schaft',
-                                  style: TextStyle(color: Colors.red)),
-                              TextSpan(
-                                  text:
-                                      ' - Feindschaft, Freundschaft, Gesellschaft, Mannschaft, Meisterschaft, Partnerschaft,\n'),
-                              TextSpan(text: '-'),
-                              TextSpan(
-                                  text: 'ung',
-                                  style: TextStyle(color: Colors.red)),
-                              TextSpan(
-                                  text:
-                                      ' - Bewegung, Endung, Entfernung, Erziehung, Hoffnung, Umgehung, Zeitung, ...\n'),
-                              TextSpan(text: '-'),
-                              TextSpan(
-                                  text: 'ur',
-                                  style: TextStyle(color: Colors.red)),
-                              TextSpan(
-                                  text:
-                                      ' - Agentur, Diktatur, Natur, Rasur, Rezeptur, Tastatur, Zensur, ...\n\n'),
-                              TextSpan(
-                                  text: 'Maskulin',
-                                  style: TextStyle(color: Colors.blue)),
-                              TextSpan(text: ' (Maskulinum = der):\n'),
-                              TextSpan(text: '-'),
-                              TextSpan(
-                                  text: 'ant',
-                                  style: TextStyle(color: Colors.red)),
-                              TextSpan(
-                                  text:
-                                      ' - Emigrant, Fabrikant, Lieferant, Mandant, Repräsentant, Spekulant, ...\n'),
-                              TextSpan(text: '-'),
-                              TextSpan(
-                                  text: 'ent',
-                                  style: TextStyle(color: Colors.red)),
-                              TextSpan(
-                                  text:
-                                      ' - Absolvent, Agent, Dirigent, Interessent, Konkurrent, Patient, Präsident, Student, ...\n'),
-                              TextSpan(text: '-'),
-                              TextSpan(
-                                  text: 'ich',
-                                  style: TextStyle(color: Colors.red)),
-                              TextSpan(
-                                  text:
-                                      ' - Gänserich, Kranich, Pfirsich, Teppich, ...\n'),
-                              TextSpan(text: '-'),
-                              TextSpan(
-                                  text: 'ling',
-                                  style: TextStyle(color: Colors.red)),
-                              TextSpan(
-                                  text:
-                                      ' - Feigling, Lehrling, Pfifferling, Schmetterling, Zwilling, ...\n'),
-                              TextSpan(text: 'die meisten Nomen auf -'),
-                              TextSpan(
-                                  text: 'er',
-                                  style: TextStyle(color: Colors.red)),
-                              TextSpan(
-                                  text:
-                                      ' (Ausnahmen: die Butter, das Fenster, die Leiter, die Mutter)\n'),
-                              TextSpan(text: '-'),
-                              TextSpan(
-                                  text: 'ismus',
-                                  style: TextStyle(color: Colors.red)),
-                              TextSpan(
-                                  text:
-                                      ' - Alkoholismus, Atheismus, Faschismus, Nationalsozialismus, Rassismus, Realismus, Sexismus, Tourismus, ...\n'),
-                              TextSpan(text: '-'),
-                              TextSpan(
-                                  text: 'ist',
-                                  style: TextStyle(color: Colors.red)),
-                              TextSpan(
-                                  text:
-                                      ' - Artist, Jurist, Journalist, Optimist, Pessimist, Realist, Terrorist, Tourist, ...\n'),
-                              TextSpan(text: '-'),
-                              TextSpan(
-                                  text: 'or',
-                                  style: TextStyle(color: Colors.red)),
-                              TextSpan(
-                                  text:
-                                      ' - Autor, Direktor, Doktor, Katalysator, Moderator, Monitor, Motor, Reaktor, ...'),
-                            ],
-                          ),
-                        )),
-                  ],
-                ),
-              ),
-              Card(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: <Widget>[
-                    Padding(
-                      padding: const EdgeInsets.only(top: 10.0, left: 16.0),
-                      child: Text('Genusbestimmung durch Bedeutungen',
-                          style: textTheme.titleSmall),
-                    ),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                            top: 10.0, left: 16.0, bottom: 10),
-                        child: RichText(
-                          text: TextSpan(
-                            style: textTheme.bodyMedium,
-                            children: <TextSpan>[
-                              TextSpan(
-                                  text:
-                                      'Das Genus einiger Nomen kann man an seiner '),
-                              TextSpan(
-                                  text: 'Bedeutung',
-                                  style: TextStyle(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(text: ' erkennen.\n\n'),
-                              TextSpan(text: 'Folgende Nomen sind immer '),
-                              TextSpan(
-                                  text: 'maskulin',
-                                  style: TextStyle(color: Colors.blue)),
-                              TextSpan(text: ':\n'),
-                              TextSpan(
-                                  text:
-                                      'Tageszeiten, Jahreszeiten, Monate, Wochentage',
-                                  style: TextStyle(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(
-                                  text:
-                                      ' - Morgen, Mittag, Abend, Frühling, Sommer, Januar, Februar, Montag, Dienstag, ... (Ausnahmen: die Nacht, die Mitternacht)\n'),
-                              TextSpan(
-                                  text: 'Himmelsrichtungen',
-                                  style: TextStyle(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(
-                                  text:
-                                      ' - Süden, Westen, Norden, Osten, Südwesten, Nordosten, ...\n'),
-                              TextSpan(
-                                  text: 'Wetter, Niederschläge',
-                                  style: TextStyle(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(
-                                  text:
-                                      ' - Föhn, Hagel, Hurrikan, Monsun, Nebel, Regen, Schnee, Tornado, Wind, ... (Ausnahmen: das Eis, die Hitze, die Kälte, die Wolke)\n'),
-                              TextSpan(
-                                  text: 'alkoholische Getränke',
-                                  style: TextStyle(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(
-                                  text:
-                                      ' - Cognac, Likör, Punsch, Rum, Schnaps, Sekt, Tequila, Wein, Wodka, ... (Ausnahme: das Bier)\n'),
-                              TextSpan(
-                                  text: 'Automarken',
-                                  style: TextStyle(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(
-                                  text:
-                                      ' - Audi, Fiat, Ford, Mercedes, Toyota, VW, ...\n\n'),
-                              TextSpan(text: 'Folgende Nomen sind immer '),
-                              TextSpan(
-                                  text: 'feminin',
-                                  style: TextStyle(color: Colors.blue)),
-                              TextSpan(text: ':\n'),
-                              TextSpan(
-                                  text: 'Motorradnamen',
-                                  style: TextStyle(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(
-                                  text:
-                                      ' - BMW, Honda, Kawasaki, Yamaha, ...\n'),
-                              TextSpan(
-                                  text: 'Schiffsnamen',
-                                  style: TextStyle(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(
-                                  text:
-                                      ' - Gorch Fock, Kaiser Wilhelm, Titanic, Queen Elizabeth, ...\n'),
-                              TextSpan(
-                                  text: 'Zigarettennamen',
-                                  style: TextStyle(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(
-                                  text:
-                                      ' - Camel, Havanna, Lord Extra, Marlboro, ...\n'),
-                              TextSpan(
-                                  text: 'Substantivierte Zahlen',
-                                  style: TextStyle(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(
-                                  text:
-                                      ' - Eins, Zwei, Dreizehn, Hundert, Tausend, Million, Milliarde, Billion, ...\n\n'),
-                              TextSpan(text: 'Folgende Nomen sind immer '),
-                              TextSpan(
-                                  text: 'neutral',
-                                  style: TextStyle(color: Colors.blue)),
-                              TextSpan(text: ':\n'),
-                              TextSpan(
-                                  text: 'Farbnamen',
-                                  style: TextStyle(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(
-                                  text:
-                                      ' - Blau, Himmelblau, Rosarot, Rot, Schneeweiß, Weiß, ...\n'),
-                              TextSpan(
-                                  text: 'Substantivierte Verben',
-                                  style: TextStyle(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(
-                                  text:
-                                      ' - Essen, Lernen, Reisen, Trinken, ...'),
-                            ],
-                          ),
-                        )),
-                    SingleChildScrollView(
-                      child: ConstrainedBox(
-                        constraints: const BoxConstraints(
-                            //minHeight: MediaQuery.of(context).size.height
-                            ),
-                        child: IntrinsicHeight(
-                          child: Column(children: [
-                            Table(
-                              border: TableBorder.all(
-                                  color: Colors.purple, width: 1),
-                              children: [
-                                TableRow(children: [
-                                  Center(
-                                    child: Text(
-                                      'Am besten lernt man ein neues Nomen immer zusammen mit dem jeweiligen Artikel.',
-                                      style: textTheme.titleMedium,
-                                    ),
-                                  ),
-                                ]),
-                              ],
-                            )
-                          ]),
-                        ),
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-            ],
-          ),
-        ),
+            padding: const EdgeInsets.all(8.0),
+            child: MyPageContentView(contents: contents)),
       ),
     );
   }
 }
+
+List<CardContent> contents = [
+  CardContent(
+    elements: [
+      CardElement(type: ElementType.pageTitle, value: title),
+    ],
+  ),
+  CardContent(
+    elements: [
+      CardElement(type: ElementType.cardTitle, value: title1),
+      CardElement(type: ElementType.htmlContent, value: htmlContent1_1),
+      CardElement(type: ElementType.htmlTable, value: htmlTable1_2),
+    ],
+  ),
+  CardContent(
+    elements: [
+      CardElement(type: ElementType.cardTitle, value: title2),
+      CardElement(type: ElementType.htmlContent, value: htmlContent2_1),
+    ],
+  ),
+  CardContent(
+    elements: [
+      CardElement(type: ElementType.cardTitle, value: title3),
+      CardElement(type: ElementType.htmlContent, value: htmlContent3_1),
+    ],
+  ),
+  CardContent(
+    elements: [
+      CardElement(type: ElementType.cardTitle, value: title4),
+      CardElement(type: ElementType.htmlContent, value: htmlContent4_1),
+      CardElement(type: ElementType.htmlTable, value: htmlTable4_2),
+    ],
+  ),
+];
+
+String title = '9.1. Genusbestimmung';
+
+String title1 = 'Kleine Hilfen zur Artikelbestimmung (Genusbestimmung) der Nomen';
+String htmlContent1_1 = '''
+<p>Die englische Sprache zeigt sich bei der Artikelbestimmung äußerst intelligent. Alle Nomen haben den gleichen Artikel "<span style="text-decoration:underline">the</span>". Das Spanische hingegen hat zwei Geschlechter, maskulin ("<span style="text-decoration:underline">el</span>") und feminin ("<span style="text-decoration:underline">la</span>"). Im Deutschen dagegen unterscheidet man <span style="text-decoration:underline">drei</span> Geschlechter (Genus):</p>
+
+<li><strong><span class="blue">Maskulinum</span></strong>
+
+<li>Der Artikel lautet " <strong><span class="blue">der</span></strong> ": <strong><span class="red">der Mann</span></strong></li>
+
+<li><strong><span class="blue">Femininum</span></strong>
+
+<li>Der Artikel lautet " <strong><span class="blue">die</span></strong> ": <strong><span class="red">die Frau</span></strong></li>
+
+<li><strong><span class="blue">Neutrum</span></strong>
+
+<li>Der Artikel lautet " <strong><span class="blue">das</span></strong> ": <strong><span class="red">das Kind</span></strong></li>
+
+<p>Bei der Artikelbestimmung ergibt sich folgende Problematik:</p>
+
+<li>the sun, el sol, die Sonne</li>
+<li>the moon, la luna, der Mond</li>
+
+<p>Eine Artikelbestimmung in der englischen Sprache ist demnach kein Problem. Aber warum ist:</p>
+
+<li>"<strong><span class="red">the sun</span></strong>" im Spanischen <strong><span class="blue">maskulin</span></strong> und im Deutschen <strong><span class="red">feminin</span></strong> und</li>
+<li>"<strong><span class="red">the moon</span></strong>" im Spanischen <strong><span class="red">feminin</span></strong> und im Deutschen <strong><span class="blue">maskulin</span></strong>?</li>
+
+<p>Die Artikelbestimmung im Deutschen ist leider sehr schwierig. <br> <br> <strong><span class="red">Am besten lernt man ein neues Nomen immer zusammen mit dem jeweiligen Artikel.</span></strong> <br> <br> <strong><span class="red">Tipp</span></strong>: Alle neuen Nomen werden mit <strong>Pluralbildung</strong> in eine Tabelle geschrieben:</p>
+''';
+String htmlTable1_2 = '''
+<table><colgroup> <col style="width: 25%;"> <col style="width: 25%;"> <col style="width: 25%;"> <col style="width: 25%;"> </colgroup>
+<thead>
+<tr>
+<th>Maskulinum</th>
+<th>Femininum</th>
+<th>Neutrum</th>
+<th>nur Plural</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>der Mond, -e</td>
+<td>die Sonne, -n</td>
+<td>das Auge, -n</td>
+<td>die Ferien</td>
+</tr>
+<tr>
+<td>der Osterhase, -n</td>
+<td>die Tafel, -n</td>
+<td>das Bett, -en</td>
+<td>die Leute</td>
+</tr>
+<tr>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+</tr>
+</tbody>
+</table>  
+''';
+
+String title2 = 'Genusbestimmung durch das biologische Geschlecht';
+String htmlContent2_1 = '''
+<p>Das Genus richtet sich normalerweise nach dem <strong><span class="red">biologischen Geschlecht</span></strong>:</p>
+
+<li><strong><span class="blue">maskulin</span></strong> <br> der Mann, der Schüler, der Student, der Lehrer, der Dozent, der Herr, der Mechaniker, ... <br> </li>
+<li><strong><span class="blue">feminin</span></strong> <br> die Frau, die Schülerin, die Studentin, die Lehrerin, die Dozentin, die Mechanikerin, ...
+
+<li>Bei Berufen wird beim femininen Geschlecht in der Regel ein <strong><span class="red">- in</span></strong> angehängt.</li>
+<li>Es gibt folgende Ausnahmen: <br> das Weib, das Baby, das Kind, das Mädchen, das Fräulein, die Person</li>
+<li>Bei bestimmten Berufen gilt: <br> die Hausfrau / der Hausmann // der Kaufmann / die Kauffrau</li>
+''';
+
+String title3 = 'Genusbestimmung durch Nachsilben';
+String htmlContent3_1 = '''
+<p>Das Genus kann man bei einigen Nomen an den Nachsilben erkennen. Nomen sind</p>
+
+<li>bei folgenden Endungen <strong><span class="blue">neutral</span></strong> (Neutrum = das):
+
+<li>-<strong><span class="red">chen</span></strong> (Diminutive: -chen und -lein macht alles klein) <br> - Bäumchen, Bärchen, Häschen, Herzchen, Mädchen, Schätzchen, Stühlchen, ...</li>
+<li>-<strong><span class="red">lein</span></strong> <br> - Bächlein, Fräulein, Häuslein, Peterlein, Strümpflein, Stühllein, Tischlein, ...</li>
+<li>-<strong><span class="red">ment</span></strong> <br> - Argument, Dokument, Element, Instrument, Medikament, Statement, ...</li>
+<li>-<strong><span class="red">tum</span></strong> <br> - Brauchtum, Christentum, Eigentum, ... (Ausnahmen: der Irrtum, der Reichtum)</li>
+<li>-<strong><span class="red">um</span></strong> <br> - Datum, Publikum, Stadium, Universum, ...</li>
+
+<li>bei folgenden Endungen <strong><span class="blue">feminin</span></strong> (Femininum = die):
+
+<li>-<strong><span class="red">anz</span></strong> <br> Allianz, Arroganz, Bilanz, Distanz, Toleranz, ...</li>
+<li>-<strong><span class="red">ei</span></strong> <br> Bäckerei, Bücherei, Druckerei, Metzgerei, Reederei, Tischlerei, Schlägerei, ...</li>
+<li>-<strong><span class="red">enz</span></strong> <br> Existenz, Intelligenz, Konferenz, Prominenz, Tendenz, ...</li>
+<li>-<strong><span class="red">heit</span></strong> <br> Frechheit, Freiheit, Geborgenheit, Krankheit, Sicherheit, Trunkenheit, Wahrheit, ...</li>
+<li>-<strong><span class="red">ie</span></strong> <br> Demokratie, Energie, Fotografie, Linie, Ökonomie, Prämie, Studie, ...</li>
+<li>-<strong><span class="red">keit</span></strong> <br> Einigkeit, Einsamkeit, Geschwindigkeit, Heiterkeit, Müdigkeit, Sauberkeit, ...</li>
+<li>-<strong><span class="red">ik</span></strong> <br> Fabrik, Klinik, Politik, Statistik, Technik, ...</li>
+<li>-<strong><span class="red">in</span></strong> (weibliche Berufsbezeichnungen) <br> Ärztin, Köchin, Sekretärin, Schneiderin, Chemikerin, ...</li>
+<li>-<strong><span class="red">ion</span></strong> <br> Aktion, Diskussion, Information, Nation, Position, Produktion, Region, Religion, ...</li>
+<li>-<strong><span class="red">ität</span></strong> <br> Aggressivität, Aktivität, Humanität, Objektivität, Passivität, Stabilität, ...</li>
+<li>-<strong><span class="red">schaft</span></strong> <br> Feindschaft, Freundschaft, Gesellschaft, Mannschaft, Meisterschaft, Partnerschaft,</li>
+<li>-<strong><span class="red">ung</span></strong> <br> Bewegung, Endung, Entfernung, Erziehung, Hoffnung, Umgehung, Zeitung, ...</li>
+<li>-<strong><span class="red">ur</span></strong> <br> Agentur, Diktatur, Natur, Rasur, Rezeptur, Tastatur, Zensur, ...</li>
+
+<li>bei folgenden Endungen <strong><span class="blue">maskulin</span></strong> (Maskulinum = der):
+
+<li>-<strong><span class="red">ant</span></strong> <br> Emigrant, Fabrikant, Lieferant, Mandant, Repräsentant, Spekulant, ...</li>
+<li>-<strong><span class="red">ent</span></strong> <br> Absolvent, Agent, Dirigent, Interessent, Konkurrent, Patient, Präsident, Student, ...</li>
+<li>-<strong><span class="red">ich</span></strong> <br> Gänserich, Kranich, Pfirsich, Teppich, ...</li>
+<li>-<strong><span class="red">ling</span></strong> <br> Feigling, Lehrling, Pfifferling, Schmetterling, Zwilling, ...</li>
+<li>die meisten Nomen auf -<strong><span class="red">er</span></strong> <br> (Ausnahmen: die Butter, das Fenster, die Leiter, die Mutter)</li>
+<li>-<strong><span class="red">ismus</span></strong> <br> Alkoholismus, Atheismus, Faschismus, Nationalsozialismus, Rassismus, Realismus, Sexismus, Tourismus, ...</li>
+<li>-<strong><span class="red">ist</span></strong> <br> Artist, Jurist, Journalist, Optimist, Pessimist, Realist, Terrorist, Tourist, ...</li>
+<li>-<strong><span class="red">or</span></strong> <br> Autor, Direktor, Doktor, Katalysator, Moderator, Monitor, Motor, Reaktor, ...</li> 
+''';
+
+String title4 = 'Genusbestimmung durch Bedeutungen';
+String htmlContent4_1 = '''
+<p>Das Genus einiger Nomen kann man an seiner <strong><span class="red">Bedeutung</span></strong> erkennen.</p>
+
+<li>Folgende Nomen sind immer <strong><span class="blue">maskulin</span></strong>:
+
+<li><strong><span class="red">Tageszeiten, Jahreszeiten, Monate, Wochentage</span></strong> <br> Morgen, Mittag, Abend, Frühling, Sommer, Januar, Februar, Montag, Dienstag, ... <br> (Ausnahmen: die Nacht, die Mitternacht)</li>
+<li><strong><span class="red">Himmelsrichtungen</span></strong> <br> Süden, Westen, Norden, Osten, Südwesten, Nordosten, ... </li>
+<li><strong><span class="red">Wetter, Niederschläge</span></strong> <br> Föhn, Hagel, Hurrikan, Monsun, Nebel, Regen, Schnee, Tornado, Wind, ... <br> (Ausnahmen: das Eis, die Hitze, die Kälte, die Wolke) </li>
+<li><strong><span class="red">alkoholische Getränke</span></strong> <br> Cognac, Likör, Punsch, Rum, Schnaps, Sekt, Tequila, Wein, Wodka, ... <br> (Ausnahme: das Bier) </li>
+<li><strong><span class="red">Automarken</span></strong> <br> Audi, Fiat, Ford, Mercedes, Toyota, VW, ...</li>
+
+<li>Folgende Nomen sind immer <strong><span class="blue">feminin</span></strong>:
+
+<li><strong><span class="red">Motorradnamen</span></strong> <br> BMW, Honda, Kawasaki, Yamaha, ...</li>
+<li><strong><span class="red">Schiffsnamen</span></strong> <br> Gorch Fock, Kaiser Wilhelm, Titanic, Queen Elizabeth, ... </li>
+<li><strong><span class="red">Zigarettennamen</span></strong> <br> Camel, Havanna, Lord Extra, Marlboro, ... </li>
+<li><strong><span class="red">Substantivierte Zahlen</span></strong> <br> Eins, Zwei, Dreizehn, Hundert, Tausend, Million, Milliarde, Billion, ... </li>
+
+<li>Folgende Nomen sind immer <strong><span class="blue">neutral</span></strong>
+
+<li><strong><span class="red">Farbnamen</span></strong> <br> Blau, Himmelblau, Rosarot, Rot, Schneeweiß, Weiß, ... </li>
+<li><strong><span class="red">Substantivierte Verben</span></strong> <br> Essen, Lernen, Reisen, Trinken, ... </li>
+''';
+String htmlTable4_2 = '''
+<table class="eins">
+<tbody>
+<tr>
+<td align="center">
+<h3>Am besten lernt man ein neues Nomen immer zusammen mit dem jeweiligen Artikel.</h3>
+</td>
+</tr>
+</tbody>
+</table>
+''';

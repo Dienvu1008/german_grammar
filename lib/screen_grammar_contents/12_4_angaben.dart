@@ -3,239 +3,63 @@ import 'package:flutter/material.dart';
 import '../app/app_localizations.dart';
 import '../html_table_to_dart_table.dart';
 import '../html_to_richtext.dart';
+import '../page_content.dart';
 
 class Angaben_12_4 extends StatelessWidget {
   const Angaben_12_4({super.key});
 
   @override
   Widget build(BuildContext context) {
-    final localizations = AppLocalizations.of(context);
-    final textTheme = Theme.of(context).textTheme;
     return Expanded(
       child: Scaffold(
         body: Padding(
-          padding: const EdgeInsets.all(8.0),
-          child: ListView(
-            children: <Widget>[
-              Card(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: <Widget>[
-                    Padding(
-                      padding: const EdgeInsets.only(top: 16.0, left: 16.0),
-                      child:
-                          Text('12.4. Angaben', style: textTheme.titleMedium),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.only(top: 10.0, left: 16.0),
-                      child: Text('Was man über Angaben wissen sollte.',
-                          style: textTheme.titleSmall),
-                    ),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                            top: 10.0, left: 16.0, bottom: 10),
-                        child: HtmlToRichText(
-                          htmlString: htmlContent1_1,
-                          textTheme: textTheme,
-                        )),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                            top: 10.0, left: 16.0, bottom: 10),
-                        child: HtmlTableToDartTable(
-                          htmlTable: htmlTable1,
-                          textTheme: textTheme,
-                          columnWidths: const {
-                            0: FractionColumnWidth(.30),
-                            1: FractionColumnWidth(.10),
-                            2: FractionColumnWidth(.10),
-                            3: FractionColumnWidth(.38),
-                            4: FractionColumnWidth(.12),
-                          },
-                        )),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                            top: 10.0, left: 16.0, bottom: 10),
-                        child: HtmlToRichText(
-                          htmlString: htmlContent1_2,
-                          textTheme: textTheme,
-                        )),
-                  ],
-                ),
-              ),
-              Card(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: <Widget>[
-                    Padding(
-                      padding: const EdgeInsets.only(
-                          top: 10.0, left: 16.0, bottom: 10),
-                      child: Text('Mehrere Angaben in einem Satz',
-                          style: textTheme.titleSmall),
-                    ),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                            top: 10.0, left: 16.0, bottom: 10),
-                        child: HtmlToRichText(
-                          htmlString: htmlContent2_1,
-                          textTheme: textTheme,
-                        )),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                            top: 10.0, left: 16.0, bottom: 10),
-                        child: HtmlTableToDartTable(
-                          htmlTable: htmlTable2_1,
-                          textTheme: textTheme,
-                          columnWidths: const {
-                            0: FractionColumnWidth(.20),
-                            1: FractionColumnWidth(.40),
-                            2: FractionColumnWidth(.20),
-                            3: FractionColumnWidth(.20),
-                          },
-                        )),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                            top: 10.0, left: 16.0, bottom: 10),
-                        child: HtmlToRichText(
-                          htmlString: htmlContent2_2,
-                          textTheme: textTheme,
-                        )),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                            top: 10.0, left: 16.0, bottom: 10),
-                        child: HtmlTableToDartTable(
-                          htmlTable: htmlTable2_2,
-                          textTheme: textTheme,
-                          columnWidths: const {
-                            0: FractionColumnWidth(.12),
-                            1: FractionColumnWidth(.10),
-                            2: FractionColumnWidth(.12),
-                            3: FractionColumnWidth(.24),
-                            4: FractionColumnWidth(.12),
-                            5: FractionColumnWidth(.15),
-                            6: FractionColumnWidth(.15),
-                          },
-                        )),
-                  ],
-                ),
-              ),
-              Card(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: <Widget>[
-                    Padding(
-                      padding: const EdgeInsets.only(
-                          top: 10.0, left: 16.0, bottom: 10),
-                      child: Text('Mehrere Angaben + Ergänzungen im Mittelfeld',
-                          style: textTheme.titleSmall),
-                    ),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                            top: 10.0, left: 16.0, bottom: 10),
-                        child: HtmlToRichText(
-                          htmlString: htmlContent3_1,
-                          textTheme: textTheme,
-                        )),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                            top: 10.0, left: 16.0, bottom: 10),
-                        child: HtmlTableToDartTable(
-                          htmlTable: htmlTable3_1,
-                          textTheme: textTheme,
-                          columnWidths: const {
-                            0: FractionColumnWidth(.33),
-                            1: FractionColumnWidth(.33),
-                            2: FractionColumnWidth(.34),
-                          },
-                        )),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                            top: 10.0, left: 16.0, bottom: 10),
-                        child: HtmlToRichText(
-                          htmlString: htmlContent3_2,
-                          textTheme: textTheme,
-                        )),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                            top: 10.0, left: 16.0, bottom: 10),
-                        child: HtmlTableToDartTable(
-                          htmlTable: htmlTable3_2,
-                          textTheme: textTheme,
-                          columnWidths: const {
-                            0: FractionColumnWidth(.18),
-                            1: FractionColumnWidth(.14),
-                            2: FractionColumnWidth(.53),
-                            3: FractionColumnWidth(.15),
-                          },
-                        )),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                            top: 10.0, left: 16.0, bottom: 10),
-                        child: HtmlTableToDartTable(
-                          htmlTable: htmlTable3_3,
-                          textTheme: textTheme,
-                          columnWidths: const {
-                            0: FractionColumnWidth(.10),
-                            1: FractionColumnWidth(.14),
-                            2: FractionColumnWidth(.18),
-                            3: FractionColumnWidth(.43),
-                            4: FractionColumnWidth(.15),
-                          },
-                        )),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                            top: 10.0, left: 16.0, bottom: 10),
-                        child: HtmlToRichText(
-                          htmlString: htmlContent3_3,
-                          textTheme: textTheme,
-                        )),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                            top: 10.0, left: 16.0, bottom: 10),
-                        child: HtmlTableToDartTable(
-                          htmlTable: htmlTable3_4,
-                          textTheme: textTheme,
-                          columnWidths: const {
-                            0: FractionColumnWidth(.20),
-                            1: FractionColumnWidth(.20),
-                            2: FractionColumnWidth(.20),
-                            3: FractionColumnWidth(.20),
-                            4: FractionColumnWidth(.20),
-                          },
-                        )),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                            top: 10.0, left: 16.0, bottom: 10),
-                        child: HtmlToRichText(
-                          htmlString: htmlContent3_4,
-                          textTheme: textTheme,
-                        )),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                            top: 10.0, left: 16.0, bottom: 10),
-                        child: HtmlTableToDartTable(
-                          htmlTable: htmlTable3_5,
-                          textTheme: textTheme,
-                          columnWidths: const {
-                            0: FractionColumnWidth(.20),
-                            1: FractionColumnWidth(.15),
-                            2: FractionColumnWidth(.20),
-                            3: FractionColumnWidth(.15),
-                            4: FractionColumnWidth(.10),
-                            5: FractionColumnWidth(.10),
-                            6: FractionColumnWidth(.10),
-                          },
-                        )),
-                  ],
-                ),
-              ),
-            ],
-          ),
-        ),
+            padding: const EdgeInsets.all(8.0),
+            child: MyPageContentView(contents: contents)),
       ),
     );
   }
 }
 
+List<CardContent> contents = [
+  CardContent(
+    elements: [
+      CardElement(type: ElementType.pageTitle, value: title),
+    ],
+  ),
+  CardContent(
+    elements: [
+      CardElement(type: ElementType.cardTitle, value: title1),
+      CardElement(type: ElementType.htmlContent, value: htmlContent1_1),
+      CardElement(type: ElementType.htmlTable, value: htmlTable1),
+      CardElement(type: ElementType.htmlContent, value: htmlContent1_2),
+    ],
+  ),
+  CardContent(
+    elements: [
+      CardElement(type: ElementType.cardTitle, value: title2),
+      CardElement(type: ElementType.htmlContent, value: htmlContent2_1),
+      CardElement(type: ElementType.htmlTable, value: htmlTable2_1),
+      CardElement(type: ElementType.htmlContent, value: htmlContent2_2),
+      CardElement(type: ElementType.htmlTable, value: htmlTable2_2),
+    ],
+  ),
+  CardContent(
+    elements: [
+      CardElement(type: ElementType.cardTitle, value: title3),
+      CardElement(type: ElementType.htmlContent, value: htmlContent3_1),
+      CardElement(type: ElementType.htmlTable, value: htmlTable3_1),
+      CardElement(type: ElementType.htmlContent, value: htmlContent3_2),
+      CardElement(type: ElementType.htmlTable, value: htmlTable3_2),
+      CardElement(type: ElementType.htmlTable, value: htmlTable3_3),
+      CardElement(type: ElementType.htmlContent, value: htmlContent3_3),
+      CardElement(type: ElementType.htmlTable, value: htmlTable3_4),
+      CardElement(type: ElementType.htmlContent, value: htmlContent3_4),
+      CardElement(type: ElementType.htmlTable, value: htmlTable3_5),
+    ],
+  ),
+];
+String title = '12.4. Angaben';
+String title1 = 'Was man über Angaben wissen sollte.';
 String htmlContent1_1 = '''
 <p>Im Gegensatz zu den <strong><a title="Ergänzungen" href="lernen.php?menu_id=19#ergaenzungen">Ergänzungen</a></strong>, die zum größten Teil <strong><span class="red">obligatorisch</span></strong> sind, sind <strong><a title="Angaben" href="lernen.php?menu_id=19#angaben">Angaben</a></strong> fakultativ und für einen Satz <strong><span class="red">nicht notwendige <a title="Satzglieder" href="lernen.php?menu_id=19#satzglieder">Satzglieder</a></span></strong>. Angaben geben einem Satz weitere <span style="text-decoration:underline">freiwillige Informationen</span>. Diese Informationen können sich beispielsweise auf temporale (wann?), örtliche (wo) und kausale (warum?) Umstände eines Geschehens beziehen. Wie gesehen, lassen sich diese Umstände mit bestimmten <strong><a title="Fragewörter" href="lernen.php?menu_id=15">W-Fragen</a></strong> erfragen. <br> Folgende Angaben werden unterschieden:</p>
 <li><strong><a title="Temporale Angaben" href="lernen.php?menu_id=15#tempus">Temporale Angaben</a></strong></li>
@@ -323,10 +147,12 @@ String htmlTable1 = '''
 </tbody>
 </table>
 ''';
+
 String htmlContent1_2 = '''
 <p><strong><span class="red">Angaben</span></strong> werden in den meisten Fällen entweder mit einem <strong><a title="Adverbien" href="lernen.php?menu_id=12">Adverb</a></strong> oder mit einer <strong><a title="Präpositionen" href="lernen.php?menu_id=14">Präpositionalgruppe</a></strong> beantwortet.</p> 
 ''';
 
+String title2 = 'Mehrere Angaben in einem Satz';
 String htmlContent2_1 = '''
 <p>Wie gesehen, kann eine <strong><a title="Angaben auf Position 1" href="#position1">Angabe auf Position 1</a></strong> gestellt werden. Sollen in einem Satz <strong><span class="red">mehrere Angaben</span></strong> getätigt werden, kann (wenn gewünscht) eine der Angaben auf Position 1 stehen, alle weiteren Angaben stehen im <strong><span class="red">Mittelfeld</span></strong>. Bei mehreren Angaben im Mittelfeld, sollte dabei eine bestimmte Reihenfolge beachtet werden. Die Angaben werden nach der <span style="text-decoration:underline">alphabetischen Reihenfolge der W-Fragen</span> festgelegt:</p>
 <p><strong><span class="red">Mittelfeld/Angaben</span></strong></p>
@@ -425,6 +251,7 @@ String htmlTable2_2 = '''
 </table>  
 ''';
 
+String title3 = 'Mehrere Angaben + Ergänzungen im Mittelfeld';
 String htmlContent3_1 = '''
 <p>Wie bereits bekannt, steht auf <strong><a title="Angaben auf Position 1" href="#position1">Position 1</a></strong> oft die wichtigste Information eines Satzes. Dies ist oft das <strong><a title="Subjekt" href="lernen.php?menu_id=38">Subjekt</a></strong>, kann aber auch eine andere <strong><a title="Verbergänzungen" href="lernen.php?menu_id=7">Ergänzung</a></strong> (Dativ-, Akkusativ-, Situativ-, ...), ein <strong><a title="Satzverbindende Adverbien" href="lernen.php?menu_id=90">satzverbindendes Adverb</a></strong> oder eine <strong><a title="Angaben" href="lernen.php?menu_id=19#angaben">Angabe</a></strong> sein. <br> <strong><span class="red">Position 2</span></strong> wird durch das <strong><a title="Prädikat" href="lernen.php?menu_id=19#praedikat">Prädikat</a></strong> belegt. Das <strong><span class="red">Satzende</span></strong> wird meist mit einem weiteren <strong><span class="red">Prädikatsteil</span></strong> abgeschlossen. Somit sind wichtige Positionen im Satz belegt. Unser Satzgerüst sieht nun folgendermaßen aus:</p>
 ''';

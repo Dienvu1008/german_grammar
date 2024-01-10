@@ -3,227 +3,68 @@ import 'package:flutter/material.dart';
 import '../app/app_localizations.dart';
 import '../html_table_to_dart_table.dart';
 import '../html_to_richtext.dart';
+import '../page_content.dart';
 
 class Nachdem_12_5_8_4 extends StatelessWidget {
   const Nachdem_12_5_8_4({super.key});
 
   @override
   Widget build(BuildContext context) {
-    final localizations = AppLocalizations.of(context);
-    final textTheme = Theme.of(context).textTheme;
     return Expanded(
       child: Scaffold(
         body: Padding(
-          padding: const EdgeInsets.all(8.0),
-          child: ListView(
-            children: <Widget>[
-              Card(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: <Widget>[
-                    Padding(
-                      padding: const EdgeInsets.only(top: 16.0, left: 16.0),
-                      child: Text('12.5.8.4. Temporalsätze mit "nachdem"',
-                          style: textTheme.titleMedium),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.only(top: 10.0, left: 16.0),
-                      child: Text(
-                          'Was man über Temporalsätze mit "nachdem" wissen sollte.',
-                          style: textTheme.titleSmall),
-                    ),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                            top: 10.0, left: 16.0, bottom: 10),
-                        child: HtmlToRichText(
-                          htmlString: htmlContent1_1,
-                          textTheme: textTheme,
-                        )),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                            top: 10.0, left: 16.0, bottom: 10),
-                        child: HtmlTableToDartTable(
-                          htmlTable: htmlTable1_1,
-                          textTheme: textTheme,
-                          columnWidths: const {
-                            0: FractionColumnWidth(.48),
-                            1: FractionColumnWidth(.04),
-                            2: FractionColumnWidth(.48),
-                          },
-                        )),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                            top: 10.0, left: 16.0, bottom: 10),
-                        child: HtmlToRichText(
-                          htmlString: htmlContent1_2,
-                          textTheme: textTheme,
-                        )),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                            top: 10.0, left: 16.0, bottom: 10),
-                        child: HtmlTableToDartTable(
-                          htmlTable: htmlTable1_2,
-                          textTheme: textTheme,
-                          columnWidths: const {
-                            0: FractionColumnWidth(.50),
-                            1: FractionColumnWidth(.50),
-                          },
-                        )),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                            top: 10.0, left: 16.0, bottom: 10),
-                        child: HtmlToRichText(
-                          htmlString: htmlContent1_3,
-                          textTheme: textTheme,
-                        )),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                            top: 10.0, left: 16.0, bottom: 10),
-                        child: HtmlTableToDartTable(
-                          htmlTable: htmlTable1_3,
-                          textTheme: textTheme,
-                          columnWidths: const {
-                            0: FractionColumnWidth(.50),
-                            1: FractionColumnWidth(.50),
-                          },
-                        )),
-                  ],
-                ),
-              ),
-              Card(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: <Widget>[
-                    Padding(
-                      padding: const EdgeInsets.only(
-                          top: 10.0, left: 16.0, bottom: 10),
-                      child: Text(
-                          'Nominalisierung von temporalen Sätzen mit nachdem',
-                          style: textTheme.titleSmall),
-                    ),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                            top: 10.0, left: 16.0, bottom: 10),
-                        child: HtmlToRichText(
-                          htmlString: htmlContent2_1,
-                          textTheme: textTheme,
-                        )),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                            top: 10.0, left: 16.0, bottom: 10),
-                        child: HtmlTableToDartTable(
-                          htmlTable: htmlTable2,
-                          textTheme: textTheme,
-                          columnWidths: const {
-                            0: FractionColumnWidth(1),
-                          },
-                        )),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                            top: 10.0, left: 16.0, bottom: 10),
-                        child: HtmlToRichText(
-                          htmlString: htmlContent2_2,
-                          textTheme: textTheme,
-                        )),
-                  ],
-                ),
-              ),
-              Card(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: <Widget>[
-                    Padding(
-                      padding: const EdgeInsets.only(
-                          top: 10.0, left: 16.0, bottom: 10),
-                      child: Text('Temporale Adverbien',
-                          style: textTheme.titleSmall),
-                    ),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                            top: 10.0, left: 16.0, bottom: 10),
-                        child: HtmlToRichText(
-                          htmlString: htmlContent3_1,
-                          textTheme: textTheme,
-                        )),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                            top: 10.0, left: 16.0, bottom: 10),
-                        child: HtmlTableToDartTable(
-                          htmlTable: htmlTable3_1,
-                          textTheme: textTheme,
-                          columnWidths: const {
-                            0: FractionColumnWidth(.32),
-                            1: FractionColumnWidth(.13),
-                            2: FractionColumnWidth(.10),
-                            3: FractionColumnWidth(.27),
-                            4: FractionColumnWidth(.11),
-                          },
-                        )),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                            top: 10.0, left: 16.0, bottom: 10),
-                        child: HtmlToRichText(
-                          htmlString: htmlContent3_2,
-                          textTheme: textTheme,
-                        )),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                            top: 10.0, left: 16.0, bottom: 10),
-                        child: HtmlTableToDartTable(
-                          htmlTable: htmlTable3_2,
-                          textTheme: textTheme,
-                          columnWidths: const {
-                            0: FractionColumnWidth(.12),
-                            1: FractionColumnWidth(.48),
-                            2: FractionColumnWidth(.40),
-                          },
-                        )),
-                  ],
-                ),
-              ),
-              Card(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: <Widget>[
-                    Padding(
-                      padding: const EdgeInsets.only(
-                        top: 10.0,
-                        left: 16.0,
-                      ),
-                      child: Text('Übersicht', style: textTheme.titleSmall),
-                    ),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                          top: 10.0,
-                          left: 16.0,
-                        ),
-                        child: HtmlTableToDartTable(
-                          htmlTable: htmlTable4,
-                          textTheme: textTheme,
-                          columnWidths: const {
-                            0: FractionColumnWidth(.38),
-                            1: FractionColumnWidth(.34),
-                            2: FractionColumnWidth(.28),
-                          },
-                        )),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                            top: 10.0, left: 16.0, bottom: 10),
-                        child: HtmlToRichText(
-                          htmlString: htmlContent4,
-                          textTheme: textTheme,
-                        )),
-                  ],
-                ),
-              ),
-            ],
-          ),
-        ),
+            padding: const EdgeInsets.all(8.0),
+            child: MyPageContentView(contents: contents)),
       ),
     );
   }
 }
 
+List<CardContent> contents = [
+  CardContent(
+    elements: [
+      CardElement(type: ElementType.pageTitle, value: title),
+    ],
+  ),
+  CardContent(
+    elements: [
+      CardElement(type: ElementType.cardTitle, value: title1),
+      CardElement(type: ElementType.htmlContent, value: htmlContent1_1),
+      CardElement(type: ElementType.htmlTable, value: htmlTable1_1),
+      CardElement(type: ElementType.htmlContent, value: htmlContent1_2),
+      CardElement(type: ElementType.htmlTable, value: htmlTable1_2),
+      CardElement(type: ElementType.htmlContent, value: htmlContent1_3),
+      CardElement(type: ElementType.htmlTable, value: htmlTable1_3),
+      CardElement(type: ElementType.htmlContent, value: htmlContent1_4),
+    ],
+  ),
+  CardContent(
+    elements: [
+      CardElement(type: ElementType.cardTitle, value: title2),
+      CardElement(type: ElementType.htmlContent, value: htmlContent2_1),
+      CardElement(type: ElementType.htmlTable, value: htmlTable2),
+      CardElement(type: ElementType.htmlContent, value: htmlContent2_2),
+    ],
+  ),
+  CardContent(
+    elements: [
+      CardElement(type: ElementType.cardTitle, value: title3),
+      CardElement(type: ElementType.htmlContent, value: htmlContent3_1),
+      CardElement(type: ElementType.htmlTable, value: htmlTable3_1),
+      CardElement(type: ElementType.htmlContent, value: htmlContent3_2),
+      CardElement(type: ElementType.htmlTable, value: htmlTable3_2),
+    ],
+  ),
+  CardContent(
+    elements: [
+      CardElement(type: ElementType.cardTitle, value: title4),
+      CardElement(type: ElementType.htmlTable, value: htmlTable4),
+      CardElement(type: ElementType.htmlContent, value: htmlContent4),
+    ],
+  ),
+];
+String title = '12.5.8.4. Temporalsätze mit "nachdem"';
+String title1 = 'Was man über Temporalsätze mit "nachdem" wissen sollte.';
 String htmlContent1_1 = '''
 <p>Temporalsätze mit "nachdem" drücken eine <strong><span class="red">Ungleichzeitigkeit zweier Handlungen</span></strong> aus. Die Handlung des Nebensatzes tritt dabei zuerst ein, die Handlung des Hauptsatzes folgt nach dem Nebensatz (invers zu der Konjunktion <strong><a title="Temporale Nebensätze mit bevor" href="bevor.html" target="_blank">bevor</a></strong>). Das Verb des Nebensatzes steht dabei eine Zeitstufe vor dem Verb des Hauptsatzes. Es gilt:</p>
 ''';
@@ -324,9 +165,11 @@ String htmlContent1_4 = '''
 <p><br> Vergleiche: <strong><a title="Temporale Nebensätze mit bevor" href="bevor.html" target="_blank">Temporale Nebensätze mit "bevor"</a></strong></p>  
 ''';
 
+String title2 = 'Nominalisierung von temporalen Sätzen mit nachdem';
 String htmlContent2_1 = '''
 <p>Eine <strong><span class="red">temporale Angabe</span></strong> kann auch mit einer <strong><a title="Nominalisierung" href="nominalisierung.html" target="_blank">Präposition-Nomen-Konstruktion</a></strong> formuliert werden. Die passende Präposition lautet: "<strong><span class="red">nach</span></strong>":</p>
 ''';
+
 String htmlTable2 = '''
 <table>
 <thead>
@@ -355,6 +198,7 @@ String htmlContent2_2 = '''
 <li>Die Präposition "nach" verlangt den <strong><a title="Temporale Präpositionen" href="praepositionen-mit-dativ.html" target="_blank">Dativ</a></strong>.</li>
 ''';
 
+String title3 = 'Temporale Adverbien';
 String htmlContent3_1 = '''
 <p>Im Kapitel "<strong><a title="Satzverbindende Adverbien" href="satzverbindende-adverbien.html" target="_blank">Satzverbindende Adverbien</a></strong>" haben wir gelernt, dass auch <strong><span class="red">Adverbien</span></strong> Sätze verknüpfen können. Satzverbindende Adverbien verbinden einen Hauptsatz mit einem Hauptsatz:</p>
 <li><strong><span class="red">Verbalstil</span></strong> = Hauptsatz + Nebensatz oder Nebensatz + Hauptsatz</li>
@@ -432,6 +276,7 @@ String htmlTable3_2 = '''
 </table>  
 ''';
 
+String title4 = 'Übersicht';
 String htmlTable4 = '''
 <table><colgroup> <col style="width: 38%;"> <col style="width: 38%;"> <col style="width: 24%;"> </colgroup>
 <thead>

@@ -1,719 +1,222 @@
 import 'package:flutter/material.dart';
 
 import '../app/app_localizations.dart';
+import '../page_content.dart';
 
 class Infinitivkonstruktionen_5_6 extends StatelessWidget {
   const Infinitivkonstruktionen_5_6({super.key});
 
   @override
   Widget build(BuildContext context) {
-    final localizations = AppLocalizations.of(context);
-    final textTheme = Theme.of(context).textTheme;
     return Expanded(
       child: Scaffold(
         body: Padding(
-          padding: const EdgeInsets.all(8.0),
-          child: ListView(
-            children: <Widget>[
-              Card(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: <Widget>[
-                    Padding(
-                      padding: const EdgeInsets.only(top: 16.0, left: 16.0),
-                      child: Text(
-                        '5.6. Infinitivkonstruktionen',
-                        style: textTheme.titleMedium,
-                      ),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.only(top: 10.0, left: 16.0),
-                      child: Text(
-                          'Was man über Infinitivkonstruktionen wissen sollte.',
-                          style: textTheme.titleSmall),
-                    ),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                            top: 10.0, left: 16.0, bottom: 10),
-                        child: RichText(
-                          text: TextSpan(
-                            style: textTheme.bodyMedium,
-                            children: <TextSpan>[
-                              TextSpan(text: 'Die Infinitivkonstruktionen "'),
-                              TextSpan(
-                                  text: 'um ... zu',
-                                  style:
-                                      TextStyle(fontWeight: FontWeight.bold)),
-                              TextSpan(text: '", "'),
-                              TextSpan(
-                                  text: 'ohne ... zu',
-                                  style:
-                                      TextStyle(fontWeight: FontWeight.bold)),
-                              TextSpan(text: '" und "'),
-                              TextSpan(
-                                  text: 'anstatt ... zu',
-                                  style:
-                                      TextStyle(fontWeight: FontWeight.bold)),
-                              TextSpan(
-                                  text:
-                                      '" sind unabhängig von bestimmten Verben. Sie haben andere Funktionen. Sie haben allerdings gemein, dass das Verb im '),
-                              TextSpan(
-                                  text: 'Infinitiv am Satzende',
-                                  style: TextStyle(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(text: ' steht und dass sie '),
-                              TextSpan(
-                                  text: 'subjektlos',
-                                  style: TextStyle(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(text: ' sind.\n\n'),
-                              TextSpan(text: 'Die Studenten lernen Deutsch, '),
-                              TextSpan(
-                                  text: 'um',
-                                  style: TextStyle(color: Colors.red)),
-                              TextSpan(text: ' in Deutschland '),
-                              TextSpan(
-                                  text: 'zu studieren',
-                                  style: TextStyle(color: Colors.red)),
-                              TextSpan(text: '.\n'),
-                              TextSpan(text: 'Helmut ging nach Hause, '),
-                              TextSpan(
-                                  text: 'ohne',
-                                  style: TextStyle(color: Colors.red)),
-                              TextSpan(text: ' sich '),
-                              TextSpan(
-                                  text: 'zu verabschieden',
-                                  style: TextStyle(color: Colors.red)),
-                              TextSpan(text: '.\n'),
-                              TextSpan(
-                                  text:
-                                      'Der Programmierer surft im Internet, '),
-                              TextSpan(
-                                  text: 'anstatt zu arbeiten',
-                                  style: TextStyle(color: Colors.red)),
-                              TextSpan(text: '.'),
-                            ],
-                          ),
-                        )),
-                  ],
-                ),
-              ),
-              Card(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: <Widget>[
-                    Padding(
-                      padding: const EdgeInsets.only(top: 10.0, left: 16.0),
-                      child: Text('Sätze mit "um ... zu + Infinitiv"',
-                          style: textTheme.titleSmall),
-                    ),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                            top: 10.0, left: 16.0, bottom: 10),
-                        child: RichText(
-                          text: TextSpan(
-                            style: textTheme.bodyMedium,
-                            children: <TextSpan>[
-                              TextSpan(text: 'Mit der Konjunktion "'),
-                              TextSpan(
-                                  text: 'um ... zu',
-                                  style: TextStyle(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(text: '" werden '),
-                              TextSpan(
-                                  text: 'Finalsätze',
-                                  style:
-                                      TextStyle(fontWeight: FontWeight.bold)),
-                              TextSpan(
-                                  text:
-                                      ' ausgedrückt. Ein Finalsatz fragt nach einem '),
-                              TextSpan(
-                                  text: 'Ziel bzw. einer Absicht',
-                                  style: TextStyle(
-                                      decoration: TextDecoration.underline)),
-                              TextSpan(text: '. Das Fragewort lautet "'),
-                              TextSpan(
-                                  text: 'wozu',
-                                  style: TextStyle(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(
-                                  text:
-                                      '". Ist das Subjekt im Beziehungssatz (=Hauptsatz) mit dem Nebensatz '),
-                              TextSpan(
-                                  text: 'identisch',
-                                  style: TextStyle(
-                                      decoration: TextDecoration.underline)),
-                              TextSpan(
-                                  text:
-                                      ', wird die Konjunktion "um ... zu" benutzt. In der Infinitivkonstruktion '),
-                              TextSpan(
-                                  text: 'entfällt das Subjekt',
-                                  style: TextStyle(
-                                      decoration: TextDecoration.underline)),
-                              TextSpan(text: '. Der Infinitiv wird '),
-                              TextSpan(
-                                  text: 'am Ende des Satzes',
-                                  style: TextStyle(
-                                      decoration: TextDecoration.underline)),
-                              TextSpan(text: ' gestellt.\n\n'),
-                              TextSpan(text: 'Wozu lernst du Deutsch?\n'),
-                              TextSpan(
-                                  text:
-                                      'Ich möchte in Deutschland studieren.\n'),
-                              TextSpan(
-                                  text:
-                                      'Ich möchte mich besser mit Deutschen unterhalten können.\n'),
-                              TextSpan(
-                                  text:
-                                      'Ich möchte bessere Berufsaussichten haben.\n'),
-                              TextSpan(
-                                  text:
-                                      'Ich möchte die Deutschen besser verstehen können.'),
-                            ],
-                          ),
-                        )),
-                    SingleChildScrollView(
-                      child: ConstrainedBox(
-                        constraints: const BoxConstraints(
-                            //minHeight: MediaQuery.of(context).size.height
-                            ),
-                        child: IntrinsicHeight(
-                          child: Column(children: [
-                            Table(
-                              border: TableBorder.all(
-                                  color: Colors.purple, width: 1),
-                              columnWidths: {
-                                0: FractionColumnWidth(.23),
-                                1: FractionColumnWidth(.09),
-                                2: FractionColumnWidth(.38),
-                                3: FractionColumnWidth(.30),
-                              },
-                              children: [
-                                TableRow(children: [
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'Hauptsatz',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'Konj.',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'Mittelfeld',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'zu + Infinitiv',
-                                          style: textTheme.bodyMedium)),
-                                ]),
-                                TableRow(children: [
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'Ich lerne Deutsch',
-                                          style: textTheme.bodyMedium!
-                                              .copyWith(color: Colors.red))),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'um',
-                                          style: textTheme.bodyMedium!
-                                              .copyWith(color: Colors.blue))),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'in Deutschland',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'studieren zu können.',
-                                          style: textTheme.bodyMedium!
-                                              .copyWith(color: Colors.blue))),
-                                ]),
-                                TableRow(children: [
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'Ich lerne Deutsch',
-                                          style: textTheme.bodyMedium!
-                                              .copyWith(color: Colors.red))),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'um',
-                                          style: textTheme.bodyMedium!
-                                              .copyWith(color: Colors.blue))),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'mich besser mit Deutschen',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'unterhalten zu können.',
-                                          style: textTheme.bodyMedium!
-                                              .copyWith(color: Colors.blue))),
-                                ]),
-                                TableRow(children: [
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'Ich lerne Deutsch',
-                                          style: textTheme.bodyMedium!
-                                              .copyWith(color: Colors.red))),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'um',
-                                          style: textTheme.bodyMedium!
-                                              .copyWith(color: Colors.blue))),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'bessere Berufsaussichten',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'zu haben.',
-                                          style: textTheme.bodyMedium!
-                                              .copyWith(color: Colors.blue))),
-                                ]),
-                                TableRow(children: [
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'Ich lerne Deutsch',
-                                          style: textTheme.bodyMedium!
-                                              .copyWith(color: Colors.red))),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'um',
-                                          style: textTheme.bodyMedium!
-                                              .copyWith(color: Colors.blue))),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'die Deutschen besser',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'verstehen zu können.',
-                                          style: textTheme.bodyMedium!
-                                              .copyWith(color: Colors.blue))),
-                                ]),
-                              ],
-                            )
-                          ]),
-                        ),
-                      ),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.only(
-                          top: 10.0, left: 16.0, bottom: 10),
-                      child: RichText(
-                        text: TextSpan(
-                          style: textTheme.bodyMedium,
-                          children: <TextSpan>[
-                            TextSpan(text: 'Siehe auch '),
-                            TextSpan(
-                                text: 'Finalsätze',
-                                style: TextStyle(fontWeight: FontWeight.bold)),
-                            TextSpan(text: '.'),
-                          ],
-                        ),
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-              Card(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: <Widget>[
-                    Padding(
-                      padding: const EdgeInsets.only(top: 10.0, left: 16.0),
-                      child: Text('Sätze mit "ohne ... zu + Infinitiv"',
-                          style: textTheme.titleSmall),
-                    ),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                            top: 10.0, left: 16.0, bottom: 10),
-                        child: RichText(
-                          text: TextSpan(
-                            style: textTheme.bodyMedium,
-                            children: <TextSpan>[
-                              TextSpan(text: 'Die Konjunktion "'),
-                              TextSpan(
-                                  text: 'ohne ... zu',
-                                  style: TextStyle(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(text: '" kann anstelle einer '),
-                              TextSpan(
-                                  text: 'Negation',
-                                  style:
-                                      TextStyle(fontWeight: FontWeight.bold)),
-                              TextSpan(text: ' benutzt werden.\n\n'),
-                              TextSpan(
-                                  text:
-                                      'Peter ist nach Hause gegangen. Er hat sich '),
-                              TextSpan(
-                                  text: 'nicht',
-                                  style: TextStyle(color: Colors.red)),
-                              TextSpan(text: ' verabschiedet.\n'),
-                              TextSpan(
-                                  text: 'Der Angler fischt am See. Er hat '),
-                              TextSpan(
-                                  text: 'keinen',
-                                  style: TextStyle(color: Colors.red)),
-                              TextSpan(text: ' Angelschein.\n'),
-                              TextSpan(
-                                  text:
-                                      'Frau Jolly geht im Supermarkt einkaufen. Sie hat '),
-                              TextSpan(
-                                  text: 'kein',
-                                  style: TextStyle(color: Colors.red)),
-                              TextSpan(text: ' Geld dabei.\n'),
-                              TextSpan(
-                                  text:
-                                      'Der Autofahrer fährt in der Nacht Auto. Er hat das Licht '),
-                              TextSpan(
-                                  text: 'nicht',
-                                  style: TextStyle(color: Colors.red)),
-                              TextSpan(text: ' angeschaltet.'),
-                            ],
-                          ),
-                        )),
-                    SingleChildScrollView(
-                      child: ConstrainedBox(
-                        constraints: const BoxConstraints(
-                            //minHeight: MediaQuery.of(context).size.height
-                            ),
-                        child: IntrinsicHeight(
-                          child: Column(children: [
-                            Table(
-                              border: TableBorder.all(
-                                  color: Colors.purple, width: 1),
-                              columnWidths: {
-                                0: FractionColumnWidth(.36),
-                                1: FractionColumnWidth(.11),
-                                2: FractionColumnWidth(.23),
-                                3: FractionColumnWidth(.30),
-                              },
-                              children: [
-                                TableRow(children: [
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'Hauptsatz',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'Konj.',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'Mittelfeld',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'zu + Infinitiv',
-                                          style: textTheme.bodyMedium)),
-                                ]),
-                                TableRow(children: [
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'Er ist nach Hause gegangen',
-                                          style: textTheme.bodyMedium!
-                                              .copyWith(color: Colors.red))),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'ohne',
-                                          style: textTheme.bodyMedium!
-                                              .copyWith(color: Colors.blue))),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'sich',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'zu verabschieden.',
-                                          style: textTheme.bodyMedium!
-                                              .copyWith(color: Colors.blue))),
-                                ]),
-                                TableRow(children: [
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'Der Angler fischt am See',
-                                          style: textTheme.bodyMedium!
-                                              .copyWith(color: Colors.red))),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'ohne',
-                                          style: textTheme.bodyMedium!
-                                              .copyWith(color: Colors.blue))),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'einen Angelschein',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'zu haben.',
-                                          style: textTheme.bodyMedium!
-                                              .copyWith(color: Colors.blue))),
-                                ]),
-                                TableRow(children: [
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'Frau Jolly geht einkaufen',
-                                          style: textTheme.bodyMedium!
-                                              .copyWith(color: Colors.red))),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'ohne',
-                                          style: textTheme.bodyMedium!
-                                              .copyWith(color: Colors.blue))),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'Geld dabei',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'zu haben.',
-                                          style: textTheme.bodyMedium!
-                                              .copyWith(color: Colors.blue))),
-                                ]),
-                                TableRow(children: [
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'Er fährt in der Nacht Auto',
-                                          style: textTheme.bodyMedium!
-                                              .copyWith(color: Colors.red))),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'ohne',
-                                          style: textTheme.bodyMedium!
-                                              .copyWith(color: Colors.blue))),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'das Licht',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'anzuschalten.',
-                                          style: textTheme.bodyMedium!
-                                              .copyWith(color: Colors.blue))),
-                                ]),
-                              ],
-                            )
-                          ]),
-                        ),
-                      ),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.only(
-                          top: 10.0, left: 16.0, bottom: 10),
-                      child: RichText(
-                        text: TextSpan(
-                          style: textTheme.bodyMedium,
-                          children: <TextSpan>[
-                            TextSpan(text: 'Siehe auch '),
-                            TextSpan(
-                                text:
-                                    'Negation / Konjunktionen mit verneinenden Aussagen',
-                                style: TextStyle(fontWeight: FontWeight.bold)),
-                            TextSpan(text: ' und '),
-                            TextSpan(
-                                text: 'fehlende Begleitumstände',
-                                style: TextStyle(fontWeight: FontWeight.bold)),
-                            TextSpan(text: '.'),
-                          ],
-                        ),
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-              Card(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: <Widget>[
-                    Padding(
-                      padding: const EdgeInsets.only(top: 10.0, left: 16.0),
-                      child: Text('Sätze mit (an)statt ... zu + Infinitiv"',
-                          style: textTheme.titleSmall),
-                    ),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                            top: 10.0, left: 16.0, bottom: 10),
-                        child: RichText(
-                          text: TextSpan(
-                            style: textTheme.bodyMedium,
-                            children: <TextSpan>[
-                              TextSpan(text: 'Die Konjunktion "'),
-                              TextSpan(
-                                  text: '(an)statt ... zu',
-                                  style:
-                                      TextStyle(fontWeight: FontWeight.bold)),
-                              TextSpan(
-                                  text:
-                                      '" benutzt man, wenn etwas anderes passiert, als die erwartete Situation.\n\n'),
-                              TextSpan(
-                                  text:
-                                      'Hans hilft seinem Freund nicht. Er bleibt lieber zu Hause.\n'),
-                              TextSpan(
-                                  text:
-                                      'Herr Kost bleibt nicht zu Hause. Er arbeitet lieber.\n'),
-                              TextSpan(
-                                  text:
-                                      'Elke sieht nicht gern fern. Lieber liest sie ein spannendes Buch.\n'),
-                              TextSpan(
-                                  text:
-                                      'Arndt geht nicht gern schwimmen. Er geht lieber spazieren.'),
-                            ],
-                          ),
-                        )),
-                    SingleChildScrollView(
-                      child: ConstrainedBox(
-                        constraints: const BoxConstraints(
-                            //minHeight: MediaQuery.of(context).size.height
-                            ),
-                        child: IntrinsicHeight(
-                          child: Column(children: [
-                            Table(
-                              border: TableBorder.all(
-                                  color: Colors.purple, width: 1),
-                              columnWidths: {
-                                0: FractionColumnWidth(.35),
-                                1: FractionColumnWidth(.13),
-                                2: FractionColumnWidth(.23),
-                                3: FractionColumnWidth(.29),
-                              },
-                              children: [
-                                TableRow(children: [
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'Hauptsatz',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'Konj.',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'Mittelfeld',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'zu + Infinitiv',
-                                          style: textTheme.bodyMedium)),
-                                ]),
-                                TableRow(children: [
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'Hans bleibt lieber zu Hause',
-                                          style: textTheme.bodyMedium!
-                                              .copyWith(color: Colors.red))),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'anstatt',
-                                          style: textTheme.bodyMedium!
-                                              .copyWith(color: Colors.blue))),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'seinem Freund',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'zu helfen.',
-                                          style: textTheme.bodyMedium!
-                                              .copyWith(color: Colors.blue))),
-                                ]),
-                                TableRow(children: [
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'Herr Kost arbeitet lieber',
-                                          style: textTheme.bodyMedium!
-                                              .copyWith(color: Colors.red))),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'anstatt',
-                                          style: textTheme.bodyMedium!
-                                              .copyWith(color: Colors.blue))),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'zu Hause',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'zu bleiben.',
-                                          style: textTheme.bodyMedium!
-                                              .copyWith(color: Colors.blue))),
-                                ]),
-                                TableRow(children: [
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'Elke liest lieber ein Buch',
-                                          style: textTheme.bodyMedium!
-                                              .copyWith(color: Colors.red))),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'statt',
-                                          style: textTheme.bodyMedium!
-                                              .copyWith(color: Colors.blue))),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: '',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'fernzusehen.',
-                                          style: textTheme.bodyMedium!
-                                              .copyWith(color: Colors.blue))),
-                                ]),
-                                TableRow(children: [
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'Arndt geht lieber spazieren',
-                                          style: textTheme.bodyMedium!
-                                              .copyWith(color: Colors.red))),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'statt',
-                                          style: textTheme.bodyMedium!
-                                              .copyWith(color: Colors.blue))),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: '',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'schwimmen zu gehen.',
-                                          style: textTheme.bodyMedium!
-                                              .copyWith(color: Colors.blue))),
-                                ]),
-                              ],
-                            )
-                          ]),
-                        ),
-                      ),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.only(
-                          top: 10.0, left: 16.0, bottom: 10),
-                      child: RichText(
-                        text: TextSpan(
-                          style: textTheme.bodyMedium,
-                          children: <TextSpan>[
-                            TextSpan(text: 'Siehe auch '),
-                            TextSpan(
-                                text: 'alternative Begleitumstände',
-                                style: TextStyle(fontWeight: FontWeight.bold)),
-                            TextSpan(text: '.'),
-                          ],
-                        ),
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-            ],
-          ),
-        ),
+            padding: const EdgeInsets.all(8.0),
+            child: MyPageContentView(contents: contents)),
       ),
     );
   }
 }
+
+List<CardContent> contents = [
+  CardContent(
+    elements: [
+      CardElement(type: ElementType.pageTitle, value: title),
+    ],
+  ),
+  CardContent(
+    elements: [
+      CardElement(type: ElementType.cardTitle, value: title1),
+      CardElement(type: ElementType.htmlContent, value: htmlContent1_1),
+    ],
+  ),
+  CardContent(
+    elements: [
+      CardElement(type: ElementType.cardTitle, value: title2),
+      CardElement(type: ElementType.htmlContent, value: htmlContent2_1),
+      CardElement(type: ElementType.htmlTable, value: htmlTable2_2),
+      CardElement(type: ElementType.htmlContent, value: htmlContent2_3),
+    ],
+  ),
+  CardContent(
+    elements: [
+      CardElement(type: ElementType.cardTitle, value: title3),
+      CardElement(type: ElementType.htmlContent, value: htmlContent3_1),
+      CardElement(type: ElementType.htmlTable, value: htmlTable3_2),
+      CardElement(type: ElementType.htmlContent, value: htmlContent3_3),
+    ],
+  ),
+  CardContent(
+    elements: [
+      CardElement(type: ElementType.cardTitle, value: title4),
+      CardElement(type: ElementType.htmlContent, value: htmlContent4_1),
+      CardElement(type: ElementType.htmlTable, value: htmlTable4_2),
+      CardElement(type: ElementType.htmlContent, value: htmlContent4_3),
+    ],
+  ),
+];
+
+String title = '5.6. Infinitivkonstruktionen';
+
+String title1 = 'Was man über Infinitivkonstruktionen wissen sollte.';
+String htmlContent1_1 = '''
+<p>Die Infinitivkonstruktionen "<strong><a title="Finalsatz" href="lernen.php?menu_id=51#um_zu">um ... zu</a></strong>", "<strong><a title="ohne ... zu" href="lernen.php?menu_id=51#ohne_zu">ohne ... zu</a></strong>" und "<strong><a title="anstatt" href="lernen.php?menu_id=51#anstatt_zu">anstatt ... zu</a></strong>" sind <span style="text-decoration:underline">unabhängig von bestimmten Verben</span>. Sie haben andere Funktionen. Sie haben allerdings gemein, dass das Verb im <strong><span class="red">Infinitiv am Satzende</span></strong> steht und dass sie <strong><span class="red">subjektlos</span></strong> sind.</p>
+
+<li>Die Studenten lernen Deutsch, <strong><span class="red">um</span></strong> in Deutschland <strong><span class="red">zu studieren</span></strong>.</li>
+<li>Helmut ging nach Hause, <strong><span class="red">ohne</span></strong> sich <strong><span class="red">zu verabschieden</span></strong>.</li>
+<li>Der Programmierer surft im Internet, <strong><span class="red">anstatt zu arbeiten</span></strong>.</li>
+''';
+
+String title2 = 'Sätze mit "um ... zu + Infinitiv"';
+String htmlContent2_1 = '''
+<p>Mit der Konjunktion "<strong><span class="red">um ... zu</span></strong>" werden <strong><a title="Finalsatz" href="lernen.php?menu_id=94">Finalsätze</a></strong> ausgedrückt. Ein Finalsatz fragt nach einem <span style="text-decoration:underline">Ziel bzw. einer Absicht</span>. Das Fragewort lautet "<strong><span class="red">wozu</span></strong>". Ist das Subjekt im Beziehungssatz (=Hauptsatz) mit dem Nebensatz <span style="text-decoration:underline">identisch</span>, wird die Konjunktion "um ... zu" benutzt. In der Infinitivkonstruktion <span style="text-decoration:underline">entfällt das Subjekt</span>. Der Infinitiv wird <span style="text-decoration:underline">am Ende des Satzes</span> gestellt.</p>
+<h4>Wozu lernst du Deutsch?</h4>
+
+<li>Ich möchte in Deutschland studieren.</li>
+<li>Ich möchte mich besser mit Deutschen unterhalten können.</li>
+<li>Ich möchte bessere Berufsaussichten haben.</li>
+<li>Ich möchte die Deutschen besser verstehen können.</li>
+''';
+String htmlTable2_2 = '''
+<table><colgroup> <col style="width: 23%;"> <col style="width: 9%;"> <col style="width: 38%;"> <col style="width: 30%;"> </colgroup>
+<thead>
+<tr>
+<th>Hauptsatz</th>
+<th>Konj.</th>
+<th>Mittelfeld</th>
+<th>zu + Infinitiv</th>
+</tr>
+</thead>
+<tbody align="center">
+<tr>
+<td><strong><span class="red">Ich lerne Deutsch</span></strong>,</td>
+<td><strong><span class="blue">um</span></strong></td>
+<td>in Deutschland</td>
+<td><strong><span class="blue">studieren zu können</span></strong>.</td>
+</tr>
+<tr>
+<td><strong><span class="red">Ich lerne Deutsch</span></strong>,</td>
+<td><strong><span class="blue">um</span></strong></td>
+<td>mich besser mit Deutschen</td>
+<td><strong><span class="blue">unterhalten zu können</span></strong>.</td>
+</tr>
+<tr>
+<td><strong><span class="red">Ich lerne Deutsch</span></strong>,</td>
+<td><strong><span class="blue">um</span></strong></td>
+<td>bessere Berufsaussichten</td>
+<td><strong><span class="blue">zu haben</span></strong>.</td>
+</tr>
+<tr>
+<td><strong><span class="red">Ich lerne Deutsch</span></strong>,</td>
+<td><strong><span class="blue">um</span></strong></td>
+<td>die Deutschen besser</td>
+<td><strong><span class="blue">verstehen zu können</span></strong>.</td>
+</tr>
+</tbody>
+</table>
+''';
+String htmlContent2_3 = '''
+<p><br> Siehe auch <strong><a title="Finalsatz" href="lernen.php?menu_id=94">Finalsätze</a></strong></p>  
+''';
+
+String title3 = 'Sätze mit "ohne ... zu + Infinitiv"';
+String htmlContent3_1 = '''
+<p>Die Konjunktion "<strong><span class="red">ohne ... zu</span></strong>" kann anstelle einer <strong><a title="Negation" href="lernen.php?menu_id=17#konjunktionen">Negation</a></strong> benutzt werden.</p>
+
+<li>Peter ist nach Hause gegangen. Er hat sich <strong><span class="red">nicht</span></strong> verabschiedet.</li>
+<li>Der Angler fischt am See. Er hat <strong><span class="red">keinen</span></strong> Angelschein.</li>
+<li>Frau Jolly geht im Supermarkt einkaufen. Sie hat <strong><span class="red">kein</span></strong> Geld dabei.</li>
+<li>Der Autofahrer fährt in der Nacht Auto. Er hat das Licht <strong><span class="red">nicht</span></strong> angeschaltet.</li>
+''';
+String htmlTable3_2 = '''
+<table><colgroup> <col style="width: 36%;"> <col style="width: 11%;"> <col style="width: 23%;"> <col style="width: 30%;"> </colgroup>
+<thead>
+<tr>
+<th>Hauptsatz</th>
+<th>Konj.</th>
+<th>Mittelfeld</th>
+<th>zu + Infinitiv</th>
+</tr>
+</thead>
+<tbody align="center">
+<tr>
+<td><strong><span class="red">Er ist nach Hause gegangen</span></strong>,</td>
+<td><strong><span class="blue">ohne</span></strong></td>
+<td>sich</td>
+<td><strong><span class="blue">zu verabschieden</span></strong>.</td>
+</tr>
+<tr>
+<td><strong><span class="red">Der Angler fischt am See</span></strong>,</td>
+<td><strong><span class="blue">ohne</span></strong></td>
+<td>einen Angelschein</td>
+<td><strong><span class="blue">zu haben</span></strong>.</td>
+</tr>
+<tr>
+<td><strong><span class="red">Frau Jolly geht einkaufen</span></strong>,</td>
+<td><strong><span class="blue">ohne</span></strong></td>
+<td>Geld dabei</td>
+<td><strong><span class="blue">zu haben</span></strong>.</td>
+</tr>
+<tr>
+<td><strong><span class="red">Er fährt in der Nacht Auto</span></strong>,</td>
+<td><strong><span class="blue">ohne</span></strong></td>
+<td>das Licht</td>
+<td><strong><span class="blue">anzuschalten</span></strong>.</td>
+</tr>
+</tbody>
+</table>
+''';
+String htmlContent3_3 = '''
+<p><br> Siehe auch <strong><a title="Negation" href="lernen.php?menu_id=17#konjunktionen">Negation / Konjunktionen mit verneinenden Aussagen</a></strong> und <strong><a title="Fehlende Begleitumstände" href="lernen.php?menu_id=96#fehlende_begleitumstaende">fehlende Begleitumstände</a></strong></p>  
+''';
+
+String title4 = 'Sätze mit (an)statt ... zu + Infinitiv"';
+String htmlContent4_1 = '''
+<p>Die Konjunktion "<strong><a title="Alternative Begleitumstände" href="lernen.php?menu_id=96#alternative_begleitumstaende">(an)statt ... zu</a></strong>" benutzt man, wenn etwas anderes passiert, als die erwartete Situation.</p>
+
+<li>Hans hilft seinem Freund nicht. Er bleibt lieber zu Hause.</li>
+<li>Herr Kost bleibt nicht zu Hause. Er arbeitet lieber.</li>
+<li>Elke sieht nicht gern fern. Lieber liest sie ein spannendes Buch.</li>
+<li>Arndt geht nicht gern schwimmen. Er geht lieber spazieren.</li>
+''';
+String htmlTable4_2 = '''
+<table><colgroup> <col style="width: 35%;"> <col style="width: 13%;"> <col style="width: 23%;"> <col style="width: 29%;"> </colgroup>
+<thead>
+<tr>
+<th>Hauptsatz</th>
+<th>Konj.</th>
+<th>Mittelfeld</th>
+<th>zu + Infinitiv</th>
+</tr>
+</thead>
+<tbody align="center">
+<tr>
+<td><strong><span class="red">Hans bleibt lieber zu Hause</span></strong>,</td>
+<td><strong><span class="blue">anstatt</span></strong></td>
+<td>seinem Freund</td>
+<td><strong><span class="blue">zu helfen</span></strong>.</td>
+</tr>
+<tr>
+<td><strong><span class="red">Herr Kost arbeitet lieber</span></strong>,</td>
+<td><strong><span class="blue">anstatt</span></strong></td>
+<td>zu Hause</td>
+<td><strong><span class="blue">zu bleiben</span></strong>.</td>
+</tr>
+<tr>
+<td><strong><span class="red">Elke liest lieber ein Buch</span></strong>,</td>
+<td><strong><span class="blue">statt</span></strong></td>
+<td>&nbsp;</td>
+<td><strong><span class="blue">fernzusehen</span></strong>.</td>
+</tr>
+<tr>
+<td><strong><span class="red">Arndt geht lieber spazieren</span></strong>,</td>
+<td><strong><span class="blue">statt</span></strong></td>
+<td>&nbsp;</td>
+<td><strong><span class="blue">schwimmen zu gehen</span></strong>.</td>
+</tr>
+</tbody>
+</table>
+''';
+String htmlContent4_3 = '''
+<p><br> Siehe auch <strong><a title="Alternative_Begleitumstände" href="lernen.php?menu_id=96#alternative_begleitumstaende">alternative Begleitumstände</a></strong></p>  
+''';

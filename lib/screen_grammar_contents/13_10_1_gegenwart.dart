@@ -50,39 +50,28 @@ List<CardContent> contents = [
   ),
 ];
 
-String title = '''
-13.10.1. Gegenwart / Präsens
-''';
-String title1 = '''
-Was man über das Präsens wissen sollte.
-''';
+String title = '13.10.1. Gegenwart / Präsens';
+String title1 = 'Was man über das Präsens wissen sollte.';
 String htmlContent1 = '''
- <div>
 <p>Die Konjugation der Verben im Präsens wurde in den vorangegangenen Kapiteln eingehend besprochen.<br> Wir wissen bereits, wie</p>
-</div>
-<p>&nbsp;</p>
+
 <p style="padding-left: 30px;">- die Verben <strong><a title="Verb sein" href="sein.html" target="_blank">sein</a></strong> und <strong><a title="Verb haben" href="das-verb-haben.html" target="_blank">haben</a></strong>,</p>
 <p style="padding-left: 30px;">- die <strong><a title="Regelmäßige Verben" href="verben-mit-regelmaessigen-stammformen.html" target="_blank">regelmäßigen</a></strong> und <strong><a title="Unregelmäßige Verben" href="starke-und-unregelmaessige-verben.html" target="_blank">unregelmäßigen Verben</a></strong>,</p>
 <p style="padding-left: 30px;">- die <strong><a title="Trennbare Verben" href="trennbare-verben.html" target="_blank">trennbaren</a></strong> und <strong><a title="Verben mit untrennbaren Präfixen" href="trennbare-verben.html#untrennbare Präfixe" target="_blank">untrennbare Verben</a></strong>,</p>
 <p style="padding-left: 30px;">- die <strong><a title="Modalverben" href="modalverben.html" target="_blank">Modalverben</a></strong> und</p>
 <p style="padding-left: 30px;">- die <strong><a title="Reflexive Verben" href="reflexive-verben.html" target="_blank">reflexiven Verben</a></strong></p>
-<p>&nbsp;</p>
-<div>
+
 <p>konjugiert werden. Alle Beispiele zeigen die <strong><a title="Konjugation" href="konjugation-der-verben.html" target="_blank">Konjugation</a></strong> der Verben im <span style="text-decoration:underline">Präsens</span>.</p>
-</div>
+
 ''';
 
-String title2 = '''
- Der Gebrauch des Präsens
-''';
+String title2 = 'Der Gebrauch des Präsens';
 String htmlContent2_1 = '''
- <div>
 <p>Das Präsens drückt aus:</p>
-</div>
-<div>
+
 <h3><strong><span class="blue">- Was jetzt passiert</span></strong>.</h3>
 ''';
-String htmlTable2_1 ='''
+String htmlTable2_1 = '''
 <table><colgroup> <col style="width: 18%;"> <col style="width: 15%;"> <col style="width: 15%;"> <col style="width: 37%;"> <col style="width: 15%;"> </colgroup>
 <thead>
 <tr>
@@ -128,7 +117,7 @@ String htmlTable2_1 ='''
 String htmlContent2_2 = '''
 <h3><strong><span class="blue">- Was früher begonnen hat und bis jetzt andauert</span></strong>.</h3>
 ''';
-String htmlTable2_2 ='''
+String htmlTable2_2 = '''
 <table><colgroup> <col style="width: 17%;"> <col style="width: 19%;"> <col style="width: 13%;"> <col style="width: 38%;"> <col style="width: 12%;"> </colgroup>
 <thead>
 <tr>
@@ -174,7 +163,7 @@ String htmlTable2_2 ='''
 String htmlContent2_3 = '''
 <h3><strong><span class="blue">- Was für immer gilt</span></strong></h3>
 ''';
-String htmlTable2_3 ='''
+String htmlTable2_3 = '''
 <table><colgroup> <col style="width: 20%;"> <col style="width: 13%;"> <col style="width: 10%;"> <col style="width: 46%;"> <col style="width: 11%;"> </colgroup>
 <thead>
 <tr>
@@ -220,7 +209,7 @@ String htmlTable2_3 ='''
 String htmlContent2_4 = '''
 <h3><strong><span class="blue">- Was zukünftig passiert</span></strong></h3>
 ''';
-String htmlTable2_4 ='''
+String htmlTable2_4 = '''
 <table><colgroup> <col style="width: 15%;"> <col style="width: 18%;"> <col style="width: 15%;"> <col style="width: 40%;"> <col style="width: 12%;"> </colgroup>
 <thead>
 <tr>
@@ -257,17 +246,12 @@ String htmlTable2_4 ='''
 </table>
 ''';
 
-String title3 = '''
-Ein zukünftiges Ereignis
-''';
+String title3 = 'Ein zukünftiges Ereignis';
 String htmlContent3 = '''
- <div>
 <p>Ein zukünftiges Geschehen ist in der deutschen Sprache nicht schwierig zu bilden. Es wird mit dem <strong><span class="blue">Präsens in Verbindung</span></strong> <strong><span class="red">mit einem Zeitwort</span></strong> gebildet, das <span style="text-decoration:underline">einen Hinweis auf ein zukünftiges Ereignis</span> gibt. Folgende Zeitwörter geben ein zukünftiges Ereignis an:</p>
-</div>
+
 <p><br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- sofort (in ein paar Sekunden) <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- gleich (in ein paar Sekunden / Minuten) <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- in 5 Minuten <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- in einer Stunde<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- bald (in ein paar Minuten / Stunden)<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- nachher (in ein paar Minuten / Stunden)<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- heute Abend <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- morgen <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- morgen früh<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- morgen Mittag / Abend<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- übermorgen<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- in drei Tagen <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- am kommenden Wochenende <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- nächste Woche<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- übernächste Woche<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- demnächst <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- in ein paar Tagen / Wochen)<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- bald (Tage / Wochen je nach Kontext) <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- in drei Wochen<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- im nächsten Monat<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- im kommenden Sommer / Winter <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- in einem halben Jahr<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- in zwei Monaten<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- nächstes Jahr<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- im nächsten Jahr<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- in drei Jahren<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- im Jahre 2089<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- in der Zukunft</p>
-<p>&nbsp;</p>
+
 <div>Sätze, die ein zukünftiges Ereignis angeben sollen, beginnen häufig mit einem entsprechenden Zeitwort.<br> <br> Beispiele: <br><br>
 <p style="padding-left: 30px;"><strong><span class="red">Gleich</span></strong> kommt dein Vater von der Arbeit zurück.<br> <strong><span class="red">Übermorgen</span></strong> fährt Ulrike in Urlaub.<br> <strong><span class="red">In zwei Monaten</span></strong> wird unser Sohn volljährig.</p>
-</div>  
 ''';
-

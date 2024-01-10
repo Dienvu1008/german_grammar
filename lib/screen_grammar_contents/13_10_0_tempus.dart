@@ -63,17 +63,16 @@ List<CardContent> contents = [
 String title = '13.10. Tempus';
 String title1 = 'Was man über die Zeitformen wissen sollte.';
 String htmlContent1 = '''
-<div>
 <p>In der deutschen Sprache gibt es <strong><span class="red">sechs verschiedene Zeitformen</span></strong>.<br> Die einzelne Zeitform wird <strong><span class="red">Tempus</span></strong> genannt.<br> (Singular: das Tempus; Plural: die Tempora):</p>
-</div>
+
 <h3>Vergangenheit</h3>
 <p style="padding-left: 30px;"><strong><a title="Einführung Perfekt" href="perfekt.html#einfuehrung" target="_blank">Perfekt</a></strong></p>
 <p style="padding-left: 30px;"><strong><a title="Einführung Präteritum" href="praeteritum.html#einfuehrung" target="_blank">Präteritum (Imperfekt)</a></strong></p>
 <p style="padding-left: 30px;"><strong><a title="Einführung Plusquamperfekt" href="plusquamperfekt.html#einfuehrung" target="_blank">Plusquamperfekt (Vorvergangenheit)</a></strong></p>
-<p>&nbsp;</p>
+
 <h3>Gegenwart</h3>
 <p style="padding-left: 30px;"><strong><a title="Einführung Präsens" href="gegenwart.html#einfuehrung" target="_blank">Präsens</a></strong></p>
-<p>&nbsp;</p>
+
 <h3>Zukunft</h3>
 <p style="padding-left: 30px;"><strong><a title="Einführung Futur I" href="futur-1.html#einfuehrung" target="_blank">Futur I</a></strong></p>
 <p style="padding-left: 30px;"><strong><a title="Einführung Futur II" href="futur-2.html#einfuehrung" target="_blank">Futur II</a></strong></p>  
@@ -81,17 +80,13 @@ String htmlContent1 = '''
 
 String title2 = 'Die Vergangenheit';
 String htmlContent2_1 = '''
- <div>
 <p>Die Vergangenheit im Deutschen besitzt <strong><span class="red">zwei Zeitstufen</span></strong>.<br><br> Das <strong><span class="red">Perfekt</span></strong> und das <strong><span class="red">Präteritum</span></strong> bildet <strong><span class="red">eine Zeitstufe</span></strong>, das Plusquamperfekt die andere.<br><br> Es ist wichtig zu verstehen, dass das <span style="text-decoration:underline">Perfekt und das Präteritum zur gleichen Zeitstufe gehören</span>. Der Unterschied liegt alleinig in ihrer Verwendung:</p>
-</div>
-<p>&nbsp;</p>
+
 <h3><a title="Einführung, Bildung und Gebrauch des Pefekts" href="perfekt.html#einfuehrung" target="_blank">Das Perfekt</a></h3>
-<div>
+
 <p>Das Perfekt benutzt man überwiegend in der <strong><span class="blue">gesprochenen Sprache</span></strong>, also beim <strong><span class="red">Sprechen</span></strong>. Das Perfekt <span style="text-decoration:underline">braucht einen Gesprächspartner</span>, dem man etwas aus der Vergangenheit berichten möchte. Der Gesprächspartner ist dem Sprecher vertraut und kommt in der Regel aus der <strong><span class="red">Familie</span></strong>, dem <strong><span class="red">Freundes-</span></strong> oder dem <strong><span class="red">Bekanntenkreis</span></strong>. Beispiele:</p>
-</div>
-<p>&nbsp;</p>
 ''';
-String htmlTable2_1 ='''
+String htmlTable2_1 = '''
 <table><colgroup> <col style="width: 14%;"> <col style="width: 13%;"> <col style="width: 52%;"> <col style="width: 21%;"> </colgroup>
 <thead>
 <tr>
@@ -124,14 +119,11 @@ String htmlTable2_1 ='''
 </table>
 ''';
 String htmlContent2_2 = '''
-<p>&nbsp;</p>
 <h3><a title="Einführung, Bildung und Gebrauch des Präteritums" href="praeteritum.html#einfuehrung" target="_blank">Das Präteritum</a></h3>
-<div>
+
 <p>Das Präteritum benutzt man überwiegend in <strong><span class="red">geschriebenen Texten</span></strong>. Dazu gehören zum Beispiel <span style="text-decoration:underline">Zeitungen</span>, <span style="text-decoration:underline">Zeitschriften</span>, <span style="text-decoration:underline">Literatur</span> etc. Auch die Nachrichten im <span style="text-decoration:underline">Fernsehen</span> oder im <span style="text-decoration:underline">Radio</span> berichten Vergangenes im Präteritum, obwohl diese gesprochen werden. Beispiele:</p>
-</div>
-<p>&nbsp;</p>
 ''';
-String htmlTable2_2 ='''
+String htmlTable2_2 = '''
 <table><colgroup> <col style="width: 16%;"> <col style="width: 12%;"> <col style="width: 62%;"> <col style="width: 10%;"> </colgroup>
 <thead>
 <tr>
@@ -165,24 +157,19 @@ String htmlTable2_2 ='''
 ''';
 String htmlContent2_3 = '''
 <h3><a title="Plusquamperfekt" href="plusquamperfekt.html#einfuehrung" target="_blank">Das Plusquamperfekt</a></h3>
-<div>
+
 <p>Das Plusquamperfekt, auch die <strong><span class="red">Vorvergangenheit</span></strong> genannt, gibt die Vergangenheit wieder, die <strong><span class="red">vor</span></strong> <span style="text-decoration:underline">dem Präteritum / Perfekt</span> geschehen war und die für die Handlung im Präteritum / Perfekt wichtig ist. Deshalb heißt sie auch Vorvergangenheit.<br><br> Beispiele:</p>
-</div>
-<p>&nbsp;</p>
-<div>
+
 <p>Klaus <strong><span class="red">war</span></strong> bereits ins Bett <strong><span class="red">gegangen</span></strong> und <strong><span class="red">hatte</span></strong> das Licht <strong><span class="red">ausgemacht</span></strong>, als plötzlich das Telefon klingelte. Er tastete nach seiner Brille, die normalerweise auf dem Nachttischchen lag, als ihm plötzlich einfiel, dass er sie bereits im Bad <strong><span class="red">ausgezogen hatte</span></strong>, weil er noch <strong><span class="red">geduscht hatte</span></strong>, bevor er ins Bett ging. ...</p>
-</div>  
 ''';
 
 String title3 = 'Die Gegenwart';
 String htmlContent3_1 = '''
-<div>
 <p>Die Gegenwart (= das <strong><span class="red">Präsens</span></strong>) drückt aus:</p>
-</div>
+
 <h3><strong>- <span class="blue">Was jetzt passiert</span></strong>.</h3>
-<p>&nbsp;</p>
 ''';
-String htmlTable3_1 ='''
+String htmlTable3_1 = '''
 <table><colgroup> <col style="width: 20%;"> <col style="width: 20%;"> <col style="width: 20%;"> <col style="width: 40%;"> </colgroup>
 <thead>
 <tr>
@@ -221,11 +208,9 @@ String htmlTable3_1 ='''
 </table>
 ''';
 String htmlContent3_2 = '''
-<p>&nbsp;</p>
 <h3><strong>- <span class="blue">Was früher begonnen hat und bis jetzt andauert</span></strong>.</h3>
-<p>&nbsp;</p>
 ''';
-String htmlTable3_2 ='''
+String htmlTable3_2 = '''
 <table><colgroup> <col style="width: 35%;"> <col style="width: 15%;"> <col style="width: 50%;"> </colgroup>
 <thead>
 <tr>
@@ -254,11 +239,9 @@ String htmlTable3_2 ='''
 </table>
 ''';
 String htmlContent3_3 = '''
-<p>&nbsp;</p>
 <h3><strong>- <span class="blue">Was für immer gilt</span></strong>.</h3>
-<p>&nbsp;</p>
 ''';
-String htmlTable3_3 ='''
+String htmlTable3_3 = '''
 <table><colgroup> <col style="width: 35%;"> <col style="width: 15%;"> <col style="width: 50%;"> </colgroup>
 <thead>
 <tr>
@@ -287,11 +270,9 @@ String htmlTable3_3 ='''
 </table>
 ''';
 String htmlContent3_4 = '''
-<p>&nbsp;</p>
 <h3>- <a title="Ein zukünftiges Geschehen wird mit dem Präsens in Verbindung mit einem Zeitwort gebildet." href="gegenwart.html#zukuenftiges" target="_blank"><strong><span class="blue">Ein zukünftiges Geschehen</span></strong></a>.</h3>
-<p>&nbsp;</p>
 ''';
-String htmlTable3_4 ='''
+String htmlTable3_4 = '''
 <table><colgroup> <col style="width: 35%;"> <col style="width: 15%;"> <col style="width: 50%;"> </colgroup>
 <thead>
 <tr>
@@ -322,16 +303,14 @@ String htmlTable3_4 ='''
 
 String title4 = 'Die Zukunft';
 String htmlContent4 = '''
-
-      <div>Wie bereits gesehen, wird ein <strong><span class="blue">zukünftiges Geschehen</span></strong> mit dem <strong><span class="red">Präsens in Verbindung mit einem Zeitwort</span></strong> gebildet, das <span style="text-decoration:underline">einen Hinweis auf ein zukünftiges Ereignis</span> gibt. Zeitwörter sind zum Beispiel:<br><br>
+<div>Wie bereits gesehen, wird ein <strong><span class="blue">zukünftiges Geschehen</span></strong> mit dem <strong><span class="red">Präsens in Verbindung mit einem Zeitwort</span></strong> gebildet, das <span style="text-decoration:underline">einen Hinweis auf ein zukünftiges Ereignis</span> gibt. Zeitwörter sind zum Beispiel:<br><br>
 <p style="padding-left: 30px;">gleich, in 5 Minuten, in einer Stunde, heute Abend, morgen, übermorgen, in drei Tagen, am kommenden Wochenende, nächste Woche, etc. ...</p>
 <br> Die beiden Zeitstufen Futur I und Futur II dagegen erfüllen andere Aufgaben!</div>
-<p>&nbsp;</p>
+
 <h3><a title="Bildung und Gebrauch des Futurs I" href="futur-1.html#einfuehrung" target="_blank">Futur I</a></h3>
-<div>
+
 <p>Das Futur I wird benutzt:</p>
-</div>
-<p>&nbsp;</p>
+
 <p style="padding-left: 30px;">- <strong><span class="blue">um eine Prognose zu machen</span></strong></p>
 <p style="padding-left: 60px;">Es zieht sich immer mehr zu. Es <strong><span class="red">wird</span></strong> heute noch <strong><span class="red">regnen</span></strong>. <br> Marianne ist sehr verliebt. Sie <strong><span class="red">wird</span></strong> ihn wohl bald <strong><span class="red">heiraten</span></strong>. <br> Der Patient ist sehr schwer erkrankt. Wahrscheinlich <strong><span class="red">wird</span></strong> er das nicht <strong><span class="red">überleben</span></strong>.</p>
 <p>&nbsp;</p>
@@ -348,15 +327,12 @@ String htmlContent4 = '''
 <p style="padding-left: 60px;">Du <strong><span class="red">wirst</span></strong> mir sofort das Geld <strong><span class="red">zurückgeben</span></strong>. <br> Ihr <strong><span class="red">werdet</span></strong> euch sofort bei Herrn Kunert <strong><span class="red">entschuldigen</span></strong>! <br> Noah! Wie sieht denn dein Zimmer aus? Du <strong><span class="red">wirst</span></strong> es sofort <strong><span class="red">aufräumen</span></strong>.</p>
 <p style="padding-left: 30px;"><br><br></p>
 <h3><a title="Bildung und Gebrauch des Futurs II" href="futur-2.html#einfuehrung" target="_blank">Futur II</a></h3>
-<div>
+
 <p>Das Futur II wird sehr selten benutzt. Es prognostiziert eine <strong><span class="blue">abgeschlossene Handlung in der Zukunft</span></strong> oder eine <strong><span class="blue">abgeschlossene Vermutung</span></strong>.</p>
-</div>
-<p>&nbsp;</p>
+
 <p style="padding-left: 30px;">- <strong><span class="blue">Prognose mit abgeschlossener Handlung</span></strong></p>
 <p style="padding-left: 60px;">Im Jahre 2.133 <strong><span class="red">wird</span></strong> man einige Lebewesen <strong><span class="red">geklont haben</span></strong>. <br> Im Jahre 5.498 <strong><span class="red">werden</span></strong> die Fische im Meer <strong><span class="red">ausgestorben sein</span></strong>. <br> Im Jahre 100.000 <strong><span class="red">wird</span></strong> der letzte Mensch die Erde <strong><span class="red">verlassen haben</span></strong>, da sie unbewohnbar <strong><span class="red">geworden sein wird</span></strong>.</p>
-<p>&nbsp;</p>
+
 <p style="padding-left: 30px;">- <strong><span class="blue">Vermutung mit abgeschlossener Handlung</span></strong></p>
 <p style="padding-left: 60px;">Alle Passagiere haben das Flugzeug verlassen. Nur Herr Jansen ist nicht dabei gewesen. Er <strong><span class="red">wird</span></strong> den Flug wohl <strong><span class="red">verpasst haben</span></strong>. <br> Bei uns wurde eingebrochen. Die Einbrecher <strong><span class="red">werden</span></strong> wohl durchs offene Kellerfenster ins Haus <strong><span class="red">gekommen sein</span></strong>. <br> Der Student hat sein Studium nach nur 4 Semestern mit "sehr gut" abgeschlossen. Er <strong><span class="red">wird</span></strong> wohl sehr fleißig <strong><span class="red">gewesen sein</span></strong>.</p>  
-  
 ''';
-

@@ -339,57 +339,57 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
             drawer: MyAppDrawer(
                 _selectedDrawerItemIndex, _onDrawerItemTapped, localizations),
             body: createPage(),
-            navigationRail: showLargeSizeLayout?  MyAppDrawer(
-                _selectedDrawerItemIndex, _onDrawerItemTapped, localizations): Visibility(
-              visible: false,
-              child: Container()
-            ) ,
-            // NavigationRail(
-            //   extended: showLargeSizeLayout,
-            //   destinations: 
-            //   _selectedDrawerItemIndex ==
-            //           ScreenSelected.adjektive_deklination_1.value
-            //       ? navRailDemoScreen1Destinations
-            //       : _selectedDrawerItemIndex ==
-            //               ScreenSelected.settingsScreen.value
-            //           ? navRailSettingsScreenDestinations
-            //           : _selectedDrawerItemIndex ==
-            //                   ScreenSelected.aboutUsScreen.value
-            //               ? navRailAboutUsScreenDestinations
-            //               : _selectedDrawerItemIndex ==
-            //                       ScreenSelected
-            //                           .adjektivdeklination_typ1_1_1.value
-            //                   ? navRailDemoScreen2Destinations
-            //                   : navRailMaterialDesignScreenDestinations,
-            //   selectedIndex: _selectedNavBarItemIndex,
-            //   onDestinationSelected: (index) {
-            //     setState(() {
-            //       _selectedNavBarItemIndex = index;
-            //       _onNavBarItemTapped(_selectedNavBarItemIndex);
-            //     });
-            //   },
-            //   trailing: Expanded(
-            //     child: Padding(
-            //       padding: const EdgeInsets.only(bottom: 20),
-            //       child: showLargeSizeLayout
-            //           ? _ExpandedTrailingActions(
-            //               useLightMode: widget.useLightMode,
-            //               handleBrightnessChange: widget.handleBrightnessChange,
-            //               useMaterial3: widget.useMaterial3,
-            //               handleMaterialVersionChange:
-            //                   widget.handleMaterialVersionChange,
-            //               handleImageSelect: widget.handleImageSelect,
-            //               handleColorSelect: widget.handleColorSelect,
-            //               colorSelectionMethod: widget.colorSelectionMethod,
-            //               imageSelected: widget.imageSelected,
-            //               colorSelected: widget.colorSelected,
-            //               handleLanguageSelect: widget.handleLanguageSelect,
-            //               languageSelected: widget.languageSelected,
-            //             )
-            //           : _trailingActions(),
-            //     ),
-            //   ),
-            // ),
+            navigationRail: 
+            // showLargeSizeLayout
+            //     ? MyAppDrawer(_selectedDrawerItemIndex, _onDrawerItemTapped,
+            //         localizations)
+            //     : Visibility(visible: false, child: Container()),
+            NavigationRail(
+              extended: showLargeSizeLayout,
+              destinations:
+              _selectedDrawerItemIndex ==
+                      ScreenSelected.adjektive_deklination_1.value
+                  ? navRailDemoScreen1Destinations
+                  : _selectedDrawerItemIndex ==
+                          ScreenSelected.settingsScreen.value
+                      ? navRailSettingsScreenDestinations
+                      : _selectedDrawerItemIndex ==
+                              ScreenSelected.aboutUsScreen.value
+                          ? navRailAboutUsScreenDestinations
+                          : _selectedDrawerItemIndex ==
+                                  ScreenSelected
+                                      .adjektivdeklination_typ1_1_1.value
+                              ? navRailDemoScreen2Destinations
+                              : navRailMaterialDesignScreenDestinations,
+              selectedIndex: _selectedNavBarItemIndex,
+              onDestinationSelected: (index) {
+                setState(() {
+                  _selectedNavBarItemIndex = index;
+                  _onNavBarItemTapped(_selectedNavBarItemIndex);
+                });
+              },
+              trailing: Expanded(
+                child: Padding(
+                  padding: const EdgeInsets.only(bottom: 20),
+                  child: showLargeSizeLayout
+                      ? _ExpandedTrailingActions(
+                          useLightMode: widget.useLightMode,
+                          handleBrightnessChange: widget.handleBrightnessChange,
+                          useMaterial3: widget.useMaterial3,
+                          handleMaterialVersionChange:
+                              widget.handleMaterialVersionChange,
+                          handleImageSelect: widget.handleImageSelect,
+                          handleColorSelect: widget.handleColorSelect,
+                          colorSelectionMethod: widget.colorSelectionMethod,
+                          imageSelected: widget.imageSelected,
+                          colorSelected: widget.colorSelected,
+                          handleLanguageSelect: widget.handleLanguageSelect,
+                          languageSelected: widget.languageSelected,
+                        )
+                      : _trailingActions(),
+                ),
+              ),
+            ),
             navigationBar: Visibility(
               //bottom navigation bar sẽ không hiện ở các màn hình settings và about us
               // visible: _selectedDrawerItemIndex !=

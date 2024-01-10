@@ -16,6 +16,7 @@ class Zustandspassiv_13_11_3 extends StatelessWidget {
     );
   }
 }
+
 List<CardContent> contents = [
   CardContent(
     elements: [
@@ -46,13 +47,10 @@ List<CardContent> contents = [
   ),
 ];
 
-
 String title = '13.11.3. Zustandspassiv';
 String title1 = 'Was man über das Zustandspassiv wissen sollte.';
 String htmlContent1_1 = '''
- <div>
 <p>Das Vorgangspassiv stellt ein Geschehen, einen Vorgang dar. Es beschreibt eine Veränderung. Beim <strong><span class="red">Zustandspassiv</span></strong>, auch <strong><span class="red">sein-Passiv</span></strong> genannt, ist dieser Vorgang beendet. Er ist abgeschlossen. Das Zustandspassiv zeigt somit einen <span style="text-decoration:underline">erreichten Zustand</span>, ein <span style="text-decoration:underline">abgeschlossenes Ereignis</span> an und ist das <strong><span class="red">Ergebnis</span></strong> eines vorausgegangenen Vorgangs. Das Agens entfällt weitgehends. Das Zustandspassiv kann nur mit transitiven Verben gebildet werden. Diese Verben müssen darüber hinaus eine Handlung ausdrücken, die zu einem neuen Zustand führen.</p>
-</div>
 ''';
 String htmlTable1_2 = '''
 <table><colgroup> <col style="width: 25%;"> 
@@ -98,10 +96,7 @@ String htmlTable1_2 = '''
 
 String title2 = 'Die Bildung des Zustandspassivs';
 String htmlContent2_1 = '''
- <div>
 <p>Das Zustandspassiv wird mit dem Hilfsverb <strong><span class="red">sein</span></strong> und dem <strong><span class="blue">Partizip II</span></strong> gebildet:</p>
-</div>
-<p>&nbsp;</p>
 ''';
 String htmlTable2_2 = '''
 <table class="eins"><colgroup> <col style="width: 100%;"> </colgroup>
@@ -115,18 +110,13 @@ String htmlTable2_2 = '''
 </table>
 ''';
 String htmlContent2_3 = '''
-<p><br><br></p>
 <p style="padding-left: 30px;">- Das Geschäft <strong><span class="red">ist</span></strong> schon seit zwei Tagen wegen Krankheit <strong><span class="blue">geschlossen</span></strong>.</p>
 <p style="padding-left: 30px;">- Diese Kellertür <strong><span class="red">ist</span></strong> schon seit ewigen Zeiten <strong><span class="blue">verriegelt</span></strong>. Sie lässt sich nicht mehr öffnen.</p>  
 ''';
 
-
 String title3 = 'Die Zeitformen des Zustandspassivs';
 String htmlContent3_1 = '''
- <div>
 <p>Es gibt drei Zeitformen: Präsens, Präteritum und Futur I.</p>
-</div>
-<p>&nbsp;</p>
 ''';
 String htmlTable3_2 = '''
 <table><colgroup> <col style="width: 20%;"> 
@@ -197,5 +187,3 @@ String htmlTable3_2 = '''
 </tbody>
 </table>
 ''';
-
-

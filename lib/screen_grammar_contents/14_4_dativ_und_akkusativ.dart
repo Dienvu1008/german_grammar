@@ -57,17 +57,14 @@ List<CardContent> contents = [
 String title = '14.4. Dativ und Akkusativ';
 String title1 = 'Was man über Verben mit Dativ- und Akkusativ-Ergänzung wissen sollte.';
 String htmlContent1_1 = '''
- <div>
+
 <p>Einige <span style="text-decoration:underline">wenige</span> Verben haben sogar <span style="text-decoration:underline">drei</span> Ergänzungen, eine <span style="text-decoration:underline">Nominativ-</span>, eine <strong><span class="red">Dativ-</span></strong> und eine <strong><span class="red">Akkusativ-Ergänzung</span></strong>. Zu dieser Gruppe gehören vor allem Verben des <span style="text-decoration:underline">Gebens</span>, <span style="text-decoration:underline">Nehmens</span> und <span style="text-decoration:underline">Sagens</span>. Diese Verben haben die Besonderheit, dass gleich <strong><span class="red">zwei Personen und eine Sache in einem Satz</span></strong> vorkommen.</p>
-<p>&nbsp;</p>
-</div>
+
 <p style="padding-left: 30px;">In der <span style="text-decoration:underline">Nominativ-Ergänzung</span> steht <span style="text-decoration:underline">das Subjekt bzw. die Person, die das Verb konjugiert</span>.</p>
 <p style="padding-left: 30px;">&nbsp;</p>
 <p style="padding-left: 30px;">In der <strong><span class="red">Dativ-Ergänzung</span></strong> steht in der Regel <span style="text-decoration:underline">die andere Person</span>, die etwas "empfängt".</p>
 <p style="padding-left: 30px;">&nbsp;</p>
 <p style="padding-left: 30px;">In der <strong><span class="blue">Akkusativ-Ergänzung</span></strong> steht <span style="text-decoration:underline">die Sache</span>:</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
 ''';
 String htmlTable1_2 = '''
 <table><colgroup> <col style="width: 13%;"> <col style="width: 18%;"> <col style="width: 17%;"> <col style="width: 25%;"> <col style="width: 27%;"> </colgroup>
@@ -113,7 +110,6 @@ String htmlTable1_2 = '''
 </table>
 ''';
 String htmlContent1_3 = '''
-<div>
 <p style="padding-left: 30px;">- Bei Nomen oder Namen steht die <span style="text-decoration:underline">Nominativ-Ergänzung</span> in der Regel auf Position 1.</p>
 <p style="padding-left: 30px;">&nbsp;</p>
 <p style="padding-left: 30px;">- Das Prädikat behält in Aussagesätzen die Position 2.</p>
@@ -123,10 +119,7 @@ String htmlContent1_3 = '''
 <p style="padding-left: 30px;">- Das Akkusativ-Objekt steht am Satzende.</p>
 <p style="padding-left: 30px;">&nbsp;</p>
 <p style="padding-left: 30px;"><strong><span class="red">- Stehen im Dativ oder Akkusativ Pronomen, Artikel oder eine n-Deklination, müssen diese im entsprechenden Kasus dekliniert werden.</span></strong></p>
-</div>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<div>
+
 ''';
 String htmlTable1_4 = '''
 <table class="eins">
@@ -154,8 +147,6 @@ String htmlTable1_4 = '''
 String title2 = 'Objektwechsel bei Personalpronomen';
 String htmlContent2_1 = '''
 <p>Bei <strong><span class="red">Nomen oder Namen</span></strong> gilt: <br><br></p>
-<p>&nbsp;</p>
-<div>
 ''';
 String htmlTable2_2 = '''
 <table class="eins">
@@ -191,10 +182,7 @@ String htmlTable2_3 = '''
 </table>
 ''';
 String htmlContent2_4 = '''
-<p>&nbsp;</p>
 <p>Ist das <strong><span class="blue">Akkusativ-Objekt ein <span style="text-decoration:underline">Personalpronomen</span></span></strong> werden die Objekte <span style="text-decoration:underline">getauscht</span>:</p>
-<p>&nbsp;</p>
-<div>
 ''';
 String htmlTable2_5 = '''
 <table class="eins">
@@ -230,7 +218,6 @@ String htmlTable2_6 = '''
 </table>
 ''';
 String htmlContent2_7 = '''
-<p>&nbsp;</p>
 <p>Es können folgenden Kombinationen auftreten:</p>
 <p style="padding-left: 30px;"><strong><span class="red">rot</span></strong> = <strong><span class="red">Dativ-Objekt</span></strong> ( Person ) <br> <strong><span class="blue">blau</span></strong> = <strong><span class="blue">Akkusativ-Objekt</span></strong> ( Sache )</p>
 <p style="padding-left: 30px;">&nbsp;</p>
@@ -288,12 +275,9 @@ String htmlTable2_8 = '''
 
 String title3 = 'Liste der wichtigsten Verben mit Dativ- und Akkusativ-Ergänzung';
 String htmlContent3_1 = '''
-<div>
 <p>Es gibt nur <strong><span class="red">wenige Verben mit Dativ- und Akkusativ-Ergänzung</span></strong>. Daher sollte man folgende Verben kennen bzw. lernen.</p>
 <p>Folgende Liste gehört zum Grundwortschatz:</p>
 <p><strong><span class="red">(...)</span></strong> = Dativ kann auch weggelassen werden.</p>
-</div>
-<p>&nbsp;</p>
 ''';
 String htmlTable3_2 = '''
 <table><colgroup> <col style="width: 22%;"> <col style="width: 78%;"> </colgroup>

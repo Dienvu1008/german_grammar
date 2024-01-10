@@ -1,1439 +1,226 @@
 import 'package:flutter/material.dart';
 
 import '../app/app_localizations.dart';
+import '../page_content.dart';
 
 class Attribute_4 extends StatelessWidget {
   const Attribute_4({super.key});
 
   @override
   Widget build(BuildContext context) {
-    final localizations = AppLocalizations.of(context);
-    final textTheme = Theme.of(context).textTheme;
     return Expanded(
       child: Scaffold(
         body: Padding(
-          padding: const EdgeInsets.all(8.0),
-          child: ListView(
-            children: <Widget>[
-              Card(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: <Widget>[
-                    Padding(
-                      padding: const EdgeInsets.only(top: 16.0, left: 16.0),
-                      child: Text('4. Attribute', style: textTheme.titleMedium),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.only(top: 10.0, left: 16.0),
-                      child: Text('Was man über Attribute wissen sollte.',
-                          style: textTheme.titleSmall),
-                    ),
-                    Padding(
-                        padding: const EdgeInsets.only(top: 10.0, left: 16.0),
-                        child: RichText(
-                          text: TextSpan(
-                            style: textTheme.bodyMedium,
-                            children: const <TextSpan>[
-                              TextSpan(
-                                  text:
-                                      'Attribute, auch Beifügungen genannt, bestimmen ein '),
-                              TextSpan(
-                                text: 'Bezugswort',
-                                style: TextStyle(
-                                    decoration: TextDecoration.underline),
-                              ),
-                              TextSpan(
-                                  text:
-                                      ' näher und geben ihm erweiterte Informationen. Attribute können nicht willkürlich geäußert werden, sondern haben feste Regeln. Wenn das Attribut links von einem Bezugswort steht, spricht man von einem '),
-                              TextSpan(
-                                text: 'Linksattribut',
-                                style: TextStyle(
-                                    color: Colors.red,
-                                    fontWeight: FontWeight.bold),
-                              ),
-                              TextSpan(
-                                  text:
-                                      ', steht es rechts von einem Bezugswort, spricht man von einem '),
-                              TextSpan(
-                                text: 'Rechtsattribut',
-                                style: TextStyle(
-                                    color: Colors.red,
-                                    fontWeight: FontWeight.bold),
-                              ),
-                              TextSpan(
-                                  text:
-                                      '. Attribute können folgende Wortarten als Bezugswort näher bestimmen:'),
-                            ],
-                          ),
-                        )),
-                    Padding(
-                      padding: const EdgeInsets.only(
-                          top: 10.0, left: 16.0, bottom: 10),
-                      child: RichText(
-                        text: TextSpan(
-                          style: textTheme
-                              .bodyMedium, //DefaultTextStyle.of(context).style,
-                          children: const <TextSpan>[
-                            TextSpan(
-                                text: 'Pronomen',
-                                style: TextStyle(fontWeight: FontWeight.bold)),
-                            TextSpan(text: '\n'),
-                            TextSpan(
-                                text: 'Adjektive und Partizipien',
-                                style: TextStyle(fontWeight: FontWeight.bold)),
-                            TextSpan(text: '\n'),
-                            TextSpan(
-                                text: 'Adverbien',
-                                style: TextStyle(fontWeight: FontWeight.bold)),
-                            TextSpan(text: '\n'),
-                            TextSpan(
-                                text: 'Nomen',
-                                style: TextStyle(fontWeight: FontWeight.bold)),
-                            TextSpan(text: '\n\n'),
-                            TextSpan(
-                              text: 'Rechtsattribute',
-                              style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.red),
-                            ),
-                            TextSpan(text: ' können bei '),
-                            TextSpan(
-                              text: 'Pronomen, Adverbien und Nomen',
-                              style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.red),
-                            ),
-                            TextSpan(text: ' stehen. '),
-                            TextSpan(text: '\n'),
-                            TextSpan(
-                              text: 'Linksattribute',
-                              style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.red),
-                            ),
-                            TextSpan(text: ' können bei '),
-                            TextSpan(
-                              text:
-                                  'Adjektiven, Partizipien, Adverbien und Nomen',
-                              style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.red),
-                            ),
-                            TextSpan(text: ' stehen.'),
-                          ],
-                        ),
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-              Card(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: <Widget>[
-                    Padding(
-                      padding: const EdgeInsets.only(top: 16.0, left: 16.0),
-                      child: Text('Pronomen + Attribut',
-                          style: textTheme.titleSmall),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.only(
-                          top: 10.0, left: 16.0, bottom: 10),
-                      child: RichText(
-                        text: TextSpan(
-                          style: textTheme.bodyMedium,
-                          children: const <TextSpan>[
-                            TextSpan(text: 'Attribute, die auf ein '),
-                            TextSpan(
-                              text: 'Pronomen',
-                              style: TextStyle(fontWeight: FontWeight.bold),
-                            ),
-                            TextSpan(text: ' folgen, gehören zu den '),
-                            TextSpan(
-                              text: 'Rechtsattributen',
-                              style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.red),
-                            ),
-                            TextSpan(text: ', das heißt, dass sie '),
-                            TextSpan(
-                              text: 'hinter',
-                              style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.red,
-                                  decoration: TextDecoration.underline),
-                            ),
-                            TextSpan(
-                                text:
-                                    ' dem Pronomen (Bezugswort) stehen. Folgende '),
-                            TextSpan(
-                              text: 'Attribute',
-                              style: TextStyle(fontWeight: FontWeight.bold),
-                            ),
-                            TextSpan(text: ' können bei '),
-                            TextSpan(
-                              text: 'Pronomen',
-                              style: TextStyle(
-                                  decoration: TextDecoration.underline),
-                            ),
-                            TextSpan(text: ' sowie '),
-                            TextSpan(
-                              text: 'Kardinalzahlen',
-                              style: TextStyle(fontWeight: FontWeight.bold),
-                            ),
-                            TextSpan(text: ' stehen:\n\n'),
-                            TextSpan(text: 'Pronomen + '),
-                            TextSpan(
-                              text: 'Nomen im Genitiv',
-                              style: TextStyle(fontWeight: FontWeight.bold),
-                            ),
-                            TextSpan(text: '\n- Einige '),
-                            TextSpan(
-                              text: 'meiner Schüler',
-                              style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.red),
-                            ),
-                            TextSpan(
-                                text:
-                                    ' haben eine sehr gute Arbeit abgegeben.\n- Drei '),
-                            TextSpan(
-                              text: 'dieser Schüler',
-                              style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.red),
-                            ),
-                            TextSpan(text: ' erreichten sogar 100%.\n- Viele '),
-                            TextSpan(
-                              text: 'der gestellten Aufgaben',
-                              style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.red),
-                            ),
-                            TextSpan(
-                                text: ' waren nicht einfach zu lösen.\n\n'),
-                            TextSpan(text: 'Pronomen + '),
-                            TextSpan(
-                              text: 'Nomen mit "von + Dativ"',
-                              style: TextStyle(fontWeight: FontWeight.bold),
-                            ),
-                            TextSpan(text: '\n- Einige '),
-                            TextSpan(
-                              text: 'von meinen alten Schulfreunden',
-                              style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.red),
-                            ),
-                            TextSpan(
-                                text:
-                                    ' arbeiten erfolgreich in ihren Berufen.\n- Manche '),
-                            TextSpan(
-                              text: 'von meinen Kollegen',
-                              style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.red),
-                            ),
-                            TextSpan(
-                                text: ' sind ziemlich akribisch.\n- Welcher '),
-                            TextSpan(
-                              text: 'von deinen Freunden',
-                              style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.red),
-                            ),
-                            TextSpan(
-                                text:
-                                    ' hat sich kürzlich das Leben genommen?\n\n'),
-                            TextSpan(text: 'Pronomen + '),
-                            TextSpan(
-                              text: 'Präposition',
-                              style: TextStyle(fontWeight: FontWeight.bold),
-                            ),
-                            TextSpan(text: '\n- Jemand '),
-                            TextSpan(
-                              text: 'aus dieser Gruppe',
-                              style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.red),
-                            ),
-                            TextSpan(
-                                text:
-                                    ' muss das Geld gestohlen haben.\n- Niemand '),
-                            TextSpan(
-                              text: 'aus meinem Haus',
-                              style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.red),
-                            ),
-                            TextSpan(
-                                text:
-                                    ' will weder den Keller, noch das Treppenhaus putzen.\n- Alle '),
-                            TextSpan(
-                              text: 'aus meinem Bekanntenkreis',
-                              style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.red),
-                            ),
-                            TextSpan(
-                                text:
-                                    ' sind bereits verheiratet und haben Kinder.\n\n'),
-                            TextSpan(text: 'Pronomen + '),
-                            TextSpan(
-                              text: 'lokale Adverbien',
-                              style: TextStyle(fontWeight: FontWeight.bold),
-                            ),
-                            TextSpan(text: '\n- Diese '),
-                            TextSpan(
-                              text: 'dort',
-                              style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.red),
-                            ),
-                            TextSpan(
-                                text: ' gefällt mir am besten.\n- Mancher '),
-                            TextSpan(
-                              text: 'hier',
-                              style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.red),
-                            ),
-                            TextSpan(
-                                text:
-                                    ' kann diese Aussagen bestätigen.\n- Alle '),
-                            TextSpan(
-                              text: 'hier Anwesenden',
-                              style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.red),
-                            ),
-                            TextSpan(
-                                text:
-                                    ' bekommen die Gelegenheit, sich auszuzeichnen.\n\n'),
-                            TextSpan(
-                                text:
-                                    'Pronomen "etwas" und "nichts" sowie "viel" und "wenig" + '),
-                            TextSpan(
-                              text: 'erweiteter Infinitiv',
-                              style: TextStyle(fontWeight: FontWeight.bold),
-                            ),
-                            TextSpan(text: '\n- Mama, hast du '),
-                            TextSpan(
-                              text: 'etwas',
-                              style: TextStyle(
-                                  decoration: TextDecoration.underline),
-                            ),
-                            TextSpan(text: ' '),
-                            TextSpan(
-                              text: 'zu trinken',
-                              style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.red),
-                            ),
-                            TextSpan(
-                                text:
-                                    ' für mich?\n- Der Motor ist kaputt. Da ist '),
-                            TextSpan(
-                              text: 'nichts mehr',
-                              style: TextStyle(
-                                  decoration: TextDecoration.underline),
-                            ),
-                            TextSpan(text: ' '),
-                            TextSpan(
-                              text: 'zu machen',
-                              style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.red),
-                            ),
-                            TextSpan(text: '.\n- Gut '),
-                            TextSpan(
-                              text: 'zu wissen',
-                              style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.red),
-                            ),
-                            TextSpan(
-                                text:
-                                    ', dass man sich auf dich verlassen kann.'),
-                          ],
-                        ),
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-              Card(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: <Widget>[
-                    Padding(
-                      padding: const EdgeInsets.only(top: 16.0, left: 16.0),
-                      child: Text('Attribute + Adjektive oder Partizipien',
-                          style: textTheme.titleSmall),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.only(
-                          top: 10.0, left: 16.0, bottom: 10),
-                      child: RichText(
-                        text: TextSpan(
-                          style: textTheme.bodyMedium,
-                          children: const <TextSpan>[
-                            TextSpan(text: 'Attribute, die bei einem '),
-                            TextSpan(
-                              text: 'Adjektiv',
-                              style: TextStyle(fontWeight: FontWeight.bold),
-                            ),
-                            TextSpan(text: ' stehen, gehören zu den '),
-                            TextSpan(
-                              text: 'Linksattributen',
-                              style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.red),
-                            ),
-                            TextSpan(text: ', das heißt, dass sie '),
-                            TextSpan(
-                              text: 'vor',
-                              style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.red,
-                                  decoration: TextDecoration.underline),
-                            ),
-                            TextSpan(
-                                text:
-                                    ' dem Bezugswort stehen. Während das Adjektiv selbst als Linksattribut vor einem Nomen stehen kann und dekliniert werden muss, '),
-                            TextSpan(
-                              text:
-                                  'bleibt das Linksattribut des Adjektivs in diesen Fällen unverändert',
-                              style: TextStyle(
-                                  decoration: TextDecoration.underline),
-                            ),
-                            TextSpan(text: '. Folgende '),
-                            TextSpan(
-                              text: 'Attribute',
-                              style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.red),
-                            ),
-                            TextSpan(text: ' können bei '),
-                            TextSpan(
-                              text: 'Adjektiven',
-                              style: TextStyle(
-                                  decoration: TextDecoration.underline),
-                            ),
-                            TextSpan(text: ' stehen:\n\n'),
-                            TextSpan(text: 'Adverb als Attribut + '),
-                            TextSpan(
-                              text: 'Adjektiv',
-                              style: TextStyle(
-                                  decoration: TextDecoration.underline),
-                            ),
-                            TextSpan(text: '\n- Herr Knuffelpickel hat drei '),
-                            TextSpan(
-                              text: 'sehr',
-                              style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.red),
-                            ),
-                            TextSpan(text: ' '),
-                            TextSpan(
-                              text: 'hübsche',
-                              style: TextStyle(
-                                  decoration: TextDecoration.underline),
-                            ),
-                            TextSpan(text: ' Töchter.\n- Unsere Kunden sind '),
-                            TextSpan(
-                              text: 'überaus',
-                              style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.red),
-                            ),
-                            TextSpan(text: ' '),
-                            TextSpan(
-                              text: 'zufriedene',
-                              style: TextStyle(
-                                  decoration: TextDecoration.underline),
-                            ),
-                            TextSpan(text: ' Kunden.\n- Der '),
-                            TextSpan(
-                              text: 'äußerst',
-                              style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.red),
-                            ),
-                            TextSpan(text: ' '),
-                            TextSpan(
-                              text: 'schwache',
-                              style: TextStyle(
-                                  decoration: TextDecoration.underline),
-                            ),
-                            TextSpan(
-                                text:
-                                    ' Schiedsrichter wurde gnadenlos ausgepfiffen.\n\n'),
-                            TextSpan(
-                                text: 'Adjektiv oder Partizip als Attribut + '),
-                            TextSpan(
-                              text: 'Adjektiv',
-                              style: TextStyle(
-                                  decoration: TextDecoration.underline),
-                            ),
-                            TextSpan(text: '\n- Kaum jemand verstand den '),
-                            TextSpan(
-                              text: 'leise',
-                              style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.red),
-                            ),
-                            TextSpan(text: ' '),
-                            TextSpan(
-                              text: 'sprechenden',
-                              style: TextStyle(
-                                  decoration: TextDecoration.underline),
-                            ),
-                            TextSpan(text: ' Moderator.\n- '),
-                            TextSpan(
-                              text: 'Gut',
-                              style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.red),
-                            ),
-                            TextSpan(text: ' '),
-                            TextSpan(
-                              text: 'erzogene',
-                              style: TextStyle(
-                                  decoration: TextDecoration.underline),
-                            ),
-                            TextSpan(
-                                text:
-                                    ' Kinder werden überall gern gesehen.\n- Der '),
-                            TextSpan(
-                              text: 'neu',
-                              style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.red),
-                            ),
-                            TextSpan(text: ' '),
-                            TextSpan(
-                              text: 'gekaufte',
-                              style: TextStyle(
-                                  decoration: TextDecoration.underline),
-                            ),
-                            TextSpan(
-                                text:
-                                    ' Computer ging schon nach ein paar Stunden kaputt.\n\n'),
-                            TextSpan(text: 'Präpositionen als Attribute + '),
-                            TextSpan(
-                              text: 'Adjektiv',
-                              style: TextStyle(
-                                  decoration: TextDecoration.underline),
-                            ),
-                            TextSpan(text: '.\n- Niemand hörte die '),
-                            TextSpan(
-                              text: 'um Hilfe',
-                              style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.red),
-                            ),
-                            TextSpan(text: ' '),
-                            TextSpan(
-                              text: 'schreiende',
-                              style: TextStyle(
-                                  decoration: TextDecoration.underline),
-                            ),
-                            TextSpan(text: ' Frau.\n- Der '),
-                            TextSpan(
-                              text: 'auf Kritik',
-                              style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.red),
-                            ),
-                            TextSpan(text: ' '),
-                            TextSpan(
-                              text: 'gestoßene',
-                              style: TextStyle(
-                                  decoration: TextDecoration.underline),
-                            ),
-                            TextSpan(
-                                text:
-                                    ' Politiker stellt sein Amt zur Verfügung.\n- Die '),
-                            TextSpan(
-                              text: 'nicht zu Wort',
-                              style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.red),
-                            ),
-                            TextSpan(text: ' '),
-                            TextSpan(
-                              text: 'gekommenen',
-                              style: TextStyle(
-                                  decoration: TextDecoration.underline),
-                            ),
-                            TextSpan(
-                                text:
-                                    ' Demonstranten wurden anschließend gewalttätig.\n\n'),
-                            TextSpan(text: 'Nomen als Attribute + '),
-                            TextSpan(
-                              text: 'Adjektiv',
-                              style: TextStyle(
-                                  decoration: TextDecoration.underline),
-                            ),
-                            TextSpan(text: '.\n- Die '),
-                            TextSpan(
-                              text: 'erst 15 Jahre',
-                              style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.red),
-                            ),
-                            TextSpan(text: ' '),
-                            TextSpan(
-                              text: 'alte',
-                              // ignore: prefer_const_constructors
-                              style: TextStyle(
-                                  decoration: TextDecoration.underline),
-                            ),
-                            TextSpan(
-                                text:
-                                    ' Schülerin ist schon schwanger.\n- Der Angler hat nach hartem Kampf einen '),
-                            TextSpan(
-                              text: '8 Kilo',
-                              style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.red),
-                            ),
-                            TextSpan(text: ' '),
-                            TextSpan(
-                              text: 'schweren',
-                              style: TextStyle(
-                                  decoration: TextDecoration.underline),
-                            ),
-                            TextSpan(text: ' Fisch an Land gezogen.\n- Das '),
-                            TextSpan(
-                              text: '35 Meter',
-                              style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.red),
-                            ),
-                            TextSpan(text: ' '),
-                            TextSpan(
-                              text: 'hohe',
-                              style: TextStyle(
-                                  decoration: TextDecoration.underline),
-                            ),
-                            TextSpan(
-                                text:
-                                    ' Gebäude ist in die Jahre gekommen und soll abgerissen werden.\n\nSiehe auch: \n- '),
-                            TextSpan(
-                              text: 'Partizipialkonstruktionen als Attribute',
-                              style: TextStyle(fontWeight: FontWeight.bold),
-                            ),
-                            TextSpan(text: '\n- '),
-                            TextSpan(
-                              text: 'Adjektivgruppen',
-                              style: TextStyle(fontWeight: FontWeight.bold),
-                            ),
-                          ],
-                        ),
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-              Card(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: <Widget>[
-                    Padding(
-                      padding: const EdgeInsets.only(top: 16.0, left: 16.0),
-                      child: Text('Adverbien + Attribute',
-                          style: textTheme.titleSmall),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.only(
-                          top: 10.0, left: 16.0, bottom: 10),
-                      child: RichText(
-                        text: TextSpan(
-                          style: textTheme.bodyMedium,
-                          children: const <TextSpan>[
-                            TextSpan(
-                                text:
-                                    'Es kann sich bei den Attributen, die bei einem '),
-                            TextSpan(
-                              text: 'Adverb',
-                              style: TextStyle(fontWeight: FontWeight.bold),
-                            ),
-                            TextSpan(text: ' stehen, sowohl um ein '),
-                            TextSpan(
-                              text: 'Linksattribut',
-                              style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.red),
-                            ),
-                            TextSpan(text: ' als auch um ein '),
-                            TextSpan(
-                              text: 'Rechtsattribut',
-                              style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.red),
-                            ),
-                            TextSpan(text: ', das heißt, dass sie '),
-                            TextSpan(
-                              text: 'vor oder nach',
-                              style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.red,
-                                  decoration: TextDecoration.underline),
-                            ),
-                            TextSpan(
-                                text:
-                                    ' dem Bezugswort stehen können. Folgende '),
-                            TextSpan(
-                              text: 'Attribute',
-                              style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.red),
-                            ),
-                            TextSpan(text: ' können bei '),
-                            TextSpan(
-                              text: 'Adverbien',
-                              style: TextStyle(
-                                  decoration: TextDecoration.underline),
-                            ),
-                            TextSpan(text: ' stehen:\n\n'),
-                            TextSpan(text: 'Adverb als Attribut + '),
-                            TextSpan(
-                              text: 'Adverb',
-                              style: TextStyle(
-                                  decoration: TextDecoration.underline),
-                            ),
-                            TextSpan(
-                                text:
-                                    ' (Linksattribut)\n- Herr Knaffelpuckel trinkt abends '),
-                            TextSpan(
-                              text: 'sehr',
-                              style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.red),
-                            ),
-                            TextSpan(text: ' '),
-                            TextSpan(
-                              text: 'gern',
-                              style: TextStyle(
-                                  decoration: TextDecoration.underline),
-                            ),
-                            TextSpan(
-                                text:
-                                    ' eine Flasche Wein.\n- Die Belegschaft dieser Chemiefabrik feiert '),
-                            TextSpan(
-                              text: 'äußerst',
-                              style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.red),
-                            ),
-                            TextSpan(text: ' '),
-                            TextSpan(
-                              text: 'selten',
-                              style: TextStyle(
-                                  decoration: TextDecoration.underline),
-                            ),
-                            TextSpan(
-                                text: ' krank.\n- Meine Kinder essen nicht '),
-                            TextSpan(
-                              text: 'so',
-                              style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.red),
-                            ),
-                            TextSpan(text: ' '),
-                            TextSpan(
-                              text: 'gern',
-                              style: TextStyle(
-                                  decoration: TextDecoration.underline),
-                            ),
-                            TextSpan(text: ' Kassler mit Sauerkraut, eine '),
-                            TextSpan(
-                              text: 'typisch',
-                              style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.red),
-                            ),
-                            TextSpan(text: ' deutsche Spezialität.\n\n'),
-                            TextSpan(text: 'Adjektiv als Attribut + '),
-                            TextSpan(
-                              text: 'Adverb',
-                              style: TextStyle(
-                                  decoration: TextDecoration.underline),
-                            ),
-                            TextSpan(
-                                text:
-                                    ' (Linksattribut, Adjektiv wird nicht dekliniert)\n- Die Geschichte spielte sich '),
-                            TextSpan(
-                              text: 'ganz',
-                              style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.red),
-                            ),
-                            TextSpan(text: ' '),
-                            TextSpan(
-                              text: 'anders',
-                              style: TextStyle(
-                                  decoration: TextDecoration.underline),
-                            ),
-                            TextSpan(
-                                text: ' ab, als von Ihnen geschildert.\n- '),
-                            TextSpan(
-                              text: 'Weit',
-                              style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.red),
-                            ),
-                            TextSpan(text: ' '),
-                            TextSpan(
-                              text: 'draußen',
-                              style: TextStyle(
-                                  decoration: TextDecoration.underline),
-                            ),
-                            TextSpan(
-                                text:
-                                    ' auf dem Meer kann man noch vereinzelt Surfer sehen.\n- '),
-                            TextSpan(
-                              text: 'Hoch',
-                              style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.red),
-                            ),
-                            TextSpan(text: ' '),
-                            TextSpan(
-                              text: 'oben',
-                              style: TextStyle(
-                                  decoration: TextDecoration.underline),
-                            ),
-                            TextSpan(
-                                text:
-                                    ' auf dem Berg weht ein sehr kräftiger Wind.\n\n'),
-                            TextSpan(text: 'Nomen als Attribut + '),
-                            TextSpan(
-                              text: 'Adverb',
-                              style: TextStyle(
-                                  decoration: TextDecoration.underline),
-                            ),
-                            TextSpan(
-                                text:
-                                    ' (Linksattribut, Nomen + Begleiter stehen im Akkusativ)\n- Ich sah ihn noch lachen. '),
-                            TextSpan(
-                              text: 'Einen Moment',
-                              style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.red),
-                            ),
-                            TextSpan(text: ' '),
-                            TextSpan(
-                              text: 'später',
-                              style: TextStyle(
-                                  decoration: TextDecoration.underline),
-                            ),
-                            TextSpan(
-                                text:
-                                    ' lag er blutüberströmt auf dem Boden.\n- Warum ist der Arzt nicht '),
-                            TextSpan(
-                              text: 'ein paar Minuten',
-                              style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.red),
-                            ),
-                            TextSpan(text: ' '),
-                            TextSpan(
-                              text: 'früher',
-                              style: TextStyle(
-                                  decoration: TextDecoration.underline),
-                            ),
-                            TextSpan(
-                                text:
-                                    ' gekommen?\n- Der Küchenschrank müsste '),
-                            TextSpan(
-                              text: 'einen Meter',
-                              style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.red),
-                            ),
-                            TextSpan(text: ' '),
-                            TextSpan(
-                              text: 'länger',
-                              style: TextStyle(
-                                  decoration: TextDecoration.underline),
-                            ),
-                            TextSpan(text: ' sein.\n\n'),
-                            TextSpan(text: 'Adverb + '),
-                            TextSpan(
-                              text: 'Präposition',
-                              style: TextStyle(fontWeight: FontWeight.bold),
-                            ),
-                            TextSpan(
-                                text:
-                                    ' als Attribut (Rechtsattribut).\n- Deine Brille liegt '),
-                            TextSpan(
-                              text: 'da',
-                              style: TextStyle(
-                                  decoration: TextDecoration.underline),
-                            ),
-                            TextSpan(text: ' '),
-                            TextSpan(
-                              text: 'hinter dir',
-                              style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.red),
-                            ),
-                            TextSpan(
-                                text:
-                                    ' auf dem Tisch neben dem Grammatikbuch.\n- '),
-                            TextSpan(
-                              text: 'Damals',
-                              style: TextStyle(
-                                  decoration: TextDecoration.underline),
-                            ),
-                            TextSpan(text: ' '),
-                            TextSpan(
-                              text: 'vor seinem schweren Unfall',
-                              style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.red),
-                            ),
-                            TextSpan(text: ' war Herbert sehr sportlich.\n- '),
-                            TextSpan(
-                              text: 'Dort',
-                              style: TextStyle(
-                                  decoration: TextDecoration.underline),
-                            ),
-                            TextSpan(text: ' '),
-                            TextSpan(
-                              text: 'vor dem Hügel',
-                              style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.red),
-                            ),
-                            TextSpan(text: ' beginnt das Schongebiet.\n\n'),
-                            TextSpan(text: 'Adverb + '),
-                            TextSpan(
-                              text: 'Nebensatz als Attribut',
-                              style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.red),
-                            ),
-                            TextSpan(text: ' (Rechtsattribut, oft als '),
-                            TextSpan(
-                              text: 'Relativsatz',
-                              style: TextStyle(fontWeight: FontWeight.bold),
-                            ),
-                            TextSpan(text: '.\n- '),
-                            TextSpan(
-                              text: 'Hier',
-                              style: TextStyle(
-                                  decoration: TextDecoration.underline),
-                            ),
-                            TextSpan(text: ', '),
-                            TextSpan(
-                              text: 'wo wir jetzt stehen',
-                              style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.red),
-                            ),
-                            TextSpan(
-                                text:
-                                    ', gab es vor langer Zeit eine römische Siedlung.\n- '),
-                            TextSpan(
-                              text: 'Dort unten',
-                              style: TextStyle(
-                                  decoration: TextDecoration.underline),
-                            ),
-                            TextSpan(text: ', '),
-                            TextSpan(
-                              text: 'wo sich die beiden Flüsse vereinen',
-                              style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.red),
-                            ),
-                            TextSpan(text: ', gibt es starke Strudel.\n- '),
-                            TextSpan(
-                              text: 'Damals',
-                              style: TextStyle(
-                                  decoration: TextDecoration.underline),
-                            ),
-                            TextSpan(text: ', '),
-                            TextSpan(
-                              text: 'als Kurt noch ledig war',
-                              style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.red),
-                            ),
-                            TextSpan(text: ', war er sportlich und schlank.'),
-                          ],
-                        ),
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-              Card(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: <Widget>[
-                    Padding(
-                      padding: const EdgeInsets.only(top: 16.0, left: 16.0),
-                      child: Text('Nomen + Attribute',
-                          style: textTheme.titleSmall),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.only(
-                          top: 10.0, left: 16.0, bottom: 10),
-                      child: RichText(
-                        text: TextSpan(
-                          style: textTheme.bodyMedium,
-                          children: const <TextSpan>[
-                            TextSpan(
-                                text:
-                                    'Es kann sich bei den Attributen, die bei einem '),
-                            TextSpan(
-                              text: 'Nomen',
-                              style: TextStyle(fontWeight: FontWeight.bold),
-                            ),
-                            TextSpan(text: ' stehen, sowohl um ein '),
-                            TextSpan(
-                              text: 'Linksattribut',
-                              style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.red),
-                            ),
-                            TextSpan(text: ' als auch um ein '),
-                            TextSpan(
-                              text: 'Rechtsattribut',
-                              style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.red),
-                            ),
-                            TextSpan(text: ', das heißt, dass sie '),
-                            TextSpan(
-                              text: 'vor oder nach',
-                              style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.red,
-                                  decoration: TextDecoration.underline),
-                            ),
-                            TextSpan(
-                                text:
-                                    ' dem Bezugswort stehen können. Folgende '),
-                            TextSpan(
-                              text: 'Attribute',
-                              style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.red),
-                            ),
-                            TextSpan(text: ' können bei '),
-                            TextSpan(
-                              text: 'Nomen',
-                              style: TextStyle(
-                                  decoration: TextDecoration.underline),
-                            ),
-                            TextSpan(text: ' stehen:\n\n'),
-                            TextSpan(
-                                text:
-                                    'Adjektive und Partizipien als Attribute + '),
-                            TextSpan(
-                              text: 'Nomen',
-                              style: TextStyle(
-                                  decoration: TextDecoration.underline),
-                            ),
-                            TextSpan(
-                                text:
-                                    ' (Linksattribut, Adjektiv wird dekliniert)\n- Herr Knickeldackel hat sich ein '),
-                            TextSpan(
-                              text: 'neues',
-                              style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.red),
-                            ),
-                            TextSpan(text: ' '),
-                            TextSpan(
-                              text: 'Auto',
-                              style: TextStyle(
-                                  decoration: TextDecoration.underline),
-                            ),
-                            TextSpan(
-                                text:
-                                    ' gekauft.\n- Frau Pickeldeckel schenkt ihrer '),
-                            TextSpan(
-                              text: 'hübschen',
-                              style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.red),
-                            ),
-                            TextSpan(text: ' '),
-                            TextSpan(
-                              text: 'Tochter',
-                              style: TextStyle(
-                                  decoration: TextDecoration.underline),
-                            ),
-                            TextSpan(text: ' ihre '),
-                            TextSpan(
-                              text: 'alte',
-                              style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.red),
-                            ),
-                            TextSpan(text: ' '),
-                            TextSpan(
-                              text: 'Goldkette',
-                              style: TextStyle(
-                                  decoration: TextDecoration.underline),
-                            ),
-                            TextSpan(text: '.\n- Das '),
-                            TextSpan(
-                              text: 'kleine',
-                              style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.red),
-                            ),
-                            TextSpan(text: ' '),
-                            TextSpan(
-                              text: 'Kind',
-                              style: TextStyle(
-                                  decoration: TextDecoration.underline),
-                            ),
-                            TextSpan(text: ' will die '),
-                            TextSpan(
-                              text: 'heiße',
-                              style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.red),
-                            ),
-                            TextSpan(text: ' '),
-                            TextSpan(
-                              text: 'Suppe',
-                              style: TextStyle(
-                                  decoration: TextDecoration.underline),
-                            ),
-                            TextSpan(text: ' nicht essen.\n\n'),
-                            TextSpan(text: 'Nomen + '),
-                            TextSpan(
-                              text: 'Nomen als Attribut',
-                              style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.red),
-                            ),
-                            TextSpan(
-                                text:
-                                    ' (Genitivattribut, Links- oder Rechtsattribut)\n- '),
-                            TextSpan(
-                              text: 'Peters',
-                              style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.red),
-                            ),
-                            TextSpan(text: ' '),
-                            TextSpan(
-                              text: 'Auto',
-                              style: TextStyle(
-                                  decoration: TextDecoration.underline),
-                            ),
-                            TextSpan(text: ' muss in die Werkstatt.\n- '),
-                            TextSpan(
-                              text: 'Das Auto',
-                              style: TextStyle(
-                                  decoration: TextDecoration.underline),
-                            ),
-                            TextSpan(text: ' '),
-                            TextSpan(
-                              text: 'der Köchin',
-                              style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.red),
-                            ),
-                            TextSpan(text: ' hat einen Motorschaden.\n- '),
-                            TextSpan(
-                              text: 'Die Reifen',
-                              style: TextStyle(
-                                  decoration: TextDecoration.underline),
-                            ),
-                            TextSpan(text: ' '),
-                            TextSpan(
-                              text: 'Ihres Autos',
-                              style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.red),
-                            ),
-                            TextSpan(text: ' haben kaum noch Profil.\n\n'),
-                            TextSpan(text: 'Nomen + '),
-                            TextSpan(
-                              text: 'Adverb',
-                              style: TextStyle(fontWeight: FontWeight.bold),
-                            ),
-                            TextSpan(
-                                text: ' als Attribut (Rechtsattribut)\n- '),
-                            TextSpan(
-                              text: 'Der Mann',
-                              style: TextStyle(
-                                  decoration: TextDecoration.underline),
-                            ),
-                            TextSpan(text: ' '),
-                            TextSpan(
-                              text: 'dort hinten',
-                              style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.red),
-                            ),
-                            TextSpan(
-                                text:
-                                    ' soll ein Verhältnis mit Frau Suppendorn haben.\n- '),
-                            TextSpan(
-                              text: 'Die Frau',
-                              style: TextStyle(
-                                  decoration: TextDecoration.underline),
-                            ),
-                            TextSpan(text: ' '),
-                            TextSpan(
-                              text: 'links daneben',
-                              style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.red),
-                            ),
-                            TextSpan(
-                                text:
-                                    ' hat vorigen Monat die Scheidung eingereicht.\n- '),
-                            TextSpan(
-                              text: 'Die junge Frau',
-                              style: TextStyle(
-                                  decoration: TextDecoration.underline),
-                            ),
-                            TextSpan(text: ' '),
-                            TextSpan(
-                              text: 'da drüben',
-                              style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.red),
-                            ),
-                            TextSpan(
-                                text:
-                                    ' hat anscheinend unserem Chef den Kopf verdreht.\n\n'),
-                            TextSpan(text: 'Nomen + '),
-                            TextSpan(
-                              text: 'Präposition',
-                              style: TextStyle(fontWeight: FontWeight.bold),
-                            ),
-                            TextSpan(
-                                text: ' als Attribut (Rechtsattribut)\n- '),
-                            TextSpan(
-                              text: 'Die Katze',
-                              style: TextStyle(
-                                  decoration: TextDecoration.underline),
-                            ),
-                            TextSpan(text: ' '),
-                            TextSpan(
-                              text: 'auf dem Sofa',
-                              style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.red),
-                            ),
-                            TextSpan(text: ' heißt Mutsch.\n- '),
-                            TextSpan(
-                              text: 'Der Kater',
-                              style: TextStyle(
-                                  decoration: TextDecoration.underline),
-                            ),
-                            TextSpan(text: ' '),
-                            TextSpan(
-                              text: 'am Fenster',
-                              style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.red),
-                            ),
-                            TextSpan(text: ' ist schon sieben Jahre alt.\n- '),
-                            TextSpan(
-                              text: 'Der große Hund',
-                              style: TextStyle(
-                                  decoration: TextDecoration.underline),
-                            ),
-                            TextSpan(text: ' '),
-                            TextSpan(
-                              text: 'unter dem Tisch',
-                              style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.red),
-                            ),
-                            TextSpan(text: ' mag die beiden Katzen nicht.\n\n'),
-                            TextSpan(text: 'Nomen + '),
-                            TextSpan(
-                              text: 'Apposition als Attribut',
-                              style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.red),
-                            ),
-                            TextSpan(
-                                text:
-                                    ' (Rechtsattribut, steht im gleichen Kasus, wie das Bezugswort)\n- '),
-                            TextSpan(
-                              text: 'Der Matrose',
-                              style: TextStyle(
-                                  decoration: TextDecoration.underline),
-                            ),
-                            TextSpan(text: ', '),
-                            TextSpan(
-                              text: 'ein wirklich netter junger Mann',
-                              style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.red),
-                            ),
-                            TextSpan(
-                                text:
-                                    ', fährt schon seit 3 Jahren zur See.\n- Petra liebt ihr '),
-                            TextSpan(
-                              text: 'Pferd',
-                              style: TextStyle(
-                                  decoration: TextDecoration.underline),
-                            ),
-                            TextSpan(text: ', '),
-                            TextSpan(
-                              text: 'eine 4-jährige Stute',
-                              style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.red),
-                            ),
-                            TextSpan(text: '.\n- Herr Holz hilft oft dem '),
-                            TextSpan(
-                              text: 'Fräulein Hinterhalt',
-                              style: TextStyle(
-                                  decoration: TextDecoration.underline),
-                            ),
-                            TextSpan(text: ', '),
-                            TextSpan(
-                              text: 'seiner sehr hübschen Nachbarin',
-                              style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.red),
-                            ),
-                            TextSpan(
-                                text:
-                                    '.\n- Die Frau an seiner Seite kommt aus '),
-                            TextSpan(
-                              text: 'Tabay',
-                              style: TextStyle(
-                                  decoration: TextDecoration.underline),
-                            ),
-                            TextSpan(text: ', '),
-                            TextSpan(
-                              text: 'einem venezolanischem Dorf',
-                              style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.red),
-                            ),
-                            TextSpan(text: '.\n\n'),
-                            TextSpan(text: 'Nomen + '),
-                            TextSpan(
-                              text: 'Infinitivsatz',
-                              style: TextStyle(fontWeight: FontWeight.bold),
-                            ),
-                            TextSpan(
-                                text: ' als Attribut (Rechtsattribut)\n- '),
-                            TextSpan(
-                              text: 'Ihr Wunsch',
-                              style: TextStyle(
-                                  decoration: TextDecoration.underline),
-                            ),
-                            TextSpan(text: ', '),
-                            TextSpan(
-                              text: 'einen reichen Mann zu heiraten',
-                              style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.red),
-                            ),
-                            TextSpan(
-                                text: ', ging leider nicht in Erfüllung.\n- '),
-                            TextSpan(
-                              text: 'Unsere Bitte',
-                              style: TextStyle(
-                                  decoration: TextDecoration.underline),
-                            ),
-                            TextSpan(text: ', '),
-                            TextSpan(
-                              text: 'schnell geholfen zu werden',
-                              style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.red),
-                            ),
-                            TextSpan(text: ', wurde nicht nachgekommen.\n- '),
-                            TextSpan(
-                              text: 'Das Risiko',
-                              style: TextStyle(
-                                  decoration: TextDecoration.underline),
-                            ),
-                            TextSpan(text: ', '),
-                            TextSpan(
-                              text: 'enttarnt zu werden',
-                              style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.red),
-                            ),
-                            TextSpan(
-                                text:
-                                    ', musste der Spion auf sich nehmen.\n\n'),
-                            TextSpan(text: 'Nomen + '),
-                            TextSpan(
-                              text: 'Relativsatz',
-                              style: TextStyle(fontWeight: FontWeight.bold),
-                            ),
-                            TextSpan(
-                                text: ' als Attribut (Rechtsattribut)\n- '),
-                            TextSpan(
-                              text: 'Das Wochenendhaus',
-                              style: TextStyle(
-                                  decoration: TextDecoration.underline),
-                            ),
-                            TextSpan(text: ', '),
-                            TextSpan(
-                              text: 'das wir über die Feiertage mieten wollten',
-                              style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.red),
-                            ),
-                            TextSpan(text: ', ist belegt.\n- '),
-                            TextSpan(
-                              text: 'Die Betten',
-                              style: TextStyle(
-                                  decoration: TextDecoration.underline),
-                            ),
-                            TextSpan(text: ', '),
-                            TextSpan(
-                              text: 'in denen wir geschlafen haben',
-                              style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.red),
-                            ),
-                            TextSpan(text: ', waren sehr unbequem.\n- '),
-                            TextSpan(
-                              text: 'Alles',
-                              style: TextStyle(
-                                  decoration: TextDecoration.underline),
-                            ),
-                            TextSpan(text: ', '),
-                            TextSpan(
-                              text: 'was teuer ist',
-                              style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.red),
-                            ),
-                            TextSpan(
-                                text: ', muss nicht unbedingt gut sein.\n\n'),
-                            TextSpan(text: 'Siehe auch:\n- '),
-                            TextSpan(
-                              text: 'Partizipialkonstruktionen als Attribute',
-                              style: TextStyle(fontWeight: FontWeight.bold),
-                            ),
-                          ],
-                        ),
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-            ],
-          ),
-        ),
+            padding: const EdgeInsets.all(8.0),
+            child: MyPageContentView(contents: contents)),
       ),
     );
   }
 }
+
+List<CardContent> contents = [
+  CardContent(
+    elements: [
+      CardElement(type: ElementType.pageTitle, value: title),
+    ],
+  ),
+  CardContent(
+    elements: [
+      CardElement(type: ElementType.cardTitle, value: title1),
+      CardElement(type: ElementType.htmlContent, value: htmlContent1_1),
+    ],
+  ),
+  CardContent(
+    elements: [
+      CardElement(type: ElementType.cardTitle, value: title2),
+      CardElement(type: ElementType.htmlContent, value: htmlContent2_1),
+    ],
+  ),
+  CardContent(
+    elements: [
+      CardElement(type: ElementType.cardTitle, value: title3),
+      CardElement(type: ElementType.htmlContent, value: htmlContent3_1),
+    ],
+  ),
+  CardContent(
+    elements: [
+      CardElement(type: ElementType.cardTitle, value: title4),
+      CardElement(type: ElementType.htmlContent, value: htmlContent4_1),
+    ],
+  ),
+  CardContent(
+    elements: [
+      CardElement(type: ElementType.cardTitle, value: title5),
+      CardElement(type: ElementType.htmlContent, value: htmlContent5_1),
+    ],
+  ),
+];
+
+String title = '4. Attribute';
+
+String title1 = 'Was man über Attribute wissen sollte.';
+String htmlContent1_1 = '''
+<p><strong><span class="red">Attribute</span></strong>, auch Beifügungen genannt, bestimmen ein <span style="text-decoration:underline">Bezugswort</span> näher und geben ihm erweiterte Informationen. Attribute können nicht willkürlich geäußert werden, sondern haben feste Regeln. Wenn das Attribut links von einem Bezugswort steht, spricht man von einem <strong><span class="red">Linksattribut</span></strong>, steht es rechts von einem Bezugswort, spricht man von einem <strong><span class="red">Rechtsattribut</span></strong>. Attribute können folgende Wortarten als Bezugswort näher bestimmen:</p>
+
+<li><strong><a title="Pronomen" href="lernen.php?menu_id=13">Pronomen</a></strong></li>
+<li><strong><a title="Adjektive" href="lernen.php?menu_id=11">Adjektive</a></strong> und <strong><a title="Partizipien" href="lernen.php?menu_id=69">Partizipien</a></strong></li>
+<li><strong><a title="Adverbien" href="lernen.php?menu_id=12">Adverbien</a></strong></li>
+<li><strong><a title="Nomen" href="lernen.php?menu_id=9">Nomen</a></strong></li>
+
+<p><br> <strong><span class="red">Rechtsattribute</span></strong> können bei Pronomen, Adverbien und Nomen stehen. <br> <strong><span class="red">Linksattribute</span></strong> können bei Adjektiven, Partizipien, Adverbien und Nomen stehen.</p>  
+''';
+
+String title2 = 'Pronomen + Attribut';
+String htmlContent2_1 = '''
+<p>Attribute, die auf ein <strong><a title="Pronomen" href="lernen.php?menu_id=13">Pronomen</a></strong> folgen, gehören zu den <strong><span class="red">Rechtsattributen</span></strong>, das heißt, dass sie <span style="text-decoration:underline"><strong><span class="red">hinter</span></strong> dem Pronomen (Bezugswort)</span> stehen. Folgende <strong>Attribute</strong> können bei <span style="text-decoration:underline">Pronomen</span> sowie <strong><a title="Kardinalzahlen" href="lernen.php?menu_id=70#kardinalzahlen">Kardinalzahlen</a></strong> stehen:</p>
+
+<li><span style="text-decoration:underline">Pronomen</span> + <strong><a title="Genitiv" href="lernen.php?menu_id=56">Nomen im Genitiv</a></strong>
+
+<li><span style="text-decoration:underline">Einige</span> <strong><span class="red">meiner Schüler</span></strong> haben eine sehr gute Arbeit abgegeben.</li>
+<li><span style="text-decoration:underline">Drei</span> <strong><span class="red">dieser Schüler</span></strong> erreichten sogar 100%.</li>
+<li><span style="text-decoration:underline">Viele</span> <strong><span class="red">der gestellten Aufgaben</span></strong> waren nicht einfach zu lösen.</li>
+
+<li><span style="text-decoration:underline">Pronomen</span> + <strong><a title="Genitivalternativen" href="lernen.php?menu_id=56#alternativen">Nomen mit "von + Dativ"</a></strong>
+
+<li><span style="text-decoration:underline">Einige</span> <strong><span class="red">von meinen alten Schulfreunden</span></strong> arbeiten erfolgreich in ihren Berufen.</li>
+<li><span style="text-decoration:underline">Manche</span> <strong><span class="red">von meinen Kollegen</span></strong> sind ziemlich akribisch.</li>
+<li><span style="text-decoration:underline">Welcher</span> <strong><span class="red">von deinen Freunden</span></strong> hat sich kürzlich das Leben genommen?</li>
+
+<li><span style="text-decoration:underline">Pronomen</span> + <strong><a title="Präposition" href="lernen.php?menu_id=14">Präposition</a></strong>
+
+<li><span style="text-decoration:underline">Jemand</span> <strong><span class="red">aus dieser Gruppe</span></strong> muss das Geld gestohlen haben.</li>
+<li><span style="text-decoration:underline">Niemand</span> <strong><span class="red">aus meinem Haus</span></strong> will weder den Keller, noch das Treppenhaus putzen.</li>
+<li><span style="text-decoration:underline">Alle</span> <strong><span class="red">aus meinem Bekanntenkreis</span></strong> sind bereits verheiratet und haben Kinder.</li>
+
+<li><span style="text-decoration:underline">Pronomen</span> + <strong><a title="Lokale Adverbien" href="lernen.php?menu_id=72">lokale Adverbien</a></strong>
+
+<li><span style="text-decoration:underline">Diese</span> <strong><span class="red">dort</span></strong> gefällt mir am besten.</li>
+<li><span style="text-decoration:underline">Mancher</span> <strong><span class="red">hier</span></strong> kann diese Aussagen bestätigen.</li>
+<li><span style="text-decoration:underline">Alle</span> <strong><span class="red">hier Anwesenden</span></strong> bekommen die Gelegenheit, sich auszuzeichnen.</li>
+
+<li><span style="text-decoration:underline">Pronomen "etwas" und "nichts" sowie "viel" und "wenig"</span> + <strong><a title="Infinitivergänzung" href="lernen.php?menu_id=49">erweiteter Infinitiv</a></strong>
+
+<li>Mama, hast du <span style="text-decoration:underline">etwas</span> <strong><span class="red">zu trinken</span></strong> für mich?</li>
+<li>Der Motor ist kaputt. Da ist <span style="text-decoration:underline">nichts mehr</span> <strong><span class="red">zu machen</span></strong>.</li>
+<li><span style="text-decoration:underline">Gut</span> <strong><span class="red">zu wissen</span></strong>, dass man sich auf dich verlassen kann.</li>
+</div>
+''';
+
+String title3 = 'Attribute + Adjektive oder Partizipien';
+String htmlContent3_1 = '''
+<p>Attribute, die bei einem <strong><a title="Adjektiv" href="lernen.php?menu_id=11">Adjektiv</a></strong> stehen, gehören zu den <strong><span class="red">Linksattributen</span></strong>, das heißt, dass sie <span style="text-decoration:underline"><strong><span class="red">vor</span></strong> dem Bezugswort</span> stehen. Während das Adjektiv selbst als Linksattribut vor einem Nomen stehen kann und dekliniert werden muss, <span style="text-decoration:underline">bleibt das Linksattribut des Adjektivs in diesen Fällen unverändert</span>. Folgende <strong><span class="red">Attribute</span></strong> können bei <span style="text-decoration:underline">Adjektiven</span> stehen:</p>
+
+<li><strong><a title="Adverbien" href="lernen.php?menu_id=12">Adverb</a></strong> als Attribut + <span style="text-decoration:underline">Adjektiv</span>
+
+<li>Herr Knuffelpickel hat drei <strong><span class="red">sehr</span></strong> <span style="text-decoration:underline">hübsche</span> Töchter.</li>
+<li>Unsere Kunden sind <strong><span class="red">überaus</span></strong> <span style="text-decoration:underline">zufriedene</span> Kunden.</li>
+<li>Der <strong><span class="red">äußerst</span></strong> <span style="text-decoration:underline">schwache</span> Schiedsrichter wurde gnadenlos ausgepfiffen.</li>
+
+<li><strong><a title="Adjektive" href="lernen.php?menu_id=11">Adjektiv</a></strong> oder <strong><a title="Partizipien" href="lernen.php?menu_id=69">Partizip</a></strong> als Attribut + <span style="text-decoration:underline">Adjektiv</span>
+
+<li>Kaum jemand verstand den <strong><span class="red">leise</span></strong> <span style="text-decoration:underline">sprechenden</span> Moderator.</li>
+<li><strong><span class="red">Gut</span></strong> <span style="text-decoration:underline">erzogene</span> Kinder werden überall gern gesehen.</li>
+<li>Der <strong><span class="red">neu</span></strong> <span style="text-decoration:underline">gekaufte</span> Computer ging schon nach ein paar Stunden kaputt.</li>
+
+<li><strong><a title="Präpositionen" href="lernen.php?menu_id=14">Präpositionen</a></strong> als Attribute + <span style="text-decoration:underline">Adjektiv</span>.
+
+<li>Niemand hörte die <strong><span class="red">um Hilfe</span></strong> <span style="text-decoration:underline">schreiende</span> Frau.</li>
+<li>Der <strong><span class="red">auf Kritik</span></strong> <span style="text-decoration:underline">gestoßene</span> Politiker stellt sein Amt zur Verfügung.</li>
+<li>Die <strong><span class="red">nicht zu Wort</span></strong> <span style="text-decoration:underline">gekommenen</span> Demonstranten wurden anschließend gewalttätig.</li>
+
+<li><strong><a title="Nomen" href="lernen.php?menu_id=9">Nomen</a></strong> als Attribute + <span style="text-decoration:underline">Adjektiv</span>.
+
+<li>Die <strong><span class="red">erst 15 Jahre</span></strong> <span style="text-decoration:underline">alte</span> Schülerin ist schon schwanger.</li>
+<li>Der Angler hat nach hartem Kampf einen <strong><span class="red">8 Kilo</span></strong> <span style="text-decoration:underline">schweren</span> Fisch an Land gezogen.</li>
+<li>Das <strong><span class="red">35 Meter</span></strong> <span style="text-decoration:underline">hohe</span> Gebäude ist in die Jahre gekommen und soll abgerissen werden.</li>
+
+<p>Siehe auch: </p>
+<li><strong><a title="Partizipialkonstruktionen" href="lernen.php?menu_id=69#partizipialkonstruktionen">Partizipialkonstruktionen als Attribute</a></strong></li>
+<li><strong><a title="Adjektivgruppen" href="lernen.php?menu_id=71">Adjektivgruppen</a></strong></li>
+''';
+
+String title4 = 'Adverbien + Attribute';
+String htmlContent4_1 = '''
+<p>Es kann sich bei den Attributen, die bei einem <strong><a title="Adverb" href="lernen.php?menu_id=12">Adverb</a></strong> stehen, sowohl um ein <strong><span class="red">Linksattribut</span></strong> als auch um ein <strong><span class="red">Rechtsattribut</span></strong> handeln, das heißt, dass sie <span style="text-decoration:underline"><strong><span class="red">vor oder nach</span></strong> dem Bezugswort</span> stehen können. Folgende <strong><span class="red">Attribute</span></strong> können bei <span style="text-decoration:underline">Adverbien</span> stehen:</p>
+
+<li><strong><a title="Adverb" href="lernen.php?menu_id=12">Adverb</a> als Attribut</strong> + <span style="text-decoration:underline">Adverb</span> (Linksattribut)
+
+<li>Herr Knaffelpuckel trinkt abends <strong><span class="red">sehr</span></strong> <span style="text-decoration:underline">gern</span> eine Flasche Wein.</li>
+<li>Die Belegschaft dieser Chemiefabrik feiert <strong><span class="red">äußerst</span></strong> <span style="text-decoration:underline">selten</span> krank.</li>
+<li>Meine Kinder essen nicht <strong><span class="red">so</span></strong> <span style="text-decoration:underline">gern</span> Kassler mit Sauerkraut, eine <strong><span class="red">typisch</span></strong> deutsche Spezialität.</li>
+
+<li><strong><a title="Adjektiv" href="lernen.php?menu_id=11">Adjektiv</a> als Attribut</strong> + <span style="text-decoration:underline">Adverb</span> (Linksattribut, Adjektiv wird nicht dekliniert)
+
+<li>Die Geschichte spielte sich <strong><span class="red">ganz</span></strong> <span style="text-decoration:underline">anders</span> ab, als von Ihnen geschildert.</li>
+<li><strong><span class="red">Weit</span></strong> <span style="text-decoration:underline">draußen</span> auf dem Meer kann man noch vereinzelt Surfer sehen.</li>
+<li><strong><span class="red">Hoch</span></strong> <span style="text-decoration:underline">oben</span> auf dem Berg weht ein sehr kräftiger Wind.</li>
+
+<li><strong><a title="Nomen" href="lernen.php?menu_id=9">Nomen</a> als Attribut</strong> + <span style="text-decoration:underline">Adverb</span> (Linksattribut, Nomen + Begleiter stehen im Akkusativ)
+
+<li>Ich sah ihn noch lachen. <strong><span class="red">Einen Moment</span></strong> <span style="text-decoration:underline">später</span> lag er blutüberströmt auf dem Boden.</li>
+<li>Warum ist der Arzt nicht <strong><span class="red">ein paar Minuten</span></strong> <span style="text-decoration:underline">früher</span> gekommen?</li>
+<li>Der Küchenschrank müsste <strong><span class="red">einen Meter</span></strong> <span style="text-decoration:underline">länger</span> sein.</li>
+
+<li><span style="text-decoration:underline">Adverb</span> + <strong><a title="Präposition" href="lernen.php?menu_id=14">Präposition</a> als Attribut</strong> (Rechtsattribut).
+
+<li>Deine Brille liegt <span style="text-decoration:underline">da</span> <strong><span class="red">hinter dir</span></strong> auf dem Tisch neben dem Grammatikbuch.</li>
+<li><span style="text-decoration:underline">Damals</span> <strong><span class="red">vor seinem schweren Unfall</span></strong> war Herbert sehr sportlich.</li>
+<li><span style="text-decoration:underline">Dort</span> <strong><span class="red">vor dem Hügel</span></strong> beginnt das Schongebiet.</li>
+
+<li><span style="text-decoration:underline">Adverb</span> + <strong><span class="red">Nebensatz als Attribut</span></strong> (Rechtsattribut, oft als <strong><a title="Relativsatz" href="lernen.php?menu_id=81#pronomen">Relativsatz</a></strong>.
+
+<li><span style="text-decoration:underline">Hier</span>, <strong><span class="red">wo wir jetzt stehen</span></strong>, gab es vor langer Zeit eine römische Siedlung.</li>
+<li><span style="text-decoration:underline">Dort unten</span>, <strong><span class="red">wo sich die beiden Flüsse vereinen</span></strong>, gibt es starke Strudel.</li>
+<li><span style="text-decoration:underline">Damals</span>, <strong><span class="red">als Kurt noch ledig war</span></strong>, war er sportlich und schlank.</li>
+''';
+
+String title5 = 'Nomen + Attribute';
+String htmlContent5_1 = '''
+<p>Es kann sich bei den Attributen, die bei einem <strong><a title="Nomen" href="lernen.php?menu_id=9">Nomen</a></strong> stehen, sowohl um ein <strong><span class="red">Linksattribut</span></strong> als auch um ein <strong><span class="red">Rechtsattribut</span></strong> handeln, das heißt, dass sie <span style="text-decoration:underline"><strong><span class="red">vor oder nach</span></strong> dem Bezugswort</span> stehen können. Folgende <strong><span class="red">Attribute</span></strong> können bei <span style="text-decoration:underline">Nomen</span> stehen:</p>
+
+<li><strong><a title="Adjektive" href="lernen.php?menu_id=11#adjektive_vor_nomen">Adjektive</a></strong> und <strong><a title="Partizipien" href="lernen.php?menu_id=69">Partizipien</a></strong> <strong><span class="red">als Attribute</span></strong> + <span style="text-decoration:underline">Nomen</span> (Linksattribut, Adjektiv wird dekliniert)
+
+<li>Herr Knickeldackel hat sich ein <strong><span class="red">neues</span></strong> <span style="text-decoration:underline">Auto</span> gekauft.</li>
+<li>Frau Pickeldeckel schenkt ihrer <strong><span class="red">hübschen</span></strong> <span style="text-decoration:underline">Tochter</span> ihre <strong><span class="red">alte</span></strong> <span style="text-decoration:underline">Goldkette</span>.</li>
+<li>Das <strong><span class="red">kleine</span></strong> <span style="text-decoration:underline">Kind</span> will die <strong><span class="red">heiße</span></strong> <span style="text-decoration:underline">Suppe</span> nicht essen.</li>
+
+<li><span style="text-decoration:underline">Nomen</span> + <strong><span class="red">Nomen als Attribut</span></strong> (<strong><a title="Genitiv" href="lernen.php?menu_id=56">Genitivattribut</a></strong>, Links- oder Rechtsattribut)
+
+<li><strong><span class="red">Peters</span></strong> <span style="text-decoration:underline">Auto</span> muss in die Werkstatt.</li>
+<li><span style="text-decoration:underline">Das Auto</span> <strong><span class="red">der Köchin</span></strong> hat einen Motorschaden.</li>
+<li><span style="text-decoration:underline">Die Reifen</span> <strong><span class="red">Ihres Autos</span></strong> haben kaum noch Profil.</li>
+
+<li><span style="text-decoration:underline">Nomen</span> + <strong><a title="Adverb" href="lernen.php?menu_id=12">Adverb</a></strong> <strong><span class="red">als Attribut</span></strong> (Rechtsattribut)
+
+<li><span style="text-decoration:underline">Der Mann</span> <strong><span class="red">dort hinten</span></strong> soll ein Verhältnis mit Frau Suppendorn haben.</li>
+<li><span style="text-decoration:underline">Die Frau</span> <strong><span class="red">links daneben</span></strong> hat vorigen Monat die Scheidung eingereicht.</li>
+<li><span style="text-decoration:underline">Die junge Frau</span> <strong><span class="red">da drüben</span></strong> hat anscheinend unserem Chef den Kopf verdreht.</li>
+
+<li><span style="text-decoration:underline">Nomen</span> + <strong><a title="Präposition" href="lernen.php?menu_id=14">Präposition</a></strong> <strong><span class="red">als Attribut</span></strong> (Rechtsattribut)
+
+<li><span style="text-decoration:underline">Die Katze</span> <strong><span class="red">auf dem Sofa</span></strong> heißt Mutsch.</li>
+<li><span style="text-decoration:underline">Der Kater</span> <strong><span class="red">am Fenster</span></strong> ist schon sieben Jahre alt.</li>
+<li><span style="text-decoration:underline">Der große Hund</span> <strong><span class="red">unter dem Tisch</span></strong> mag die beiden Katzen nicht.</li>
+
+<li><span style="text-decoration:underline">Nomen</span> + <strong><span class="red">Apposition als Attribut</span></strong> (Rechtsattribut, steht im gleichen Kasus, wie das Bezugswort)
+
+<li><span style="text-decoration:underline">Der Matrose</span>, <strong><span class="red">ein wirklich netter junger Mann</span></strong>, fährt schon seit 3 Jahren zur See.</li>
+<li>Petra liebt ihr <span style="text-decoration:underline">Pferd</span>, <strong><span class="red">eine 4-jährige Stute</span></strong>.</li>
+<li>Herr Holz hilft oft dem <span style="text-decoration:underline">Fräulein Hinterhalt</span>, <strong><span class="red">seiner sehr hübschen Nachbarin</span></strong>.</li>
+<li>Die Frau an seiner Seite kommt aus <span style="text-decoration:underline">Tabay</span>, <strong><span class="red">einem venezolanischem Dorf</span></strong>.</li>
+
+<li><span style="text-decoration:underline">Nomen</span> + <strong><a title="Infinitivsatz" href="lernen.php?menu_id=49">Infinitivsatz</a></strong> <strong><span class="red">als Attribut</span></strong> (Rechtsattribut)
+
+<li><span style="text-decoration:underline">Ihr Wunsch</span>, <strong><span class="red">einen reichen Mann zu heiraten</span></strong>, ging leider nicht in Erfüllung.</li>
+<li><span style="text-decoration:underline">Unsere Bitte</span>, <strong><span class="red">schnell geholfen zu werden</span></strong>, wurde nicht nachgekommen.</li>
+<li><span style="text-decoration:underline">Das Risiko</span>, <strong><span class="red">enttarnt zu werden</span></strong>, musste der Spion auf sich nehmen.</li>
+
+<li><span style="text-decoration:underline">Nomen</span> + <strong><a title="Relativsatz" href="lernen.php?menu_id=81">Relativsatz</a></strong> <strong><span class="red">als Attribut</span></strong> (Rechtsattribut)
+
+<li><span style="text-decoration:underline">Das Wochenendhaus</span>, <strong><span class="red">das wir über die Feiertage mieten wollten</span></strong>, ist belegt.</li>
+<li><span style="text-decoration:underline">Die Betten</span>, <strong><span class="red">in denen wir geschlafen haben</span></strong>, waren sehr unbequem.</li>
+<li><span style="text-decoration:underline">Alles</span>, <strong><span class="red">was teuer ist</span></strong>, muss nicht unbedingt gut sein.</li>
+
+<p>Siehe auch:</p>
+<li><strong><a title="Partizipialattribute" href="lernen.php?menu_id=69#partizipialattribute">Partizipialkonstruktionen als Attribute</a></strong></li>
+''';

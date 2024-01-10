@@ -96,53 +96,40 @@ List<CardContent> contents = [
   ),
 ];
 
-
 String title = '13.11.1. Vorgangspassiv';
 String title1 = 'Was man über das Vorgangspassiv wissen sollte.';
 String htmlContent1 = '''
- <div>
 <p>Wenn man vom <strong>Passiv</strong> redet, ist gewöhnlich das <strong><span class="red">Vorgangspassiv</span></strong> gemeint, wird aber auch, um Verwechslungen zu vermeiden, <strong><span class="red">werden-Passiv</span></strong> genannt. Das Vorgangspassiv (im Folgenden = Passiv / vergleiche <strong><a title="Einführung sein-Passiv = Zustandspassiv" href="zustandspassiv.html#einfuehrung" target="_blank">Zustandspassiv</a></strong>) stellt das <span style="text-decoration:underline">Geschehen</span>, die <span style="text-decoration:underline">Handlung</span> oder den <span style="text-decoration:underline">Vorgang</span> in den Vordergrund. Die handelnde Person, auch <strong><span class="blue">Agens</span></strong> oder <strong><span class="blue">Täter</span></strong> genannt, kann, braucht aber nicht genannt zu werden. Das Subjekt, die Nominativergänzung, aus dem Aktivsatz wird daher in einem Passivsatz <span style="text-decoration:underline">nicht</span> gebraucht und fällt in der Regel weg.</p>
-</div>
-<p>&nbsp;</p>
+
 <p style="padding-left: 30px;"><strong><span class="red">Aktivsatz</span></strong>: Der Koch schneidet Kartoffeln. ( Nominativ (<strong><span class="blue">Agens</span></strong>) = der Koch )</p>
 <p style="padding-left: 30px;"><strong><span class="red">Passivsatz</span> </strong> <strong><span class="blue">ohne Agens</span></strong>: Kartoffeln werden geschnitten. ( <strong><span class="blue">Agens fällt weg</span></strong> )</p>
 <p style="padding-left: 30px;"><strong><span class="red">Passivsatz</span></strong> <strong><span class="blue">mit Agens</span></strong>: Kartoffeln werden vom Koch geschnitten. ( <strong><span class="blue">von + Agens im Dativ</span></strong> )</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
+
 <div>Das Passiv benutzt man, wenn der Täter bzw. das Subjekt des Aktivsatzes <span style="text-decoration:underline">nicht</span> wichtig ist. Dies ist häufig in Sachtexten der Fall, wie beispielsweise bei <br><br>
 <p style="padding-left: 30px;">- Gebrauchsanweisungen, Beschreibungen von Arbeitsprozessen, in Zeitungsberichten etc.</p>
-</div>
-<p>&nbsp;</p>
+
 <p style="padding-left: 60px;">Zuerst <strong><span class="red">werden</span></strong> die Kartoffeln <strong><span class="red">gewaschen</span></strong>. Dann <strong><span class="red">werden</span></strong> sie <strong><span class="red">geschält</span></strong>, nochmals kurz mit Wasser <strong><span class="red">gesäubert</span></strong> und schließlich in kleine Würfel <strong><span class="red">geschnitten</span></strong>...</p>
 <p style="padding-left: 60px;">Zuerst <strong><span class="red">muss</span></strong> der rote Knopf <strong><span class="red">gedrückt werden</span></strong>. Dadurch <strong><span class="red">wird</span></strong> die Maschine <strong><span class="red">abgeschaltet</span></strong>...</p>
 <p style="padding-left: 60px;">Gestern Abend <strong><span class="red">wurde</span></strong> in unserer Siedlung das neue Gemeindehaus feierlich <strong><span class="red">eröffnet</span></strong>. Es <strong><span class="red">wurden</span></strong> viele Reden <strong><span class="red">gehalten</span></strong>. Danach ...</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<div>
+
 <p style="padding-left: 30px;">- oder wenn der Täter nicht genannt werden will oder soll,</p>
-</div>
+
 <p style="padding-left: 60px;">Der Tisch <strong><span class="red">muss abgeräumt werden</span></strong>. (Der Sprecher will den Tisch selbst nicht abräumen. Er hat keine Lust dazu und sucht eine andere Person, die den Tisch abräumt).</p>
 <p style="padding-left: 60px;">Das Fenster <strong><span class="red">muss geputzt werden</span></strong>. (Aber der Sprecher selbst will es nicht tun.)</p>
 <p style="padding-left: 60px;">Sohn, hast du mein Auto gewaschen? - Ja, Papa, dein Auto ist sauber. Es <strong><span class="red">ist gewaschen worden</span></strong>. ( Wer das Auto gewaschen hat, sagt der Sohn nicht, vielleicht hat es sein kleiner Bruder gewaschen.)</p>
-<p>&nbsp;</p>
-<div>
+
 <p style="padding-left: 30px;">- oder nicht benannt werden kann, weil er unbekannt ist.</p>
-</div>
+
 <p style="padding-left: 60px;">Gestern Mittag <strong><span class="red">wurde</span></strong> eine Bank <strong><span class="red">überfallen</span></strong>. Die maskierten Täter sind der Polizei bisher unbekannt.</p>
 <p style="padding-left: 60px;">Meine Geldbörse <strong><span class="red">ist gestohlen worden</span></strong>. (Wer hat sie nun gestohlen?)</p>
 <p style="padding-left: 60px;">Niemand hilft mir. Mir <strong><span class="red">wird</span></strong> einfach nicht <strong><span class="red">geholfen</span></strong>.</p>  
- 
 ''';
 
 String title2 = 'Was man bei der Bildung des Passivs beachten muss.';
 String htmlContent2_1 = '''
- <div>
 <p>Um das Passiv problemlos bilden zu können, sind Kenntnisse über die jeweiligen <strong><a title="Verben haben bestimmte Ergänzungen, Übersicht Verbergänzungen" href="verbergaenzungen.html#einfuehrung" target="_blank">Verbergänzungen</a></strong> notwendig. Man sollte stets zwischen Nominativ-, Akkusativ- und Dativ-Ergänzung unterscheiden können.</p>
-</div>
-<p>&nbsp;</p>
+
 <h3>- Das Passiv bildet man wie folgt:</h3>
-<p>&nbsp;</p>
-<div>
 ''';
 String htmlTable2_2 = '''
 <table class="eins">
@@ -194,12 +181,10 @@ String htmlTable2_3 = '''
 </table>
 ''';
 String htmlContent2_4 = '''
-<p><br><br></p>
 <h3>- Weitere Veränderungen bei der Bildung des Passivs:</h3>
 <p style="padding-left: 30px;"><br> Die <strong><a title="Intransitive Verben fordern eine Akkusativ-Ergänzung" href="akkusativ-ergaenzung.html#einfuehrung" target="_blank">Akkusativ-Ergänzung</a></strong> im Aktivsatz wird im Passivsatz zur <strong><a title="Das Prädikat fordert ein Subjekt. Das Subjekt steht im Nominativ" href="nominativ-ergaenzung.html#einfuehrung" target="_blank">Nominativ-Ergänzung</a></strong>.</p>
-<p>&nbsp;</p>
 ''';
-String htmlTable2_5= '''
+String htmlTable2_5 = '''
 <table>
 <thead>
 <tr>
@@ -224,12 +209,10 @@ String htmlTable2_5= '''
 </table>
 ''';
 String htmlContent2_6 = '''
-<p>&nbsp;</p>
 <p style="padding-left: 30px;">Die <strong><a title="Das Subjekt im Aktivsatz" href="nominativ-ergaenzung.html#einfuehrung" target="_blank"> Nominativ-Ergänzung</a></strong> im Aktivsatz wird im Passivsatz zur <strong><span class="blue">Täter-Nennung</span></strong> mit "<strong><span class="blue">von + Dativ</span></strong>" ( seltener " durch + Akkusativ" ).</p>
 <p style="padding-left: 30px;">&nbsp;</p>
-
 ''';
-String htmlTable2_7= '''
+String htmlTable2_7 = '''
 <table><colgroup> <col style="width: 48%;"> <col style="width: 52%;"> </colgroup>
 <thead>
 <tr>
@@ -259,7 +242,7 @@ String htmlContent2_8 = '''
 <p style="padding-left: 30px;">Das unpersönliche Pronomen " <strong><a title="Das unpersönliche Pronomen 'man' in der dritten Person Singular" href="personalpronomen.html#personen" target="_blank">man</a></strong> " im Aktivsatz entfällt im Passivsatz.</p>
 <p style="padding-left: 30px;">&nbsp;</p>
 ''';
-String htmlTable2_9= '''
+String htmlTable2_9 = '''
 <table>
 <thead>
 <tr>
@@ -284,16 +267,13 @@ String htmlTable2_9= '''
 </table>
 ''';
 String htmlContent2_10 = '''
-<p>&nbsp;</p>
 <h3>- Alle anderen Satzglieder bleiben dagegen unverändert:</h3>
 <p style="padding-left: 30px;"><br>&nbsp; <strong><span class="red">Dativ-Ergänzung bleibt Dativ-Ergänzung</span></strong>.</p>
 <p style="padding-left: 30px;">&nbsp;</p>
-<div>
+
 <p style="padding-left: 60px;">Das unpersönliche Pronomen " <strong><a title="Das Wort 'es' wird oft als Platzhalter gebraucht" href="pronomen-es.html#einfuehrung" target="_blank">es</a></strong> " steht häufig in Passivsätzen, in denen der Täter (Aktivsatz = Akkusativ-Ergänzung) nicht genannt wird. "<strong><span class="blue">Es</span></strong>" darf aber nur <span style="text-decoration:underline">auf Position 1</span> stehen und dient alleinig als Platzhalter!</p>
-</div>
-<p>&nbsp;</p>
 ''';
-String htmlTable2_11= '''
+String htmlTable2_11 = '''
 <table>
 <thead>
 <tr>
@@ -322,12 +302,10 @@ String htmlContent2_12 = '''
 <p style="padding-left: 30px;">&nbsp;</p>
 <p style="padding-left: 30px;"><strong><span class="red">Präpositional-Ergänzung bleibt Präpositional-Ergänzung</span></strong>.</p>
 <p style="padding-left: 30px;">&nbsp;</p>
-<div>
+
 <p style="padding-left: 60px;">Auch <strong><a title="Verben mit festen Präpositionen" href="praepositionalergaenzung.html#einfuehrung" target="_blank">Präpositional-Ergänzungen</a></strong> bleiben in Passivsätzen unverändert.</p>
-</div>
-<p>&nbsp;</p>
 ''';
-String htmlTable2_13= '''
+String htmlTable2_13 = '''
 <table>
 <thead>
 <tr>
@@ -361,7 +339,7 @@ String htmlContent2_14 = '''
 </div>
 <p>&nbsp;</p>
 ''';
-String htmlTable2_15= '''
+String htmlTable2_15 = '''
 <table>
 <thead>
 <tr>
@@ -390,12 +368,10 @@ String htmlContent2_16 = '''
 <p style="padding-left: 30px;">&nbsp;</p>
 <p style="padding-left: 30px;"><strong><span class="red">Tempus bleibt Tempus</span></strong>.</p>
 <p style="padding-left: 30px;">&nbsp;</p>
-<div>
+
 <p style="padding-left: 60px;">Die <strong><a title="Übersicht der sechs Zeitformen im Deutschen" href="tempus.html#einfuehrung" target="_blank">Tempusform</a></strong> des Aktivsatzes wird natürlich übernommen.</p>
-</div>
-<p>&nbsp;</p>
 ''';
-String htmlTable2_17= '''
+String htmlTable2_17 = '''
 <table>
 <thead>
 <tr>
@@ -423,8 +399,6 @@ String htmlTable2_17= '''
 String title3 = 'Die Zeitformen des Passivs';
 String htmlContent3_1 = '''
  <h3>Passiv Präsens</h3>
-<p>&nbsp;</p>
-<div>
 ''';
 String htmlTable3_2 = '''
 <table class="eins">
@@ -477,7 +451,7 @@ String htmlTable3_3 = '''
 ''';
 String htmlContent3_4 = '''
 <h3>Passiv Präteritum</h3>
-<div>
+
 <p style="padding-left: 30px;">Zur Bildung des Präteritums verwendet man die Präteritumsform von " <strong>werden</strong> ".</p>
 ''';
 String htmlTable3_5 = '''
@@ -531,10 +505,8 @@ String htmlTable3_6 = '''
 ''';
 String htmlContent3_7 = '''
 <h3>Passiv Perfekt</h3>
-<div>
+
 <p style="padding-left: 30px;">Zur Bildung des Perfekts wird ein weiteres Hilfsverb benötigt. Das Hilfsverb "<strong><span class="red">sein</span></strong>" zeigt das Perfekt an. Das Partizip II von "<strong><span class="red">werden</span></strong>" ist "<strong><span class="red">geworden</span></strong>". Das "<strong><span class="red">ge</span></strong>" entfällt bei der Bildung des Perfekts.</p>
-</div>
-<p>&nbsp;</p>
 ''';
 String htmlTable3_8 = '''
 <table class="eins">
@@ -587,10 +559,8 @@ String htmlTable3_9 = '''
 ''';
 String htmlContent3_10 = '''
 <h3>Passiv Plusquamperfekt</h3>
-<div>
+
 <p style="padding-left: 30px;">Zur Bildung des Plusquamperfekts wird die Präteritumsform des Hilfsverbs "<strong><span class="red">sein</span></strong>" benutzt.</p>
-</div>
-<p>&nbsp;</p>
 ''';
 String htmlTable3_11 = '''
 <table class="eins">
@@ -643,10 +613,8 @@ String htmlTable3_12 = '''
 ''';
 String htmlContent3_13 = '''
 <h3>Passiv Futur I</h3>
-<div>
+
 <p style="padding-left: 30px;">Zur Bildung des Futurs I wird das Hilfsverb "sein" durch das neue Hilfsverb "<strong><span class="red">werden</span></strong> ersetzt. Das Passivhilfsverb "werden" wird im Infinitiv an das Satzende gestellt.</p>
-</div>
-<p>&nbsp;</p>
 ''';
 String htmlTable3_14 = '''
 <table class="eins">
@@ -750,12 +718,9 @@ String htmlTable3_18 = '''
 </table>
 ''';
 
-
 String title4 = 'Das Passiv mit Modalverben';
 String htmlContent4_1 = '''
- <h3>Präsens Passiv mit Modalverben</h3>
-<p>&nbsp;</p>
-<div>
+<h3>Präsens Passiv mit Modalverben</h3>
 ''';
 String htmlTable4_2 = '''
 <table class="eins">
@@ -911,9 +876,7 @@ String htmlTable4_9 = '''
 </table>
 ''';
 String htmlContent4_10 = '''
-<p>&nbsp;</p>
 <h3>Plusquamperfekt Passiv mit Modalverben</h3>
-<p>&nbsp;</p>
 ''';
 String htmlTable4_11 = '''
 <table>
@@ -965,9 +928,7 @@ String htmlTable4_12 = '''
 </table>
 ''';
 String htmlContent4_13 = '''
-<p>&nbsp;</p>
 <h3>Futur I Passiv mit Modalverben</h3>
-<p>&nbsp;</p>
 ''';
 String htmlTable4_14 = '''
 <table>
@@ -1018,4 +979,3 @@ String htmlTable4_15 = '''
 </tbody>
 </table>
 ''';
-

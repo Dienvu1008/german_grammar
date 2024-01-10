@@ -30,7 +30,6 @@ List<CardContent> contents = [
       CardElement(type: ElementType.htmlTable, value: htmlTable1_2),
       CardElement(type: ElementType.htmlContent, value: htmlContent1_3),
       CardElement(type: ElementType.htmlTable, value: htmlTable1_4),
-
     ],
   ),
   CardContent(
@@ -41,30 +40,26 @@ List<CardContent> contents = [
       CardElement(type: ElementType.htmlContent, value: htmlContent2_3),
     ],
   ),
-
 ];
 String title = '14.3. Dativ';
-String title1 = 'Was man über Verben mit einer Dativ-Ergänzung (intransitive Verben) wissen sollte.';
+String title1 =
+    'Was man über Verben mit einer Dativ-Ergänzung (intransitive Verben) wissen sollte.';
 String htmlContent1_1 = '''
- <div>
 <p>Die <span style="text-decoration:underline">meisten</span> deutschen Verben fordern eine <strong><a title="transitive Verben bzw Verben mit einer Akkusativ-Ergänzung" href="akkusativ-ergaenzung.html#einfuehrung" target="_blank">Akkusativ-Ergänzung</a></strong>. Nur <span style="text-decoration:underline">wenige</span> Verben dagegen fordern eine <strong><span class="red">Dativ-Ergänzung</span></strong>. Verben sind <strong><span class="red">transitiv</span></strong>, wenn sie eine Akkusativ-Ergänzung haben (können);</p>
-<p>&nbsp;</p>
+
 <p style="padding-left: 30px;">Verben, die ohne eine Akkusativ-Ergänzung gebildet werden, sind <strong><span class="red">intransitiv</span></strong>.</p>
-<p>&nbsp;</p>
+
 <p>Dazu gehören ebenso Verben mit einer Dativ-Ergänzung.</p>
-</div>
+
 <h3><br> <strong>Intransitive Verben</strong></h3>
 <p style="padding-left: 30px;"><strong>können zwar ins <strong><a title="Einführung Vorgangspassiv" href="vorgangspassiv.html#einfuehrung" target="_blank">Passiv</a></strong> gesetzt werden, die <strong><a title="Zu beachtende Veränderungen bei der Bildung des Passivs" href="vorgangspassiv.html#bildungpassiv" target="_blank">Dativ-Ergänzung</a></strong> wird im Passiv jedoch nicht verändert!</strong></p>
 <p style="padding-left: 30px;">&nbsp;</p>
 <p style="padding-left: 60px;">Er hilft <strong><span class="red">ihr</span></strong>. - <strong><span class="red">Ihr</span></strong> wird geholfen.</p>
 <p style="padding-left: 60px;">Er gratuliert <strong><span class="red">ihm</span></strong>. - Es wird <strong><span class="red">ihm</span></strong> gratuliert.</p>
-<p>&nbsp;</p>
-<div>
-<p>In einer Dativ-Ergänzung stehen ausschließlich <strong><span class="red">Personen</span></strong>, <strong><span class="red">Nomen</span></strong> und <strong><span class="red">Pronomen</span></strong>. Die Dativ-Ergänzung gibt meist das Ziel der Handlung oder den Empfänger an.</p>
-</div>
-<p>&nbsp;</p>
-<h3><strong>Die <strong><a title="Übersicht möglicher Fragewörter" href="fragewoerter.html#w-fragen" target="_blank">W-Frage</a></strong> lautet "<strong><span class="red">Wem</span></strong>" ? </strong> <br><br></h3>
 
+<p>In einer Dativ-Ergänzung stehen ausschließlich <strong><span class="red">Personen</span></strong>, <strong><span class="red">Nomen</span></strong> und <strong><span class="red">Pronomen</span></strong>. Die Dativ-Ergänzung gibt meist das Ziel der Handlung oder den Empfänger an.</p>
+
+<h3><strong>Die <strong><a title="Übersicht möglicher Fragewörter" href="fragewoerter.html#w-fragen" target="_blank">W-Frage</a></strong> lautet "<strong><span class="red">Wem</span></strong>" ? </strong> <br><br></h3>
 ''';
 String htmlTable1_2 = '''
 <table><colgroup> <col style="width: 15%;"> <col style="width: 16%;"> <col style="width: 16%;"> <col style="width: 2%;"> <col style="width: 15%;"> <col style="width: 16%;"> <col style="width: 16%;"> </colgroup>
@@ -120,15 +115,10 @@ String htmlTable1_2 = '''
 </table>
 ''';
 String htmlContent1_3 = '''
-<div>
 <p style="text-align: left; padding-left: 30px;">- Die W-Frage " <strong><span class="red">Wem</span></strong> " fragt <span style="text-decoration:underline">nach der Person</span> im Dativ.</p>
 <p style="text-align: left; padding-left: 30px;">- Die Antwort gibt <span style="text-decoration:underline">die Person</span> an, die im Dativ steht.</p>
 <p style="text-align: left; padding-left: 30px;">- Im Dativ können <strong><span class="red">Namen</span></strong> (Ludwina), <strong><span class="red">Pronomen</span></strong> (mir) oder <strong><span class="red">Nomen</span></strong> (dem Sieger) stehen.</p>
 <p style="text-align: left; padding-left: 30px;"><strong><span class="red">- Stehen im Dativ <strong><a title="Deklinationsbeispiel Personalpronomen" href="personalpronomen.html#deklination" target="_blank">Pronomen</a></strong>, <strong><a title="Deklinationsbeispiel bestimmter Artikel" href="bestimmter-artikel.html#deklination" target="_blank">Artikel</a></strong> oder eine <strong><a title="Was sind schwache Nomen?" href="n-deklination.html#einfuehrung" target="_blank">n-Deklination</a></strong>, müssen diese im Dativ dekliniert werden.</span></strong></p>
-</div>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<div>
 ''';
 String htmlTable1_4 = '''
 <table class="eins">
@@ -144,14 +134,9 @@ String htmlTable1_4 = '''
 </table>
 ''';
 
-
-
 String title2 = 'Liste der wichtigsten Verben mit Dativ-Ergänzung';
 String htmlContent2_1 = '''
- <div>
 <p>Zur Erinnerung: Es gibt <span style="text-decoration:underline">viele</span> Verben mit Akkusativ-Ergänzung, aber nur <strong><span class="red">wenige Verben mit einer Dativ-Ergänzung</span></strong>. Daher sollte man die Verben, die eine Dativ-Ergänzung haben, <span style="text-decoration:underline">lernen</span>! Folgende Liste gehört zum Grundwortschatz:</p>
-</div>
-<p>&nbsp;</p>
 ''';
 String htmlTable2_2 = '''
 <table><colgroup> <col style="width: 23%;"> <col style="width: 77%;"> </colgroup>
@@ -318,7 +303,5 @@ String htmlTable2_2 = '''
 </table>
 ''';
 String htmlContent2_3 = '''
-<p>&nbsp;</p>
-<p>Siehe auch: <strong><a title="Liste Kasusergänzungen zum kostenlosen Ausdrucken" href="liste-kasusergaenzungen-der-verben.html" target="_blank">Liste der Kasusergänzungen</a></strong></p>
-<p>&nbsp;</p>  
+<p>Siehe auch: <strong><a title="Liste Kasusergänzungen zum kostenlosen Ausdrucken" href="liste-kasusergaenzungen-der-verben.html" target="_blank">Liste der Kasusergänzungen</a></strong></p> 
 ''';

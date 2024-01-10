@@ -6,409 +6,96 @@ import 'package:german_grammar/complex_html_table_to_dart_table.dart';
 import '../app/app_localizations.dart';
 import '../html_table_to_dart_table.dart';
 import '../html_to_richtext.dart';
+import '../page_content.dart';
 
 class Satzarten_12_1 extends StatelessWidget {
   const Satzarten_12_1({super.key});
 
   @override
   Widget build(BuildContext context) {
-    final localizations = AppLocalizations.of(context);
-    final textTheme = Theme.of(context).textTheme;
     return Expanded(
       child: Scaffold(
         body: Padding(
-          padding: const EdgeInsets.all(8.0),
-          child: ListView(
-            children: <Widget>[
-              Card(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: <Widget>[
-                    Padding(
-                      padding: const EdgeInsets.only(top: 16.0, left: 16.0),
-                      child:
-                          Text('12.1. Satzarten', style: textTheme.titleMedium),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.only(top: 10.0, left: 16.0),
-                      child: Text(
-                          'Einführung / Was man über Satzarten wissen sollte.',
-                          style: textTheme.titleSmall),
-                    ),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                            top: 10.0, left: 16.0, bottom: 10),
-                        child: HtmlToRichText(
-                          htmlString: htmlContent1,
-                          textTheme: textTheme,
-                        )),
-                  ],
-                ),
-              ),
-              Card(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: <Widget>[
-                    Padding(
-                      padding: const EdgeInsets.only(
-                          top: 10.0, left: 16.0, bottom: 10),
-                      child: Text('Aussagesätze', style: textTheme.titleSmall),
-                    ),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                            top: 10.0, left: 16.0, bottom: 10),
-                        child: HtmlToRichText(
-                          htmlString: htmlContent2,
-                          textTheme: textTheme,
-                        )),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                            top: 10.0, left: 16.0, bottom: 10),
-                        child: HtmlTableToDartTable(
-                          htmlTable: htmlTable2,
-                          textTheme: textTheme,
-                          columnWidths: const {
-                            0: FractionColumnWidth(.22),
-                            1: FractionColumnWidth(.15),
-                            2: FractionColumnWidth(.11),
-                            3: FractionColumnWidth(.28),
-                            4: FractionColumnWidth(.24),
-                          },
-                        )),
-                  ],
-                ),
-              ),
-              Card(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: <Widget>[
-                    Padding(
-                      padding: const EdgeInsets.only(
-                          top: 10.0, left: 16.0, bottom: 10),
-                      child: Text('Fragesätze', style: textTheme.titleSmall),
-                    ),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                            top: 10.0, left: 16.0, bottom: 10),
-                        child: HtmlToRichText(
-                          htmlString: htmlContent3_1,
-                          textTheme: textTheme,
-                        )),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                            top: 10.0, left: 16.0, bottom: 10),
-                        child: HtmlTableToDartTable(
-                          htmlTable: htmlTable3_1,
-                          textTheme: textTheme,
-                          columnWidths: const {
-                            0: FractionColumnWidth(.2),
-                            1: FractionColumnWidth(.22),
-                            2: FractionColumnWidth(.33),
-                            3: FractionColumnWidth(.25),
-                          },
-                        )),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                            top: 10.0, left: 16.0, bottom: 10),
-                        child: HtmlToRichText(
-                          htmlString: htmlContent3_2,
-                          textTheme: textTheme,
-                        )),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                            top: 10.0, left: 16.0, bottom: 10),
-                        child: HtmlTableToDartTable(
-                          htmlTable: htmlTable3_2,
-                          textTheme: textTheme,
-                          columnWidths: const {
-                            0: FractionColumnWidth(.18),
-                            1: FractionColumnWidth(.18),
-                            2: FractionColumnWidth(.20),
-                            3: FractionColumnWidth(.21),
-                            4: FractionColumnWidth(.23),
-                          },
-                        )),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                            top: 10.0, left: 16.0, bottom: 10),
-                        child: HtmlToRichText(
-                          htmlString: htmlContent3_3,
-                          textTheme: textTheme,
-                        )),
-                  ],
-                ),
-              ),
-              Card(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: <Widget>[
-                    Padding(
-                      padding: const EdgeInsets.only(
-                        top: 10.0,
-                        left: 16.0,
-                      ),
-                      child: Text('Aufforderungssätze',
-                          style: textTheme.titleSmall),
-                    ),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                          top: 10.0,
-                          left: 16.0,
-                        ),
-                        child: HtmlToRichText(
-                          htmlString: htmlContent4_1,
-                          textTheme: textTheme,
-                        )),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                          top: 10.0,
-                          left: 16.0,
-                        ),
-                        child: HtmlTableToDartTable(
-                          htmlTable: htmlTable4_1,
-                          textTheme: textTheme,
-                          columnWidths: const {
-                            0: FractionColumnWidth(.20),
-                            1: FractionColumnWidth(.20),
-                            2: FractionColumnWidth(.40),
-                            3: FractionColumnWidth(.20),
-                          },
-                        )),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                          top: 10.0,
-                          left: 16.0,
-                        ),
-                        child: HtmlToRichText(
-                          htmlString: htmlContent4_2,
-                          textTheme: textTheme,
-                        )),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                          top: 10.0,
-                          left: 16.0,
-                        ),
-                        child: HtmlTableToDartTable(
-                          htmlTable: htmlTable4_2,
-                          textTheme: textTheme,
-                          columnWidths: const {
-                            0: FractionColumnWidth(.20),
-                            1: FractionColumnWidth(.20),
-                            2: FractionColumnWidth(.40),
-                            3: FractionColumnWidth(.20),
-                          },
-                        )),
-                  ],
-                ),
-              ),
-              Card(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: <Widget>[
-                    Padding(
-                      padding: const EdgeInsets.only(
-                        top: 10.0,
-                        left: 16.0,
-                      ),
-                      child: Text('Hauptsätze und Nebensätze',
-                          style: textTheme.titleSmall),
-                    ),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                          top: 10.0,
-                          left: 16.0,
-                        ),
-                        child: HtmlToRichText(
-                          htmlString: htmlContent5_1,
-                          textTheme: textTheme,
-                        )),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                          top: 10.0,
-                          left: 16.0,
-                        ),
-                        child: HtmlTableToDartTable(
-                          htmlTable: htmlTable5,
-                          textTheme: textTheme,
-                          columnWidths: const {
-                            0: FractionColumnWidth(.28),
-                            1: FractionColumnWidth(.15),
-                            2: FractionColumnWidth(.14),
-                            3: FractionColumnWidth(.20),
-                            4: FractionColumnWidth(.23),
-                          },
-                        )),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                          top: 10.0,
-                          left: 16.0,
-                        ),
-                        child: HtmlToRichText(
-                          htmlString: htmlContent5_2,
-                          textTheme: textTheme,
-                        )),
-                  ],
-                ),
-              ),
-              Card(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: <Widget>[
-                    Padding(
-                      padding: const EdgeInsets.only(
-                        top: 10.0,
-                        left: 16.0,
-                      ),
-                      child:
-                          Text('Infinitivsätze', style: textTheme.titleSmall),
-                    ),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                          top: 10.0,
-                          left: 16.0,
-                        ),
-                        child: HtmlToRichText(
-                          htmlString: htmlContent6_1,
-                          textTheme: textTheme,
-                        )),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                          top: 10.0,
-                          left: 16.0,
-                        ),
-                        child: HtmlTableToDartTable(
-                          htmlTable: htmlTable6,
-                          textTheme: textTheme,
-                          columnWidths: const {
-                            0: FractionColumnWidth(.24),
-                            1: FractionColumnWidth(.16),
-                            2: FractionColumnWidth(.14),
-                            3: FractionColumnWidth(.26),
-                            4: FractionColumnWidth(.20),
-                          },
-                        )),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                          top: 10.0,
-                          left: 16.0,
-                        ),
-                        child: HtmlToRichText(
-                          htmlString: htmlContent6_2,
-                          textTheme: textTheme,
-                        )),
-                  ],
-                ),
-              ),
-              Card(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: <Widget>[
-                    Padding(
-                      padding: const EdgeInsets.only(
-                        top: 10.0,
-                        left: 16.0,
-                      ),
-                      child: Text('Infinitivkonstruktionen',
-                          style: textTheme.titleSmall),
-                    ),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                          top: 10.0,
-                          left: 16.0,
-                        ),
-                        child: HtmlToRichText(
-                          htmlString: htmlContent7_1,
-                          textTheme: textTheme,
-                        )),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                          top: 10.0,
-                          left: 16.0,
-                        ),
-                        child: HtmlTableToDartTable(
-                          htmlTable: htmlTable7,
-                          textTheme: textTheme,
-                          columnWidths: const {
-                            0: FractionColumnWidth(.32),
-                            1: FractionColumnWidth(.10),
-                            2: FractionColumnWidth(.10),
-                            3: FractionColumnWidth(.25),
-                            4: FractionColumnWidth(.23),
-                          },
-                        )),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                          top: 10.0,
-                          left: 16.0,
-                        ),
-                        child: HtmlToRichText(
-                          htmlString: htmlContent7_2,
-                          textTheme: textTheme,
-                        )),
-                  ],
-                ),
-              ),
-              Card(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: <Widget>[
-                    Padding(
-                      padding: const EdgeInsets.only(
-                        top: 10.0,
-                        left: 16.0,
-                      ),
-                      child: Text('Wunschsätze', style: textTheme.titleSmall),
-                    ),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                          top: 10.0,
-                          left: 16.0,
-                        ),
-                        child: HtmlToRichText(
-                          htmlString: htmlContent8,
-                          textTheme: textTheme,
-                        )),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                          top: 10.0,
-                          left: 16.0,
-                        ),
-                        child: HtmlTableToDartTable(
-                          htmlTable: htmlTable8_1,
-                          textTheme: textTheme,
-                          columnWidths: const {
-                            0: FractionColumnWidth(.15),
-                            1: FractionColumnWidth(.20),
-                            2: FractionColumnWidth(.50),
-                            3: FractionColumnWidth(.15),
-                          },
-                        )),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                          top: 10.0,
-                          left: 16.0,
-                        ),
-                        child: HtmlTableToDartTable(
-                          htmlTable: htmlTable8_2,
-                          textTheme: textTheme,
-                          columnWidths: const {
-                            0: FractionColumnWidth(.17),
-                            1: FractionColumnWidth(.15),
-                            2: FractionColumnWidth(.43),
-                            3: FractionColumnWidth(.25),
-                          },
-                        )),
-                  ],
-                ),
-              ),
-            ],
-          ),
-        ),
+            padding: const EdgeInsets.all(8.0),
+            child: MyPageContentView(contents: contents)),
       ),
     );
   }
 }
 
+List<CardContent> contents = [
+  CardContent(
+    elements: [
+      CardElement(type: ElementType.pageTitle, value: title),
+    ],
+  ),
+  CardContent(
+    elements: [
+      CardElement(type: ElementType.cardTitle, value: title1),
+      CardElement(type: ElementType.htmlContent, value: htmlContent1),
+    ],
+  ),
+  CardContent(
+    elements: [
+      CardElement(type: ElementType.cardTitle, value: title2),
+      CardElement(type: ElementType.htmlContent, value: htmlContent2),
+      CardElement(type: ElementType.htmlTable, value: htmlTable2),
+    ],
+  ),
+  CardContent(
+    elements: [
+      CardElement(type: ElementType.cardTitle, value: title3),
+      CardElement(type: ElementType.htmlContent, value: htmlContent3_1),
+      CardElement(type: ElementType.htmlTable, value: htmlTable3_1),
+      CardElement(type: ElementType.htmlContent, value: htmlContent3_2),
+      CardElement(type: ElementType.htmlTable, value: htmlTable3_2),
+      CardElement(type: ElementType.htmlContent, value: htmlContent3_3),
+    ],
+  ),
+  CardContent(
+    elements: [
+      CardElement(type: ElementType.cardTitle, value: title4),
+      CardElement(type: ElementType.htmlContent, value: htmlContent4_1),
+      CardElement(type: ElementType.htmlTable, value: htmlTable4_1),
+      CardElement(type: ElementType.htmlContent, value: htmlContent4_2),
+      CardElement(type: ElementType.htmlTable, value: htmlTable4_2),
+    ],
+  ),
+  CardContent(
+    elements: [
+      CardElement(type: ElementType.cardTitle, value: title5),
+      CardElement(type: ElementType.htmlContent, value: htmlContent5_1),
+      CardElement(type: ElementType.htmlTable, value: htmlTable5),
+      CardElement(type: ElementType.htmlContent, value: htmlContent5_2),
+    ],
+  ),
+  CardContent(
+    elements: [
+      CardElement(type: ElementType.cardTitle, value: title6),
+      CardElement(type: ElementType.htmlContent, value: htmlContent6_1),
+      CardElement(type: ElementType.htmlTable, value: htmlTable6),
+      CardElement(type: ElementType.htmlContent, value: htmlContent6_2),
+    ],
+  ),
+  CardContent(
+    elements: [
+      CardElement(type: ElementType.cardTitle, value: title7),
+      CardElement(type: ElementType.htmlContent, value: htmlContent7_1),
+      CardElement(type: ElementType.htmlTable, value: htmlTable7),
+      CardElement(type: ElementType.htmlContent, value: htmlContent7_2),
+    ],
+  ),
+  CardContent(
+    elements: [
+      CardElement(type: ElementType.cardTitle, value: title8),
+      CardElement(type: ElementType.htmlContent, value: htmlContent8),
+      CardElement(type: ElementType.htmlTable, value: htmlTable8_1),
+      CardElement(type: ElementType.htmlTable, value: htmlTable8_2),
+    ],
+  ),
+];
+String title = '12.1. Satzarten';
+String title1 = 'Einführung / Was man über Satzarten wissen sollte.';
 String htmlContent1 = '''
 <p>Im Deutschen gibt es verschiedene <strong><span class="red">Satzarten</span></strong>. Eine Unterscheidung der Satzarten ist notwendig, weil die Stellung des <strong><a title="Prädikat" href="lernen.php?menu_id=19#praedikat">Prädikats</a></strong> je nach Satzart variiert. Folgende Satzarten werden unterschieden:</p>
 <li><a title="Aussagesätze" href="#aussagesaetze">Aussagesätze</a></li>
@@ -422,6 +109,7 @@ String htmlContent1 = '''
 <li><a title="Infinitivkonstruktionen" href="#infinitivkonstruktionen">Infinitivkonstruktionen</a></li>
 ''';
 
+String title2 = 'Aussagesätze';
 String htmlContent2 = '''
 <p>Ein <strong><span class="red">Aussagesatz</span></strong> ist die Satzart, die am häufigsten vorkommt. Aussagesätze enden stets mit einem <strong><span class="red">Punkt</span></strong>. Das <strong><a title="Konjugation" href="lernen.php?menu_id=6#konjugation">konjugierte Verb</a></strong> steht immer auf <strong><span class="red">Position 2</span></strong>. Wenn das Verb aus zwei Teilen besteht (<strong><a title="Trennbare Verben" href="lernen.php?menu_id=30">trennbare Verben</a></strong>) oder eine Verbindung mit anderen Verben eingeht (<strong><a title="Modalverben" href="lernen.php?menu_id=31">Modalverben</a></strong>, <strong><a title="Perfekt" href="lernen.php?menu_id=107">Perfekt</a></strong>, <strong><a title="Passiv" href="lernen.php?menu_id=35">Passiv</a></strong>, ...) werden die restlichen <strong><a title="Prädikat" href="lernen.php?menu_id=19#praedikat">Prädikatsteile</a></strong> ans Satzende gestellt (<strong><a title="Subjekt" href="lernen.php?menu_id=19#ergaenzungen">Subjekt</a></strong> auf Position 1 oder 3 ist rot markiert):</p>
 ''';
@@ -531,6 +219,7 @@ String htmlTable2 = '''
 </table>  
 ''';
 
+String title3 = 'Fragesätze';
 String htmlContent3_1 = '''
 <p>Es werden zwei <strong><a title="Fragewörter" href="lernen.php?menu_id=15">Fragesätze</a></strong> unterschieden: <strong><span class="red">Entscheidungsfragen</span></strong> und <strong><span class="red">Ergänzungsfragen</span></strong>.</p>
 <p>In einer <strong><span class="red">Entscheidungsfrage</span></strong>, auch <strong><span class="red">Ja-/Nein-Frage</span></strong> genannt, möchte die fragende Person von seinem Gesprächspartner eine <span style="text-decoration:underline">Zustimmung</span> oder eine <span style="text-decoration:underline">Ablehnung</span> zu seiner Frage erhalten. Eine Entscheidungsfrage wird mit einem <strong><span class="red">Fragezeichen</span></strong> abgeschlossen. In einer <strong><span class="red">Ja-/Nein-Frage</span></strong> steht das Verb immer auf <strong><span class="blue">Position 1</span></strong>, das Subjekt auf <strong><span class="red">Position 2</span></strong>. Weitere <strong><a title="Prädikat" href="lernen.php?menu_id=19#praedikat">Prädikatsteile</a></strong> werden wie gehabt ans Satzende gestellt.</p>
@@ -660,6 +349,7 @@ String htmlContent3_3 = '''
 <li><strong><a title="Fragewörter" href="lernen.php?menu_id=15#w-fragen">Übersicht der möglichen W-Fragen</a></strong></li>
 ''';
 
+String title4 = 'Aufforderungssätze';
 String htmlContent4_1 = '''
 <p>In einem <strong><span class="red">Aufforderungssatz</span></strong> (<strong><a title="Imperativ" href="lernen.php?menu_id=32">Imperativ</a></strong>) wird der Gesprächspartner dazu aufgefordert, etwas Bestimmtes zu tun. Das konjugierte Verb steht wie bei einer <a title="Fragesätze" href="#fragesaetze">Ja-/Nein-Frage</a> auf Position 1. Die Imperativformen haben <strong><span class="red">besondere Konjugationsformen</span></strong>. Das Subjekt entfällt in der 2. Person, Singular wie Plural! Ein Aufforderungssatz endet mit einem <strong><span class="red">Punkt</span></strong> oder mit einem <strong><span class="red">Ausrufezeichen</span></strong>. Wird ein Ausrufezeichen gesetzt, erhält die Aufforderung einen stärkeren Nachdruck.</p>
 ''';
@@ -764,6 +454,7 @@ String htmlTable4_2 = '''
 </table>  
 ''';
 
+String title5 = 'Hauptsätze und Nebensätze';
 String htmlContent5_1 = '''
 <p>Hauptsätze ( <strong><span class="red">HS</span></strong> ) und Nebensätze ( <strong><span class="red">NS</span></strong> ) unterscheiden sich in erster Linie durch die <strong><a title="Konjugation" href="lernen.php?menu_id=6#konjugation">Stellung des konjugierten Verbs</a></strong>. <br> In einem <strong><span class="red">Hauptsatz</span></strong> steht das <strong><span class="red">konjugierte Verb</span></strong> entweder auf Position 1 (<strong><a title="Fragesätze" href="#fragesaetze">Ja-/Nein-Frage</a></strong> und <strong><a title="Imperativ" href="#aufforderungssaetze">Imperativ</a></strong>) oder auf Position 2 (<strong><a title="Aussagesätze" href="#aussagesaetze">Aussagesätze</a></strong> und <strong><a title="Ergänzungsfragen" href="#ergaenzungsfragen">W-Fragen</a></strong>). Anderweitige <strong><a title="Prädikat" href="lernen.php?menu_id=19#praedikat">Prädikatsteile</a></strong> werden im <strong><a title="Infinitiv" href="lernen.php?menu_id=6">Infinitiv</a></strong> oder im <strong><a title="Partizip II" href="lernen.php?menu_id=107#regelm_verben">Partizip II</a></strong> ans Satzende gestellt.</p>
 <p>In einem <strong><a title="Nebensätze" href="lernen.php?menu_id=91">Nebensatz</a></strong> wird das <strong><span class="red">konjugierte Verb</span></strong> (im Hauptsatz = Position 2) ans Satzende gestellt, also auch <span style="text-decoration:underline">hinter anderweitigen <strong><a title="Prädikat" href="lernen.php?menu_id=19#praedikat">Prädikatsteilen</a></strong></span>. Das Subjekt wird direkt hinter die <strong><a title="Unterordnende Konjunktion" href="lernen.php?menu_id=89#unterordnende_konj">Konjunktion</a></strong> gestellt, die den Nebensatz einleitet. Alle anderen <strong><a title="Satzglieder" href="lernen.php?menu_id=19#satzglieder">Satzglieder</a></strong> bleiben unverändert und entsprechen den Satzgliedern eines Hauptsatzes. Nebensätze können nicht für sich allein stehen, sondern sind einem Hauptsatz untergeordnet. Sie sind von ihm in gewisser Weise abhängig. Nebensätze werden durch <strong><a title="Unterordnende Konjunktion" href="lernen.php?menu_id=89#unterordnende_konj">bestimmte einleitende Wörter</a></strong> <strong><span class="red">bestimmte einleitende Wörter</span></strong> ( = Konjunktionen: dass, nachdem, ob, weil, ...) mit dem Hauptsatz verknüpft.</p>
@@ -843,6 +534,7 @@ String htmlContent5_2 = '''
 <p><br> Siehe auch: <strong><a title="Nebensätze" href="lernen.php?menu_id=123">Nebensätze</a></strong></p>  
 ''';
 
+String title6 = 'Infinitivsätze';
 String htmlContent6_1 = '''
 <p>Eine Sonderform bilden die <strong><a title="Infinitivsätze" href="lernen.php?menu_id=49">Infinitivsätze</a></strong>. Infinitivsätze sind <strong><span class="red">subjektlose Nebensätze</span></strong>, in denen das Verb im <strong><span class="red">Infinitiv</span></strong> mit dem Zusatz " <strong><span class="red">zu</span></strong> " ans Satzende gestellt wird. Nur <strong><a title="Infinitivkonstruktionen einleitende Verben" href="lernen.php?menu_id=49#verben_mit_infinitivkonstruktion">bestimmte Verben</a></strong> im Hauptsatz können einen Infinitivsatz einleiten. Hauptsatz und Infinitivsatz sollten mit einem <strong><span class="red">Komma</span></strong> getrennt werden, ist aber insbesondere bei kurzen Infinitivsätzen (bei nur einer Ergänzung + Infinitiv) fakultativ.</p>
 ''';
@@ -907,6 +599,7 @@ String htmlContent6_2 = '''
 <p><br> Siehe auch: <strong><a title="Infinitivsätze" href="lernen.php?menu_id=49">Infinitivsätze</a></strong></p> 
 ''';
 
+String title7 = 'Infinitivkonstruktionen';
 String htmlContent7_1 = '''
 <p>Eine ähnliche Form wie die <a title="Infinitivsätze" href="#infinitivsaetze">Infinitivsätze</a> bilden die <strong><a title="Infinitivkonstruktionen" href="lernen.php?menu_id=51">Infinitivkonstruktionen</a></strong>. Infinitivkonstruktionen sind ebenfalls <strong><span class="red">subjektlose Nebensätze</span></strong>, werden jedoch mit einer <strong><span class="red">Konjunktion</span></strong> eingeleitet. Hauptsatz und Infinitivkonstruktion werden mit einem <strong><span class="red">Komma</span></strong> getrennt.</p>
 ''';
@@ -971,6 +664,7 @@ String htmlContent7_2 = '''
 <p><br> Siehe auch: <strong><a title="Infinitivkonstruktionen" href="lernen.php?menu_id=51">Infinitivkonstruktionen</a></strong></p>  
 ''';
 
+String title8 = 'Wunschsätze';
 String htmlContent8 = '''
 <p><strong><a title="Wunschsätze" href="lernen.php?menu_id=118">Wunschsätze</a></strong> zeigen das Gegenteil des Indikativs an. In Wunschsätzen steht das Verb im <strong><a title="Konjunktiv II" href="lernen.php?menu_id=37">Konjunktiv II</a></strong>. Wunschsätze werden mit einem <strong><span class="red">Ausrufezeichen</span></strong> abgeschlossen. Es gibt zwei Satzarten, mit denen man einen Wunschsatz äußern kann:</p>
 <li>als <strong><a title="Aufforderungssätze" href="#aufforderungssaetze">Aufforderungssatz</a></strong> (Verb Position 1)</li>

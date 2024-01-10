@@ -3,207 +3,65 @@ import 'package:flutter/material.dart';
 import '../app/app_localizations.dart';
 import '../html_table_to_dart_table.dart';
 import '../html_to_richtext.dart';
+import '../page_content.dart';
 
 class Finalsatze_12_5_3 extends StatelessWidget {
   const Finalsatze_12_5_3({super.key});
 
   @override
   Widget build(BuildContext context) {
-    final localizations = AppLocalizations.of(context);
-    final textTheme = Theme.of(context).textTheme;
     return Expanded(
       child: Scaffold(
         body: Padding(
-          padding: const EdgeInsets.all(8.0),
-          child: ListView(
-            children: <Widget>[
-              Card(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: <Widget>[
-                    Padding(
-                      padding: const EdgeInsets.only(top: 16.0, left: 16.0),
-                      child: Text('12.5.3. Finalsätze',
-                          style: textTheme.titleMedium),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.only(top: 10.0, left: 16.0),
-                      child: Text('Was man über Finalsätze wissen sollte.',
-                          style: textTheme.titleSmall),
-                    ),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                            top: 10.0, left: 16.0, bottom: 10),
-                        child: HtmlToRichText(
-                          htmlString: htmlContent1_1,
-                          textTheme: textTheme,
-                        )),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                            top: 10.0, left: 16.0, bottom: 10),
-                        child: HtmlTableToDartTable(
-                          htmlTable: htmlTable1_1,
-                          textTheme: textTheme,
-                          columnWidths: const {
-                            0: FractionColumnWidth(.27),
-                            1: FractionColumnWidth(.07),
-                            2: FractionColumnWidth(.30),
-                            3: FractionColumnWidth(.36),
-                          },
-                        )),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                            top: 10.0, left: 16.0, bottom: 10),
-                        child: HtmlToRichText(
-                          htmlString: htmlContent1_2,
-                          textTheme: textTheme,
-                        )),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                            top: 10.0, left: 16.0, bottom: 10),
-                        child: HtmlTableToDartTable(
-                          htmlTable: htmlTable1_2,
-                          textTheme: textTheme,
-                          columnWidths: const {
-                            0: FractionColumnWidth(.44),
-                            1: FractionColumnWidth(.56),
-                          },
-                        )),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                            top: 10.0, left: 16.0, bottom: 10),
-                        child: HtmlToRichText(
-                          htmlString: htmlContent1_3,
-                          textTheme: textTheme,
-                        )),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                            top: 10.0, left: 16.0, bottom: 10),
-                        child: HtmlTableToDartTable(
-                          htmlTable: htmlTable1_3,
-                          textTheme: textTheme,
-                          columnWidths: const {
-                            0: FractionColumnWidth(.60),
-                            1: FractionColumnWidth(.40),
-                          },
-                        )),
-                  ],
-                ),
-              ),
-              Card(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: <Widget>[
-                    Padding(
-                      padding: const EdgeInsets.only(
-                          top: 10.0, left: 16.0, bottom: 10),
-                      child: Text('Nominalisierung von Finalsätzen',
-                          style: textTheme.titleSmall),
-                    ),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                            top: 10.0, left: 16.0, bottom: 10),
-                        child: HtmlToRichText(
-                          htmlString: htmlContent2_1,
-                          textTheme: textTheme,
-                        )),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                            top: 10.0, left: 16.0, bottom: 10),
-                        child: HtmlTableToDartTable(
-                          htmlTable: htmlTable2,
-                          textTheme: textTheme,
-                          columnWidths: const {
-                            0: FractionColumnWidth(1),
-                          },
-                        )),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                            top: 10.0, left: 16.0, bottom: 10),
-                        child: HtmlToRichText(
-                          htmlString: htmlContent2_2,
-                          textTheme: textTheme,
-                        )),
-                  ],
-                ),
-              ),
-              Card(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: <Widget>[
-                    Padding(
-                      padding: const EdgeInsets.only(
-                          top: 10.0, left: 16.0, bottom: 10),
-                      child:
-                          Text('Finale Adverbien', style: textTheme.titleSmall),
-                    ),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                            top: 10.0, left: 16.0, bottom: 10),
-                        child: HtmlToRichText(
-                          htmlString: htmlContent3_1,
-                          textTheme: textTheme,
-                        )),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                            top: 10.0, left: 16.0, bottom: 10),
-                        child: HtmlTableToDartTable(
-                          htmlTable: htmlTable3,
-                          textTheme: textTheme,
-                          columnWidths: const {
-                            0: FractionColumnWidth(.49),
-                            1: FractionColumnWidth(.08),
-                            2: FractionColumnWidth(.10),
-                            3: FractionColumnWidth(.33),
-                          },
-                        )),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                            top: 10.0, left: 16.0, bottom: 10),
-                        child: HtmlToRichText(
-                          htmlString: htmlContent3_2,
-                          textTheme: textTheme,
-                        )),
-                  ],
-                ),
-              ),
-              Card(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: <Widget>[
-                    Padding(
-                      padding: const EdgeInsets.only(
-                        top: 10.0,
-                        left: 16.0,
-                      ),
-                      child: Text('Übersicht Finalsätze',
-                          style: textTheme.titleSmall),
-                    ),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                          top: 10.0,
-                          left: 16.0,
-                        ),
-                        child: HtmlTableToDartTable(
-                          htmlTable: htmlTable4,
-                          textTheme: textTheme,
-                          columnWidths: const {
-                            0: FractionColumnWidth(.37),
-                            1: FractionColumnWidth(.38),
-                            2: FractionColumnWidth(.25),
-                          },
-                        )),
-                  ],
-                ),
-              ),
-            ],
-          ),
-        ),
+            padding: const EdgeInsets.all(8.0),
+            child: MyPageContentView(contents: contents)),
       ),
     );
   }
 }
 
+List<CardContent> contents = [
+  CardContent(
+    elements: [
+      CardElement(type: ElementType.pageTitle, value: title),
+    ],
+  ),
+  CardContent(
+    elements: [
+      CardElement(type: ElementType.cardTitle, value: title1),
+      CardElement(type: ElementType.htmlContent, value: htmlContent1_1),
+      CardElement(type: ElementType.htmlTable, value: htmlTable1_1),
+      CardElement(type: ElementType.htmlContent, value: htmlContent1_2),
+      CardElement(type: ElementType.htmlTable, value: htmlTable1_2),
+      CardElement(type: ElementType.htmlContent, value: htmlContent1_3),
+      CardElement(type: ElementType.htmlTable, value: htmlTable1_3),
+    ],
+  ),
+  CardContent(
+    elements: [
+      CardElement(type: ElementType.cardTitle, value: title2),
+      CardElement(type: ElementType.htmlContent, value: htmlContent2_1),
+      CardElement(type: ElementType.htmlTable, value: htmlTable2),
+      CardElement(type: ElementType.htmlContent, value: htmlContent2_2),
+    ],
+  ),
+  CardContent(
+    elements: [
+      CardElement(type: ElementType.cardTitle, value: title3),
+      CardElement(type: ElementType.htmlContent, value: htmlContent3_1),
+      CardElement(type: ElementType.htmlTable, value: htmlTable3),
+      CardElement(type: ElementType.htmlContent, value: htmlContent3_2),
+    ],
+  ),
+  CardContent(
+    elements: [
+      CardElement(type: ElementType.cardTitle, value: title4),
+      CardElement(type: ElementType.htmlTable, value: htmlTable4),
+    ],
+  ),
+];
+String title = '12.5.3. Finalsätze';
+String title1 = 'Was man über Finalsätze wissen sollte.';
 String htmlContent1_1 = '''
 <p><strong><span class="red">Finalsätze</span></strong> geben eine <strong><span class="red">Absicht</span></strong>, einen <strong><span class="red">Zweck</span></strong> oder ein <strong><span class="red">Ziel</span></strong> an. Die entsprechenden <strong><a title="Fragewörter" href="lernen.php?menu_id=15#kausal">Fragewörter</a></strong> lauten: Wozu?; Zu welchem Zweck?; Mit welcher Absicht?. <br> Es gibt zwei Möglichkeiten, <strong><span class="red">Finalsätze</span></strong> auszudrücken:</p>
 <li><strong><a title="Infinitivkonstruktionen" href="lernen.php?menu_id=51#um_zu">Infinitivkonstruktion</a></strong>
@@ -331,7 +189,7 @@ String htmlTable1_3 = '''
 </tbody>
 </table>
 ''';
-
+String title2 = 'Nominalisierung von Finalsätzen';
 String htmlContent2_1 = '''
 <p>Eine <strong><span class="red">finale Angabe</span></strong> kann auch mit einer <strong><a title="Nominalisierung" href="lernen.php?menu_id=20">Präposition-Nomen-Konstruktionen</a></strong> formuliert werden. Die passenden Präpositionen lauten: " <strong><span class="red">zu</span></strong> ", " <strong><span class="red">für</span></strong> ", und " <strong><span class="red">zwecks</span></strong> ":</p>
 ''';
@@ -363,6 +221,7 @@ String htmlContent2_2 = '''
 <li>Die Präposition <strong><span class="red">zwecks</span></strong> verlangt den <strong><a title="Präpositionen mit Genitiv" href="lernen.php?menu_id=85">Genitiv</a></strong>, <strong><span class="red">zu</span></strong> den <strong><a title="Präpositionen mit Dativ" href="lernen.php?menu_id=83">Dativ</a></strong> und <strong><span class="red">für</span></strong> den <strong><a title="Präpositionen mit Akkusativ" href="lernen.php?menu_id=82">Akkusativ</a></strong>.</li>
 ''';
 
+String title3 = 'Finale Adverbien';
 String htmlContent3_1 = '''
 <p>Im Kapitel "<strong><a title="Satzverbindende Adverbien" href="lernen.php?menu_id=90#finaladverb">Satzverbindende Adverbien</a></strong>" haben wir gelernt, dass auch <strong><span class="red">Adverbien</span></strong> Sätze verknüpfen können. Satzverbindende Adverbien verbinden einen Hauptsatz mit einem Hauptsatz:</p>
 <li><strong><span class="red">Verbalstil</span></strong>
@@ -410,10 +269,12 @@ String htmlTable3 = '''
 </tbody>
 </table>
 ''';
+
 String htmlContent3_2 = '''
 <p>Die <strong><a title="Modalverben" href="lernen.php?menu_id=31">Modalverben</a></strong> "möchten", "sollen" und "wollen" haben eine finale Bedeutung und können daher nicht in einem Finalsatz (Infinitivsatz oder NS + damit) stehen. Anders verhält es sich, wenn ein <strong><span class="red">satzverbindendes Adverb</span></strong> zwei Hauptsätze miteinander verbindet. In diesen Fällen <span style="text-decoration:underline">gilt diese Regel nicht</span>.</p>
 ''';
 
+String title4 = 'Übersicht Finalsätze';
 String htmlTable4 = '''
 <table><colgroup> <col style="width: 37%;"> <col style="width: 38%;"> <col style="width: 25%;"> </colgroup>
 <thead>

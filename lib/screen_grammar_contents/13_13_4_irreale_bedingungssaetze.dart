@@ -53,23 +53,21 @@ List<CardContent> contents = [
   ),
 ];
 
-
 String title = '13.13.4. Irreale Bedingungssätze';
 String title1 = 'Was man über irreale Bedingungssätze wissen sollte.';
 String htmlContent1_1 = '''
-  <div>
 <p>Man unterscheidet zwischen <strong><span class="blue">realen Bedingungssätzen</span></strong> (Indikativ):</p>
-<p>&nbsp;</p>
+
 <h4 style="padding-left: 30px;">Präsens</h4>
-</div>
+
 <p style="padding-left: 60px;"><strong><span class="blue">- Wenn</span></strong> mein Freund meine Hilfe <strong><span class="blue">braucht</span></strong>, <strong><span class="blue">helfe</span></strong> ich ihm.</p>
 <p style="padding-left: 60px;"><br> - Ich <strong><span class="blue">helfe</span></strong> meinem Freund sofort, <strong><span class="blue">wenn</span></strong> er meine Hilfe <strong><span class="blue">braucht</span></strong>.</p>
 <p style="padding-left: 30px;">&nbsp;</p>
 <h4 style="padding-left: 30px;">Vergangenheit nicht möglich!</h4>
 <p style="padding-left: 30px;">&nbsp;</p>
-<p>&nbsp;</p>
+
 <p>und <strong><span class="red">irrealen Bedingungssätzen (Konditionalsätze)</span></strong> (Konjunktiv II):</p>
-<p>&nbsp;</p>
+
 <h4 style="padding-left: 30px;">Präsens</h4>
 <p style="padding-left: 60px;"><strong><span class="red">- Wenn</span></strong> ich seine Hilfe <strong><span class="red">bräuchte</span></strong>, <strong><span class="red">würde</span></strong> er mir auch sofort <strong><span class="red">helfen</span></strong>.</p>
 <p style="padding-left: 60px;">- Er <strong><span class="red">würde</span></strong> mir auch sofort <strong><span class="red">helfen</span></strong>, <strong><span class="red">wenn</span></strong> ich seine Hilfe <strong><span class="red">brauchen würde</span></strong>.</p>
@@ -77,33 +75,23 @@ String htmlContent1_1 = '''
 <h4 style="padding-left: 30px;">Vergangenheit</h4>
 <p style="padding-left: 60px;"><strong><span class="red">- Wenn</span></strong> ich seine Hilfe <strong><span class="red">gebraucht hätte</span></strong>, <strong><span class="red">hätte</span></strong> er mir auch sofort <strong><span class="red">geholfen</span></strong>.</p>
 <p style="padding-left: 60px;">- Er <strong><span class="red">hätte</span></strong> mir auch sofort <strong><span class="red">geholfen</span></strong>, <strong><span class="red">wenn</span></strong> ich seine Hilfe <strong><span class="red">gebraucht hätte</span></strong>.</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<div>
+
 <p>Der <strong><span class="red">Nebensatz</span></strong> wird mit <strong><span class="red">wenn</span></strong> oder <strong><span class="red">falls</span></strong> eingeleitet und formuliert die <strong><span class="red">Bedingung</span></strong>.</p>
 <p><br> <strong><span class="blue">Der Hauptsatz</span></strong> formuliert die <strong><span class="blue">Folge</span></strong>. Beispiel:</p>
-<p>&nbsp;</p>
-</div>
+
 <p style="padding-left: 30px;"><strong><span class="red">Indikativ</span></strong>: Hans hat kein Geld, aber viele Schulden.</p>
 <p style="padding-left: 30px;"><strong><span class="blue">Folge (Indikativ)</span></strong>: Beate heiratet ihn nicht.</p>
 <p style="padding-left: 30px;">&nbsp;</p>
 <p style="padding-left: 30px;">(Indikativ) Bedingung: Beate sagt zu Hans: "Wenn du viel Geld hast, heirate ich dich."</p>
 <p style="padding-left: 30px;"><strong>irrealer Bedingungssatz: <span class="red">Wenn Hans viel Geld hätte</span></strong>, <strong><span class="blue">würde Beate ihn heiraten</span></strong>.</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<div>
+
 <p>Der irreale Bedingungssatz ist nur ein Gedankenspiel. Deshalb stehen HS und NS im Konjunktiv II und zeigen vom <strong><span class="red">Indikativ das Gegenteil</span></strong> an. <strong><span class="blue">Die Folge</span></strong> ( Sie heiratet ihn. ) wird wahrscheinlich <span style="text-decoration:underline">nicht</span> eintreten, da Hans in der realen Welt kein Geld besitzt und dazu noch viele Schulden hat. Kein Geld, keine Beate, ist seine bittere Realität.</p>
-</div>  
 ''';
-
-
 
 String title2 = 'Bildung Gegenwart';
 String htmlContent2_1 = '''
-<div>
 <p>Bei der Bildung von irrealen Bedingungssätzen ist darauf zu achten, dass:</p>
-<p>&nbsp;</p>
-</div>
+
 <p style="padding-left: 30px;">- zuerst <strong><span class="red">das Subjekt</span></strong> <span style="text-decoration:underline">benannt wird</span> (Rolf, Tom)</p>
 <p style="padding-left: 30px;">- und im zweiten Teil des Satzes das Subjekt mit <strong><span class="red">Personalpronomen</span></strong> <span style="text-decoration:underline">wiederholt wird</span>,</p>
 <p style="padding-left: 30px;">- ein irrealer Bedingungssatz <span style="text-decoration:underline">immer</span> <strong><span class="red">das Gegenteil vom Indikativ</span></strong> wiedergibt.</p>
@@ -112,9 +100,8 @@ String htmlContent2_1 = '''
 <p style="padding-left: 60px;"><strong><span class="red">Negativ</span></strong> wird <strong><span class="blue">positiv</span></strong> &nbsp;&nbsp;&nbsp; / &nbsp;&nbsp;&nbsp; Er hat <strong><span class="red">kein</span></strong> Geld. = Wenn er <strong><span class="blue">viel</span></strong> Geld hätte, ...</p>
 <p style="padding-left: 60px;">Bei Adjektiven kann auch das <strong><span class="blue">gegenteilige Adjektiv</span></strong> benutzt werden, meist mit Komparativ.<br> (Er ist <strong><span class="red">zu langsam</span></strong>. &nbsp;&nbsp; = &nbsp;&nbsp; Wäre er <strong><span class="blue">schneller</span></strong>, ...)</p>
 <p style="padding-left: 60px;">&nbsp;</p>
-<p>&nbsp;</p>
+
 <h3><strong><span class="blue">Hauptsatz</span></strong> + <strong><span class="red">Nebensatz</span></strong></h3>
-<p>&nbsp;</p>
 ''';
 String htmlTable2_2 = '''
 <table><colgroup> <col style="width: 23%;"> <col style="width: 36%;"> <col style="width: 41%;"> </colgroup>
@@ -143,10 +130,7 @@ String htmlTable2_2 = '''
 </table>
 ''';
 String htmlContent2_3 = '''
-<h3>&nbsp;</h3>
-<p>&nbsp;</p>
 <h3><strong><span class="red">Nebensatz</span></strong> + <strong><span class="blue">Hauptsatz</span></strong></h3>
-<p>&nbsp;</p>
 ''';
 String htmlTable2_4 = '''
 <table><colgroup> <col style="width: 23%;"> <col style="width: 37%;"> <col style="width: 40%;"> </colgroup>
@@ -175,9 +159,7 @@ String htmlTable2_4 = '''
 </table>
 ''';
 String htmlContent2_5 = '''
-<p>&nbsp;</p>
 <h3><strong><span class="red">ohne " wenn "</span></strong></h3>
-<p>&nbsp;</p>
 ''';
 String htmlTable2_6 = '''
 <table><colgroup> <col style="width: 23%;"> <col style="width: 37%;"> <col style="width: 40%;"> </colgroup>
@@ -206,12 +188,9 @@ String htmlTable2_6 = '''
 </table>
 ''';
 
-
-
 String title3 = 'Bildung Vergangenheit';
 String htmlContent3_1 = '''
 <h3><strong><span class="blue">Hauptsatz</span></strong> + <strong><span class="red">Nebensatz</span></strong></h3>
-<p>&nbsp;</p>
 ''';
 String htmlTable3_2 = '''
 <table><colgroup> <col style="width: 23%;"> <col style="width: 36%;"> <col style="width: 41%;"> </colgroup>
@@ -297,4 +276,3 @@ String htmlTable3_6 = '''
 </tbody>
 </table>  
 ''';
-

@@ -1,1990 +1,504 @@
 import 'package:flutter/material.dart';
 
 import '../app/app_localizations.dart';
+import '../page_content.dart';
 
 class Ergaenzungssaetze_5 extends StatelessWidget {
   const Ergaenzungssaetze_5({super.key});
 
   @override
   Widget build(BuildContext context) {
-    final localizations = AppLocalizations.of(context);
-    final textTheme = Theme.of(context).textTheme;
     return Expanded(
       child: Scaffold(
         body: Padding(
-          padding: const EdgeInsets.all(8.0),
-          child: ListView(
-            children: <Widget>[
-              Card(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: <Widget>[
-                    Padding(
-                      padding: const EdgeInsets.only(top: 16.0, left: 16.0),
-                      child: Text('5. Ergänzungssätze',
-                          style: textTheme.titleMedium),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.only(top: 10.0, left: 16.0),
-                      child: Text('Was man über Ergänzungssätze wissen sollte.',
-                          style: textTheme.titleSmall),
-                    ),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                            top: 10.0, left: 16.0, bottom: 10),
-                        child: RichText(
-                          text: TextSpan(
-                            style: textTheme.bodyMedium,
-                            children: <TextSpan>[
-                              TextSpan(text: 'Jedes Verb hat '),
-                              TextSpan(
-                                  text: 'bestimmte Ergänzungen',
-                                  style: TextStyle(
-                                      decoration: TextDecoration.underline)),
-                              TextSpan(text: '.\n\n'),
-                              TextSpan(text: 'Manchmal hat das Verb eine '),
-                              TextSpan(
-                                  text: 'Akkusativ-Ergänzung',
-                                  style:
-                                      TextStyle(fontWeight: FontWeight.bold)),
-                              TextSpan(text: ',\n'),
-                              TextSpan(text: 'Ich liebe '),
-                              TextSpan(
-                                  text: 'Martina',
-                                  style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      color: Colors.red)),
-                              TextSpan(text: '.\n\n'),
-                              TextSpan(text: 'manchmal eine '),
-                              TextSpan(
-                                  text: 'Dativ-Ergänzung',
-                                  style:
-                                      TextStyle(fontWeight: FontWeight.bold)),
-                              TextSpan(text: '\n'),
-                              TextSpan(text: 'Hilfst du '),
-                              TextSpan(
-                                  text: 'mir',
-                                  style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      color: Colors.red)),
-                              TextSpan(text: '?\n\n'),
-                              TextSpan(text: 'und manchmal eine '),
-                              TextSpan(
-                                  text: 'Präpositional-Ergänzung',
-                                  style:
-                                      TextStyle(fontWeight: FontWeight.bold)),
-                              TextSpan(text: '.\n'),
-                              TextSpan(
-                                  text: 'Meine Freundin interessiert sich '),
-                              TextSpan(
-                                  text: 'für klassische Musik',
-                                  style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      color: Colors.red)),
-                              TextSpan(text: '.\n\n'),
-                              TextSpan(
-                                  text:
-                                      'Alle bisher gezeigten Beispiele haben '),
-                              TextSpan(
-                                  text: 'eins gemeinsam',
-                                  style: TextStyle(
-                                      decoration: TextDecoration.underline)),
-                              TextSpan(
-                                  text:
-                                      '. Als Verbergänzungen werden entweder '),
-                              TextSpan(
-                                  text: 'Pronomen',
-                                  style: TextStyle(
-                                      decoration: TextDecoration.underline)),
-                              TextSpan(text: ' (mich, mir, ...), '),
-                              TextSpan(
-                                  text: 'Namen',
-                                  style: TextStyle(
-                                      decoration: TextDecoration.underline)),
-                              TextSpan(text: ' (Martina, Köln, ...) oder '),
-                              TextSpan(
-                                  text: 'Nomen',
-                                  style: TextStyle(
-                                      decoration: TextDecoration.underline)),
-                              TextSpan(
-                                  text:
-                                      ' (Musik) verwendet. Gelegentlich kommt es vor, dass '),
-                              TextSpan(
-                                  text: 'ein ganzer Sachverhalt',
-                                  style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      color: Colors.red)),
-                              TextSpan(text: ' '),
-                              TextSpan(
-                                  text: 'als Ergänzung',
-                                  style: TextStyle(
-                                      decoration: TextDecoration.underline)),
-                              TextSpan(
-                                  text:
-                                      ' stehen kann. Einzelne Pronomen, Namen oder Nomen werden dabei durch einen ganzen Satzinhalt ersetzt. Eine Satzergänzung wird am häufigsten anstelle einer Nominativ-, Akkusativ- oder Präpositional-Ergänzung benutzt.'),
-                            ],
-                          ),
-                        )),
-                    SingleChildScrollView(
-                      child: ConstrainedBox(
-                        constraints: const BoxConstraints(
-                            //minHeight: MediaQuery.of(context).size.height
-                            ),
-                        child: IntrinsicHeight(
-                          child: Column(children: [
-                            Table(
-                              border: TableBorder.all(
-                                  color: Colors.purple, width: 1),
-                              columnWidths: {
-                                0: FractionColumnWidth(.25),
-                                1: FractionColumnWidth(.25),
-                                2: FractionColumnWidth(.25),
-                                3: FractionColumnWidth(.25),
-                              },
-                              children: [
-                                TableRow(children: [
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'Position 1',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'Position 2',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'Position 3',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'Ende',
-                                          style: textTheme.bodyMedium)),
-                                ]),
-                                TableRow(children: [
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'Nominativ',
-                                      style: textTheme.bodyMedium!
-                                          .copyWith(color: Colors.red),
-                                      children: <TextSpan>[
-                                        TextSpan(
-                                            text: '',
-                                            style:
-                                                TextStyle(color: Colors.red)),
-                                      ],
-                                    ),
-                                  ),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'Verb',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'Akkusativ',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'Satzende',
-                                          style: textTheme.bodyMedium)),
-                                ]),
-                                TableRow(children: [
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'Das',
-                                      style: textTheme.bodyMedium!
-                                          .copyWith(color: Colors.red),
-                                      children: <TextSpan>[
-                                        TextSpan(
-                                            text: '',
-                                            style:
-                                                TextStyle(color: Colors.red)),
-                                      ],
-                                    ),
-                                  ),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'freut',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'mich',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'sehr.',
-                                          style: textTheme.bodyMedium)),
-                                ]),
-                              ],
-                            )
-                          ]),
-                        ),
-                      ),
-                    ),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                            top: 10.0, left: 16.0, bottom: 10),
-                        child: RichText(
-                          text: TextSpan(
-                            style: textTheme.bodyMedium,
-                            children: <TextSpan>[
-                              TextSpan(text: 'Im gezeigten Beispiel ist "'),
-                              TextSpan(
-                                  text: 'das',
-                                  style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      color: Colors.red)),
-                              TextSpan(text: '" die '),
-                              TextSpan(
-                                  text: 'Nominativ-Ergänzung',
-                                  style:
-                                      TextStyle(fontWeight: FontWeight.bold)),
-                              TextSpan(
-                                  text: '. "Das" steht hier stellvertretend '),
-                              TextSpan(
-                                  text: 'für einen Sachverhalt',
-                                  style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      color: Colors.red)),
-                              TextSpan(
-                                  text:
-                                      ', den wir noch nicht kennen, da uns der Sachverhalt, die Information, bisher nicht gesagt wurde. Erst wenn "das" durch einen Inhalt / Satz (=Sachverhalt) angegeben wird, wird die Situation deutlich:'),
-                            ],
-                          ),
-                        )),
-                    SingleChildScrollView(
-                      child: ConstrainedBox(
-                        constraints: const BoxConstraints(
-                            //minHeight: MediaQuery.of(context).size.height
-                            ),
-                        child: IntrinsicHeight(
-                          child: Column(children: [
-                            Table(
-                              border: TableBorder.all(
-                                  color: Colors.purple, width: 1),
-                              columnWidths: {
-                                0: FractionColumnWidth(.55),
-                                1: FractionColumnWidth(.15),
-                                2: FractionColumnWidth(.15),
-                                3: FractionColumnWidth(.15),
-                              },
-                              children: [
-                                TableRow(children: [
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'Position 1',
-                                      style: textTheme.bodyMedium!
-                                          .copyWith(color: Colors.red),
-                                      children: <TextSpan>[
-                                        TextSpan(
-                                            text: '',
-                                            style:
-                                                TextStyle(color: Colors.red)),
-                                      ],
-                                    ),
-                                  ),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'Position 2',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'Position 3',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'Ende',
-                                          style: textTheme.bodyMedium)),
-                                ]),
-                                TableRow(children: [
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'Nominativ',
-                                      style: textTheme.bodyMedium!
-                                          .copyWith(color: Colors.red),
-                                      children: <TextSpan>[
-                                        TextSpan(
-                                            text: '',
-                                            style:
-                                                TextStyle(color: Colors.red)),
-                                      ],
-                                    ),
-                                  ),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'Verb',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'Akkusativ',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'Satzende',
-                                          style: textTheme.bodyMedium)),
-                                ]),
-                                TableRow(children: [
-                                  RichText(
-                                    text: TextSpan(
-                                      text: '',
-                                      style: DefaultTextStyle.of(context).style,
-                                      children: <TextSpan>[
-                                        TextSpan(
-                                            text: 'Dass ',
-                                            style:
-                                                TextStyle(color: Colors.blue)),
-                                        TextSpan(
-                                            text: 'du die Deutschprüfung '),
-                                        TextSpan(
-                                            text: 'bestanden hast,',
-                                            style:
-                                                TextStyle(color: Colors.blue)),
-                                      ],
-                                    ),
-                                  ),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'freut',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'mich',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'sehr.',
-                                          style: textTheme.bodyMedium)),
-                                ]),
-                              ],
-                            )
-                          ]),
-                        ),
-                      ),
-                    ),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                            top: 10.0, left: 16.0, bottom: 10),
-                        child: RichText(
-                          text: TextSpan(
-                            style: textTheme.bodyMedium,
-                            children: <TextSpan>[
-                              TextSpan(
-                                  text:
-                                      'Im gezeigten Beispiel handelt es sich um einen '),
-                              TextSpan(
-                                  text: 'Subjektsatz',
-                                  style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      color: Colors.red)),
-                              TextSpan(text: '.\n'),
-                              TextSpan(text: 'Das "'),
-                              TextSpan(
-                                  text: 'das',
-                                  style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      color: Colors.red)),
-                              TextSpan(text: '" '),
-                              TextSpan(
-                                  text: 'fällt weg',
-                                  style: TextStyle(
-                                      decoration: TextDecoration.underline)),
-                              TextSpan(
-                                  text:
-                                      ' und wird durch einen kompletten Satz ersetzt.\n'),
-                              TextSpan(
-                                  text:
-                                      'Der neue Sachverhalt wird als Subjektsatz bezeichnet, da er im Nominativ steht.\n'),
-                              TextSpan(
-                                  text:
-                                      'Satzergänzungen im Nominativ werden oft mit der '),
-                              TextSpan(
-                                  text: 'Konjunktion',
-                                  style:
-                                      TextStyle(fontWeight: FontWeight.bold)),
-                              TextSpan(text: ' "'),
-                              TextSpan(
-                                  text: 'dass',
-                                  style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      color: Colors.blue)),
-                              TextSpan(text: '" eingeleitet.\n'),
-                              TextSpan(text: ''),
-                              TextSpan(
-                                  text: 'dass-Sätze',
-                                  style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      color: Colors.blue)),
-                              TextSpan(text: ' sind '),
-                              TextSpan(
-                                  text: 'Nebensätze',
-                                  style:
-                                      TextStyle(fontWeight: FontWeight.bold)),
-                              TextSpan(text: ' (NS).\n'),
-                              TextSpan(
-                                  text:
-                                      'Die Satzergänzung bildet im Hauptsatz (HS) '),
-                              TextSpan(
-                                  text: 'eine Position',
-                                  style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      color: Colors.red)),
-                              TextSpan(text: ' (NS, Verb)\n'),
-                              TextSpan(text: 'Der Nebensatz wird mit einem '),
-                              TextSpan(
-                                  text: 'Komma',
-                                  style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      color: Colors.red)),
-                              TextSpan(text: ' ( , ) abgeschlossen.\n'),
-                              TextSpan(text: 'In Nebensätzen wird das '),
-                              TextSpan(
-                                  text: 'konjugierte Verb',
-                                  style: TextStyle(
-                                      decoration: TextDecoration.underline)),
-                              TextSpan(text: ' '),
-                              TextSpan(
-                                  text: 'ans Satzende',
-                                  style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      color: Colors.red)),
-                              TextSpan(text: ' gestellt.'),
-                            ],
-                          ),
-                        )),
-                  ],
-                ),
-              ),
-              Card(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: <Widget>[
-                    Padding(
-                      padding: const EdgeInsets.only(
-                          top: 10.0, left: 16.0, bottom: 10),
-                      child: Text('Was sind Ergänzungssätze?',
-                          style: textTheme.titleSmall),
-                    ),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                            top: 10.0, left: 16.0, bottom: 10),
-                        child: RichText(
-                          text: TextSpan(
-                            style: textTheme.bodyMedium,
-                            children: <TextSpan>[
-                              TextSpan(text: 'Ergänzungssätze sind '),
-                              TextSpan(
-                                  text: 'Nebensätze',
-                                  style:
-                                      TextStyle(fontWeight: FontWeight.bold)),
-                              TextSpan(text: '. Das '),
-                              TextSpan(
-                                  text: 'konjugierte Verb',
-                                  style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      color: Colors.red)),
-                              TextSpan(text: ' steht in Nebensätzen '),
-                              TextSpan(
-                                  text: 'am Satzende',
-                                  style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      color: Colors.red)),
-                              TextSpan(text: '. Ergänzungssätze beginnen \n\n'),
-                              TextSpan(text: 'in '),
-                              TextSpan(
-                                  text: 'Aussagesätzen',
-                                  style:
-                                      TextStyle(fontWeight: FontWeight.bold)),
-                              TextSpan(text: ' mit "'),
-                              TextSpan(
-                                  text: 'dass',
-                                  style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      color: Colors.blue)),
-                              TextSpan(text: '" oder "'),
-                              TextSpan(
-                                  text: 'ob',
-                                  style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      color: Colors.blue)),
-                              TextSpan(text: '",\n'),
-                              TextSpan(text: 'Ich weiß, '),
-                              TextSpan(
-                                  text: 'dass',
-                                  style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      color: Colors.blue)),
-                              TextSpan(text: ' er sehr viel Geld '),
-                              TextSpan(
-                                  text: 'hat',
-                                  style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      color: Colors.red)),
-                              TextSpan(text: '.\n'),
-                              TextSpan(text: 'Ich weiß aber nicht, '),
-                              TextSpan(
-                                  text: 'ob',
-                                  style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      color: Colors.blue)),
-                              TextSpan(text: ' er glücklich '),
-                              TextSpan(
-                                  text: 'ist',
-                                  style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      color: Colors.red)),
-                              TextSpan(text: '.\n\n'),
-                              TextSpan(text: 'in '),
-                              TextSpan(
-                                  text: 'Ja- / Nein-Fragen',
-                                  style:
-                                      TextStyle(fontWeight: FontWeight.bold)),
-                              TextSpan(text: ' mit "'),
-                              TextSpan(
-                                  text: 'ob',
-                                  style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      color: Colors.blue)),
-                              TextSpan(text: '",\n'),
-                              TextSpan(text: 'Weißt du, '),
-                              TextSpan(
-                                  text: 'ob',
-                                  style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      color: Colors.blue)),
-                              TextSpan(text: ' Herr Gans verheiratet '),
-                              TextSpan(
-                                  text: 'ist',
-                                  style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      color: Colors.red)),
-                              TextSpan(
-                                  text: '? / ( Ist Herr Gans verheiratet?)\n'),
-                              TextSpan(text: 'Kannst du mir sagen, '),
-                              TextSpan(
-                                  text: 'ob',
-                                  style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      color: Colors.blue)),
-                              TextSpan(text: ' Gerd zur Party '),
-                              TextSpan(
-                                  text: 'kommt',
-                                  style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      color: Colors.red)),
-                              TextSpan(
-                                  text: '? / ( Kommt Gerd zur Party?)\n\n'),
-                              TextSpan(text: 'in '),
-                              TextSpan(
-                                  text: 'W-Fragen',
-                                  style:
-                                      TextStyle(fontWeight: FontWeight.bold)),
-                              TextSpan(text: ' mit der '),
-                              TextSpan(
-                                  text: 'W-Frage',
-                                  style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      color: Colors.blue)),
-                              TextSpan(text: '.\n'),
-                              TextSpan(text: 'Weißt du, '),
-                              TextSpan(
-                                  text: 'wo',
-                                  style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      color: Colors.blue)),
-                              TextSpan(text: ' unser Lehrer '),
-                              TextSpan(
-                                  text: 'wohnt',
-                                  style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      color: Colors.red)),
-                              TextSpan(text: '? / ( Wo wohnt unser Lehrer?)\n'),
-                              TextSpan(text: 'Kannst du mir sagen, '),
-                              TextSpan(
-                                  text: 'warum',
-                                  style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      color: Colors.blue)),
-                              TextSpan(text: ' er das '),
-                              TextSpan(
-                                  text: 'macht',
-                                  style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      color: Colors.red)),
-                              TextSpan(text: '? / ( Warum macht er das?)\n\n'),
-                              TextSpan(text: ''),
-                              TextSpan(
-                                  text: 'Infinitivsätze',
-                                  style:
-                                      TextStyle(fontWeight: FontWeight.bold)),
-                              TextSpan(text: ' '),
-                              TextSpan(
-                                  text: 'enden',
-                                  style: TextStyle(
-                                      decoration: TextDecoration.underline)),
-                              TextSpan(text: ' dagegen mit '),
-                              TextSpan(
-                                  text: 'zu + Infinitiv',
-                                  style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      color: Colors.blue)),
-                              TextSpan(text: '.\n'),
-                              TextSpan(text: 'Er weiß, sich '),
-                              TextSpan(
-                                  text: 'zu helfen',
-                                  style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      color: Colors.blue)),
-                              TextSpan(text: '. / ( Er hilft sich selbst.)\n'),
-                              TextSpan(text: 'Ich hoffe, die Prüfung '),
-                              TextSpan(
-                                  text: 'zu bestehen',
-                                  style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      color: Colors.blue)),
-                              TextSpan(text: '. / ( Ich bestehe die Prüfung.)'),
-                            ],
-                          ),
-                        )),
-                  ],
-                ),
-              ),
-              Card(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: <Widget>[
-                    Padding(
-                      padding: const EdgeInsets.only(
-                          top: 10.0, left: 16.0, bottom: 10),
-                      child: Text('Unterschied von "dass" und "ob"',
-                          style: textTheme.titleSmall),
-                    ),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                            top: 10.0, left: 16.0, bottom: 10),
-                        child: RichText(
-                          text: TextSpan(
-                            style: textTheme.bodyMedium,
-                            children: <TextSpan>[
-                              TextSpan(text: 'Man unterscheidet zwei '),
-                              TextSpan(
-                                  text: 'Konjunktionen',
-                                  style:
-                                      TextStyle(fontWeight: FontWeight.bold)),
-                              TextSpan(text: ': "'),
-                              TextSpan(
-                                  text: 'dass',
-                                  style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      color: Colors.red)),
-                              TextSpan(text: '" und "'),
-                              TextSpan(
-                                  text: 'ob',
-                                  style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      color: Colors.blue)),
-                              TextSpan(text: '".\n\n'),
-                              TextSpan(text: 'Die Konjunktion "'),
-                              TextSpan(
-                                  text: 'dass',
-                                  style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      color: Colors.red)),
-                              TextSpan(text: '" verwendet man, wenn '),
-                              TextSpan(
-                                  text: 'etwas bekannt ist',
-                                  style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      color: Colors.red)),
-                              TextSpan(text: ' oder '),
-                              TextSpan(
-                                  text: 'man sich sicher ist',
-                                  style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      color: Colors.red)),
-                              TextSpan(
-                                  text:
-                                      '. Folgende Verben drücken in ihrer Aussage etwas '),
-                              TextSpan(
-                                  text: 'Bekanntes',
-                                  style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      color: Colors.red)),
-                              TextSpan(text: ' aus:'),
-                            ],
-                          ),
-                        )),
-                    SingleChildScrollView(
-                      child: ConstrainedBox(
-                        constraints: const BoxConstraints(
-                            //minHeight: MediaQuery.of(context).size.height
-                            ),
-                        child: IntrinsicHeight(
-                          child: Column(children: [
-                            Table(
-                              border: TableBorder.all(
-                                  color: Colors.purple, width: 1),
-                              columnWidths: {
-                                0: FractionColumnWidth(.14),
-                                1: FractionColumnWidth(.14),
-                                2: FractionColumnWidth(.14),
-                                3: FractionColumnWidth(.14),
-                                4: FractionColumnWidth(.44),
-                              },
-                              children: [
-                                TableRow(children: [
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'Infinitiv',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'Position 1',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'Verb',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'Mittelfeld',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'Nebensatz',
-                                          style: textTheme.bodyMedium)),
-                                ]),
-                                TableRow(children: [
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'denken',
-                                      style: textTheme.bodyMedium!
-                                          .copyWith(color: Colors.red),
-                                    ),
-                                  ),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'Warum',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'denkst',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'du,',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text:
-                                              'dass Peter durch die Prüfung fällt?',
-                                          style: textTheme.bodyMedium)),
-                                ]),
-                                TableRow(children: [
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'denken',
-                                      style: textTheme.bodyMedium!
-                                          .copyWith(color: Colors.red),
-                                    ),
-                                  ),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'Ich',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'denke',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'nicht,',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text:
-                                              'dass es heute noch regnen wird.',
-                                          style: textTheme.bodyMedium)),
-                                ]),
-                                TableRow(children: [
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'fürchten',
-                                      style: textTheme.bodyMedium!
-                                          .copyWith(color: Colors.red),
-                                    ),
-                                  ),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'Ich',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'fürchte,',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: '',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'dass sie ihn verlassen wird.',
-                                          style: textTheme.bodyMedium)),
-                                ]),
-                                TableRow(children: [
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'glauben',
-                                      style: textTheme.bodyMedium!
-                                          .copyWith(color: Colors.red),
-                                    ),
-                                  ),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'Ich',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'glaube',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'nicht,',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'dass Sabine heute noch kommt.',
-                                          style: textTheme.bodyMedium)),
-                                ]),
-                                TableRow(children: [
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'glauben',
-                                      style: textTheme.bodyMedium!
-                                          .copyWith(color: Colors.red),
-                                    ),
-                                  ),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'Er',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'glaubt,',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: '',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text:
-                                              'dass Kai das Geld gestohlen hat.',
-                                          style: textTheme.bodyMedium)),
-                                ]),
-                                TableRow(children: [
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'hoffen',
-                                      style: textTheme.bodyMedium!
-                                          .copyWith(color: Colors.red),
-                                    ),
-                                  ),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'Ich',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'hoffe',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'nicht,',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text:
-                                              'dass du von der Schule fliegst.',
-                                          style: textTheme.bodyMedium)),
-                                ]),
-                                TableRow(children: [
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'hoffen',
-                                      style: textTheme.bodyMedium!
-                                          .copyWith(color: Colors.red),
-                                    ),
-                                  ),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'Ich',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'hoffe',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'darauf,',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'dass Oscar mir helfen wird.',
-                                          style: textTheme.bodyMedium)),
-                                ]),
-                                TableRow(children: [
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'stimmen',
-                                      style: textTheme.bodyMedium!
-                                          .copyWith(color: Colors.red),
-                                    ),
-                                  ),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: '',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'Stimmt',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'es,',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text:
-                                              'dass Ludwig Sabine geküsst hat?',
-                                          style: textTheme.bodyMedium)),
-                                ]),
-                                TableRow(children: [
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'stimmen',
-                                      style: textTheme.bodyMedium!
-                                          .copyWith(color: Colors.red),
-                                    ),
-                                  ),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'Es',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'stimmt',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'leider,',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text:
-                                              'dass er seinen Job verloren hat.',
-                                          style: textTheme.bodyMedium)),
-                                ]),
-                                TableRow(children: [
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'vermuten',
-                                      style: textTheme.bodyMedium!
-                                          .copyWith(color: Colors.red),
-                                    ),
-                                  ),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'Ich',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'vermute,',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: '',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text:
-                                              'dass unser Sohn heimlich raucht.',
-                                          style: textTheme.bodyMedium)),
-                                ]),
-                              ],
-                            )
-                          ]),
-                        ),
-                      ),
-                    ),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                            top: 10.0, left: 16.0, bottom: 10),
-                        child: RichText(
-                          text: TextSpan(
-                            style: textTheme.bodyMedium,
-                            children: <TextSpan>[
-                              TextSpan(
-                                  text:
-                                      'Weitere Verben sind: der Meinung sein; überzeugt sein; möglich sein; notwendig sein;\n\n'),
-                              TextSpan(
-                                  text: 'Die Konjunktion "',
-                                  style:
-                                      TextStyle(fontWeight: FontWeight.bold)),
-                              TextSpan(
-                                  text: 'ob',
-                                  style:
-                                      TextStyle(fontWeight: FontWeight.bold)),
-                              TextSpan(
-                                  text: '" \n',
-                                  style:
-                                      TextStyle(fontWeight: FontWeight.bold)),
-                              TextSpan(text: 'Die Konjunktion "'),
-                              TextSpan(
-                                  text: 'ob',
-                                  style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      color: Colors.blue)),
-                              TextSpan(text: '" verwendet man, wenn '),
-                              TextSpan(
-                                  text: 'etwas unbekannt ist',
-                                  style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      color: Colors.blue)),
-                              TextSpan(text: ' oder '),
-                              TextSpan(
-                                  text: 'man sich nicht sicher ist',
-                                  style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      color: Colors.blue)),
-                              TextSpan(
-                                  text:
-                                      '. Folgende Verben drücken in ihrer Aussage etwas '),
-                              TextSpan(
-                                  text: 'Unbekanntes',
-                                  style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      color: Colors.blue)),
-                              TextSpan(text: ' aus:'),
-                            ],
-                          ),
-                        )),
-                    SingleChildScrollView(
-                      child: ConstrainedBox(
-                        constraints: const BoxConstraints(
-                            //minHeight: MediaQuery.of(context).size.height
-                            ),
-                        child: IntrinsicHeight(
-                          child: Column(children: [
-                            Table(
-                              border: TableBorder.all(
-                                  color: Colors.purple, width: 1),
-                              columnWidths: {
-                                0: FractionColumnWidth(.24),
-                                1: FractionColumnWidth(.13),
-                                2: FractionColumnWidth(.13),
-                                3: FractionColumnWidth(.18),
-                                4: FractionColumnWidth(.32),
-                              },
-                              children: [
-                                TableRow(children: [
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'Infinitiv',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'Position 1',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'Verb',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'Mittelfeld',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'Nebensatz',
-                                          style: textTheme.bodyMedium)),
-                                ]),
-                                TableRow(children: [
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'keine Ahnung haben',
-                                      style: textTheme.bodyMedium!
-                                          .copyWith(color: Colors.red),
-                                    ),
-                                  ),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'Ich',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'habe',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'keine Ahnung,',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'ob Sylvia verheiratet ist.',
-                                          style: textTheme.bodyMedium)),
-                                ]),
-                                TableRow(children: [
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 's. fragen',
-                                      style: textTheme.bodyMedium!
-                                          .copyWith(color: Colors.red),
-                                    ),
-                                  ),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'Ich',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'frage',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'mich,',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'ob du mich noch liebst.',
-                                          style: textTheme.bodyMedium)),
-                                ]),
-                                TableRow(children: [
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'nach|forschen',
-                                      style: textTheme.bodyMedium!
-                                          .copyWith(color: Colors.red),
-                                    ),
-                                  ),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'Warum',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'forschst',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'du nicht nach,',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'ob er das Geld hat.',
-                                          style: textTheme.bodyMedium)),
-                                ]),
-                                TableRow(children: [
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'prüfen',
-                                      style: textTheme.bodyMedium!
-                                          .copyWith(color: Colors.red),
-                                    ),
-                                  ),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'Helmut',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'prüft,',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: '',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'ob er genug Geld hat.',
-                                          style: textTheme.bodyMedium)),
-                                ]),
-                                TableRow(children: [
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'neugierig sein',
-                                      style: textTheme.bodyMedium!
-                                          .copyWith(color: Colors.red),
-                                    ),
-                                  ),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'Ewald',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'ist',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'neugierig,',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'ob Ute einen Freund hat.',
-                                          style: textTheme.bodyMedium)),
-                                ]),
-                              ],
-                            )
-                          ]),
-                        ),
-                      ),
-                    ),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                            top: 10.0, left: 16.0, bottom: 10),
-                        child: RichText(
-                          text: TextSpan(
-                            style: textTheme.bodyMedium,
-                            children: <TextSpan>[
-                              TextSpan(text: 'Verben mit "'),
-                              TextSpan(
-                                  text: 'dass',
-                                  style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      color: Colors.red)),
-                              TextSpan(text: '" und "'),
-                              TextSpan(
-                                  text: 'ob',
-                                  style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      color: Colors.blue)),
-                              TextSpan(text: '"\n'),
-                              TextSpan(
-                                  text:
-                                      'Bestimmte Verben können eine Sicherheit oder eine Unsicherheit ausdrücken. Ist man sich in der Aussage '),
-                              TextSpan(
-                                  text: 'sicher',
-                                  style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      color: Colors.red)),
-                              TextSpan(text: ', so gebraucht man "'),
-                              TextSpan(
-                                  text: 'dass',
-                                  style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      color: Colors.red)),
-                              TextSpan(text: '". Ist man sich in der Aussage '),
-                              TextSpan(
-                                  text: 'unsicher',
-                                  style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      color: Colors.blue)),
-                              TextSpan(text: ', so gebraucht man "'),
-                              TextSpan(
-                                  text: 'ob',
-                                  style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      color: Colors.blue)),
-                              TextSpan(text: '".'),
-                            ],
-                          ),
-                        )),
-                    SingleChildScrollView(
-                      child: ConstrainedBox(
-                        constraints: const BoxConstraints(
-                            //minHeight: MediaQuery.of(context).size.height
-                            ),
-                        child: IntrinsicHeight(
-                          child: Column(children: [
-                            Table(
-                              border: TableBorder.all(
-                                  color: Colors.purple, width: 1),
-                              columnWidths: {
-                                0: FractionColumnWidth(.17),
-                                1: FractionColumnWidth(.15),
-                                2: FractionColumnWidth(.13),
-                                3: FractionColumnWidth(.15),
-                                4: FractionColumnWidth(.40),
-                              },
-                              children: [
-                                TableRow(children: [
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'Infinitiv',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'Position 1',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'Verb',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'Mittelfeld',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'Nebensatz',
-                                          style: textTheme.bodyMedium)),
-                                ]),
-                                TableRow(children: [
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'erfahren',
-                                      style: textTheme.bodyMedium!
-                                          .copyWith(color: Colors.red),
-                                    ),
-                                  ),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'Morgen',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'erfährst',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'du,',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                    text: TextSpan(
-                                      style: textTheme.bodyMedium,
-                                      children: <TextSpan>[
-                                        TextSpan(
-                                            text: 'dass',
-                                            style:
-                                                TextStyle(color: Colors.red)),
-                                        TextSpan(
-                                            text: ' er dich betrügt.',
-                                            style: textTheme.bodyMedium)
-                                      ],
-                                    ),
-                                  ),
-                                ]),
-                                TableRow(children: [
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'erfahren',
-                                      style: textTheme.bodyMedium!
-                                          .copyWith(color: Colors.red),
-                                    ),
-                                  ),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'Morgen',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'erfährst',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'du,',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                    text: TextSpan(
-                                      style: textTheme.bodyMedium,
-                                      children: <TextSpan>[
-                                        TextSpan(
-                                            text: 'ob',
-                                            style:
-                                                TextStyle(color: Colors.blue)),
-                                        TextSpan(
-                                            text:
-                                                ' Jochen mitfährt oder nicht.',
-                                            style: textTheme.bodyMedium)
-                                      ],
-                                    ),
-                                  ),
-                                ]),
-                                TableRow(children: [
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 's. erinnern (an)',
-                                      style: textTheme.bodyMedium!
-                                          .copyWith(color: Colors.red),
-                                    ),
-                                  ),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'Ich',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'erinnere',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'mich daran,',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                    text: TextSpan(
-                                      style: textTheme.bodyMedium,
-                                      children: <TextSpan>[
-                                        TextSpan(
-                                            text: 'dass',
-                                            style:
-                                                TextStyle(color: Colors.red)),
-                                        TextSpan(
-                                            text: 'du mich gefragt hast.',
-                                            style: textTheme.bodyMedium)
-                                      ],
-                                    ),
-                                  ),
-                                ]),
-                                TableRow(children: [
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 's. erinnern (an)',
-                                      style: textTheme.bodyMedium!
-                                          .copyWith(color: Colors.red),
-                                    ),
-                                  ),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'Ich',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'erinnere',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'mich nicht,',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                    text: TextSpan(
-                                      style: textTheme.bodyMedium,
-                                      children: <TextSpan>[
-                                        TextSpan(
-                                            text: 'ob',
-                                            style:
-                                                TextStyle(color: Colors.blue)),
-                                        TextSpan(
-                                            text: ' er das gesagt hat.',
-                                            style: textTheme.bodyMedium)
-                                      ],
-                                    ),
-                                  ),
-                                ]),
-                                TableRow(children: [
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'sagen',
-                                      style: textTheme.bodyMedium!
-                                          .copyWith(color: Colors.red),
-                                    ),
-                                  ),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'Er',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'sagte,',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: '',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                    text: TextSpan(
-                                      style: textTheme.bodyMedium,
-                                      children: <TextSpan>[
-                                        TextSpan(
-                                            text: 'dass',
-                                            style:
-                                                TextStyle(color: Colors.red)),
-                                        TextSpan(
-                                            text: ' er vorbeikommt.',
-                                            style: textTheme.bodyMedium)
-                                      ],
-                                    ),
-                                  ),
-                                ]),
-                                TableRow(children: [
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'sagen',
-                                      style: textTheme.bodyMedium!
-                                          .copyWith(color: Colors.red),
-                                    ),
-                                  ),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'Er',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'sagte',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'mir nicht,',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'ob er noch vorbeikommen will.',
-                                      style: textTheme.bodyMedium,
-                                      children: <TextSpan>[
-                                        TextSpan(
-                                            text: 'ob',
-                                            style:
-                                                TextStyle(color: Colors.blue)),
-                                        TextSpan(
-                                            text: ' er noch vorbeikommen will.',
-                                            style: textTheme.bodyMedium)
-                                      ],
-                                    ),
-                                  ),
-                                ]),
-                                TableRow(children: [
-                                  RichText(
-                                    text: TextSpan(
-                                      text: '(un)wichtig sein',
-                                      style: textTheme.bodyMedium!
-                                          .copyWith(color: Colors.red),
-                                    ),
-                                  ),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'Es',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'ist',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'wichtig,',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                    text: TextSpan(
-                                      style: textTheme.bodyMedium,
-                                      children: <TextSpan>[
-                                        TextSpan(
-                                            text: 'dass',
-                                            style:
-                                                TextStyle(color: Colors.red)),
-                                        TextSpan(
-                                            text: ' du mitkommst.',
-                                            style: textTheme.bodyMedium)
-                                      ],
-                                    ),
-                                  ),
-                                ]),
-                                TableRow(children: [
-                                  RichText(
-                                    text: TextSpan(
-                                      text: '(un)wichtig sein',
-                                      style: textTheme.bodyMedium!
-                                          .copyWith(color: Colors.red),
-                                    ),
-                                  ),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'Es',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'ist',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'unwichtig,',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                    text: TextSpan(
-                                      style: textTheme.bodyMedium,
-                                      children: <TextSpan>[
-                                        TextSpan(
-                                            text: 'ob',
-                                            style:
-                                                TextStyle(color: Colors.blue)),
-                                        TextSpan(
-                                            text: ' er kommt oder nicht.',
-                                            style: textTheme.bodyMedium)
-                                      ],
-                                    ),
-                                  ),
-                                ]),
-                                TableRow(children: [
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'wissen',
-                                      style: textTheme.bodyMedium!
-                                          .copyWith(color: Colors.red),
-                                    ),
-                                  ),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'Ich',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'weiß,',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: '',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                    text: TextSpan(
-                                      style: textTheme.bodyMedium,
-                                      children: <TextSpan>[
-                                        TextSpan(
-                                            text: 'dass',
-                                            style:
-                                                TextStyle(color: Colors.red)),
-                                        TextSpan(
-                                            text: ' du mich belügst.',
-                                            style: textTheme.bodyMedium)
-                                      ],
-                                    ),
-                                  ),
-                                ]),
-                                TableRow(children: [
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'wissen',
-                                      style: textTheme.bodyMedium!
-                                          .copyWith(color: Colors.red),
-                                    ),
-                                  ),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'Ich',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'weiß',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'nicht,',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'ob er mir die Wahrheit sagt.',
-                                      style: textTheme.bodyMedium,
-                                      children: <TextSpan>[
-                                        TextSpan(
-                                            text: 'ob',
-                                            style:
-                                                TextStyle(color: Colors.blue)),
-                                        TextSpan(
-                                            text: ' er mir die Wahrheit sagt.',
-                                            style: textTheme.bodyMedium)
-                                      ],
-                                    ),
-                                  ),
-                                ]),
-                              ],
-                            )
-                          ]),
-                        ),
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-              Card(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: <Widget>[
-                    Padding(
-                      padding: const EdgeInsets.only(
-                          top: 10.0, left: 16.0, bottom: 10),
-                      child: Text('Nebensätze auf Position 1',
-                          style: textTheme.titleSmall),
-                    ),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                            top: 10.0, left: 16.0, bottom: 10),
-                        child: RichText(
-                          text: TextSpan(
-                            style: textTheme.bodyMedium,
-                            children: <TextSpan>[
-                              TextSpan(
-                                  text:
-                                      'Eine Satzergänzung stellt man gewöhnlich nach dem Hauptsatz.'),
-                            ],
-                          ),
-                        )),
-                    SingleChildScrollView(
-                      child: ConstrainedBox(
-                        constraints: const BoxConstraints(
-                            //minHeight: MediaQuery.of(context).size.height
-                            ),
-                        child: IntrinsicHeight(
-                          child: Column(children: [
-                            Table(
-                              border: TableBorder.all(
-                                  color: Colors.purple, width: 1),
-                              columnWidths: {
-                                0: FractionColumnWidth(.20),
-                                1: FractionColumnWidth(.20),
-                                2: FractionColumnWidth(.20),
-                                3: FractionColumnWidth(.40),
-                              },
-                              children: [
-                                TableRow(children: [
-                                  RichText(
-                                    text: TextSpan(
-                                      style: textTheme.bodyMedium,
-                                      children: <TextSpan>[
-                                        TextSpan(
-                                            text: 'Position 1',
-                                            style:
-                                                TextStyle(color: Colors.red)),
-                                      ],
-                                    ),
-                                  ),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'Verb',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'Mittelfeld',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'Ergänzungssatz',
-                                          style: textTheme.bodyMedium)),
-                                ]),
-                                TableRow(children: [
-                                  RichText(
-                                    text: TextSpan(
-                                      style: textTheme.bodyMedium,
-                                      children: <TextSpan>[
-                                        TextSpan(
-                                            text: 'Es',
-                                            style:
-                                                TextStyle(color: Colors.red)),
-                                      ],
-                                    ),
-                                  ),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'tut',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'mir Leid,',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                    text: TextSpan(
-                                      style: textTheme.bodyMedium,
-                                      children: <TextSpan>[
-                                        TextSpan(
-                                            text: 'dass',
-                                            style:
-                                                TextStyle(color: Colors.blue)),
-                                        TextSpan(
-                                            text: ' ihr verloren habt.',
-                                            style: textTheme.bodyMedium)
-                                      ],
-                                    ),
-                                  ),
-                                ]),
-                                TableRow(children: [
-                                  RichText(
-                                    text: TextSpan(
-                                      style: textTheme.bodyMedium,
-                                      children: <TextSpan>[
-                                        TextSpan(
-                                            text: 'Es',
-                                            style:
-                                                TextStyle(color: Colors.red)),
-                                      ],
-                                    ),
-                                  ),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'freut',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'mich,',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                    text: TextSpan(
-                                      style: textTheme.bodyMedium,
-                                      children: <TextSpan>[
-                                        TextSpan(
-                                            text: 'dass',
-                                            style:
-                                                TextStyle(color: Colors.blue)),
-                                        TextSpan(
-                                            text: ' ihr gewonnen habt.',
-                                            style: textTheme.bodyMedium)
-                                      ],
-                                    ),
-                                  ),
-                                ]),
-                              ],
-                            )
-                          ]),
-                        ),
-                      ),
-                    ),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                            top: 10.0, left: 16.0, bottom: 10),
-                        child: RichText(
-                          text: TextSpan(
-                            style: textTheme.bodyMedium,
-                            children: <TextSpan>[
-                              TextSpan(text: 'Bei '),
-                              TextSpan(
-                                  text: 'unpersönlichen Verben',
-                                  style:
-                                      TextStyle(fontWeight: FontWeight.bold)),
-                              TextSpan(text: ' '),
-                              TextSpan(
-                                  text: 'muss',
-                                  style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      color: Colors.blue)),
-                              TextSpan(text: ' das "'),
-                              TextSpan(
-                                  text: 'es',
-                                  style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      color: Colors.red)),
-                              TextSpan(text: '" auf '),
-                              TextSpan(
-                                  text: 'Position 1',
-                                  style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      color: Colors.red)),
-                              TextSpan(
-                                  text: ' stehen. \nSteht der Nebensatz auf '),
-                              TextSpan(
-                                  text: 'Position 1',
-                                  style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      color: Colors.red)),
-                              TextSpan(text: ', so entfällt das "'),
-                              TextSpan(
-                                  text: 'es',
-                                  style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      color: Colors.red)),
-                              TextSpan(text: '" im Hauptsatz.'),
-                            ],
-                          ),
-                        )),
-                    SingleChildScrollView(
-                      child: ConstrainedBox(
-                        constraints: const BoxConstraints(
-                            //minHeight: MediaQuery.of(context).size.height
-                            ),
-                        child: IntrinsicHeight(
-                          child: Column(children: [
-                            Table(
-                              border: TableBorder.all(
-                                  color: Colors.purple, width: 1),
-                              children: [
-                                TableRow(children: [
-                                  RichText(
-                                    text: TextSpan(
-                                      style: textTheme.bodyMedium,
-                                      children: <TextSpan>[
-                                        TextSpan(
-                                            text: 'Position 1',
-                                            style:
-                                                TextStyle(color: Colors.red)),
-                                      ],
-                                    ),
-                                  ),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'Position 2',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'Ende',
-                                          style: textTheme.bodyMedium)),
-                                ]),
-                                TableRow(children: [
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'Ergänzungssatz',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'Verb',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'Satzende',
-                                          style: textTheme.bodyMedium)),
-                                ]),
-                                TableRow(children: [
-                                  RichText(
-                                    text: TextSpan(
-                                      style: textTheme.bodyMedium,
-                                      children: <TextSpan>[
-                                        TextSpan(
-                                            text: 'Dass',
-                                            style:
-                                                TextStyle(color: Colors.blue)),
-                                        TextSpan(
-                                            text: ' ihr verloren habt,',
-                                            style: textTheme.bodyMedium)
-                                      ],
-                                    ),
-                                  ),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'tut',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'mir leid.',
-                                          style: textTheme.bodyMedium)),
-                                ]),
-                                TableRow(children: [
-                                  RichText(
-                                    text: TextSpan(
-                                      style: textTheme.bodyMedium,
-                                      children: <TextSpan>[
-                                        TextSpan(
-                                            text: 'Dass',
-                                            style:
-                                                TextStyle(color: Colors.blue)),
-                                        TextSpan(
-                                            text: ' ihr gewonnen habt,',
-                                            style: textTheme.bodyMedium)
-                                      ],
-                                    ),
-                                  ),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'freut',
-                                          style: textTheme.bodyMedium)),
-                                  RichText(
-                                      text: TextSpan(
-                                          text: 'mich.',
-                                          style: textTheme.bodyMedium)),
-                                ]),
-                              ],
-                            )
-                          ]),
-                        ),
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-            ],
-          ),
-        ),
+            padding: const EdgeInsets.all(8.0),
+            child: MyPageContentView(contents: contents)),
       ),
     );
   }
 }
+
+List<CardContent> contents = [
+  CardContent(
+    elements: [
+      CardElement(type: ElementType.pageTitle, value: title),
+    ],
+  ),
+  CardContent(
+    elements: [
+      CardElement(type: ElementType.cardTitle, value: title1),
+      CardElement(type: ElementType.htmlContent, value: htmlContent1_1),
+      CardElement(type: ElementType.htmlTable, value: htmlTable1_2),
+      CardElement(type: ElementType.htmlContent, value: htmlContent1_3),
+      CardElement(type: ElementType.htmlTable, value: htmlTable1_4),
+      CardElement(type: ElementType.htmlContent, value: htmlContent1_5),
+    ],
+  ),
+  CardContent(
+    elements: [
+      CardElement(type: ElementType.cardTitle, value: title2),
+      CardElement(type: ElementType.htmlContent, value: htmlContent2_1),
+    ],
+  ),
+  CardContent(
+    elements: [
+      CardElement(type: ElementType.cardTitle, value: title3),
+      CardElement(type: ElementType.htmlContent, value: htmlContent3_1),
+      CardElement(type: ElementType.htmlTable, value: htmlTable3_2),
+      CardElement(type: ElementType.htmlContent, value: htmlContent3_3),
+      CardElement(type: ElementType.htmlTable, value: htmlTable3_4),
+      CardElement(type: ElementType.htmlContent, value: htmlContent3_5),
+      CardElement(type: ElementType.htmlTable, value: htmlTable3_6),
+    ],
+  ),
+  CardContent(
+    elements: [
+      CardElement(type: ElementType.cardTitle, value: title4),
+      CardElement(type: ElementType.htmlContent, value: htmlContent4_1),
+      CardElement(type: ElementType.htmlTable, value: htmlTable4_2),
+      CardElement(type: ElementType.htmlContent, value: htmlContent4_3),
+      CardElement(type: ElementType.htmlTable, value: htmlTable4_4),
+    ],
+  ),
+];
+
+String title = '5. Ergänzungssätze';
+
+String title1 = 'Was man über Ergänzungssätze wissen sollte.';
+String htmlContent1_1 = '''
+<p>Jedes Verb hat <span style="text-decoration:underline">bestimmte Ergänzungen</span>.</p>
+
+<li>Manchmal hat das Verb eine <strong><a title="Akkusativ-Ergänzung" href="lernen.php?menu_id=39">Akkusativ-Ergänzung</a></strong>,
+
+<li>Ich liebe <strong><span class="red">Martina</span></strong>.</li>
+
+<li>manchmal eine <strong><a title="Dativ-Ergänzung" href="lernen.php?menu_id=40">Dativ-Ergänzung</a></strong>
+
+<li>Hilfst du <strong><span class="red">mir</span></strong>?</li>
+
+<li>und manchmal eine <strong><a title="Präpositional-Ergänzung" href="lernen.php?menu_id=45">Präpositional-Ergänzung</a></strong>.
+
+<li>Meine Freundin interessiert sich <strong><span class="red">für klassische Musik</span></strong>.</li>
+
+<p>Alle bisher gezeigten Beispiele haben <span style="text-decoration:underline">eins gemeinsam</span>. Als Verbergänzungen werden entweder <span style="text-decoration:underline">Pronomen</span> (mich, mir, ...), <span style="text-decoration:underline">Namen</span> (Martina, Köln, ...) oder <span style="text-decoration:underline">Nomen</span> (Musik) verwendet. Gelegentlich kommt es vor, dass <strong><span class="red">ein ganzer Sachverhalt</span></strong> <span style="text-decoration:underline">als Ergänzung</span> stehen kann. Einzelne Pronomen, Namen oder Nomen werden dabei durch einen ganzen Satzinhalt ersetzt. Eine Satzergänzung wird am häufigsten anstelle einer Nominativ-, Akkusativ- oder Präpositional-Ergänzung benutzt.</p>
+''';
+String htmlTable1_2 = '''
+<table><colgroup> 
+<col style="width: 25%;"> 
+<col style="width: 25%;"> 
+<col style="width: 25%;"> 
+<col style="width: 25%;"> </colgroup>
+<thead>
+<tr align="center">
+<th>Position 1</th>
+<th>Position 2</th>
+<th>Position 3</th>
+<th>Ende</th>
+</tr>
+<tr>
+<th><strong><span class="red">Nominativ</span></strong></th>
+<th>Verb</th>
+<th>Akkusativ</th>
+<th>Satzende</th>
+</tr>
+</thead>
+<tbody>
+<tr >
+<td><strong><span class="red">Das</span></strong></td>
+<td>freut</td>
+<td>mich</td>
+<td>sehr.</td>
+</tr>
+</tbody>
+</table>
+''';
+String htmlContent1_3 = '''
+<p>Im gezeigten Beispiel ist "<strong><span class="red">das</span></strong>" die <strong><a title="Nominativ-Ergänzung" href="lernen.php?menu_id=38">Nominativ-Ergänzung</a></strong>. "Das" steht hier stellvertretend <strong><span class="red">für einen Sachverhalt</span></strong>, den wir noch nicht kennen, da uns der Sachverhalt, die Information, bisher nicht gesagt wurde. Erst wenn "das" durch einen Inhalt / Satz (=Sachverhalt) angegeben wird, wird die Situation deutlich:</p>
+''';
+String htmlTable1_4 = '''
+<table><colgroup> 
+<col style="width: 55%;"> 
+<col style="width: 15%;"> 
+<col style="width: 15%;"> 
+<col style="width: 15%;"> </colgroup>
+<thead>
+<tr align="center">
+<th><strong><span class="red">Position 1</span></strong></th>
+<th>Position 2</th>
+<th>Position 3</th>
+<th>Ende</th>
+</tr>
+<tr>
+<th><strong><span class="red">Nominativ</span></strong></th>
+<th>Verb</th>
+<th>Akkusativ</th>
+<th>Satzende</th>
+</tr>
+</thead>
+<tbody>
+<tr >
+<td><strong><span class="blue">Dass</span></strong> du die Deutschprüfung <strong><span class="blue">bestanden hast</span></strong>,</td>
+<td>freut</td>
+<td>mich</td>
+<td>sehr.</td>
+</tr>
+</tbody>
+</table>
+''';
+String htmlContent1_5 = '''
+<li>Im gezeigten Beispiel handelt es sich um einen <strong><span class="red">Subjektsatz</span></strong>.</li>
+<li>Das "<strong><span class="red">das</span></strong>" <span style="text-decoration:underline">fällt weg</span> und wird durch einen kompletten Satz ersetzt.</li>
+<li>Der neue Sachverhalt wird als Subjektsatz bezeichnet, da er im Nominativ steht.</li>
+<li>Satzergänzungen im Nominativ werden oft mit der <strong><a title="Konjunktion" href="lernen.php?menu_id=89#unterordnende_konj">Konjunktion</a></strong> "<strong><span class="blue">dass</span></strong>" eingeleitet.</li>
+<li><strong><span class="blue">dass-Sätze</span></strong> sind <strong><a title="Nebensätze" href="lernen.php?menu_id=91">Nebensätze</a></strong> (NS).</li>
+<li>Die Satzergänzung bildet im Hauptsatz (HS) <strong><span class="red">eine Position</span></strong> (NS, Verb)</li>
+<li>Der Nebensatz wird mit einem <strong><span class="red">Komma</span></strong> ( , ) abgeschlossen.</li>
+<li>In Nebensätzen wird das <span style="text-decoration:underline"> konjugierte Verb</span> <strong><span class="red">ans Satzende</span></strong> gestellt.</li> 
+''';
+
+String title2 = 'Was sind Ergänzungssätze?';
+String htmlContent2_1 = '''
+<p>Ergänzungssätze sind <strong><a title="Nebensätze" href="lernen.php?menu_id=91">Nebensätze</a></strong>. Das <strong><span class="red">konjugierte Verb</span></strong> steht in Nebensätzen <strong><span class="red">am Satzende</span></strong>. Ergänzungssätze beginnen </p>
+<li>in <strong><a title="Aussagesatz" href="lernen.php?menu_id=88#aussagesaetze">Aussagesätzen</a></strong> mit " <strong><span class="blue">dass</span></strong> " oder " <strong><span class="blue">ob</span></strong> ",
+
+<li>Ich weiß, <strong><span class="blue">dass</span></strong> er sehr viel Geld <strong><span class="red">hat</span></strong>.</li>
+<li>Ich weiß aber nicht, <strong><span class="blue">ob</span></strong> er glücklich <strong><span class="red">ist</span></strong>.</li>
+
+<li>in <strong><a title="Ja-/Nein-Frage" href="lernen.php?menu_id=88#fragesaetze">Ja- / Nein-Fragen</a></strong> mit " <strong><span class="blue">ob</span></strong> ",
+
+<li>Weißt du, <strong><span class="blue">ob</span></strong> Herr Gans verheiratet <strong><span class="red">ist</span></strong>? / ( Ist Herr Gans verheiratet?)</li>
+<li>Kannst du mir sagen, <strong><span class="blue">ob</span></strong> Gerd zur Party <strong><span class="red">kommt</span></strong>? / ( Kommt Gerd zur Party?)</li>
+
+<li>in <strong><a title="W-Fragen" href="lernen.php?menu_id=15#w-fragen">W-Fragen</a></strong> mit der <strong><span class="blue">W-Frage</span></strong>.
+
+<li>Weißt du, <strong><span class="blue">wo</span></strong> unser Lehrer <strong><span class="red">wohnt</span></strong>? / ( Wo wohnt unser Lehrer?)</li>
+<li>Kannst du mir sagen, <strong><span class="blue">warum</span></strong> er das <strong><span class="red">macht</span></strong>? / ( Warum macht er das?)</li>
+
+<li><strong><a title="Infinitivsätze" href="lernen.php?menu_id=49">Infinitivsätze</a></strong> <span style="text-decoration:underline">enden</span> dagegen mit <strong><span class="blue">zu + Infinitiv</span></strong>.
+
+<li>Er weiß, sich <strong><span class="blue">zu helfen</span></strong>. / ( Er hilft sich selbst.)</li>
+<li>Ich hoffe, die Prüfung <strong><span class="blue">zu bestehen</span></strong>. / ( Ich bestehe die Prüfung.)</li> 
+''';
+
+String title3 = 'Unterschied von "dass" und "ob"';
+String htmlContent3_1 = '''
+<p>Man unterscheidet zwei <strong><a title="Konjunktionen" href="lernen.php?menu_id=89#unterordnende_konj">Konjunktionen</a></strong>: "<strong><span class="red">dass</span></strong>" und "<strong><span class="blue">ob</span></strong>".</p>
+<li><strong>Die Konjunktion "dass"</strong>
+
+<p>Die Konjunktion "<strong><span class="red">dass</span></strong>" verwendet man, wenn <strong><span class="red">etwas bekannt ist</span></strong> oder <strong><span class="red">man sich sicher ist</span></strong>. Folgende Verben drücken in ihrer Aussage etwas <strong><span class="red">Bekanntes</span></strong> aus:</p>
+''';
+String htmlTable3_2 = '''
+<table><colgroup> 
+<col style="width: 14%;"> 
+<col style="width: 14%;"> 
+<col style="width: 14%;"> 
+<col style="width: 14%;"> 
+<col style="width: 44%;"> </colgroup>
+<thead>
+<tr align="center">
+<th>Infinitiv</th>
+<th>Position 1</th>
+<th>Verb</th>
+<th>Mittelfeld</th>
+<th>Nebensatz</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th ><strong><span class="red">denken</span></strong></th>
+<td>Warum</td>
+<td>denkst</td>
+<td>du,</td>
+<td>dass Peter durch die Prüfung fällt?</td>
+</tr>
+<tr>
+<th ><strong><span class="red">denken</span></strong></th>
+<td>Ich</td>
+<td>denke</td>
+<td>nicht,</td>
+<td>dass es heute noch regnen wird.</td>
+</tr>
+<tr>
+<th><strong><span class="red">fürchten</span></strong></th>
+<td>Ich</td>
+<td>fürchte,</td>
+<td>&nbsp;</td>
+<td>dass sie ihn verlassen wird.</td>
+</tr>
+<tr>
+<th ><strong><span class="red">glauben</span></strong></th>
+<td>Ich</td>
+<td>glaube</td>
+<td>nicht,</td>
+<td>dass Sabine heute noch kommt.</td>
+</tr>
+<tr>
+<th ><strong><span class="red">glauben</span></strong></th>
+<td>Er</td>
+<td>glaubt,</td>
+<td>&nbsp;</td>
+<td>dass Kai das Geld gestohlen hat.</td>
+</tr>
+<tr>
+<th ><strong><span class="red">hoffen</span></strong></th>
+<td>Ich</td>
+<td>hoffe</td>
+<td>nicht,</td>
+<td>dass du von der Schule fliegst.</td>
+</tr>
+<tr>
+<th ><strong><span class="red">hoffen</span></strong></th>
+<td>Ich</td>
+<td>hoffe</td>
+<td>darauf,</td>
+<td>dass Oscar mir helfen wird.</td>
+</tr>
+<tr>
+<th ><strong><span class="red">stimmen</span></strong></th>
+<td>&nbsp;</td>
+<td>Stimmt</td>
+<td>es,</td>
+<td>dass Ludwig Sabine geküsst hat?</td>
+</tr>
+<tr>
+<th ><strong><span class="red">stimmen</span></strong></th>
+<td>Es</td>
+<td>stimmt</td>
+<td>leider,</td>
+<td>dass er seinen Job verloren hat.</td>
+</tr>
+<tr>
+<th><strong><span class="red">vermuten</span></strong></th>
+<td>Ich</td>
+<td>vermute,</td>
+<td>&nbsp;</td>
+<td>dass unser Sohn heimlich raucht.</td>
+</tr>
+</tbody>
+</table>
+''';
+String htmlContent3_3 = '''
+<br> Weitere Verben sind: der Meinung sein; überzeugt sein; möglich sein; notwendig sein; </li>
+<li><strong>Die Konjunktion "ob"</strong>
+
+<p>Die Konjunktion "<strong><span style="color: blue;">ob</span></strong> " verwendet man, wenn <strong><span style="color: blue;">etwas unbekannt ist</span></strong> oder <strong><span style="color: blue;">man sich nicht sicher ist</span></strong>. Folgende Verben drücken in ihrer Aussage etwas <strong><span style="color: blue;">Unbekanntes</span></strong> aus:</p>
+''';
+String htmlTable3_4 = '''
+<table><colgroup> 
+<col style="width: 27%;"> 
+<col style="width: 15%;"> 
+<col style="width: 13%;"> 
+<col style="width: 18%;"> 
+<col style="width: 32%;"> </colgroup>
+<thead>
+<tr align="center">
+<th>Infinitiv</th>
+<th>Position 1</th>
+<th>Verb</th>
+<th>Mittelfeld</th>
+<th>Nebensatz</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th><strong><span class="red">keine Ahnung haben</span></strong></th>
+<td>Ich</td>
+<td>habe</td>
+<td>keine Ahnung,</td>
+<td>ob Sylvia verheiratet ist.</td>
+</tr>
+<tr>
+<th><strong><span class="red">s. fragen</span></strong></th>
+<td>Ich</td>
+<td>frage</td>
+<td>mich,</td>
+<td>ob du mich noch liebst.</td>
+</tr>
+<tr>
+<th><strong><span class="red">nach|forschen</span></strong></th>
+<td>Warum</td>
+<td>forschst</td>
+<td>du nicht nach,</td>
+<td>ob er das Geld hat.</td>
+</tr>
+<tr>
+<th><strong><span class="red">prüfen</span></strong></th>
+<td>Helmut</td>
+<td>prüft,</td>
+<td>&nbsp;</td>
+<td>ob er genug Geld hat.</td>
+</tr>
+<tr>
+<th><strong><span class="red">neugierig sein</span></strong></th>
+<td>Ewald</td>
+<td>ist</td>
+<td>neugierig,</td>
+<td>ob Ute einen Freund hat.</td>
+</tr>
+</tbody>
+</table>
+''';
+String htmlContent3_5 = '''
+<li><strong>Verben mit "dass" und "ob"</strong>
+
+<p>Bestimmte Verben können eine Sicherheit oder eine Unsicherheit ausdrücken. Ist man sich in der Aussage <strong><span class="red">sicher</span></strong>, so gebraucht man "<strong><span class="red">dass</span></strong>". Ist man sich in der Aussage <strong><span class="blue">unsicher</span></strong>, so gebraucht man "<strong><span class="blue">ob</span></strong>".</p>
+''';
+String htmlTable3_6 = '''
+<table><colgroup> 
+<col style="width: 20%;"> 
+<col style="width: 15%;"> 
+<col style="width: 10%;"> 
+<col style="width: 15%;"> 
+<col style="width: 40%;"> </colgroup>
+<thead>
+<tr align="center">
+<th>Infinitiv</th>
+<th>Position 1</th>
+<th>Verb</th>
+<th>Mittelfeld</th>
+<th>Nebensatz</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th ><strong><span class="red">erfahren</span></strong></th>
+<td>Morgen</td>
+<td>erfährst</td>
+<td>du,</td>
+<td><strong><span class="red">dass</span></strong> er dich betrügt.</td>
+</tr>
+<tr>
+<th ><strong><span class="red">erfahren</span></strong></th>
+<td>Morgen</td>
+<td>erfährst</td>
+<td>du,</td>
+<td><strong><span class="blue">ob</span></strong> Jochen mitfährt oder nicht.</td>
+</tr>
+<tr>
+<th ><strong><span class="red">s. erinnern (an)</span></strong></th>
+<td>Ich</td>
+<td>erinnere</td>
+<td>mich daran,</td>
+<td><strong><span class="red">dass</span></strong> du mich gefragt hast.</td>
+</tr>
+<tr>
+<th ><strong><span class="red">s. erinnern (an)</span></strong></th>
+<td>Ich</td>
+<td>erinnere</td>
+<td>mich nicht,</td>
+<td><strong><span class="blue">ob</span></strong> er das gesagt hat.</td>
+</tr>
+<tr>
+<th ><strong><span class="red">sagen</span></strong></th>
+<td>Er</td>
+<td>sagte,</td>
+<td>&nbsp;</td>
+<td><strong><span class="red">dass</span></strong> er vorbeikommt.</td>
+</tr>
+<tr>
+<th ><strong><span class="red">sagen</span></strong></th>
+<td>Er</td>
+<td>sagte</td>
+<td>mir nicht,</td>
+<td><strong><span class="blue">ob</span></strong> er noch vorbeikommen will.</td>
+</tr>
+<tr>
+<th ><strong><span class="red">(un)wichtig sein</span></strong></th>
+<td>Es</td>
+<td>ist</td>
+<td>wichtig,</td>
+<td><strong><span class="red">dass</span></strong> du mitkommst.</td>
+</tr>
+<tr>
+<th ><strong><span class="red">(un)wichtig sein</span></strong></th>
+<td>Es</td>
+<td>ist</td>
+<td>unwichtig,</td>
+<td><strong><span class="blue">ob</span></strong> er kommt oder nicht.</td>
+</tr>
+<tr>
+<th ><strong><span class="red">wissen</span></strong></th>
+<td>Ich</td>
+<td>weiß,</td>
+<td>&nbsp;</td>
+<td><strong><span class="red">dass</span></strong> du mich belügst.</td>
+</tr>
+<tr>
+<th ><strong><span class="red">wissen</span></strong></th>
+<td>Ich</td>
+<td>weiß;</td>
+<td>nicht,</td>
+<td><strong><span class="blue">ob</span></strong> er mir die Wahrheit sagt.</td>
+</tr>
+</tbody>
+</table>
+''';
+
+String title4 = 'Nebensätze auf Position 1';
+String htmlContent4_1 = '''
+<p>Eine Satzergänzung stellt man gewöhnlich nach dem Hauptsatz.</p>
+''';
+String htmlTable4_2 = '''
+<table><colgroup> 
+<col style="width: 20%;"> 
+<col style="width: 25%;"> 
+<col style="width: 25%;"> 
+<col style="width: 30%;"> </colgroup>
+<thead>
+<tr align="center">
+<th><strong><span class="red">Position 1</span></strong></th>
+<th>Verb</th>
+<th>Mittelfeld</th>
+<th>Ergänzungssatz</th>
+</tr>
+</thead>
+<tbody align="center">
+<tr>
+<td><strong><span class="red">Es</span></strong></td>
+<td>tut</td>
+<td>mir Leid,</td>
+<td><strong><span class="blue">dass</span></strong> ihr verloren habt.</td>
+</tr>
+<tr>
+<td><strong><span class="red">Es</span></strong></td>
+<td>freut</td>
+<td>mich,</td>
+<td><strong><span class="blue">dass</span></strong> ihr gewonnen habt.</td>
+</tr>
+</tbody>
+</table>
+''';
+String htmlContent4_3 = '''
+<p>Bei <strong><a title="Unpersönliche Verben" href="lernen.php?menu_id=77#unpersoenliche_verben">unpersönlichen Verben</a></strong> <strong><span class="blue">muss</span></strong> das " <strong><span class="red">es</span></strong> " auf <strong><span class="red">Position 1</span></strong> stehen. <br> Steht der Nebensatz auf <strong><span class="red">Position 1</span></strong>, so entfällt das "<strong><span class="red">es</span></strong>" im Hauptsatz.</p>
+''';
+String htmlTable4_4 = '''
+<table><colgroup> 
+<col style="width: 60%;"> 
+<col style="width: 20%;"> 
+<col style="width: 20%;"> </colgroup>
+<thead>
+<tr align="center">
+<th><strong><span class="red">Position 1</span></strong></th>
+<th>Position 2</th>
+<th>Ende</th>
+</tr>
+<tr>
+<th>Ergänzungssatz</th>
+<th>Verb</th>
+<th>Satzende</th>
+</tr>
+</thead>
+<tbody align="center">
+<tr>
+<td><strong><span class="blue">Dass</span></strong> ihr verloren habt,</td>
+<td>tut</td>
+<td>mir leid.</td>
+</tr>
+<tr>
+<td><strong><span class="blue">Dass</span></strong> ihr gewonnen habt,</td>
+<td>freut</td>
+<td>mich.</td>
+</tr>
+</tbody>
+</table>  
+''';

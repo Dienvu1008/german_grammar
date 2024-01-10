@@ -1,728 +1,173 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_html/flutter_html.dart';
 
-import '../app/app_localizations.dart';
+import '../page_content.dart';
 
 class Adjektivdeklination_Typ1_1_1 extends StatelessWidget {
   const Adjektivdeklination_Typ1_1_1({super.key});
 
   @override
   Widget build(BuildContext context) {
-    final localizations = AppLocalizations.of(context);
-    final textTheme = Theme.of(context).textTheme;
     return Expanded(
       child: Scaffold(
         body: Padding(
-          padding: const EdgeInsets.all(8.0),
-          child: ListView(
-            children: <Widget>[
-              Card(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: <Widget>[
-                    Padding(
-                      padding: const EdgeInsets.only(top: 16.0, left: 16.0),
-                      child: Text(
-                          '1.1. Adjektivdeklination mit dem bestimmten Artikel',
-                          style: textTheme.titleMedium),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.only(top: 10.0, left: 16.0),
-                      child: Text(
-                          'Was man über die Adjektivdeklination wissen sollte.',
-                          style: textTheme.titleSmall),
-                    ),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                            top: 10.0, left: 16.0, bottom: 10),
-                        child: RichText(
-                          text: TextSpan(
-                            style: textTheme.bodyMedium,
-                            children: const <TextSpan>[
-                              TextSpan(text: 'Steht das Adjektiv '),
-                              TextSpan(
-                                  text: 'vor dem Nomen',
-                                  style: TextStyle(
-                                      decoration: TextDecoration.underline)),
-                              TextSpan(
-                                  text:
-                                      ', ist das Adjektiv Teil einer Nomengruppe und '),
-                              TextSpan(
-                                  text: 'muss',
-                                  style: TextStyle(
-                                      decoration: TextDecoration.underline)),
-                              TextSpan(
-                                  text:
-                                      ' dekliniert werden. Das Adjektiv hat dann eine '),
-                              TextSpan(
-                                  text: 'attributive Funktion',
-                                  style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      color: Colors.red)),
-                              TextSpan(
-                                  text:
-                                      '. Adjektive als Nomenattribute charakterisieren oder definieren ein Nomen.\n'),
-                              TextSpan(
-                                  text:
-                                      'Eine Nomengruppe besteht demnach aus:\n'),
-                            ],
-                          ),
-                        )),
-                    SingleChildScrollView(
-                      child: ConstrainedBox(
-                        constraints: const BoxConstraints(
-                            //minHeight: MediaQuery.of(context).size.height
-                            ),
-                        child: IntrinsicHeight(
-                          child: Column(children: [
-                            Table(
-                              border: TableBorder.all(
-                                  color: Colors.purple, width: 1),
-                              children: [
-                                TableRow(children: [
-                                  Center(
-                                    child: RichText(
-                                      text: TextSpan(
-                                        style:
-                                            DefaultTextStyle.of(context).style,
-                                        children: const <TextSpan>[
-                                          TextSpan(
-                                              text: '',
-                                              style: TextStyle(
-                                                  color: Colors.black)),
-                                          TextSpan(
-                                              text: 'Artikel',
-                                              style: TextStyle(
-                                                  color: Colors.blue)),
-                                          TextSpan(
-                                              text: ' + ',
-                                              style: TextStyle(
-                                                  color: Colors.black)),
-                                          TextSpan(
-                                              text: 'Adjektiv',
-                                              style:
-                                                  TextStyle(color: Colors.red)),
-                                          TextSpan(
-                                              text: ' + ',
-                                              style: TextStyle(
-                                                  color: Colors.black)),
-                                          TextSpan(
-                                              text: 'Nomen',
-                                              style: TextStyle(
-                                                  color: Colors.blue)),
-                                        ],
-                                      ),
-                                    ),
-                                  ),
-                                ]),
-                              ],
-                            )
-                          ]),
-                        ),
-                      ),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.only(
-                          top: 10.0, left: 16.0, bottom: 10),
-                      child: RichText(
-                        text: TextSpan(
-                          style: textTheme.bodyMedium,
-                          children: const <TextSpan>[
-                            TextSpan(
-                                text: 'Wie das Adjektiv dekliniert wird, ist '),
-                            TextSpan(
-                                text: 'von 4 Faktoren abhängig',
-                                style: TextStyle(
-                                    decoration: TextDecoration.underline)),
-                            TextSpan(text: ':\n'),
-                            TextSpan(
-                                text:
-                                    'Form des Artikels (bestimmt, unbestimmt, Nullartikel)\n'),
-                            TextSpan(text: 'Der '),
-                            TextSpan(
-                                text: 'junge',
-                                style: TextStyle(color: Colors.red)),
-                            TextSpan(text: ' Mann kauft eine '),
-                            TextSpan(
-                                text: 'rote',
-                                style: TextStyle(color: Colors.red)),
-                            TextSpan(text: ' Rose.\n'),
-                            TextSpan(text: 'Seine Freundin liebt '),
-                            TextSpan(
-                                text: 'rote',
-                                style: TextStyle(color: Colors.red)),
-                            TextSpan(text: ' Rosen.\n'),
-                            TextSpan(text: 'Numerus (Singular /Plural)\n'),
-                            TextSpan(text: 'Das '),
-                            TextSpan(
-                                text: 'kleine',
-                                style: TextStyle(color: Colors.red)),
-                            TextSpan(text: ' Kind spielt mit seinem Ball.\n'),
-                            TextSpan(text: 'Die '),
-                            TextSpan(
-                                text: 'kleinen',
-                                style: TextStyle(color: Colors.red)),
-                            TextSpan(
-                                text: ' Kinder spielen mit ihren Bällen.\n'),
-                            TextSpan(
-                                text: 'Genus (maskulin, feminin, neutral)\n'),
-                            TextSpan(text: 'Der '),
-                            TextSpan(
-                                text: 'fleißige',
-                                style: TextStyle(color: Colors.red)),
-                            TextSpan(
-                                text: ' Junge macht seine Hausaufgaben.\n'),
-                            TextSpan(text: 'Das '),
-                            TextSpan(
-                                text: 'liebe',
-                                style: TextStyle(color: Colors.red)),
-                            TextSpan(
-                                text: ' Mädchen spielt mit ihrer Puppe.\n'),
-                            TextSpan(text: 'Die '),
-                            TextSpan(
-                                text: 'junge',
-                                style: TextStyle(color: Colors.red)),
-                            TextSpan(
-                                text:
-                                    ' Frau möchte heute Abend in die Disko gehen.\n'),
-                            TextSpan(
-                                text:
-                                    'Kasus (Nominativ, Akkusativ, Dativ, Genitiv)\n'),
-                            TextSpan(text: 'Der '),
-                            TextSpan(
-                                text: 'ehrgeizige',
-                                style: TextStyle(color: Colors.red)),
-                            TextSpan(
-                                text:
-                                    ' Fußballspieler trainiert täglich mehrere Stunden.\n'),
-                            TextSpan(text: 'Der Trainer beobachtet den '),
-                            TextSpan(
-                                text: 'ehrgeizigen',
-                                style: TextStyle(color: Colors.red)),
-                            TextSpan(text: ' Fußballspieler.\n'),
-                            TextSpan(text: 'Ein Manager bietet dem '),
-                            TextSpan(
-                                text: 'ehrgeizigen',
-                                style: TextStyle(color: Colors.red)),
-                            TextSpan(
-                                text:
-                                    ' Fußballspieler einen Profivertrag an.\n'),
-                            TextSpan(text: 'Die Freundin des '),
-                            TextSpan(
-                                text: 'ehrgeizigen',
-                                style: TextStyle(color: Colors.red)),
-                            TextSpan(
-                                text: ' Fußballspielers freut sich mit ihm.\n'),
-                          ],
-                        ),
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-              Card(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: <Widget>[
-                    Padding(
-                      padding: const EdgeInsets.only(top: 10.0, left: 16.0),
-                      child: Text(
-                          'Adjektivdeklination nach dem bestimmten Artikel',
-                          style: textTheme.titleSmall),
-                    ),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                            top: 10.0, left: 16.0, bottom: 10),
-                        child: RichText(
-                          text: TextSpan(
-                            style: textTheme.bodyMedium,
-                            children: const <TextSpan>[
-                              TextSpan(text: 'Wenn das Adjektiv nach dem '),
-                              TextSpan(
-                                  text: 'bestimmten Artikel',
-                                  style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      color: Colors.red)),
-                              TextSpan(
-                                  text:
-                                      ' dekliniert wird, spricht man von einer '),
-                              TextSpan(
-                                  text: 'schwachen Deklination',
-                                  style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      color: Colors.red)),
-                              TextSpan(
-                                  text:
-                                      '. Bei der schwachen Deklination sind nur zwei Endungen möglich: '),
-                              TextSpan(
-                                  text: ' - e ',
-                                  style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      color: Colors.red)),
-                              TextSpan(text: ' und '),
-                              TextSpan(
-                                  text: ' - en',
-                                  style: TextStyle(
-                                      fontWeight: FontWeight.bold,
-                                      color: Colors.red)),
-                              TextSpan(text: '.\n'),
-                            ],
-                          ),
-                        )),
-                    SingleChildScrollView(
-                      child: ConstrainedBox(
-                        constraints: const BoxConstraints(
-                            //minHeight: MediaQuery.of(context).size.height
-                            ),
-                        child: IntrinsicHeight(
-                          child: Column(children: [
-                            Table(
-                              border: TableBorder.all(
-                                  color: Colors.purple, width: 1),
-                              columnWidths: const {
-                                0: FractionColumnWidth(.14),
-                                1: FractionColumnWidth(.23),
-                                2: FractionColumnWidth(.19),
-                                3: FractionColumnWidth(.22),
-                                4: FractionColumnWidth(.22),
-                              },
-                              children: [
-                                const TableRow(children: [
-                                  Text('Kasus'),
-                                  Text('Maskulinum'),
-                                  Text('Femininum'),
-                                  Text('Neutrum'),
-                                  Text('Plural'),
-                                ]),
-                                TableRow(children: [
-                                  Text('Nominativ'),
-                                  RichText(
-                                      text: TextSpan(children: [
-                                    TextSpan(
-                                        text: 'der gut',
-                                        style:
-                                            DefaultTextStyle.of(context).style),
-                                    TextSpan(
-                                        text: 'e',
-                                        style: TextStyle(color: Colors.red)),
-                                    TextSpan(
-                                        text: ' Mann',
-                                        style:
-                                            DefaultTextStyle.of(context).style)
-                                  ])),
-                                  RichText(
-                                      text: TextSpan(children: [
-                                    TextSpan(
-                                        text: 'die gut',
-                                        style:
-                                            DefaultTextStyle.of(context).style),
-                                    TextSpan(
-                                        text: 'e',
-                                        style: TextStyle(color: Colors.red)),
-                                    TextSpan(
-                                        text: ' Frau',
-                                        style:
-                                            DefaultTextStyle.of(context).style)
-                                  ])),
-                                  RichText(
-                                      text: TextSpan(children: [
-                                    TextSpan(
-                                        text: 'das gut',
-                                        style:
-                                            DefaultTextStyle.of(context).style),
-                                    TextSpan(
-                                        text: 'e',
-                                        style: TextStyle(color: Colors.red)),
-                                    TextSpan(
-                                        text: ' Kind',
-                                        style:
-                                            DefaultTextStyle.of(context).style)
-                                  ])),
-                                  RichText(
-                                      text: TextSpan(children: [
-                                    TextSpan(
-                                        text: 'die gut',
-                                        style:
-                                            DefaultTextStyle.of(context).style),
-                                    TextSpan(
-                                        text: 'en',
-                                        style: TextStyle(color: Colors.red)),
-                                    TextSpan(
-                                        text: ' Leute',
-                                        style:
-                                            DefaultTextStyle.of(context).style)
-                                  ])),
-                                ]),
-                                TableRow(children: [
-                                  Text('Akkusativ'),
-                                  RichText(
-                                      text: TextSpan(children: [
-                                    TextSpan(
-                                        text: 'den gut',
-                                        style:
-                                            DefaultTextStyle.of(context).style),
-                                    TextSpan(
-                                        text: 'en',
-                                        style: TextStyle(color: Colors.red)),
-                                    TextSpan(
-                                        text: ' Mann',
-                                        style:
-                                            DefaultTextStyle.of(context).style)
-                                  ])),
-                                  RichText(
-                                      text: TextSpan(children: [
-                                    TextSpan(
-                                        text: 'die gut',
-                                        style:
-                                            DefaultTextStyle.of(context).style),
-                                    TextSpan(
-                                        text: 'e',
-                                        style: TextStyle(color: Colors.red)),
-                                    TextSpan(
-                                        text: ' Frau',
-                                        style:
-                                            DefaultTextStyle.of(context).style)
-                                  ])),
-                                  RichText(
-                                      text: TextSpan(children: [
-                                    TextSpan(
-                                        text: 'das gut',
-                                        style:
-                                            DefaultTextStyle.of(context).style),
-                                    TextSpan(
-                                        text: 'e',
-                                        style: TextStyle(color: Colors.red)),
-                                    TextSpan(
-                                        text: ' Kind',
-                                        style:
-                                            DefaultTextStyle.of(context).style)
-                                  ])),
-                                  RichText(
-                                      text: TextSpan(children: [
-                                    TextSpan(
-                                        text: 'die gut',
-                                        style:
-                                            DefaultTextStyle.of(context).style),
-                                    TextSpan(
-                                        text: 'en',
-                                        style: TextStyle(color: Colors.red)),
-                                    TextSpan(
-                                        text: ' Leute',
-                                        style:
-                                            DefaultTextStyle.of(context).style)
-                                  ])),
-                                ]),
-                                TableRow(children: [
-                                  Text('Dativ'),
-                                  RichText(
-                                      text: TextSpan(children: [
-                                    TextSpan(
-                                        text: 'dem gut',
-                                        style:
-                                            DefaultTextStyle.of(context).style),
-                                    TextSpan(
-                                        text: 'en',
-                                        style: TextStyle(color: Colors.red)),
-                                    TextSpan(
-                                        text: ' Mann',
-                                        style:
-                                            DefaultTextStyle.of(context).style)
-                                  ])),
-                                  RichText(
-                                      text: TextSpan(children: [
-                                    TextSpan(
-                                        text: 'der gut',
-                                        style:
-                                            DefaultTextStyle.of(context).style),
-                                    TextSpan(
-                                        text: 'en',
-                                        style: TextStyle(color: Colors.red)),
-                                    TextSpan(
-                                        text: ' Frau',
-                                        style:
-                                            DefaultTextStyle.of(context).style)
-                                  ])),
-                                  RichText(
-                                      text: TextSpan(children: [
-                                    TextSpan(
-                                        text: 'dem gut',
-                                        style:
-                                            DefaultTextStyle.of(context).style),
-                                    TextSpan(
-                                        text: 'en',
-                                        style: TextStyle(color: Colors.red)),
-                                    TextSpan(
-                                        text: ' Kind',
-                                        style:
-                                            DefaultTextStyle.of(context).style)
-                                  ])),
-                                  RichText(
-                                      text: TextSpan(children: [
-                                    TextSpan(
-                                        text: 'den gut',
-                                        style:
-                                            DefaultTextStyle.of(context).style),
-                                    TextSpan(
-                                        text: 'en',
-                                        style: TextStyle(color: Colors.red)),
-                                    TextSpan(
-                                        text: ' Leuten',
-                                        style:
-                                            DefaultTextStyle.of(context).style)
-                                  ])),
-                                ]),
-                                TableRow(children: [
-                                  Text('Genitiv'),
-                                  RichText(
-                                      text: TextSpan(children: [
-                                    TextSpan(
-                                        text: 'des gut',
-                                        style:
-                                            DefaultTextStyle.of(context).style),
-                                    TextSpan(
-                                        text: 'en',
-                                        style: TextStyle(color: Colors.red)),
-                                    TextSpan(
-                                        text: ' Mannes',
-                                        style:
-                                            DefaultTextStyle.of(context).style)
-                                  ])),
-                                  RichText(
-                                      text: TextSpan(children: [
-                                    TextSpan(
-                                        text: 'der gut',
-                                        style:
-                                            DefaultTextStyle.of(context).style),
-                                    TextSpan(
-                                        text: 'en',
-                                        style: TextStyle(color: Colors.red)),
-                                    TextSpan(
-                                        text: ' Frau',
-                                        style:
-                                            DefaultTextStyle.of(context).style)
-                                  ])),
-                                  RichText(
-                                      text: TextSpan(children: [
-                                    TextSpan(
-                                        text: 'des gut',
-                                        style:
-                                            DefaultTextStyle.of(context).style),
-                                    TextSpan(
-                                        text: 'en',
-                                        style: TextStyle(color: Colors.red)),
-                                    TextSpan(
-                                        text: ' Kindes',
-                                        style:
-                                            DefaultTextStyle.of(context).style)
-                                  ])),
-                                  RichText(
-                                      text: TextSpan(children: [
-                                    TextSpan(
-                                        text: 'der gut',
-                                        style:
-                                            DefaultTextStyle.of(context).style),
-                                    TextSpan(
-                                        text: 'en',
-                                        style: TextStyle(color: Colors.red)),
-                                    TextSpan(
-                                        text: ' Leute',
-                                        style:
-                                            DefaultTextStyle.of(context).style)
-                                  ])),
-                                ]),
-                              ],
-                            ),
-                          ]),
-                        ),
-                      ),
-                    ),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                            top: 10.0, left: 16.0, bottom: 10),
-                        child: RichText(
-                          text: TextSpan(
-                            style: textTheme.bodyMedium,
-                            children: const <TextSpan>[
-                              TextSpan(
-                                  text:
-                                      'Darüber hinaus werden Adjektive im Singular '),
-                              TextSpan(
-                                  text: 'nach folgenden Begleitern',
-                                  style: TextStyle(
-                                      decoration: TextDecoration.underline)),
-                              TextSpan(text: ' schwach dekliniert:\n'),
-                              TextSpan(text: 'dieser\n'),
-                              TextSpan(text: 'Mit '),
-                              TextSpan(
-                                  text: 'diesen schmutzigen',
-                                  style: TextStyle(color: Colors.red)),
-                              TextSpan(
-                                  text:
-                                      ' Schuhen gehst du nicht in die Schule.\n'),
-                              TextSpan(text: 'jeder\n'),
-                              TextSpan(text: 'Diese '),
-                              TextSpan(
-                                  text: 'einfachen',
-                                  style: TextStyle(color: Colors.red)),
-                              TextSpan(text: ' Aufgaben kann doch '),
-                              TextSpan(
-                                  text: 'jedes beliebige',
-                                  style: TextStyle(color: Colors.red)),
-                              TextSpan(text: ' Schulkind lösen.\n'),
-                              TextSpan(text: 'jener\n'),
-                              TextSpan(text: 'Jenes '),
-                              TextSpan(
-                                  text: 'weiße',
-                                  style: TextStyle(color: Colors.red)),
-                              TextSpan(
-                                  text:
-                                      ' Hemd passt besser zu den schwarzen Schuhen.\n'),
-                              TextSpan(text: 'mancher\n'),
-                              TextSpan(text: 'Mancher '),
-                              TextSpan(
-                                  text: 'verliebte',
-                                  style: TextStyle(color: Colors.red)),
-                              TextSpan(
-                                  text:
-                                      ' Mann hat schon Kopf und Verstand verloren.\n'),
-                              TextSpan(text: 'welcher\n'),
-                              TextSpan(text: 'Welcher '),
-                              TextSpan(
-                                  text: 'blöde Idiot',
-                                  style: TextStyle(color: Colors.red)),
-                              TextSpan(
-                                  text:
-                                      ' hat Salz in meine Bierflasche getan?\n'),
-                              TextSpan(
-                                  text:
-                                      'ebenso nur im Plural: alle, diese, jene, manche, solche, welche?, keine, Possessiv\n'),
-                              TextSpan(text: 'Alle '),
-                              TextSpan(
-                                  text: 'fleißigen',
-                                  style: TextStyle(color: Colors.red)),
-                              TextSpan(
-                                  text:
-                                      ' Schüler haben die Prüfung bestanden.\n'),
-                              TextSpan(text: 'Meine '),
-                              TextSpan(
-                                  text: 'jüngeren',
-                                  style: TextStyle(color: Colors.red)),
-                              TextSpan(
-                                  text:
-                                      ' Geschwister sind schon verheiratet.\n'),
-                            ],
-                          ),
-                        )),
-                  ],
-                ),
-              ),
-              Card(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: <Widget>[
-                    Padding(
-                      padding: const EdgeInsets.only(top: 10.0, left: 16.0),
-                      child:
-                          Text('Besonderheiten', style: textTheme.titleSmall),
-                    ),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                            top: 10.0, left: 16.0, bottom: 10),
-                        child: RichText(
-                          text: TextSpan(
-                            style: textTheme.bodyMedium,
-                            children: const <TextSpan>[
-                              TextSpan(text: 'Einige '),
-                              TextSpan(
-                                  text: 'wenige Adjektive',
-                                  style: TextStyle(
-                                      decoration: TextDecoration.underline)),
-                              TextSpan(
-                                  text:
-                                      ' sind in ihrer Deklination unregelmäßig. Dazu gehören:\n'),
-                              TextSpan(text: 'hoch: der '),
-                              TextSpan(
-                                  text: 'hohe',
-                                  style: TextStyle(color: Colors.red)),
-                              TextSpan(text: ' Baum, die '),
-                              TextSpan(
-                                  text: 'hohen',
-                                  style: TextStyle(color: Colors.red)),
-                              TextSpan(text: ' Bäume, das '),
-                              TextSpan(
-                                  text: 'hohe',
-                                  style: TextStyle(color: Colors.red)),
-                              TextSpan(text: ' Haus, die '),
-                              TextSpan(
-                                  text: 'hohen',
-                                  style: TextStyle(color: Colors.red)),
-                              TextSpan(text: ' Häuser, ...\n'),
-                              TextSpan(text: 'dunkel: das '),
-                              TextSpan(
-                                  text: 'dunkle',
-                                  style: TextStyle(color: Colors.red)),
-                              TextSpan(text: ' Zimmer, die '),
-                              TextSpan(
-                                  text: 'dunklen',
-                                  style: TextStyle(color: Colors.red)),
-                              TextSpan(text: ' Zimmer, der '),
-                              TextSpan(
-                                  text: 'dunkle',
-                                  style: TextStyle(color: Colors.red)),
-                              TextSpan(text: ' Raum, ...\n'),
-                              TextSpan(text: 'teuer: das '),
-                              TextSpan(
-                                  text: 'teure',
-                                  style: TextStyle(color: Colors.red)),
-                              TextSpan(text: ' Auto, die '),
-                              TextSpan(
-                                  text: 'teuren',
-                                  style: TextStyle(color: Colors.red)),
-                              TextSpan(text: ' Autos, der '),
-                              TextSpan(
-                                  text: 'teure',
-                                  style: TextStyle(color: Colors.red)),
-                              TextSpan(text: ' Mantel, die '),
-                              TextSpan(
-                                  text: 'teuren',
-                                  style: TextStyle(color: Colors.red)),
-                              TextSpan(text: ' Mäntel, ...\n'),
-                              TextSpan(text: 'sauer: der '),
-                              TextSpan(
-                                  text: 'saure',
-                                  style: TextStyle(color: Colors.red)),
-                              TextSpan(text: ' Wein, die '),
-                              TextSpan(
-                                  text: 'sauren',
-                                  style: TextStyle(color: Colors.red)),
-                              TextSpan(text: ' Weine, die '),
-                              TextSpan(
-                                  text: 'saure',
-                                  style: TextStyle(color: Colors.red)),
-                              TextSpan(text: ' Gurke, die '),
-                              TextSpan(
-                                  text: 'sauren',
-                                  style: TextStyle(color: Colors.red)),
-                              TextSpan(text: ' Gurken, ...\n'),
-                              TextSpan(text: 'sensibel: der '),
-                              TextSpan(
-                                  text: 'sensible',
-                                  style: TextStyle(color: Colors.red)),
-                              TextSpan(text: ' Junge, die '),
-                              TextSpan(
-                                  text: 'sensiblen',
-                                  style: TextStyle(color: Colors.red)),
-                              TextSpan(text: ' Leute, ...\n'),
-                            ],
-                          ),
-                        )),
-                 ],
-                ),
-              ),
-            ],
-          ),
-        ),
+            padding: const EdgeInsets.all(8.0),
+            child: MyPageContentView(contents: contents)),
       ),
     );
   }
 }
+
+List<CardContent> contents = [
+  CardContent(
+    elements: [
+      CardElement(type: ElementType.pageTitle, value: title),
+    ],
+  ),
+  CardContent(
+    elements: [
+      CardElement(type: ElementType.cardTitle, value: title1),
+      CardElement(type: ElementType.htmlContent, value: htmlContent1_1),
+      CardElement(type: ElementType.htmlTable, value: htmlTable1_2),
+      CardElement(type: ElementType.htmlContent, value: htmlContent1_3),
+    ],
+  ),
+  CardContent(
+    elements: [
+      CardElement(type: ElementType.cardTitle, value: title2),
+      CardElement(type: ElementType.htmlContent, value: htmlContent2_1),
+      CardElement(type: ElementType.htmlTable, value: htmlTable2_2),
+      CardElement(type: ElementType.htmlContent, value: htmlContent2_3),
+    ],
+  ),
+  CardContent(
+    elements: [
+      CardElement(type: ElementType.cardTitle, value: title3),
+      CardElement(type: ElementType.htmlContent, value: htmlContent3),
+    ],
+  ),
+];
+
+String title = '1.1. Adjektivdeklination mit dem bestimmten Artikel';
+
+String title1 = 'Was man über die Adjektivdeklination wissen sollte.';
+String htmlContent1_1 = '''
+<p>Steht das Adjektiv <span style="text-decoration:underline">vor dem Nomen</span>, ist das Adjektiv Teil einer Nomengruppe und <span style="text-decoration:underline">muss</span> dekliniert werden. Das Adjektiv hat dann eine <strong><span class="red">attributive Funktion</span></strong>. <strong><a title="Nomenattribute" href="lernen.php?menu_id=18#nomen">Adjektive als Nomenattribute</a></strong> charakterisieren oder definieren ein Nomen.</p>
+<p>Eine Nomengruppe besteht demnach aus:</p>
+''';
+String htmlTable1_2 = '''
+<table class="eins"><colgroup>
+<col style="width: 100%;"> </colgroup>
+<tbody>
+<tr align="center">
+<td align="center">
+<h3><strong><span class="blue">Artikel</span></strong> &nbsp; + &nbsp; <strong><span class="red">Adjektiv</span></strong> &nbsp;+&nbsp;&nbsp;&nbsp; <strong><span class="blue">Nomen</span></strong></h3>
+</td>
+</tr>
+</tbody>
+</table>
+''';
+String htmlContent1_3 = '''
+<p><br> Wie das Adjektiv dekliniert wird, ist <span style="text-decoration:underline">von 4 Faktoren abhängig</span>: <br> </p>
+<strong><a title="Artikelformen" href="lernen.php?menu_id=10#nomenbegleiter">-Form des Artikels</a></strong> (<strong><a title="Bestimmter Artikel" href="lernen.php?menu_id=59">bestimmt</a></strong>, <strong><a title="Unbestimmter Artikel" href="lernen.php?menu_id=60">unbestimmt</a></strong>, <strong><a title="Nullartikel" href="lernen.php?menu_id=58">Nullartikel</a></strong>)
+<li><strong><span class="blue">Der</span></strong> <strong><span class="red">junge</span></strong> Mann kauft <strong><span class="blue">eine</span></strong> <strong><span class="red">rote</span></strong> Rose.</li>
+<li>Seine Freundin liebt <strong><span class="red">rote</span></strong> Rosen.</li>
+
+<strong><a title="Numerus" href="lernen.php?menu_id=6#konjugation">-Numerus</a></strong> (<strong><span class="blue">Singular /Plural</span></strong>)
+<li><strong><span class="blue">Das</span></strong> <strong><span class="red">kleine</span></strong> Kind spielt mit seinem Ball.</li>
+<li><strong><span class="blue">Die</span></strong> <strong><span class="red">kleinen</span></strong> Kind<strong><span class="red">er</span></strong> spielen mit ihren Bällen.</li>
+
+<strong><a title="Genus" href="lernen.php?menu_id=9">-Genus</a></strong> (<strong><a title="Geschlecht" href="lernen.php?menu_id=52">maskulin, feminin, neutral</a></strong>)
+<li><strong><span class="blue">Der</span></strong> <strong><span class="red">fleißige</span></strong> Junge macht seine Hausaufgaben.</li>
+<li><strong><span class="blue">Das</span></strong> <strong><span class="red">liebe</span></strong> Mädchen spielt mit ihrer Puppe.</li>
+<li><strong><span class="blue">Die</span></strong> <strong><span class="red">junge</span></strong> Frau möchte heute Abend in die Disko gehen.</li>
+
+<strong><a title="Kasus" href="lernen.php?menu_id=16">-Kasus</a></strong> (<strong><a title="Nominativ" href="lernen.php?menu_id=38">Nominativ</a></strong>, <strong><a title="Akkusativ" href="lernen.php?menu_id=39">Akkusativ</a></strong>, <strong><a title="Dativ" href="lernen.php?menu_id=40">Dativ</a></strong>, <strong><a title="Genitiv" href="lernen.php?menu_id=56">Genitiv</a></strong>)
+<li><strong><span class="blue">Der</span></strong> <strong><span class="red">ehrgeizige</span></strong> Fußballspieler trainiert täglich mehrere Stunden.</li>
+<li>Der Trainer beobachtet <strong><span class="blue">den</span></strong> <strong><span class="red">ehrgeizigen</span></strong> Fußballspieler.</li>
+<li>Ein Manager bietet <strong><span class="blue">dem</span></strong> <strong><span class="red">ehrgeizigen</span></strong> Fußballspieler einen Profivertrag an.</li>
+<li>Die Freundin <strong><span class="blue">des</span></strong> <strong><span class="red">ehrgeizigen</span></strong> Fußballspielers freut sich mit ihm.</li>
+''';
+
+String title2 = 'Adjektivdeklination nach dem bestimmten Artikel';
+String htmlContent2_1 = '''
+<p>Wenn das Adjektiv nach dem <strong><a title="Bestimmter Artikel" href="lernen.php?menu_id=59">bestimmten Artikel</a></strong> dekliniert wird, spricht man von einer <strong><span class="red">schwachen Deklination</span></strong>. Bei der schwachen Deklination sind nur zwei Endungen möglich: <strong><span class="red"> - e </span></strong> und <strong><span class="red"> - en</span></strong>.</p>
+''';
+String htmlTable2_2 = '''
+<table><colgroup>
+<col style="width: 14%;"> 
+<col style="width: 23%;"> 
+<col style="width: 19%;"> 
+<col style="width: 22%;"> 
+<col style="width: 22%;"> </colgroup>
+<thead>
+<tr align="center">
+<th>Kasus</th>
+<th>Maskulinum</th>
+<th>Femininum</th>
+<th>Neutrum</th>
+<th>Plural</th>
+</tr>
+</thead>
+<tbody align="center">
+<tr>
+<th>Nominativ</th>
+<td>der gut<strong><span class="red">e</span></strong> Mann</td>
+<td>die gut<strong><span class="red">e</span></strong> Frau</td>
+<td>das gut<strong><span class="red">e</span></strong> Kind</td>
+<td>die gut<strong><span class="red">en</span></strong> Leute</td>
+</tr>
+<tr>
+<th>Akkusativ</th>
+<td>den gut<strong><span class="red">en</span></strong> Mann</td>
+<td>die gut<strong><span class="red">e</span></strong> Frau</td>
+<td>das gut<strong><span class="red">e</span></strong> Kind</td>
+<td>die gut<strong><span class="red">en</span></strong> Leute</td>
+</tr>
+<tr>
+<th>Dativ</th>
+<td>dem gut<strong><span class="red">en</span></strong> Mann</td>
+<td>der gut<strong><span class="red">en</span></strong> Frau</td>
+<td>dem gut<strong><span class="red">en</span></strong> Kind</td>
+<td>den gut<strong><span class="red">en</span></strong> Leute<strong><span class="red">n</span></strong></td>
+</tr>
+<tr>
+<th>Genitiv</th>
+<td>des gut<strong><span class="red">en</span></strong> Mann<strong><span class="red">es</span></strong></td>
+<td>der gut<strong><span class="red">en</span></strong> Frau</td>
+<td>des gut<strong><span class="red">en</span></strong> Kind<strong><span class="red">es</span></strong></td>
+<td>der gut<strong><span class="red">en</span></strong> Leute</td>
+</tr>
+</tbody>
+</table>
+''';
+String htmlContent2_3 = '''
+<p>Darüber hinaus werden Adjektive im Singular <span style="text-decoration:underline">nach folgenden <strong><a title="Nomenbegleiter" href="lernen.php?menu_id=10">Begleitern</a></strong></span> schwach dekliniert:</p>
+<strong><a title="dies-" href="lernen.php?menu_id=62#dies">-dieser</a></strong>
+<li>Mit <strong><span class="red">diesen schmutzigen</span></strong> Schuhe<strong><span class="red">n</span></strong> gehst du nicht in die Schule.</li>
+
+<strong><a title="jeder" href="lernen.php?menu_id=63#indefinit_bestimmt">-jeder</a></strong>
+<li><strong><span class="red">Diese einfachen</span></strong> Aufgaben kann doch <strong><span class="red">jedes beliebige</span></strong> Schulkind lösen.</li>
+
+<strong><a title="jener" href="lernen.php?menu_id=62#dies">-jener</a></strong>
+<li><strong><span class="red">Jenes weiße</span></strong> Hemd passt besser zu den schwarzen Schuhen.</li>
+
+<strong><a title="mancher" href="lernen.php?menu_id=63#indefinit_bestimmt">-mancher</a></strong>
+<li><strong><span class="red">Mancher verliebte</span></strong> Mann hat schon Kopf und Verstand verloren.</li>
+
+<strong><a title="welcher" href="lernen.php?menu_id=64#welch">-welcher</a></strong>
+<li><strong><span class="red">Welcher blöde Idiot</span></strong> hat Salz in meine Bierflasche getan?</li>
+
+-ebenso <span style="text-decoration:underline">nur im <strong><a title="Nomenbegleiter Plural" href="lernen.php?menu_id=63#indefinit_bestimmt">Plural</a></strong> </span>: <strong>alle, diese, jene, manche, solche, welche?, <a title="Negationsartikel" href="lernen.php?menu_id=60#negation">keine</a>, <a title="Possessivartikel" href="lernen.php?menu_id=61#deklination">Possessiv</a> </strong>
+<li><strong><span class="red">Alle fleißigen</span></strong> Schüler haben die Prüfung bestanden.</li>
+<li><strong><span class="red">Meine jüngeren</span></strong> Geschwister sind schon verheiratet.</li>  
+''';
+
+String title3 = 'Besonderheiten';
+String htmlContent3 = '''
+<p>Einige <span style="text-decoration:underline">wenige Adjektive</span> sind in ihrer Deklination unregelmäßig. Dazu gehören:</p>
+<li><strong><span class="red">hoch</span></strong>: der <strong>hohe</strong> Baum, die <strong>hohen</strong> Bäume, das <strong>hohe</strong> Haus, die <strong>hohen</strong> Häuser, ...</li>
+<li><strong><span class="red">dunkel</span></strong>: das <strong>dunkle</strong> Zimmer, die <strong>dunklen</strong> Zimmer, der <strong>dunkle</strong> Raum, ...</li>
+<li><strong><span class="red">teuer</span></strong>: das <strong>teure</strong> Auto, die <strong>teuren</strong> Autos, der <strong>teure</strong> Mantel, die <strong>teuren</strong> Mäntel, ...</li>
+<li><strong><span class="red">sauer</span></strong>: der <strong>saure</strong> Wein, die <strong>sauren</strong> Weine, die <strong>saure</strong> Gurke, die <strong>sauren</strong> Gurken, ...</li>
+<li><strong><span class="red">sensibel</span></strong>: der <strong>sensible</strong> Junge, die <strong>sensiblen</strong> Leute, ...</li>
+''';

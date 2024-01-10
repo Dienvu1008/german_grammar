@@ -3,52 +3,38 @@ import 'package:flutter/material.dart';
 import '../app/app_localizations.dart';
 import '../html_table_to_dart_table.dart';
 import '../html_to_richtext.dart';
+import '../page_content.dart';
 
 class Temporalsaetze_12_5_8 extends StatelessWidget {
   const Temporalsaetze_12_5_8({super.key});
 
   @override
   Widget build(BuildContext context) {
-    final localizations = AppLocalizations.of(context);
-    final textTheme = Theme.of(context).textTheme;
     return Expanded(
       child: Scaffold(
         body: Padding(
-          padding: const EdgeInsets.all(8.0),
-          child: ListView(
-            children: <Widget>[
-              Card(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: <Widget>[
-                    Padding(
-                      padding: const EdgeInsets.only(top: 16.0, left: 16.0),
-                      child: Text('12.5.8. Temporalsätze',
-                          style: textTheme.titleMedium),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.only(top: 10.0, left: 16.0),
-                      child: Text('Was man über Temporalsätze wissen sollte.',
-                          style: textTheme.titleSmall),
-                    ),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                            top: 10.0, left: 16.0, bottom: 10),
-                        child: HtmlToRichText(
-                          htmlString: htmlContent1,
-                          textTheme: textTheme,
-                        )),
-                  ],
-                ),
-              ),
-            ],
-          ),
-        ),
+            padding: const EdgeInsets.all(8.0),
+            child: MyPageContentView(contents: contents)),
       ),
     );
   }
 }
 
+List<CardContent> contents = [
+  CardContent(
+    elements: [
+      CardElement(type: ElementType.pageTitle, value: title),
+    ],
+  ),
+  CardContent(
+    elements: [
+      CardElement(type: ElementType.cardTitle, value: title1),
+      CardElement(type: ElementType.htmlContent, value: htmlContent1),
+    ],
+  ),
+];
+String title = '12.5.8. Übersicht Konsekutivsätze';
+String title1 = 'Was man über Temporalsätze wissen sollte.';
 String htmlContent1 = '''
 <p>Temporale Aussagen sind stets freiwillige <strong><a title="Angaben" href="satzlehre.html#angaben" target="_blank">Angaben</a></strong> und sind für einen Satz nicht notwendige <strong><a title="Satzglieder" href="satzlehre.html#satzglieder" target="_blank">Satzglieder</a></strong>. Grundsätzlich können temporale Angaben auf vier verschiedenen Weisen ausgedrückt werden:</p>
 <p>1. <strong><a title="temporale Adverbien" href="temporaladverbien.html" target="_blank"> temporale Adverbien</a></strong></p>

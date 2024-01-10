@@ -1,726 +1,169 @@
 import 'package:flutter/material.dart';
 
 import '../app/app_localizations.dart';
+import '../page_content.dart';
 
 class Wechselpraepositionen_10_3 extends StatelessWidget {
   const Wechselpraepositionen_10_3({super.key});
 
   @override
   Widget build(BuildContext context) {
-    final localizations = AppLocalizations.of(context);
-    final textTheme = Theme.of(context).textTheme;
     return Expanded(
       child: Scaffold(
         body: Padding(
-          padding: const EdgeInsets.all(8.0),
-          child: ListView(
-            children: <Widget>[
-              Card(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: <Widget>[
-                    Padding(
-                      padding: const EdgeInsets.only(top: 16.0, left: 16.0),
-                      child: Text('10.3. Wechselpräpositionen',
-                          style: textTheme.titleMedium),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.only(top: 10.0, left: 16.0),
-                      child: Text(
-                          'Was man über Wechselpräpositionen wissen sollte.',
-                          style: textTheme.titleSmall),
-                    ),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                            top: 10.0, left: 16.0, bottom: 10),
-                        child: RichText(
-                          text: TextSpan(
-                            style: textTheme.bodyMedium,
-                            children: <TextSpan>[
-                              TextSpan(
-                                  text:
-                                      'Wechselpräpositionen fordern manchmal den '),
-                              TextSpan(
-                                  text: 'Dativ',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(text: ', manchmal den '),
-                              TextSpan(
-                                  text: 'Akkusativ',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.blue,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(text: '.\n\n'),
-                              TextSpan(text: 'Der '),
-                              TextSpan(
-                                  text: 'Akkusativ',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.blue,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(
-                                  text:
-                                      ' wird verlangt, wenn das Verb eine Orts- bzw. Richtungsänderung anzeigt. Das Fragewort dazu lautet "'),
-                              TextSpan(
-                                  text: 'wohin',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.blue,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(text: '".\n'),
-                              TextSpan(text: 'Der '),
-                              TextSpan(
-                                  text: 'Dativ',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(
-                                  text:
-                                      ' wird verlangt, wenn das Verb eine Ergänzung mit lokaler Bedeutung hat, das nach einem Ort fragt. Das Fragewort dazu lautet "'),
-                              TextSpan(
-                                  text: 'wo',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(text: '".\n\n'),
-                              TextSpan(
-                                  text:
-                                      'Es gibt folgende Wechselpräpositionen:'),
-                            ],
-                          ),
-                        )),
-                    SingleChildScrollView(
-                      child: ConstrainedBox(
-                        constraints: const BoxConstraints(
-                            //minHeight: MediaQuery.of(context).size.height
-                            ),
-                        child: IntrinsicHeight(
-                          child: Column(children: [
-                            Table(
-                              border: TableBorder.all(
-                                  color: Colors.purple, width: 1),
-                              children: [
-                                TableRow(children: [
-                                  Center(
-                                    child: Text(
-                                        'an    auf    hinter    in    neben    über    unter    vor    zwischen'),
-                                  ),
-                                ]),
-                              ],
-                            )
-                          ]),
-                        ),
-                      ),
-                    ),
-                    const SizedBox(
-                      height: 10,
-                    ),
-                    SingleChildScrollView(
-                      child: ConstrainedBox(
-                        constraints: const BoxConstraints(
-                            //minHeight: MediaQuery.of(context).size.height
-                            ),
-                        child: IntrinsicHeight(
-                          child: Column(children: [
-                            Table(
-                              border: TableBorder.all(
-                                  color: Colors.purple, width: 1),
-                              columnWidths: {
-                                0: FractionColumnWidth(.14),
-                                1: FractionColumnWidth(.43),
-                                2: FractionColumnWidth(.43),
-                              },
-                              children: [
-                                TableRow(children: [
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'Präposition',
-                                      style: textTheme.bodyMedium,
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'wohin + Akkusativ',
-                                      style: textTheme.bodyMedium,
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'wo + Dativ',
-                                      style: textTheme.bodyMedium,
-                                    ),
-                                  ),
-                                ]),
-                                TableRow(children: [
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'an',
-                                      style: textTheme.bodyMedium,
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'Peter hängt das Bild ',
-                                      style: textTheme.bodyMedium,
-                                      children: <TextSpan>[
-                                        TextSpan(
-                                            text: 'an die Wand',
-                                            style: textTheme.bodyMedium!
-                                                .copyWith(color: Colors.blue)),
-                                      ],
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'Jetzt hängt das Bild ',
-                                      style: textTheme.bodyMedium,
-                                      children: <TextSpan>[
-                                        TextSpan(
-                                            text: 'an der Wand',
-                                            style: textTheme.bodyMedium!
-                                                .copyWith(color: Colors.red)),
-                                      ],
-                                    ),
-                                  ),
-                                ]),
-                                TableRow(children: [
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'auf',
-                                      style: textTheme.bodyMedium,
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'Gerda legt das Buch ',
-                                      style: textTheme.bodyMedium,
-                                      children: <TextSpan>[
-                                        TextSpan(
-                                            text: 'auf den Tisch',
-                                            style: textTheme.bodyMedium!
-                                                .copyWith(color: Colors.blue)),
-                                      ],
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'Jetzt liegt das Buch ',
-                                      style: textTheme.bodyMedium,
-                                      children: <TextSpan>[
-                                        TextSpan(
-                                            text: 'auf dem Tisch',
-                                            style: textTheme.bodyMedium!
-                                                .copyWith(color: Colors.red)),
-                                      ],
-                                    ),
-                                  ),
-                                ]),
-                                TableRow(children: [
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'hinter',
-                                      style: textTheme.bodyMedium,
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'Guido stellt sich ',
-                                      style: textTheme.bodyMedium,
-                                      children: <TextSpan>[
-                                        TextSpan(
-                                            text: 'hinter den Stuhl',
-                                            style: textTheme.bodyMedium!
-                                                .copyWith(color: Colors.blue)),
-                                      ],
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'Jetzt steht Guido ',
-                                      style: textTheme.bodyMedium,
-                                      children: <TextSpan>[
-                                        TextSpan(
-                                            text: 'hinter dem Stuhl',
-                                            style: textTheme.bodyMedium!
-                                                .copyWith(color: Colors.red)),
-                                      ],
-                                    ),
-                                  ),
-                                ]),
-                                TableRow(children: [
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'in',
-                                      style: textTheme.bodyMedium,
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'Kai steckt das Geld ',
-                                      style: textTheme.bodyMedium,
-                                      children: <TextSpan>[
-                                        TextSpan(
-                                            text: 'in die Tasche',
-                                            style: textTheme.bodyMedium!
-                                                .copyWith(color: Colors.blue)),
-                                      ],
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'Das Geld ist jetzt ',
-                                      style: textTheme.bodyMedium,
-                                      children: <TextSpan>[
-                                        TextSpan(
-                                            text: 'in der Tasche',
-                                            style: textTheme.bodyMedium!
-                                                .copyWith(color: Colors.red)),
-                                      ],
-                                    ),
-                                  ),
-                                ]),
-                                TableRow(children: [
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'neben',
-                                      style: textTheme.bodyMedium,
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'Klaus setzt sich ',
-                                      style: textTheme.bodyMedium,
-                                      children: <TextSpan>[
-                                        TextSpan(
-                                            text: 'neben Michaela',
-                                            style: textTheme.bodyMedium!
-                                                .copyWith(color: Colors.blue)),
-                                      ],
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'Jetzt sitzt Klaus ',
-                                      style: textTheme.bodyMedium,
-                                      children: <TextSpan>[
-                                        TextSpan(
-                                            text: 'neben ihr',
-                                            style: textTheme.bodyMedium!
-                                                .copyWith(color: Colors.red)),
-                                      ],
-                                    ),
-                                  ),
-                                ]),
-                                TableRow(children: [
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'über',
-                                      style: textTheme.bodyMedium,
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'Er hängt die Lampe ',
-                                      style: textTheme.bodyMedium,
-                                      children: <TextSpan>[
-                                        TextSpan(
-                                            text: 'über den Tisch',
-                                            style: textTheme.bodyMedium!
-                                                .copyWith(color: Colors.blue)),
-                                      ],
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'Jetzt hängt sie ',
-                                      style: textTheme.bodyMedium,
-                                      children: <TextSpan>[
-                                        TextSpan(
-                                            text: 'über dem Tisch',
-                                            style: textTheme.bodyMedium!
-                                                .copyWith(color: Colors.red)),
-                                      ],
-                                    ),
-                                  ),
-                                ]),
-                                TableRow(children: [
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'unter',
-                                      style: textTheme.bodyMedium,
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'Der Hund legt sich ',
-                                      style: textTheme.bodyMedium,
-                                      children: <TextSpan>[
-                                        TextSpan(
-                                            text: 'unter den Tisch',
-                                            style: textTheme.bodyMedium!
-                                                .copyWith(color: Colors.blue)),
-                                      ],
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'Jetzt liegt der Hund ',
-                                      style: textTheme.bodyMedium,
-                                      children: <TextSpan>[
-                                        TextSpan(
-                                            text: 'unter dem Tisch',
-                                            style: textTheme.bodyMedium!
-                                                .copyWith(color: Colors.red)),
-                                      ],
-                                    ),
-                                  ),
-                                ]),
-                                TableRow(children: [
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'vor',
-                                      style: textTheme.bodyMedium,
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'Luis stellt sich ',
-                                      style: textTheme.bodyMedium,
-                                      children: <TextSpan>[
-                                        TextSpan(
-                                            text: 'vor das Fenster',
-                                            style: textTheme.bodyMedium!
-                                                .copyWith(color: Colors.blue)),
-                                      ],
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'Jetzt steht er ',
-                                      style: textTheme.bodyMedium,
-                                      children: <TextSpan>[
-                                        TextSpan(
-                                            text: 'vor dem Fenster',
-                                            style: textTheme.bodyMedium!
-                                                .copyWith(color: Colors.red)),
-                                      ],
-                                    ),
-                                  ),
-                                ]),
-                                TableRow(children: [
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'zwischen',
-                                      style: textTheme.bodyMedium,
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'Er setzt sich ',
-                                      style: textTheme.bodyMedium,
-                                      children: <TextSpan>[
-                                        TextSpan(
-                                            text: 'zwischen zwei Frauen',
-                                            style: textTheme.bodyMedium!
-                                                .copyWith(color: Colors.blue)),
-                                      ],
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'Jetzt sitzt er ',
-                                      style: textTheme.bodyMedium,
-                                      children: <TextSpan>[
-                                        TextSpan(
-                                            text: 'zwischen ihnen',
-                                            style: textTheme.bodyMedium!
-                                                .copyWith(color: Colors.red)),
-                                      ],
-                                    ),
-                                  ),
-                                ]),
-                              ],
-                            ),
-                          ]),
-                        ),
-                      ),
-                    ),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                            top: 10.0, left: 16.0, bottom: 10),
-                        child: RichText(
-                          text: TextSpan(
-                            style: textTheme.bodyMedium,
-                            children: <TextSpan>[
-                              TextSpan(
-                                  text:
-                                      'Der Einsatz der Wechselpräpositionen ist von bestimmten Verben abhängig. Siehe dazu folgende Links:\n\n'),
-                              TextSpan(
-                                  text:
-                                      'Verben mit Akkusativ- und Direktiv-Ergänzung\n'),
-                              TextSpan(text: 'Verben mit Situativ-Ergänzung\n'),
-                              TextSpan(
-                                  text: 'Verben mit Direktiv-Ergänzung\n\n'),
-                              TextSpan(
-                                  text:
-                                      'Einige Wechselpräpositionen können auch temporale Angaben anzeigen. Das Fragewort dazu lautet "'),
-                              TextSpan(
-                                  text: 'wann',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(
-                                  text:
-                                      '". Auf eine Frage mit "wann" folgt immer der '),
-                              TextSpan(
-                                  text: 'Dativ',
-                                  style: textTheme.bodyMedium!.copyWith(
-                                      color: Colors.red,
-                                      fontWeight: FontWeight.bold)),
-                              TextSpan(
-                                  text:
-                                      '. Folgende Wechselpräpositionen zeigen temporale Angaben an:'),
-                            ],
-                          ),
-                        )),
-                    SingleChildScrollView(
-                      child: ConstrainedBox(
-                        constraints: const BoxConstraints(
-                            //minHeight: MediaQuery.of(context).size.height
-                            ),
-                        child: IntrinsicHeight(
-                          child: Column(children: [
-                            Table(
-                              border: TableBorder.all(
-                                  color: Colors.purple, width: 1),
-                              columnWidths: {
-                                0: FractionColumnWidth(.15),
-                                1: FractionColumnWidth(.85),
-                              },
-                              children: [
-                                TableRow(children: [
-                                  Text('Präposition',
-                                      style: textTheme.bodyMedium),
-                                  Text('wann + Dativ',
-                                      style: textTheme.bodyMedium),
-                                ]),
-                                TableRow(children: [
-                                  Text('an', style: textTheme.bodyMedium),
-                                  RichText(
-                                    text: TextSpan(
-                                      text: '',
-                                      style: textTheme.bodyMedium,
-                                      children: <TextSpan>[
-                                        TextSpan(
-                                            text: 'Am Montag',
-                                            style: textTheme.bodyMedium!
-                                                .copyWith(
-                                                    color: Colors.red,
-                                                    fontWeight:
-                                                        FontWeight.bold)),
-                                        TextSpan(
-                                            text:
-                                                ' sind die Ferien leider schon wieder zu Ende. Herr Hammerbruchhausen ist ',
-                                            style: textTheme.bodyMedium),
-                                        TextSpan(
-                                            text: 'am 12.04.1952',
-                                            style: textTheme.bodyMedium!
-                                                .copyWith(
-                                                    color: Colors.red,
-                                                    fontWeight:
-                                                        FontWeight.bold)),
-                                        TextSpan(
-                                            text: ' in Siersdorf geboren.',
-                                            style: textTheme.bodyMedium),
-                                      ],
-                                    ),
-                                  ),
-                                ]),
-                                TableRow(children: [
-                                  Text('in', style: textTheme.bodyMedium),
-                                  RichText(
-                                    text: TextSpan(
-                                      text: '',
-                                      style: textTheme.bodyMedium,
-                                      children: <TextSpan>[
-                                        TextSpan(
-                                            text: 'Im September',
-                                            style: textTheme.bodyMedium!
-                                                .copyWith(
-                                                    color: Colors.red,
-                                                    fontWeight:
-                                                        FontWeight.bold)),
-                                        TextSpan(
-                                            text:
-                                                ' wollen wir in die Dominikanische Republik fliegen. ',
-                                            style: textTheme.bodyMedium),
-                                        TextSpan(
-                                            text: 'Im Sommer',
-                                            style: textTheme.bodyMedium!
-                                                .copyWith(
-                                                    color: Colors.red,
-                                                    fontWeight:
-                                                        FontWeight.bold)),
-                                        TextSpan(
-                                            text:
-                                                ' ist es hier doch am schönsten. Meine Eltern wollen mich ',
-                                            style: textTheme.bodyMedium),
-                                        TextSpan(
-                                            text: 'in drei Wochen',
-                                            style: textTheme.bodyMedium!
-                                                .copyWith(
-                                                    color: Colors.red,
-                                                    fontWeight:
-                                                        FontWeight.bold)),
-                                        TextSpan(
-                                            text: ' besuchen kommen.',
-                                            style: textTheme.bodyMedium),
-                                      ],
-                                    ),
-                                  ),
-                                ]),
-                                TableRow(children: [
-                                  Text('unter', style: textTheme.bodyMedium),
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'Mein Mann musste ',
-                                      style: textTheme.bodyMedium,
-                                      children: <TextSpan>[
-                                        TextSpan(
-                                            text: 'unter der Woche',
-                                            style: textTheme.bodyMedium!
-                                                .copyWith(
-                                                    color: Colors.red,
-                                                    fontWeight:
-                                                        FontWeight.bold)),
-                                        TextSpan(
-                                            text: ' sehr viel arbeiten.',
-                                            style: textTheme.bodyMedium),
-                                      ],
-                                    ),
-                                  ),
-                                ]),
-                                TableRow(children: [
-                                  Text('über', style: textTheme.bodyMedium),
-                                  RichText(
-                                    text: TextSpan(
-                                      text: '',
-                                      style: textTheme.bodyMedium,
-                                      children: <TextSpan>[
-                                        TextSpan(
-                                            text: 'Über Weihnachten',
-                                            style: textTheme.bodyMedium!
-                                                .copyWith(
-                                                    color: Colors.red,
-                                                    fontWeight:
-                                                        FontWeight.bold)),
-                                        TextSpan(
-                                            text:
-                                                ' wollen wir in den Schwarzwald fahren. Wie jedes Jahr kommen uns unsere Eltern ',
-                                            style: textTheme.bodyMedium),
-                                        TextSpan(
-                                            text: 'über Ostern',
-                                            style: textTheme.bodyMedium!
-                                                .copyWith(
-                                                    color: Colors.red,
-                                                    fontWeight:
-                                                        FontWeight.bold)),
-                                        TextSpan(
-                                            text: ' besuchen.',
-                                            style: textTheme.bodyMedium),
-                                      ],
-                                    ),
-                                  ),
-                                ]),
-                                TableRow(children: [
-                                  Text('vor', style: textTheme.bodyMedium),
-                                  RichText(
-                                    text: TextSpan(
-                                      text: '',
-                                      style: textTheme.bodyMedium,
-                                      children: <TextSpan>[
-                                        TextSpan(
-                                            text: 'Vor dem Essen',
-                                            style: textTheme.bodyMedium!
-                                                .copyWith(
-                                                    color: Colors.red,
-                                                    fontWeight:
-                                                        FontWeight.bold)),
-                                        TextSpan(
-                                            text:
-                                                ' waschen sich alle Kinder die Hände. Der Patient wird noch ',
-                                            style: textTheme.bodyMedium),
-                                        TextSpan(
-                                            text: 'vor dem Wochenende',
-                                            style: textTheme.bodyMedium!
-                                                .copyWith(
-                                                    color: Colors.red,
-                                                    fontWeight:
-                                                        FontWeight.bold)),
-                                        TextSpan(
-                                            text: ' operiert werden.',
-                                            style: textTheme.bodyMedium),
-                                      ],
-                                    ),
-                                  ),
-                                ]),
-                                TableRow(children: [
-                                  Text('zwischen', style: textTheme.bodyMedium),
-                                  RichText(
-                                    text: TextSpan(
-                                      text: '',
-                                      style: textTheme.bodyMedium,
-                                      children: <TextSpan>[
-                                        TextSpan(
-                                            text:
-                                                'Zwischen den Monaten April und Juni',
-                                            style: textTheme.bodyMedium!
-                                                .copyWith(
-                                                    color: Colors.red,
-                                                    fontWeight:
-                                                        FontWeight.bold)),
-                                        TextSpan(
-                                            text:
-                                                ' muss noch viel gearbeitet werden. Herr Kiesling wird ',
-                                            style: textTheme.bodyMedium),
-                                        TextSpan(
-                                            text: 'zwischen drei und vier Uhr',
-                                            style: textTheme.bodyMedium!
-                                                .copyWith(
-                                                    color: Colors.red,
-                                                    fontWeight:
-                                                        FontWeight.bold)),
-                                        TextSpan(
-                                            text: ' erwartet.',
-                                            style: textTheme.bodyMedium),
-                                      ],
-                                    ),
-                                  ),
-                                ]),
-                              ],
-                            )
-                          ]),
-                        ),
-                      ),
-                    ),
-                    Padding(
-                        padding: const EdgeInsets.only(
-                            top: 10.0, left: 16.0, bottom: 10),
-                        child: RichText(
-                          text: TextSpan(
-                            style: textTheme.bodyMedium,
-                            children: <TextSpan>[
-                              TextSpan(text: 'Siehe auch:\n'),
-                              TextSpan(text: 'Temporale Präpositionen'),
-                            ],
-                          ),
-                        )),
-                  ],
-                ),
-              ),
-            ],
-          ),
-        ),
+            padding: const EdgeInsets.all(8.0),
+            child: MyPageContentView(contents: contents)),
       ),
     );
   }
 }
+
+List<CardContent> contents = [
+  CardContent(
+    elements: [
+      CardElement(type: ElementType.pageTitle, value: title),
+    ],
+  ),
+  CardContent(
+    elements: [
+      CardElement(type: ElementType.cardTitle, value: title1),
+      CardElement(type: ElementType.htmlContent, value: htmlContent1_1),
+      CardElement(type: ElementType.htmlTable, value: htmlTable1_2),
+      CardElement(type: ElementType.htmlTable, value: htmlTable1_3),
+      CardElement(type: ElementType.htmlContent, value: htmlContent1_4),
+      CardElement(type: ElementType.htmlTable, value: htmlTable1_5),
+      CardElement(type: ElementType.htmlContent, value: htmlContent1_6),
+    ],
+  ),
+];
+
+String title = '10.3. Wechselpräpositionen';
+
+String title1 = 'Was man über Wechselpräpositionen wissen sollte.';
+String htmlContent1_1 = '''
+<p><strong>Wechselpräpositionen</strong> fordern manchmal den <strong><span class="red">Dativ</span></strong>, manchmal den <strong><span class="blue">Akkusativ</span></strong>.</p>
+
+<p>Der <strong><span class="blue">Akkusativ</span></strong> wird verlangt, wenn das Verb eine <strong><a title="Akkusativ- und Direktiv-Ergänzung" href="lernen.php?menu_id=43">Orts- bzw. Richtungsänderung</a></strong> anzeigt. Das Fragewort dazu lautet "<strong><span class="blue">wohin</span></strong>".</p>
+
+<p>Der <strong><span class="red">Dativ</span></strong> wird verlangt, wenn das Verb eine <strong><a title="Situativ-Ergänzung" href="lernen.php?menu_id=42">Ergänzung mit lokaler Bedeutung</a></strong> hat, das nach einem Ort fragt. Das Fragewort dazu lautet "<strong><span class="red">wo</span></strong>".</p>
+
+<p>Es gibt folgende Wechselpräpositionen:</p>
+''';
+String htmlTable1_2 = '''
+<table class="eins">
+<tbody>
+<tr align="center">
+<td>
+<h3>an&nbsp;&nbsp; auf&nbsp;&nbsp; hinter&nbsp;&nbsp; in&nbsp;&nbsp; neben&nbsp;&nbsp; über&nbsp;&nbsp; unter&nbsp;&nbsp; vor&nbsp;&nbsp; zwischen&nbsp;&nbsp;</h3>
+</td>
+</tr>
+</tbody>
+</table>
+''';
+String htmlTable1_3 = '''
+<table><colgroup> <col style="width: 13%;"> <col style="width: 43%;"> <col style="width: 43%;"> </colgroup>
+<thead>
+<tr>
+<th>Präposition</th>
+<th>wohin &nbsp;&nbsp;&nbsp;&nbsp;+&nbsp;&nbsp;&nbsp;&nbsp; <strong><span class="blue">Akkusativ</span></strong></th>
+<th>wo &nbsp;&nbsp;&nbsp;&nbsp;+&nbsp;&nbsp;&nbsp;&nbsp; <strong><span class="red">Dativ</span></strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th>an</th>
+<td>Peter hängt das Bild <strong><span class="blue">an die Wand</span></strong>.</td>
+<td>Jetzt hängt das Bild <strong><span class="red">an der Wand</span></strong>.</td>
+</tr>
+<tr>
+<th>auf</th>
+<td>Gerda legt das Buch <strong><span class="blue">auf den Tisch</span></strong>.</td>
+<td>Jetzt liegt das Buch <strong><span class="red">auf dem Tisch</span></strong>.</td>
+</tr>
+<tr>
+<th>hinter</th>
+<td>Guido stellt sich <strong><span class="blue">hinter den Stuhl</span></strong>.</td>
+<td>Jetzt steht Guido <strong><span class="red">hinter dem Stuhl</span></strong>.</td>
+</tr>
+<tr>
+<th>in</th>
+<td>Kai steckt das Geld <strong><span class="blue">in die Tasche</span></strong>.</td>
+<td>Das Geld ist jetzt <strong><span class="red">in der Tasche</span></strong>.</td>
+</tr>
+<tr>
+<th>neben</th>
+<td>Klaus setzt sich <strong><span class="blue">neben Michaela</span></strong>.</td>
+<td>Jetzt sitzt Klaus <strong><span class="red">neben ihr</span></strong>.</td>
+</tr>
+<tr>
+<th>über</th>
+<td>Er hängt die Lampe <strong><span class="blue">über den Tisch</span></strong>.</td>
+<td>Jetzt hängt sie <strong><span class="red">über dem Tisch</span></strong>.</td>
+</tr>
+<tr>
+<th>unter</th>
+<td>Der Hund legt sich <strong><span class="blue">unter den Tisch</span></strong>.</td>
+<td>Jetzt liegt der Hund <strong><span class="red">unter dem Tisch</span></strong>.</td>
+</tr>
+<tr>
+<th>vor</th>
+<td>Luis stellt sich <strong><span class="blue">vor das Fenster</span></strong>.</td>
+<td>Jetzt steht er <strong><span class="red">vor dem Fenster</span></strong>.</td>
+</tr>
+<tr>
+<th>zwischen</th>
+<td>Er setzt sich <strong><span class="blue">zwischen zwei Frauen</span></strong>.</td>
+<td>Jetzt sitzt er <strong><span class="red">zwischen ihnen</span></strong>.</td>
+</tr>
+</tbody>
+</table>
+''';
+String htmlContent1_4 = '''
+<p>Der Einsatz der Wechselpräpositionen ist von bestimmten Verben abhängig. Siehe dazu folgende Links:</p>
+
+<li><strong><a title="Akkusativ- und Direktiv-Ergänzung" href="lernen.php?menu_id=43">Verben mit Akkusativ- und Direktiv-Ergänzung</a></strong></li>
+<li><strong><a title="Situativ-Ergänzung" href="lernen.php?menu_id=42">Verben mit Situativ-Ergänzung</a></strong></li>
+<li><strong><a title="Direktiv-Ergänzung" href="lernen.php?menu_id=44">Verben mit Direktiv-Ergänzung</a></strong></li>
+
+<p>Einige Wechselpräpositionen können auch <strong><a title="Temporale Angaben" href="lernen.php?menu_id=87">temporale Angaben</a></strong> anzeigen. Das Fragewort dazu lautet "<strong><span class="red">wann</span></strong>". Auf eine Frage mit "wann" folgt immer der <strong><span class="red">Dativ</span></strong>. <br> Folgende Wechselpräpositionen zeigen temporale Angaben an:</p>
+''';
+String htmlTable1_5 = '''
+<table><colgroup> <col style="width: 15%;"> <col style="width: 85%;"> </colgroup>
+<thead>
+<tr>
+<th>Präposition</th>
+<th>wann &nbsp;&nbsp;&nbsp;&nbsp;+&nbsp;&nbsp;&nbsp;&nbsp; <strong><span class="red">Dativ</span></strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th>an</th>
+<td><strong><span class="red">Am Montag</span></strong> sind die Ferien leider schon wieder zu Ende. <br> Herr Hammerbruchhausen ist <strong><span class="red">am 12.04.1952</span></strong> in Siersdorf geboren.</td>
+</tr>
+<tr>
+<th>in</th>
+<td><strong><span class="red">Im September</span></strong> wollen wir in die Dominikanische Republik fliegen. <br> <strong><span class="red">Im Sommer</span></strong> ist es hier doch am schönsten. <br> Meine Eltern wollen mich <strong><span class="red">in drei Wochen</span></strong> besuchen kommen.</td>
+</tr>
+<tr>
+<th>unter</th>
+<td>Mein Mann musste <strong><span class="red">unter der Woche</span></strong> sehr viel arbeiten.</td>
+</tr>
+<tr>
+<th>über</th>
+<td><strong><span class="red">Über Weihnachten</span></strong> wollen wir in den Schwarzwald fahren. <br> Wie jedes Jahr kommen uns unsere Eltern <strong><span class="red">über Ostern</span></strong> besuchen.</td>
+</tr>
+<tr>
+<th>vor</th>
+<td><strong><span class="red">Vor dem Essen</span></strong> waschen sich alle Kinder die Hände. <br> Der Patient wird noch <strong><span class="red">vor dem Wochenende</span></strong> operiert werden.</td>
+</tr>
+<tr>
+<th>zwischen</th>
+<td><strong><span class="red">Zwischen den Monaten April und Juni</span></strong> muss noch viel gearbeitet werden. <br> Herr Kiesling wird <strong><span class="red">zwischen drei und vier Uhr</span></strong> erwartet.</td>
+</tr>
+</tbody>
+</table>
+''';
+String htmlContent1_6 = '''
+<p><br> Siehe auch:</p>
+<li><strong><a title="Temporale Angaben" href="lernen.php?menu_id=87">Temporale Präpositionen</a></strong></li>
+''';

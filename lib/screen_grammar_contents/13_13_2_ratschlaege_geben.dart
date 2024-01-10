@@ -16,6 +16,7 @@ class Ratschlaege_Geben_13_13_2 extends StatelessWidget {
     );
   }
 }
+
 List<CardContent> contents = [
   CardContent(
     elements: [
@@ -35,19 +36,15 @@ List<CardContent> contents = [
   ),
 ];
 
-
 String title = '13.13.2. Ratschläge geben';
 String title1 = 'Was man wissen sollte, wenn man Ratschläge geben möchte.';
 String htmlContent1_1 = '''
-<div>
 <p>Ratschläge können mit dem Imperativ formuliert werden, geben aber weitgehends einen Befehl weiter und hören sich sehr unhöflich an. Geschickter formuliert sind Ratschläge, die mit dem Konjunktiv II gebildet werden. Sie haben in der Regel keinen befehlenden Ton, sondern eher einen empfehlenden Charakter für einen Ratsuchenden.</p>
-<p>&nbsp;</p>
+
 <p>Folgende Redemittel sind üblich:</p>
-</div>
-<p>&nbsp;</p>
+
 <p style="padding-left: 30px;">Hans: "Meine Frau hat mich verlassen. Was soll ich jetzt nur machen?" -</p>
 <h4 style="padding-left: 60px;">Ich an deiner Stelle ...</h4>
-<p>&nbsp;</p>
 ''';
 String htmlTable1_2 = '''
 <table><colgroup> <col style="width: 14%;"> <col style="width: 26%;"> <col style="width: 11%;"> <col style="width: 34%;"> <col style="width: 15%;"> </colgroup>
@@ -107,15 +104,11 @@ String htmlTable1_2 = '''
 </table>
 ''';
 String htmlContent1_3 = '''
-<div>
 <p style="padding-left: 30px;">&nbsp;</p>
 <p style="padding-left: 30px;">Hans: Danke meine Freunde. Welchen Ratschlag soll ich denn jetzt befolgen?</p>
-</div>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
+
 <p style="padding-left: 30px;">Klaus: "Müsst ihr auch täglich Überstunden leisten? -</p>
 <h4 style="padding-left: 60px;">Wenn ich du wäre, ...</h4>
-<p>&nbsp;</p>
 ''';
 String htmlTable1_4 = '''
 <table><colgroup> <col style="width: 14%;"> <col style="width: 26%;"> <col style="width: 11%;"> <col style="width: 34%;"> <col style="width: 15%;"> </colgroup>
@@ -175,13 +168,10 @@ String htmlTable1_4 = '''
 </table>
 ''';
 String htmlContent1_5 = '''
-<p>&nbsp;</p>
 <p style="padding-left: 30px;">&nbsp;</p>
 <h4 style="padding-left: 30px;">Konjunktiv II von sollen = sollten + Infinitiv</h4>
 <div style="padding-left: 30px;">
 <p style="padding-left: 60px;">Hilde: Könntet ihr mir keinen guten Rat geben? Ich werde von Tag zu Tag dicker. -</p>
-<p>&nbsp;</p>
-</div>
 ''';
 String htmlTable1_6 = '''
 <table><colgroup> <col style="width: 14%;"> <col style="width: 14%;"> <col style="width: 12%;"> <col style="width: 46%;"> <col style="width: 14%;"> </colgroup>
@@ -240,4 +230,3 @@ String htmlTable1_6 = '''
 </tbody>
 </table>
 ''';
-

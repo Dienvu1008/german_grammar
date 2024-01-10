@@ -1,908 +1,195 @@
 import 'package:flutter/material.dart';
 
-import '../app/app_localizations.dart';
+import '../page_content.dart';
 
 class Adjektivgruppen_1_7 extends StatelessWidget {
   const Adjektivgruppen_1_7({super.key});
 
   @override
   Widget build(BuildContext context) {
-    final localizations = AppLocalizations.of(context);
-    final textTheme = Theme.of(context).textTheme;
     return Expanded(
       child: Scaffold(
         body: Padding(
-          padding: const EdgeInsets.all(8.0),
-          child: ListView(
-            children: <Widget>[
-              Card(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: <Widget>[
-                    Padding(
-                      padding: const EdgeInsets.only(top: 16.0, left: 16.0),
-                      child: Text('1.7. Adjektivgruppen - Graduierung',
-                          style: textTheme.titleMedium),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.only(top: 10.0, left: 16.0),
-                      child: Text('Was man über Adjektivgruppen wissen sollte.',
-                          style: textTheme.titleSmall),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.only(
-                          top: 10.0, left: 16.0, bottom: 10),
-                      child: RichText(
-                        text: TextSpan(
-                          style: textTheme.bodyMedium,
-                          children: const <TextSpan>[
-                            TextSpan(
-                                text:
-                                    'Das Adjektiv kann andere Wörter zu sich nehmen und eine '),
-                            TextSpan(
-                                text: 'Adjektivgruppe',
-                                style: TextStyle(color: Colors.red)),
-                            TextSpan(
-                                text:
-                                    ' bilden. Es ist wichtig, dass man diese '),
-                            TextSpan(
-                                text: 'Beifügungen',
-                                style: TextStyle(color: Colors.red)),
-                            TextSpan(
-                                text:
-                                    ' erkennt, denn die Beifügungen werden im Gegensatz zu den Adjektiven, sofern sie vor einem Nomen stehen, '),
-                            TextSpan(
-                                text: 'nicht mitdekliniert',
-                                style: TextStyle(color: Colors.red)),
-                            TextSpan(
-                                text: '. Eine Beifügung kann dem Adjektiv '),
-                            TextSpan(
-                                text: 'unterschiedliche Grade',
-                                style: TextStyle(color: Colors.red)),
-                            TextSpan(text: ' zuordnen.\n\n'),
-                            TextSpan(text: 'Beifügungen können ein Adjektiv '),
-                            TextSpan(
-                                text: 'verstärken',
-                                style: TextStyle(color: Colors.red)),
-                            TextSpan(text: ' ('),
-                            TextSpan(
-                                text: 'positive Graduierung',
-                                style: TextStyle(color: Colors.blue)),
-                            TextSpan(text: '):\n'),
-                            TextSpan(text: 'Der gestrige Film war '),
-                            TextSpan(
-                                text: 'total',
-                                style: TextStyle(color: Colors.red)),
-                            TextSpan(text: ' spannend.\n'),
-                            TextSpan(text: 'Ronaldinho ist ein '),
-                            TextSpan(
-                                text: 'außergewöhnlich',
-                                style: TextStyle(color: Colors.red)),
-                            TextSpan(text: ' guter Fußballspieler.\n\n'),
-                            TextSpan(text: 'Beifügungen können ein Adjektiv '),
-                            TextSpan(
-                                text: 'abschwächen',
-                                style: TextStyle(color: Colors.red)),
-                            TextSpan(text: ' ('),
-                            TextSpan(
-                                text: 'negative Graduierung',
-                                style: TextStyle(color: Colors.blue)),
-                            TextSpan(text: '):\n'),
-                            TextSpan(text: 'Ich finde dieses gebrauchte Auto '),
-                            TextSpan(
-                                text: 'recht',
-                                style: TextStyle(color: Colors.red)),
-                            TextSpan(text: ' teuer.\n'),
-                            TextSpan(
-                                text: 'Na ja, ihr neues kurzes Kleid ist ja '),
-                            TextSpan(
-                                text: 'ganz',
-                                style: TextStyle(color: Colors.red)),
-                            TextSpan(text: ' hübsch, aber '),
-                            TextSpan(
-                                text: 'ziemlich',
-                                style: TextStyle(color: Colors.red)),
-                            TextSpan(text: ' gewagt.\n\n'),
-                            TextSpan(text: 'Beifügungen können '),
-                            TextSpan(
-                                text: 'über das Normalmaß',
-                                style: TextStyle(color: Colors.red)),
-                            TextSpan(text: ' hinausgehen:\n'),
-                            TextSpan(text: 'Für ihr Alter ist Sabine '),
-                            TextSpan(
-                                text: 'viel zu',
-                                style: TextStyle(color: Colors.red)),
-                            TextSpan(
-                                text:
-                                    ' dick. Sie hat doch bestimmt 25 kg Übergewicht.\n'),
-                            TextSpan(text: 'Meine Mutter ist einfach '),
-                            TextSpan(
-                                text: 'zu',
-                                style: TextStyle(color: Colors.red)),
-                            TextSpan(
-                                text:
-                                    ' gut für diese Welt. Sie glaubt einfach alles.'),
-                          ],
-                        ),
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-              Card(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: <Widget>[
-                    Padding(
-                      padding: const EdgeInsets.only(
-                          top: 10.0, left: 16.0, bottom: 10),
-                      child: Text(
-                          'Wörter, die die Aussage eines Adjektivs verstärken.',
-                          style: textTheme.titleSmall),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.only(
-                          top: 10.0, left: 16.0, bottom: 10),
-                      child: RichText(
-                        text: TextSpan(
-                          style: textTheme.bodyMedium,
-                          children: const <TextSpan>[
-                            TextSpan(
-                                text:
-                                    'Eine kleine Zusammenstellung von häufig verwendeten Wörtern, die die Aussage eines Adjektivs verstärken:'),
-                          ],
-                        ),
-                      ),
-                    ),
-                    SingleChildScrollView(
-                      child: ConstrainedBox(
-                        constraints: const BoxConstraints(
-                            //minHeight: MediaQuery.of(context).size.height
-                            ),
-                        child: IntrinsicHeight(
-                          child: Column(children: [
-                            Table(
-                              columnWidths: {
-                                0: FlexColumnWidth(1),
-                                1: FlexColumnWidth(4),
-                              },
-                              border: TableBorder.all(
-                                  color: Colors.purple, width: 1),
-                              children: [
-                                TableRow(children: [
-                                  Text('Verstärkung',
-                                      textAlign: TextAlign.center),
-                                  Text('Beispiele',
-                                      textAlign: TextAlign.center),
-                                ]),
-                                TableRow(children: [
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'absolut',
-                                      style: DefaultTextStyle.of(context)
-                                          .style
-                                          .copyWith(color: Colors.red),
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'Ich bin dieses Mal mit dir ',
-                                      style: DefaultTextStyle.of(context).style,
-                                      children: <TextSpan>[
-                                        TextSpan(
-                                            text: 'absolut gleicher',
-                                            style: TextStyle(
-                                                decoration:
-                                                    TextDecoration.underline)),
-                                        TextSpan(
-                                            text: ' Meinung.',
-                                            style: DefaultTextStyle.of(context)
-                                                .style),
-                                      ],
-                                    ),
-                                  ),
-                                ]),
-                                TableRow(children: [
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'außergewöhnlich',
-                                      style: DefaultTextStyle.of(context)
-                                          .style
-                                          .copyWith(color: Colors.red),
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'Barbara ist eine ',
-                                      style: DefaultTextStyle.of(context).style,
-                                      children: <TextSpan>[
-                                        TextSpan(
-                                            text:
-                                                'außergewöhnlich gut aussehende',
-                                            style: TextStyle(
-                                                decoration:
-                                                    TextDecoration.underline)),
-                                        TextSpan(
-                                            text: ' Frau.',
-                                            style: DefaultTextStyle.of(context)
-                                                .style),
-                                      ],
-                                    ),
-                                  ),
-                                ]),
-                                TableRow(children: [
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'außerordentlich',
-                                      style: DefaultTextStyle.of(context)
-                                          .style
-                                          .copyWith(color: Colors.red),
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'Die ',
-                                      style: DefaultTextStyle.of(context).style,
-                                      children: <TextSpan>[
-                                        TextSpan(
-                                            text:
-                                                'außerordentlich zuverlässige',
-                                            style: TextStyle(
-                                                decoration:
-                                                    TextDecoration.underline)),
-                                        TextSpan(
-                                            text:
-                                                ' Sekretärin ist plötzlich schwanger.',
-                                            style: DefaultTextStyle.of(context)
-                                                .style),
-                                      ],
-                                    ),
-                                  ),
-                                ]),
-                                TableRow(children: [
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'äußerst',
-                                      style: DefaultTextStyle.of(context)
-                                          .style
-                                          .copyWith(color: Colors.red),
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'Der ',
-                                      style: DefaultTextStyle.of(context).style,
-                                      children: <TextSpan>[
-                                        TextSpan(
-                                            text: 'äußerst anspruchsvolle',
-                                            style: TextStyle(
-                                                decoration:
-                                                    TextDecoration.underline)),
-                                        TextSpan(
-                                            text:
-                                                ' Mann sucht seit 10 Jahren eine Partnerin.',
-                                            style: DefaultTextStyle.of(context)
-                                                .style),
-                                      ],
-                                    ),
-                                  ),
-                                ]),
-                                TableRow(children: [
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'ausgesprochen',
-                                      style: DefaultTextStyle.of(context)
-                                          .style
-                                          .copyWith(color: Colors.red),
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'Unser Urlaub in der Karibik war ',
-                                      style: DefaultTextStyle.of(context).style,
-                                      children: <TextSpan>[
-                                        TextSpan(
-                                            text: 'ausgesprochen interessant',
-                                            style: TextStyle(
-                                                decoration:
-                                                    TextDecoration.underline)),
-                                        TextSpan(
-                                            text: '.',
-                                            style: DefaultTextStyle.of(context)
-                                                .style),
-                                      ],
-                                    ),
-                                  ),
-                                ]),
-                                TableRow(children: [
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'besonders',
-                                      style: DefaultTextStyle.of(context)
-                                          .style
-                                          .copyWith(color: Colors.red),
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'Weißt du, was einen ',
-                                      style: DefaultTextStyle.of(context).style,
-                                      children: <TextSpan>[
-                                        TextSpan(
-                                            text: 'besonders guten',
-                                            style: TextStyle(
-                                                decoration:
-                                                    TextDecoration.underline)),
-                                        TextSpan(
-                                            text: ' Whiskey auszeichnet?',
-                                            style: DefaultTextStyle.of(context)
-                                                .style),
-                                      ],
-                                    ),
-                                  ),
-                                ]),
-                                TableRow(children: [
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'extrem',
-                                      style: DefaultTextStyle.of(context)
-                                          .style
-                                          .copyWith(color: Colors.red),
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      text:
-                                          'In diesem Restaurant gibt es einen ',
-                                      style: DefaultTextStyle.of(context).style,
-                                      children: <TextSpan>[
-                                        TextSpan(
-                                            text: 'extrem schlechten',
-                                            style: TextStyle(
-                                                decoration:
-                                                    TextDecoration.underline)),
-                                        TextSpan(
-                                            text: ' Service.',
-                                            style: DefaultTextStyle.of(context)
-                                                .style),
-                                      ],
-                                    ),
-                                  ),
-                                ]),
-                                TableRow(children: [
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'höchst',
-                                      style: DefaultTextStyle.of(context)
-                                          .style
-                                          .copyWith(color: Colors.red),
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'Am Wochenende hatten wir eine ',
-                                      style: DefaultTextStyle.of(context).style,
-                                      children: <TextSpan>[
-                                        TextSpan(
-                                            text: 'höchst interessante',
-                                            style: TextStyle(
-                                                decoration:
-                                                    TextDecoration.underline)),
-                                        TextSpan(
-                                            text: ' Weiterbildung.',
-                                            style: DefaultTextStyle.of(context)
-                                                .style),
-                                      ],
-                                    ),
-                                  ),
-                                ]),
-                                TableRow(children: [
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'sehr',
-                                      style: DefaultTextStyle.of(context)
-                                          .style
-                                          .copyWith(color: Colors.red),
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'Mama, ich hab dich ',
-                                      style: DefaultTextStyle.of(context).style,
-                                      children: <TextSpan>[
-                                        TextSpan(
-                                            text: 'sehr sehr',
-                                            style: TextStyle(
-                                                decoration:
-                                                    TextDecoration.underline)),
-                                        TextSpan(
-                                            text: ' lieb.',
-                                            style: DefaultTextStyle.of(context)
-                                                .style),
-                                      ],
-                                    ),
-                                  ),
-                                ]),
-                                TableRow(children: [
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'total',
-                                      style: DefaultTextStyle.of(context)
-                                          .style
-                                          .copyWith(color: Colors.red),
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      text:
-                                          'Der Autofahrer hat sich in der Linkskurve ',
-                                      style: DefaultTextStyle.of(context).style,
-                                      children: <TextSpan>[
-                                        TextSpan(
-                                            text: 'total überschätzt',
-                                            style: TextStyle(
-                                                decoration:
-                                                    TextDecoration.underline)),
-                                        TextSpan(
-                                            text: ' und flog raus.',
-                                            style: DefaultTextStyle.of(context)
-                                                .style),
-                                      ],
-                                    ),
-                                  ),
-                                ]),
-                                TableRow(children: [
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'überaus',
-                                      style: DefaultTextStyle.of(context)
-                                          .style
-                                          .copyWith(color: Colors.red),
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'Nächste Woche muss ich eine ',
-                                      style: DefaultTextStyle.of(context).style,
-                                      children: <TextSpan>[
-                                        TextSpan(
-                                            text: 'überaus wichtige',
-                                            style: TextStyle(
-                                                decoration:
-                                                    TextDecoration.underline)),
-                                        TextSpan(
-                                            text: ' Klausur schreiben.',
-                                            style: DefaultTextStyle.of(context)
-                                                .style),
-                                      ],
-                                    ),
-                                  ),
-                                ]),
-                                TableRow(children: [
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'ungemein',
-                                      style: DefaultTextStyle.of(context)
-                                          .style
-                                          .copyWith(color: Colors.red),
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'Wir sind ',
-                                      style: DefaultTextStyle.of(context).style,
-                                      children: <TextSpan>[
-                                        TextSpan(
-                                            text: 'ungemein stolz',
-                                            style: TextStyle(
-                                                decoration:
-                                                    TextDecoration.underline)),
-                                        TextSpan(
-                                            text: ' auf unseren Sohn.',
-                                            style: DefaultTextStyle.of(context)
-                                                .style),
-                                      ],
-                                    ),
-                                  ),
-                                ]),
-                                TableRow(children: [
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'ungewöhnlich',
-                                      style: DefaultTextStyle.of(context)
-                                          .style
-                                          .copyWith(color: Colors.red),
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'In diesem Jahr hatten wir einen ',
-                                      style: DefaultTextStyle.of(context).style,
-                                      children: <TextSpan>[
-                                        TextSpan(
-                                            text: 'ungewöhnlich milden',
-                                            style: TextStyle(
-                                                decoration:
-                                                    TextDecoration.underline)),
-                                        TextSpan(
-                                            text: ' Winter.',
-                                            style: DefaultTextStyle.of(context)
-                                                .style),
-                                      ],
-                                    ),
-                                  ),
-                                ]),
-                              ],
-                            )
-                          ]),
-                        ),
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-              Card(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: <Widget>[
-                    Padding(
-                      padding: const EdgeInsets.only(
-                          top: 10.0, left: 16.0, bottom: 10),
-                      child: Text(
-                          'Wörter, die die Aussage eines Adjektivs abschwächen.',
-                          style: textTheme.titleSmall),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.only(
-                          top: 10.0, left: 16.0, bottom: 10),
-                      child: RichText(
-                        text: TextSpan(
-                          style: textTheme.bodyMedium,
-                          children: const <TextSpan>[
-                            TextSpan(
-                                text:
-                                    'Eine kleine Zusammenstellung von häufig verwendeten Wörtern, die die Aussage eines Adjektivs abschwächen:'),
-                          ],
-                        ),
-                      ),
-                    ),
-                    SingleChildScrollView(
-                      child: ConstrainedBox(
-                        constraints: const BoxConstraints(
-                            //minHeight: MediaQuery.of(context).size.height
-                            ),
-                        child: IntrinsicHeight(
-                          child: Column(children: [
-                            Table(
-                              columnWidths: {
-                                0: FlexColumnWidth(1),
-                                1: FlexColumnWidth(4),
-                              },
-                              border: TableBorder.all(
-                                  color: Colors.purple, width: 1),
-                              children: [
-                                TableRow(children: [
-                                  Text('Abschwächung',
-                                      textAlign: TextAlign.center),
-                                  Text('Beispiele',
-                                      textAlign: TextAlign.center),
-                                ]),
-                                TableRow(children: [
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'beinahe',
-                                      style: DefaultTextStyle.of(context)
-                                          .style
-                                          .copyWith(color: Colors.red),
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      text:
-                                          'Bei einem Freund von mir endete ein guter Rat ',
-                                      style: DefaultTextStyle.of(context).style,
-                                      children: <TextSpan>[
-                                        TextSpan(
-                                            text: 'beinahe tödlich',
-                                            style: TextStyle(
-                                                decoration:
-                                                    TextDecoration.underline)),
-                                        TextSpan(
-                                            text: '.',
-                                            style: DefaultTextStyle.of(context)
-                                                .style),
-                                      ],
-                                    ),
-                                  ),
-                                ]),
-                                TableRow(children: [
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'einigermaßen',
-                                      style: DefaultTextStyle.of(context)
-                                          .style
-                                          .copyWith(color: Colors.red),
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'Mit meinem neuen Job bin ich ',
-                                      style: DefaultTextStyle.of(context).style,
-                                      children: <TextSpan>[
-                                        TextSpan(
-                                            text: 'so einigermaßen zufrieden',
-                                            style: TextStyle(
-                                                decoration:
-                                                    TextDecoration.underline)),
-                                        TextSpan(
-                                            text: '.',
-                                            style: DefaultTextStyle.of(context)
-                                                .style),
-                                      ],
-                                    ),
-                                  ),
-                                ]),
-                                TableRow(children: [
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'etwas',
-                                      style: DefaultTextStyle.of(context)
-                                          .style
-                                          .copyWith(color: Colors.red),
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'Der Frisör hätte dir die Haare ',
-                                      style: DefaultTextStyle.of(context).style,
-                                      children: <TextSpan>[
-                                        TextSpan(
-                                            text: 'ruhig etwas kürzer',
-                                            style: TextStyle(
-                                                decoration:
-                                                    TextDecoration.underline)),
-                                        TextSpan(
-                                            text: ' schneiden können.',
-                                            style: DefaultTextStyle.of(context)
-                                                .style),
-                                      ],
-                                    ),
-                                  ),
-                                ]),
-                                TableRow(children: [
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'ganz',
-                                      style: DefaultTextStyle.of(context)
-                                          .style
-                                          .copyWith(color: Colors.red),
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'Der Löwe sieht doch ',
-                                      style: DefaultTextStyle.of(context).style,
-                                      children: <TextSpan>[
-                                        TextSpan(
-                                            text: 'ganz harmlos',
-                                            style: TextStyle(
-                                                decoration:
-                                                    TextDecoration.underline)),
-                                        TextSpan(
-                                            text: ' aus.',
-                                            style: DefaultTextStyle.of(context)
-                                                .style),
-                                      ],
-                                    ),
-                                  ),
-                                ]),
-                                TableRow(children: [
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'halbwegs',
-                                      style: DefaultTextStyle.of(context)
-                                          .style
-                                          .copyWith(color: Colors.red),
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'Wenn du nur ',
-                                      style: DefaultTextStyle.of(context).style,
-                                      children: <TextSpan>[
-                                        TextSpan(
-                                            text: 'halbwegs ehrlich',
-                                            style: TextStyle(
-                                                decoration:
-                                                    TextDecoration.underline)),
-                                        TextSpan(
-                                            text:
-                                                ' bist, sagst du mir jetzt die Wahrheit.',
-                                            style: DefaultTextStyle.of(context)
-                                                .style),
-                                      ],
-                                    ),
-                                  ),
-                                ]),
-                                TableRow(children: [
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'kaum',
-                                      style: DefaultTextStyle.of(context)
-                                          .style
-                                          .copyWith(color: Colors.red),
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      text:
-                                          'Er war drei Stunden bei mir, aber er hat ',
-                                      style: DefaultTextStyle.of(context).style,
-                                      children: <TextSpan>[
-                                        TextSpan(
-                                            text: 'kaum etwas',
-                                            style: TextStyle(
-                                                decoration:
-                                                    TextDecoration.underline)),
-                                        TextSpan(
-                                            text: ' gesagt.',
-                                            style: DefaultTextStyle.of(context)
-                                                .style),
-                                      ],
-                                    ),
-                                  ),
-                                ]),
-                                TableRow(children: [
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'recht',
-                                      style: DefaultTextStyle.of(context)
-                                          .style
-                                          .copyWith(color: Colors.red),
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'Da hast du aber bei einem ',
-                                      style: DefaultTextStyle.of(context).style,
-                                      children: <TextSpan>[
-                                        TextSpan(
-                                            text: 'recht teuren',
-                                            style: TextStyle(
-                                                decoration:
-                                                    TextDecoration.underline)),
-                                        TextSpan(
-                                            text: ' Angebot zugeschlagen.',
-                                            style: DefaultTextStyle.of(context)
-                                                .style),
-                                      ],
-                                    ),
-                                  ),
-                                ]),
-                                TableRow(children: [
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'relativ',
-                                      style: DefaultTextStyle.of(context)
-                                          .style
-                                          .copyWith(color: Colors.red),
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'Karsten treffe ich ',
-                                      style: DefaultTextStyle.of(context).style,
-                                      children: <TextSpan>[
-                                        TextSpan(
-                                            text: 'relativ häufig',
-                                            style: TextStyle(
-                                                decoration:
-                                                    TextDecoration.underline)),
-                                        TextSpan(
-                                            text: ' in der Mensa.',
-                                            style: DefaultTextStyle.of(context)
-                                                .style),
-                                      ],
-                                    ),
-                                  ),
-                                ]),
-                                TableRow(children: [
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'vergleichsweise',
-                                      style: DefaultTextStyle.of(context)
-                                          .style
-                                          .copyWith(color: Colors.red),
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      text:
-                                          'Mit anderen Geräten ist dieser Staubsauger ',
-                                      style: DefaultTextStyle.of(context).style,
-                                      children: <TextSpan>[
-                                        TextSpan(
-                                            text: 'vergleichsweise leise',
-                                            style: TextStyle(
-                                                decoration:
-                                                    TextDecoration.underline)),
-                                        TextSpan(
-                                            text: '.',
-                                            style: DefaultTextStyle.of(context)
-                                                .style),
-                                      ],
-                                    ),
-                                  ),
-                                ]),
-                                TableRow(children: [
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'völlig',
-                                      style: DefaultTextStyle.of(context)
-                                          .style
-                                          .copyWith(color: Colors.red),
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      text:
-                                          'Hannes hat sich gestern auf der Party ',
-                                      style: DefaultTextStyle.of(context).style,
-                                      children: <TextSpan>[
-                                        TextSpan(
-                                            text: 'völlig daneben',
-                                            style: TextStyle(
-                                                decoration:
-                                                    TextDecoration.underline)),
-                                        TextSpan(
-                                            text: ' benommen.',
-                                            style: DefaultTextStyle.of(context)
-                                                .style),
-                                      ],
-                                    ),
-                                  ),
-                                ]),
-                                TableRow(children: [
-                                  RichText(
-                                    text: TextSpan(
-                                      text: 'ziemlich',
-                                      style: DefaultTextStyle.of(context)
-                                          .style
-                                          .copyWith(color: Colors.red),
-                                    ),
-                                  ),
-                                  RichText(
-                                    text: TextSpan(
-                                      text:
-                                          'Vor einer Prüfung bin ich meistens ',
-                                      style: DefaultTextStyle.of(context).style,
-                                      children: <TextSpan>[
-                                        TextSpan(
-                                            text: 'ziemlich nervös',
-                                            style: TextStyle(
-                                                decoration:
-                                                    TextDecoration.underline)),
-                                        TextSpan(
-                                            text: '.',
-                                            style: DefaultTextStyle.of(context)
-                                                .style),
-                                      ],
-                                    ),
-                                  ),
-                                ]),
-                              ],
-                            )
-                          ]),
-                        ),
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-            ],
-          ),
-        ),
+            padding: const EdgeInsets.all(8.0),
+            child: MyPageContentView(contents: contents)),
       ),
     );
   }
 }
+
+List<CardContent> contents = [
+  CardContent(
+    elements: [
+      CardElement(type: ElementType.pageTitle, value: title),
+    ],
+  ),
+  CardContent(
+    elements: [
+      CardElement(type: ElementType.cardTitle, value: title1),
+      CardElement(type: ElementType.htmlContent, value: htmlContent1_1),
+    ],
+  ),
+  CardContent(
+    elements: [
+      CardElement(type: ElementType.cardTitle, value: title2),
+      CardElement(type: ElementType.htmlContent, value: htmlContent2_1),
+      CardElement(type: ElementType.htmlTable, value: htmlTable2_2),
+    ],
+  ),
+  CardContent(
+    elements: [
+      CardElement(type: ElementType.cardTitle, value: title3),
+      CardElement(type: ElementType.htmlContent, value: htmlContent3_1),
+      CardElement(type: ElementType.htmlTable, value: htmlTable3_2),
+    ],
+  ),
+];
+
+String title = '1.7. Adjektivgruppen / Graduierung';
+
+String title1 = 'Was man über Adjektivgruppen wissen sollte.';
+String htmlContent1_1 = '''
+<p>Das Adjektiv kann andere Wörter zu sich nehmen und eine <strong><span class="red">Adjektivgruppe</span></strong> bilden. Es ist wichtig, dass man diese <strong><span class="red">Beifügungen</span></strong> erkennt, denn die Beifügungen werden im Gegensatz zu den Adjektiven, sofern sie vor einem Nomen stehen, <strong><span class="red">nicht mitdekliniert</span></strong>. Eine Beifügung kann dem Adjektiv <strong><span class="red">unterschiedliche Grade</span></strong> zuordnen.</p>
+
+-Beifügungen können ein Adjektiv <strong><span class="red">verstärken</span></strong> (<strong><span class="blue">positive Graduierung</span></strong>):
+<li>Der gestrige Film war <strong><span class="red">total</span></strong> spannend.</li>
+<li>Ronaldinho ist ein <strong><span class="red">außergewöhnlich</span></strong> guter Fußballspieler.</li>
+
+-Beifügungen können ein Adjektiv <strong><span class="red">abschwächen</span></strong> (<strong><span class="blue">negative Graduierung</span></strong>):
+<li>Ich finde dieses gebrauchte Auto <strong><span class="red">recht</span></strong> teuer.</li>
+<li>Na ja, ihr neues kurzes Kleid ist ja <strong><span class="red">ganz</span></strong> hübsch, aber <strong><span class="red">ziemlich</span></strong> gewagt.</li>
+
+-Beifügungen können <strong><span class="red">über das Normalmaß</span></strong> hinausgehen:
+<li>Für ihr Alter ist Sabine <strong><span class="red">viel zu</span></strong> dick. Sie hat doch bestimmt 25 kg Übergewicht.</li>
+<li>Meine Mutter ist einfach <strong><span class="red">zu</span></strong> gut für diese Welt. Sie glaubt einfach alles.</li>
+''';
+
+String title2 = 'Wörter, die die Aussage eines Adjektivs verstärken.';
+String htmlContent2_1 = '''
+<p>Eine kleine Zusammenstellung von häufig verwendeten Wörtern, die die Aussage eines Adjektivs verstärken:</p>
+''';
+String htmlTable2_2 = '''
+<table><colgroup> <col style="width: 21%;"> <col style="width: 79%;"> </colgroup>
+<thead>
+<tr align="center">
+<th>Verstärkung</th>
+<th>Beispiele</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th><strong><span class="red">absolut</span></strong></th>
+<td>Ich bin dieses Mal mit dir <span style="text-decoration:underline"><strong><span class="red">absolut</span></strong> gleicher</span> Meinung.</td>
+</tr>
+<tr>
+<th><strong><span class="red">außergewöhnlich</span></strong></th>
+<td>Barbara ist eine <span style="text-decoration:underline"><strong><span class="red">außergewöhnlich</span></strong> gut aussehende</span> Frau.</td>
+</tr>
+<tr>
+<th><strong><span class="red">außerordentlich</span></strong></th>
+<td>Die <span style="text-decoration:underline"><strong><span class="red">außerordentlich</span></strong> zuverlässige</span> Sekretärin ist plötzlich schwanger.</td>
+</tr>
+<tr>
+<th><strong><span class="red">äußerst</span></strong></th>
+<td>Der <span style="text-decoration:underline"><strong><span class="red">äußerst</span></strong> anspruchsvolle</span> Mann sucht seit 10 Jahren eine Partnerin.</td>
+</tr>
+<tr>
+<th><strong><span class="red">ausgesprochen</span></strong></th>
+<td>Unser Urlaub in der Karibik war <span style="text-decoration:underline"><strong><span class="red">ausgesprochen</span></strong> interessant</span>.</td>
+</tr>
+<tr>
+<th><strong><span class="red">besonders</span></strong></th>
+<td>Weißt du, was einen <span style="text-decoration:underline"><strong><span class="red">besonders</span></strong> guten</span> Whiskey auszeichnet?</td>
+</tr>
+<tr>
+<th><strong><span class="red">extrem</span></strong></th>
+<td>In diesem Restaurant gibt es einen <span style="text-decoration:underline"><strong><span class="red">extrem</span></strong> schlechten</span> Service.</td>
+</tr>
+<tr>
+<th><strong><span class="red">höchst</span></strong></th>
+<td>Am Wochenende hatten wir eine <span style="text-decoration:underline"><strong><span class="red">höchst</span></strong> interessante</span> Weiterbildung.</td>
+</tr>
+<tr>
+<th><strong><span class="red">sehr</span></strong></th>
+<td>Mama, ich hab dich <span style="text-decoration:underline"><strong><span class="red">sehr sehr</span></strong> lieb</span>.</td>
+</tr>
+<tr>
+<th><strong><span class="red">total</span></strong></th>
+<td>Der Autofahrer hat sich in der Linkskurve <span style="text-decoration:underline"><strong><span class="red">total</span></strong> überschätzt</span> und flog raus.</td>
+</tr>
+<tr>
+<th><strong><span class="red">überaus</span></strong></th>
+<td>Nächste Woche muss ich eine <span style="text-decoration:underline"><strong><span class="red">überaus</span></strong> wichtige</span> Klausur schreiben.</td>
+</tr>
+<tr>
+<th><strong><span class="red">ungemein</span></strong></th>
+<td>Wir sind <span style="text-decoration:underline"><strong><span class="red">ungemein</span></strong> stolz</span> auf unseren Sohn.</td>
+</tr>
+<tr>
+<th><strong><span class="red">ungewöhnlich</span></strong></th>
+<td>In diesem Jahr hatten wir einen <span style="text-decoration:underline"><strong><span class="red">ungewöhnlich</span></strong> milden</span> Winter.</td>
+</tr>
+</tbody>
+</table>  
+''';
+
+String title3 = 'Wörter, die die Aussage eines Adjektivs abschwächen.';
+String htmlContent3_1 = '''
+<p>Eine kleine Zusammenstellung von häufig verwendeten Wörtern, die die Aussage eines Adjektivs abschwächen:</p>
+''';
+String htmlTable3_2 = '''
+<table><colgroup> <col style="width: 21%;"> <col style="width: 79%;"> </colgroup>
+<thead>
+<tr align="center">
+<th>Abschwächung</th>
+<th>Beispiele</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th><strong><span class="red">beinahe</span></strong></th>
+<td>Bei einem Freund von mir endete ein guter Rat <span style="text-decoration:underline"><strong><span class="red">beinahe</span></strong> tödlich</span>.</td>
+</tr>
+<tr>
+<th><strong><span class="red">einigermaßen</span></strong></th>
+<td>Mit meinem neuen Job bin ich <span style="text-decoration:underline"><strong><span class="red">so einigermaßen</span></strong> zufrieden</span>.</td>
+</tr>
+<tr>
+<th><strong><span class="red">etwas</span></strong></th>
+<td>Der Frisör hätte dir die Haare <span style="text-decoration:underline"><strong><span class="red">ruhig etwas</span></strong> kürzer</span> schneiden können.</td>
+</tr>
+<tr>
+<th><strong><span class="red">ganz</span></strong></th>
+<td>Der Löwe sieht doch <span style="text-decoration:underline"><strong><span class="red">ganz</span></strong> harmlos</span> aus.</td>
+</tr>
+<tr>
+<th><strong><span class="red">halbwegs</span></strong></th>
+<td>Wenn du nur <span style="text-decoration:underline"><strong><span class="red">halbwegs</span></strong> ehrlich</span> bist, sagst du mir jetzt die Wahrheit.</td>
+</tr>
+<tr>
+<th><strong><span class="red">kaum</span></strong></th>
+<td>Er war drei Stunden bei mir, aber er hat <span style="text-decoration:underline"><strong><span class="red">kaum</span></strong> etwas</span> gesagt.</td>
+</tr>
+<tr>
+<th><strong><span class="red">recht</span></strong></th>
+<td>Da hast du aber bei einem <span style="text-decoration:underline"><strong><span class="red">recht</span></strong> teuren</span> Angebot zugeschlagen.</td>
+</tr>
+<tr>
+<th><strong><span class="red">relativ</span></strong></th>
+<td>Karsten treffe ich <span style="text-decoration:underline"><strong><span class="red">relativ</span></strong> häufig</span> in der Mensa.</td>
+</tr>
+<tr>
+<th><strong><span class="red">vergleichsweise</span></strong></th>
+<td>Mit anderen Geräten ist dieser Staubsauger <span style="text-decoration:underline"><strong><span class="red">vergleichsweise</span></strong> leise</span>.</td>
+</tr>
+<tr>
+<th><strong><span class="red">völlig</span></strong></th>
+<td>Hannes hat sich gestern auf der Party <span style="text-decoration:underline"><strong><span class="red">völlig</span></strong> daneben</span> benommen.</td>
+</tr>
+<tr>
+<th><strong><span class="red">ziemlich</span></strong></th>
+<td>Vor einer Prüfung bin ich meistens <span style="text-decoration:underline"><strong><span class="red">ziemlich</span></strong> nervös</span>.</td>
+</tr>
+</tbody>
+</table>  
+''';
