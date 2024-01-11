@@ -82,9 +82,13 @@ String htmlContent2_1 = '''
 <p>Die Indefinitpronomen <strong><span class="red">man</span></strong>, <strong><span class="red">jemand</span></strong> und <strong><span class="red">niemand</span></strong> werden <span style="text-decoration:underline">nur für Personen</span> gebraucht. Diese Pronomen können alleinig im <strong><span class="red">Singular</span></strong> gebraucht werden, eine Pluralform für diese Pronomen existiert nicht. Die genannten Pronomen haben folgende Deklinationsformen:</p>
 ''';
 String htmlTable2_2 = '''
-<table><colgroup> <col style="width: 25%;"> <col style="width: 25%;"> <col style="width: 25%;"> <col style="width: 25%;"> </colgroup>
+<table><colgroup> 
+<col style="width: 25%;"> 
+<col style="width: 25%;"> 
+<col style="width: 25%;"> 
+<col style="width: 25%;"> </colgroup>
 <thead>
-<tr>
+<tr >
 <th>Kasus</th>
 <th>man</th>
 <th>jemand</th>
@@ -160,9 +164,14 @@ String htmlContent3_1 = '''
 <p>Das Indefinitpronomen <strong><span class="red">welch-</span></strong> als Stellvertreter für ein Nomen wird nur in der Umgangssprache benutzt und kann im Singular nur für <br>Sachen stehen. "Welch-" hat in etwa die Bedeutung von "etwas", "ein wenig", "ein bisschen" und "einige(s)". "Welch-" wird dekliniert: (Der Gebrauch im Plural ist auch für Personen zulässig. Der Gebrauch des Dativs und Genitivs gilt als "unschön" und soll vermieden werden.)</p>
 ''';
 String htmlTable3_2 = '''
-<table>
+<table><colgroup> 
+<col style="width: 20%;"> 
+<col style="width: 20%;"> 
+<col style="width: 20%;"> 
+<col style="width: 20%;">
+<col style="width: 20%;"> </colgroup>
 <thead>
-<tr>
+<tr align="center">
 <th>Kasus</th>
 <th>maskulin</th>
 <th>feminin</th>
@@ -203,9 +212,14 @@ String htmlContent4_1 = '''
 <p>Das Indefinitpronomen "<strong><span class="red">all-</span></strong>" kann <strong><span class="red">in Funktion eines Artikels</span></strong> oder <strong><span class="red">als Stellvertreter für ein Nomen</span></strong> auftreten. Es gibt eine <span style="text-decoration:underline">Gesamtmenge</span> an. "All-" wird wie folgt dekliniert:</p>
 ''';
 String htmlTable4_2 = '''
-<table frame="" rules="" align="center" bgcolor="#88FFFF">
+<table frame="" rules="" align="center" bgcolor="#88FFFF"><colgroup> 
+<col style="width: 20%;"> 
+<col style="width: 20%;"> 
+<col style="width: 20%;"> 
+<col style="width: 20%;">
+<col style="width: 20%;"> </colgroup>
 <thead style="background-color: #ddffcc;">
-<tr>
+<tr align="center">
 <th>Kasus</th>
 <th>Maskulinum</th>
 <th>Femininum</th>
@@ -256,9 +270,14 @@ String htmlContent4_3 = '''
 <p>Das Indefinitpronomen "<strong><span class="red">einige</span></strong>" kann <strong><span class="red">in Funktion eines Artikels</span></strong> oder <strong><span class="red">als Stellvertreter für ein Nomen</span></strong> auftreten. Es gibt eine unbestimmte <span style="text-decoration:underline">Menge</span> an, die je nachdem kleiner oder größer sein kann. "Einige" wird wie folgt dekliniert:</p>
 ''';
 String htmlTable4_4 = '''
-<table>
+<table><colgroup> 
+<col style="width: 20%;"> 
+<col style="width: 20%;"> 
+<col style="width: 20%;"> 
+<col style="width: 20%;">
+<col style="width: 20%;"> </colgroup>
 <thead>
-<tr>
+<tr align="center">
 <th>Kasus</th>
 <th>Maskulinum</th>
 <th>Femininum</th>
@@ -308,9 +327,14 @@ String htmlContent4_5 = '''
 <p>Das Indefinitpronomen "<strong><span class="red">jede-</span></strong>" kann <strong><span class="red">in Funktion eines Artikels</span></strong> oder <strong><span class="red">als Stellvertreter für ein Nomen</span></strong> auftreten. Mit "<strong><span class="red">jeder</span></strong>" werden <span style="text-decoration:underline">alle Elemente einer Gruppe</span> angesprochen, in der es <span style="text-decoration:underline">keine Ausnahmen</span> gibt. Jeder wechselt im Plural zu "alle".</p>
 ''';
 String htmlTable4_6 = '''
-<table>
+<table><colgroup> 
+<col style="width: 20%;"> 
+<col style="width: 20%;"> 
+<col style="width: 20%;"> 
+<col style="width: 20%;">
+<col style="width: 20%;"> </colgroup>
 <thead>
-<tr>
+<tr align="center">
 <th>Kasus</th>
 <th>Maskulinum</th>
 <th>Femininum</th>
@@ -351,52 +375,23 @@ String htmlTable4_6 = '''
 </table>
 ''';
 String htmlContent4_7 = '''
-<table>
-<thead>
-<tr>
-<th>Kasus</th>
-<th>Maskulinum</th>
-<th>Femininum</th>
-<th>Neutrum</th>
-<th>Plural</th>
-</tr>
-</thead>
-<tbody align="center">
-<tr>
-<th>Nominativ</th>
-<td>jed<strong><span class="red">er</span></strong></td>
-<td>jed<strong><span class="red">e</span></strong></td>
-<td>jed<strong><span class="red">es</span></strong></td>
-<td><strong><span class="red">alle</span></strong></td>
-</tr>
-<tr>
-<th>Akkusativ</th>
-<td>jed<strong><span class="red">en</span></strong></td>
-<td>jed<strong><span class="red">e</span></strong></td>
-<td>jed<strong><span class="red">es</span></strong></td>
-<td><strong><span class="red">alle</span></strong></td>
-</tr>
-<tr>
-<th>Dativ</th>
-<td>jed<strong><span class="red">em</span></strong></td>
-<td>jed<strong><span class="red">er</span></strong></td>
-<td>jed<strong><span class="red">em</span></strong></td>
-<td><strong><span class="red">allen</span></strong></td>
-</tr>
-<tr>
-<th>Genitiv</th>
-<td>jed<strong><span class="red">es</span></strong></td>
-<td>jed<strong><span class="red">er</span></strong></td>
-<td>jed<strong><span class="red">es</span></strong></td>
-<td><strong><span class="red">aller</span></strong></td>
-</tr>
-</tbody>
-</table>
+<li>Mein 6-jähriger Sohn gibt mir immer die Antwort: "Das weiß doch <strong><span class="red">jeder</span></strong>."</li>
+<li><strong><span class="red">Jeder</span></strong> von euch entschuldigt sich auf der Stelle.</li>
+<li><strong><span class="red">Alle</span></strong> müssen irgendwann einmal sterben.</li>
+
+<li><strong><span class="red">ein- / kein-</span></strong>
+
+<p>Das Indefinitpronomen "<strong><span class="red">ein-</span></strong>" findet nur als Stellvertreter eines Nomens Anwendung. Es vertritt eine <span style="text-decoration:underline">bereits bekannte</span> unbestimmte Person oder Sache. Die Negativform von "ein-" ist "kein-". Das Pronomen "ein-" ändert im Plural seine Form auf "<strong><span class="red">welch-</span></strong>", "kein" behält im Plural seine Form. "Ein-" und "kein-" werden wie folgt dekliniert:</p>
 ''';
 String htmlTable4_8 = '''
-<table><colgroup> <col style="width: 17%;"> <col style="width: 20%;"> <col style="width: 20%;"> <col style="width: 20%;"> <col style="width: 23%;"> </colgroup>
+<table><colgroup> 
+<col style="width: 17%;"> 
+<col style="width: 20%;"> 
+<col style="width: 20%;"> 
+<col style="width: 20%;"> 
+<col style="width: 23%;"> </colgroup>
 <thead>
-<tr>
+<tr align="center">
 <th>Kasus</th>
 <th>Maskulinum</th>
 <th>Femininum</th>
@@ -446,9 +441,14 @@ String htmlContent4_9 = '''
 <p>Das Indefinitpronomen "<strong><span class="red">manch-</span></strong>" kann <strong><span class="red">in Funktion eines Artikels</span></strong> oder <strong><span class="red">als Stellvertreter für ein Nomen</span></strong> auftreten. "<strong><span class="red">Manch-</span></strong>" hat etwa die Bedeutung wie "einige".</p>
 ''';
 String htmlTable4_10 = '''
-<table>
+<table><colgroup> 
+<col style="width: 20%;"> 
+<col style="width: 20%;"> 
+<col style="width: 20%;"> 
+<col style="width: 20%;">
+<col style="width: 20%;"> </colgroup>
 <thead>
-<tr>
+<tr align="center">
 <th>Kasus</th>
 <th>Maskulinum</th>
 <th>Femininum</th>
@@ -498,9 +498,11 @@ String htmlContent4_11 = '''
 <p>Das Indefinitpronomen "<strong><span class="red">mehrere-</span></strong>" kann <strong><span class="red">in Funktion eines Artikels</span></strong> oder <strong><span class="red">als Stellvertreter für ein Nomen</span></strong> auftreten. "<strong><span class="red">Mehrere-</span></strong>" hat in etwa die Bedeutung wie "manch" und "einige". Dieses Pronomen existiert nur im Plural.</p>
 ''';
 String htmlTable4_12 = '''
-<table class="eins">
+<table class="eins"><colgroup> 
+<col style="width: 50%;"> 
+<col style="width: 50%;"> </colgroup>
 <thead>
-<tr>
+<tr align="center">
 <th>Kasus</th>
 <th>Plural</th>
 </tr>

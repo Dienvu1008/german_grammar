@@ -72,9 +72,12 @@ String htmlContent1_1 = '''
 <p>Verben werden auch als "<strong><span class="red">Tuwörter</span></strong>", "<strong><span class="red">Zeitwörter</span></strong>" oder <strong><span class="red">Tätigkeitswörter</span></strong> bezeichnet. Wörterbücher geben Verben immer mit dem <strong><span class="red">Infinitiv</span></strong> an (<strong><span class="red">Infinitiv = Grundform = nicht konjugiert</span></strong>). Verben bestehen aus einem <span style="text-decoration:underline">Verbstamm</span> und der <strong><span class="red">Endung</span></strong> "-<strong><span class="red"> e n</span></strong>" (sehr selten nur mit "-<strong><span class="red"> n</span></strong>").</p>
 ''';
 String htmlTable1_1 = '''
-<table class="eins">
+<table class="eins"><colgroup> 
+<col style="width: 34%;"> 
+<col style="width: 33%;">
+<col style="width: 33%;"> </colgroup>
 <thead>
-<tr>
+<tr align="center">
 <th>Infinitiv</th>
 <th>Stamm</th>
 <th>Endung</th>
@@ -114,9 +117,9 @@ String htmlContent1_2 = '''
 <p>Die Verben "kaufen", "lieben" und "machen" haben eine <strong><a title="Weitere Informationen zum Nominativ" href="nominativ-ergaenzung.html" target="_blank"> Nominativ-</a></strong> und eine <strong><a title="Weitere Informationen zu Verben mit Akkusativ = transitive Verben" href="akkusativ-ergaenzung.html" target="_blank"> Akkusativ-Ergänzung</a></strong>.</p>
 ''';
 String htmlTable1_2 = '''
-<table>
+<table><colgroup> <col style="width: 34%;"> <col style="width: 33%;"><col style="width: 33%;"> </colgroup>
 <thead>
-<tr>
+<tr align="center">
 <th>Nominativ</th>
 <th>Verb</th>
 <th>Akkusativ</th>
@@ -145,9 +148,13 @@ String htmlContent1_3 = '''
 <p>Die Verben "antworten, "glauben" und "helfen" haben eine <strong><a title="Weitere Informationen zum Nominativ" href="nominativ-ergaenzung.html" target="_blank"> Nominativ-</a></strong> und eine <strong><a title="Weitere Informationen zu Verben mit einer Dativ-Ergänzung = intransitive Verben" href="dativ-ergaenzung.html" target="_blank"> Dativ-Ergänzung</a></strong>.</p>
 ''';
 String htmlTable1_3 = '''
-<table>
+<table><colgroup> 
+<col style="width: 30%;"> 
+<col style="width: 20%;">
+<col style="width: 30%;">
+<col style="width: 20%;"> </colgroup>
 <thead>
-<tr>
+<tr align="center">
 <th>Nominativ</th>
 <th>Verb</th>
 <th>Dativ</th>
@@ -182,7 +189,7 @@ String htmlContent1_4 = '''
 String htmlTable1_4 = '''
 <table><colgroup> <col style="width: 20%;"> <col style="width: 20%;"> <col style="width: 15%;"> <col style="width: 30%;"> <col style="width: 15%;"> </colgroup>
 <thead>
-<tr>
+<tr align="center">
 <th>Zeitform</th>
 <th>Nominativ</th>
 <th>Verb</th>
@@ -219,9 +226,14 @@ String htmlContent1_5 = '''
 <p>Verben verändern ihre Form, sie werden "<strong><a title="Wie man Verben konjugiert." href="verben.html#konjugation" target="_blank">konjugiert</a></strong>". Dadurch sind sie in der Lage, Informationen über die <strong><a title="Weitere Informationen zu Singular und Plural" href="konjugation-der-verben.html" target="_blank">Anzahl der Personen</a></strong> (Singular oder Plural), das <strong><a title="Übersicht über die sechs Zeitformen im Deutschen" href="tempus.html" target="_blank">Tempus</a></strong> (Präsens, Perfekt, ...) oder den <strong><a title="Einführung Konjunktiv II" href="konjunktiv-2.html" target="_blank">Modus</a></strong> (Indikativ oder Konjunktiv) zu geben. Diese Veränderungen der Verbformen nennt man "<strong><span class="red">Konjugation</span></strong>".</p>
 ''';
 String htmlTable1_5 = '''
-<table>
+<table><colgroup> 
+<col style="width: 30%;"> 
+<col style="width: 20%;">
+<col style="width: 10%;"> 
+<col style="width: 20%;">
+<col style="width: 10%;"> </colgroup>
 <thead>
-<tr>
+<tr align="center">
 <th>Formen</th>
 <th>Nominativ</th>
 <th>Verb</th>
@@ -267,7 +279,7 @@ String htmlContent2_1 = '''
 <p>Das folgende Beispiel zeigt die <strong><span class="red">Konjugation</span></strong> des regelmäßigen Verbs "lernen":</p>
 ''';
 String htmlTable2 = '''
-<table>
+<table><colgroup> <col style="width: 34%;"> <col style="width: 33%;"><col style="width: 33%;"> </colgroup>
 <thead>
 </thead>
 <tbody align="center">
@@ -353,7 +365,7 @@ String htmlContent3_1 = '''
 String htmlTable3_1 = '''
 <table><colgroup> <col style="width: 38%;"> <col style="width: 31%;"> <col style="width: 11%;"> <col style="width: 20%;"> </colgroup>
 <thead>
-<tr>
+<tr align="center">
 <th>W-Frage</th>
 <th><strong><span class="red">Subjekt</span></strong></th>
 <th>Verb</th>
@@ -406,7 +418,7 @@ String htmlContent3_2 = '''
 String htmlTable3_2 = '''
 <table><colgroup> <col style="width: 30%;"> <col style="width: 25%;"> <col style="width: 15%;"> <col style="width: 30%;"> </colgroup>
 <thead>
-<tr>
+<tr align="center">
 <th>W-Frage</th>
 <th><strong><span class="blue">Subjekt</span></strong></th>
 <th>Verb</th>

@@ -107,7 +107,7 @@ String htmlTable2_2 = '''
 <col style="width: 20%;"> 
 <col style="width: 20%;"> </colgroup>
 <thead>
-<tr>
+<tr align="center">
 <th >Kasus</th>
 <th >3. Person Singular\nmaskulin</th>
 <th >3. Person Singular\nfeminin</th>
@@ -180,9 +180,14 @@ String htmlContent3_1 = '''
 <p>Wie alle Pronomen können auch "<strong><span class="red">dieser, diese, ...</span></strong>" und "<strong><span class="red">jener, jene, ...</span></strong>" als <strong><a title="Demonstrativartikel" href="lernen.php?menu_id=62#dies">Nomenbegleiter</a></strong> oder als <strong><span class="red">Stellvertreter für ein Nomen</span></strong> stehen. <br> "<strong><span class="red">Dies-</span></strong>" wird benutzt, wenn eine Person oder Sache vom Sprecher aus gesehen räumlich oder zeitlich näher ist. <br> "<strong><span class="red">Jene-</span></strong>" wird benutzt, wenn eine Person oder Sache vom Sprecher aus gesehen räumlich oder zeitlich weiter entfernt ist. <br> Werden beide Pronomen in einem Satz gebraucht, dient es einer Unterscheidung bzw. einer Gegenüberstellung zweier Personen oder Sachen. Beide Pronomen werden <span style="text-decoration:underline">gleich dekliniert</span> (<strong><a title="Deklination bestimmter Artikel" href="lernen.php?menu_id=59#deklination">Endungen wie bestimmter Artikel</a></strong>).</p>
 ''';
 String htmlTable3_2 = '''
-<table><colgroup> <col style="width: 20%;"> <col style="width: 20%;"> <col style="width: 20%;"> <col style="width: 20%;"> <col style="width: 20%;"> </colgroup>
+<table><colgroup> 
+<col style="width: 20%;"> 
+<col style="width: 20%;"> 
+<col style="width: 20%;"> 
+<col style="width: 20%;"> 
+<col style="width: 20%;"> </colgroup>
 <thead>
-<tr>
+<tr align="center">
 <th>Kasus</th>
 <th>Maskulinum</th>
 <th>Femininum</th>
@@ -244,9 +249,14 @@ String htmlContent4_1 = '''
 <li>Wir gratulieren <strong><span class="red">denjenigen</span></strong>, die die Prüfung mit "sehr gut" bestanden haben.</li>
 ''';
 String htmlTable4_2 = '''
-<table><colgroup> <col style="width: 14%;"> <col style="width: 19%;"> <col style="width: 19%;"> <col style="width: 19%;"> <col style="width: 19%;"> </colgroup>
+<table><colgroup> 
+<col style="width: 20%;"> 
+<col style="width: 20%;"> 
+<col style="width: 20%;"> 
+<col style="width: 20%;"> 
+<col style="width: 20%;"> </colgroup>
 <thead>
-<tr>
+<tr align="center">
 <th>Kasus</th>
 <th>Maskulinum</th>
 <th>Femininum</th>
@@ -296,9 +306,14 @@ String htmlContent5_1 = '''
 <li>Der Mann mit Hut war schon wieder hier. Es war <strong><span class="red">derselbe</span></strong>, der schon gestern nach Ihnen gefragt hat.</li>
 ''';
 String htmlTable5_2 = '''
-<table><colgroup> <col style="width: 14%;"> <col style="width: 19%;"> <col style="width: 19%;"> <col style="width: 19%;"> <col style="width: 19%;"> </colgroup>
+<table><colgroup> 
+<col style="width: 20%;"> 
+<col style="width: 20%;"> 
+<col style="width: 20%;"> 
+<col style="width: 20%;"> 
+<col style="width: 20%;"> </colgroup>
 <thead>
-<tr>
+<tr align="center">
 <th>Kasus</th>
 <th>Maskulinum</th>
 <th>Femininum</th>

@@ -114,9 +114,15 @@ String htmlContent2_1 = '''
 <p>Einige Präpositionen können mit einem <strong><a title="Bestimmter Artikel" href="lernen.php?menu_id=59">bestimmten Artikel</a></strong> eine Verbindung eingehen, sie "<strong><span class="red">verschmelzen</span></strong>" ineinander. Die häufigsten Verschmelzungen sind:</p>
 ''';
 String htmlTable2_2 = '''
-<table><colgroup> <col style="width: 14%;"> <col style="width: 15%;"> <col style="width: 17%;"> <col style="width: 17%;"> <col style="width: 17%;"> <col style="width: 17%;"> </colgroup>
+<table><colgroup> 
+<col style="width: 14%;"> 
+<col style="width: 15%;"> 
+<col style="width: 17%;"> 
+<col style="width: 17%;"> 
+<col style="width: 17%;"> 
+<col style="width: 17%;"> </colgroup>
 <thead>
-<tr>
+<tr align="center">
 <th>Artikel\nPräposition</th>
 <th>der\nAkk. / <strong><span class="red">den</span></strong></th>
 <th>der\nDativ / <strong><span class="red">dem</span></strong></th>

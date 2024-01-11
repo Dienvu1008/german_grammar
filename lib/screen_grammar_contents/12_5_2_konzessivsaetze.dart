@@ -69,9 +69,12 @@ String htmlContent1_1 = '''
 <h3 align="center">Hauptsatz + Nebensatz</h3>
 ''';
 String htmlTable1_1 = '''
-<table>
+<table><colgroup> 
+<col style="width: 50%;"> 
+<col style="width: 50%;">  
+</colgroup>
 <thead>
-<tr>
+<tr align="center">
 <th>Hauptsatz</th>
 <th>Nebensatz</th>
 </tr>
@@ -104,9 +107,11 @@ String htmlContent1_2 = '''
 <h3 align="center">Nebensatz + Hauptsatz</h3>
 ''';
 String htmlTable1_2 = '''
-<table>
+<table><colgroup> 
+<col style="width: 50%;"> 
+<col style="width: 50%;">  
 <thead>
-<tr>
+<tr align="center">
 <th>Nebensatz</th>
 <th>Hauptsatz</th>
 </tr>
@@ -141,9 +146,10 @@ String htmlContent2_1 = '''
 <p>Eine <strong><span class="red">konzessive Angabe</span></strong> kann auch mit einer <strong><a title="Nominalisierung" href="lernen.php?menu_id=20">Präposition-Nomen-Konstruktionen</a></strong> formuliert werden. Die passenden Präpositionen lauten: "<strong><span class="red">trotz</span></strong>" und "<strong><span class="red">ungeachtet</span></strong>" (beide + Genitiv):</p>
 ''';
 String htmlTable2 = '''
-<table>
+<table><colgroup> 
+<col style="width: 100%;">  
 <thead>
-<tr>
+<tr align="center">
 <th>Hauptsatz mit einer <strong><span class="red">Präposition-Nomen-Konstruktion</span></strong> als konzessive Angabe</th>
 </tr>
 </thead>
@@ -184,7 +190,7 @@ String htmlContent3_1 = '''
 String htmlTable3_1 = '''
 <table><colgroup> <col style="width: 32%;"> <col style="width: 11%;"> <col style="width: 14%;"> <col style="width: 8%;"> <col style="width: 12%;"> <col style="width: 22%;"> </colgroup>
 <thead>
-<tr>
+<tr align="center">
 <th>Hauptsatz 1</th>
 <th>Hauptsatz 2\nPos. 0</th>
 <th>Hauptsatz 2\nPos. 1</th>
@@ -268,7 +274,7 @@ String title4 = 'Übersicht Konzessivsätze';
 String htmlTable4 = '''
 <table><colgroup> <col style="width: 44%;"> <col style="width: 37%;"> <col style="width: 19%;"> </colgroup>
 <thead>
-<tr>
+<tr align="center">
 <th>verbal\nKonjunktionen</th>
 <th>verbal\nAdverbien = inverse Struktur</th>
 <th>nominal\nPräpositionen</th>

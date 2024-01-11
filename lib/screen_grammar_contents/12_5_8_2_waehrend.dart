@@ -68,7 +68,7 @@ String htmlContent1_1 = '''
 String htmlTable1_1 = '''
 <table><colgroup> <col style="width: 50%;"> <col style="width: 50%;"> </colgroup>
 <thead>
-<tr>
+<tr align="center">
 <th>Hauptsatz</th>
 <th>Nebensatz</th>
 </tr>
@@ -99,7 +99,7 @@ String htmlContent1_2 = '''
 String htmlTable1_2 = '''
 <table><colgroup> <col style="width: 50%;"> <col style="width: 50%;"> </colgroup>
 <thead>
-<tr>
+<tr align="center">
 <th>Nebensatz</th>
 <th>Hauptsatz</th>
 </tr>
@@ -130,9 +130,9 @@ String htmlContent2_1 = '''
 <p>Eine <strong><span class="red">temporale Angabe</span></strong> kann auch mit einer <strong><a title="Nominalisierung" href="nominalisierung.html" target="_blank">Präposition-Nomen-Konstruktionen</a></strong> formuliert werden. Die passende Präposition lautet: "<strong><span class="red">während</span></strong>":</p>
 ''';
 String htmlTable2 = '''
-<table>
+<table><colgroup><col style="width: 100%;"> </colgroup>
 <thead>
-<tr>
+<tr align="center">
 <th>Hauptsatz mit einer <strong><span class="red">Präposition-Nomen-Konstruktion</span></strong> als temporale Angabe</th>
 </tr>
 </thead>
@@ -168,7 +168,7 @@ String htmlContent3_1 = '''
 String htmlTable3_1 = '''
 <table><colgroup> <col style="width: 29;"> <col style="width: 21%;"> <col style="width: 15%;"> <col style="width: 21%;"> <col style="width: 14%;"> </colgroup>
 <thead>
-<tr>
+<tr align="center">
 <th>Hauptsatz 1</th>
 <th>Hauptsatz 2\nPosition 1</th>
 <th>Hauptsatz 2\nVerb</th>
@@ -239,7 +239,7 @@ String title4 = 'Übersicht';
 String htmlTable4 = '''
 <table><colgroup> <col style="width: 38%;"> <col style="width: 34%;"> <col style="width: 28%;"> </colgroup>
 <thead>
-<tr>
+<tr align="center">
 <th>verbal\nKonjunktionen</th>
 <th>verbal\nAdverbien = inverse Struktur</th>
 <th>nominal\nPräpositionen</th>

@@ -155,9 +155,13 @@ String htmlContent4_1 = '''
 <p>Die Negation eines Nomens mit <strong><a title="Bestimmter Artikel" href="lernen.php?menu_id=59">bestimmten Artikel</a></strong> lautet "<strong><span class="red">nicht</span></strong>". <br> Die Negation eines Nomens mit <strong><a title="Unbestimmter Artikel" href="lernen.php?menu_id=60">unbestimmten Artikel</a></strong> lautet "<strong><span class="blue">kein-</span></strong>". <br> Die Negation eines Nomens mit <strong><a title="Nullartikel" href="lernen.php?menu_id=58">Nullartikel</a></strong> lautet "<strong><span class="blue">kein-</span></strong>". <br> Der unbestimmte Artikel wird demnach mit "<strong><span class="blue">kein-</span></strong>" verneint. Der <strong><span class="blue">Negationsartikel "kein-"</span></strong> wird wie der <strong><a title="deklination unbestimmter Artikel" href="lernen.php?menu_id=60#deklination">unbestimmte Artikel</a></strong> dekliniert. <br> <strong><span class="red">Achtung:</span></strong> Im Plural fällt der unbestimmte Artikel weg!! <span style="text-decoration:underline">Der Plural hat jedoch einen Negativartikel!!!</span></p>
 ''';
 String htmlTable4_2 = '''
-<table>
+<table><colgroup> 
+<col style="width: 25%;"> 
+<col style="width: 25%;"> 
+<col style="width: 25%;"> 
+<col style="width: 25%;"> </colgroup>
 <thead>
-<tr>
+<tr align="center">
 <th>Kasus</th>
 <th>Maskulinum</th>
 <th>Femininum</th>
@@ -215,9 +219,13 @@ String htmlContent5_1 = '''
 <p>Auch bei den <strong><a title="Indefinitpronomen" href="lernen.php?menu_id=80">Indefinitpronomen</a></strong> und <strong><a title="Adverbien" href="lernen.php?menu_id=12">Adverbien</a></strong> gibt es bestimmte Negationswörter, denen bejahende Begriffe gegenüberstehen. Folgende Tabelle gibt einen Überblick: </p>
 ''';
 String htmlTable5_2 = '''
-<table><colgroup> <col style="width: 12%;"> <col style="width: 16%;"> <col style="width: 17%;"> <col style="width: 55%;"> </colgroup>
+<table><colgroup> 
+<col style="width: 12%;"> 
+<col style="width: 16%;"> 
+<col style="width: 17%;"> 
+<col style="width: 55%;"> </colgroup>
 <thead>
-<tr>
+<tr align="center">
 <th>&nbsp;</th>
 <th>bejahend</th>
 <th>verneinend</th>

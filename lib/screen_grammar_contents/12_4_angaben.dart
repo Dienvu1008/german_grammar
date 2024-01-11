@@ -72,18 +72,18 @@ String htmlContent1_1 = '''
 String htmlTable1 = '''
 <table><colgroup> <col style="width: 30%;"> <col style="width: 10%;"> <col style="width: 10%;"> <col style="width: 38%;"> <col style="width: 12%;"> </colgroup>
 <thead>
-<tr>
+<tr align="center">
 <th>Position 1</th>
 <th><strong><span class="red">Pos. 2</span></strong></th>
 <th><strong><span class="blue">Pos. 3</span></strong></th>
 <th>Mittelfeld</th>
 <th>Satzende</th>
 </tr>
-<tr>
-<th>Angabe / <strong><span class="blue">Subjekt</span></strong></th>
+<tr align="center">
+<th>Angabe\n<strong><span class="blue">Subjekt</span></strong></th>
 <th><strong><span class="red">Verb</span></strong></th>
 <th><strong><span class="blue">Subjekt</span></strong></th>
-<th>Angabe(n) / Ergänzung</th>
+<th>Angabe(n)\nErgänzung</th>
 <th><strong><span class="red">Verb 2</span></strong></th>
 </tr>
 </thead>
@@ -191,7 +191,7 @@ String htmlContent2_2 = '''
 String htmlTable2_2 = '''
 <table><colgroup> <col style="width: 12%;"> <col style="width: 10%;"> <col style="width: 12%;"> <col style="width: 25%;"> <col style="width: 12%;"> <col style="width: 15%;"> <col style="width: 15%;"> </colgroup>
 <thead>
-<tr>
+<tr align="center">
 <th>Pos. 1 \n<strong><span class="blue">Subjekt</span></strong></th>
 <th><strong><span class="red">Pos. 2</span></strong>\n<strong><span class="red">Verb</span></strong></th>
 <th>Mittelfeld \nAngaben\n temp.</th>
@@ -258,7 +258,7 @@ String htmlContent3_1 = '''
 String htmlTable3_1 = '''
 <table><colgroup> <col style="width: 33%;"> <col style="width: 33%;"> <col style="width: 33%;"> </colgroup>
 <thead>
-<tr>
+<tr align="center">
 <th><strong><span class="blue">Position 1</span></strong></th>
 <th><strong><span class="red">Position 2</span></strong></th>
 <th><strong><span class="red">Satzende</span></strong></th>
@@ -284,13 +284,13 @@ String htmlContent3_2 = '''
 String htmlTable3_2 = '''
 <table><colgroup> <col style="width: 18%;"> <col style="width: 14%;"> <col style="width: 53%;"> <col style="width: 15%;"> </colgroup>
 <thead>
-<tr>
+<tr align="center">
 <th><strong><span class="blue">Position 1</span></strong></th>
 <th><strong><span class="red">Position 2</span></strong></th>
 <th>Mittelfeld</th>
 <th><strong><span class="red">Satzende</span></strong></th>
 </tr>
-<tr>
+<tr align="center">
 <th><strong><span class="blue">Subjekt</span></strong></th>
 <th><strong><span class="red">Verb</span></strong></th>
 <th>Ergänzungen + Angaben</th>
@@ -310,14 +310,14 @@ String htmlTable3_2 = '''
 String htmlTable3_3 = '''
 <table><colgroup> <col style="width: 10%;"> <col style="width: 14%;"> <col style="width: 18%;"> <col style="width: 43%;"> <col style="width: 15%;"> </colgroup>
 <thead align="center">
-<tr>
+<tr align="center">
 <th>Pos. 1</th>
 <th><strong><span class="red">Pos. 2</span></strong></th>
 <th><strong><span class="blue">Position 3</span></strong></th>
 <th>Mittelfeld</th>
 <th><strong><span class="red">Satzende</span></strong></th>
 </tr>
-<tr>
+<tr align="center">
 <th>Angabe</th>
 <th><strong><span class="red">Verb</span></strong></th>
 <th><strong><span class="blue">Subjekt</span></strong></th>
@@ -343,7 +343,7 @@ String htmlContent3_3 = '''
 String htmlTable3_4 = '''
 <table><colgroup> <col style="width: 20%;"> <col style="width: 20%;"> <col style="width: 20%;"> <col style="width: 20%;"> <col style="width: 20%;"> </colgroup>
 <thead>
-<tr>
+<tr align="center">
 <th><strong><a title="Bestimmte Ergänzungen" href="#bestimmte_erg">bestimmte Ergänzungen</a></strong></th>
 <th><strong><a title="Angaben" href="#angaben">Angaben</a></strong></th>
 <th><strong><a title="Unbestimmte Ergänzungen" href="#unbestimmte_erg">unbestimmte Ergänzungen</a></strong></th>
@@ -380,7 +380,7 @@ String htmlContent3_4 = '''
 String htmlTable3_5 = '''
 <table><colgroup> <col style="width: 20%;"> <col style="width: 20%;"> <col style="width: 20%;"> <col style="width: 20%;"> <col style="width: 10%;"> <col style="width: 20%;"> <col style="width: 20%;"> </colgroup>
 <thead>
-<tr>
+<tr align="center">
 <th>Satzanfang</th>
 <th><strong><span class="red">Mittelfeld</span></strong>\nbest. Erg.</th>
 <th><strong><span class="red">Mittelfeld</span></strong>\nAngaben</th>

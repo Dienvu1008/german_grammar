@@ -72,7 +72,7 @@ String htmlTable1_2 = '''
 <col style="width: 30%;"> 
 <col style="width: 10%;"> </colgroup>
 <thead>
-<tr>
+<tr align="center">
 <th>Präposition mit</th>
 <th>Wohin?</th>
 <th>Wo?</th>
@@ -120,7 +120,8 @@ String htmlContent1_3 = '''
 <li>Die Präposition <strong><span class="red">entlang</span></strong> steht hinter <span style="text-decoration:underline">dem Bezugswort</span>! <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Am Sonntag sind wir drei Stunden <span style="text-decoration:underline">den Rhein</span> <strong><span class="red">entlang</span></strong> spaziert.</li>
 ''';
 
-String title2 = 'Präpositionen, die auf die Frage "wohin" eine Antwort geben können.';
+String title2 =
+    'Präpositionen, die auf die Frage "wohin" eine Antwort geben können.';
 String htmlContent2_1 = '''
 <p><strong><span class="red">bis</span></strong> zeigt einen Endpunkt an. Wenn der Endpunkt mit Artikel benutzt wird, wird "bis" mit einer zweiten Präposition ergänzt. Diese zeigt dann den Kasus an.</p>
 
@@ -191,7 +192,8 @@ String htmlContent2_1 = '''
 <li>Fahren Sie <strong><span class="red">in die Merowingerstraße</span></strong> hinein und suchen sich dort einen Parkplatz.</li> 
 ''';
 
-String title3 = 'Präpositionen, die auf die Frage "wo" eine Antwort geben können.';
+String title3 =
+    'Präpositionen, die auf die Frage "wo" eine Antwort geben können.';
 String htmlContent3_1 = '''
 <p><strong><span class="red">an ... entlang</span></strong> zeigt eine Längsrichtung neben einer Begrenzung an.</p>
 
@@ -259,7 +261,8 @@ String htmlContent3_1 = '''
 <li>Ich wohne <strong><span class="red">in der Merowingerstraße</span></strong>.</li> 
 ''';
 
-String title4 = 'Präpositionen, die auf die Frage "woher" eine Antwort geben können.';
+String title4 =
+    'Präpositionen, die auf die Frage "woher" eine Antwort geben können.';
 String htmlContent4_1 = '''
 <p>Auf die Frage "woher" gibt es nur zwei mögliche Präpositionen:<br> Die Präposition <strong><span class="red">aus</span></strong> wird benutzt, wenn man auf eine Wo-Frage mit "in" antworten kann. <br> Die Präposition <strong><span class="red">von</span></strong> wird benutzt, wenn man auf eine Wo-Frage mit "an, auf, bei, zu" antworten kann.</p>
 

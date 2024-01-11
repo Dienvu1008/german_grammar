@@ -71,7 +71,7 @@ String htmlContent1_1 = '''
 String htmlTable1_1 = '''
 <table><colgroup> <col style="width: 49%;"> <col style="width: 51%;"> </colgroup>
 <thead>
-<tr>
+<tr align="center">
 <th>Hauptsatz</th>
 <th>Nebensatz</th>
 </tr>
@@ -126,7 +126,7 @@ String htmlContent1_2 = '''
 String htmlTable1_2 = '''
 <table><colgroup> <col style="width: 53%;"> <col style="width: 47%;"> </colgroup>
 <thead>
-<tr>
+<tr align="center">
 <th>Nebensatz</th>
 <th>Hauptsatz</th>
 </tr>
@@ -161,7 +161,7 @@ String htmlContent1_3 = '''
 String htmlTable1_3 = '''
 <table><colgroup> <col style="width: 49%;"> <col style="width: 51%;"> </colgroup>
 <thead>
-<tr>
+<tr align="center">
 <th>Fragesatz</th>
 <th>Antwortsatz = Nebensatz</th>
 </tr>
@@ -194,9 +194,9 @@ String htmlContent2_1 = '''
 <p>Eine <strong><span class="red">kausale Angabe</span></strong> kann auch mit einer <strong><a title="Nominalisierung" href="lernen.php?menu_id=20">Präposition-Nomen-Konstruktionen</a></strong> formuliert werden. Die passenden Präpositionen lauten: "<strong><span class="red">wegen</span></strong>", "<strong><span class="red">aufgrund</span></strong>", "<strong><span class="red">aus</span></strong>" und "<strong><span class="red">vor</span></strong>":</p>
 ''';
 String htmlTable2 = '''
-<table>
+<table><colgroup> <col style="width: 100%;"></colgroup>
 <thead>
-<tr>
+<tr align="center">
 <th>Hauptsatz mit einer <strong><span class="red">Präposition-Nomen-Konstruktion</span></strong> als kausale Angabe</th>
 </tr>
 </thead>
@@ -242,7 +242,7 @@ String htmlContent3_1 = '''
 String htmlTable3_1 = '''
 <table><colgroup> <col style="width: 37%;"> <col style="width: 14%;"> <col style="width: 14%;"> <col style="width: 7%;"> <col style="width: 28%;"> </colgroup>
 <thead>
-<tr>
+<tr align="center">
 <th>Hauptsatz 1\n</th>
 <th>Hauptsatz 2\nPosition 0</th>
 <th>Hauptsatz 2\nPosition 1</th>
@@ -325,7 +325,7 @@ String htmlTable4 = '''
 <col style="width: 30%;"> 
 </colgroup>
 <thead>
-<tr>
+<tr align="center">
 <th>verbal\nKonjunktionen</th>
 <th>verbal\nAdverbien = inverse Struktur</th>
 <th>nominal\nPräpositionen</th>

@@ -41,7 +41,8 @@ String htmlContent1_1 = '''
 <p>Folgende <strong>Präpositionen</strong> fordern den <strong>Akkusativ</strong>:</p>
 ''';
 String htmlTable1_2 = '''
-<table class="eins">
+<table class="eins"><colgroup> 
+<col style="width: 100%;"> </colgroup>
 <tbody>
 <tr align="center">
 <td>

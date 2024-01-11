@@ -74,7 +74,7 @@ List<CardContent> contents = [
   ),
 ];
 
-String title = 'Imperativ';
+String title = '13.8. Imperativ';
 String title1 = 'Was man über den Imperativ wissen sollte.';
 String htmlContent1 = '''
 <p>Der <strong>Imperativ</strong> wird <span style="text-decoration:underline">nur</span> benutzt, wenn man eine oder mehrere Personen <strong><span class="red">persönlich / direkt</span></strong> <strong><span class="blue">anspricht</span></strong>. Der Imperativ gilt also nur für die 2. Person Singular "<strong><span class="red">du</span></strong>", die 2. Person Plural "<strong><span class="red">ihr</span></strong>" und die Höflichkeitsform "<strong><span class="red">Sie</span></strong>". Demnach ist die 3. Person Singular " er , sie , es " <span style="text-decoration:underline">nicht möglich</span>. <br><br> Für Personen, die man duzt (du / ihr), verwendet man den <strong><span class="blue">informellen Imperativ</span></strong>. Beim informellen Imperativ lässt man das Personalpronomen weg, bei "du" zusätzlich die konjugierte Endung "<strong><span class="red">st</span></strong>".</p>
@@ -104,7 +104,7 @@ String htmlContent2 = '''
 String htmlTable2 = '''
 <table><colgroup> <col style="width: 29%;"> <col style="width: 71%;"> </colgroup>
 <thead>
-<tr>
+<tr align="center">
 <th>Funktion</th>
 <th>Beispiele</th>
 </tr>
@@ -149,7 +149,7 @@ String htmlContent3 = '''
 String htmlTable3 = '''
 <table><colgroup> <col style="width: 22%;"> <col style="width: 22%;"> <col style="width: 25%;"> <col style="width: 29%;"> </colgroup>
 <thead>
-<tr>
+<tr align="center">
 <th>Infinitiv</th>
 <th>du</th>
 <th>ihr</th>
@@ -210,7 +210,7 @@ String htmlContent4_1 = '''
 String htmlTable4 = '''
 <table><colgroup> <col style="width: 16%;"> <col style="width: 24%;"> <col style="width: 26%;"> <col style="width: 29%;"> </colgroup>
 <thead>
-<tr>
+<tr align="center">
 <th>Infinitiv</th>
 <th>du</th>
 <th>ihr</th>
@@ -261,7 +261,7 @@ String htmlContent5 = '''
 String htmlTable5 = '''
 <table><colgroup> <col style="width: 14%;"> <col style="width: 23%;"> <col style="width: 21%;"> <col style="width: 36%;"> </colgroup>
 <thead>
-<tr>
+<tr align="center">
 <th>Infinitiv</th>
 <th>du</th>
 <th>ihr</th>
@@ -304,7 +304,7 @@ String htmlContent6 = '''
 String htmlTable6 = '''
 <table><colgroup> <col style="width: 16%;"> <col style="width: 28%;"> <col style="width: 28%;"> <col style="width: 28%;"> </colgroup>
 <thead>
-<tr>
+<tr align="center">
 <th>Infinitiv</th>
 <th>du</th>
 <th>ihr</th>
@@ -343,7 +343,7 @@ String htmlContent7 = '''
 String htmlTable7 = '''
 <table><colgroup> <col style="width: 25%;"> <col style="width: 75%;"> </colgroup>
 <thead>
-<tr>
+<tr align="center">
 <th>Ersatzformen</th>
 <th>Beispiele</th>
 </tr>

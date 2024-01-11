@@ -66,7 +66,7 @@ String htmlContent1_1 = '''
 String htmlTable1_1 = '''
 <table><colgroup> <col style="width: 34%;"> <col style="width: 16%;"> <col style="width: 15%;"> <col style="width: 20%;"> <col style="width: 15%;"> </colgroup>
 <thead>
-<tr>
+<tr align="center">
 <th>Hauptsatz</th>
 <th>Nebensatz \n<strong><span class="red">Position 1</span></strong>\n<strong><span class="red">Konjunktion</span></strong></th>
 <th>Nebensatz \n<strong><span class="red">Position 2</span></strong>\n<strong><span class="red">Subjekt</span></strong></th>
@@ -112,7 +112,7 @@ String htmlContent1_2 = '''
 String htmlTable1_2 = '''
 <table><colgroup> <col style="width: 16%;"> <col style="width: 14%;"> <col style="width: 18%;"> <col style="width: 13%;"> <col style="width: 14%;"> <col style="width: 11%;"> <col style="width: 14%;"> </colgroup>
 <thead>
-<tr>
+<tr align="center">
 <th>Nebensatz \n<strong><span class="red">Position 1</span></strong>\n<strong><span class="red">Konjunktion</span></strong></th>
 <th>Nebensatz \n<strong><span class="red">Position 2</span></strong>\n<strong><span class="red">Subjekt</span></strong></th>
 <th>Nebensatz \nMittelfeld\nAng. / Erg.</th>
@@ -161,7 +161,7 @@ String htmlContent2 = '''
 String htmlTable2 = '''
 <table><colgroup> <col style="width: 8%;"> <col style="width: 11%;"> <col style="width: 18%;"> <col style="width: 14%;"> <col style="width: 16%;"> <col style="width: 33%;"> </colgroup>
 <thead>
-<tr>
+<tr align="center">
 <th>&nbsp;</th>
 <th><strong><span class="red">Konj.</span></strong></th>
 <th><strong><span class="blue">Position 1</span></strong>\n<strong><span class="blue">Subjekt</span></strong></th>
@@ -284,7 +284,7 @@ String htmlContent3 = '''
 String htmlTable3 = '''
 <table><colgroup> <col style="width: 7%;"> <col style="width: 9%;"> <col style="width: 13%;"> <col style="width: 11%;"> <col style="width: 18%;"> <col style="width: 42%;"> </colgroup>
 <thead>
-<tr>
+<tr align="center">
 <th>&nbsp;</th>
 <th><strong><span class="red">Konj.</span></strong></th>
 <th><strong><span class="blue">Pos. 1</span></strong>\n<strong><span class="blue">Subjekt</span></strong></th>

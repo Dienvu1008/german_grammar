@@ -8,400 +8,7 @@ import '../page_content.dart';
 class Satzlehre_12 extends StatelessWidget {
   const Satzlehre_12({super.key});
 
-  // @override
-  // Widget build(BuildContext context) {
-  //   final localizations = AppLocalizations.of(context);
-  //   final textTheme = Theme.of(context).textTheme;
-  //   return Expanded(
-  //     child: Scaffold(
-  //       body: Padding(
-  //         padding: const EdgeInsets.all(8.0),
-  //         child: ListView(
-  //           children: <Widget>[
-  //             Card(
-  //               child: Column(
-  //                 crossAxisAlignment: CrossAxisAlignment.start,
-  //                 children: <Widget>[
-  //                   Padding(
-  //                     padding: const EdgeInsets.only(top: 16.0, left: 16.0),
-  //                     child:
-  //                         Text('12. Satzlehre', style: textTheme.titleMedium),
-  //                   ),
-  //                   Padding(
-  //                     padding: const EdgeInsets.only(top: 10.0, left: 16.0),
-  //                     child: Text(
-  //                         'Einführung / Was man über Sätze wissen sollte.',
-  //                         style: textTheme.titleSmall),
-  //                   ),
-  //                   Padding(
-  //                       padding: const EdgeInsets.only(
-  //                           top: 10.0, left: 16.0, bottom: 10),
-  //                       child: HtmlToRichText(
-  //                         htmlString: htmlContent1_1,
-  //                         textTheme: textTheme,
-  //                       )),
-  //                   Padding(
-  //                       padding: const EdgeInsets.only(
-  //                           top: 10.0, left: 16.0, bottom: 10),
-  //                       child: HtmlTableToDartTable(
-  //                         htmlTable: htmlTable1_1,
-  //                         textTheme: textTheme,
-  //                         columnWidths: {
-  //                           0: FractionColumnWidth(1),
-  //                         },
-  //                       )),
-  //                   Padding(
-  //                       padding: const EdgeInsets.only(
-  //                           top: 10.0, left: 16.0, bottom: 10),
-  //                       child: HtmlTableToDartTable(
-  //                         htmlTable: htmlTable1_2,
-  //                         textTheme: textTheme,
-  //                         columnWidths: {
-  //                           0: FractionColumnWidth(.5),
-  //                           1: FractionColumnWidth(.5),
-  //                         },
-  //                       )),
-  //                   Padding(
-  //                       padding: const EdgeInsets.only(
-  //                           top: 10.0, left: 16.0, bottom: 10),
-  //                       child: HtmlToRichText(
-  //                         htmlString: htmlContent1_2,
-  //                         textTheme: textTheme,
-  //                       )),
-  //                 ],
-  //               ),
-  //             ),
-  //             Card(
-  //               child: Column(
-  //                 crossAxisAlignment: CrossAxisAlignment.start,
-  //                 children: <Widget>[
-  //                   Padding(
-  //                     padding: const EdgeInsets.only(
-  //                         top: 10.0, left: 16.0, bottom: 10),
-  //                     child: Text('Ergänzungen / Objekte',
-  //                         style: textTheme.titleSmall),
-  //                   ),
-  //                   Padding(
-  //                       padding: const EdgeInsets.only(
-  //                           top: 10.0, left: 16.0, bottom: 10),
-  //                       child: HtmlToRichText(
-  //                         htmlString: htmlContent2_1,
-  //                         textTheme: textTheme,
-  //                       )),
-  //                   Padding(
-  //                       padding: const EdgeInsets.only(
-  //                           top: 10.0, left: 16.0, bottom: 10),
-  //                       child: HtmlTableToDartTable(
-  //                         htmlTable: htmlTable2_1,
-  //                         textTheme: textTheme,
-  //                         columnWidths: const {
-  //                           0: FractionColumnWidth(1),
-  //                         },
-  //                       )),
-  //                   Padding(
-  //                       padding: const EdgeInsets.only(
-  //                           top: 10.0, left: 16.0, bottom: 10),
-  //                       child: HtmlTableToDartTable(
-  //                         htmlTable: htmlTable2_2,
-  //                         textTheme: textTheme,
-  //                         columnWidths: const {
-  //                           0: FractionColumnWidth(.2),
-  //                           1: FractionColumnWidth(.2),
-  //                           2: FractionColumnWidth(.15),
-  //                           3: FractionColumnWidth(.45),
-  //                         },
-  //                       )),
-  //                   Padding(
-  //                       padding: const EdgeInsets.only(
-  //                           top: 10.0, left: 16.0, bottom: 10),
-  //                       child: HtmlToRichText(
-  //                         htmlString: htmlContent2_2,
-  //                         textTheme: textTheme,
-  //                       )),
-  //                 ],
-  //               ),
-  //             ),
-  //             Card(
-  //               child: Column(
-  //                 crossAxisAlignment: CrossAxisAlignment.start,
-  //                 children: <Widget>[
-  //                   Padding(
-  //                     padding: const EdgeInsets.only(
-  //                         top: 10.0, left: 16.0, bottom: 10),
-  //                     child: Text('Angaben', style: textTheme.titleSmall),
-  //                   ),
-  //                   Padding(
-  //                       padding: const EdgeInsets.only(
-  //                           top: 10.0, left: 16.0, bottom: 10),
-  //                       child: HtmlToRichText(
-  //                         htmlString: htmlContent3_1,
-  //                         textTheme: textTheme,
-  //                       )),
-  //                   Padding(
-  //                       padding: const EdgeInsets.only(
-  //                           top: 10.0, left: 16.0, bottom: 10),
-  //                       child: HtmlTableToDartTable(
-  //                         htmlTable: htmlTable3,
-  //                         textTheme: textTheme,
-  //                         columnWidths: const {
-  //                           0: FractionColumnWidth(.12),
-  //                           1: FractionColumnWidth(.11),
-  //                           2: FractionColumnWidth(.25),
-  //                           3: FractionColumnWidth(.13),
-  //                           4: FractionColumnWidth(.12),
-  //                           5: FractionColumnWidth(.25),
-  //                         },
-  //                       )),
-  //                   Padding(
-  //                       padding: const EdgeInsets.only(
-  //                           top: 10.0, left: 16.0, bottom: 10),
-  //                       child: HtmlToRichText(
-  //                         htmlString: htmlContent3_2,
-  //                         textTheme: textTheme,
-  //                       )),
-  //                 ],
-  //               ),
-  //             ),
-  //             Card(
-  //               child: Column(
-  //                 crossAxisAlignment: CrossAxisAlignment.start,
-  //                 children: <Widget>[
-  //                   Padding(
-  //                     padding: const EdgeInsets.only(
-  //                       top: 10.0,
-  //                       left: 16.0,
-  //                     ),
-  //                     child: Text('Das Prädikat', style: textTheme.titleSmall),
-  //                   ),
-  //                   Padding(
-  //                       padding: const EdgeInsets.only(
-  //                         top: 10.0,
-  //                         left: 16.0,
-  //                       ),
-  //                       child: HtmlToRichText(
-  //                         htmlString: htmlContent4_1,
-  //                         textTheme: textTheme,
-  //                       )),
-  //                   Padding(
-  //                       padding: const EdgeInsets.only(
-  //                         top: 10.0,
-  //                         left: 16.0,
-  //                       ),
-  //                       child: HtmlTableToDartTable(
-  //                         htmlTable: htmlTable4_1,
-  //                         textTheme: textTheme,
-  //                         columnWidths: const {
-  //                           0: FractionColumnWidth(.2),
-  //                           1: FractionColumnWidth(.2),
-  //                           2: FractionColumnWidth(.6),
-  //                         },
-  //                       )),
-  //                   Padding(
-  //                       padding: const EdgeInsets.only(
-  //                         top: 10.0,
-  //                         left: 16.0,
-  //                       ),
-  //                       child: HtmlToRichText(
-  //                         htmlString: htmlContent4_2,
-  //                         textTheme: textTheme,
-  //                       )),
-  //                   Padding(
-  //                       padding: const EdgeInsets.only(
-  //                         top: 10.0,
-  //                         left: 16.0,
-  //                       ),
-  //                       child: HtmlTableToDartTable(
-  //                         htmlTable: htmlTable4_2,
-  //                         textTheme: textTheme,
-  //                         columnWidths: const {
-  //                           0: FractionColumnWidth(.18),
-  //                           1: FractionColumnWidth(.16),
-  //                           2: FractionColumnWidth(.14),
-  //                           3: FractionColumnWidth(.15),
-  //                           4: FractionColumnWidth(.16),
-  //                           5: FractionColumnWidth(.21),
-  //                         },
-  //                       )),
-  //                 ],
-  //               ),
-  //             ),
-  //             Card(
-  //               child: Column(
-  //                 crossAxisAlignment: CrossAxisAlignment.start,
-  //                 children: <Widget>[
-  //                   Padding(
-  //                     padding: const EdgeInsets.only(
-  //                       top: 10.0,
-  //                       left: 16.0,
-  //                     ),
-  //                     child: Text('Satzglieder', style: textTheme.titleSmall),
-  //                   ),
-  //                   Padding(
-  //                       padding: const EdgeInsets.only(
-  //                         top: 10.0,
-  //                         left: 16.0,
-  //                       ),
-  //                       child: HtmlToRichText(
-  //                         htmlString: htmlContent5_1,
-  //                         textTheme: textTheme,
-  //                       )),
-  //                   Padding(
-  //                       padding: const EdgeInsets.only(
-  //                         top: 10.0,
-  //                         left: 16.0,
-  //                       ),
-  //                       child: HtmlTableToDartTable(
-  //                         htmlTable: htmlTable5,
-  //                         textTheme: textTheme,
-  //                         columnWidths: const {
-  //                           0: FractionColumnWidth(.15),
-  //                           1: FractionColumnWidth(.25),
-  //                           2: FractionColumnWidth(.18),
-  //                           3: FractionColumnWidth(.2),
-  //                           4: FractionColumnWidth(.22),
-  //                         },
-  //                       )),
-  //                   Padding(
-  //                       padding: const EdgeInsets.only(
-  //                         top: 10.0,
-  //                         left: 16.0,
-  //                       ),
-  //                       child: HtmlToRichText(
-  //                         htmlString: htmlContent5_2,
-  //                         textTheme: textTheme,
-  //                       )),
-  //                 ],
-  //               ),
-  //             ),
-  //             Card(
-  //               child: Column(
-  //                 crossAxisAlignment: CrossAxisAlignment.start,
-  //                 children: <Widget>[
-  //                   Padding(
-  //                     padding: const EdgeInsets.only(
-  //                       top: 10.0,
-  //                       left: 16.0,
-  //                     ),
-  //                     child: Text('Wortgruppen', style: textTheme.titleSmall),
-  //                   ),
-  //                   Padding(
-  //                       padding: const EdgeInsets.only(
-  //                         top: 10.0,
-  //                         left: 16.0,
-  //                       ),
-  //                       child: HtmlToRichText(
-  //                         htmlString: htmlContent6_1,
-  //                         textTheme: textTheme,
-  //                       )),
-  //                   Padding(
-  //                       padding: const EdgeInsets.only(
-  //                         top: 10.0,
-  //                         left: 16.0,
-  //                       ),
-  //                       child: HtmlTableToDartTable(
-  //                         htmlTable: htmlTable6_1,
-  //                         textTheme: textTheme,
-  //                         columnWidths: const {
-  //                           0: FractionColumnWidth(.2),
-  //                           1: FractionColumnWidth(.2),
-  //                           2: FractionColumnWidth(.4),
-  //                           3: FractionColumnWidth(.2),
-  //                         },
-  //                       )),
-  //                   Padding(
-  //                       padding: const EdgeInsets.only(
-  //                         top: 10.0,
-  //                         left: 16.0,
-  //                       ),
-  //                       child: HtmlToRichText(
-  //                         htmlString: htmlContent6_2,
-  //                         textTheme: textTheme,
-  //                       )),
-  //                   Padding(
-  //                       padding: const EdgeInsets.only(
-  //                         top: 10.0,
-  //                         left: 16.0,
-  //                       ),
-  //                       child: HtmlTableToDartTable(
-  //                         htmlTable: htmlTable6_2,
-  //                         textTheme: textTheme,
-  //                         columnWidths: const {
-  //                           0: FractionColumnWidth(.15),
-  //                           1: FractionColumnWidth(.15),
-  //                           2: FractionColumnWidth(.15),
-  //                           3: FractionColumnWidth(.2),
-  //                           4: FractionColumnWidth(.2),
-  //                           5: FractionColumnWidth(.15),
-  //                         },
-  //                       )),
-  //                   Padding(
-  //                       padding: const EdgeInsets.only(
-  //                         top: 10.0,
-  //                         left: 16.0,
-  //                       ),
-  //                       child: HtmlToRichText(
-  //                         htmlString: htmlContent6_3,
-  //                         textTheme: textTheme,
-  //                       )),
-  //                   Padding(
-  //                       padding: const EdgeInsets.only(
-  //                         top: 10.0,
-  //                         left: 16.0,
-  //                       ),
-  //                       child: HtmlTableToDartTable(
-  //                         htmlTable: htmlTable6_3,
-  //                         textTheme: textTheme,
-  //                         columnWidths: const {
-  //                           0: FractionColumnWidth(.14),
-  //                           1: FractionColumnWidth(.14),
-  //                           2: FractionColumnWidth(.72),
-  //                         },
-  //                       )),
-  //                   Padding(
-  //                       padding: const EdgeInsets.only(
-  //                         top: 10.0,
-  //                         left: 16.0,
-  //                       ),
-  //                       child: HtmlToRichText(
-  //                         htmlString: htmlContent6_4,
-  //                         textTheme: textTheme,
-  //                       )),
-  //                 ],
-  //               ),
-  //             ),
-  //             Card(
-  //               child: Column(
-  //                 crossAxisAlignment: CrossAxisAlignment.start,
-  //                 children: <Widget>[
-  //                   Padding(
-  //                     padding: const EdgeInsets.only(
-  //                       top: 10.0,
-  //                       left: 16.0,
-  //                     ),
-  //                     child: Text('Übersicht Satzarten',
-  //                         style: textTheme.titleSmall),
-  //                   ),
-  //                   Padding(
-  //                       padding: const EdgeInsets.only(
-  //                         top: 10.0,
-  //                         left: 16.0,
-  //                       ),
-  //                       child: HtmlToRichText(
-  //                         htmlString: htmlContent7,
-  //                         textTheme: textTheme,
-  //                       )),
-  //                 ],
-  //               ),
-  //             ),
-  //           ],
-  //         ),
-  //       ),
-  //     ),
-  //   );
-  // }
-  
-
-    @override
+  @override
   Widget build(BuildContext context) {
     return Expanded(
       child: Scaffold(
@@ -474,7 +81,7 @@ List<CardContent> contents = [
       CardElement(type: ElementType.htmlContent, value: htmlContent6_4),
     ],
   ),
-    CardContent(
+  CardContent(
     elements: [
       CardElement(type: ElementType.cardTitle, value: title7),
       CardElement(type: ElementType.htmlContent, value: htmlContent7),
@@ -492,7 +99,8 @@ String htmlContent1_1 = '''
 ''';
 
 String htmlTable1_1 = '''
-<table class="eins">
+<table class="eins"><colgroup> 
+<col style="width: 100%;"> </colgroup>
 <tbody>
 <tr align="center">
 <td>
@@ -505,8 +113,11 @@ String htmlTable1_1 = '''
 
 String htmlTable1_2 = '''
 <table class="eins">
+<colgroup>  
+<col style="width: 50%;">
+<col style="width: 50%;"> </colgroup>
 <thead>
-<tr>
+<tr align="center">
 <th>Subjekt</th>
 <th>Prädikat</th>
 </tr>
@@ -536,7 +147,8 @@ String htmlContent2_1 = '''
 ''';
 
 String htmlTable2_1 = '''
-<table class="eins">
+<table class="eins"><colgroup> 
+<col style="width: 100%;"> </colgroup>
 <tbody>
 <tr align="center">
 <td>
@@ -556,7 +168,7 @@ String htmlTable2_2 = '''
 <col style="width: 45%;"> 
 </colgroup>
 <thead>
-<tr>
+<tr align="center">
 <th>Ergänzung</th>
 <th><strong><span class="red">Subjekt \n</span></strong><strong><span class="red">Nominativ-Erg.</span></strong></th>
 <th><strong><span class="blue">Prädikat \n</span></strong><strong><span class="blue">Verb</span></strong></th>
@@ -629,9 +241,15 @@ String htmlContent3_1 = '''
 ''';
 
 String htmlTable3 = '''
-<table><colgroup> <col style="width: 12%;"> <col style="width: 11%;"> <col style="width: 28%;"> <col style="width: 13%;"> <col style="width: 14%;"> <col style="width: 20%;"> </colgroup>
+<table><colgroup> 
+<col style="width: 12%;"> 
+<col style="width: 11%;"> 
+<col style="width: 28%;"> 
+<col style="width: 13%;"> 
+<col style="width: 14%;"> 
+<col style="width: 20%;"> </colgroup>
 <thead>
-<tr>
+<tr align="center">
 <th> - </th>
 <th> - </th>
 <th>Position 1 \nAngabe</th>
@@ -742,7 +360,7 @@ String htmlContent4_1 = '''
 String htmlTable4_1 = '''
 <table><colgroup> <col style="width: 20%;"> <col style="width: 20%;"> <col style="width: 60%;"> </colgroup>
 <thead>
-<tr>
+<tr align="center">
 <th><strong><span class="blue">Position 1</span></strong></th>
 <th><strong><span class="red">Position 2</span></strong></th>
 <th>Satzende</th>
@@ -781,7 +399,7 @@ String htmlContent4_2 = '''
 String htmlTable4_2 = '''
 <table><colgroup> <col style="width: 18%;"> <col style="width: 16%;"> <col style="width: 14%;"> <col style="width: 15;"> <col style="width: 16%;"> <col style="width: 21%;"> </colgroup>
 <thead>
-<tr>
+<tr align="center">
 <th>&nbsp;</th>
 <th>Position 1 \nAng. / Erg. </th>
 <th><strong><span class="red">Position 2 \nVerb 1 </span></strong></th>
@@ -887,9 +505,14 @@ String htmlContent5_1 = '''
 ''';
 
 String htmlTable5 = '''
-<table><colgroup> <col style="width: 15%;"> <col style="width: 25%;"> <col style="width: 18%;"> <col style="width: 20%;"> <col style="width: 22%;"> </colgroup>
+<table><colgroup> 
+<col style="width: 15%;"> 
+<col style="width: 25%;"> 
+<col style="width: 18%;"> 
+<col style="width: 20%;"> 
+<col style="width: 22%;"> </colgroup>
 <thead>
-<tr>
+<tr align="center">
 <th>Satzart</th>
 <th>Position 1 \nAngabe / Erg. </th>
 <th><strong><span class="red">Position 2 \nVerb</span></strong></th>
@@ -953,9 +576,13 @@ String htmlContent6_1 = '''
 <p>Wir wissen bereits, dass man <a title="Einführung" href="#einfuehrung">drei Satzglieder</a> unterscheidet: <strong><a title="Prädikat" href="#praedikat">Prädikat</a></strong>, <strong><a title="Ergänzungen" href="#ergaenzungen">Ergänzungen</a></strong> und <strong><a title="Angaben" href="#angaben">Angaben</a></strong>. Ein einzelner Satz kann aus mehreren Satzgliedern bestehen. Das Verb "<strong><span class="red">warten</span></strong>" hat beispielsweise 2 Ergänzungen (<strong><a title="Nominativ-Ergänzung" href="lernen.php?menu_id=38">Nominativ-</a></strong> + <strong><a title="Präpositional-Ergänzung" href="lernen.php?menu_id=45">Präpositional-Ergänzung</a></strong>):</p>
 ''';
 String htmlTable6_1 = '''
-<table>
+<table><colgroup> 
+<col style="width: 25%;"> 
+<col style="width: 25%;"> 
+<col style="width: 25%;"> 
+<col style="width: 25%;"> </colgroup>
 <thead>
-<tr>
+<tr align="center">
 <th><strong><span class="blue">Position 1</span></strong></th>
 <th><strong><span class="red">Position 2</span></strong></th>
 <th>Mittelfeld</th>
@@ -984,7 +611,7 @@ String htmlContent6_2 = '''
 String htmlTable6_2 = '''
 <table><colgroup> <col style="width: 16%;"> <col style="width: 16%;"> <col style="width: 16%;"> <col style="width: 16%;"> <col style="width: 18%;"> <col style="width: 16%;"> </colgroup>
 <thead>
-<tr>
+<tr align="center">
 <th>Position 1</th>
 <th><strong><span class="red">Position 2</span></strong></th>
 <th><strong><span class="blue">Position 3</span></strong></th>
@@ -1019,7 +646,7 @@ String htmlContent6_3 = '''
 String htmlTable6_3 = '''
 <table><colgroup> <col style="width: 14%;"> <col style="width: 14%;"> <col style="width: 72%;"> </colgroup>
 <thead>
-<tr>
+<tr align="center">
 <th>Position 1</th>
 <th>Angabe</th>
 <td>Eine halbe Stunde länger als vorgesehen</td>

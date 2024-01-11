@@ -57,9 +57,12 @@ String htmlContent1_1 = '''
 <p>Possessivpronomen geben eine <strong><span class="red">Zugehörigkeit</span></strong> oder einen <strong><span class="red">Besitz</span></strong> an. Das Possessivpronomen trifft häufig als <strong><a title="Possessivartikel" href="lernen.php?menu_id=61">Nomenbegleiter, in Funktion eines Artikels</a></strong> auf und muss entsprechend dekliniert werden.</p>
 ''';
 String htmlTable1_2 = '''
-<table><colgroup> <col style="width: 15%;"> <col style="width: 25%;"> <col style="width: 60%;"> </colgroup>
+<table><colgroup> 
+<col style="width: 15%;"> 
+<col style="width: 25%;"> 
+<col style="width: 60%;"> </colgroup>
 <thead>
-<tr>
+<tr align="center">
 <th>&nbsp;</th>
 <th>Frage</th>
 <th>mögliche Antworten</th>
@@ -112,9 +115,12 @@ String htmlContent2_1 = '''
 <li><strong><span class="red">neutral</span></strong> = <span style="text-decoration:underline">das</span> Kind / <span style="text-decoration:underline">das</span> Bett / <span style="text-decoration:underline">das</span> Pferd = es = Possessivpronomen = sein</li>
 ''';
 String htmlTable2_1 = '''
-<table><colgroup> <col style="width: 25%;"> <col style="width: 25%;"> <col style="width: 50%;"> </colgroup>
+<table><colgroup> 
+<col style="width: 25%;"> 
+<col style="width: 25%;"> 
+<col style="width: 50%;"> </colgroup>
 <thead>
-<tr>
+<tr align="center">
 <th>Personalpronomen<br>Nominativ</th>
 <th>Possessivpronomen</th>
 <th>Beispiel</th>
@@ -204,9 +210,14 @@ String htmlContent3_1 = '''
 <p>Steht das Possessivpronomen anstelle eines Nomens muss es dekliniert werden. Die Deklination zeigt Kasus, Genus und Numerus an.</p>
 ''';
 String htmlTable3_2 = '''
-<table>
+<table><colgroup> 
+<col style="width: 20%;"> 
+<col style="width: 20%;"> 
+<col style="width: 20%;"> 
+<col style="width: 20%;">
+<col style="width: 20%;"> </colgroup>
 <thead>
-<tr>
+<tr align="center">
 <th>Kasus</th>
 <th>Maskulinum</th>
 <th>Femininum</th>

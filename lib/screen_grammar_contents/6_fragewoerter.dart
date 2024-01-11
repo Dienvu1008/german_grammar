@@ -71,7 +71,7 @@ String htmlTable1_2_1 = '''
 <col style="width: 5%;">  
 <col style="width: 35%;"> </colgroup>
 <thead>
-<tr>
+<tr align="center">
 <th >Ja-/Nein-Frage</th>
 <th>-</th>
 <th >Antwortsatz</th>
@@ -88,9 +88,9 @@ String htmlTable1_2 = '''
 <col style="width: 15%;"> 
 <col style="width: 20%;"> </colgroup>
 <thead>
-<tr>
-<th>Position 1 / <strong><span class="red">Verb</span></strong></th>
-<th>Pos. 2 / Subj.</th>
+<tr align="center">
+<th>Position 1\n<strong><span class="red">Verb</span></strong></th>
+<th>Position 2\nSubj.</th>
 <th>Satzende</th>
 <th>-</th>
 <th>Ja / Nein,</th>
@@ -134,7 +134,7 @@ String htmlTable1_4_1 = '''
 <col style="width: 5%;"> 
 <col style="width: 35%;"> </colgroup>
 <thead>
-<tr>
+<tr align="center">
 <th >W-Frage</th>
 <th>-</th>
 <th>Antwortsatz</th>
@@ -150,9 +150,9 @@ String htmlTable1_4 = '''
 <col style="width: 5%;"> 
 <col style="width: 35%;"> </colgroup>
 <thead>
-<tr>
-<th>Position 1 / <strong><span class="red">W-Frage</span></strong></th>
-<th>Pos. 2 / Verb.</th>
+<tr align="center">
+<th>Position 1\n<strong><span class="red">W-Frage</span></strong></th>
+<th>Position 2\nVerb.</th>
 <th>Satzende</th>
 <th>-</th>
 <th>Information</th>
@@ -191,7 +191,7 @@ String htmlContent2_1 = '''
 String htmlTable2_2 = '''
 <table><colgroup> <col style="width: 17%;"> <col style="width: 16%;"> <col style="width: 12%;"> <col style="width: 14%;"> <col style="width: 13%;"> <col style="width: 3%;"> <col style="width: 25%;"> </colgroup>
 <thead>
-<tr>
+<tr align="center">
 <th>Ergänzung</th>
 <th><strong><span class="red">W-Frage</span></strong></th>
 <th>Verb</th>
@@ -310,7 +310,7 @@ String htmlContent2_3 = '''
 String htmlTable2_4 = '''
 <table><colgroup> <col style="width: 15%;"> <col style="width: 12%;"> <col style="width: 15%;"> <col style="width: 12%;"> <col style="width: 15%;"> <col style="width: 2%;"> <col style="width: 29%;"> </colgroup>
 <thead>
-<tr>
+<tr align="center">
 <th>Ergänzung</th>
 <th><strong><span class="red">W-Frage</span></strong></th>
 <th>Verb</th>
@@ -393,7 +393,7 @@ String htmlContent2_5 = '''
 String htmlTable2_6 = '''
 <table><colgroup> <col style="width: 14%;"> <col style="width: 20%;"> <col style="width: 13%;"> <col style="width: 11%;"> <col style="width: 15%;"> <col style="width: 2%;"> <col style="width: 25%;"> </colgroup>
 <thead>
-<tr>
+<tr align="center">
 <th>Adv. / Erg.</th>
 <th><strong><span class="red">W-Frage</span></strong></th>
 <th>Verb</th>
@@ -512,7 +512,7 @@ String htmlContent2_7 = '''
 String htmlTable2_8 = '''
 <table><colgroup> <col style="width: 14%;"> <col style="width: 14%;"> <col style="width: 13%;"> <col style="width: 17%;"> <col style="width: 15%;"> <col style="width: 2%;"> <col style="width: 25%;"> </colgroup>
 <thead>
-<tr>
+<tr align="center">
 <th>Adv. / Erg.</th>
 <th><strong><span class="red">W-Frage</span></strong></th>
 <th>Verb</th>
@@ -559,7 +559,7 @@ String htmlContent2_9 = '''
 String htmlTable2_10 = '''
 <table><colgroup> <col style="width: 14%;"> <col style="width: 18%;"> <col style="width: 9%;"> <col style="width: 11%;"> <col style="width: 17%;"> <col style="width: 2%;"> <col style="width: 29%;"> </colgroup>
 <thead>
-<tr>
+<tr align="center">
 <th>Ergänzung</th>
 <th><strong><span class="red">W-Frage</span></strong></th>
 <th>Verb</th>
@@ -633,7 +633,7 @@ String htmlContent2_11 = '''
 String htmlTable2_12 = '''
 <table><colgroup> <col style="width: 14%;"> <col style="width: 22%;"> <col style="width: 11%;"> <col style="width: 11%;"> <col style="width: 16%;"> <col style="width: 2%;"> <col style="width: 24%;"> </colgroup>
 <thead>
-<tr>
+<tr align="center">
 <th>Ergänzung</th>
 <th><strong><span class="red">W-Frage</span></strong></th>
 <th>Verb</th>
@@ -707,7 +707,7 @@ String htmlContent2_13 = '''
 String htmlTable2_14 = '''
 <table><colgroup> <col style="width: 14%;"> <col style="width: 17%;"> <col style="width: 13%;"> <col style="width: 14%;"> <col style="width: 14%;"> <col style="width: 2%;"> <col style="width: 26%;"> </colgroup>
 <thead>
-<tr>
+<tr align="center">
 <th>Ergänzung</th>
 <th><strong><span class="red">W-Frage</span></strong></th>
 <th>Verb</th>

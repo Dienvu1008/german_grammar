@@ -95,9 +95,14 @@ String htmlContent1_1 = '''
 <p><strong><span class="red">Relativpronomen</span></strong> werden gebraucht, um <strong>Relativsätze</strong> einzuleiten. Relativsätze sind <strong><a title="Nebensätze" href="lernen.php?menu_id=91">Nebensätze</a></strong>, das konjugierte Verb wird ans Satzende gestellt. <br> <strong><span class="red">Relativsätze</span></strong> gehören zu den <strong><a title="Attribute" href="lernen.php?menu_id=18#nomen">Rechtsattributen</a></strong> eines Nomens, stehen also hinter dem Nomen. Nomenattribute geben dem Nomen eine <span style="text-decoration:underline">zusätzliche Erklärung oder eine weitere Information</span>. Relativsätze beziehen sich in der Regel <span style="text-decoration:underline">auf ein Nomen</span>, das so genannte <strong><span class="blue">Bezugswort</span></strong>, und werden in der Regel direkt <span style="text-decoration:underline">dahinter</span> gestellt. Daher können sie mitten im Satz oder am Ende eines Satzes gestellt werden. Relativpronomen werden wie folgt dekliniert:</p>
 ''';
 String htmlTable1_2 = '''
-<table>
+<table><colgroup> 
+<col style="width: 20%;"> 
+<col style="width: 20%;"> 
+<col style="width: 20%;"> 
+<col style="width: 20%;">
+<col style="width: 20%;"> </colgroup>
 <thead>
-<tr>
+<tr align="center">
 <th>Kasus</th>
 <th>Maskulinum</th>
 <th>Femininum</th>

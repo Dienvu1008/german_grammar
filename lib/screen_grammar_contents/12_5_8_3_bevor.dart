@@ -69,7 +69,7 @@ String htmlContent1_1 = '''
 String htmlTable1_1 = '''
 <table><colgroup> <col style="width: 51%;"> <col style="width: 49%;"> </colgroup>
 <thead>
-<tr>
+<tr align="center">
 <th>Hauptsatz</th>
 <th>Nebensatz</th>
 </tr>
@@ -100,7 +100,7 @@ String htmlContent1_2 = '''
 String htmlTable1_2 = '''
 <table><colgroup> <col style="width: 53%;"> <col style="width: 47%;"> </colgroup>
 <thead>
-<tr>
+<tr align="center">
 <th>Nebensatz</th>
 <th>Hauptsatz</th>
 </tr>
@@ -131,9 +131,9 @@ String htmlContent2_1 = '''
 <p>Eine <strong><span class="red">temporale Angabe</span></strong> kann auch mit einer <strong><a title="Nominalisierung" href="nominalisierung.html" target="_blank">Präposition-Nomen-Konstruktionen</a></strong> formuliert werden. Die passende Präposition lautet: "<strong><span class="red">vor</span></strong>":</p>
 ''';
 String htmlTable2 = '''
-<table>
+<table><colgroup> <col style="width: 100%;"> </colgroup>
 <thead>
-<tr>
+<tr align="center">
 <th>Hauptsatz mit einer <strong><span class="red">Präposition-Nomen-Konstruktion</span></strong> als temporale Angabe</th>
 </tr>
 </thead>
@@ -167,9 +167,14 @@ String htmlContent3_1 = '''
 <p>Alternativ können die temporalen Adverbien "davor", "vorher" oder "zuvor" verwendet werden. Diese Adverbien verlangen eine inverse Struktur. Sie können auf Position 1 oder 3 gestellt werden.</p>
 ''';
 String htmlTable3_1 = '''
-<table><colgroup> <col style="width: 34%;"> <col style="width: 9%;"> <col style="width: 11%;"> <col style="width: 29%;"> <col style="width: 10%;"> </colgroup>
+<table><colgroup> 
+<col style="width: 41%;"> 
+<col style="width: 9%;"> 
+<col style="width: 11%;"> 
+<col style="width: 29%;"> 
+<col style="width: 10%;"> </colgroup>
 <thead>
-<tr>
+<tr align="center">
 <th>Hauptsatz 1</th>
 <th>Hauptsatz 2\nPos. 1</th>
 <th>Hauptsatz 2\nVerb</th>
@@ -238,9 +243,9 @@ String htmlTable3_2 = '''
 
 String title4 = 'Übersicht';
 String htmlTable4 = '''
-<table><colgroup> <col style="width: 33%;"> <col style="width: 33%;"> <col style="width: 33%;"> </colgroup>
+<table><colgroup> <col style="width: 34%;"> <col style="width: 33%;"> <col style="width: 33%;"> </colgroup>
 <thead>
-<tr>
+<tr align="center">
 <th>verbal\nKonjunktionen</th>
 <th>verbal\nAdverbien = inverse Struktur</th>
 <th>nominal\nPräpositionen</th>

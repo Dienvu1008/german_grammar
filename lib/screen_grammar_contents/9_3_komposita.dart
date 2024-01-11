@@ -60,7 +60,7 @@ String htmlContent1_1 = '''
 <li><strong><span class="red">Nomen + Nomen</span></strong> <br><br>
 ''';
 String htmlTable1_2 = '''
-<table>
+<table><colgroup> <col style="width: 50%;"> <col style="width: 50%;"> </colgroup>
 <tbody>
 <tr>
 <td>der Tisch + <span style="text-decoration:underline">die</span> Decke</td>

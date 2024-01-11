@@ -114,9 +114,14 @@ String htmlContent2 = '''
 <p>Ein <strong><span class="red">Aussagesatz</span></strong> ist die Satzart, die am häufigsten vorkommt. Aussagesätze enden stets mit einem <strong><span class="red">Punkt</span></strong>. Das <strong><a title="Konjugation" href="lernen.php?menu_id=6#konjugation">konjugierte Verb</a></strong> steht immer auf <strong><span class="red">Position 2</span></strong>. Wenn das Verb aus zwei Teilen besteht (<strong><a title="Trennbare Verben" href="lernen.php?menu_id=30">trennbare Verben</a></strong>) oder eine Verbindung mit anderen Verben eingeht (<strong><a title="Modalverben" href="lernen.php?menu_id=31">Modalverben</a></strong>, <strong><a title="Perfekt" href="lernen.php?menu_id=107">Perfekt</a></strong>, <strong><a title="Passiv" href="lernen.php?menu_id=35">Passiv</a></strong>, ...) werden die restlichen <strong><a title="Prädikat" href="lernen.php?menu_id=19#praedikat">Prädikatsteile</a></strong> ans Satzende gestellt (<strong><a title="Subjekt" href="lernen.php?menu_id=19#ergaenzungen">Subjekt</a></strong> auf Position 1 oder 3 ist rot markiert):</p>
 ''';
 String htmlTable2 = '''
-<table><colgroup> <col style="width: 22%;"> <col style="width: 15%;"> <col style="width: 11%;"> <col style="width: 28%;"> <col style="width: 24%;"> </colgroup>
+<table><colgroup> 
+<col style="width: 22%;"> 
+<col style="width: 15%;"> 
+<col style="width: 11%;"> 
+<col style="width: 28%;"> 
+<col style="width: 24%;"> </colgroup>
 <thead>
-<tr>
+<tr align="center">
 <th>Verbgruppe</th>
 <th><a title="Position 1" href="lernen.php?menu_id=19#satzglieder">Position 1 \nAng./Erg.</a></th>
 <th><strong><span class="blue">Pos. 2 \nVerb 1</span></strong></th>
@@ -225,15 +230,19 @@ String htmlContent3_1 = '''
 <p>In einer <strong><span class="red">Entscheidungsfrage</span></strong>, auch <strong><span class="red">Ja-/Nein-Frage</span></strong> genannt, möchte die fragende Person von seinem Gesprächspartner eine <span style="text-decoration:underline">Zustimmung</span> oder eine <span style="text-decoration:underline">Ablehnung</span> zu seiner Frage erhalten. Eine Entscheidungsfrage wird mit einem <strong><span class="red">Fragezeichen</span></strong> abgeschlossen. In einer <strong><span class="red">Ja-/Nein-Frage</span></strong> steht das Verb immer auf <strong><span class="blue">Position 1</span></strong>, das Subjekt auf <strong><span class="red">Position 2</span></strong>. Weitere <strong><a title="Prädikat" href="lernen.php?menu_id=19#praedikat">Prädikatsteile</a></strong> werden wie gehabt ans Satzende gestellt.</p>
 ''';
 String htmlTable3_1 = '''
-<table><colgroup> <col style="width: 20%;"> <col style="width: 22%;"> <col style="width: 33%;"> <col style="width: 25%;"> </colgroup>
+<table><colgroup> 
+<col style="width: 20%;"> 
+<col style="width: 22%;"> 
+<col style="width: 33%;"> 
+<col style="width: 25%;"> </colgroup>
 <thead>
-<tr>
+<tr align="center">
 <th><strong><span class="blue">Position 1</span></strong></th>
 <th><strong><span class="red">Position 2</span></strong></th>
 <th>Mittelfeld</th>
 <th><strong><span class="blue">Satzende</span></strong></th>
 </tr>
-<tr>
+<tr align="center">
 <th><strong><span class="blue">Verb 1</span></strong></th>
 <th><strong><span class="red">Subjekt</span></strong></th>
 <th>Angaben / Ergänzungen</th>
@@ -288,16 +297,21 @@ String htmlContent3_2 = '''
 <p>Die <strong><span class="red">Ergänzungsfrage</span></strong>, auch <strong><span class="red">W-Frage</span></strong> genannt, ist eine offene Frage, das heißt, dass die fragende Person Informationen zu einem Sachverhalt wünscht. In einer <strong><span class="red">W-Frage</span></strong> steht das Fragewort immer auf <strong><span class="red">Position 1</span></strong>, das <strong><span class="blue">Verb auf Position 2</span></strong> und das Subjekt auf <strong><span class="red">Position 3</span></strong>. Weitere <strong><a title="Prädikat" href="lernen.php?menu_id=19#praedikat">Prädikatsteile</a></strong> werden wie gehabt ans Satzende gestellt.</p>
 ''';
 String htmlTable3_2 = '''
-<table><colgroup> <col style="width: 18%;"> <col style="width: 18%;"> <col style="width: 20%;"> <col style="width: 21%;"> <col style="width: 23%;"> </colgroup>
+<table><colgroup> 
+<col style="width: 18%;"> 
+<col style="width: 18%;"> 
+<col style="width: 20%;">
+ <col style="width: 21%;"> 
+ <col style="width: 23%;"> </colgroup>
 <thead>
-<tr>
+<tr align="center">
 <th>Position 1</th>
 <th><strong><span class="blue">Position 2</span></strong></th>
 <th><strong><span class="red">Position 3</span></strong></th>
 <th><a title="Angaben" href="lernen.php?menu_id=123">Mittelfeld</a></th>
 <th><strong><span class="blue">Satzende</span></strong></th>
 </tr>
-<tr>
+<tr align="center">
 <th>W-Frage</th>
 <th><strong><span class="blue">Verb 1</span></strong></th>
 <th><strong><span class="red">Subjekt</span></strong></th>
@@ -356,13 +370,13 @@ String htmlContent4_1 = '''
 String htmlTable4_1 = '''
 <table><colgroup> <col style="width: 20%;"> <col style="width: 20%;"> <col style="width: 40%;"> <col style="width: 20%;"> </colgroup>
 <thead>
-<tr>
+<tr align="center">
 <th><strong><span class="blue">Position 1</span></strong></th>
 <th><strong><span class="red">Position 2</span></strong></th>
 <th>Mittelfeld</th>
 <th><strong><span class="blue">Satzende</span></strong></th>
 </tr>
-<tr>
+<tr align="center">
 <th><strong><span class="blue">Verb 1</span></strong></th>
 <th><strong><span class="red">Subjekt</span></strong></th>
 <th>Angaben / Ergänzungen</th>
@@ -416,9 +430,13 @@ String htmlContent4_2 = '''
 <p>Ein Aufforderungssatz kann auch in der Form eines <a title="Aussagesätze" href="#aussagesaetze">Aussagesatzes</a> geäußert werden. Die Aufforderung erhält dadurch eine noch stärkere Befehlsform. Wird die Befehlsform benutzt, wird schneller und lauter gesprochen. Der Aussagesatz endet in diesen Fällen mit einem <strong><span class="red">Ausrufezeichen</span></strong>.</p>
 ''';
 String htmlTable4_2 = '''
-<table><colgroup> <col style="width: 20%;"> <col style="width: 20%;"> <col style="width: 40%;"> <col style="width: 20%;"> </colgroup>
+<table><colgroup> 
+<col style="width: 20%;"> 
+<col style="width: 20%;"> 
+<col style="width: 40%;"> 
+<col style="width: 20%;"> </colgroup>
 <thead>
-<tr>
+<tr align="center">
 <th><strong><span class="red">Position 1</span></strong></th>
 <th><strong><span class="blue">Position 2</span></strong></th>
 <th>Mittelfeld</th>
@@ -460,9 +478,14 @@ String htmlContent5_1 = '''
 <p>In einem <strong><a title="Nebensätze" href="lernen.php?menu_id=91">Nebensatz</a></strong> wird das <strong><span class="red">konjugierte Verb</span></strong> (im Hauptsatz = Position 2) ans Satzende gestellt, also auch <span style="text-decoration:underline">hinter anderweitigen <strong><a title="Prädikat" href="lernen.php?menu_id=19#praedikat">Prädikatsteilen</a></strong></span>. Das Subjekt wird direkt hinter die <strong><a title="Unterordnende Konjunktion" href="lernen.php?menu_id=89#unterordnende_konj">Konjunktion</a></strong> gestellt, die den Nebensatz einleitet. Alle anderen <strong><a title="Satzglieder" href="lernen.php?menu_id=19#satzglieder">Satzglieder</a></strong> bleiben unverändert und entsprechen den Satzgliedern eines Hauptsatzes. Nebensätze können nicht für sich allein stehen, sondern sind einem Hauptsatz untergeordnet. Sie sind von ihm in gewisser Weise abhängig. Nebensätze werden durch <strong><a title="Unterordnende Konjunktion" href="lernen.php?menu_id=89#unterordnende_konj">bestimmte einleitende Wörter</a></strong> <strong><span class="red">bestimmte einleitende Wörter</span></strong> ( = Konjunktionen: dass, nachdem, ob, weil, ...) mit dem Hauptsatz verknüpft.</p>
 ''';
 String htmlTable5 = '''
-<table><colgroup> <col style="width: 28%;"> <col style="width: 15%;"> <col style="width: 14%;"> <col style="width: 20;"> <col style="width: 23%;"> </colgroup>
+<table><colgroup> 
+<col style="width: 28%;"> 
+<col style="width: 15%;"> 
+<col style="width: 14%;"> 
+<col style="width: 20;"> 
+<col style="width: 23%;"> </colgroup>
 <thead>
-<tr>
+<tr align="center">
 <th >Hauptsatz</th>
 <th><strong><span class="red">Nebensatz \nPosition 1 \nKonjunktion</span></strong></th>
 <th><strong><span class="red">Nebensatz \nPosition 2 \nSubjekt</span></strong></th>
@@ -539,9 +562,14 @@ String htmlContent6_1 = '''
 <p>Eine Sonderform bilden die <strong><a title="Infinitivsätze" href="lernen.php?menu_id=49">Infinitivsätze</a></strong>. Infinitivsätze sind <strong><span class="red">subjektlose Nebensätze</span></strong>, in denen das Verb im <strong><span class="red">Infinitiv</span></strong> mit dem Zusatz " <strong><span class="red">zu</span></strong> " ans Satzende gestellt wird. Nur <strong><a title="Infinitivkonstruktionen einleitende Verben" href="lernen.php?menu_id=49#verben_mit_infinitivkonstruktion">bestimmte Verben</a></strong> im Hauptsatz können einen Infinitivsatz einleiten. Hauptsatz und Infinitivsatz sollten mit einem <strong><span class="red">Komma</span></strong> getrennt werden, ist aber insbesondere bei kurzen Infinitivsätzen (bei nur einer Ergänzung + Infinitiv) fakultativ.</p>
 ''';
 String htmlTable6 = '''
-<table><colgroup> <col style="width: 24%;"> <col style="width: 16%;"> <col style="width: 14%;"> <col style="width: 26%;"> <col style="width: 20%;"> </colgroup>
+<table><colgroup> 
+<col style="width: 24%;"> 
+<col style="width: 16%;"> 
+<col style="width: 14%;"> 
+<col style="width: 26%;"> 
+<col style="width: 20%;"> </colgroup>
 <thead>
-<tr>
+<tr align="center">
 <th>Hauptsatz</th>
 <th>fällt weg \n<strong><span class="red">Position 1</span></strong>\n<strong><span class="red">Konjunktion</span></strong></th>
 <th>fällt weg \n<strong><span class="red">Position 2</span></strong>\n<strong><span class="red">Subjekt</span></strong></th>
@@ -604,9 +632,14 @@ String htmlContent7_1 = '''
 <p>Eine ähnliche Form wie die <a title="Infinitivsätze" href="#infinitivsaetze">Infinitivsätze</a> bilden die <strong><a title="Infinitivkonstruktionen" href="lernen.php?menu_id=51">Infinitivkonstruktionen</a></strong>. Infinitivkonstruktionen sind ebenfalls <strong><span class="red">subjektlose Nebensätze</span></strong>, werden jedoch mit einer <strong><span class="red">Konjunktion</span></strong> eingeleitet. Hauptsatz und Infinitivkonstruktion werden mit einem <strong><span class="red">Komma</span></strong> getrennt.</p>
 ''';
 String htmlTable7 = '''
-<table><colgroup> <col style="width: 32%;"> <col style="width: 10%;"> <col style="width: 10%;"> <col style="width: 25%;"> <col style="width: 23%;"> </colgroup>
+<table><colgroup> 
+<col style="width: 32%;"> 
+<col style="width: 10%;"> 
+<col style="width: 10%;"> 
+<col style="width: 25%;"> 
+<col style="width: 23%;"> </colgroup>
 <thead>
-<tr>
+<tr align="center">
 <th>Hauptsatz</th>
 <th>Infinitivkonstruktion \n<strong><span class="red">Pos. 1</span></strong> \n<strong><span class="red">Konj.</span></strong></th>
 <th>Infinitivkonstruktion \n<strong><span class="red">Pos. 2</span></strong> \n<strong><span class="red">Subj.</span></strong></th>
@@ -671,9 +704,13 @@ String htmlContent8 = '''
 <li>als <strong><a title="Nebensätze" href="#nebensaetze">Nebensatz</a></strong> (mit Konjunktion, konjugiertes Verb am Ende)</li>
 ''';
 String htmlTable8_1 = '''
-<table><colgroup> <col style="width: 15%;"> <col style="width: 20%;"> <col style="width: 50%;"> <col style="width: 15%;"> </colgroup>
+<table><colgroup> 
+<col style="width: 15%;"> 
+<col style="width: 20%;"> 
+<col style="width: 50%;"> 
+<col style="width: 15%;"> </colgroup>
 <thead>
-<tr>
+<tr align="center">
 <th><strong><span class="blue">Position 1</span></strong></th>
 <th><strong><span class="red">Position 2</span></strong></th>
 <th>Mittelfeld</th>
@@ -717,7 +754,7 @@ String htmlTable8_1 = '''
 String htmlTable8_2 = '''
 <table><colgroup> <col style="width: 17%;"> <col style="width: 15%;"> <col style="width: 43%;"> <col style="width: 25%;"> </colgroup>
 <thead>
-<tr>
+<tr align="center">
 <th><strong><span class="red">Position 1</span></strong></th>
 <th><strong><span class="red">Position 2</span></strong></th>
 <th>Mittelfeld</th>

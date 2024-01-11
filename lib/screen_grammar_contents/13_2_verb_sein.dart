@@ -55,7 +55,11 @@ String htmlContent1_1 = '''
 <h3 align="center">Konjugation:</h3>
 ''';
 String htmlTable1 = '''
-<table>
+<table><colgroup> 
+<col style="width: 25%;"> 
+<col style="width: 25%;"> 
+<col style="width: 25%;"> 
+<col style="width: 25%;"> </colgroup>
 <thead>
 </thead>
 <tbody align="center">

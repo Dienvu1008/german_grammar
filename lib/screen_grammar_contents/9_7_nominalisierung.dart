@@ -58,7 +58,7 @@ String htmlContent1_1 = '''
 String htmlTable1_2 = '''
 <table><colgroup> <col style="width: 15%;"> <col style="width: 40%;"> <col style="width: 15%;"> <col style="width: 15%;"> <col style="width: 15%;"> </colgroup>
 <thead>
-<tr>
+<tr align = "center">
 <th >Satzart</th>
 <th>Position 1\nNebensatz / <span class="blue">Nominalstil</span></th>
 <th><strong><span class="red">Position 2</span></strong>\n<strong><span class="red">Verb</span></strong></th>

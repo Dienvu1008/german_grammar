@@ -91,7 +91,7 @@ String htmlContent1 = '''
 String htmlTable1 = '''
 <table><colgroup> <col style="width: 48%;"> <col style="width: 52%;"> </colgroup>
 <thead>
-<tr>
+<tr align="center">
 <th>Hauptsatz</th>
 <th>Nebensatz / Infinitivkonstruktion</th>
 </tr>
@@ -128,7 +128,7 @@ String htmlContent2_1 = '''
 String htmlTable2 = '''
 <table><colgroup> <col style="width: 100%;"> </colgroup>
 <thead>
-<tr>
+<tr align="center">
 <th>Hauptsatz mit einer <strong><span class="red">Präposition-Nomen-Konstruktion</span></strong> als konditionale Angabe</th>
 </tr>
 </thead>
@@ -163,7 +163,7 @@ String htmlContent3 = '''
 String htmlTable3 = '''
 <table><colgroup> <col style="width: 39%;"> <col style="width: 11%;"> <col style="width: 10%;"> <col style="width: 40%;"> </colgroup>
 <thead>
-<tr>
+<tr align="center">
 <th>Hauptsatz 1</th>
 <th>Hauptsatz 2\nPos. 1</th>
 <th>Hauptsatz 2\nVerb</th>
@@ -203,7 +203,7 @@ String title4 = 'Übersicht Modalsätze';
 String htmlTable4 = '''
 <table><colgroup> <col style="width: 30%;"> <col style="width: 46%;"> <col style="width: 23%;"> </colgroup>
 <thead>
-<tr>
+<tr align="center">
 <th>verbal\nKonjunktionen</th>
 <th>verbal\nAdverbien</th>
 <th>nominal\nPräpositionen</th>
@@ -236,13 +236,13 @@ String htmlContent5_1 = '''
 <h4>Übersicht</h4>
 ''';
 String htmlTable5 = '''
-<table>
+<table><col style="width: 60%;"> <col style="width: 40%;"> </colgroup>
 <thead>
-<tr>
+<tr align="center">
 <th>verbal</th>
 <th>nominal</th>
 </tr>
-<tr>
+<tr align="center">
 <th>Konjunktionen</th>
 <th>Präpositionen</th>
 </tr>
@@ -280,7 +280,7 @@ String htmlContent6_1 = '''
 String htmlTable6 = '''
 <table><colgroup> <col style="width: 31%;"> <col style="width: 43%;"> <col style="width: 25%;"> </colgroup>
 <thead>
-<tr>
+<tr align="center">
 <th>verbal\nKonjunktionen</th>
 <th>verbal\nAdverbien</th>
 <th>nominal\nPräpositionen</th>
@@ -309,7 +309,7 @@ String htmlContent7_1 = '''
 <p>Eine <strong><span class="red">Gleichheit</span></strong> wird folgendermaßen ausgedrückt:</p>
 ''';
 String htmlTable7_1 = '''
-<table class="eins">
+<table class="eins"><colgroup> <col style="width: 100%;"></colgroup>
 <tbody>
 <tr align="center">
 <td>
@@ -329,7 +329,7 @@ String htmlContent7_2 = '''
 <p>Eine <strong><span class="red">Ungleichheit</span></strong> wird folgendermaßen ausgedrückt:</p>
 ''';
 String htmlTable7_2 = '''
-<table class="eins">
+<table class="eins"><colgroup> <col style="width: 100%;"></colgroup>
 <tbody>
 <tr align="center">
 <td>
@@ -349,7 +349,7 @@ String htmlContent7_3 = '''
 <p>Ein <strong><span class="red">proportionales Verhältnis</span></strong> wird folgendermaßen ausgedrückt:</p>
 ''';
 String htmlTable7_3 = '''
-<table class="eins">
+<table class="eins"><colgroup> <col style="width: 100%;"></colgroup>
 <tbody>
 <tr align="center">
 <td>

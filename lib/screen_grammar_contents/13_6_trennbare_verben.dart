@@ -67,7 +67,7 @@ List<CardContent> contents = [
   ),
 ];
 
-String title = 'Trennbare Verben';
+String title = '13.6. Trennbare Verben';
 String title1 = 'Einführung / Was man über trennbare Verben wissen sollte.';
 String htmlContent1_1 = '''
 <p>In der deutschen Sprache gibt es die Möglichkeit, Verben so genannte <strong><span class="red">Präfixe</span></strong>, auch Verbzusätze genannt, anzufügen. Präfixe geben dem Verb eine völlig neue Bedeutung und gehen als neue Vokabel in den Wortschatz ein.</p>
@@ -75,7 +75,7 @@ String htmlContent1_1 = '''
 String htmlTable1_1 = '''
 <table><colgroup> <col style="width: 15%;"> <col style="width: 12%;"> <col style="width: 11%;"> <col style="width: 52%;"> <col style="width: 10%;"> </colgroup>
 <thead>
-<tr>
+<tr align="center">
 <th><strong><span class="red">Infinitiv</span></strong></th>
 <th>Pos. 1</th>
 <th><strong><span class="red">Verb 1</span></strong></th>
@@ -140,7 +140,7 @@ String htmlContent2_1 = '''
 String htmlTable2 = '''
 <table><colgroup> <col style="width: 20%;"> <col style="width: 18%;"> <col style="width: 11%;"> <col style="width: 41%;"> <col style="width: 10%;"> </colgroup>
 <thead>
-<tr>
+<tr align="center">
 <th>Präfixe + Verb</th>
 <th>Position 1</th>
 <th>Verb 1</th>
@@ -520,7 +520,7 @@ String htmlContent3 = '''
 String htmlTable3 = '''
 <table><colgroup> <col style="width: 16%;"> <col style="width: 18%;"> <col style="width: 17%;"> <col style="width: 49%;"> </colgroup>
 <thead>
-<tr>
+<tr align="center">
 <th>Infinitiv</th>
 <th>Position 1</th>
 <th>Verb</th>
@@ -700,7 +700,7 @@ String htmlContent4 = '''
 String htmlTable4 = '''
 <table><colgroup> <col style="width: 10%;"> <col style="width: 45%;"> <col style="width: 45%;"> </colgroup>
 <thead>
-<tr>
+<tr align="center">
 <th>Präfixe</th>
 <th><strong><span class="red">trennbar</span></strong></th>
 <th><strong><span class="blue">nicht trennbar</span></strong></th>
@@ -748,7 +748,7 @@ String htmlContent5_1 = '''
 String htmlTable5_1 = '''
 <table><colgroup> <col style="width: 20%;"> <col style="width: 21%;"> <col style="width: 59%;"> </colgroup>
 <thead>
-<tr>
+<tr align="center">
 <th><strong><span class="blue">Wortart</span></strong> + <strong><span class="red">Verb</span></strong></th>
 <th>Beispiele</th>
 <th>Eigenarten</th>
@@ -777,7 +777,7 @@ String htmlContent5_2 = '''
 <p>Bei diesen Kombinationen verschiedener "Wortarten" + Verb wird <span style="text-decoration:underline">ein neues Verb mit neuer Bedeutung</span> erzeugt. Dieses neue Verb ist <span style="text-decoration:underline">immer</span> trennbar, wird aber im Infinitiv manchmal zusammen (also ein Wort) und manchmal auseinander (also zwei Wörter) geschrieben. Einige Beispiele, bei denen der Infinitiv immer aus zwei Wörtern besteht:</p>
 ''';
 String htmlTable5_2 = '''
-<table width="80%">
+<table width="80%"><colgroup> <col style="width: 20%;"> <col style="width: 21%;"> <col style="width: 59%;"> </colgroup>
 <thead>
 <tr>
 <th><strong><span class="red">Adjektiv + Verb</span></strong></th>

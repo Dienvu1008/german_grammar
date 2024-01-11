@@ -69,7 +69,7 @@ String htmlContent1_1 = '''
 String htmlTable1_1 = '''
 <table class="eins"><colgroup> <col style="width: 48%;"> <col style="width: 4%;"> <col style="width: 48%;"> </colgroup>
 <thead>
-<tr>
+<tr align="center">
 <th>Hauptsatz</th>
 <th>+</th>
 <th>Nebensatz</th>
@@ -101,7 +101,7 @@ String htmlContent1_2 = '''
 String htmlTable1_2 = '''
 <table><colgroup> <col style="width: 50%;"> <col style="width: 50%;"> </colgroup>
 <thead>
-<tr>
+<tr align="center">
 <th>Hauptsatz</th>
 <th>Nebensatz</th>
 </tr>
@@ -148,7 +148,7 @@ String htmlContent1_3 = '''
 String htmlTable1_3 = '''
 <table><colgroup> <col style="width: 54%;"> <col style="width: 46%;"> </colgroup>
 <thead>
-<tr>
+<tr align="center">
 <th>Nebensatz</th>
 <th>Hauptsatz</th>
 </tr>
@@ -179,9 +179,10 @@ String htmlContent2_1 = '''
 <p>Eine <strong><span class="red">temporale Angabe</span></strong> kann auch mit einer <strong><a title="Nominalisierung" href="nominalisierung.html" target="_blank">Präposition-Nomen-Konstruktionen</a></strong> formuliert werden. Die passenden Präpositionen lauteten: "<strong><span class="red">gleich nach</span></strong>" oder "<strong><span class="red">sofort nach</span></strong>":</p>
 ''';
 String htmlTable2 = '''
-<table>
+<table><colgroup> 
+<col style="width: 100%;"> </colgroup>
 <thead>
-<tr>
+<tr align="center">
 <th>Hauptsatz mit einer <strong><span class="red">Präposition-Nomen-Konstruktion</span></strong> als temporale Angabe</th>
 </tr>
 </thead>
@@ -215,9 +216,14 @@ String htmlContent3_1 = '''
 <p>Eine zeitliche Abfolge kann mit den temporalen Adverbien "zuerst", "erst", "anschließend" oder "dann" in Kombination mit "sofort" oder "gleich" wiedergegeben werden. Die Adverbien werden auf Position 1 oder 3 gestellt.</p>
 ''';
 String htmlTable3_1 = '''
-<table><colgroup> <col style="width: 26%;"> <col style="width: 17%;"> <col style="width: 9%;"> <col style="width: 24%;"> <col style="width: 17%;"> </colgroup>
+<table><colgroup> 
+<col style="width: 33%;"> 
+<col style="width: 17%;"> 
+<col style="width: 9%;"> 
+<col style="width: 24%;"> 
+<col style="width: 17%;"> </colgroup>
 <thead>
-<tr>
+<tr align="center">
 <th>Hauptsatz 1</th>
 <th>Hauptsatz 2\nPosition 1</th>
 <th>Hauptsatz 2\nVerb</th>
@@ -288,7 +294,7 @@ String title4 = 'Übersicht';
 String htmlTable4 = '''
 <table><colgroup> <col style="width: 36%;"> <col style="width: 36%;"> <col style="width: 28%;"> </colgroup>
 <thead>
-<tr>
+<tr align="center">
 <th>verbal\nKonjunktionen</th>
 <th>verbal\nAdverbien</th>
 <th>nominal\nPräpositionen</th>

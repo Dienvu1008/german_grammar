@@ -83,7 +83,7 @@ List<CardContent> contents = [
   ),
 ];
 
-String title = 'Modalverben';
+String title = '13.7. Modalverben';
 String title1 = 'Einführung / Was man über Modalverben wissen sollte.';
 String htmlContent1_1 = '''
 <p><strong>Modalverben</strong> treten in einem Satz meistens mit einem zweiten Verb, dem "Vollverb", auf. Das <strong><span class="blue">Vollverb</span></strong> steht im Infinitiv am <strong><span class="blue">Satzende</span></strong>. Das <strong><span class="red">Modalverb</span></strong> wird konjugiert und zeigt die Person an:</p>
@@ -91,7 +91,7 @@ String htmlContent1_1 = '''
 String htmlTable1 = '''
 <table><colgroup> <col style="width: 20%;"> <col style="width: 14%;"> <col style="width: 53%;"> <col style="width: 13%;"> </colgroup>
 <thead>
-<tr>
+<tr align = "center">
 <th>Position 1</th>
 <th><strong><span class="red">Modalverb</span></strong></th>
 <th>Mittelfeld</th>

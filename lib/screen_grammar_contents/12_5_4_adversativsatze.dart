@@ -51,7 +51,7 @@ List<CardContent> contents = [
   CardContent(
     elements: [
       CardElement(type: ElementType.cardTitle, value: title4),
-      CardElement(type: ElementType.htmlContent, value: htmlTable4),
+      CardElement(type: ElementType.htmlTable, value: htmlTable4),
     ],
   ),
 ];
@@ -63,7 +63,7 @@ String htmlContent1 = '''
 String htmlTable1 = '''
 <table><colgroup> <col style="width: 43%;"> <col style="width: 57%;"> </colgroup>
 <thead>
-<tr>
+<tr align="center">
 <th>Hauptsatz</th>
 <th>Nebensatz</th>
 </tr>
@@ -96,7 +96,7 @@ String htmlContent2_1 = '''
 String htmlTable2 = '''
 <table><colgroup> <col style="width: 100%;"> </colgroup>
 <thead>
-<tr>
+<tr align="center">
 <th>Hauptsatz mit einer <strong><span class="red">Präposition-Nomen-Konstruktion</span></strong> als adversative Angabe</th>
 </tr>
 </thead>
@@ -139,7 +139,7 @@ String htmlContent3 = '''
 String htmlTable3 = '''
 <table><colgroup> <col style="width: 37%;"> <col style="width: 11%;"> <col style="width: 12%;"> <col style="width: 10%;"> <col style="width: 30%;"> </colgroup>
 <thead>
-<tr>
+<tr align="center">
 <th>Hauptsatz 1</th>
 <th>Hauptsatz 2\nPos. 0</th>
 <th>Hauptsatz 2\nPos. 1</th>
@@ -198,7 +198,7 @@ String title4 = 'Übersicht Adversativsätze';
 String htmlTable4 = '''
 <table><colgroup> <col style="width: 27%;"> <col style="width: 38%;"> <col style="width: 35%;"> </colgroup>
 <thead>
-<tr>
+<tr align="center">
 <th>verbal\nKonjunktionen</th>
 <th>verbal\nAdverbien</th>
 <th>nominal\nPräpositionen</th>

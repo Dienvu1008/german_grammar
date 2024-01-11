@@ -78,9 +78,13 @@ String htmlContent2_1 = '''
 <li>Ich möchte die Deutschen besser verstehen können.</li>
 ''';
 String htmlTable2_2 = '''
-<table><colgroup> <col style="width: 23%;"> <col style="width: 9%;"> <col style="width: 38%;"> <col style="width: 30%;"> </colgroup>
+<table><colgroup> 
+<col style="width: 23%;"> 
+<col style="width: 9%;"> 
+<col style="width: 38%;"> 
+<col style="width: 30%;"> </colgroup>
 <thead>
-<tr>
+<tr align="center">
 <th>Hauptsatz</th>
 <th>Konj.</th>
 <th>Mittelfeld</th>
@@ -129,9 +133,13 @@ String htmlContent3_1 = '''
 <li>Der Autofahrer fährt in der Nacht Auto. Er hat das Licht <strong><span class="red">nicht</span></strong> angeschaltet.</li>
 ''';
 String htmlTable3_2 = '''
-<table><colgroup> <col style="width: 36%;"> <col style="width: 11%;"> <col style="width: 23%;"> <col style="width: 30%;"> </colgroup>
+<table><colgroup> 
+<col style="width: 36%;"> 
+<col style="width: 11%;"> 
+<col style="width: 23%;"> 
+<col style="width: 30%;"> </colgroup>
 <thead>
-<tr>
+<tr align="center">
 <th>Hauptsatz</th>
 <th>Konj.</th>
 <th>Mittelfeld</th>
@@ -182,7 +190,7 @@ String htmlContent4_1 = '''
 String htmlTable4_2 = '''
 <table><colgroup> <col style="width: 35%;"> <col style="width: 13%;"> <col style="width: 23%;"> <col style="width: 29%;"> </colgroup>
 <thead>
-<tr>
+<tr align="center">
 <th>Hauptsatz</th>
 <th>Konj.</th>
 <th>Mittelfeld</th>

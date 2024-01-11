@@ -41,9 +41,10 @@ String htmlContent1_1 = '''
 <p>Folgende <strong>Präpositionen</strong> fordern den <strong>Dativ</strong>:</p>
 ''';
 String htmlTable1_2 = '''
-<table class="eins">
+<table class="eins"><colgroup> 
+<col style="width: 100%;"> </colgroup>
 <tbody>
-<tr>
+<tr align="center">
 <td align="center">
 <h3><strong><span class="red">&nbsp;ab&nbsp;&nbsp;&nbsp;&nbsp; aus&nbsp;&nbsp;&nbsp;&nbsp;bei&nbsp;&nbsp;&nbsp;&nbsp; mit&nbsp;&nbsp;&nbsp;&nbsp; nach&nbsp;&nbsp;&nbsp; seit&nbsp;&nbsp;&nbsp;&nbsp; von&nbsp;&nbsp;&nbsp;&nbsp;zu&nbsp;</span></strong></h3>
 </td>

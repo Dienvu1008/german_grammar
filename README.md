@@ -1,16 +1,43 @@
 # german_grammar
 
-A new Flutter project.
+This application compiles the contents of German grammar from the website https://mein-deutschbuch.de/
 
-## Getting Started
 
-This project is a starting point for a Flutter application.
+## Overview
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+<div style="text-align: center">
+    <table>
+        <tr>
+            <td style="text-align: center">
+                <a href="./res/drawer.jpg">
+                    <img src="./res/drawer.jpg" width="200"/>
+                </a>
+            </td>            
+            <td style="text-align: center">
+                <a href="./res/example content 1.jpg">
+                    <img src="./res/example content 1.jpg" width="200"/>
+                </a>
+            </td>
+            <td style="text-align: center">
+                <a href="./res/example content 2.jpg">
+                    <img src="./res/example content 2.jpg" width="200" />
+                </a>
+            </td>
+        </tr>
+    </table>
+</div>
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+
+### Support us
+We hope this application will be useful for you.
+
+If you’re able to, consider upgrading to the paid version of the software or buying us a cup of coffee. Your support goes a long way in helping us continue to develop and improve the app. Thank you!
+
+[<img src="./res/paypal.jpg"
+alt="Get it on Google Play" 
+height="40">](https://www.paypal.me/dienvu1008)
+
+<img src="./res/techcombank.jpg" height="200" alt="My Time Manager" />
+
+<img src="./res/momo.jpg" height="200" alt="My Time Manager" />

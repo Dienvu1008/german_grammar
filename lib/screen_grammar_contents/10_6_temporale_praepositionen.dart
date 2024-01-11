@@ -66,9 +66,14 @@ String htmlContent1_1 = '''
 <p>Ein Zeitpunkt gibt eine genaue Zeit an. Die W-Fragen dazu lauten "<strong><span class="red">wann</span></strong>" oder "<strong><span class="red">um wie viel Uhr</span></strong>".</p>
 ''';
 String htmlTable1_2 = '''
-<table><colgroup> <col style="width: 10%;"> <col style="width: 22%;"> <col style="width: 14%;"> <col style="width: 26%;"> <col style="width: 28%;"> </colgroup>
+<table><colgroup> 
+<col style="width: 10%;"> 
+<col style="width: 22%;"> 
+<col style="width: 14%;"> 
+<col style="width: 26%;"> 
+<col style="width: 28%;"> </colgroup>
 <thead>
-<tr>
+<tr align="center">
 <th>Kasus</th>
 <th>W-Frage</th>
 <th>Präposition</th>

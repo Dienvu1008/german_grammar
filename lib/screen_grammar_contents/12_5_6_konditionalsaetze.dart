@@ -72,7 +72,7 @@ String htmlContent1_1 = '''
 String htmlTable1_1 = '''
 <table><colgroup> <col style="width: 45%;"> <col style="width: 55%;"> </colgroup>
 <thead>
-<tr>
+<tr align="center">
 <th>Hauptsatz</th>
 <th>Nebensatz</th>
 </tr>
@@ -119,7 +119,7 @@ String htmlContent1_2 = '''
 String htmlTable1_2 = '''
 <table><colgroup> <col style="width: 60%;"> <col style="width: 40%;"> </colgroup>
 <thead>
-<tr>
+<tr align="center">
 <th>Nebensatz</th>
 <th>Hauptsatz</th>
 </tr>
@@ -151,7 +151,7 @@ String htmlContent1_3 = '''
 String htmlTable1_3 = '''
 <table><colgroup> <col style="width: 60%;"> <col style="width: 40%;"> </colgroup>
 <thead>
-<tr>
+<tr align="center">
 <th>Verb Position 1</th>
 <th>Hauptsatz</th>
 </tr>
@@ -184,7 +184,7 @@ String htmlContent2_1 = '''
 String htmlTable2 = '''
 <table><colgroup> <col style="width: 100%;"> </colgroup>
 <thead>
-<tr>
+<tr align="center">
 <th>Hauptsatz mit einer <strong><span class="red">Präposition-Nomen-Konstruktion</span></strong> als konditionale Angabe</th>
 </tr>
 </thead>
@@ -223,7 +223,7 @@ String htmlContent3 = '''
 String htmlTable3 = '''
 <table><colgroup> <col style="width: 50%;"> <col style="width: 12%;"> <col style="width: 10%;"> <col style="width: 28%;"> </colgroup>
 <thead>
-<tr>
+<tr align="center">
 <th>Hauptsatz 1</th>
 <th>Hauptsatz 2\nPos. 1</th>
 <th>Hauptsatz 2\nVerb</th>
@@ -263,7 +263,7 @@ String title4 = 'Übersicht Konditionalsätze';
 String htmlTable4 = '''
 <table><colgroup> <col style="width: 36%;"> <col style="width: 35%;"> <col style="width: 28%;"> </colgroup>
 <thead>
-<tr>
+<tr align="center">
 <th>verbal\nKonjunktionen</th>
 <th>verbal\nAdverbien (mit Negation)</th>
 <th>nominal\nPräpositionen</th>

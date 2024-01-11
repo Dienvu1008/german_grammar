@@ -74,7 +74,7 @@ String htmlContent2_1 = '''
 String htmlTable2_1 = '''
 <table><colgroup> <col style="width: 33%;"> <col style="width: 15%;"> <col style="width: 10%;"> <col style="width: 15%;"> <col style="width: 27%;"> </colgroup>
 <thead>
-<tr>
+<tr align="center">
 <th>1. Hauptsatz</th>
 <th><strong><a title="Bedeutung nebenordnender Konjunktionen" href="#bedeutung_nebenordnend">Konjunktion</a></strong>\n<strong><span class="red">Position 0</span></strong></th>
 <th>2. Hauptsatz \nSubjekt</th>
@@ -140,7 +140,7 @@ String htmlContent2_2 = '''
 String htmlTable2_2 = '''
 <table><colgroup> <col style="width: 20%;"> <col style="width: 28%;"> <col style="width: 12%;"> <col style="width: 40%;"> </colgroup>
 <thead>
-<tr>
+<tr align="center">
 <th>Funktion</th>
 <th>HS 1</th>
 <th><strong><span class="red">Konj.</span></strong></th>
@@ -189,7 +189,7 @@ String htmlContent3_1 = '''
 String htmlTable3 = '''
 <table><colgroup> <col style="width: 26%;"> <col style="width: 17%;"> <col style="width: 15%;"> <col style="width: 22%;"> <col style="width: 20%;"> </colgroup>
 <thead>
-<tr>
+<tr align="center">
 <th>Hauptsatz</th>
 <th>Nebensatz \n<strong><span class="red">Position 1 \nKonjunktion</span></strong></th>
 <th>Nebensatz \n<strong><span class="red">Position 2 \nSubjekt</span></strong></th>
@@ -247,7 +247,7 @@ String htmlContent4 = '''
 String htmlTable4 = '''
 <table><colgroup> <col style="width: 27%;"> <col style="width: 31%;"> <col style="width: 41%;"> </colgroup>
 <thead>
-<tr>
+<tr align="center">
 <th>Bedeutung</th>
 <th>Konjunktion</th>
 <th>Beispiel</th>

@@ -61,9 +61,10 @@ String htmlContent1_1 = '''
 <div align="center"><strong><span class="blue">Artikelwörter sind Nomenbegleiter</span></strong> <br> <br> <strong><span class="red">Pronomen sind Stellvertreter eines Nomens</span></strong>!</div>
 ''';
 String htmlTable1_2 = '''
-<table class="eins">
+<table class="eins"><colgroup>  
+<col style="width: 100%;"> </colgroup>
 <tbody>
-<tr>
+<tr align="center">
 <td>
 <div align="center">
 <h3><span class="red">Artikelwort + Nomen</span> <br> <span class="blue">Pronomen (<s> Nomen</s>)</span></h3>

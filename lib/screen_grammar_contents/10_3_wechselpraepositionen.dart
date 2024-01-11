@@ -50,7 +50,8 @@ String htmlContent1_1 = '''
 <p>Es gibt folgende Wechselpräpositionen:</p>
 ''';
 String htmlTable1_2 = '''
-<table class="eins">
+<table class="eins"><colgroup> 
+<col style="width: 100%;"> </colgroup>
 <tbody>
 <tr align="center">
 <td>
@@ -63,7 +64,7 @@ String htmlTable1_2 = '''
 String htmlTable1_3 = '''
 <table><colgroup> <col style="width: 13%;"> <col style="width: 43%;"> <col style="width: 43%;"> </colgroup>
 <thead>
-<tr>
+<tr align="center">
 <th>Präposition</th>
 <th>wohin &nbsp;&nbsp;&nbsp;&nbsp;+&nbsp;&nbsp;&nbsp;&nbsp; <strong><span class="blue">Akkusativ</span></strong></th>
 <th>wo &nbsp;&nbsp;&nbsp;&nbsp;+&nbsp;&nbsp;&nbsp;&nbsp; <strong><span class="red">Dativ</span></strong></th>
@@ -130,7 +131,7 @@ String htmlContent1_4 = '''
 String htmlTable1_5 = '''
 <table><colgroup> <col style="width: 15%;"> <col style="width: 85%;"> </colgroup>
 <thead>
-<tr>
+<tr align="center">
 <th>Präposition</th>
 <th>wann &nbsp;&nbsp;&nbsp;&nbsp;+&nbsp;&nbsp;&nbsp;&nbsp; <strong><span class="red">Dativ</span></strong></th>
 </tr>

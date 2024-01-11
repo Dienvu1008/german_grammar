@@ -93,7 +93,7 @@ String htmlTable2_2_1 = '''
  <col style="width: 55%;"> 
  <col style="width: 45%;"> </colgroup>
 <thead>
-<tr>
+<tr align="center">
 <th >Singular</th>
 <th >Plural</th>
 </tr>
@@ -111,7 +111,7 @@ String htmlTable2_2 = '''
  <col style="width: 11%;"> 
  <col style="width: 23%;"> </colgroup>
 <thead>
-<tr>
+<tr align="center">
 <th >1. Person</th>
 <th >2. Person</th>
 <th >3. Person\nmaskulin</th>
@@ -175,8 +175,8 @@ String htmlTable3_1_1 = '''
  <col style="width: 52%;"> 
  <col style="width: 35%;"> </colgroup>
 <thead>
-<tr>
-<th >Kasus</th>
+<tr align="center">
+<th ></th>
 <th >Singular</th>
 <th >Plural</th>
 </tr>
@@ -193,7 +193,7 @@ String htmlTable3_1 = '''
  <col style="width: 10%;"> 
  <col style="width: 15%;"> </colgroup>
 <thead>
-<tr>
+<tr align="center">
 <th >Kasus</th>
 <th >1. Person</th>
 <th >2. Person</th>
@@ -262,16 +262,22 @@ String htmlContent3_2 = '''
 <li>Papa, liebt die Oma den Opa? - Natürlich liebt <strong><span class="red">sie ihn</span></strong> und <strong><span class="red">er</span></strong> liebt <strong><span class="red">sie</span></strong> auch.</li> 
 ''';
 
-String title4 = 'Satzstellung der Pronomen bei Verben mit Akkusativ- und Dativ-Ergänzung';
+String title4 =
+    'Satzstellung der Pronomen bei Verben mit Akkusativ- und Dativ-Ergänzung';
 String htmlContent4_1 = '''
 <p>Werden Sätze mit <strong><a title="Verben mit Akkusativ- und Dativ-Ergänzung" href="lernen.php?menu_id=41">Verben mit Akkusativ- und Dativ-Ergänzung</a></strong> gebildet, können folgende Kombinationen auftreten:</p>
 
 <p><br> der Chef / er = Nominativ (Position 1 oder 3) <br> <strong><span class="red">rot</span></strong> = <strong><span class="red">Dativergänzung</span></strong>( der Person )<br> <strong><span class="red">blau</span></strong> = <strong><span class="red">Akkusativergänzung</span></strong> ( der Sache )<br> </p>
 ''';
 String htmlTable4_2 = '''
-<table>
+<table><colgroup> 
+ <col style="width: 20%;"> 
+ <col style="width: 20%;"> 
+ <col style="width: 10%;"> 
+ <col style="width: 25%;"> 
+ <col style="width: 25%;"> </colgroup>
 <thead>
-<tr>
+<tr align="center">
 <th>Infinitiv</th>
 <th>Position 1</th>
 <th>Verb</th>

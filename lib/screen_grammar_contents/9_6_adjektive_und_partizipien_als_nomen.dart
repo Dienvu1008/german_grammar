@@ -55,7 +55,8 @@ List<CardContent> contents = [
 
 String title = '9.6. Adjektive und Partizipien als Nomen';
 
-String title1 = 'Was man über Adjektive und Partizipien als Nomen wissen sollte.';
+String title1 =
+    'Was man über Adjektive und Partizipien als Nomen wissen sollte.';
 String htmlContent1_1 = '''
 <p>Theoretisch können alle <strong><a title="Adjektive" href="lernen.php?menu_id=11">Adjektive</a></strong> und <strong><a title="Partizipien" href="lernen.php?menu_id=69">Partizipien</a></strong> nominalisiert werden, das heißt, dass sie wie ein <strong><span class="red">selbständiges Nomen</span></strong> gebraucht werden. In der Regel bezeichnen Nomen aus Adjektive und Partizipien <strong><span class="red">Personen</span></strong> oder <strong><span class="red">Abstrakta</span></strong>. Alle nominalisierten Adjektive und Partizipien sind zwar Nomen, <strong><span class="red">werden aber wie <strong><a title="Übersicht Deklination Adjektive" href="lernen.php?menu_id=11#adjektive_vor_nomen">Adjektive</a></strong> dekliniert</span></strong>.</p>
 
@@ -86,7 +87,7 @@ String htmlContent2_1 = '''
 String htmlTable2_2 = '''
 <table><colgroup> <col style="width: 16%;"> <col style="width: 84%;"> </colgroup>
 <thead>
-<tr>
+<tr align = "center">
 <th>Adjektiv</th>
 <th>Beispiel</th>
 </tr>
@@ -199,7 +200,7 @@ String htmlContent3_1 = '''
 String htmlTable3_2 = '''
 <table><colgroup> <col style="width: 20%;"> <col style="width: 80%;"> </colgroup>
 <thead>
-<tr>
+<tr align = "center">
 <th>Partizip I</th>
 <th>Beispiel</th>
 </tr>
@@ -252,7 +253,7 @@ String htmlContent4_1 = '''
 String htmlTable4_2 = '''
 <table><colgroup> <col style="width: 15%;"> <col style="width: 16%;"> <col style="width: 69%;"> </colgroup>
 <thead>
-<tr>
+<tr align = "center">
 <th>Partizip II</th>
 <th>Infinitiv</th>
 <th>Beispiel</th>

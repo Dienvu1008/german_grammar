@@ -54,7 +54,8 @@ List<CardContent> contents = [
 
 String title = '9.1. Genusbestimmung';
 
-String title1 = 'Kleine Hilfen zur Artikelbestimmung (Genusbestimmung) der Nomen';
+String title1 =
+    'Kleine Hilfen zur Artikelbestimmung (Genusbestimmung) der Nomen';
 String htmlContent1_1 = '''
 <p>Die englische Sprache zeigt sich bei der Artikelbestimmung äußerst intelligent. Alle Nomen haben den gleichen Artikel "<span style="text-decoration:underline">the</span>". Das Spanische hingegen hat zwei Geschlechter, maskulin ("<span style="text-decoration:underline">el</span>") und feminin ("<span style="text-decoration:underline">la</span>"). Im Deutschen dagegen unterscheidet man <span style="text-decoration:underline">drei</span> Geschlechter (Genus):</p>
 
@@ -83,9 +84,13 @@ String htmlContent1_1 = '''
 <p>Die Artikelbestimmung im Deutschen ist leider sehr schwierig. <br> <br> <strong><span class="red">Am besten lernt man ein neues Nomen immer zusammen mit dem jeweiligen Artikel.</span></strong> <br> <br> <strong><span class="red">Tipp</span></strong>: Alle neuen Nomen werden mit <strong>Pluralbildung</strong> in eine Tabelle geschrieben:</p>
 ''';
 String htmlTable1_2 = '''
-<table><colgroup> <col style="width: 25%;"> <col style="width: 25%;"> <col style="width: 25%;"> <col style="width: 25%;"> </colgroup>
+<table><colgroup> 
+<col style="width: 25%;"> 
+<col style="width: 25%;"> 
+<col style="width: 25%;"> 
+<col style="width: 25%;"> </colgroup>
 <thead>
-<tr>
+<tr align="center">
 <th>Maskulinum</th>
 <th>Femininum</th>
 <th>Neutrum</th>
@@ -192,9 +197,10 @@ String htmlContent4_1 = '''
 <li><strong><span class="red">Substantivierte Verben</span></strong> <br> Essen, Lernen, Reisen, Trinken, ... </li>
 ''';
 String htmlTable4_2 = '''
-<table class="eins">
+<table class="eins"><colgroup> 
+<col style="width: 100%;"> </colgroup>
 <tbody>
-<tr>
+<tr align="center">
 <td align="center">
 <h3>Am besten lernt man ein neues Nomen immer zusammen mit dem jeweiligen Artikel.</h3>
 </td>

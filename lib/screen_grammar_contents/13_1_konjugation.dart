@@ -73,7 +73,11 @@ String htmlContent1 = '''
 <h3 align="center">Konjugation:</h3>
 ''';
 String htmlTable1 = '''
-<table>
+<table><colgroup> 
+<col style="width: 25%;"> 
+<col style="width: 25%;"> 
+<col style="width: 25%;"> 
+<col style="width: 25%;"> </colgroup>
 <thead>
 </thead>
 <tbody align="center">
@@ -131,11 +135,16 @@ String htmlContent2 = '''
 ''';
 String htmlTable2 = '''
 <table class="zwei">
+<colgroup> 
+<col style="width: 34%;"> 
+<col style="width: 33%;"> 
+<col style="width: 33%;"> 
+</colgroup>
 <thead>
-<tr>
+<tr align="center">
 <th><strong><span class="blue">Position 1</span></strong>\n<strong><span class="blue">Nominativ</span></strong></th>
 <th><strong><span class="red">Position 2</span></strong>\n<strong><span class="red">Verb</span></strong></th>
-<th rowspan="2">Satzende</th>
+<th >Satzende</th>
 </tr>
 </thead>
 <tbody align="center">

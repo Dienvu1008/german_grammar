@@ -66,7 +66,7 @@ String htmlContent1_1 = '''
 String htmlTable1 = '''
 <table><colgroup> <col style="width: 48%;"> <col style="width: 52%;"> </colgroup>
 <thead>
-<tr>
+<tr align="center">
 <th>Hauptsatz</th>
 <th>Nebensatz / Infinitivkonstruktion</th>
 </tr>
@@ -106,7 +106,7 @@ String htmlContent2_1 = '''
 String htmlTable2 = '''
 <table><colgroup> <col style="width: 100%;"> </colgroup>
 <thead>
-<tr>
+<tr align="center">
 <th>Hauptsatz mit einer <strong><span class="red">Präposition-Nomen-Konstruktion</span></strong> als konditionale Angabe</th>
 </tr>
 </thead>
@@ -141,7 +141,7 @@ String htmlContent3 = '''
 String htmlTable3 = '''
 <table><colgroup> <col style="width: 35%;"> <col style="width: 15%;"> <col style="width: 15%;"> <col style="width: 35%;"> </colgroup>
 <thead>
-<tr>
+<tr align="center">
 <th>Hauptsatz 1</th>
 <th>Hauptsatz 2\nPos. 1</th>
 <th>Hauptsatz 2\nVerb</th>
@@ -181,7 +181,7 @@ String title4 = 'Übersicht Konsekutivsätze';
 String htmlTable4 = '''
 <table><colgroup> <col style="width: 29%;"> <col style="width: 48%;"> <col style="width: 23%;"> </colgroup>
 <thead>
-<tr>
+<tr align="center">
 <th>verbal\nKonjunktionen</th>
 <th>verbal\nAdverbien</th>
 <th>nominal\nPräpositionen</th>

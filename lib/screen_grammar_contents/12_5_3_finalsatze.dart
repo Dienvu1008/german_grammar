@@ -72,7 +72,7 @@ String htmlContent1_1 = '''
 String htmlTable1_1 = '''
 <table><colgroup> <col style="width: 27%;"> <col style="width: 7%;"> <col style="width: 30%;"> <col style="width: 36%;"> </colgroup>
 <thead>
-<tr>
+<tr align="center">
 <th>Hauptsatz</th>
 <th>Konj.</th>
 <th>Mittelfeld</th>
@@ -117,7 +117,7 @@ String htmlContent1_2 = '''
 String htmlTable1_2 = '''
 <table><colgroup> <col style="width: 44%;"> <col style="width: 56%;"> </colgroup>
 <thead>
-<tr>
+<tr align="center">
 <th>Hauptsatz</th>
 <th>Nebensatz</th>
 </tr>
@@ -164,7 +164,7 @@ String htmlContent1_3 = '''
 String htmlTable1_3 = '''
 <table><colgroup> <col style="width: 60%;"> <col style="width: 40%;"> </colgroup>
 <thead>
-<tr>
+<tr align="center">
 <th>Nebensatz</th>
 <th>Hauptsatz</th>
 </tr>
@@ -194,9 +194,9 @@ String htmlContent2_1 = '''
 <p>Eine <strong><span class="red">finale Angabe</span></strong> kann auch mit einer <strong><a title="Nominalisierung" href="lernen.php?menu_id=20">Präposition-Nomen-Konstruktionen</a></strong> formuliert werden. Die passenden Präpositionen lauten: " <strong><span class="red">zu</span></strong> ", " <strong><span class="red">für</span></strong> ", und " <strong><span class="red">zwecks</span></strong> ":</p>
 ''';
 String htmlTable2 = '''
-<table>
+<table><colgroup>  <col style="width: 100%;"> </colgroup>
 <thead>
-<tr>
+<tr align="center">
 <th>Hauptsatz mit einer <strong><span class="red">Präposition-Nomen-Konstruktion</span></strong> als finale Angabe</th>
 </tr>
 </thead>
@@ -234,7 +234,7 @@ String htmlContent3_1 = '''
 String htmlTable3 = '''
 <table><colgroup> <col style="width: 49%;"> <col style="width: 8%;"> <col style="width: 10%;"> <col style="width: 33%;"> </colgroup>
 <thead>
-<tr>
+<tr align="center">
 <th>Hauptsatz 1</th>
 <th>Hauptsatz 2\nPos. 1</th>
 <th>Hauptsatz 2\nVerb</th>
@@ -278,7 +278,7 @@ String title4 = 'Übersicht Finalsätze';
 String htmlTable4 = '''
 <table><colgroup> <col style="width: 37%;"> <col style="width: 38%;"> <col style="width: 25%;"> </colgroup>
 <thead>
-<tr>
+<tr align="center">
 <th>verbal\nKonjunktionen</th>
 <th>verbal\nAdverbien = inverse Struktur</th>
 <th>nominal\nPräpositionen</th>

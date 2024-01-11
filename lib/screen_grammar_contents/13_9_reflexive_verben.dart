@@ -77,7 +77,7 @@ List<CardContent> contents = [
   ),
 ];
 
-String title = 'Reflexive Verben';
+String title = '13.9. Reflexive Verben';
 String title1 = 'Was man über reflexive Verben wissen sollte.';
 String htmlContent1 = '''
 <p><strong><span class="blue">Reflexive Verben</span></strong> verlangen ein zusätzliches <strong><span class="red">Reflexivpronomen</span></strong>, das im Akkusativ oder im Dativ stehen kann. Reflexiv bedeutet <span style="text-decoration:underline">rückbezüglich</span>. Das <strong>Reflexivpronomen</strong> bezieht sich auf das <span style="text-decoration:underline">Subjekt im Satz</span> zurück.</p>
@@ -90,7 +90,7 @@ String htmlTable1 = '''
 <col style="width: 33%;"> 
 <col style="width: 33%;"> </colgroup>
 <thead>
-<tr>
+<tr align="center">
 <th>Subjekt</th>
 <th><strong><span class="blue">reflexives Verb</span></strong></th>
 <th><strong><span class="red">Reflexivpronomen</span></strong></th>
@@ -131,7 +131,7 @@ String htmlTable2 = '''
 <col style="width: 33%;"> 
 <col style="width: 33%;"> </colgroup>
 <thead>
-<tr>
+<tr align="center">
 <th>Personal-<br>pronomen</th>
 <th>Reflexivpronomen\nAkkusativ</th>
 <th>Reflexivpronomen\nDativ</th>
@@ -182,7 +182,7 @@ String htmlTable3_1 = '''
 <col style="width: 35%;"> 
 <col style="width: 35%;"> </colgroup>
 <thead>
-<tr>
+<tr align="center">
 <th>Subjekt</th>
 <th><strong><span class="blue"> Verb</span></strong></th>
 <th><strong><span class="red">Akkusativ-Ergänzung</span></strong></th>
@@ -214,7 +214,7 @@ String htmlTable3_2 = '''
 <col style="width: 20%;"> 
 <col style="width: 30%;">  </colgroup>
 <thead>
-<tr>
+<tr align="center">
 <th>Subjekt</th>
 <th><strong><span class="blue">reflexives Verb</span></strong></th>
 <th><strong><span class="red">Reflexivpronomen</span></strong></th>
@@ -243,7 +243,7 @@ String htmlContent3_3 = '''
 String htmlTable3_3 = '''
 <table><colgroup> <col style="width: 24%;"> <col style="width: 24%;"> <col style="width: 24%;"> <col style="width: 28%;"> </colgroup>
 <thead>
-<tr>
+<tr align="center">
 <th>Subjekt</th>
 <th><strong><span class="blue">reflexives Verb</span></strong></th>
 <th><strong><span class="red">Reflexivpronomen im Dativ</span></strong></th>
@@ -272,7 +272,7 @@ String htmlContent3_4 = '''
 String htmlTable3_4 = '''
 <table><colgroup> <col style="width: 15%;"> <col style="width: 25%;"> <col style="width: 25%;"> <col style="width: 35%;"> </colgroup>
 <thead>
-<tr>
+<tr align="center">
 <th>Subjekt</th>
 <th>reflexives Verb</th>
 <th><strong><span class="blue">Reflexivpronomen</span></strong></th>
@@ -309,7 +309,7 @@ String htmlContent4_1 = '''
 String htmlTable4_1 = '''
 <table>
 <thead>
-<tr>
+<tr align="center">
 <th>echte reflexive Verben im Akkusativ</th>
 <th>echte reflexive Verben im Dativ</th>
 </tr>

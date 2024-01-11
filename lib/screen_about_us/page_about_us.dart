@@ -146,6 +146,12 @@ class AboutUsPage extends StatelessWidget {
                       },
                     ),
                     ListTile(
+                      leading: const Icon(Icons.http_outlined),
+                      title: Text("All contents are sourced from the website:", style: textTheme.bodyMedium),
+                      subtitle: Text("https://mein-deutschbuch.de/", style: textTheme.bodySmall),
+                      onTap: ()  => launchURL(meinDeuschBuchUrl),
+                    ),
+                    ListTile(
                         leading: const Icon(Icons.email_outlined),
                         title: Text(localizations.sendAnEmail,
                             style: textTheme.bodyMedium),

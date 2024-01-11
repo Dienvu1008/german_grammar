@@ -51,9 +51,12 @@ String htmlContent2_1 = '''
 <p>Das Reflexivpronomen ist abhängig vom Subjekt. Es muss immer die gleiche Person angeben, die das Subjekt vorgibt. Für die 1. und 2. Person Singular und Plural werden die entsprechenden Formen des Personalpronomens im Akkusativ bzw. im Dativ übernommen. Nur die 3. Person bildet eine eigene Form: "<strong><span class="red">sich</span></strong>". Diese Form bleibt sowohl im Dativ und Akkusativ als auch im Singular und Plural bestehen.</p>
 ''';
 String htmlTable2_2 = '''
-<table class="zwei">
+<table class="zwei"><colgroup> 
+<col style="width: 34%;"> 
+<col style="width: 33%;">  
+<col style="width: 33%;"> </colgroup>
 <thead>
-<tr>
+<tr align="center">
 <th >Personalpronomen</th>
 <th>Reflexivpronomen\nAkkusativ</th>
 <th>Reflexivpronomen\nDativ</th>
