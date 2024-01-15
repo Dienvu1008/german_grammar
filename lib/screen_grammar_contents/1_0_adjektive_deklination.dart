@@ -51,6 +51,8 @@ List<CardContent> contents = [
 
 String title = '1. Adjektive';
 String title1 = 'Was man über Adjektive wissen sollte.';
+
+
 String htmlContent1 = '''
 <p>Adjektive, auch Eigenschaftswörter oder Wie-Wörter genannt, <span style="text-decoration:underline">beschreiben <strong><span class="red">Eigenschaften</span></strong> von <strong><a title="Nomen" href="lernen.php?menu_id=9">Nomen</a></strong></span>. Sie charakterisieren Personen, Lebewesen, Begriffe, Dinge, Vorgänge oder Tätigkeiten. Adjektive geben eine Antwort auf die Frage: " <strong><span class="red">Wie</span></strong> ist eine Person oder Sache."</p>
 <li><strong><span class="blue">Ute</span></strong>: "Kennst du schon den <strong><span class="red">neuen</span></strong> Freund von Martina? <strong><span class="red">Wie</span></strong> ist er?"</li>

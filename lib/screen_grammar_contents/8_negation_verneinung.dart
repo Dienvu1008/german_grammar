@@ -156,10 +156,11 @@ String htmlContent4_1 = '''
 ''';
 String htmlTable4_2 = '''
 <table><colgroup> 
-<col style="width: 25%;"> 
-<col style="width: 25%;"> 
-<col style="width: 25%;"> 
-<col style="width: 25%;"> </colgroup>
+<col style="width: 20%;"> 
+<col style="width: 20%;"> 
+<col style="width: 20%;"> 
+<col style="width: 20%;"> 
+<col style="width: 20%;"> </colgroup>
 <thead>
 <tr align="center">
 <th>Kasus</th>
