@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import '../app/app_localizations.dart';
-import '../html_to_richtext.dart';
 import '../page_content.dart';
 
 class Pronomen_Es_11_7 extends StatelessWidget {

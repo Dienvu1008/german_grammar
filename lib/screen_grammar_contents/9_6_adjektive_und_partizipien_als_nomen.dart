@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-import '../app/app_localizations.dart';
 import '../page_content.dart';
 
 class Adjektive_Und_Partizipien_Als_Nomen_9_6 extends StatelessWidget {

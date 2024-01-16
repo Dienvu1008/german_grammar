@@ -1,8 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:german_grammar/html_table_to_dart_table.dart';
 
-import '../app/app_localizations.dart';
-import '../html_to_richtext.dart';
 import '../page_content.dart';
 
 class Satzlehre_12 extends StatelessWidget {

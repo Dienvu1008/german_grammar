@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-import '../app/app_localizations.dart';
 import '../page_content.dart';
 
 class Praepositionen_Mit_Dativ_10_2 extends StatelessWidget {

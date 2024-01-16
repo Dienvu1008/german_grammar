@@ -1,8 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:german_grammar/html_to_richtext.dart';
-
-import '../app/app_localizations.dart';
-import '../html_table_to_dart_table.dart';
 import '../page_content.dart';
 
 class Satzverbindende_Adverbien_12_3 extends StatelessWidget {

@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:german_grammar/screen_settings/page_settings_user_interface.dart';
 import '../screen_grammar_contents/10_0_praepositionen.dart';
 import '../screen_grammar_contents/10_1_praepositionen_mit_akkusativ.dart';
 import '../screen_grammar_contents/10_2_praepositionen_mit_dativ.dart';

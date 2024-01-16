@@ -1,11 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_html/flutter_html.dart';
-import 'package:flutter_widget_from_html/flutter_widget_from_html.dart';
-import 'package:german_grammar/complex_html_table_to_dart_table.dart';
-
-import '../app/app_localizations.dart';
-import '../html_table_to_dart_table.dart';
-import '../html_to_richtext.dart';
 import '../page_content.dart';
 
 class Satzarten_12_1 extends StatelessWidget {

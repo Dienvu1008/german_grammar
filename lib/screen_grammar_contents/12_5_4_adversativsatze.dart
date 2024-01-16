@@ -1,8 +1,4 @@
 import 'package:flutter/material.dart';
-
-import '../app/app_localizations.dart';
-import '../html_table_to_dart_table.dart';
-import '../html_to_richtext.dart';
 import '../page_content.dart';
 
 class Adversativsatze_12_5_4 extends StatelessWidget {

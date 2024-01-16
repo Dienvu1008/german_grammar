@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-import '../app/app_localizations.dart';
 import '../page_content.dart';
 
 class Dass_Saetze_Im_Akkusativ_5_2 extends StatelessWidget {

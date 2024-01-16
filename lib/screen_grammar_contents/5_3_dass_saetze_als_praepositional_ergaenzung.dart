@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-import '../app/app_localizations.dart';
 import '../page_content.dart';
 
 class Dass_Saetze_Als_Praepositional_Ergaenzung_5_3 extends StatelessWidget {
